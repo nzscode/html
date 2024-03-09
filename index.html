@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="prism.css" />
+        <title>Code Snippets - HTML</title>
+    </head>
+    <body class="lato-regular">
+        <h1>HTML Snippets</h1>
+
+        <div id="html1">
+            <h3>
+                Selecting from an array of tags, then adding a class to each of
+                them.
+            </h3>
+            <div>
+                <span class="situ-solu">Situ :</span>
+                <p>
+                    I need to add a class to each H1 & H3 element of the html
+                    page, to turn them green. However, there are no classes
+                    attached to these tags.
+                </p>
+                <br />
+                <br />
+                <span class="situ-solu">Solu : </span>
+                <ol>
+                    <li>
+                        I need to make an array of the tags I am looking for.
+                    </li>
+                    <pre>
+                        <code>
+            var Hs = ["h1", "h3"];
+                        </code>
+                    </pre>
+                    <li>
+                        I need to iterate through each of these tags, that are
+                        now part of an array(Node List)
+                    </li>
+                    <pre>
+                        <code>
+            for (let i = 0; i &lt; Hs.length; i++) {
+                var hs = Hs[i];
+            };
+                        </code>
+                    </pre>
+                    <li>
+                        I need to find all the tags that match the items in my
+                        array.
+                    </li>
+                    <pre>
+                        <code>
+            var h = document.querySelectorAll(hs);
+                        </code>
+                    </pre>
+                    <li>
+                        I need to make a function that will toggle on the
+                        classes I want to show up on the tags.
+                    </li>
+                    <pre>
+                        <code>
+            function colorRed(element) {
+                element.classList.toggle("oswald-font");
+                element.classList.toggle("green");
+            }
+                        </code>
+                    </pre>
+                    <li>I need to toggle a class on to each of the tags.</li>
+                    <pre>
+                        <code>
+            h.forEach(colorRed);
+                    </code>
+                </pre>
+                </ol>
+            </div>
+            <pre>
+                <code>
+            var Hs = ["h1", "h3"];
+            for (let i = 0; i < Hs.length; i++) {
+                var hs = Hs[i];
+                var h = document.querySelectorAll(hs);
+            
+                function colorRed(element) {
+            element.classList.toggle("oswald-font");
+            element.classList.toggle("green");
+                }
+                h.forEach(colorRed);
+            }
+                </code>
+            </pre>
+        </div>
+        <!-- Through GitHub -->
+        <!-- <script src="https://nzscode.github.io/Snippets-HTML/snippets-html.js"></script>
+        <script src="https://nzscode.github.io/Snippets/prism.js"></script> -->
+        <!-- For Live Server-->
+        <script src="snippetsHTML.js"></script>
+        <script src="prism.js"></script>
+    </body>
+</html>

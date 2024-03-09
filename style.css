@@ -1,0 +1,28 @@
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.oswald-font {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.situ-solu {
+    font-style: italic;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.situ-solu + p {
+    margin-left: 50px;
+}
