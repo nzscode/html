@@ -11,91 +11,1557 @@
         />
 
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="prism.css" />
+        <!-- <link rel="stylesheet" href="prism.css" /> -->
         <title>Code Snippets - HTML</title>
     </head>
     <body class="lato-regular">
         <h1>HTML Snippets</h1>
+        <div>
+            <h3>Basic Elements</h3>
+            <ul>
+                <li class="title">Headings</li>
+                <ul>
+                    <li class="sub-title">H1, H2, H3, H4, H5</li>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code>//H1
+&lt;h1&gt;Heading 1&lt;&gt;
+&lt;h1&gt;Heading 2&lt;&gt;
+&lt;h1&gt;Heading 3&lt;&gt;
+&lt;h1&gt;Heading 4&lt;&gt;
+&lt;h1&gt;Heading 5&lt;&gt;</code></pre>
+                        </div>
 
-        <div id="html1">
-            <h3>
-                Selecting from an array of tags, then adding a class to each of
-                them.
-            </h3>
-            <div>
-                <span class="situ-solu">Situ :</span>
-                <p>
-                    I need to add a class to each H1 & H3 element of the html
-                    page, to turn them green. However, there are no classes
-                    attached to these tags.
-                </p>
-                <br />
-                <br />
-                <span class="situ-solu">Solu : </span>
-                <ol>
+                        <div class="column">
+                            <h4>Output</h4>
+                            <div class="output-column">
+                                <h1>Heading 1</h1>
+                                <h2>Heading 2</h2>
+                                <h3>Heading 3</h3>
+                                <h4>Heading 4</h4>
+                                <h5>Heading 5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Paragraph</li>
+                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <div>
+                                <pre><code>&lt;p&gt;
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+Obcaecati, dicta consequuntur? Blanditiis provident, inventore sint 
+cum nobis velit labore facere!
+&lt;p&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h4>Output</h4>
+                            <div class="output-column">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Obcaecati, dicta
+                                    consequuntur? Blanditiis provident,
+                                    inventore sint cum nobis velit labore
+                                    facere!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Breaks</li>
+                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <pre><code>Look a gap here..&lt;p&gt;..on the middle</code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>Look a gap here..<br>..on the middle</code></pre>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Span</li>
+                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <pre><code>Look the following &lt;span&gt;text&lt;/span&gt; is blue</code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>Look the following <span class="highlight">text</span> is blue</code></pre>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Div</li>
+                <ul>
+                    <ul>
+                        <li>Displayed by default as a block element</li>
+                    </ul>
+                    <div class="row">
+                        <div class="column">
+                            <pre><code>&lt;div&gt;This is 
+inside a 
+div
+&lt;/div&gt;</code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>This is 
+inside a 
+div</code></pre>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Images</li>
+                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <pre><code>This is an &lt;img src="./images/img.png" alt=""&gt;</code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>This is an <img src="./images/img.png" alt=""></code></pre>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Hyperlinks</li>
+                <ul>
+                    <ul>
+                        <li>Can add CSS to change on hover</li>
+                        <li>Needs a "href" to connect to something</li>
+                    </ul>
+                    <div class="row">
+                        <div class="column">
+                            <pre><code>This is a link to &lt;a href=""&gt;Google&lt;/a&gt;</code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>This is a link to <a href="">Google</a></code></pre>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="sub-title">With href</li>
+                        <div class="row">
+                            <div class="column">
+                                <pre><code>This is a link to &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
+                            </div>
+                            <div class="column">
+                                <pre><code>This is a link to <a href="https://www.google.com">Google</a></code></pre>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">With on hover color change</li>
+                        <div class="row">
+                            <div class="column">
+                                <pre><code><span class="comment">// HTML</span>
+This is a link to &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;
+
+<span class="comment">// CSS</span>
+a:hover {
+    background-color: green;
+}</code></pre>
+                            </div>
+                            <div class="column">
+                                <pre><code class="on-hover">This is a link to <a href="https://www.google.com">Google</a></code></pre>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+                <li class="title">Scripts</li>
+                <ul>
+                    <ul>
+                        <li>This is how to link scripts</li>
+                        <li>
+                            They normally can be placed in the HTML head or
+                            bottom of the body sections
+                        </li>
+                        <div class="row">
+                            <div class="column">
+                                <h4>Code</h4>
+                                <div>
+                                    <pre><code>&lt;script src="./prism.js"&gt;&lt;/script&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h4>Output</h4>
+                                <div class="">
+                                    <pre><code><script src="./prism.js"></script></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="sub-title">Attributes</li>
+                        <table>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>download</td>
+                                <td>filename</td>
+                                <td>
+                                    When the hyperlink is clicked a file will be
+                                    downloaded
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>href</td>
+                                <td>URL</td>
+                                <td>Links to a webpage(url)</td>
+                            </tr>
+                            <tr>
+                                <td>rel</td>
+                                <td>tag, bookmark, external, next, prev...</td>
+                                <td>
+                                    Links current document to another document
+                                    and specifies the link
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>target</td>
+                                <td>_blank, _self, _top, _parent</td>
+                                <td>Specifies where to open the link</td>
+                            </tr>
+                        </table>
+                    </ul>
+                </ul>
+                <li class="title">Section</li>
+                <ul>
+                    <li>Defines a section of the document</li>
+                    <li>By default is a block level element</li>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <div>
+                                <pre><code>&lt;section&gt;
+    &lt;h1&gt;Poppies&lt;/h1&gt;
+    &lt;p&gt;Poppies are very pretty flowers&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+    &lt;h1&gt;Tulips&lt;/h1&gt;
+    &lt;p&gt;Tulips come in many colors.&lt;/p&gt;
+&lt;/section&gt;                            </code></pre>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <h4>Output</h4>
+                            <div>
+                                <pre><code><section>
+                                <h1>Poppies</h1>
+                                <p>Poppies are very pretty flowers</p>
+                            </section>
+                            <section>
+                                <h1>Tulips</h1>
+                                <p>Tulips come in many colors.</p>
+                            </section>
+                            </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <li class="title">Title</li>
+                <ul>
+                    <li>Is the title of the webpage</li>
+                    <li>Can only be text</li>
+                    <li>Can only have one</li>
+                    <li>Is mandatory in an HTML document</li>
+                    <li>Necessary for (SEarch Engine Optimization) SEO</li>
+                    <li>By default display is set to none</li>
+                </ul>
+                <div class="row">
+                    <div class="column">
+                        <h4>Code</h4>
+                        <div>
+                            <pre><code></code></pre>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4>Output</h4>
+                        <pre><code></code></pre>
+                    </div>
+                </div>
+                <li class="title">Links</li>
+
+                <ul>
+                    <li>Meant for Navigation Links</li>
+                    <li>By default a block level element</li>
+                    <ul>
+                        <li class="sub-sub-sub-title">Navigation</li>
+                        <div class="row">
+                            <div class="column">
+                                <h4>Code</h4>
+                                <div>
+                                    <pre><code>&lt;nav&gt;
+    &lt;a href="#Home"&gt;Home&lt;/a&gt;
+    &lt;a href="./Math.html"&gt;Math&lt;/a&gt;
+    &lt;a href="./English"&gt;English&lt;/a&gt;
+    &lt;a href="./French"&gt;French&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h4>Output</h4>
+                                <pre><code><nav>
+<a href="#Home">Home</a>
+<a href="./Math.html">Math</a>
+<a href="./English">English</a>
+<a href="./French">French</a>
+                                </nav></code></pre>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+                <li class="title">Attributes</li>
+                <ul>
+                    <ul>
+                        <li class="sub-title">href</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">src</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">width & height</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">alt</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">style</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">title</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">id</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">class</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">href</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">col</li>
+                    </ul>
+                    <ul>
+                        <li class="sub-title">colspan</li>
+                    </ul>
+                </ul>
+                <li class="title">Tables</li>
+                <ul>
                     <li>
-                        I need to make an array of the tags I am looking for.
+                        Default CSS
+                        <pre><code>table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}</code></pre>
                     </li>
-                    <pre>
-                        <code>
-            var Hs = ["h1", "h3"];
-                        </code>
-                    </pre>
+                </ul>
+                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code><span class="comment">// HTML</span>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Column Header 1&lt;/th&gt;
+        &lt;th&gt;Column Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2 Column 1&lt;/td&gt;
+        &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        
+<span class="comment">// CSS</span>
+
+<span class="comment">// Puts a 2 pixel solid white border around the whole table</span>
+table {
+    border: 2px solid #fff;
+}
+
+<span class="comment">// Gives the Header Cells a background color of #fc4d36, 
+    and increases the font to 150% the size</span>
+th {
+    background-color: rgb(252, 77, 54);
+    font-size: 150%;
+}
+
+<span class="comment">// Adds a 15px padding around the contents 
+    of the heading and regular cells of the table.</span>
+th,
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+<span class="comment">// Makes the even numbered regular cells have 
+    a color of #00ffff51 (the 51 is alpha transparency)</span>
+tr:nth-child(even) {
+    background-color: #00ffff51;
+}
+
+<span class="comment">// Makes the Header cells (1st cells) text yellow color </span>
+tr:nth-child(1) {
+    color: yellow;
+}
+
+</code></pre>
+                        </div>
+                        <div class="column">
+                            <h4>Code</h4>
+                            <div>
+                                <pre><code><table id="table-sample">
+                                    <span class="comment">// HTML</span>
+                                    <tr>
+                                        <th>Column Header 1</th>
+                                        <th>Column Header 2</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 2 Column 1</td>
+                                        <td>Row 2 Column 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 3 Column 1</td>
+                                        <td>Row 3 Column 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Row 4 Column 1</td>
+                                        <td>Row 4 Column 2</td>
+                                    </tr>
+                                </table></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                When changing the CSS of a specific table from
+                                within a page that has multiple tables, give the
+                                table an ID.
+                            </li>
+                            <li>
+                                To change the &lt;th&gt; of a table when the
+                                table ID is #table-sample
+                            </li>
+                            <pre><code><span class="body-tag">table</span><span class="class-id-name">#table-sample</span> <span class="body-tag">th</span> <span class="brackets">{</span>
+    <span class="property-name">background-color</span>: <span class="property-val-num">#fc4d36</span>;
+    <span class="property-name">font-size</span> <span class="property-val-num">150</span><span class="body-tag">%</span>;
+<span class="brackets">}</span></code></pre>
+                            <li>
+                                To Expand a cell into multiple cells / Merge
+                                Cells, use the col-span / rowspan attribute
+                            </li>
+                            <div class="row">
+                                <div class="column">
+                                    <h4>Code</h4>
+                                    <div>
+                                        <pre><code>&lt;table id="table-sample2"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+        &lt;td&gt;Row 1 Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Row 2 Merged 
+                    Column&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 3 Column 1&lt;/td&gt;
+        &lt;td&gt;Row 3 Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2&gt;Row 4 Column 1 & 
+            &lt;br&gt; Row 5 Column 1 Merged&lt;/td&gt;
+        &lt;td&gt;Row 4 Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 5 Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <h4>Output</h4>
+                                    <div>
+                                        <pre>
+                                            <code>
+                                                <table id="table-sample2">
+                                                    <tr>
+                                                        <th>Header 1</th>
+                                                        <th>Header 2</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Row 1 Column 1</td>
+                                                        <td>Row 1 Column 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">Row 2 Merged Column</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Row 3 Column 1</td>
+                                                        <td>Row 3 Column 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td rowspan="2">Row 4 Column 1 & <br>Row 5 Column 1 Merged</td>
+                                                        <td>Row 4 Column 2</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Row 5 Column 2</td>
+                                                    </tr>
+                                                </table>
+                                            </code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </ol>
+                    </div>
+
+                    <li class="sub-title">Table Header</li>
+                    <ul>
+                        <li>
+                            Default CSS
+                            <pre><code>th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}</code></pre>
+                        </li>
+                        <div class="row">
+                            <div class="column">
+                                <h4>Code</h4>
+                                <div>
+                                    <pre><code>&lt;table id=""&gt;&lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h4>Output</h4>
+                                <div>
+                                    <pre><code><table id="table-sample3">
+                                        <tr>
+                                            <th>Header 1</th>
+                                            <th>Header 2</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Cell 1</td>
+                                            <td>Cell 2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cell 3</td>
+                                            <td>Cell 4</td>
+                                        </tr>
+                                    </table></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <li class="sub-title">Table Row</li>
+                    <ul>
+                        <li>
+                            Default CSS
+                            <pre><code>tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}</code></pre>
+                            <div class="row">
+                                <div class="column">
+                                    <h4>Code</h4>
+                                    <div>
+                                        <pre><code>&lt;table id=""&gt;&lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <h4>Output</h4>
+                                    <div>
+                                        <pre><code><table id="table-sample3">
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                </tr>
+                <tr>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+            </table></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <li class="sub-title">Table Cell</li>
+                    <ul>
+                        <li>Default CSS</li>
+                        <pre><code>td {
+    display: table-cell;
+    vertical-align: inherit;
+}</code></pre>
+                        <div class="row">
+                            <div class="column">
+                                <h4>Code</h4>
+                                <div>
+                                    <pre><code>&lt;table id=""&gt;&lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <h4>Output</h4>
+                                <div>
+                                    <pre><code><table id="table-sample3">
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+</tr>
+<tr>
+<td>Cell 3</td>
+<td>Cell 4</td>
+</tr>
+</table></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </ul>
+                <li class="title">Forms</li>
+                <ul>
                     <li>
-                        I need to iterate through each of these tags, that are
-                        now part of an array(Node List)
+                        Default CSS
+                        <pre><code>form {
+    display: block;
+    margin-top: 0em;
+}</code></pre>
                     </li>
-                    <pre>
-                        <code>
-            for (let i = 0; i &lt; Hs.length; i++) {
-                var hs = Hs[i];
-            };
-                        </code>
-                    </pre>
-                    <li>
-                        I need to find all the tags that match the items in my
-                        array.
-                    </li>
-                    <pre>
-                        <code>
-            var h = document.querySelectorAll(hs);
-                        </code>
-                    </pre>
-                    <li>
-                        I need to make a function that will toggle on the
-                        classes I want to show up on the tags.
-                    </li>
-                    <pre>
-                        <code>
-            function colorRed(element) {
-                element.classList.toggle("oswald-font");
-                element.classList.toggle("green");
-            }
-                        </code>
-                    </pre>
-                    <li>I need to toggle a class on to each of the tags.</li>
-                    <pre>
-                        <code>
-            h.forEach(colorRed);
-                    </code>
-                </pre>
-                </ol>
+
+                    <li>Forms can contain:</li>
+                    <ul>
+                        <li class="title">Basic Form</li>
+                    </ul>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <div>
+                                <pre><code>&lt;form action=""&gt;
+&lt;label for="firstname"&gt;First Name: &lt;/label&gt;
+&lt;input 
+    type="text" 
+    name="firstname" 
+    required&gt;
+&lt;br&gt;
+&lt;label for="lastname"&gt;Last name: &lt;/label&gt;
+&lt;input 
+    type="text" 
+    name="lastname" 
+    required&gt;
+&lt;br&gt;&lt;input 
+                type="submit" 
+                value="Log in"&gt;&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h4>Output</h4>
+                            <div>
+                                <pre><code><form action=""><label for="firstname">First Name: </label>
+<input type="text" name="firstname" required>
+<br>
+<label for="lastname">Last name: </label>
+<input type="text" name="lastname" required>
+<br><input type="submit" value="Log in"></form></code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li class="sub-title">input</li>
+                        <ul>
+                            <li>
+                                An input field where the user can input data
+                            </li>
+                            <li>
+                                Can be displayed in many ways depending on the
+                                type attribute
+                            </li>
+                            <li class="sub-sub-title">Types</li>
+                            <table>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Explanation</th>
+                                    <th>Example</th>
+                                    <th>HTML Syntax</th>
+                                </tr>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>
+                                        - Default
+                                        <br />
+                                        - Single line text field
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <form action="">
+                                                <label for=""></label>
+                                                <input
+                                                    type="text"
+                                                    name=""
+                                                    placeholder="Enter Text"
+                                                />
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;div&gt;
+    &lt;form action=""&gt;
+        &lt;label for=""&gt;&lt;/label&gt;
+        &lt;input
+            type="text"
+            name=""
+            placeholder="Enter Text"
+        /&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Button</td>
+                                    <td>
+                                        A pushable button that can activate a JS
+                                        function when clicked
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <form action="">
+                                                <label for=""></label>
+                                                <input
+                                                    type="button"
+                                                    value="Click Me"
+                                                    onclick=""
+                                                />
+                                            </form>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;div&gt;
+    &lt;form action=""&gt;
+        &lt;label for=""&gt;&lt;/label&gt;
+        &lt;input
+            type="button"
+            value="Click Me"
+            onclick=""
+        /&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Checkbox</td>
+                                    <td>
+                                        Lets a user select one or more options
+                                        from withing a selection of options
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <input
+                                                type="checkbox"
+                                                id="option1"
+                                                name="option1"
+                                                value="Car"
+                                            /><label for="option1">Bike</label>
+                                            <br />
+                                            <input
+                                                type="checkbox"
+                                                id="option2"
+                                                name="option2"
+                                                value="Bike"
+                                            />
+                                            <label for="option2">Car</label>
+                                            <br />
+                                            <input
+                                                type="checkbox"
+                                                id="option3"
+                                                name="option3"
+                                                value="Scooter"
+                                            />
+                                            <label for="option3">Scooter</label>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;input
+        type="checkbox"
+        id="option1"
+        name="option1"
+        value="Car"
+    /&gt;
+    &lt;label for="option1"&gt;Bike&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input
+        type="checkbox"
+        id="option2"
+        name="option2"
+        value="Bike"
+    /&gt;
+    &lt;label for="option2"&gt;Car&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input
+        type="checkbox"
+        id="option3"
+        name="option3"
+        value="Scooter"
+    /&gt;
+    &lt;label for="option3"&gt;Scooter&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Color</td>
+                                    <td>Select a color from a color picker</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="colorPicker"
+                                                >Select a color:
+                                            </label>
+                                            <input
+                                                type="color"
+                                                id="colorPicker"
+                                                name="colorPicker"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="colorPicker"&gt;Select a color: &lt;/label&gt;
+    &lt;input 
+        type="color"
+        id="colorPicker" 
+        name="colorPicker"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Pick a date from a calendar</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="birthday"
+                                                >Birthday:
+                                            </label>
+                                            <input
+                                                type="date"
+                                                name="birthday"
+                                                id="birthday"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;
+    &lt;input 
+        type="date" 
+        name="birthday" 
+        id="birthday"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Local Date Time</td>
+                                    <td>From a calendar Pick a date & time</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="anniversary-time"
+                                                >Anniversary (date &
+                                                time)</label
+                                            >
+                                            <input
+                                                type="datetime-local"
+                                                name="anniversary-time"
+                                                id="anniversary-time"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="anniversary-time"&gt;Anniversary (date & time)&lt;/label&gt;
+    &lt;input 
+        type="datetime-local" 
+        name="anniversary-time" 
+        id="anniversary-time"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        Field to enter an email address, will be
+                                        automatically validated on submit.
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="email"
+                                                >Enter your email:
+                                            </label>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="email"&gt;Enter your email: &lt;/label&gt;
+    &lt;input 
+        type="email" 
+        name="email" 
+        id="email"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>File</td>
+                                    <td>Browse & select a file</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="file-select"
+                                                >Select a file:
+                                            </label>
+                                            <input
+                                                type="file"
+                                                id="file-select"
+                                                name="file-select"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="file-select"&gt;Select a file: &lt;/label&gt;
+    &lt;input 
+        type="file" 
+        id="file-select" 
+        name="file-select"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden</td>
+                                    <td>
+                                        - A hidden field(not visible to user)
+                                        <br />
+                                        - Often stores what database record that
+                                        needs to be updated for when the form is
+                                        submitted
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <input
+                                                type="hidden"
+                                                id="customerID"
+                                                name="customerID"
+                                                value="1234"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;input 
+        type="hidden" 
+        id="customerID" 
+        name="customerID" 
+        value="1234"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Image</td>
+                                    <td>Allows image to be a submit button</td>
+                                    <td>
+                                        <form action="">
+                                            <input
+                                                type="image"
+                                                src="./images/img.png"
+                                                alt="Submit"
+                                                height="75px"
+                                                width="75px"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;input 
+        type="image" 
+        src="./images/img.png" 
+        alt="Submit" 
+        height="75px"
+        width="75px"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Month</td>
+                                    <td>
+                                        Pick a month & a year (No time zone)
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="bdaymonth"
+                                                >Pick your Birthday (Month &
+                                                Year):
+                                            </label>
+                                            <input
+                                                type="month"
+                                                name="bdaymonth"
+                                                id="bdaymonth"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="bdaymonth"&gt;Pick your Birthday (Month & Year): &lt;/label&gt;
+    &lt;input 
+        type="month" 
+        name="bdaymonth" 
+        id="bdaymonth"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>
+                                        - Field for entering a number
+                                        <br />
+                                        - Can set restrictions on acceptable
+                                        numbers
+                                        <br />
+                                        - Can use attributes:
+                                        <br />
+                                        <ul>
+                                            <li>min</li>
+                                            <li>max</li>
+                                            <li>
+                                                step: the number of intervals
+                                            </li>
+                                            <li>
+                                                value: specifies a default value
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="Qty"
+                                                >Choose a Quantity (1 - 5):
+                                            </label>
+                                            <input
+                                                type="number"
+                                                name="qty"
+                                                id="qty"
+                                                min="1"
+                                                max="5"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="Qty">Choose a Quantity (1 - 5): &lt;/label&gt;
+    &lt;input 
+        type="number" 
+        name="qty" 
+        id="qty" 
+        min="1" 
+        max="5"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>
+                                        - Field for password entry
+                                        <br />
+                                        - Characters are masked
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="password"
+                                                >Password:
+                                            </label>
+                                            <input
+                                                type="password"
+                                                id="password"
+                                                name="password"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="password"&gt;Password: &lt;/label&gt;
+    &lt;input 
+        type="password" 
+        id="password" 
+        name="password"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Radio</td>
+                                    <td>
+                                        Selection of Radio buttons, only allows
+                                        one selection
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <input
+                                                type="radio"
+                                                id="chicken"
+                                                name="entree-meat"
+                                                value="Chicken"
+                                            />
+                                            <label for="chicken">Chicken</label>
+                                            <input
+                                                type="radio"
+                                                id="beef"
+                                                name="entree-meat"
+                                                value="Beef"
+                                            />
+                                            <label for="beef">Beef</label>
+                                            <input
+                                                type="radio"
+                                                id="fish"
+                                                name="entree-meat"
+                                                value="Fish"
+                                            />
+                                            <label for="fish">Fish</label>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;input
+        type="radio"
+        id="chicken"
+        name="entree-meat"
+        value="Chicken"
+    /&gt;
+    &lt;label for="chicken">Chicken&lt;/label&gt;
+    &lt;input
+        type="radio"
+        id="beef"
+        name="entree-meat"
+        value="Beef"
+    /&gt;
+    &lt;label for="beef">Beef&lt;/label&gt;
+    &lt;input
+        type="radio"
+        id="fish"
+        name="entree-meat"
+        value="Fish"
+    /&gt;
+    &lt;label for="fish">Fish&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Range</td>
+                                    <td>
+                                        - Control for entering a number where
+                                        the exact value is not important
+                                        <br />
+                                        - Default range is 0 to 100, but
+                                        restrictions can be set.
+                                        <br />
+                                        - Attributes:
+                                        <ul>
+                                            <li>min</li>
+                                            <li>max</li>
+                                            <li>step</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="speed">
+                                                Speed (between 0 - 50)
+                                            </label>
+                                            <input
+                                                type="range"
+                                                id="speed"
+                                                name="speed"
+                                                min="0"
+                                                max="50"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="speed"&gt;
+        Speed (between 0 - 50)&lt;/label&gt;
+    &lt;input
+        type="range"
+        id="speed"
+        name="speed"
+        min="0"
+        max="50"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Reset</td>
+                                    <td>Resets all the values in the form</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="addy">Address: </label>
+                                            <input
+                                                type="text"
+                                                name="addy"
+                                                id="addy"
+                                                placeholder="Address"
+                                            />
+                                            <input type="reset" />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="addy">Address: &lt;/label&gt;
+    &lt;input
+        type="text"
+        name="addy"
+        id="addy"
+        placeholder="Address"
+    /&gt;
+    &lt;input type="reset" /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Search</td>
+                                    <td>
+                                        Define a search field (site search, or
+                                        search froma specific site)
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="page-search">
+                                                Search this page:
+                                            </label>
+                                            <input
+                                                type="search"
+                                                id="page-search"
+                                                name="page-search"
+                                            />
+                                            <input type="submit" />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="">
+    &lt;label for="page-search"&gt;
+        Search this page:
+    &lt;/label>&gt;
+    &lt;input
+        type="search"
+        id="page-search"
+        name="page-search"
+    />&gt;
+    &lt;input type="submit" />&gt;
+&lt;/form>&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Submit</td>
+                                    <td>Is a submit button</td>
+                                    <td>
+                                        <form action="">
+                                            <input type="submit" />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;input type="submit" /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Telephone</td>
+                                    <td>
+                                        Field for enetering a telephone number
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="phone">
+                                                Enter a phone number:
+                                            </label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                pattern="(\+[0-9][ |-]?)?[0-9]{3}[ |-]?[0-9]{3}[ |-]?[0-9]{4}"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="phone"&gt;
+        Enter a phone number:
+    &lt;/label&gt;
+    &lt;input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="(\+[0-9][ |-]?)?[0-9]{3}[ |-]?[0-9]{3}[ |-]?[0-9]{4}"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Time</td>
+                                    <td>Pick a time (No time zone)</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="opening-time">
+                                                Opening Time:
+                                            </label>
+                                            <input
+                                                type="time"
+                                                id="opening-time"
+                                                name="opening-time"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="opening-time"&gt;
+        Opening Time:
+    &lt;/label&gt;
+    &lt;input
+        type="time"
+        id="opening-time"
+        name="opening-time"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>URL</td>
+                                    <td>Field for entering a URL</td>
+                                    <td>
+                                        <form action="">
+                                            <label for="homepage">
+                                                Add your homepage:
+                                            </label>
+                                            <input
+                                                type="url"
+                                                id="homepage"
+                                                name="homepage"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="homepage"&gt;
+        Add your homepage:
+    &lt;/label&gt;
+    &lt;input
+        type="url"
+        id="homepage"
+        name="homepage"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Week</td>
+                                    <td>
+                                        Choose a week and date from a calendar
+                                        (No time zone)
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="week">
+                                                Select a week:
+                                            </label>
+                                            <input
+                                                type="week"
+                                                id="week"
+                                                name="week"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="week"&gt;
+        Select a week:
+    &lt;/label&gt;
+    &lt;input
+        type="week"
+        id="week"
+        name="week"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                            </table>
+                        </ul>
+                        <li class="sub-title">text area</li>
+                        <li class="sub-title">button</li>
+                        <li class="sub-title">select</li>
+                        <li class="sub-title">option</li>
+                        <li class="sub-title">fieldset</li>
+                        <li class="sub-title">label</li>
+                        <li class="sub-title">output</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li class="sub-title">Fieldset</li>
+                    <li class="sub-title">Input</li>
+                    <li class="sub-title">Label</li>
+                    <li class="sub-title">Legend</li>
+                    <li class="sub-title">Option</li>
+                    <li class="sub-title">Output</li>
+                </ul>
+                <li class="sub-title">Lists</li>
+                <ul>
+                    <li class="sub-title">Unordered List</li>
+                    <ul>
+                        <li class="sub-sub-title">Menu</li>
+                    </ul>
+                    <li class="sub-title">Ordered List</li>
+                    <li class="sub-title">List Item</li>
+                </ul>
+                <li class="title">Body</li>
+                <ul></ul>
+                <li class="title">Head</li>
+                <ul></ul>
+                <li class="title">Formatting</li>
+                <ul>
+                    <ul>
+                        <li class="sub-title">Bold</li>
+                    </ul>
+                    <li class="sub-title">Italic</li>
+                    <li class="sub-title">Emphasis</li>
+                </ul>
+                <li class="title">Button</li>
+                <ul></ul>
+                <li class="title">Quote</li>
+                <ul></ul>
+                <li class="title">Code</li>
+                <ul></ul>
+            </ul>
+        </div>
+        <div>
+            <h3>Forms</h3>
+            <ul>
+                <li class="title">Basic Form</li>
+                <pre><code>&lt;div&gt;
+&lt;form id="form1"&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="text" id="fname" name="fname" value="John" /&gt;&lt;br /&gt;
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="text" id="lname" name="lname" value="Doe" /&gt;
+&lt;/form&gt;
+&lt;br /&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </ul>
+            <h3>CSS Rows & Columns</h3>
+            <div class="row">
+                <div class="column">
+                    <h4>Code</h4>
+                    <pre><code><span class="comment">// HTML</span>
+&lt;div class="row"&gt;
+    &lt;div class="column"&gt;
+        &lt;h4&gt;Code&lt;/h4&gt;
+        &lt;div&gt;
+            This is column 1
+        &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div class="column"&gt;
+        &lt;div&gt;
+            This is column 2
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div>
+
+<span class="comment">// CSS</span>
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin: 0 15px;
+}</code></pre>
+                </div>
+                <div class="column">
+                    <h4>Output</h4>
+                    <div class="row">
+                        <div class="column output-column">
+                            <div>
+                                <h4>Code</h4>
+                                This is column 1
+                                <br />. <br />. <br />. <br />. <br />. <br />.
+                                <br />.
+                            </div>
+                        </div>
+                        <div class="column output-column">
+                            <div>
+                                <h4>Output</h4>
+                                This is column 2 <br />. <br />. <br />. <br />.
+                                <br />. <br />. <br />.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <pre>
-                <code>
-            var Hs = ["h1", "h3"];
-            for (let i = 0; i < Hs.length; i++) {
-                var hs = Hs[i];
-                var h = document.querySelectorAll(hs);
-            
-                function colorRed(element) {
-            element.classList.toggle("oswald-font");
-            element.classList.toggle("green");
-                }
-                h.forEach(colorRed);
-            }
-                </code>
-            </pre>
         </div>
         <!-- Through GitHub -->
         <!-- <script src="https://nzscode.github.io/Snippets-HTML/snippets-html.js"></script>
