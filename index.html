@@ -886,9 +886,46 @@ tr:nth-child(1) {
                                         <br />
                                         - Can also use http post "method =
                                         'post'"
+                                        <br />
+                                        Notes on GET:
+                                        <br /><br />
+                                        Appends the form data to the URL, in
+                                        name/value pairs<br />
+                                        NEVER use GET to send sensitive data!
+                                        (the submitted form data is visible in
+                                        the URL!)<br />
+                                        The length of a URL is limited (2048
+                                        characters)<br />
+                                        Useful for form submissions where a user
+                                        wants to bookmark the result<br />
+                                        GET is good for non-secure data, like
+                                        query strings in Google
+                                        <br /><br />
+                                        Notes on POST:<br />
+                                        Appends the form data inside the body of
+                                        the HTTP request (the submitted form
+                                        data is not shown in the URL)<br />
+                                        POST has no size limitations, and can be
+                                        used to send large amounts of data.<br />
+                                        Form submissions with POST cannot be
+                                        bookmarked
                                     </td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>
+                                        <form
+                                            action="./action_page.php"
+                                            method="get"
+                                        ></form>
+                                        <br /><br /><br />
+                                        <form
+                                            action="./action_page.php"
+                                            method="post"
+                                        ></form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="./action_page.php" method="get"&gt;&lt;/form&gt;
+
+&lt;form action="./action_page.php" method="post"&gt;&lt;/form&gt;</code></pre>
+                                    </td>
                                 </tr>
                             </table>
                         </ul>
