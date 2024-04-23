@@ -927,6 +927,43 @@ tr:nth-child(1) {
 &lt;form action="./action_page.php" method="post"&gt;&lt;/form&gt;</code></pre>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>Autocomplete</td>
+                                    <td>
+                                        - Specifies if autocomplete should be on
+                                        or off
+                                        <br />
+                                        - When on, browser completes the form on
+                                        data user has already used
+                                    </td>
+                                    <td>
+                                        <form
+                                            action="/action_page.php"
+                                            autocomplete="on"
+                                        ></form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>No Validate</td>
+                                    <td>
+                                        - A boolean attribute
+                                        <br />
+                                        - Specifies that the form data (input)
+                                        shouldn;t be validated on submission
+                                    </td>
+                                    <td>
+                                        <form
+                                            action="/action_page.php"
+                                            novalidate
+                                        ></form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="/action_page.php" novalidate&gt;&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
                             </table>
                         </ul>
                         <li class="title">input</li>
@@ -2246,7 +2283,76 @@ tr:nth-child(1) {
                                             </select>
                                         </form>
                                     </td>
-                                    <td></td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="vehicle-type"&gt;
+        Vehicle Type:
+    &lt;/label&gt;
+    &lt;input
+        type="text"
+        name="vehicle-type"
+        id="vehicle-type"
+        value="Car"
+        disabled
+    /&gt;
+    &lt;select
+        name="vehicle-make"
+        id="vehicle-make"
+    &gt;
+        &lt;option value="Toyota"&gt;
+            Toyota
+        &lt;/option&gt;
+        &lt;option value="Mazda"&gt;
+            Mazda
+        &lt;/option&gt;
+        &lt;option value="Ford"&gt;
+            Ford
+        &lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Max Length</td>
+                                    <td>
+                                        - Specifies the maximum number of
+                                        characters allowed in an input field
+                                        <br />
+                                        - When set, the input field won't accept
+                                        more than the specified number of
+                                        characters
+                                        <br />
+                                        - To provide feedback on this, JS code
+                                        must be written
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="s_id">
+                                                Enter student ID:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="s_id"
+                                                id="s_id"
+                                                size="13"
+                                                maxlength="15"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="">&gt;
+    &lt;label for="s_id">&gt;
+        Enter student ID:
+    &lt;/label>&gt;
+    &lt;input
+        type="text"
+        name="s_id"
+        id="s_id"
+        size="13"
+        maxlength="15"
+    />&gt;
+&lt;/form>&gt;</code></pre>
+                                    </td>
                                 </tr>
                             </table>
                         </ul>
