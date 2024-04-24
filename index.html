@@ -176,16 +176,10 @@ a:hover {
                             bottom of the body sections
                         </li>
                         <div class="row">
-                            <div class="column">
+                            <div class="colum">
                                 <h4>Code</h4>
                                 <div>
                                     <pre><code>&lt;script src="./prism.js"&gt;&lt;/script&gt;</code></pre>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <h4>Output</h4>
-                                <div class="">
-                                    <pre><code><script src="./prism.js"></script></code></pre>
                                 </div>
                             </div>
                         </div>
@@ -311,43 +305,58 @@ a:hover {
                             </div>
                         </div>
                     </ul>
+                    <li class="title">HTML Attributes</li>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Explanation</th>
+                            <th>Example</th>
+                            <th>HTML Syntax</th>
+                        </tr>
+                    </table>
+                    <ul>
+                        <ul>
+                            <li class="sub-title">href</li>
+                            <ul>
+                                <li>
+                                    Specifies the URL of a page, that the link
+                                    goes to
+                                </li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">src</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">width & height</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">alt</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">style</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">title</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">id</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">class</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">href</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">col</li>
+                        </ul>
+                        <ul>
+                            <li class="sub-title">colspan</li>
+                        </ul>
+                    </ul>
                 </ul>
-                <li class="title">Attributes</li>
-                <ul>
-                    <ul>
-                        <li class="sub-title">href</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">src</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">width & height</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">alt</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">style</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">title</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">id</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">class</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">href</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">col</li>
-                    </ul>
-                    <ul>
-                        <li class="sub-title">colspan</li>
-                    </ul>
-                </ul>
+
                 <li class="title">Tables</li>
                 <ul>
                     <li>
@@ -2313,6 +2322,49 @@ tr:nth-child(1) {
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td>Size</td>
+                                    <td>
+                                        - Specifies the visible width in
+                                        characters of the input field
+                                        <br />
+                                        - Works with text, search, tel, url,
+                                        email, password
+                                        <br />
+                                        - Default size is 20
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="fname"
+                                                >First name:</label
+                                            ><br />
+                                            <input
+                                                type="text"
+                                                id="fname"
+                                                name="fname"
+                                                size="20"
+                                            /><br />
+                                            <label for="pin">PIN:</label><br />
+                                            <input
+                                                type="text"
+                                                id="pin"
+                                                name="pin"
+                                                size="4"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;
+    &lt;br&gt;
+    &lt;input type="text" id="fname" name="fname" size="20"&gt;
+    &lt;br&gt;
+    &lt;label for="pin"&gt;PIN:&lt;/label&gt;
+    &lt;br&gt;
+    &lt;input type="text" id="pin" name="pin" size="4"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>Max Length</td>
                                     <td>
                                         - Specifies the maximum number of
@@ -2354,75 +2406,609 @@ tr:nth-child(1) {
 &lt;/form>&gt;</code></pre>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>Min & Max</td>
+                                    <td>
+                                        - Minimum & Maximum values for any field
+                                        <br />
+                                        - Works with number, range date,
+                                        datetime-local, month, time, and week
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="shoesQ">
+                                                How many shoes would you like
+                                            </label>
+                                            <input
+                                                type="number"
+                                                name="shoesQ"
+                                                id="shoesQ"
+                                                min="1"
+                                                max="4"
+                                                value="1"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="shoesQ"&gt;
+        How many shoes would you
+        like
+    &lt;/label&gt;
+    &lt;input
+        type="number"
+        name="shoesQ"
+        id="shoesQ"
+        min="1"
+        max="4"
+        value="1"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Multiple</td>
+                                    <td>
+                                        - Specifies that more than one value can
+                                        be entered
+                                        <br />
+                                        - Works with email and file
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="files">
+                                                Select files:
+                                            </label>
+                                            <input
+                                                type="file"
+                                                id="files"
+                                                name="files"
+                                                multiple
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form&gt;
+    &lt;label for="files"&gt;
+        Select files:
+    &lt;/label&gt;
+    &lt;input
+        type="file"
+        id="files"
+        name="files"
+        multiple
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pattern</td>
+                                    <td>
+                                        - Specifies a RegEx that the input field
+                                        value is checked against, when the form
+                                        is submitted
+                                        <br />
+                                        - Works with text, date, search, url,
+                                        tel, email, and password
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="teacherID">
+                                                Teacher ID:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="teacherID"
+                                                id="teacherID"
+                                                pattern="[a-wA-W]{4}[0-9]{5}[X|Y]"
+                                                title="AbCd12345X"
+                                            />
+                                            <input type="submit" />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action=""&gt;
+    &lt;label for="teacherID"&gt;
+        Teacher ID:
+    &lt;/label&gt;
+    &lt;input
+        type="text"
+        name="teacherID"
+        id="teacherID"
+        pattern="[a-wA-W]{4}[0-9]{5}[X|Y]"
+        title="AbCd12345X"
+    /&gt;
+    &lt;input type="submit" />
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Placeholder</td>
+                                    <td>
+                                        - A hint or example that shows what kind
+                                        of input is expected
+                                        <br />
+                                        - Is displayed in the input field
+                                        <br />
+                                        - Works with text, seacrh, url, number,
+                                        tel, email and password
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <label for="petName">
+                                                Please enter your pet's name:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                name="petName"
+                                                id="petName"
+                                                placeholder="Kitty"
+                                            />
+                                            <label for="petAge">
+                                                Please choose the age of your
+                                                pet:
+                                            </label>
+                                            <input
+                                                type="number"
+                                                name="petAge"
+                                                id="petAge"
+                                                placeholder="1"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="">&gt;
+    &lt;label for="petName">&gt;
+        Please enter your pet's name:
+    &lt;/label>&gt;
+    &lt;input
+        type="text"
+        name="petName"
+        id="petName"
+        placeholder="Kitty"
+    />&gt;
+    &lt;label for="petAge">&gt;
+        Please choose the age of your
+        pet:
+    &lt;/label>&gt;
+    &lt;input
+        type="number"
+        name="petAge"
+        id="petAge"
+        placeholder="1"
+    />&gt;
+&lt;/form>&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Required</td>
+                                    <td>
+                                        - Specifies that an input field must be
+                                        filled out before submitting the form
+                                        <br />
+                                        - Works with text, search, url, tel,
+                                        email, password, date pickers, number,
+                                        checkbox, radio, and file.
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="username">
+                                                Username:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="username"
+                                                name="username"
+                                                required
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form>&gt;
+    &lt;label for="username">&gt;
+        Username:
+    &lt;/label>&gt;
+    &lt;input
+        type="text"
+        id="username"
+        name="username"
+        required
+    />&gt;
+&lt;/form>&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Step</td>
+                                    <td>
+                                        - Specifies the legal number intervals
+                                        for an input field
+                                        <br />
+                                        - Can be used together with the "max"
+                                        and "min" attributes to create a range
+                                        of legal values
+                                        <br />
+                                        - Works with number, range, date,
+                                        datetime-local, month, time and week
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="points">
+                                                Points:
+                                            </label>
+                                            <input
+                                                type="number"
+                                                id="points"
+                                                name="points"
+                                                step="3"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form>&gt;
+    &lt;label for="points">&gt;
+        Points:
+    &lt;/label>&gt;
+    &lt;input
+        type="number"
+        id="points"
+        name="points"
+        step="3"
+    />&gt;
+&lt;/form>&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Autofocus</td>
+                                    <td>
+                                        - Specifies that an input field should
+                                        automatically get focus when the page
+                                        loads
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="fname">
+                                                First name:
+                                            </label>
+                                            <br />
+                                            <input
+                                                type="text"
+                                                id="fname"
+                                                name="fname"
+                                            /><br />
+                                            <label for="lname">
+                                                Last name:
+                                            </label>
+                                            <br />
+                                            <input
+                                                type="text"
+                                                id="lname"
+                                                name="lname"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form&gt;
+    &lt;label for="fname"&gt;
+        First name:
+    &lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input
+        type="text"
+        id="fname"
+        name="fname"
+        autofocus
+    /&gt;
+    &lt;br /&gt;
+    &lt;label for="lname"&gt;
+        Last name:
+    &lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input
+        type="text"
+        id="lname"
+        name="lname"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Height & Width</td>
+                                    <td>
+                                        - Specify the height and width of an
+                                        <i
+                                            ><b><u>input type="image"</u></b></i
+                                        >
+                                        element
+                                        <br />
+                                        - Always specify both the height and
+                                        width attributes for images
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <label for="fname">
+                                                First name:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="fname"
+                                                name="fname"
+                                            />
+                                            <br />
+                                            <br />
+                                            <label for="lname">
+                                                Last name:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="lname"
+                                                name="lname"
+                                            />
+                                            <br />
+                                            <br />
+                                            <input
+                                                type="image"
+                                                src="img_submit.gif"
+                                                alt="Submit"
+                                                width="48"
+                                                height="48"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form&gt;
+    &lt;label for="fname"&gt;
+        First name:
+    &lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;label for="lname"&gt;
+        Last name:
+    &lt;/label&gt;
+    &lt;input type="text" id="lname" name="lname"&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>List</td>
+                                    <td>
+                                        Refers to a
+                                        <i
+                                            ><b><u>datalist</u></b></i
+                                        >
+                                        element that contains pre-defined
+                                        options for an
+                                        <i
+                                            ><b><u>input</u></b></i
+                                        >
+                                        element
+                                    </td>
+                                    <td>
+                                        <form>
+                                            <input list="browsers" />
+                                            <datalist id="browsers">
+                                                <option value="Edge"></option>
+                                                <option
+                                                    value="Firefox"
+                                                ></option>
+                                                <option value="Chrome"></option>
+                                                <option value="Opera"></option>
+                                                <option value="Safari"></option>
+                                            </datalist>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form&gt;
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+    &lt;option value="Edge"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Opera"&gt;
+    &lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Autocomplete</td>
+                                    <td>
+                                        - Specifies whether a form or an input
+                                        field should have autocomplete on or of
+                                        <br />
+                                        - When a user starts to type in a field,
+                                        the browser should display options to
+                                        fill in the field, based on earlier
+                                        typed values
+                                        <br />
+                                        - Works with
+                                        <i
+                                            ><b><u>form</u></b></i
+                                        >
+                                        and text, search, url, tel, email,
+                                        password, datepickers, range, and color
+                                    </td>
+                                    <td>
+                                        <form
+                                            action="/action_page.php"
+                                            autocomplete="on"
+                                        >
+                                            <label for="fname">
+                                                First name:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="fname"
+                                                name="fname"
+                                            />
+                                            <br />
+                                            <br />
+                                            <label for="lname">
+                                                Last name:
+                                            </label>
+                                            <input
+                                                type="text"
+                                                id="lname"
+                                                name="lname"
+                                            />
+                                            <br />
+                                            <br />
+                                            <label for="email"> Email: </label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                autocomplete="off"
+                                            />
+                                            <br />
+                                            <br />
+                                            <input
+                                                type="submit"
+                                                value="Submit"
+                                            />
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;
+    &lt;label for="fname"&gt;
+        First name:
+    &lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;label for="lname"&gt;
+        Last name:
+    &lt;/label&gt;
+    &lt;input type="text" id="lname" name="lname"&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;
+        Email:
+    &lt;/label&gt;
+    &lt;input type="email" id="email" name="email" autocomplete="off"&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                                    </td>
+                                </tr>
                             </table>
                         </ul>
-
-                        <li class="sub-title">text area</li>
-                        <li class="sub-title">button</li>
-                        <li class="sub-title">select</li>
-                        <li class="sub-title">option</li>
-                        <li class="sub-title">fieldset</li>
-                        <li class="sub-title">label</li>
-                        <li class="sub-title">output</li>
                     </ul>
                 </ul>
-                <ul>
-                    <li class="sub-title">Fieldset</li>
-                    <li class="sub-title">Input</li>
-                    <li class="sub-title">Label</li>
-                    <li class="sub-title">Legend</li>
-                    <li class="sub-title">Option</li>
-                    <li class="sub-title">Output</li>
-                </ul>
-                <li class="sub-title">Lists</li>
+
+                <li class="title">Lists</li>
                 <ul>
                     <li class="sub-title">Unordered List</li>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code><ul>
+                                                <li>Onion</li>
+                                                <li>Garlic</li>
+                                                <li>Potatoes</li>
+                                                <li>Green Peppers</li>                                            
+                                            </ul></code></pre>
+                        </div>
+                        <div class="column">
+                            <h4>Output</h4>
+                            <pre><code>&lt;ul&gt;
+    &lt;li>Onion&lt;/li&gt;
+    &lt;li>Garlic&lt;/li&gt;
+    &lt;li>Potatoes&lt;/li&gt;
+    &lt;li>Green Peppers&lt;/li&gt;                                            
+&lt;/ul&gt;</code></pre>
+                        </div>
+                    </div>
                     <ul>
                         <li class="sub-sub-title">Menu</li>
                     </ul>
                     <li class="sub-title">Ordered List</li>
-                    <li class="sub-title">List Item</li>
-                </ul>
-                <li class="title">Body</li>
-                <ul></ul>
-                <li class="title">Head</li>
-                <ul></ul>
-                <li class="title">Formatting</li>
-                <ul>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code><ol>
+                                                        <li>Mercury</li>
+                                                        <li>Venus</li>
+                                                        <li>Earth</li>
+                                                        <li>Mars</li>
+                                                        <li>Jupiter</li>
+                                                        <li>Saturn</li>
+                                                        <li>Uranus</li>
+                                                        <li>Neptune</li>
+                                                    </ol></code></pre>
+                        </div>
+                        <div class="column">
+                            <h4>Output</h4>
+                            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Mercury&lt;/li&gt;
+    &lt;li&gt;Venus&lt;/li&gt;
+    &lt;li&gt;Earth&lt;/li&gt;
+    &lt;li&gt;Mars&lt;/li&gt;
+    &lt;li&gt;Jupiter&lt;/li&gt;
+    &lt;li&gt;Saturn&lt;/li&gt;
+    &lt;li&gt;Uranus&lt;/li&gt;
+    &lt;li&gt;Neptune&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        </div>
+                    </div>
+                    <li class="sub-title">Description List</li>
                     <ul>
-                        <li class="sub-title">Bold</li>
+                        <li>
+                            &lt;dl&gt; defines a description List
+                            <br />
+                            &lt;dt&gt; defines the term Name
+                            <br />
+                            &lt;dd&gt; defines the description
+                        </li>
                     </ul>
-                    <li class="sub-title">Italic</li>
-                    <li class="sub-title">Emphasis</li>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code><dl>
+                                                <dt>Agar</dt>
+                                                <dd>A Jelly like dish made using seaweed</dd>
+                                                <dt>Custard</dt>
+                                                <dd>A soft pudding made using cornstarch</dd>
+                                            </dl></code></pre>
+                        </div>
+                        <div class="column">
+                            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Agar&lt;/dt&gt;
+    &lt;dd&gt;A Jelly like dish made using seaweed&lt;/dd&gt;
+    &lt;dt&gt;Custard&lt;/dt&gt;
+    &lt;dd&gt;A soft pudding made using cornstarch&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                        </div>
+                    </div>
                 </ul>
-                <li class="title">Button</li>
-                <ul></ul>
-                <li class="title">Quote</li>
-                <ul></ul>
-                <li class="title">Code</li>
-                <ul></ul>
-            </ul>
-        </div>
-        <div>
-            <h3>Forms</h3>
-            <ul>
-                <li class="title">Basic Form</li>
-                <pre><code>&lt;div&gt;
+
+                <div>
+                    <h3>Forms</h3>
+                    <ul>
+                        <li class="title">Basic Form</li>
+                        <pre><code>&lt;div&gt;
 &lt;form id="form1"&gt;
-    &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br /&gt;
-    &lt;input type="text" id="fname" name="fname" value="John" /&gt;&lt;br /&gt;
-    &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br /&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;input type="text" id="fname" name="fname" value="John" /&gt;
+    &lt;br /&gt;
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+    &lt;br /&gt;
     &lt;input type="text" id="lname" name="lname" value="Doe" /&gt;
 &lt;/form&gt;
 &lt;br /&gt;
 &lt;button type="submit"&gt;Submit&lt;/button&gt;
 &lt;/div&gt;</code></pre>
-            </ul>
-            <h3>CSS Rows & Columns</h3>
-            <div class="row">
-                <div class="column">
-                    <h4>Code</h4>
-                    <pre><code><span class="comment">// HTML</span>
+                    </ul>
+                    <h3>CSS Rows & Columns</h3>
+                    <div class="row">
+                        <div class="column">
+                            <h4>Code</h4>
+                            <pre><code><span class="comment">// HTML</span>
 &lt;div class="row"&gt;
     &lt;div class="column"&gt;
         &lt;h4&gt;Code&lt;/h4&gt;
@@ -2447,28 +3033,30 @@ tr:nth-child(1) {
     width: 50%;
     margin: 0 15px;
 }</code></pre>
-                </div>
-                <div class="column">
-                    <h4>Output</h4>
-                    <div class="row">
-                        <div class="column output-column">
-                            <div>
-                                <h4>Code</h4>
-                                This is column 1
-                                <br />. <br />. <br />. <br />. <br />. <br />.
-                                <br />.
-                            </div>
                         </div>
-                        <div class="column output-column">
-                            <div>
-                                <h4>Output</h4>
-                                This is column 2 <br />. <br />. <br />. <br />.
-                                <br />. <br />. <br />.
+                        <div class="column">
+                            <h4>Output</h4>
+                            <div class="row">
+                                <div class="column output-column">
+                                    <div>
+                                        <h4>Code</h4>
+                                        This is column 1
+                                        <br />. <br />. <br />. <br />. <br />.
+                                        <br />. <br />.
+                                    </div>
+                                </div>
+                                <div class="column output-column">
+                                    <div>
+                                        <h4>Output</h4>
+                                        This is column 2 <br />. <br />. <br />.
+                                        <br />. <br />. <br />. <br />.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </ul>
         </div>
         <!-- Through GitHub -->
         <!-- <script src="https://nzscode.github.io/Snippets-HTML/snippets-html.js"></script>
