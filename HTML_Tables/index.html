@@ -3,12 +3,68 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
+
         <title>HTML Tables</title>
     </head>
     <body>
-        <h1>HTML Tables</h1>
-        <h2>Basic Table(Basic CSS)</h2>
+        <h1>
+            <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+            HTML Tables
+        </h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+            >
+            <section id="nav">
+                <p>Basic Table</p>
+                <ul>
+                    <li><a href="#Basic_Table">Basic Table</a></li>
+                    <li><a href="#Default_Table_CSS">Default Table CSS</a></li>
+                </ul>
+                <p>Default CSS</p>
+                <ul>
+                    <li>
+                        <a href="#Default_Table_CSS">Table CSS</a>
+                    </li>
+                    <li><a href="#Default_TH_CSS">Table Header CSS</a></li>
+                    <li><a href="#Default_TR_CSS">Table Row CSS</a></li>
+                    <li><a href="#Default_TD_CSS">Table Cell CSS</a></li>
+                </ul>
+                <p>Table Snippets</p>
+                <ul>
+                    <li>
+                        <a href="#Border_Around_Table">Border Around Table</a>
+                    </li>
+                    <li>
+                        <a href="#Header_Cells_BGColor"
+                            >Header Cells Background Color</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#BGColor_Odd_Cells"
+                            >Background Color for Odd Cells</a
+                        >
+                    </li>
+                    <li><a href="#Padding_TH_TD">Padding Around TH & TD</a></li>
+                    <li>
+                        <a href="#Different_Colors_TH_TD"
+                            >Different Colors for TH & TD</a
+                        >
+                    </li>
+                    <li><a href="#Merging_Cells">Merging Cells</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <h2 id="Basic_Table">Basic Table(Basic CSS)</h2>
         <div class="container">
             <div class="row col_header">
                 <div class="col30">Example</div>
@@ -51,7 +107,7 @@ table#table1 td {
             </div>
         </div>
         <div>
-            <h2>Default CSS for Tables</h2>
+            <h2 id="Default_Table_CSS">Default CSS for Tables</h2>
             <pre><code>table {
 display: table;
 border-collapse: separate;
@@ -60,7 +116,7 @@ border-color: gray;
 }</code></pre>
         </div>
         <div>
-            <h2>CSS Snippets for Tables</h2>
+            <h2 id="Table_Snippets_CSS">CSS Snippets for Tables</h2>
             <ul>
                 <li>
                     When adding a CSS property to a table using the table ID:
@@ -104,7 +160,9 @@ border-color: gray;
                 </li>
             </ul>
             <section>
-                <h3>Adding a border around the whole table</h3>
+                <h3 id="Border_Around_Table">
+                    Adding a border around the whole table
+                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table2">
@@ -134,7 +192,9 @@ border-color: gray;
                 </div>
             </section>
             <section>
-                <h3>Giving the Header cells a Background color</h3>
+                <h3 id="Header_Cells_BGColor">
+                    Giving the Header cells a Background color
+                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table3">
@@ -164,7 +224,9 @@ border-color: gray;
                 </div>
             </section>
             <section>
-                <h3>Coloring only odd rows that are not header rows</h3>
+                <h3 id="#BGColor_Odd_Cells">
+                    Coloring only odd rows that are not header rows
+                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table4">
@@ -206,7 +268,9 @@ table#table4 tr:nth-child(1) {
                 </div>
             </section>
             <section>
-                <h3>Adding padding around &lt;th&gt; and &lt;td&gt;</h3>
+                <h3 id="#Padding_TH_TD">
+                    Adding padding around &lt;th&gt; and &lt;td&gt;
+                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table5">
@@ -248,7 +312,7 @@ table#table5 td {
                 </div>
             </section>
             <section>
-                <h3>
+                <h3 id="Different_Colors_TH_TD">
                     Making the &lt;th&gt; cells have a pale yellow color and the
                     odd &lt;td&gt; cells have a pale green color
                 </h3>
@@ -293,41 +357,47 @@ table#table6 th {
                 </div>
             </section>
             <section>
-                <h3>Merging Cells</h3>
-                <div class="row">
-                    <div class="col25 col_header">Example</div>
-                    <div class="col35 col_header">HTML</div>
-                    <div class="col35 col_header">CSS</div>
-                </div>
-                <div class="row">
-                    <div class="col25">
-                        <table id="table7">
-                            <tr>
-                                <th>Fruit</th>
-                                <th>Quantity</th>
-                            </tr>
-                            <tr>
-                                <td>Apple</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td class="merge_col" colspan="2">Cherries</td>
-                            </tr>
-                            <tr>
-                                <td>Banana</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td class="merge_row" rowspan="2">Orange</td>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                            </tr>
-                        </table>
+                <h3 id="Merging_Cells">Merging Cells</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col25 col_header">Example</div>
+                        <div class="col35 col_header">HTML</div>
+                        <div class="col35 col_header">CSS</div>
                     </div>
-                    <div class="col35">
-                        <pre><code>&lt;table id="table7"&gt;
+                    <div class="row">
+                        <div class="col25">
+                            <table id="table7">
+                                <tr>
+                                    <th>Fruit</th>
+                                    <th>Quantity</th>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td class="merge_col" colspan="2">
+                                        Cherries
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Banana</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td class="merge_row" rowspan="2">
+                                        Orange
+                                    </td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col35">
+                            <pre><code>&lt;table id="table7"&gt;
     &lt;tr&gt;
         &lt;th&gt;Fruit&lt;/th&gt;
         &lt;th&gt;Quantity&lt;/th&gt;
@@ -337,14 +407,16 @@ table#table6 th {
         &lt;td&gt;5&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;td class="merge_col" colspan="2"&gt;Cherries&lt;/td&gt;
+        &lt;td class="merge_col" colspan="2"
+            &gt;Cherries&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;Banana&lt;/td&gt;
         &lt;td&gt;10&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;td class="merge_row" rowspan="2"&gt;Orange&lt;/td&gt;
+        &lt;td class="merge_row" rowspan="2"
+            &gt;Orange&lt;/td&gt;
         &lt;td&gt;7&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -352,9 +424,9 @@ table#table6 th {
         &lt;td>4&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-                    </div>
-                    <div class="col35">
-                        <pre><code>table#table7,
+                        </div>
+                        <div class="col35">
+                            <pre><code>table#table7,
 table#table7 td {
     border: 2px solid black;
     padding: 15px;
@@ -363,12 +435,13 @@ table#table7 td {
 .merge_row {
     text-align: center;
 }</code></pre>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
         <section>
-            <h3>Table Header Default CSS</h3>
+            <h3 id="Default_TH_CSS">Table Header Default CSS</h3>
             <pre><code>th {
     display: table-cell;
     vertical-align: inherit;
@@ -377,7 +450,7 @@ table#table7 td {
 }</code></pre>
         </section>
         <section>
-            <h3>Table Row Default CSS</h3>
+            <h3 id="Default_TR_CSS">Table Row Default CSS</h3>
             <pre><code>tr {
     display: table-row;
     vertical-align: inherit;
@@ -385,7 +458,7 @@ table#table7 td {
 }</code></pre>
         </section>
         <section>
-            <h3>Table Cell Default CSS</h3>
+            <h3 id="Default_TD_CSS">Table Cell Default CSS</h3>
             <pre><code>td {
     display: table-cell;
     vertical-align: inherit;
