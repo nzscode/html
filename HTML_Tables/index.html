@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>HTML Tables</title>
+    </head>
+    <body>
+        <h1>HTML Tables</h1>
+        <h2>Basic Table(Basic CSS)</h2>
+        <div class="container">
+            <div class="row col_header">
+                <div class="col30">Example</div>
+                <div class="col30">HTML</div>
+                <div class="col30">CSS</div>
+            </div>
+            <div class="row">
+                <div class="col30">
+                    <br />
+                    <table id="table1">
+                        <tr>
+                            <th>Column Title 1</th>
+                            <th>Column Title 2</th>
+                        </tr>
+                        <tr>
+                            <td>Cell 1 (R2C1)</td>
+                            <td>Cell 2 (R2C2)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col30">
+                    <pre><code>&lt;table id="table1"&gt;
+    &lt;tr&gt;
+        &lt;th>Column Title 1&lt;/th&gt;
+        &lt;th>Column Title 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td>Cell 1 (R2C1)&lt;/td&gt;
+        &lt;td>Cell 2 (R2C2)&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+                <div class="col30">
+                    <pre><code>table#table1 table,
+table#table1 th,
+table#table1 td {
+    border: 1px solid black;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Default CSS for Tables</h2>
+            <pre><code>table {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}</code></pre>
+        </div>
+        <div>
+            <h2>CSS Snippets for Tables</h2>
+            <ul>
+                <li>
+                    When adding a CSS property to a table using the table ID:
+                    <ul>
+                        <li>
+                            If the property is for the whole table use
+                            <i
+                                ><u><b>table#tableID</b></u></i
+                            >
+                        </li>
+                        <pre><code>table#table3{
+}</code></pre>
+                        <li>
+                            If the property is for the &lt;tr&gt; or &lt;th&gt;
+                            or &lt;td&gt; use
+                            <i
+                                ><u><b>table#tableID th</b></u></i
+                            >
+                        </li>
+                        <pre><code>table#table3 th{
+}</code></pre>
+                        <li>
+                            If the property is for odd/even columns or rows use
+                            <i
+                                ><u><b>table#tableID:nth child(odd)</b></u></i
+                            >
+                        </li>
+                        <pre><code>table#tableID:nth child(odd){
+}</code></pre>
+                        <li>
+                            If the property is for a specific row or column use
+                            <i
+                                ><u><b>table#tableID td:nth child(2).</b></u></i
+                            >
+                            <br />
+                            This will change the 2nd of the &lt;td&gt;
+                        </li>
+                        <pre><code>table#table3 td:nth child(2){
+}</code></pre>
+                    </ul>
+                </li>
+            </ul>
+            <section>
+                <h3>Adding a border around the whole table</h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table2">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table {
+    border: 2px solid #000fff;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Giving the Header cells a Background color</h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table3">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table3 th {
+    background-color: aqua;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Coloring only odd rows that are not header rows</h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table4">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table4 tr:nth-of-type(odd) {
+    background-color: #bcb7f0;
+}
+
+table#table4 tr:nth-child(1) {
+    background: none;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Adding padding around &lt;th&gt; and &lt;td&gt;</h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table5">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table5 tr:nth-of-type(odd) {
+    background-color: #bcb7f0;
+}
+table#table5 th,
+table#table5 td {
+    padding: 15px;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>
+                    Making the &lt;th&gt; cells have a pale yellow color and the
+                    odd &lt;td&gt; cells have a pale green color
+                </h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table6">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table6 tr:nth-of-type(even) {
+    background-color: #f8f4b2;
+}
+
+table#table6 th {
+    background-color: rgb(184, 242, 184);
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Merging Cells</h3>
+                <div class="row">
+                    <div class="col25 col_header">Example</div>
+                    <div class="col35 col_header">HTML</div>
+                    <div class="col35 col_header">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col25">
+                        <table id="table7">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td class="merge_col" colspan="2">Cherries</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td class="merge_row" rowspan="2">Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col35">
+                        <pre><code>&lt;table id="table7"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Fruit&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Apple&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="merge_col" colspan="2"&gt;Cherries&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Banana&lt;/td&gt;
+        &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class="merge_row" rowspan="2"&gt;Orange&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        
+        &lt;td>4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                    <div class="col35">
+                        <pre><code>table#table7,
+table#table7 td {
+    border: 2px solid black;
+    padding: 15px;
+}
+.merge_col,
+.merge_row {
+    text-align: center;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section>
+            <h3>Table Header Default CSS</h3>
+            <pre><code>th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}</code></pre>
+        </section>
+        <section>
+            <h3>Table Row Default CSS</h3>
+            <pre><code>tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}</code></pre>
+        </section>
+        <section>
+            <h3>Table Cell Default CSS</h3>
+            <pre><code>td {
+    display: table-cell;
+    vertical-align: inherit;
+}</code></pre>
+        </section>
+
+        <script src="./HTML_Tables.js"></script>
+    </body>
+</html>
