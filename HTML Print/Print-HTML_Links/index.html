@@ -3,87 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet"
-        />
-
         <link rel="stylesheet" href="style.css" />
 
         <title>HTML Links</title>
     </head>
     <body>
-        <header>
-            <h1>
-                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                HTML Links
-            </h1>
-            <div id="mySidenav" class="sidenav">
-                <a
-                    href="javascript:void(0)"
-                    class="closebtn"
-                    onclick="closeNav()"
-                    >&times;</a
-                >
-                <nav id="nav">
-                    <p>Basic Links</p>
-                    <ul>
-                        <li><a href="#Basic_Hyperlink">Basic Hyperlink</a></li>
-                        <li><a href="#Basic_Link">Basic Link</a></li>
-                    </ul>
-                    <p>Default CSS</p>
-                    <ul>
-                        <li>
-                            <a href="#Default_Hyperlink_CSS"
-                                >Default Hyperlink CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#Default_Link_CSS">Default Link CSS</a>
-                        </li>
-                    </ul>
-
-                    <p>Hyperlink Attributes</p>
-
-                    <ul>
-                        <li>
-                            <a href="#Hyperlink_Attributes"
-                                >Hyperlink Attributes</a
-                            >
-                        </li>
-
-                        <li>
-                            <a href="#Hyperlink_Download">Hyperlink Download</a>
-                        </li>
-                        <li><a href="#Hyperlink_Href">Hyperlink Href</a></li>
-                        <li><a href="#Hyperlink_Rel">Hyperlink Rel</a></li>
-                        <li>
-                            <a href="#Hyperlink_Target">Hyperlink Target</a>
-                        </li>
-                        <li><a href="#Hyperlink_Type">Hyperlink Type</a></li>
-                    </ul>
-                    <p>Link Attributes</p>
-                    <ul>
-                        <li><a href="#Link_Attributes">Link Attributes</a></li>
-                        <li><a href="#Link_Href">Link Href</a></li>
-                        <li><a href="#Link_Rel">Link Rel</a></li>
-                        <li><a href="#Link_Size">Link Size</a></li>
-                        <li><a href="#Link_Type">Link Type</a></li>
-                    </ul>
-
-                    <p>Link Snippets</p>
-                    <ul>
-                        <li>
-                            <a href="#Border_Around_Table"
-                                >Border Around Table</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <h1>HTML Links</h1>
         <article>
             <h2 id="Basic_Table">Basic Hyperlink</h2>
             <div class="container">
@@ -121,13 +46,10 @@
             </div>
         </article>
         <hr />
-        <hr />
         <article>
             <h2>Default CSS</h2>
             <div>
-                <h3 id="Default_Hyperlink_CSS" rev="bookmark">
-                    Default CSS for Hyperlinks
-                </h3>
+                <h3 id="Default_Hyperlink_CSS">Default CSS for Hyperlinks</h3>
                 <pre><code>a:link {
     color: (internal value);
     text-decoration: underline;
@@ -155,7 +77,6 @@ a:visited:active {
 }</code></pre>
             </div>
         </article>
-        <hr />
         <hr />
         <article>
             <h2 id="#Hyperlink_Attributes">Hyperlink Attributes</h2>
@@ -351,11 +272,11 @@ a:visited:active {
                     </div>
                 </div>
                 <div>
-                    <h3 id="#Hyperlink_Rel">Hyperlink Download</h3>
+                    <h3 id="#Hyperlink_Rel">Hyperlink Rel</h3>
                     <ul>
                         <li>
-                            Specifies that the target will be downloaded when
-                            the hyperlink is clicked
+                            Specifies the relationship between the current
+                            document and the linked document
                         </li>
                         <li>
                             Only used if the <i>href</i> attribute is present
@@ -380,75 +301,7 @@ a:visited:active {
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <h3 id="#Hyperlink_Rel">Hyperlink Rel</h3>
-                    <ul>
-                        <li>
-                            Specifies the relationship between the current
-                            document and the linked document
-                        </li>
-                        <li>Only helpful for SEO</li>
-                        <li>Not every link needs to be defined</li>
-                        <li>
-                            Only used if the <i>href</i> attribute is present
-                        </li>
-                        <ul>
-                            Possible values:
-                            <li>
-                                Alternate: Provides a link to an alternate
-                                representation of the document (i.e. print page,
-                                translated or mirror)
-                            </li>
-                            <li>
-                                Author: Provides a link to the author of the
-                                document
-                            </li>
-                            <li>
-                                Bookmark: Permanent URL used for bookmarking
-                            </li>
-                            <li>
-                                External: Indicates that the referenced document
-                                is not part of the same site as the current
-                                document
-                            </li>
-                            <li>Help: Provides a link to a help document</li>
-                            <li>
-                                License: Provides a link to licensing
-                                information for the document
-                            </li>
-                            <li>
-                                Next: Provides a link to the next document in
-                                the series
-                            </li>
-                            <li>
-                                NoFollow: Links to an unendorsed document, like
-                                a paid link.
-                                <br />
-                                ("nofollow" is used by Google, to specify that
-                                the Google search spider should not follow that
-                                link)
-                            </li>
-                            <li>
-                                NoOpener: Requires that any browsing context
-                                created by following the hyperlink must not have
-                                an opener browsing context
-                            </li>
-                            <li>
-                                NoReferrer: Makes the referrer unknown. No
-                                referer header will be included when the user
-                                clicks the hyperlink
-                            </li>
-                            <li>Prev: The previous document in a selection</li>
-                            <li>
-                                Search: Links to a search tool for the document
-                            </li>
-                            <li>
-                                Tag: A tag (keyword) for the current document
-                            </li>
-                        </ul>
-                    </ul>
                     <div class="container">
                         <div class="row col_header">
                             <div class="col15">Example</div>
@@ -457,39 +310,29 @@ a:visited:active {
                         <div class="row">
                             <div class="col15">
                                 <br />
-                                <a
-                                    href="https://nzscode.github.io/Snippets-HTML/HTML_Print_Links"
+                                <a href="" rel="alternate"
                                     >Alternate Print Page</a
                                 >
-                                <a
-                                    href="../HTML Print/Print-HTML_Links/index.html"
-                                    rel="alternate"
-                                    >Alternate Print Page - l</a
+                                <br /><br /><br /><br />
+                                <a href="" rel="author">Author: J.K.Rowling</a>
+                                <br /><br /><br /><br />
+                                <a href="" rel="bookmark"
+                                    >Bookmark: Favorite Quote</a
                                 >
                                 <br /><br /><br /><br />
-                                <a
-                                    href="https://en.wikipedia.org/wiki/J._K._Rowling"
-                                    rel="author"
-                                    >Author: J.K.Rowling</a
-                                >
+                                <a href="" rel="external">External</a>
                                 <br /><br /><br /><br />
-                                <a href="#Default_Hyperlink_CSS" rel="bookmark"
-                                    >Bookmark: Default Hyperlink CSS</a
-                                >
-                                <br /><br /><br /><br />
-                                <a
-                                    href="https://nzscode.github.io/Snippets-HTML/HTML_Print/FAQ"
-                                    >Help</a
-                                >
-                                <a
-                                    href="../HTML Print/FAQ/index.html"
-                                    rel="help"
-                                    >Help - l
-                                </a>
+                                <a href="" rel="help">Help </a>
                                 <br /><br /><br /><br />
                                 <a href="" rel="license">License</a>
                                 <br /><br /><br /><br />
                                 <a href="" rel="next">Next</a>
+                                <br /><br /><br /><br />
+                                <a href="" rel="nofollow">No Follow</a>
+                                <br /><br /><br /><br />
+                                <a href="" rel="noopener">No Opener</a>
+                                <br /><br /><br /><br />
+                                <a href="" rel="noreferrer">No Referrer</a>
                                 <br /><br /><br /><br />
                                 <a href="" rel="prev">Previous</a>
                                 <br /><br /><br /><br />
@@ -497,11 +340,25 @@ a:visited:active {
                                 <br /><br /><br /><br />
                                 <a href="" rel="tag">Tag</a>
                             </div>
+                            <div class="col75">
+                                <ul>
+                                    <li>
+                                        With the stylesheet keyword on a
+                                        &lt;link&gt;, it creates an alternate
+                                        stylesheet.
+                                        <pre><code>
+
+                                        </code></pre>
+                                    </li>
+                                </ul>
+                                <pre><code>&lt;a href="../images/img.png" download="Image"&gt;
+    Download Image
+&lt;/a&gt;</code></pre>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <hr />
             <hr />
         </article>
         <article>

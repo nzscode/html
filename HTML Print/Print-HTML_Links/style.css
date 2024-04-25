@@ -1,0 +1,102 @@
+/* Page */
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0px;
+    padding: 15px;
+}
+h1 {
+    border-radius: 5px;
+}
+h2 {
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+}
+h3 {
+    border-radius: 5px;
+    padding: 3px 15px;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+}
+.col15,
+.col30,
+.col40,
+.col50,
+.col75 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.col15 {
+    width: 15%;
+}
+
+.col30 {
+    width: 30%;
+}
+
+.col40 {
+    width: 40%;
+}
+
+.col50 {
+    width: 50%;
+}
+.col75 {
+    width: 75%;
+}
+
+.col_header {
+    text-align: center;
+    border-radius: 5px;
+}
+
+pre {
+    /* background-color: #20262b; */
+    color: #000;
+    padding-left: 10px;
+    width: auto;
+    border-radius: 5px;
+}
+
+table {
+    margin-left: 30px;
+    border: 1px solid black;
+    padding: 5px;
+}
+td {
+    padding: 10px;
+}
+th {
+    background-color: #00000045;
+    padding: 10px;
+    font-size: 15px;
+}
+
+td:nth-child(1) {
+    padding: 0px 15px;
+}
+
+tr:nth-of-type(even) {
+    background-color: #00000017;
+}
+
+hr {
+    border: 2px solid #000;
+}
+
+/* table#table2 tr:nth-child(even) {
+    background-color: rgb(158, 236, 236);
+} */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
