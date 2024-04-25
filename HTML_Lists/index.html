@@ -3,10 +3,281 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
-        <title>HTML Lists</title>
+
+        <title>HTML Tables</title>
     </head>
     <body>
+        <header>
+            <!-- Nav Menu -->
+            <!-- Nav Hanmburger -->
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML Lists
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav">
+                    <p>Basic Lists</p>
+                    <ul>
+                        <li><a href="#Ordered_Lists">Ordered Lists</a></li>
+                        <li><a href="#Unordered_Lists">Unordered Lists</a></li>
+                        <li>
+                            <a href="#Description_Lists">Description Lists</a>
+                        </li>
+                        <li><a href="#List_Item">List Item</a></li>
+                        <li>
+                            <a href="#Description_Term">Description Term</a>
+                        </li>
+                        <li>
+                            <a href="#Description_Definition"
+                                >Description Definition</a
+                            >
+                        </li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li>
+                            <a href="#Default_OL_CSS">Default &lt;ol&gt; CSS</a>
+                        </li>
+                        <li>
+                            <a href="#Default_UL_CSS">Default &lt;ul&gt; CSS</a>
+                        </li>
+                        <li>
+                            <a href="#Default_DL_CSS">Default &lt;dl&gt; CSS</a>
+                        </li>
+                        <li>
+                            <a href="#Default_LI_CSS">Default &lt;li&gt; CSS</a>
+                        </li>
+                        <li>
+                            <a href="#Default_DT_CSS">Default &lt;dt&gt; CSS</a>
+                        </li>
+                        <li>
+                            <a href="#Default_DD_CSS">Default &lt;dd&gt; CSS</a>
+                        </li>
+                    </ul>
+                    <p>List Snippets</p>
+                    <ul>
+                        <li>
+                            <a href="#Removing Bullets">Removing Bullets</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <section>
+                <h2 id="#Ordered_Lists">Ordered Lists</h2>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col50">Example</div>
+                        <div class="col50">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col50">
+                            <pre><ol class="n1">
+                                    <li>Mercury</li>
+                                    <li>Venus</li>
+                                    <li>Earth</li>
+                                    <li>Mars</li>
+                                    <li>Jupiter</li>
+                                    <li>Saturn</li>
+                                    <li>Uranus</li>
+                                    <li>Neptune</li>
+                                    </ol></pre>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Mercury&lt;/li&gt;
+    &lt;li&gt;Venus&lt;/li&gt;
+    &lt;li&gt;Earth&lt;/li&gt;
+    &lt;li&gt;Mars&lt;/li&gt;
+    &lt;li&gt;Jupiter&lt;/li&gt;
+    &lt;li&gt;Saturn&lt;/li&gt;
+    &lt;li&gt;Uranus&lt;/li&gt;
+    &lt;li&gt;Neptune&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 id="#Unordered_Lists">Unordered Lists</h2>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col50">Example</div>
+                        <div class="col50">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col50">
+                            <pre><ul>
+                                    <li>Onion</li>
+                                    <li>Garlic</li>
+                                    <li>Potatoes</li>
+                                    <li>Green Peppers</li>
+                                </ul></pre>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;ul&gt;
+    &lt;li&gt;Onion&lt;/li&gt;
+    &lt;li&gt;Garlic&lt;/li&gt;
+    &lt;li&gt;Potatoes&lt;/li&gt;
+    &lt;li&gt;Green Peppers&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="#Description_Lists">Description Lists</h2>
+                <ul>
+                    <li>&lt;dl&gt; defines a description List</li>
+                    <li>&lt;dt&gt; defines the term Name</li>
+                    <li>&lt;dd&gt; defines the description</li>
+                </ul>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col50">Example</div>
+                        <div class="col50">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col50">
+                            <pre><dl>
+                                <dt>Agar</dt>
+                                <dd>A Jelly like dish made using seaweed</dd>
+                                <dt>Custard</dt>
+                                <dd>A soft pudding made using cornstarch</dd>
+                            </dl></pre>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;dl&gt;
+    &lt;dt&gt;Agar&lt;/dt&gt;
+    &lt;dd&gt;A Jelly like dish made using seaweed&lt;/dd&gt;
+    &lt;dt&gt;Custard&lt;/dt&gt;
+    &lt;dd&gt;A soft pudding made using cornstarch&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <hr />
+        <hr />
+        <!-- CSS Snippets -->
+        <article>
+            <div>
+                <h2 id="List_Snippets_CSS">CSS Snippets for Lists</h2>
+                <ul>
+                    <li>
+                        Removing &lt;li&gt; bullets:
+                        <ul>
+                            <pre><code>ul {
+                list-style-type: none;
+            }</code></pre>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <hr />
+        <hr />
+        <article>
+            <div>
+                <h2 id="Default_OL_CSS">Default CSS for Ordered Lists</h2>
+                <pre><code>ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}</code></pre>
+            </div>
+            <div>
+                <h2 id="Default_UL_CSS">Default CSS for Unordered Lists</h2>
+                <pre><code>ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}</code></pre>
+            </div>
+            <div>
+                <h2 id="Default_DL_CSS">Default CSS for Description Lists</h2>
+                <pre><code>dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}</code></pre>
+            </div>
+            <div>
+                <h2 id="Default_LI_CSS">Default CSS for List Items</h2>
+                <pre><code>li {
+    display: list-item;
+}</code></pre>
+            </div>
+            <div>
+                <h2 id="Default_DT_CSS">Default CSS for Description Term</h2>
+                <pre><code>dt {
+    display: block;
+    margin-left: 40px;
+}</code></pre>
+            </div>
+            <div>
+                <h2 id="Default_DD_CSS">
+                    Default CSS for Description Definition
+                </h2>
+                <pre><code>dd {
+    display: block; 
+}</code></pre>
+            </div>
+        </article>
+
+        <!-- Bottom Links -->
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
+                        >HTML Snippets Tables</a
+                    >
+                    <br />
+                    <a href="../HTML_Tables/index.html"
+                        >HTML Snippets Tables - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
+
+        <!-- Scripts -->
         <script src="./HTML_Lists.js"></script>
     </body>
 </html>

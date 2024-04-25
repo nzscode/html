@@ -3,10 +3,434 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
+
         <title>HTML Links</title>
     </head>
     <body>
+        <header>
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML Links
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>Basic Links</p>
+                    <ul>
+                        <li><a href="#Basic_Hyperlink">Basic Hyperlink</a></li>
+                        <li><a href="#Basic_Link">Basic Link</a></li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li>
+                            <a href="#Default_Hyperlink_CSS"
+                                >Default Hyperlink CSS</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#Default_Link_CSS">Default Link CSS</a>
+                        </li>
+                    </ul>
+
+                    <p>Hyperlink Attributes</p>
+
+                    <ul>
+                        <li>
+                            <a href="#Hyperlink_Attributes"
+                                >Hyperlink Attributes</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#Hyperlink_Download">Hyperlink Download</a>
+                        </li>
+                        <li><a href="#Hyperlink_Href">Hyperlink Href</a></li>
+                        <li><a href="#Hyperlink_Rel">Hyperlink Rel</a></li>
+                        <li>
+                            <a href="#Hyperlink_Target">Hyperlink Target</a>
+                        </li>
+                        <li><a href="#Hyperlink_Type">Hyperlink Type</a></li>
+                    </ul>
+                    <p>Link Attributes</p>
+                    <ul>
+                        <li><a href="#Link_Attributes">Link Attributes</a></li>
+                        <li><a href="#Link_Href">Link Href</a></li>
+                        <li><a href="#Link_Rel">Link Rel</a></li>
+                        <li><a href="#Link_Size">Link Size</a></li>
+                        <li><a href="#Link_Type">Link Type</a></li>
+                    </ul>
+
+                    <p>Link Snippets</p>
+                    <ul>
+                        <li>
+                            <a href="#Border_Around_Table"
+                                >Border Around Table</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article>
+            <h2 id="Basic_Table">Basic Hyperlink</h2>
+            <div class="container">
+                <div class="row col_header">
+                    <div class="col50">Example</div>
+                    <div class="col50">HTML</div>
+                </div>
+                <div class="row">
+                    <div class="col50">
+                        <br />
+                        <a href="httpe://www.google.ca">Google</a>
+                    </div>
+                    <div class="col50">
+                        <pre><code>&lt;a href="httpe://www.google.ca"&gt;Google&lt;/a&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2 id="Basic_Table">Basic Link</h2>
+            <div class="container">
+                <div class="row col_header">
+                    <div class="col50">Example</div>
+                    <div class="col50">HTML</div>
+                </div>
+                <div class="row">
+                    <div class="col50">
+                        <br />
+                        <link rel="stylesheet" href="style.css" />
+                    </div>
+                    <div class="col50">
+                        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <hr />
+        <hr />
+        <article>
+            <h2>Default CSS</h2>
+            <div>
+                <h3 id="Default_Hyperlink_CSS">Default CSS for Hyperlinks</h3>
+                <pre><code>a:link {
+    color: (internal value);
+    text-decoration: underline;
+    cursor: auto;
+}
+
+a:visited {
+    color: (internal value);
+    text-decoration: underline;
+    cursor: auto;
+}
+
+a:link:active {
+    color: (internal value);
+}
+
+a:visited:active {
+    color: (internal value);
+}</code></pre>
+            </div>
+            <div>
+                <h3 id="Default_Link_CSS">Default CSS for Links</h3>
+                <pre><code>link {
+    display: none;
+}</code></pre>
+            </div>
+        </article>
+        <hr />
+        <hr />
+        <article>
+            <h2 id="#Hyperlink_Attributes">Hyperlink Attributes</h2>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#Hyperlink_Download">download</a></td>
+                            <td>filename</td>
+                            <td>
+                                When the hyperlink is clicked a file will be
+                                downloaded
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>href</td>
+                            <td>URL</td>
+                            <td>Links to a webpage(url)</td>
+                        </tr>
+                        <tr>
+                            <td>rel</td>
+                            <td>tag, bookmark, external, next, prev...</td>
+                            <td>
+                                Links current document to another document and
+                                specifies the link
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>target</td>
+                            <td>_blank, _self, _top, _parent</td>
+                            <td>Specifies where to open the link</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <div>
+                    <h3 id="#Hyperlink_Download">Hyperlink Download</h3>
+                    <ul>
+                        <li>
+                            To Specify a new filename of the downloadable file
+                            add the attribute <i>download="newFileName"</i>
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col15">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="../images/img.png" download="Image">
+                                    Download Image
+                                </a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="../images/img.png" download="Image"&gt;
+    Download Image
+&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="#Hyperlink_Href">Hyperlink Href</h3>
+                    <ul>
+                        <li>To Specify a destination</li>
+                        <li>
+                            Without the &lt;<i>href</i>&gt; the &lt;a&gt; tag
+                            will not be a hyperlink
+                        </li>
+                        <ul>
+                            Possible values:
+                            <li>
+                                An absolute URL - points to another web site
+                                (like href="http://www.example.com/default.htm")
+                            </li>
+                            <li>
+                                A relative URL - points to a file within a web
+                                site (like href="default.htm")
+                            </li>
+                            <li>
+                                Link to an element with a specified id within
+                                the page (like href="#section2")
+                            </li>
+                            <li>
+                                Other protocols (like https://, ftp://, mailto:,
+                                file:, etc..)
+                            </li>
+                            <li>
+                                A script (like
+                                href="javascript:alert('Hello');")
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col15">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="https://www.google.ca">Google </a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="https://www.google.ca"&gt;Google &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="../HTML_Basics/index.html">
+                                    HTML Basics webpage
+                                </a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="../HTML_Basics/index.html"&gt;HTML Basics webpage &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="#ID1">ID 1 </a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="#ID1"&gt;ID 1 &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="javascript:alert('Hello')"
+                                    >Alert Hello</a
+                                >
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="javascript:alert('Hello')"&gt;Alert Hello &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="mailto:someone@example.com"
+                                    >Send E-Mail</a
+                                >
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send E-Mail &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="hhtps://www.google.ca"
+                                    ><img
+                                        src="../images/img.png"
+                                        alt="www.google.ca"
+                                        border="0"
+                                        width="50px"
+                                        height="50px"
+                                /></a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="hhtps://www.google.ca"&gt;
+        &lt;img
+            src="../images/img.png"
+            alt="www.google.ca"
+            border="0"
+            width="50px"
+            height="50px"
+    /&gt;
+&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="tel:+11234567890"&gt;+1 (123) 456-7890 &lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="#Hyperlink_Rel">Hyperlink Rel</h3>
+                    <ul>
+                        <li>
+                            Specifies the realtionship between the current
+                            document and the linked document
+                        </li>
+                        <li>
+                            Only used if the <i>href</i> attribute is present
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col15">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                <a href="../images/img.png" download="Image">
+                                    Download Image
+                                </a>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;a href="../images/img.png" download="Image"&gt;
+    Download Image
+&lt;/a&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr />
+            <hr />
+        </article>
+        <article>
+            <h2 id="Table_Snippets_CSS">CSS Snippets for Tables</h2>
+            <ul>
+                <li>
+                    When adding a CSS property to a table using the table ID:
+                    <ul>
+                        <li>
+                            If the property is for the whole table use
+                            <i
+                                ><u><b>table#tableID</b></u></i
+                            >
+                        </li>
+                        <pre><code>table#table3{
+}</code></pre>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Lists"
+                        >HTML Snippets Lists</a
+                    >
+                    <br />
+                    <a href="../HTML_Lists/index.html"
+                        >HTML Snippets Lists - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
+                        >HTML Snippets Tables</a
+                    >
+                    <br />
+                    <a href="../HTML_Tables/index.html"
+                        >HTML Snippets Tables - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
         <script src="./HTML_Links.js"></script>
     </body>
 </html>

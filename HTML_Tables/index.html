@@ -15,107 +15,152 @@
         <title>HTML Tables</title>
     </head>
     <body>
-        <h1>
-            <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-            HTML Tables
-        </h1>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-            >
-            <section id="nav">
-                <p>Basic Table</p>
-                <ul>
-                    <li><a href="#Basic_Table">Basic Table</a></li>
-                    <li><a href="#Default_Table_CSS">Default Table CSS</a></li>
-                </ul>
-                <p>Default CSS</p>
-                <ul>
-                    <li>
-                        <a href="#Default_Table_CSS">Table CSS</a>
-                    </li>
-                    <li><a href="#Default_TH_CSS">Table Header CSS</a></li>
-                    <li><a href="#Default_TR_CSS">Table Row CSS</a></li>
-                    <li><a href="#Default_TD_CSS">Table Cell CSS</a></li>
-                </ul>
-                <p>Table Snippets</p>
-                <ul>
-                    <li>
-                        <a href="#Border_Around_Table">Border Around Table</a>
-                    </li>
-                    <li>
-                        <a href="#Header_Cells_BGColor"
-                            >Header Cells Background Color</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#BGColor_Odd_Cells"
-                            >Background Color for Odd Cells</a
-                        >
-                    </li>
-                    <li><a href="#Padding_TH_TD">Padding Around TH & TD</a></li>
-                    <li>
-                        <a href="#Different_Colors_TH_TD"
-                            >Different Colors for TH & TD</a
-                        >
-                    </li>
-                    <li><a href="#Merging_Cells">Merging Cells</a></li>
-                </ul>
-            </section>
-        </div>
-
-        <h2 id="Basic_Table">Basic Table(Basic CSS)</h2>
-        <div class="container">
-            <div class="row col_header">
-                <div class="col30">Example</div>
-                <div class="col30">HTML</div>
-                <div class="col30">CSS</div>
+        <header>
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML Tables
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>Basic Table</p>
+                    <ul>
+                        <li><a href="#Basic_Table">Basic Table</a></li>
+                        <li>
+                            <a href="#Default_Table_CSS">Default Table CSS</a>
+                        </li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li>
+                            <a href="#Default_Table_CSS">Table CSS</a>
+                        </li>
+                        <li><a href="#Default_TH_CSS">Table Header CSS</a></li>
+                        <li><a href="#Default_TR_CSS">Table Row CSS</a></li>
+                        <li><a href="#Default_TD_CSS">Table Cell CSS</a></li>
+                    </ul>
+                    <p>Table Snippets</p>
+                    <ul>
+                        <li>
+                            <a href="#Border_Around_Table"
+                                >Border Around Table</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#Header_Cells_BGColor"
+                                >Header Cells Background Color</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#BGColor_Odd_Cells"
+                                >Background Color for Odd Cells</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#Padding_TH_TD">Padding Around TH & TD</a>
+                        </li>
+                        <li>
+                            <a href="#Different_Colors_TH_TD"
+                                >Different Colors for TH & TD</a
+                            >
+                        </li>
+                        <li><a href="#Merging_Cells">Merging Cells</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="row">
-                <div class="col30">
-                    <br />
-                    <table id="table1">
-                        <tr>
-                            <th>Column Title 1</th>
-                            <th>Column Title 2</th>
-                        </tr>
-                        <tr>
-                            <td>Cell 1 (R2C1)</td>
-                            <td>Cell 2 (R2C2)</td>
-                        </tr>
-                    </table>
+        </header>
+
+        <article>
+            <h2 id="Basic_Table">Basic Table</h2>
+            <div class="container">
+                <div class="row col_header">
+                    <div class="col30">Example</div>
+                    <div class="col30">HTML</div>
+                    <div class="col30">CSS</div>
                 </div>
-                <div class="col30">
-                    <pre><code>&lt;table id="table1"&gt;
+                <div class="row">
+                    <div class="col30">
+                        <br />
+                        <table id="table1">
+                            <tr>
+                                <th>Column Title 1</th>
+                                <th>Column Title 2</th>
+                            </tr>
+                            <tr>
+                                <td>Cell 1 (R2C1)</td>
+                                <td>Cell 2 (R2C2)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col30">
+                        <pre><code>&lt;table id="table1"&gt;
     &lt;tr&gt;
-        &lt;th>Column Title 1&lt;/th&gt;
-        &lt;th>Column Title 2&lt;/th&gt;
+&lt;th>Column Title 1&lt;/th&gt;
+&lt;th>Column Title 2&lt;/th&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-        &lt;td>Cell 1 (R2C1)&lt;/td&gt;
-        &lt;td>Cell 2 (R2C2)&lt;/td&gt;
+&lt;td>Cell 1 (R2C1)&lt;/td&gt;
+&lt;td>Cell 2 (R2C2)&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-                </div>
-                <div class="col30">
-                    <pre><code>table#table1 table,
+                    </div>
+                    <div class="col30">
+                        <pre><code>table#table1 table,
 table#table1 th,
 table#table1 td {
     border: 1px solid black;
 }</code></pre>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
-            <h2 id="Default_Table_CSS">Default CSS for Tables</h2>
-            <pre><code>table {
-display: table;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;
+            <hr />
+            <hr />
+        </article>
+
+        <article>
+            <h2>Default CSS</h2>
+            <div>
+                <h3 id="Default_Table_CSS">Default CSS for Tables</h3>
+                <pre><code>table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
 }</code></pre>
-        </div>
-        <div>
+            </div>
+            <div>
+                <h3 id="Default_TH_CSS">Table Header Default CSS</h3>
+                <pre><code>th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}</code></pre>
+            </div>
+            <div>
+                <h3 id="Default_TR_CSS">Table Row Default CSS</h3>
+                <pre><code>tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}</code></pre>
+            </div>
+            <div>
+                <h3 id="Default_TD_CSS">Table Cell Default CSS</h3>
+                <pre><code>td {
+    display: table-cell;
+    vertical-align: inherit;
+}</code></pre>
+            </div>
+            <hr />
+            <hr />
+        </article>
+        <article>
             <h2 id="Table_Snippets_CSS">CSS Snippets for Tables</h2>
             <ul>
                 <li>
@@ -439,38 +484,28 @@ table#table7 td {
                     </div>
                 </div>
             </section>
-        </div>
-        <section>
-            <h3 id="Default_TH_CSS">Table Header Default CSS</h3>
-            <pre><code>th {
-    display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    text-align: center;
-}</code></pre>
-        </section>
-        <section>
-            <h3 id="Default_TR_CSS">Table Row Default CSS</h3>
-            <pre><code>tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}</code></pre>
-        </section>
-        <section>
-            <h3 id="Default_TD_CSS">Table Cell Default CSS</h3>
-            <pre><code>td {
-    display: table-cell;
-    vertical-align: inherit;
-}</code></pre>
-        </section>
-        <div>
-            <a href="https://nzscode.github.io/Snippets-HTML"
-                >HTML Snippets Homepage</a
-            >
-            <br />
-            <a href="../index.html">HTML Snippets Homepage - l</a>
-        </div>
+        </article>
+
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Lists"
+                        >HTML Snippets Lists</a
+                    >
+                    <br />
+                    <a href="../HTML_Lists/index.html"
+                        >HTML Snippets Lists - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
 
         <script src="./HTML_Tables.js"></script>
     </body>

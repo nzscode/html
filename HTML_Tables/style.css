@@ -231,6 +231,10 @@ table#table7 td {
     text-align: center;
 }
 
+hr {
+    border: 5px dashed #d6282876;
+}
+
 /* table#table2 tr:nth-child(even) {
     background-color: rgb(158, 236, 236);
 } */
