@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <title>HTML iFrames</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML iFrames
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>Basic iFrame</p>
+                    <ul>
+                        <li>
+                            <a href="#Basic_iFrame">Basic iFrame</a>
+                        </li>
+                    </ul>
+                    <p>iFrame Attributes</p>
+                    <ul>
+                        <li>
+                            <a href="#iFrame_Attributes">iFrame Attributes</a>
+                        </li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li>
+                            <a href="#Default_iFrame_CSS">Default iFrame Css</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <article>
+            <h2 id="Basic_iFrame">Basic iFrame</h2>
+            <ul>
+                <li>
+                    Used to embed another document within the current HTML
+                    document.
+                </li>
+                <li>The HTML &lt;iframe&gt; tag specifies an inline frame</li>
+                <li>The src attribute defines the URL of the page to embed</li>
+                <li>Always include a title attribute (for screen readers)</li>
+                <li>
+                    The height and width attributes specify the size of the
+                    iframe
+                </li>
+                <li>Use border:none; to remove the border around the iframe</li>
+                <li>Can use CSS to style if needed.</li>
+            </ul>
+            <div class="container">
+                <div class="row col_header">
+                    <div class="col30">Example</div>
+                    <div class="col30">HTML</div>
+                    <div class="col30">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col30">
+                        <br />
+                        <iframe
+                            src="https://mashable.com/"
+                            frameborder="0"
+                            width="275px"
+                            height="150px"
+                        ></iframe>
+                    </div>
+                    <div class="col30">
+                        <pre><code>&lt;iframe
+    src="https://mashable.com/"
+    frameborder="0" //Can use CSS
+    width="275px"   //Can use CSS
+    height="150px"  //Can use CSS
+&gt;&lt;/iframe&gt;</code></pre>
+                    </div>
+                    <div class="col30">
+                        <pre><code>iframe {
+    border: none;
+    width: 275px;
+    height: 150px;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <hr />
+        <hr />
+        <article>
+            <h2 id="iFrame_Attributes">iFrame Attributes</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>allowfullscreen</td>
+                            <td>true/false</td>
+                            <td>
+                                Set to true if the &lt;iframe&gt; can activate
+                                fullscreen mode by calling the
+                                requestFullscreen() method
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>height</td>
+                            <td>px</td>
+                            <td>Default height is 150 pixels</td>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>text</td>
+                            <td>Sets the name of the &lt;iframe&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>sandbox</td>
+                            <td>
+                                allow-forms <br />allow-orientation-lock
+                                <br />allow-pointer-lock <br />allow-popups
+                                <br />allow-popups-to-escape-sandbox
+                                <br />allow-presentation <br />allow-same-origin
+                                <br />allow-scripts <br />allow-top-navigation
+                                <br />allow-top-navigation-by-user-activation
+                            </td>
+                            <td>
+                                <ul>
+                                    <b> allow-forms</b
+                                    >: Allows form submission
+                                    <br /><b>allow-orientation-lock</b
+                                    >: Allows to lock the screen orientation
+                                    <br /><b>allow-pointer-lock</b
+                                    >: Allows to use the Pointer Lock API
+                                    <br /><b>allow-popups</b
+                                    >: Allows popups
+                                    <br /><b>allow-popups-to-escape-sandbox</b
+                                    >: Allows popups to open new windows without
+                                    inheriting the sandboxing
+                                    <br /><b>allow-presentation</b
+                                    >: Allows to start a presentation session
+                                    <br /><b>allow-same-origin</b
+                                    >: Allows the iframe content to be treated
+                                    as being from the same origin
+                                    <br /><b>allow-scripts</b
+                                    >: Allows to run scripts
+                                    <br /><b>allow-top-navigation</b
+                                    >: Allows the iframe content to navigate its
+                                    top-level browsing context
+                                    <br /><b
+                                        >allow-top-navigation-by-user-activation</b
+                                    >: Allows the iframe content to navigate its
+                                    top-level browsing context, but only if
+                                    initiated by user
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>
+                                Specifies the address of the document to embed
+                                in the &lt;iframe&gt;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>srdoc</td>
+                            <td>HTML Code</td>
+                            <td>
+                                Specifies the HTML content of the page to show
+                                in the &lt;iframe&gt;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>px</td>
+                            <td>Default width is 300 pixels</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <hr />
+        <hr />
+        <article>
+            <h2 id="Default_iFrame_CSS">Default CSS</h2>
+            <div>
+                <pre><code>iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}</code></pre>
+            </div>
+        </article>
+
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Lists"
+                        >HTML Snippets Lists</a
+                    >
+                    <br />
+                    <a href="../HTML_Lists/index.html"
+                        >HTML Snippets Lists - l</a
+                    >
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
+                        >HTML Snippets Links</a
+                    >
+                    <br />
+                    <a href="../HTML_Links/index.html"
+                        >HTML Snippets Links - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
+                        >HTML Snippets Embeds</a
+                    >
+                    <br />
+                    <a href="../HTML_Embeds/index.html"
+                        >HTML Snippets Embeds - l</a
+                    >
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
+                        >HTML Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../HTML_Forms/index.html"
+                        >HTML Snippets Forms - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
+                        >HTML Snippets Images</a
+                    >
+                    <br />
+                    <a href="../HTML_Images/index.html"
+                        >HTML Snippets Images - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
+                        >HTML Snippets Tables</a
+                    >
+                    <br />
+                    <a href="../HTML_Tables/index.html"
+                        >HTML Snippets Tables - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
+                        >HTML Snippets Video_Audio</a
+                    >
+                    <br />
+                    <a href="../HTML_Video_Audio/index.html"
+                        >HTML Snippets Video_Audio - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
+        <script src="./HTML_Frames.js"></script>
+    </body>
+</html>

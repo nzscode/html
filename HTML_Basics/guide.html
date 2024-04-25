@@ -9,15 +9,17 @@
             href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="style.css" />
-        <title>HTML Images</title>
+
+        <link rel="stylesheet" href="guide.css" />
+
+        <title>Guide</title>
     </head>
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
             <h1>
                 <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                HTML Images
+                HTML Guide
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -27,47 +29,22 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>Basic Image</p>
+                    <p>Basic 3 Column Section</p>
                     <ul>
                         <li>
-                            <a href="#Basic_Image">Basic Image</a>
+                            <a href="#Basic_3_Column_section"
+                                >Basic 3 Column Section</a
+                            >
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <!--  -->
+        <!--  -->
+
         <article>
-            <h2 id="Basic_Image">Basic Image</h2>
-            <ul>
-                <li>The tag is empty.</li>
-                <li>
-                    Contains attributes only, and does not have a closing tag.
-                </li>
-                <li>
-                    Has two required attributes:
-                    <ul>
-                        <li>src - Specifies the path to the image</li>
-                        <li>alt - Specifies an alternate text for the image</li>
-                    </ul>
-                </li>
-                <li>
-                    Can also have a size attribute:
-                    <ul>
-                        <li>
-                            Width & Height can be set on the image using the
-                            style attribute (Recommended)
-                        </li>
-                        <li>
-                            Width & Height can also be set through the
-                            Stylesheet. If setting via Stylesheet, remeber
-                            stylesheets are not hardcoded, whereas the style
-                            attribute is. To use Stylesheet, follow the CSS
-                            given
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <h2 id="Basic_3_Column_Section">Basic 3 Column Section</h2>
             <div class="container">
                 <div class="row col_header">
                     <div class="col30">Example</div>
@@ -77,29 +54,108 @@
                 <div class="row">
                     <div class="col30">
                         <br />
-                        <img
-                            src="../images/img.png"
-                            alt="Star Image"
-                            style="width: 25px; height: 25px"
-                        />
                     </div>
                     <div class="col30">
-                        <pre><code>&lt;img 
-    src="../images/img.png" 
-    alt="Star Image"
-    style="width: 25px; 
-            height: 25px" /&gt;</code></pre>
+                        <pre><code></code></pre>
                     </div>
                     <div class="col30">
-                        <pre><code>img {
-    width: 25px; 
-    height: 25px
-}</code></pre>
+                        <pre><code></code></pre>
                     </div>
                 </div>
             </div>
         </article>
+        <hr />
+        <hr />
+        <article>
+            <h2>Article with Sections</h2>
+            <div>
+                <h3 id="Article_With_Sections1">Article with 1/2 Section</h3>
+                <pre><code></code></pre>
+            </div>
+            <div>
+                <h3 id="Article_With_Sections2">Article with 2/2 Section</h3>
+                <pre><code></code></pre>
+            </div>
+        </article>
+        <hr />
+        <hr />
+        <article>
+            <h2 id="Article_For_Snippets">Article for Snippets</h2>
+            <ul>
+                <li>
+                    Snippet Topic
+                    <ul>
+                        <li>Snippet Explanation 1</li>
+                        <pre><code>Snippet 1 Code</code></pre>
+                        <li>Snippet Explanation 2</li>
+                        <pre><code>Snippet 2 Code</code></pre>
+                        <li>Snippet Explanation 3</li>
+                        <pre><code>Snippet 3 Code</code></pre>
+                    </ul>
+                </li>
+            </ul>
+            <section>
+                <h3 id="Snippet_Section_CSS_And_Code">
+                    Snippet Section CSS & Code
+                </h3>
+                <div class="row">
+                    <div class="col50">Example of CSS/Code</div>
+                    <div class="col50">
+                        <pre><code>CSS/Code</code></pre>
+                    </div>
+                </div>
+            </section>
+            <br /><br /><br />
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><a href="">Column1</a></th>
+                            <th>Column2</th>
+                            <th>Column3</th>
+                            <th>Column4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Item1</td>
+                            <td>Info1</td>
+                            <td>Info1</td>
+                            <td>Info1</td>
+                        </tr>
+                        <tr>
+                            <td>Item2</td>
+                            <td>Info2</td>
+                            <td>Info2</td>
+                            <td>Info2</td>
+                        </tr>
+                        <tr>
+                            <td>Item3</td>
+                            <td>info3</td>
+                            <td>Info3</td>
+                            <td>Info3</td>
+                        </tr>
+                        <tr>
+                            <td>Item4</td>
+                            <td>info4</td>
+                            <td>Info4</td>
+                            <td>Info4</td>
+                        </tr>
+                        <tr>
+                            <td>Item5</td>
+                            <td>info5</td>
+                            <td>Info5</td>
+                            <td>Info5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <hr />
+        <hr />
         <!--  -->
+        <!--  -->
+        <!-- Footer With Nav Links -->
         <footer>
             <nav>
                 <div>
@@ -158,6 +214,16 @@
                 </div>
                 <div>
                     <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
+                        >HTML Snippets Images</a
+                    >
+                    <br />
+                    <a href="../HTML_Images/index.html"
+                        >HTML Snippets Images - l</a
+                    >
+                </div>
+                <div>
+                    <a
                         href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
                         >HTML Snippets Tables</a
                     >
@@ -178,6 +244,7 @@
                 </div>
             </nav>
         </footer>
-        <script src="./HTML_Images.js"></script>
+
+        <script src="./guid.js"></script>
     </body>
 </html>
