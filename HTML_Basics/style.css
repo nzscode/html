@@ -1,155 +1,240 @@
-.lato-regular {
-    font-family: "Lato", sans-serif;
+/* Font */
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.lato-bold {
-    font-family: "Lato", sans-serif;
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.oswald-font {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Side Navigation Menu */
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+
+#nav li {
+    margin-left: 0px;
+}
+
+#nav p {
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+/* Page */
+body {
+    box-sizing: border-box;
+    /* font-size: 14px; */
+    background-color: #eae2b7bc;
+    margin: 0px;
+    padding: 15px;
+    /* Roboto */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h1 {
+    background-color: #d6282876;
+    border: 2px solid #d6282876;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    /* Kanit Bold */
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+h2 {
+    background-color: #f77f0076;
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+    padding: 10px;
+    /* Kanit Medium */
+    font-family: "Kanit", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-body {
-    box-sizing: border-box;
-    font-size: 14px;
-}
-pre {
-    background-color: #171621;
-    color: #fff;
+h3 {
+    background-color: #fcbf4976;
     border-radius: 5px;
-    padding: 15px;
-    font-size: 12px;
+    margin: 5px 25px 5px 25px;
+    padding: 3px 15px;
+    font-size: 18px;
+    /* Kanit Regular */
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
-.comment {
-    /*  */
-    color: gray;
+
+#head1,
+#head2,
+#head3,
+#head4,
+#head5 {
+    all: revert;
+}
+#head1 {
+    font-size: 2em;
+}
+
+.container {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 .row {
     display: flex;
 }
+.col15,
+.col20,
+.col30,
+.col40,
+.col50,
+.col25,
+.col75 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.col15 {
+    width: 15%;
+}
+.col20 {
+    width: 20%;
+}
+.col30 {
+    width: 30%;
+}
 
-.column {
-    float: left;
+.col40 {
+    width: 40%;
+}
+
+.col50 {
     width: 50%;
-    margin: 0 15px;
 }
-.output-column {
-    border: 2px solid darkgray;
-    border-radius: 15px;
-    padding-left: 5px;
-    padding-bottom: 0px;
+.col25 {
+    width: 25%;
 }
-
-.highlight {
-    color: blue;
-    text-shadow: 0 0 5px hotpink;
-    font-weight: 800;
+.col75 {
+    width: 75%;
 }
 
-.title {
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.sub-title {
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.sub-sub-title {
-    font-style: italic;
-    text-decoration: underline;
-}
-
-a {
-    color: aqua;
-}
-.on-hover > a:hover {
-    background-color: green;
-}
-
-table {
-    border: 2px solid #000;
+.col_header {
+    text-align: center;
     border-radius: 5px;
 }
 
-th {
-    font-size: 120%;
-    background-color: rgb(110, 158, 110);
+pre {
+    /* background-color: #20262b; */
+    background-color: #003049;
+    color: #fff;
     padding: 15px;
+    border-radius: 15px;
+}
+
+table {
+    margin-left: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100vw;
+    max-width: 100%;
 }
 td {
     padding: 10px;
 }
-td:nth-child(1),
-td:nth-child(2) {
-    font-style: italic;
+th {
+    background-color: #00000096;
+    padding: 10px;
+    font-size: 15px;
+    color: #fcdcb9;
 }
 
-tr:nth-child(even) {
-    background-color: rgb(249, 180, 194);
-}
-tr:nth-child(odd) {
-    background-color: rgb(233, 137, 156);
+td:nth-child(1) {
+    padding: 0px 15px;
 }
 
-table#table-sample,
-table#table-sample2,
-table#table-sample3 {
-    border: 2px solid #fff;
-    border-radius: 5px;
+tr:nth-of-type(even) {
+    background-color: #00000017;
 }
 
-table#table-sample th,
-table#table-sample2 th,
-table#table-sample3 th {
-    background-color: #fc4d36;
-    font-size: 150%;
+hr {
+    border: 5px dashed #d6282876;
 }
 
-table#table-sample th,
-table#table-sample td,
-table#table-sample2 th,
-table#table-sample2 td,
-table#table-sample3 td {
-    padding: 15px;
-    text-align: center;
+#flex_col_2 {
+    display: flex;
+    flex-flow: column;
 }
-
-table#table-sample tr:nth-child(even),
-table#table-sample2 tr:nth-child(even),
-table#table-sample3 tr:nth-child(even) {
-    background-color: #00ffff51;
-}
-
-table#table-sample tr:nth-child(1),
-table#table-sample2 tr:nth-child(1),
-table#table-sample3 tr:nth-child(1) {
-    color: yellow;
-}
-
-/* .body-tag {
-    color: crimson;
-}
-
-.class-id-name {
-    color: greenyellow;
-}
-.property-name {
-    color: cyan;
-}
-.property-val-num {
-    color: mediumorchid;
-}
-.brackets {
-    color: yellow;
-} */

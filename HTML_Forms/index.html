@@ -4,102 +4,455 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
         <title>HTML Forms</title>
     </head>
     <body>
-        <li class="title">Forms</li>
-        <ul>
-            <li>
-                Default CSS
-                <pre><code>form {
-    display: block;
-    margin-top: 0em;
-}</code></pre>
-            </li>
-
-            <li>Forms can contain:</li>
-            <ul>
-                <li class="title">Basic Form</li>
-            </ul>
-            <div class="row">
-                <div class="column">
-                    <h4>Code</h4>
-                    <div>
-                        <pre><code>&lt;form action=""&gt;
-&lt;label for="firstname"&gt;First Name: &lt;/label&gt;
-&lt;input 
-    type="text" 
-    name="firstname" 
-    required&gt;
-&lt;br&gt;
-&lt;label for="lastname"&gt;Last name: &lt;/label&gt;
-&lt;input 
-    type="text" 
-    name="lastname" 
-    required&gt;
-&lt;br&gt;&lt;input 
-                type="submit" 
-                value="Log in"&gt;&lt;/form&gt;</code></pre>
-                    </div>
-                </div>
-                <div class="column">
-                    <h4>Output</h4>
-                    <div>
-                        <pre><code><form action=""><label for="firstname">First Name: </label>
-<input type="text" name="firstname" required>
-<br>
-<label for="lastname">Last name: </label>
-<input type="text" name="lastname" required>
-<br><input type="submit" value="Log in"></form></code></pre>
-                    </div>
-                </div>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <h1>
+                <span
+                    id="openSideNav"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                HTML Forms
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>Basic HTML Form</p>
+                    <ul>
+                        <li>
+                            <a href="#basic_form">Basic Form</a>
+                        </li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li>
+                            <a href="#default_form_css">Default Form CSS</a>
+                        </li>
+                        <li>
+                            <a href="#default_label_css">Default Label CSS</a>
+                        </li>
+                    </ul>
+                    <p>Form Attributes</p>
+                    <ul>
+                        <li><a href="#form_attributes">Form Attributes</a></li>
+                        <li>
+                            <a href="#form_attributes_action"
+                                >Form Attributes: Action</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_target"
+                                >Form Attributes: Target</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_method"
+                                >Form Attributes: Method</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_autocomplete"
+                                >Form Attributes: Autocomplete</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_novalidate"
+                                >Form Attributes: Novalidate</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_name"
+                                >Form Attributes: Name</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_attributes_rel"
+                                >Form Attributes: Rel</a
+                            >
+                        </li>
+                    </ul>
+                    <p>Form Element</p>
+                    <ul>
+                        <li><a href="#form_elements">Form Elements</a></li>
+                        <li>
+                            <a href="#form_elements_input"
+                                >Form Elements: Input</a
+                            >
+                        </li>
+                        <ul>
+                            <li><a href="#form_elements_text">Text</a></li>
+                        </ul>
+                        <li>
+                            <a href="#form_elements_label"
+                                >Form Elements: Label</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_elements_select"
+                                >Form Elements: Select</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_elements_textarea"
+                                >Form Elements: Textarea</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_elements_fieldset_legend"
+                                >Form Elements: Fieldset & Legend</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_elements_datalist"
+                                >Form Elements: Datalist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#form_elements_output"
+                                >Form Elements: Output</a
+                            >
+                        </li>
+                    </ul>
+                    <p>Input Attributes</p>
+                    <ul>
+                        <li>
+                            <a href="#input_attributes">Input Attributes</a>
+                        </li>
+                        <li>
+                            <a href="#input_attributes_value"
+                                >Input Attributes: Value</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_readonly"
+                                >Input Attributes: Readonly</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_disabled"
+                                >Input Attributes: Disabled</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_size"
+                                >Input Attributes: Size</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_maxlength"
+                                >Input Attributes: Maxlength</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_min_max"
+                                >Input Attributes: Min & Max</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_multiple"
+                                >Input Attributes: Multiple</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_pattern"
+                                >Input Attributes: Pattern</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_placeholder"
+                                >Input Attributes: Placeholder</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_required"
+                                >Input Attributes: Required</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_step"
+                                >Input Attributes: Step</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_autofocus"
+                                >Input Attributes: Autofocus</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_height_width"
+                                >Input Attributes: Height & Width</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_datalist"
+                                >Input Attributes: Datalist</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#input_attributes_autocomplete"
+                                >Input Attributes: Autocomplete</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <ul>
-                <li class="title">Form Attributes</li>
-                <ul>
-                    <table>
-                        <tr>
-                            <th>Type</th>
-                            <th>Explanation</th>
-                            <th>Example</th>
-                            <th>HTML Syntax</th>
-                        </tr>
-                        <tr>
-                            <td>Action</td>
-                            <td>
-                                - Defines the action to be performed when the
-                                form is submitted
+        </header>
+        <div id="main">
+            <article>
+                <section>
+                    <h2 id="basic_form">Basic Form</h2>
+                    <ul>
+                        <li>Used to collect user input</li>
+                        <li>
+                            container for different types of input elements,
+                            such as: text fields, checkboxes, radio buttons,
+                            submit buttons, etc.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
                                 <br />
-                                - "action_page.php" contains server-side script
-                                that handles the form data
-                                <br />
-                                - If the "action" attribute is left blank, the
-                                action is set to the current page
-                            </td>
-                            <td>
-                                <form action="./action_page.php">
-                                    <label for="f_name"> First Name: </label>
+                                <form action="">
+                                    <label for="first_name1"
+                                        >First Name:
+                                    </label>
+                                    <input type="text" id="first_name1" />
                                     <br />
+                                    <label for="last_name1">Last Name: </label>
                                     <input
                                         type="text"
-                                        name="f_name"
-                                        id="f_name"
-                                        value="Jane"
+                                        name="last_name1"
+                                        id="last_name1"
                                     />
                                     <br />
-                                    <label for="l_name"> Last Name: </label>
-                                    <br />
-                                    <input
-                                        type="text"
-                                        name="l_name"
-                                        id="l_name"
-                                        value="Doe"
-                                    />
+                                    <input type="submit" />
                                 </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="./action_page.php"&gt;
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;form action=""&gt;
+    &lt;label for="First_Name1">First Name: &lt;/label&gt;
+    &lt;input type="text" id="First_Name1"&gt;
+    &lt;br&gt;
+    &lt;label for="Last_Name1">Last Name: &lt;/label&gt;
+    &lt;input type="text" name="Last_Name1" id="Last_Name1"&gt;
+    &lt;br&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;      </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <hr />
+            <hr />
+            <article>
+                <section>
+                    <h2 id="default_css">Default CSS</h2>
+                    <ul>
+                        <li>
+                            The Dault CSS for the &lt;input&gt; fields, is
+                            unique for each browser
+                        </li>
+                    </ul>
+                    <div>
+                        <h3 id="default_form_css">Default Form CSS</h3>
+                        <pre><code>form {
+    display: block;
+    margin-top: 0em;    
+}</code></pre>
+                    </div>
+                    <br />
+                    <div>
+                        <h3 id="default_label_css">Default Label CSS</h3>
+
+                        <pre><code>label {
+    cursor: default;
+}</code></pre>
+                    </div>
+                </section>
+            </article>
+            <hr />
+            <hr />
+            <article>
+                <section>
+                    <h2 id="form_attributes">Form Attributes</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#form_attribute_action">Action</a>
+                                </td>
+                                <td>action</td>
+                                <td>
+                                    - Defines the action to be performed when
+                                    the form is submitted
+                                    <br />
+                                    - "action_page.php" contains server-side
+                                    script that handles the form data
+                                    <br />
+                                    - If the "action" attribute is left blank,
+                                    the action is set to the current page
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_attribute_target">Target</a>
+                                </td>
+                                <td>
+                                    _blank
+                                    <br />
+                                    _self
+                                    <br />
+                                    _parent
+                                    <br />
+                                    _top
+                                    <br />
+                                    _iframe
+                                </td>
+                                <td>
+                                    - Specifies where to display the response
+                                    that is received when the form is submitted
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_attribute_method">Method</a>
+                                </td>
+                                <td>method</td>
+                                <td>
+                                    - Specifies the http method to use when
+                                    submitting form data
+                                    <br />
+                                    - Default http method is "method = 'get'"
+                                    <br />
+                                    - Can also use http post "method = 'post'"
+                                    <br /><br />Notes on GET: <br />Appends the
+                                    form data to the URL, in name/value pairs
+                                    <br />NEVER use GET to send sensitive data!
+                                    (the submitted form data is visible in the
+                                    URL!) <br />The length of a URL is limited
+                                    (2048 characters) <br />Useful for form
+                                    submissions where a user wants to bookmark
+                                    the result <br />GET is good for non-secure
+                                    data, like query strings in Google
+                                    <br /><br />
+                                    Notes on POST:
+                                    <br />Appends the form data inside the body
+                                    of the HTTP request (the submitted form data
+                                    is not shown in the URL) <br />POST has no
+                                    size limitations, and can be used to send
+                                    large amounts of data. <br />Form
+                                    submissions with POST cannot be bookmarked
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_attribute_autocomplete"
+                                        >Autocomplete</a
+                                    >
+                                </td>
+                                <td>autocomplete</td>
+                                <td>
+                                    - Specifies if autocomplete should be on or
+                                    off
+                                    <br />- When on, browser completes the form
+                                    on data user has already used
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_attribute_novalidate"
+                                        >Novalidate</a
+                                    >
+                                </td>
+                                <td>novalidate</td>
+                                <td>
+                                    - A boolean attribute <br />- Specifies that
+                                    the form data (input) shouldn;t be validated
+                                    on submission
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#form_attribute_name">Name</a></td>
+                                <td>name</td>
+                                <td>Specifies the name of the form</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#form_attribute_rel">Rel</a></td>
+                                <td>rel</td>
+                                <td>
+                                    Specifies the relationship between a linked
+                                    resource and the current document
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <div>
+                        <h3 id="form_attribute_action">Action</h3>
+                        <div class="container">
+                            <div class="row col_header">
+                                <div class="col20">Example</div>
+                                <div class="col75">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    <form action="./action_page.php">
+                                        <label for="f_name">
+                                            First Name:
+                                        </label>
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="f_name"
+                                            id="f_name"
+                                            value="Jane"
+                                        />
+                                        <br />
+                                        <label for="l_name"> Last Name: </label>
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="l_name"
+                                            id="l_name"
+                                            value="Doe"
+                                        />
+                                    </form>
+                                </div>
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php"&gt;
     &lt;label for="f_name"&gt;
         First Name:
     &lt;/label&gt;
@@ -122,202 +475,467 @@
         value="Doe"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Target</td>
-                            <td>
-                                - Specifies where to display the response that
-                                is received when the form is submitted
-                                <br />
-                                <table>
-                                    <tr>
-                                        <th>Value</th>
-                                        <th>Description</th>
-                                    </tr>
-                                    <tr>
-                                        <td>_blank</td>
-                                        <td>
-                                            Response is displayed ina anew
-                                            window or tab
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>_self</td>
-                                        <td>
-                                            Response is displayed in current
-                                            window
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>_parent</td>
-                                        <td>
-                                            Respons is displayed in the parent
-                                            frame
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>_top</td>
-                                        <td>
-                                            Response is displayed in the full
-                                            body of the window
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>iframe</td>
-                                        <td>
-                                            Response is displayed in a named
-                                            iframe
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                            <td>
-                                <form
-                                    action="./action_page.php"
-                                    target="_blank"
-                                >
-                                    <label for="name">Enter whole Name: </label>
-                                    <input type="text" name="name" id="name" />
-                                    <input type="submit" />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="./action_page.php" target="_blank" &gt;
-    &lt;label for="name">Enter whole Name:
-    &lt;/label&gt;
-    &lt;input
-        type="text"
-        name="name"
-        id="name"
-    /&gt;
-    &lt;input type="submit" /&gt;
-&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Method</td>
-                            <td>
-                                - Specifies the http method to use when
-                                submitting form data
-                                <br />
-                                - Default http method is "method = 'get'"
-                                <br />
-                                - Can also use http post "method = 'post'"
-                                <br />
-                                Notes on GET:
-                                <br /><br />
-                                Appends the form data to the URL, in name/value
-                                pairs<br />
-                                NEVER use GET to send sensitive data! (the
-                                submitted form data is visible in the URL!)<br />
-                                The length of a URL is limited (2048
-                                characters)<br />
-                                Useful for form submissions where a user wants
-                                to bookmark the result<br />
-                                GET is good for non-secure data, like query
-                                strings in Google
-                                <br /><br />
-                                Notes on POST:<br />
-                                Appends the form data inside the body of the
-                                HTTP request (the submitted form data is not
-                                shown in the URL)<br />
-                                POST has no size limitations, and can be used to
-                                send large amounts of data.<br />
-                                Form submissions with POST cannot be bookmarked
-                            </td>
-                            <td>
-                                <form
-                                    action="./action_page.php"
-                                    method="get"
-                                ></form>
-                                <br /><br /><br />
-                                <form
-                                    action="./action_page.php"
-                                    method="post"
-                                ></form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="./action_page.php" method="get"&gt;&lt;/form&gt;
-
-&lt;form action="./action_page.php" method="post"&gt;&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Autocomplete</td>
-                            <td>
-                                - Specifies if autocomplete should be on or off
-                                <br />
-                                - When on, browser completes the form on data
-                                user has already used
-                            </td>
-                            <td>
-                                <form
-                                    action="/action_page.php"
-                                    autocomplete="on"
-                                ></form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>No Validate</td>
-                            <td>
-                                - A boolean attribute
-                                <br />
-                                - Specifies that the form data (input) shouldn;t
-                                be validated on submission
-                            </td>
-                            <td>
-                                <form
-                                    action="/action_page.php"
-                                    novalidate
-                                ></form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="/action_page.php" novalidate&gt;&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                </ul>
-                <li class="title">input</li>
-                <ul>
-                    <li>An input field where the user can input data</li>
-                    <li>
-                        Can be displayed in many ways depending on the type
-                        attribute
-                    </li>
-                    <li class="sub-title">
-                        <span style="font-size: 16px">Types</span>
-                    </li>
-                    <table>
-                        <tr>
-                            <th>Type</th>
-                            <th>Explanation</th>
-                            <th>Example</th>
-                            <th>HTML Syntax</th>
-                        </tr>
-                        <tr>
-                            <td>Text</td>
-                            <td>
-                                - Default
-                                <br />
-                                - Single line text field
-                            </td>
-                            <td>
-                                <div>
-                                    <form action="">
-                                        <label for=""></label>
-                                        <input
-                                            type="text"
-                                            name=""
-                                            placeholder="Enter Text"
-                                        />
-                                    </form>
                                 </div>
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3 id="form_attribute_target">Target</h3>
+                        <ul>
+                            <li>
+                                Specifies where to display the response that is
+                                received after submitting the form.
+                            </li>
+                            <li>Default value is <i>_self</i></li>
+                            <li>
+                                Possible Values:
+                                <ul>
+                                    <li>
+                                        _blank The response is displayed in a
+                                        new window or tab
+                                    </li>
+                                    <li>
+                                        _self The response is displayed in the
+                                        current window
+                                    </li>
+                                    <li>
+                                        _parent The response is displayed in the
+                                        parent frame
+                                    </li>
+                                    <li>
+                                        _top The response is displayed in the
+                                        full body of the window
+                                    </li>
+                                    <li>
+                                        <i>framename</i> The response is
+                                        displayed in a named iframe
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="container">
+                            <div class="row col_header">
+                                <div class="col20">Type</div>
+                                <div class="col75">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    _blank
+                                </div>
+
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php" target="_blank"&gt;
+&lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    _self
+                                </div>
+
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php" target="_self"&gt;
+                            &lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    _parent
+                                </div>
+
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php" target="_parent"&gt;
+&lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    _top
+                                </div>
+
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php" target="_top"&gt;
+&lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col20">
+                                    <br />
+                                    <i>framename</i>
+                                </div>
+
+                                <div class="col75">
+                                    <pre><code>&lt;form action="./action_page.php" target="<i>framename</i>"&gt;
+&lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <h2 id="form_elements">Form Elements</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_input">Input</a>
+                                </td>
+                                <td>
+                                    input type="text"
+                                    <br />
+                                    input type="button"
+                                    <br />
+                                    input type="checkbox"
+                                    <br />
+                                    input type="color"
+                                    <br />
+                                    input type="date"
+                                    <br />
+                                    input type="datetime-local"
+                                    <br />
+                                    input type="email"
+                                    <br />
+                                    input type="file"
+                                    <br />
+                                    input type="hidden"
+                                    <br />
+                                    input type="image"
+                                    <br />
+                                    input type="month"
+                                    <br />
+                                    input type="number"
+                                    <br />
+                                    input type="password"
+                                    <br />
+                                    input type="radio"
+                                    <br />
+                                    input type="range"
+                                    <br />
+                                    input type="reset"
+                                    <br />
+                                    input type="search"
+
+                                    <br />
+                                    input type="submit"
+                                    <br />
+                                    input type="tel"
+                                    <br />
+                                    input type="time"
+                                    <br />
+                                    input type="url"
+                                    <br />
+                                    input type="week"
+                                </td>
+                                <td>
+                                    Can be displayed in several ways, depending
+                                    on the type attribute.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_label">Label</a>
+                                </td>
+                                <td>label</td>
+                                <td>
+                                    - Defines a label for several form elements
+                                    <br />
+                                    - The for attribute of the &lt;label&gt; tag
+                                    should be equal to
+                                    <br />the <i>id</i> attribute of the
+                                    &lt;input&gt; element to bind them together
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_select">Select</a>
+                                </td>
+                                <td>select</td>
+                                <td>
+                                    - Defines a dropdown list <br />- Must be
+                                    accompanied by &lt;<i
+                                        ><b><u>option</u></b></i
+                                    >
+                                    value=""&gt; <br />- Default - first option
+                                    is selected <br />- To define a pre-selected
+                                    option, add the selected attribute to the
+                                    option <br />- Can contain a
+                                    <i
+                                        ><b><u>size</u></b></i
+                                    >
+                                    option to define the number of visible
+                                    values
+                                    <br />- Can contain a
+                                    <i
+                                        ><b><u>multiple</u></b></i
+                                    >
+                                    option to allow the user to select more than
+                                    one value
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_textarea"
+                                        >Text Area</a
+                                    >
+                                </td>
+                                <td>textarea</td>
+                                <td>
+                                    - Defines a multi-line input field (a text
+                                    area)
+                                    <br />-
+                                    <i
+                                        ><b><u>rows</u></b></i
+                                    >
+                                    option specifies the number of lines <br />-
+                                    <i
+                                        ><b><u>cols</u></b></i
+                                    >
+                                    option specifies the visible width of the
+                                    area
+                                    <br />- The size of the <i>textarea</i> can
+                                    also be specifies using CSS
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_button">Button</a>
+                                </td>
+                                <td>button</td>
+                                <td>
+                                    - Defines a clickable button <br />- Can
+                                    have JS methods
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_fieldset_legend"
+                                        >Field Set & Legend</a
+                                    >
+                                </td>
+                                <td>fieldset</td>
+                                <td>
+                                    - Is used to group related data in a form
+                                    <br />-
+                                    <i
+                                        ><b><u>legend</u></b></i
+                                    >
+                                    element defines a caption for the
+                                    <i>fieldset</i> element
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#form_elements_datalist"
+                                        >Data List</a
+                                    >
+                                </td>
+                                <td>datalist</td>
+                                <td>
+                                    - Specifies a list of pre-defined options
+                                    for an &lt;input&gt; element <br />- Users
+                                    will see a drop-down list of the pre-defined
+                                    options as they input data <br />-
+                                    <i
+                                        ><b><u>list</u></b></i
+                                    >
+                                    attribute of the &lt;input&gt; element, must
+                                    refer to the id attribute of the
+                                    &lt;datalist&gt; element
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="form_elements_output">Output</a>
+                                </td>
+                                <td>output</td>
+                                <td>
+                                    Represents the result of a calculation (like
+                                    one performed by a script).
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br />
+                <br />
+
+                <section>
+                    <div>
+                        <h3 id="form_elements_input">Input</h3>
+                        <ul>
+                            <li>Default value is <i>text</i></li>
+                            <li>
+                                <b><u>Possible Values:</u></b>
+                            </li>
+                            <ul>
+                                <li>text: single line text input field</li>
+                                <li>button: defines a button</li>
+                                <li>
+                                    checkbox: lets user select none or more
+                                    option of a limited number of options
+                                </li>
+                                <li>
+                                    color: is used for input fields to show a
+                                    color
+                                    <br />
+                                    - Depending on the browser a color picker
+                                    may be available
+                                </li>
+                                <li>date: pick a date from a calendar</li>
+                                <li>
+                                    datetime-local: from a calendar Pick a date
+                                    & time
+                                </li>
+                                <li>
+                                    email: Field to enter an email address, will
+                                    be automatically validated on submit
+                                </li>
+                                <li>file: browse and select a file</li>
+                                <li>
+                                    hidden: - an invisible(to user) field
+                                    <br />- often stores what database record
+                                    that needs to be updated for when the form
+                                    is submitted
+                                </li>
+                                <li>
+                                    image: defines an image as a submit button
+                                </li>
+                                <li>
+                                    month: pick a month & a year (no time zone)
+                                </li>
+                                <li>
+                                    number: Field for entering a number <br />-
+                                    can set restrictions on acceptable numbers
+                                    <br />- can use attributes (min, max, step
+                                    (the number of intervals), value (specifies
+                                    a default value))
+                                </li>
+                                <li>
+                                    password: - field for password entry <br />-
+                                    characters are masked
+                                </li>
+                                <li>
+                                    radio: selection of radio buttons, only
+                                    allows one selection
+                                </li>
+                                <li>
+                                    range: - control for entering a number where
+                                    the exact value is not important <br />-
+                                    default range is 0 to 100, but restrictions
+                                    can be set. br - attributes (min, max, step)
+                                </li>
+                                <li>
+                                    reset: resets all the values in the form
+                                </li>
+                                <li>
+                                    search: define a search field (site search,
+                                    or search from a specific site)
+                                </li>
+                                <li>submit: a submit button</li>
+                                <li>
+                                    tel: - field for enetering a telephone
+                                    number
+                                    <br />- can use RegEx pattern for validation
+                                </li>
+                                <li>time: pick a time (no time zone)</li>
+                                <li>url: field for entering a URL</li>
+                                <li>
+                                    week: choose a week and date from a calendar
+                                    (no time zone)
+                                </li>
+                            </ul>
+                            <br /><br />
+                            <li>
+                                <b><u>Restricitons: </u></b>
+                            </li>
+                            <ul>
+                                <li>
+                                    checked: specifies that an input field
+                                    should be pre-selected when the page loads
+                                    (for type="checkbox" or type="radio")
+                                </li>
+                                <li>
+                                    disabled: specifies that an input field
+                                    should be disabled
+                                </li>
+                                <li>
+                                    max: specifies the maximum value for an
+                                    input field
+                                </li>
+                                <li>
+                                    maxlength: specifies the maximum number of
+                                    character for an input field
+                                </li>
+                                <li>
+                                    min: specifies the minimum value for an
+                                    input field
+                                </li>
+                                <li>
+                                    pattern: specifies a regular expression to
+                                    check the input value against
+                                </li>
+                                <li>
+                                    readonly: specifies that an input field is
+                                    read only (cannot be changed)
+                                </li>
+                                <li>
+                                    required: specifies that an input field is
+                                    required (must be filled out)
+                                </li>
+                                <li>
+                                    size: specifies the width (in characters) of
+                                    an input field
+                                </li>
+                                <li>
+                                    step: specifies the legal number intervals
+                                    for an input field
+                                </li>
+                                <li>
+                                    value: specifies the default value for an
+                                    input field
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col15">Type</div>
+                            <div class="col25">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                text
+                            </div>
+                            <div class="col25">
+                                <br />
+                                <form action="">
+                                    <label for=""></label>
+                                    <input
+                                        type="text"
+                                        name=""
+                                        placeholder="Enter Text"
+                                    />
+                                </form>
+                            </div>
+
+                            <div class="col50">
                                 <pre><code>&lt;div&gt;
     &lt;form action=""&gt;
         &lt;label for=""&gt;&lt;/label&gt;
@@ -328,28 +946,24 @@
         /&gt;
     &lt;/form&gt;
 &lt;/div&gt;</code></pre>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Button</td>
-                            <td>
-                                A pushable button that can activate a JS
-                                function when clicked
-                            </td>
-                            <td>
-                                <div>
-                                    <form action="">
-                                        <label for=""></label>
-                                        <input
-                                            type="button"
-                                            value="Click Me"
-                                            onclick=""
-                                        />
-                                    </form>
-                                </div>
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                button
+                            </div>
+                            <div class="col25">
+                                <form action="">
+                                    <label for=""></label>
+                                    <input
+                                        type="button"
+                                        value="Click Me"
+                                        onclick=""
+                                    />
+                                </form>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;div&gt;
     &lt;form action=""&gt;
         &lt;label for=""&gt;&lt;/label&gt;
@@ -360,22 +974,22 @@
         /&gt;
     &lt;/form&gt;
 &lt;/div&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Checkbox</td>
-                            <td>
-                                Lets a user select one or more options from
-                                withing a selection of options
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                checkbox
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <input
                                         type="checkbox"
                                         id="option1"
                                         name="option1"
                                         value="Car"
-                                    /><label for="option1">Bike</label>
+                                    />
+                                    <label for="option1">Bike</label>
                                     <br />
                                     <input
                                         type="checkbox"
@@ -393,9 +1007,9 @@
                                     />
                                     <label for="option3">Scooter</label>
                                 </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
+                            </div>
+                            <div class="col50">
+                                <pre><code>>&lt;form action=""&gt;
     &lt;input
         type="checkbox"
         id="option1"
@@ -420,12 +1034,14 @@
     /&gt;
     &lt;label for="option3"&gt;Scooter&lt;/label&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Color</td>
-                            <td>Select a color from a color picker</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                color
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="colorPicker"
                                         >Select a color:
@@ -436,8 +1052,8 @@
                                         name="colorPicker"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="colorPicker"&gt;Select a color: &lt;/label&gt;
     &lt;input 
@@ -445,12 +1061,14 @@
         id="colorPicker" 
         name="colorPicker"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Date</td>
-                            <td>Pick a date from a calendar</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                date
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="birthday">Birthday: </label>
                                     <input
@@ -459,8 +1077,8 @@
                                         id="birthday"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="birthday"&gt;Birthday: &lt;/label&gt;
     &lt;input 
@@ -468,12 +1086,14 @@
         name="birthday" 
         id="birthday"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Local Date Time</td>
-                            <td>From a calendar Pick a date & time</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                datetime-local
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="anniversary-time"
                                         >Anniversary (date & time)</label
@@ -484,8 +1104,8 @@
                                         id="anniversary-time"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="anniversary-time"&gt;Anniversary (date & time)&lt;/label&gt;
     &lt;input 
@@ -493,15 +1113,14 @@
         name="anniversary-time" 
         id="anniversary-time"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>
-                                Field to enter an email address, will be
-                                automatically validated on submit.
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                email
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="email"
                                         >Enter your email:
@@ -512,8 +1131,8 @@
                                         id="email"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="email"&gt;Enter your email: &lt;/label&gt;
     &lt;input 
@@ -521,12 +1140,14 @@
         name="email" 
         id="email"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>File</td>
-                            <td>Browse & select a file</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                file
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="file-select"
                                         >Select a file:
@@ -537,8 +1158,8 @@
                                         name="file-select"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="file-select"&gt;Select a file: &lt;/label&gt;
     &lt;input 
@@ -546,17 +1167,14 @@
         id="file-select" 
         name="file-select"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Hidden</td>
-                            <td>
-                                - A hidden field(not visible to user)
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
                                 <br />
-                                - Often stores what database record that needs
-                                to be updated for when the form is submitted
-                            </td>
-                            <td>
+                                hidden
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <input
                                         type="hidden"
@@ -565,8 +1183,8 @@
                                         value="1234"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;input 
         type="hidden" 
@@ -574,12 +1192,14 @@
         name="customerID" 
         value="1234"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Image</td>
-                            <td>Allows image to be a submit button</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                image
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <input
                                         type="image"
@@ -589,8 +1209,8 @@
                                         width="75px"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;input 
         type="image" 
@@ -599,12 +1219,14 @@
         height="75px"
         width="75px"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Month</td>
-                            <td>Pick a month & a year (No time zone)</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                month
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="bdaymonth"
                                         >Pick your Birthday (Month & Year):
@@ -615,8 +1237,8 @@
                                         id="bdaymonth"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="bdaymonth"&gt;Pick your Birthday (Month & Year): &lt;/label&gt;
     &lt;input 
@@ -624,25 +1246,14 @@
         name="bdaymonth" 
         id="bdaymonth"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Number</td>
-                            <td>
-                                - Field for entering a number
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
                                 <br />
-                                - Can set restrictions on acceptable numbers
-                                <br />
-                                - Can use attributes:
-                                <br />
-                                <ul>
-                                    <li>min</li>
-                                    <li>max</li>
-                                    <li>step: the number of intervals</li>
-                                    <li>value: specifies a default value</li>
-                                </ul>
-                            </td>
-                            <td>
+                                number
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="Qty"
                                         >Choose a Quantity (1 - 5):
@@ -655,8 +1266,8 @@
                                         max="5"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="Qty">Choose a Quantity (1 - 5): &lt;/label&gt;
     &lt;input 
@@ -667,16 +1278,14 @@
         max="5"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>
-                                - Field for password entry
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
                                 <br />
-                                - Characters are masked
-                            </td>
-                            <td>
+                                password
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="password">Password: </label>
                                     <input
@@ -685,8 +1294,8 @@
                                         name="password"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="password"&gt;Password: &lt;/label&gt;
     &lt;input 
@@ -694,15 +1303,14 @@
         id="password" 
         name="password"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Radio</td>
-                            <td>
-                                Selection of Radio buttons, only allows one
-                                selection
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                radio
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <input
                                         type="radio"
@@ -726,8 +1334,8 @@
                                     />
                                     <label for="fish">Fish</label>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;input
         type="radio"
@@ -751,29 +1359,18 @@
     /&gt;
     &lt;label for="fish">Fish&lt;/label&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Range</td>
-                            <td>
-                                - Control for entering a number where the exact
-                                value is not important
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
                                 <br />
-                                - Default range is 0 to 100, but restrictions
-                                can be set.
-                                <br />
-                                - Attributes:
-                                <ul>
-                                    <li>min</li>
-                                    <li>max</li>
-                                    <li>step</li>
-                                </ul>
-                            </td>
-                            <td>
+                                range
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="speed">
-                                        Speed (between 0 - 50)
-                                    </label>
+                                        Speed (between 0 - 50)</label
+                                    >
                                     <input
                                         type="range"
                                         id="speed"
@@ -782,8 +1379,8 @@
                                         max="50"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="speed"&gt;
         Speed (between 0 - 50)&lt;/label&gt;
@@ -795,12 +1392,14 @@
         max="50"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Reset</td>
-                            <td>Resets all the values in the form</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                reset
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="addy">Address: </label>
                                     <input
@@ -811,8 +1410,8 @@
                                     />
                                     <input type="reset" />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="addy">Address: &lt;/label&gt;
     &lt;input
@@ -823,15 +1422,14 @@
     /&gt;
     &lt;input type="reset" /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Search</td>
-                            <td>
-                                Define a search field (site search, or search
-                                froma specific site)
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                search
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="page-search">
                                         Search this page:
@@ -843,8 +1441,8 @@
                                     />
                                     <input type="submit" />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action="">
     &lt;label for="page-search"&gt;
         Search this page:
@@ -856,26 +1454,30 @@
     />&gt;
     &lt;input type="submit" />&gt;
 &lt;/form>&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Submit</td>
-                            <td>Is a submit button</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                submit
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <input type="submit" />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;input type="submit" /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Telephone</td>
-                            <td>Field for enetering a telephone number</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                tel
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="phone">
                                         Enter a phone number:
@@ -887,8 +1489,8 @@
                                         pattern="(\+[0-9][ |-]?)?[0-9]{3}[ |-]?[0-9]{3}[ |-]?[0-9]{4}"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="phone"&gt;
         Enter a phone number:
@@ -900,12 +1502,14 @@
         pattern="(\+[0-9][ |-]?)?[0-9]{3}[ |-]?[0-9]{3}[ |-]?[0-9]{4}"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Time</td>
-                            <td>Pick a time (No time zone)</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                time
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="opening-time">
                                         Opening Time:
@@ -916,8 +1520,8 @@
                                         name="opening-time"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="opening-time"&gt;
         Opening Time:
@@ -928,12 +1532,14 @@
         name="opening-time"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>URL</td>
-                            <td>Field for entering a URL</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                url
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="homepage">
                                         Add your homepage:
@@ -944,8 +1550,8 @@
                                         name="homepage"
                                     />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="homepage"&gt;
         Add your homepage:
@@ -956,21 +1562,20 @@
         name="homepage"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Week</td>
-                            <td>
-                                Choose a week and date from a calendar (No time
-                                zone)
-                            </td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                week
+                            </div>
+                            <div class="col25">
                                 <form action="">
                                     <label for="week"> Select a week: </label>
                                     <input type="week" id="week" name="week" />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="week"&gt;
         Select a week:
@@ -981,29 +1586,115 @@
         name="week"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                    <li class="title">Other Types of Fields</li>
-                    <table>
-                        <tr>
-                            <th>Type</th>
-                            <th>Explanation</th>
-                            <th>Example</th>
-                            <th>HTML Syntax</th>
-                        </tr>
-                        <tr>
-                            <td>Dropdown List</td>
-                            <td>
-                                - Option element defines an option that can be
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col15">
+                                <br />
+                                drop-down list
+                            </div>
+                            <div class="col25">
+                                <form action="">
+                                    <label for="week"> Select a week: </label>
+                                    <input type="week" id="week" name="week" />
+                                </form>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;form action=""&gt;
+    &lt;label for="week"&gt;
+        Select a week:
+    &lt;/label&gt;
+    &lt;input
+        type="week"
+        id="week"
+        name="week"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h3 id="form_elements_label">Label</h3>
+                        <ul>
+                            <li>Defines a label for several form elements</li>
+                            <li>
+                                The for attribute of the &lt;label&gt; tag
+                                should be equal to
+                            </li>
+                            <li>
+                                The id attribute of the &lt;input&gt; element to
+                                bind them together
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
+                                <form action="">
+                                    <label for="firstName">
+                                        Please enter your first name:
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="firstName"
+                                        id="firstName"
+                                        placeholder="First Name"
+                                    />
+                                </form>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;form action=""&gt;
+    &lt;label for="firstName"&gt;
+        Please enter your first name:
+    &lt;/label&gt;
+    &lt;input
+        type="text"
+        name="firstName"
+        id="firstName"
+        placeholder="First Name"
+    /&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <div>
+                        <h3 id="form_elements_select">Select</h3>
+                        <ul>
+                            <li>
+                                Option element defines an option that can be
                                 selected
-                                <br />
-                                - By default first option is selected
-                                <br />
-                                - To change the default, add the "selected"
+                            </li>
+                            <li>By default first option is selected</li>
+                            <li>
+                                To change the default, add the "selected"
                                 attribute to the option
-                            </td>
-                            <td>
+                            </li>
+                            <li>
+                                Use the "size" attribute to specify how many
+                                values hould be visible
+                            </li>
+                            <li>Allowing selection of more than one value</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <form action="">
                                     <select name="colors" id="colors">
                                         <option value="red">Red</option>
@@ -1014,8 +1705,8 @@
                                         <option value="orange">Orange</option>
                                     </select>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action=""&gt;
     &lt;select name="colors" id="colors"&gt;
         &lt;option value="red">Red&lt;/option&gt;
@@ -1030,54 +1721,11 @@
         &lt;/option&gt;
     &lt;/select&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Label</td>
-                            <td>
-                                - Defines a label
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <br />
-                                - "for" attribite should be equal to the "id"
-                                attribute of the
-                                <i
-                                    ><b><u>input</u></b></i
-                                >
-                                element
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="firstName">
-                                        Please enter your first name:
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        id="firstName"
-                                        placeholder="First Name"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
-    &lt;label for="firstName"&gt;
-        Please enter your first name:
-    &lt;/label&gt;
-    &lt;input
-        type="text"
-        name="firstName"
-        id="firstName"
-        placeholder="First Name"
-    /&gt;
-&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Visible Values</td>
-                            <td>
-                                Use the "size" attribute to specify how many
-                                values hould be visible
-                            </td>
-                            <td>
                                 <form action="">
                                     <label for="favFruit">
                                         Pick your favourite fruit:
@@ -1094,8 +1742,8 @@
                                         <option value="grape">Grape</option>
                                     </select>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="favFruit"&gt;
         Pick your favourite fruit:
@@ -1112,12 +1760,11 @@
         &lt;option value="grape"&gt;Grape&lt;/option&gt;
     &lt;/select&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Multiple Selections</td>
-                            <td>- Allowing selection of more than one value</td>
-                            <td>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
+                                <br />
                                 <form action="">
                                     <label for="dressLength">
                                         Choose a dress length:
@@ -1135,8 +1782,8 @@
                                         <option value="floor">Floor</option>
                                     </select>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="dressLength"&gt;
         Choose a dress length:
@@ -1147,42 +1794,47 @@
         size="5"
         multiple
     &gt;
-        &lt;option value="mini">Mini&lt;/option&gt;
-        &lt;option value="knee">Knee&lt;/option&gt;
-        &lt;option value="calf">Calf&lt;/option&gt;
-        &lt;option value="maxi">Maxi&lt;/option&gt;
-        &lt;option value="floor">Floor&lt;/option&gt;
+        &lt;option value="mini"&gt;Mini&lt;/option&gt;
+        &lt;option value="knee"&gt;Knee&lt;/option&gt;
+        &lt;option value="calf"&gt;Calf&lt;/option&gt;
+        &lt;option value="maxi"&gt;Maxi&lt;/option&gt;
+        &lt;option value="floor"&gt;Floor&lt;/option&gt;
     &lt;/select&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Multi Line Input Field (Text Area)</td>
-                            <td>
-                                - Allows the entry of multiple text lines
-                                <br />
-                                - "rows" attribute specifies the visible number
-                                of lines in the text area
-                                <br />
-                                - "cols" specifies the visible width of the text
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3 id="form_elements_textarea">Text Area</h3>
+                        <ul>
+                            <li>Allows the entry of multiple text lines</li>
+                            <li>
+                                "rows" attribute specifies the visible number of
+                                lines in the text area
+                            </li>
+                            <li>
+                                "cols" specifies the visible width of the text
                                 area
-                                <br />
-                                - "maxlength" specifies the maximum number of
+                            </li>
+                            <li>
+                                "maxlength" specifies the maximum number of
                                 words allowed
-                                <br />
-                                - Size of the text area can also be specified
+                            </li>
+                            <li>
+                                Size of the text area can also be specified
                                 through CSS
-                                <pre><code>textarea {
-    width: 200px; 
-    height: 600px;
-    resize: none; // Only use rarely
-    resize: horizontal; // limits resizing by height
-    resize: vertical: // limits resizing by width
-    max-width: 200px;
-    max-height: 200px;
-}</code></pre>
-                            </td>
-                            <td>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <form action="">
                                     <label for="complaint">
                                         Please write your complaint below:
@@ -1190,14 +1842,14 @@
                                     <textarea
                                         name="complaint"
                                         id="complaint"
-                                        cols="30"
+                                        cols="25"
                                         rows="5"
-                                        placeholder="Enter text here: Max Words = 100"
-                                        maxlength="100"
+                                        placeholder="Enter text here:"
+                                        max-length="100"
                                     ></textarea>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action=""&gt;
     &lt;label for="complaint"&gt;
         Please write your complaint
@@ -1206,26 +1858,36 @@
     &lt;textarea
         name="complaint"
         id="complaint"
-        cols="30"
+        cols="25"
         rows="5"
         placeholder="Enter text here:"
         max-length = "100"
     &gt;&lt;/textarea&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Grouping related data elements together in a
-                                form (Field Set) with their caption (Legend)
-                            </td>
-                            <td>
-                                - Fieldset groups form elements together
-                                <br />
-                                - Legend defines the caption for the field set
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3 id="form_elements_fieldset_legend">
+                            Fieldset & Legend
+                        </h3>
+                        <ul>
+                            <li>Fieldset groups form elements together</li>
+                            <li>
+                                Legend defines the caption for the field set
                                 element
-                            </td>
-                            <td>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <form action="">
                                     <fieldset>
                                         <legend>
@@ -1256,12 +1918,12 @@
                                         <input type="submit" />
                                     </fieldset>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action=""&gt;
     &lt;fieldset&gt;
         &lt;legend&gt;
-            &lt;b>BMI Info:&lt;/b&gt;
+            &lt;b&gt;BMI Info:&lt;/b&gt;
         &lt;/legend&gt;
         &lt;label for="height"&gt;
             Height:
@@ -1292,34 +1954,39 @@
         &lt;input type="submit" /&gt;
     &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Datalist</td>
-                            <td>
-                                - Specifies a list of predefined option for
-                                <i
-                                    ><b><u>input</u></b></i
-                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3 id="form_elements_fieldset_datalist">Datalist</h3>
+                        <ul>
+                            <li>
+                                Specifies a list of predefined option for input
                                 options
-                                <br />
-                                - Users will see a pre-defined list drop-down as
+                            </li>
+                            <li>
+                                Users will see a pre-defined list drop-down as
                                 they input data
-                                <br />
-                                - the "list" attribute of the
-                                <i
-                                    ><b><u>input</u></b></i
-                                >
-                                element must refer to the "id" attribute of the
-                                <i
-                                    ><b><u>datalist</u></b></i
-                                >
+                            </li>
+                            <li>
+                                The "list" attribute of the input element must
+                                refer to the "id" attribute of the datalist
                                 element
-                            </td>
-                            <td>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <form action="/action_page.php">
-                                    <input list="colors-2" name="colors-2" />
-                                    <datalist id="colors-2">
+                                    <input list="colors" />
+                                    <datalist id="colors">
                                         <option value="Red"></option>
                                         <option value="Orange"></option>
                                         <option value="Yellow"></option>
@@ -1329,8 +1996,8 @@
                                         <option value="Violet"></option>
                                     </datalist>
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form action="/action_page.php"&gt;
     &lt;input list="colors" /&gt;
     &lt;datalist id="colors"&gt;
@@ -1343,12 +2010,24 @@
         &lt;option value="Violet">&lt;/option&gt;
     &lt;/datalist&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Output</td>
-                            <td>Represents the result of a calculation</td>
-                            <td>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h3 id="form_elements_fieldset_output">Output</h3>
+                        <ul>
+                            <li>Represents the result of a calculation</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col25">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col25">
                                 <form
                                     action="/action_page.php"
                                     oninput="result.value=parseInt(num1.value)*parseInt(num2.value)"
@@ -1356,7 +2035,6 @@
                                     <label for="num1">
                                         Pick first number (1 - 10):
                                     </label>
-
                                     <input
                                         type="number"
                                         name="num1"
@@ -1378,10 +2056,12 @@
                                         name="result"
                                         for="num1 num2"
                                     ></output>
-                                    <br /><br /><input type="submit" />
+                                    <br />
+                                    <br />
+                                    <input type="submit" />
                                 </form>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="col75">
                                 <pre><code>&lt;form
     action="/action_page.php"
     oninput="result.value=parseInt(num1.value)*parseInt(num2.value)"&gt;
@@ -1408,78 +2088,318 @@
     &lt;output
         name="result"
         for="num1 num2"
-    >&lt;/output&gt;
+    &gt;&lt;/output&gt;
     &lt;br /&gt;
     &lt;br /&gt;
     &lt;input type="submit" /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                    <li class="title">Attributes</li>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <hr />
+            <hr />
+            <article>
+                <section>
+                    <h2 id="input_attributes">Input Attributes</h2>
                     <table>
-                        <tr>
+                        <thead>
                             <th>Type</th>
-                            <th>Explanation</th>
-                            <th>Example</th>
-                            <th>HTML Syntax</th>
-                        </tr>
-                        <tr>
-                            <td>Value</td>
-                            <td>
-                                Specifies an initial value for the input field
-                            </td>
-                            <td>
-                                <form action="">
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        name="fname"
-                                        value="John"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
-    &lt;input
-        type="text"
-        id="fname"
-        name="fname"
-        value="John"
-    /&gt;
-&lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Read Only</td>
-                            <td>
-                                - Read only input field, that can't be changed
+                            <th>Value</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_value">Value</a>
+                                </td>
+                                <td>value</td>
+                                <td>
+                                    Read only input field, that can't be changed
+                                    <br />
+                                    Will be sent when submitting the form
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_readonly"
+                                        >Readonly</a
+                                    >
+                                </td>
+                                <td>readonly</td>
+                                <td>
+                                    Read only input field, that can't be changed
+                                    <br />
+                                    Will be sent when submitting the form
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_disabled"
+                                        >Disabled</a
+                                    >
+                                </td>
+                                <td>disabled</td>
+                                <td>Field is unusable and unclickable</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_size">Size</a>
+                                </td>
+                                <td>size</td>
+                                <td>
+                                    Specifies the visible width in characters of
+                                    the input field
+                                    <br />
+                                    Works with text, search, tel, url, email,
+                                    password
+                                    <br />
+                                    Default size is 20
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_maxlength"
+                                        >Maxlength</a
+                                    >
+                                </td>
+                                <td>maxlength</td>
+                                <td>
+                                    Specifies the maximum number of characters
+                                    allowed in an input field
+                                    <br />
+                                    When set, the input field won't accept more
+                                    than the specified number of characters
+                                    <br />
+                                    To provide feedback on this, JS code must be
+                                    written
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_min_max"
+                                        >Min & Max</a
+                                    >
+                                    <br />
+                                </td>
+                                <td>
+                                    min <br />
+                                    max
+                                </td>
+                                <td>
+                                    Minimum & Maximum values for any field
+                                    <br />
+                                    Works with number, range date,
+                                    datetime-local, month, time, and week
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_multiple"
+                                        >Multiple</a
+                                    >
+                                </td>
+                                <td>multiple</td>
+                                <td>
+                                    Specifies that more than one value can be
+                                    entered
+                                    <br />
+                                    Works with email and file
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_pattern"
+                                        >Pattern</a
+                                    >
+                                </td>
+                                <td>pattern</td>
+                                <td>
+                                    Specifies a RegEx that the input field value
+                                    is checked against, when the form is
+                                    submitted
+                                    <br />
+                                    Works with text, date, search, url, tel,
+                                    email, and password
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_placeholder"
+                                        >Placeholder</a
+                                    >
+                                </td>
+                                <td>placeholder</td>
+                                <td>
+                                    A hint or example that shows what kind of
+                                    input is expected
+                                    <br />
+                                    Is displayed in the input field
+                                    <br />
+                                    Works with text, seacrh, url, number, tel,
+                                    email and password
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_required"
+                                        >Required</a
+                                    >
+                                </td>
+                                <td>required</td>
+                                <td>
+                                    Specifies that an input field must be filled
+                                    out before submitting the form
+                                    <br />
+                                    Works with text, search, url, tel, email,
+                                    password, date pickers, number, checkbox,
+                                    radio, and file.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_step">Step</a>
+                                </td>
+                                <td>step</td>
+                                <td>
+                                    Specifies the legal number intervals for an
+                                    input field
+                                    <br />
+                                    Can be used together with the "max" and
+                                    "min" attributes to create a range of legal
+                                    values
+                                    <br />
+                                    Works with number, range, date,
+                                    datetime-local, month, time and week
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_autofocus"
+                                        >Autofocus</a
+                                    >
+                                </td>
+                                <td>autofocus</td>
+                                <td>
+                                    Specifies that an input field should
+                                    automatically get focus when the page loads
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_height_width"
+                                        >Height & Width</a
+                                    >
+                                </td>
+                                <td>
+                                    height <br />
+                                    width
+                                </td>
+                                <td>
+                                    Specify the height and width of an
+                                    <b><i>input type="image"</i></b> element
+                                    <br />
+                                    Always specify both the height and width
+                                    attributes for images
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_datalist"
+                                        >Datalist</a
+                                    >
+                                </td>
+                                <td>list</td>
+                                <td>
+                                    Refers to a <b><i>datalist</i></b> element
+                                    that contains pre-defined options for an
+                                    <b><i>input</i></b> element
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#input_attributes_autocomplete"
+                                        >Autocomplete</a
+                                    >
+                                </td>
+                                <td>autocomplete</td>
+                                <td>
+                                    Specifies whether a form or an input field
+                                    should have autocomplete on or of
+                                    <br />
+                                    When a user starts to type in a field, the
+                                    browser should display options to fill in
+                                    the field, based on earlier typed values
+                                    <br />
+                                    Works with form and text, search, url, tel,
+                                    email, password, datepickers, range, and
+                                    color
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_value">Value</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <form action="">
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    value="John"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action="">=&gt;
+                    &lt;input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        value="John"
+                    />=&gt;
+                &lt;/form>=&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_readonly">Readonly</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="class">Class: </label>
+                                <input
+                                    type="text"
+                                    id="class"
+                                    name="class"
+                                    value="English"
+                                    readonly
+                                />
                                 <br />
-                                - Will be sent when submitting the form
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="class">Class: </label>
-                                    <input
-                                        type="text"
-                                        id="class"
-                                        name="class"
-                                        value="English"
-                                        readonly
-                                    />
-                                    <br />
-                                    <br />
-                                    <label for="grade">Grade: </label>
-                                    <input
-                                        type="text"
-                                        name="grade"
-                                        id="grade"
-                                    />
-                                    <label for="percent">%</label>
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
+                                <br />
+                                <label for="grade">Grade: </label>
+                                <input type="text" name="grade" id="grade" />
+                                <label for="percent">%</label>
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action=""&gt;
     &lt;label for="class"&gt;Class: &lt;/label&gt;
     &lt;input
         type="text"
@@ -1498,35 +2418,40 @@
     /&gt;
     &lt;label for="percent">%&lt;/label&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Disabled</td>
-                            <td>Field is unusable and unclickable</td>
-                            <td>
-                                <form action="">
-                                    <label for="vehicle-type"
-                                        >Vehicle Type:
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="vehicle-type"
-                                        id="vehicle-type"
-                                        value="Car"
-                                        disabled
-                                    />
-                                    <select
-                                        name="vehicle-make"
-                                        id="vehicle-make"
-                                    >
-                                        <option value="Toyota">Toyota</option>
-                                        <option value="Mazda">Mazda</option>
-                                        <option value="Ford">Ford</option>
-                                    </select>
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_disabled">Disabled</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="vehicle-type">
+                                    Vehicle Type:
+                                </label>
+                                <input
+                                    type="text"
+                                    name="vehicle-type"
+                                    id="vehicle-type"
+                                    value="Car"
+                                    disabled
+                                />
+                                <select name="vehicle-make" id="vehicle-make">
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Ford">Ford</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action=""&gt;
     &lt;label for="vehicle-type"&gt;
         Vehicle Type:
     &lt;/label&gt;
@@ -1552,39 +2477,42 @@
         &lt;/option&gt;
     &lt;/select&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Size</td>
-                            <td>
-                                - Specifies the visible width in characters of
-                                the input field
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_size">Size</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="fname">First name:</label>
                                 <br />
-                                - Works with text, search, tel, url, email,
-                                password
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    size="20"
+                                />
                                 <br />
-                                - Default size is 20
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="fname">First name:</label><br />
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        name="fname"
-                                        size="20"
-                                    /><br />
-                                    <label for="pin">PIN:</label><br />
-                                    <input
-                                        type="text"
-                                        id="pin"
-                                        name="pin"
-                                        size="4"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form&gt;
+                                <label for="pin">PIN:</label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="pin"
+                                    name="pin"
+                                    size="4"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form&gt;
     &lt;label for="fname"&gt;First name:&lt;/label&gt;
     &lt;br&gt;
     &lt;input type="text" id="fname" name="fname" size="20"&gt;
@@ -1593,74 +2521,74 @@
     &lt;br&gt;
     &lt;input type="text" id="pin" name="pin" size="4"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Max Length</td>
-                            <td>
-                                - Specifies the maximum number of characters
-                                allowed in an input field
-                                <br />
-                                - When set, the input field won't accept more
-                                than the specified number of characters
-                                <br />
-                                - To provide feedback on this, JS code must be
-                                written
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="s_id">
-                                        Enter student ID:
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="s_id"
-                                        id="s_id"
-                                        size="13"
-                                        maxlength="15"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="">&gt;
-    &lt;label for="s_id">&gt;
-        Enter student ID:
-    &lt;/label>&gt;
-    &lt;input
-        type="text"
-        name="s_id"
-        id="s_id"
-        size="13"
-        maxlength="15"
-    />&gt;
-&lt;/form>&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Min & Max</td>
-                            <td>
-                                - Minimum & Maximum values for any field
-                                <br />
-                                - Works with number, range date, datetime-local,
-                                month, time, and week
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="shoesQ">
-                                        How many shoes would you like
-                                    </label>
-                                    <input
-                                        type="number"
-                                        name="shoesQ"
-                                        id="shoesQ"
-                                        min="1"
-                                        max="4"
-                                        value="1"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_maxlength">Maxlength</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="s_id"> Enter student ID: </label>
+                                <input
+                                    type="text"
+                                    name="s_id"
+                                    id="s_id"
+                                    size="13"
+                                    maxlength="15"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action="">&gt;
+        &lt;label for="s_id">&gt;
+            Enter student ID:
+        &lt;/label>&gt;
+        &lt;input
+            type="text"
+            name="s_id"
+            id="s_id"
+            size="13"
+            maxlength="15"
+        />&gt;
+    &lt;/form>&gt;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_min_max">Min & Max</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="shoesQ">
+                                    How many shoes would you like
+                                </label>
+                                <input
+                                    type="number"
+                                    name="shoesQ"
+                                    id="shoesQ"
+                                    min="1"
+                                    max="4"
+                                    value="1"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action=""&gt;
     &lt;label for="shoesQ"&gt;
         How many shoes would you
         like
@@ -1674,29 +2602,32 @@
         value="1"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Multiple</td>
-                            <td>
-                                - Specifies that more than one value can be
-                                entered
-                                <br />
-                                - Works with email and file
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="files"> Select files: </label>
-                                    <input
-                                        type="file"
-                                        id="files"
-                                        name="files"
-                                        multiple
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_multiple">Multiple</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="files"> Select files: </label>
+                                <input
+                                    type="file"
+                                    id="files"
+                                    name="files"
+                                    multiple
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form&gt;
     &lt;label for="files"&gt;
         Select files:
     &lt;/label&gt;
@@ -1707,32 +2638,34 @@
         multiple
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Pattern</td>
-                            <td>
-                                - Specifies a RegEx that the input field value
-                                is checked against, when the form is submitted
-                                <br />
-                                - Works with text, date, search, url, tel,
-                                email, and password
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="teacherID"> Teacher ID: </label>
-                                    <input
-                                        type="text"
-                                        name="teacherID"
-                                        id="teacherID"
-                                        pattern="[a-wA-W]{4}[0-9]{5}[X|Y]"
-                                        title="AbCd12345X"
-                                    />
-                                    <input type="submit" />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action=""&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_pattern">Pattern</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="teacherID"> Teacher ID: </label>
+                                <input
+                                    type="text"
+                                    name="teacherID"
+                                    id="teacherID"
+                                    pattern="[a-wA-W]{4}[0-9]{5}[X|Y]"
+                                    title="AbCd12345X"
+                                />
+                                <input type="submit" />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action=""&gt;
     &lt;label for="teacherID"&gt;
         Teacher ID:
     &lt;/label&gt;
@@ -1745,43 +2678,43 @@
     /&gt;
     &lt;input type="submit" />
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Placeholder</td>
-                            <td>
-                                - A hint or example that shows what kind of
-                                input is expected
-                                <br />
-                                - Is displayed in the input field
-                                <br />
-                                - Works with text, seacrh, url, number, tel,
-                                email and password
-                            </td>
-                            <td>
-                                <form action="">
-                                    <label for="petName">
-                                        Please enter your pet's name:
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="petName"
-                                        id="petName"
-                                        placeholder="Kitty"
-                                    />
-                                    <label for="petAge">
-                                        Please choose the age of your pet:
-                                    </label>
-                                    <input
-                                        type="number"
-                                        name="petAge"
-                                        id="petAge"
-                                        placeholder="1"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="">&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_placeholder">Placeholder</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="">
+                                <label for="petName">
+                                    Please enter your pet's name:
+                                </label>
+                                <input
+                                    type="text"
+                                    name="petName"
+                                    id="petName"
+                                    placeholder="Kitty"
+                                />
+                                <label for="petAge">
+                                    Please choose the age of your pet:
+                                </label>
+                                <input
+                                    type="number"
+                                    name="petAge"
+                                    id="petAge"
+                                    placeholder="1"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action="">&gt;
     &lt;label for="petName">&gt;
         Please enter your pet's name:
     &lt;/label>&gt;
@@ -1802,31 +2735,32 @@
         placeholder="1"
     />&gt;
 &lt;/form>&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Required</td>
-                            <td>
-                                - Specifies that an input field must be filled
-                                out before submitting the form
-                                <br />
-                                - Works with text, search, url, tel, email,
-                                password, date pickers, number, checkbox, radio,
-                                and file.
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="username"> Username: </label>
-                                    <input
-                                        type="text"
-                                        id="username"
-                                        name="username"
-                                        required
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form>&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_required">Required</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="username"> Username: </label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    required
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form>&gt;
     &lt;label for="username">&gt;
         Username:
     &lt;/label>&gt;
@@ -1837,33 +2771,32 @@
         required
     />&gt;
 &lt;/form>&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Step</td>
-                            <td>
-                                - Specifies the legal number intervals for an
-                                input field
-                                <br />
-                                - Can be used together with the "max" and "min"
-                                attributes to create a range of legal values
-                                <br />
-                                - Works with number, range, date,
-                                datetime-local, month, time and week
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="points"> Points: </label>
-                                    <input
-                                        type="number"
-                                        id="points"
-                                        name="points"
-                                        step="3"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form>&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_step">Step</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="points"> Points: </label>
+                                <input
+                                    type="number"
+                                    id="points"
+                                    name="points"
+                                    step="3"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form>&gt;
     &lt;label for="points">&gt;
         Points:
     &lt;/label>&gt;
@@ -1874,34 +2807,37 @@
         step="3"
     />&gt;
 &lt;/form>&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Autofocus</td>
-                            <td>
-                                - Specifies that an input field should
-                                automatically get focus when the page loads
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="fname"> First name: </label>
-                                    <br />
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        name="fname"
-                                    /><br />
-                                    <label for="lname"> Last name: </label>
-                                    <br />
-                                    <input
-                                        type="text"
-                                        id="lname"
-                                        name="lname"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_autofocus">Autofocus</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="fname"> First name: </label>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    autofocus
+                                />
+                                <br />
+                                <label for="lname"> Last name: </label>
+                                <br />
+                                <input type="text" id="lname" name="lname" />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form&gt;
     &lt;label for="fname"&gt;
         First name:
     &lt;/label&gt;
@@ -1923,49 +2859,40 @@
         name="lname"
     /&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Height & Width</td>
-                            <td>
-                                - Specify the height and width of an
-                                <i
-                                    ><b><u>input type="image"</u></b></i
-                                >
-                                element
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_height_width">Height & Width</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <label for="fname"> First name: </label>
+                                <input type="text" id="fname" name="fname" />
                                 <br />
-                                - Always specify both the height and width
-                                attributes for images
-                            </td>
-                            <td>
-                                <form>
-                                    <label for="fname"> First name: </label>
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        name="fname"
-                                    />
-                                    <br />
-                                    <br />
-                                    <label for="lname"> Last name: </label>
-                                    <input
-                                        type="text"
-                                        id="lname"
-                                        name="lname"
-                                    />
-                                    <br />
-                                    <br />
-                                    <input
-                                        type="image"
-                                        src="img_submit.gif"
-                                        alt="Submit"
-                                        width="48"
-                                        height="48"
-                                    />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form&gt;
+                                <br />
+                                <label for="lname"> Last name: </label>
+                                <input type="text" id="lname" name="lname" />
+                                <br />
+                                <br />
+                                <input
+                                    type="image"
+                                    src="img_submit.gif"
+                                    alt="Submit"
+                                    width="48"
+                                    height="48"
+                                />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form&gt;
     &lt;label for="fname"&gt;
         First name:
     &lt;/label&gt;
@@ -1980,35 +2907,33 @@
     &lt;br&gt;
     &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>List</td>
-                            <td>
-                                Refers to a
-                                <i
-                                    ><b><u>datalist</u></b></i
-                                >
-                                element that contains pre-defined options for an
-                                <i
-                                    ><b><u>input</u></b></i
-                                >
-                                element
-                            </td>
-                            <td>
-                                <form>
-                                    <input list="browsers" />
-                                    <datalist id="browsers">
-                                        <option value="Edge"></option>
-                                        <option value="Firefox"></option>
-                                        <option value="Chrome"></option>
-                                        <option value="Opera"></option>
-                                        <option value="Safari"></option>
-                                    </datalist>
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form&gt;
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_datalist">Datalist</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form>
+                                <input list="browsers" />
+                                <datalist id="browsers">
+                                    <option value="Edge"></option>
+                                    <option value="Firefox"></option>
+                                    <option value="Chrome"></option>
+                                    <option value="Opera"></option>
+                                    <option value="Safari"></option>
+                                </datalist>
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form&gt;
 &lt;input list="browsers"&gt;
 &lt;datalist id="browsers"&gt;
     &lt;option value="Edge"&gt;
@@ -2018,60 +2943,43 @@
     &lt;option value="Safari"&gt;
 &lt;/datalist&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Autocomplete</td>
-                            <td>
-                                - Specifies whether a form or an input field
-                                should have autocomplete on or of
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3 id="input_attributes_autocomplete">Autocomplete</h3>
+                    <div class="row">
+                        <div class="col25">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col25">
+                            <br />
+                            <form action="/action_page.php" autocomplete="on">
+                                <label for="fname"> First name: </label>
+                                <input type="text" id="fname" name="fname" />
                                 <br />
-                                - When a user starts to type in a field, the
-                                browser should display options to fill in the
-                                field, based on earlier typed values
                                 <br />
-                                - Works with
-                                <i
-                                    ><b><u>form</u></b></i
-                                >
-                                and text, search, url, tel, email, password,
-                                datepickers, range, and color
-                            </td>
-                            <td>
-                                <form
-                                    action="/action_page.php"
-                                    autocomplete="on"
-                                >
-                                    <label for="fname"> First name: </label>
-                                    <input
-                                        type="text"
-                                        id="fname"
-                                        name="fname"
-                                    />
-                                    <br />
-                                    <br />
-                                    <label for="lname"> Last name: </label>
-                                    <input
-                                        type="text"
-                                        id="lname"
-                                        name="lname"
-                                    />
-                                    <br />
-                                    <br />
-                                    <label for="email"> Email: </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        autocomplete="off"
-                                    />
-                                    <br />
-                                    <br />
-                                    <input type="submit" value="Submit" />
-                                </form>
-                            </td>
-                            <td>
-                                <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;
+                                <label for="lname"> Last name: </label>
+                                <input type="text" id="lname" name="lname" />
+                                <br />
+                                <br />
+                                <label for="email"> Email: </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="off"
+                                />
+                                <br />
+                                <br />
+                                <input type="submit" value="Submit" />
+                            </form>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;
     &lt;label for="fname"&gt;
         First name:
     &lt;/label&gt;
@@ -2092,12 +3000,14 @@
     &lt;br&gt;
     &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;</code></pre>
-                            </td>
-                        </tr>
-                    </table>
-                </ul>
-            </ul>
-        </ul>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <hr />
+            <hr />
+        </div>
         <footer>
             <nav>
                 <div>

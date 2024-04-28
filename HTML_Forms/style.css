@@ -43,8 +43,8 @@
 
 /* Side Navigation Menu */
 .sidenav {
-    height: auto;
     width: 0;
+    height: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -129,7 +129,7 @@ h2 {
 h3 {
     background-color: #fcbf4976;
     border-radius: 5px;
-    margin: 50px 25px 5px 25px;
+    margin: 5px 25px 5px 25px;
     padding: 3px 15px;
     font-size: 18px;
     /* Kanit Regular */
@@ -145,31 +145,34 @@ h3 {
 .row {
     display: flex;
 }
-.col25 {
-    width: 25%;
+.col15,
+.col20,
+.col30,
+.col50,
+.col25,
+.col75 {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
 }
-
+.col15 {
+    width: 15%;
+}
+.col20 {
+    width: 20%;
+}
 .col30 {
     width: 30%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-}
-.col35 {
-    width: 35%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
 }
 
 .col50 {
     width: 50%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+}
+.col25 {
+    width: 25%;
+}
+.col75 {
+    width: 75%;
 }
 
 .col_header {
@@ -185,65 +188,31 @@ pre {
     border-radius: 15px;
 }
 
-table#table1 table,
-table#table1 th,
-table#table1 td {
+table {
+    margin-left: 30px;
     border: 1px solid black;
+    padding: 5px;
+    width: 100vw;
+    max-width: 100%;
+}
+td {
+    padding: 10px;
+}
+th {
+    background-color: #00000096;
+    padding: 10px;
+    font-size: 15px;
+    color: #fcdcb9;
 }
 
-table#table2 {
-    border: 2px solid #000fff;
+td:nth-child(1) {
+    padding: 0px 15px;
 }
 
-table#table3 th {
-    background-color: aqua;
-}
-
-table#table4 tr:nth-of-type(odd),
-table#table5 tr:nth-of-type(odd) {
-    background-color: #bcb7f0;
-}
-
-table#table4 tr:nth-child(1) {
-    background: none;
-}
-
-table#table5 th,
-table#table5 td {
-    padding: 15px;
-}
-
-table#table6 tr:nth-of-type(even) {
-    background-color: #f8f4b2;
-}
-
-table#table6 th {
-    background-color: rgb(184, 242, 184);
-}
-
-table#table7,
-table#table7 td {
-    border: 2px solid black;
-    padding: 15px;
-}
-.merge_col,
-.merge_row {
-    text-align: center;
+tr:nth-of-type(even) {
+    background-color: #00000017;
 }
 
 hr {
     border: 5px dashed #d6282876;
-}
-
-/* table#table2 tr:nth-child(even) {
-    background-color: rgb(158, 236, 236);
-} */
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
 }
