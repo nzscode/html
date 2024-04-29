@@ -30,46 +30,78 @@
                 <nav id="nav">
                     <p>Basic Table</p>
                     <ul>
-                        <li><a href="#Basic_Table">Basic Table</a></li>
+                        <li><a href="#basic_table">Basic Table</a></li>
                         <li>
-                            <a href="#Default_Table_CSS">Default Table CSS</a>
+                            <a href="#table_default_table_css"
+                                >Default Table CSS</a
+                            >
                         </li>
                     </ul>
                     <p>Default CSS</p>
                     <ul>
                         <li>
-                            <a href="#Default_Table_CSS">Table CSS</a>
+                            <a href="#table_default_table_css">Table CSS</a>
                         </li>
-                        <li><a href="#Default_TH_CSS">Table Header CSS</a></li>
-                        <li><a href="#Default_TR_CSS">Table Row CSS</a></li>
-                        <li><a href="#Default_TD_CSS">Table Cell CSS</a></li>
+                        <li>
+                            <a href="#table_default_th_css">Table Header CSS</a>
+                        </li>
+                        <li>
+                            <a href="#table_default_tr_css">Table Row CSS</a>
+                        </li>
+                        <li>
+                            <a href="#table_default_td_css">Table Cell CSS</a>
+                        </li>
                     </ul>
                     <p>Table Snippets</p>
                     <ul>
                         <li>
-                            <a href="#Border_Around_Table"
+                            <a href="#table_border_around_table"
                                 >Border Around Table</a
                             >
                         </li>
                         <li>
-                            <a href="#Header_Cells_BGColor"
+                            <a href="#table_header_cells_bgcolor"
                                 >Header Cells Background Color</a
                             >
                         </li>
                         <li>
-                            <a href="#BGColor_Odd_Cells"
+                            <a href="#table_bgcolor_odd_cells"
                                 >Background Color for Odd Cells</a
                             >
                         </li>
                         <li>
-                            <a href="#Padding_TH_TD">Padding Around TH & TD</a>
+                            <a href="#table_padding_th_td"
+                                >Padding Around TH & TD</a
+                            >
                         </li>
                         <li>
-                            <a href="#Different_Colors_TH_TD"
+                            <a href="#table_different_colors_th_td"
                                 >Different Colors for TH & TD</a
                             >
                         </li>
-                        <li><a href="#Merging_Cells">Merging Cells</a></li>
+                        <li>
+                            <a href="#table_merging_cells">Merging Cells</a>
+                        </li>
+                        <li>
+                            <a href="#table_creating_table_with_caption"
+                                >Creating a table with a caption</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#table_center_align_table"
+                                >Center Align a Table</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#table_right_align_table"
+                                >Right Align a Table</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#table_collapsing_borders"
+                                >Collapsing Borders of a Table</a
+                            >
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -481,6 +513,202 @@ table#table7 td {
     text-align: center;
 }</code></pre>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="table_creating_table_with_caption">
+                    Creating a table with a caption
+                </h3>
+                <ul>
+                    <li>
+                        Used to specify whether the borders of table cells
+                        should be collapsed into a single border or not.
+                    </li>
+                    <li>
+                        When border-collapse is set to collapse , adjacent cell
+                        borders will be merged into a single border, resulting
+                        in a cleaner and more compact table design
+                    </li>
+                    <li>This is the default value</li>
+                </ul>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table8">
+                            <caption>
+                                Fruits to buy
+                            </caption>
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table8 {
+    border: 2px solid black;
+}
+
+table#table8 th{
+    background-color: rgb(184, 242, 184);
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="table_center_align_table">
+                    Aligning the table to the center of the page using CSS
+                </h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table9">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table9 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#table9 th{
+    background-color: rgb(184, 242, 184);
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="table_right_align_table">
+                    Aligning the table to the Right of the page using CSS
+                </h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table10">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table10 {
+    float: right
+}
+
+table#table10 th{
+    background-color: rgb(184, 242, 184);
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="table_collapsing_borders">
+                    Collapsing the Table borders
+                </h3>
+                <div class="row">
+                    <div class="col50">
+                        <table id="table11">
+                            <tr>
+                                <th>Fruit</th>
+                                <th>Quantity</th>
+                            </tr>
+                            <tr>
+                                <td>Apple</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Cherries</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Banana</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Kiwi</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col50">
+                        <pre><code>table#table11 {
+    border: 2px solid black;
+}
+
+table#table11 {
+    border-collapse: collapse;
+}
+
+table#table11 th{
+    background-color: rgb(184, 242, 184);
+}</code></pre>
                     </div>
                 </div>
             </section>

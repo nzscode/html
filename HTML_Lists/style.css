@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     border: none;
-    /* list-style-type: none; */
-} */
+    list-style-type: none;
+}
+ */
 /* Font */
 .kanit-regular {
     font-family: "Kanit", sans-serif;
@@ -151,19 +152,35 @@ h3 {
 .row {
     display: flex;
 }
-
-.col30 {
-    width: 30%;
+.col15,
+.col20,
+.col30,
+.col40,
+.col50,
+.col75 {
     border: 1px solid black;
     border-radius: 5px;
     padding: 10px;
 }
+.col15 {
+    width: 15%;
+}
+.col20 {
+    width: 20%;
+}
+
+.col30 {
+    width: 30%;
+}
+.col40 {
+    width: 40%;
+}
 
 .col50 {
     width: 50%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
+}
+.col75 {
+    width: 75%;
 }
 
 .col_header {
@@ -178,8 +195,86 @@ pre {
     border-radius: 15px;
 }
 
-hr{
+hr {
     border: 5px dashed #d6282876;
+}
+
+.line_height50 {
+    all: revert;
+    line-height: 50%;
+}
+
+.line_height300 {
+    all: revert;
+    line-height: 300%;
+}
+
+.list_type_armenian {
+    list-style-type: armenian;
+}
+
+.list_type_cjk-ideographic {
+    list-style-type: cjk-ideographic;
+}
+.list_type_decimal {
+    list-style-type: decimal;
+}
+.list_type_decimal-leading-zero {
+    list-style-type: decimal-leading-zero;
+}
+.list_type_georgian {
+    list-style-type: georgian;
+}
+.list_type_hiragana {
+    list-style-type: hiragana;
+}
+.list_type_hiragana-iroha {
+    list-style-type: hiragana-iroha;
+}
+.list_type_katakana {
+    list-style-type: katakana;
+}
+.list_type_katakana-iroha {
+    list-style-type: katakana-iroha;
+}
+.list_type_lower-alpha {
+    list-style-type: lower-alpha;
+}
+.list_type_lower-greek {
+    list-style-type: lower-greek;
+}
+.list_type_lower-latin {
+    list-style-type: lower-latin;
+}
+.list_type_lower-roman {
+    list-style-type: lower-roman;
+}
+.list_type_upper-alpha {
+    list-style-type: upper-alpha;
+}
+.list_type_upper-latin {
+    list-style-type: upper-latin;
+}
+.list_type_upper-roman {
+    list-style-type: upper-roman;
+}
+.list_type_none {
+    list-style-type: none;
+}
+.list_type_inherit {
+    list-style-type: inherit;
+}
+
+.margin_bottom_1px {
+    margin-bottom: 1px;
+}
+
+.margin_top_1px {
+    margin-top: 1px;
+}
+
+.smaller_font {
+    font-size: 12px;
 }
 
 @media screen and (max-height: 450px) {

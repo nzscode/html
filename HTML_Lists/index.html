@@ -33,46 +33,57 @@
                 <nav id="nav">
                     <p>Basic Lists</p>
                     <ul>
-                        <li><a href="#Ordered_Lists">Ordered Lists</a></li>
-                        <li><a href="#Unordered_Lists">Unordered Lists</a></li>
                         <li>
-                            <a href="#Description_Lists">Description Lists</a>
-                        </li>
-                        <li><a href="#List_Item">List Item</a></li>
-                        <li>
-                            <a href="#Description_Term">Description Term</a>
+                            <a href="#lists_ordered_lists">Ordered Lists</a>
                         </li>
                         <li>
-                            <a href="#Description_Definition"
-                                >Description Definition</a
+                            <a href="#lists_unordered_lists">Unordered Lists</a>
+                        </li>
+                        <li>
+                            <a href="#lists_description_lists"
+                                >Description Lists</a
                             >
                         </li>
                     </ul>
                     <p>Default CSS</p>
                     <ul>
                         <li>
-                            <a href="#Default_OL_CSS">Default &lt;ol&gt; CSS</a>
+                            <a href="#lists_default_ordered_lists_css"
+                                >Default &lt;ol&gt; CSS</a
+                            >
                         </li>
                         <li>
-                            <a href="#Default_UL_CSS">Default &lt;ul&gt; CSS</a>
+                            <a href="#lists_default_unordered_lists_css"
+                                >Default &lt;ul&gt; CSS</a
+                            >
                         </li>
                         <li>
-                            <a href="#Default_DL_CSS">Default &lt;dl&gt; CSS</a>
+                            <a href="#lists_default_description_lists_css"
+                                >Default &lt;dl&gt; CSS</a
+                            >
                         </li>
                         <li>
-                            <a href="#Default_LI_CSS">Default &lt;li&gt; CSS</a>
+                            <a href="#lists_default_list_items_css"
+                                >Default &lt;li&gt; CSS</a
+                            >
                         </li>
                         <li>
-                            <a href="#Default_DT_CSS">Default &lt;dt&gt; CSS</a>
+                            <a href="#lists_default_description_terms_css"
+                                >Default &lt;dt&gt; CSS</a
+                            >
                         </li>
                         <li>
-                            <a href="#Default_DD_CSS">Default &lt;dd&gt; CSS</a>
+                            <a href="#lists_default_description_definitions_css"
+                                >Default &lt;dd&gt; CSS</a
+                            >
                         </li>
                     </ul>
                     <p>List Snippets</p>
                     <ul>
                         <li>
-                            <a href="#Removing Bullets">Removing Bullets</a>
+                            <a href="#lists_removing_bullets"
+                                >Removing Bullets</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +91,7 @@
         </header>
         <article>
             <section>
-                <h2 id="#Ordered_Lists">Ordered Lists</h2>
+                <h2 id="lists_ordered_lists">Ordered Lists</h2>
                 <div class="container">
                     <div class="row col_header">
                         <div class="col50">Example</div>
@@ -88,16 +99,16 @@
                     </div>
                     <div class="row">
                         <div class="col50">
-                            <pre><ol class="n1">
-                                    <li>Mercury</li>
-                                    <li>Venus</li>
-                                    <li>Earth</li>
-                                    <li>Mars</li>
-                                    <li>Jupiter</li>
-                                    <li>Saturn</li>
-                                    <li>Uranus</li>
-                                    <li>Neptune</li>
-                                    </ol></pre>
+                            <ol class="n1">
+                                <li>Mercury</li>
+                                <li>Venus</li>
+                                <li>Earth</li>
+                                <li>Mars</li>
+                                <li>Jupiter</li>
+                                <li>Saturn</li>
+                                <li>Uranus</li>
+                                <li>Neptune</li>
+                            </ol>
                         </div>
                         <div class="col50">
                             <pre><code>&lt;ol&gt;
@@ -115,7 +126,7 @@
                 </div>
             </section>
             <section>
-                <h2 id="#Unordered_Lists">Unordered Lists</h2>
+                <h2 id="lists_unordered_lists">Unordered Lists</h2>
                 <div class="container">
                     <div class="row col_header">
                         <div class="col50">Example</div>
@@ -123,12 +134,12 @@
                     </div>
                     <div class="row">
                         <div class="col50">
-                            <pre><ul>
-                                    <li>Onion</li>
-                                    <li>Garlic</li>
-                                    <li>Potatoes</li>
-                                    <li>Green Peppers</li>
-                                </ul></pre>
+                            <ul>
+                                <li>Onion</li>
+                                <li>Garlic</li>
+                                <li>Potatoes</li>
+                                <li>Green Peppers</li>
+                            </ul>
                         </div>
                         <div class="col50">
                             <pre><code>&lt;ul&gt;
@@ -143,7 +154,7 @@
             </section>
 
             <section>
-                <h2 id="#Description_Lists">Description Lists</h2>
+                <h2 id="lists_description_lists">Description Lists</h2>
                 <ul>
                     <li>&lt;dl&gt; defines a description List</li>
                     <li>&lt;dt&gt; defines the term Name</li>
@@ -156,12 +167,12 @@
                     </div>
                     <div class="row">
                         <div class="col50">
-                            <pre><dl>
+                            <dl>
                                 <dt>Agar</dt>
                                 <dd>A Jelly like dish made using seaweed</dd>
                                 <dt>Custard</dt>
                                 <dd>A soft pudding made using cornstarch</dd>
-                            </dl></pre>
+                            </dl>
                         </div>
                         <div class="col50">
                             <pre><code>&lt;dl&gt;
@@ -179,26 +190,382 @@
         <hr />
         <!-- CSS Snippets -->
         <article>
-            <div>
-                <h2 id="List_Snippets_CSS">CSS Snippets for Lists</h2>
-                <ul>
-                    <li>
-                        Removing &lt;li&gt; bullets:
-                        <ul>
-                            <pre><code>ul {
-                list-style-type: none;
-            }</code></pre>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <h2 id="lists_snippets_css">CSS Snippets for Lists</h2>
+            <section>
+                <h3 id="lists_removing_bullets">Removing Bullets</h3>
+                Removing &lt;li&gt; bullets:
+                <pre><code>ul {
+    list-style-type: none;
+}</code></pre>
+            </section>
+            <section>
+                <h3 id="lists_reduce_expand_line_height">
+                    Reducing and Expanding line heights
+                </h3>
+                <div class="row col_header">
+                    <div class="col20">Example</div>
+                    <div class="col30">HTML</div>
+                    <div class="col50">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col20">
+                        <ol class="line_height50">
+                            <li>Bread</li>
+                            <li>Cereal</li>
+                            <li>Egg</li>
+                        </ol>
+                        <br /><br />
+                        <ol class="line_height300">
+                            <li>Bread</li>
+                            <li>Cereal</li>
+                            <li>Egg</li>
+                        </ol>
+                    </div>
+                    <div class="col30">
+                        <pre><code>&lt;ol class="line_height50"&gt;
+    &lt;li&gt;Bread&lt;/li&gt;
+    &lt;li&gt;Cereal&lt;/li&gt;
+    &lt;li&gt;Egg&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;ol class="line_height300"&gt;
+    &lt;li&gt;Bread&lt;/li&gt;
+    &lt;li&gt;Cereal&lt;/li&gt;
+    &lt;li&gt;Egg&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                    <div class="col50">
+                        <pre><code>.line_height50 {
+    all: revert;
+    line-height: 50%;
+}
+
+.line_height300 {
+    all: revert;
+    line-height: 300%;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="lists_different_list_types">Different List Types</h3>
+                <div class="row col_header">
+                    <div class="col15">Example</div>
+                    <div class="col50">HTML</div>
+                    <div class="col30">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col15">
+                        <h4 class="margin_bottom_1px">Armenian</h4>
+                        <ol class="list_type_armenian margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">CJK-Ideographic</h4>
+                        <ol class="list_type_cjk-ideographic margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Decimal</h4>
+                        <ol class="list_type_decimal margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Decimal Leading Zero</h4>
+                        <ol
+                            class="list_type_decimal-leading-zero margin_top_1px"
+                        >
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Georgian</h4>
+                        <ol class="list_type_georgian margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Hiragana</h4>
+                        <ol class="list_type_hiragana margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Hiragana-Iroha</h4>
+                        <ol class="list_type_hiragana-iroha margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Katakana</h4>
+                        <ol class="list_type_katakana margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Katakana-Iroha</h4>
+                        <ol class="list_type_katakana-iroha margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Lower Alpha</h4>
+                        <ol class="list_type_lower-alpha margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Lower Greek</h4>
+                        <ol class="list_type_lower-greek margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Lower Latin</h4>
+                        <ol class="list_type_lower-latin margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Lower Roman</h4>
+                        <ol class="list_type_lower-roman margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Upper Alpha</h4>
+                        <ol class="list_type_upper-alpha margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Upper Latin</h4>
+                        <ol class="list_type_upper-latin margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Upper Roman</h4>
+                        <ol class="list_type_upper-roman margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">None</h4>
+                        <ol class="list_type_none margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Inherit</h4>
+                        <ol class="list_type_inherit margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                    </div>
+                    <div class="col50 smaller_font">
+                        <pre><code>&lt;h4 class="margin_bottom_1px"&gt;Armenian&lt;/h4&gt;
+&lt;ol class="list_type_armenian 
+    margin_top_1px"&gt;
+    &lt;li&gt;Re&lt&lt;/li&gt&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;CJK-Ideographic&lt;/h4&gt;
+&lt;ol class="list_type_cjk-ideographic 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Decimal&lt;/h4&gt;
+&lt;ol class="list_type_decimal 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Decimal Leading Zero&lt;/h4&gt;
+&lt;o&gt;
+    class="list_type_decimal-leading-zero 
+        margin_top_1px"
+&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Georgian&lt;/h4&gt;
+&lt;ol class="list_type_georgian 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Hiragana&lt;/h4&gt;
+&lt;ol class="list_type_hiragana 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Hiragana-Iroha&lt;/h4&gt;
+&lt;ol class="list_type_hiragana-iroha 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Katakana&lt;/h4&gt;
+&lt;ol class="list_type_katakana 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Katakana-Iroha&lt;/h4&gt;
+&lt;ol class="list_type_katakana-iroha 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Lower Alpha&lt;/h4&gt;
+&lt;ol class="list_type_lower-alpha 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Lower Greek&lt;/h4&gt;
+&lt;ol class="list_type_lower-greek 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Lower Latin&lt;/h4&gt;
+&lt;ol class="list_type_lower-latin 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Lower Roman&lt;/h4&gt;
+&lt;ol class="list_type_lower-roman 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Upper Alpha&lt;/h4&gt;
+&lt;ol class="list_type_upper-alpha 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Upper Latin&lt;/h4&gt;
+&lt;ol class="list_type_upper-latin 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Upper Roman&lt;/h4&gt;
+&lt;ol class="list_type_upper-roman 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;None&lt;/h4&gt;
+&lt;ol class="list_type_none 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Inherit&lt;/h4&gt;
+&lt;ol class="list_type_inherit 
+    margin_top_1px"&gt;
+    &lt;li&gt;Red&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                    <div class="col30 smaller_font">
+                        <pre><code>.list_type_armenian {
+    list-style-type: armenian;
+}
+
+.list_type_cjk-ideographic {
+    list-style-type: cjk-ideographic;
+}
+.list_type_decimal {
+    list-style-type: decimal;
+}
+.list_type_decimal-leading-zero {
+    list-style-type: 
+        decimal-leading-zero;
+}
+.list_type_georgian {
+    list-style-type: georgian;
+}
+.list_type_hiragana {
+    list-style-type: hiragana;
+}
+.list_type_hiragana-iroha {
+    list-style-type: hiragana-iroha;
+}
+.list_type_katakana {
+    list-style-type: katakana;
+}
+.list_type_katakana-iroha {
+    list-style-type: katakana-iroha;
+}
+.list_type_lower-alpha {
+    list-style-type: lower-alpha;
+}
+.list_type_lower-greek {
+    list-style-type: lower-greek;
+}
+.list_type_lower-latin {
+    list-style-type: lower-latin;
+}
+.list_type_lower-roman {
+    list-style-type: lower-roman;
+}
+.list_type_upper-alpha {
+    list-style-type: upper-alpha;
+}
+.list_type_upper-latin {
+    list-style-type: upper-latin;
+}
+.list_type_upper-roman {
+    list-style-type: upper-roman;
+}
+.list_type_none {
+    list-style-type: none;
+}
+.list_type_inherit {
+    list-style-type: inherit;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
         </article>
 
         <hr />
         <hr />
         <article>
             <div>
-                <h2 id="Default_OL_CSS">Default CSS for Ordered Lists</h2>
+                <h2 id="lists_default_ordered_lists_css">
+                    Default CSS for Ordered Lists
+                </h2>
                 <pre><code>ol {
     display: block;
     list-style-type: decimal;
@@ -210,7 +577,9 @@
 }</code></pre>
             </div>
             <div>
-                <h2 id="Default_UL_CSS">Default CSS for Unordered Lists</h2>
+                <h2 id="lists_default_unordered_lists_css">
+                    Default CSS for Unordered Lists
+                </h2>
                 <pre><code>ul {
     display: block;
     list-style-type: disc;
@@ -222,7 +591,9 @@
 }</code></pre>
             </div>
             <div>
-                <h2 id="Default_DL_CSS">Default CSS for Description Lists</h2>
+                <h2 id="lists_default_description_lists_css">
+                    Default CSS for Description Lists
+                </h2>
                 <pre><code>dl {
     display: block;
     margin-top: 1em;
@@ -232,20 +603,24 @@
 }</code></pre>
             </div>
             <div>
-                <h2 id="Default_LI_CSS">Default CSS for List Items</h2>
+                <h2 id="lists_default_list_items_css">
+                    Default CSS for List Items
+                </h2>
                 <pre><code>li {
     display: list-item;
 }</code></pre>
             </div>
             <div>
-                <h2 id="Default_DT_CSS">Default CSS for Description Term</h2>
+                <h2 id="lists_default_description_terms_css">
+                    Default CSS for Description Term
+                </h2>
                 <pre><code>dt {
     display: block;
     margin-left: 40px;
 }</code></pre>
             </div>
             <div>
-                <h2 id="Default_DD_CSS">
+                <h2 id="lists_default_description_definitions_css">
                     Default CSS for Description Definition
                 </h2>
                 <pre><code>dd {

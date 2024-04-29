@@ -217,7 +217,11 @@ table#table6 tr:nth-of-type(even) {
     background-color: #f8f4b2;
 }
 
-table#table6 th {
+table#table6 th,
+table#table8 th,
+table#table9 th,
+table#table10 th,
+table#table11 th {
     background-color: rgb(184, 242, 184);
 }
 
@@ -226,13 +230,37 @@ table#table7 td {
     border: 2px solid black;
     padding: 15px;
 }
+
+table#table10 {
+    border: 2px solid black;
+    float: right;
+}
+
+table#table11,
+table#table8 {
+    border: 2px solid black;
+}
+
+table#table11 {
+    border-collapse: collapse;
+}
 .merge_col,
 .merge_row {
     text-align: center;
 }
 
+table#table9 {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
 hr {
     border: 5px dashed #d6282876;
+}
+
+.revert {
+    all: revert;
 }
 
 /* table#table2 tr:nth-child(even) {
