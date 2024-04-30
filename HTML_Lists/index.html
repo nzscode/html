@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="style.css" />
 
-        <title>HTML Tables</title>
+        <title>HTML Lists</title>
     </head>
     <body>
         <header>
@@ -92,26 +92,31 @@
         <article>
             <section>
                 <h2 id="lists_ordered_lists">Ordered Lists</h2>
-                <div class="container">
-                    <div class="row col_header">
-                        <div class="col50">Example</div>
-                        <div class="col50">HTML</div>
+                <ul>
+                    <li>Defines an ordered list</li>
+                    <li>Can be numerical or alphabetical</li>
+                    <li>&lt;li&gt; tag is used to define each list item</li>
+                </ul>
+                <div class="row col_header">
+                    <div class="col20">Example</div>
+                    <div class="col40">HTML</div>
+                    <div class="col40">Default CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col20">
+                        <ol class="n1">
+                            <li>Mercury</li>
+                            <li>Venus</li>
+                            <li>Earth</li>
+                            <li>Mars</li>
+                            <li>Jupiter</li>
+                            <li>Saturn</li>
+                            <li>Uranus</li>
+                            <li>Neptune</li>
+                        </ol>
                     </div>
-                    <div class="row">
-                        <div class="col50">
-                            <ol class="n1">
-                                <li>Mercury</li>
-                                <li>Venus</li>
-                                <li>Earth</li>
-                                <li>Mars</li>
-                                <li>Jupiter</li>
-                                <li>Saturn</li>
-                                <li>Uranus</li>
-                                <li>Neptune</li>
-                            </ol>
-                        </div>
-                        <div class="col50">
-                            <pre><code>&lt;ol&gt;
+                    <div class="col40">
+                        <pre><code>&lt;ol&gt;
     &lt;li&gt;Mercury&lt;/li&gt;
     &lt;li&gt;Venus&lt;/li&gt;
     &lt;li&gt;Earth&lt;/li&gt;
@@ -121,33 +126,287 @@
     &lt;li&gt;Uranus&lt;/li&gt;
     &lt;li&gt;Neptune&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
+                    </div>
+                    <div class="col40">
+                        <pre><code>ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 id="html_lists_ordered_lists_attributes">
+                    Ordered List Attributes
+                </h2>
+                <table class="pretty_table">
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a
+                                    href="#html_ordered_lists_attributes_reversed"
+                                    >reversed</a
+                                >
+                            </td>
+                            <td>reversed</td>
+                            <td>
+                                Specifies that the list order should be reversed
+                                (9,8,7...)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#html_ordered_lists_attributes_start"
+                                    >start</a
+                                >
+                            </td>
+                            <td>number</td>
+                            <td>
+                                Specifies the start value of an ordered list
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#html_ordered_lists_attributes_type"
+                                    >type</a
+                                >
+                            </td>
+                            <td>1 <br />A <br />a <br />I <br />i</td>
+                            <td>
+                                Specifies the kind of marker to use in the list
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3 id="html_ordered_lists_attributes_reversed">Reversed</h3>
+                <ul>
+                    <li>A boolean attribute</li>
+                    <li>
+                        Specifies that the list order should be descending
+                        (9,8,7...), instead of ascending (1, 2, 3...)
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col30">Example</div>
+                        <div class="col50">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <ol reversed>
+                                <li>Cat</li>
+                                <li>Dog</li>
+                                <li>Antelope</li>
+                                <li>Baboon</li>
+                            </ol>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;ol reversed&gt;
+    &lt;li>Cat&lt;/li&gt;
+    &lt;li>Dog&lt;/li&gt;
+    &lt;li>Antelope&lt;/li&gt;
+    &lt;li>Baboon&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <h2 id="lists_unordered_lists">Unordered Lists</h2>
+                <h3 id="html_ordered_lists_attributes_start">Start</h3>
+                <ul>
+                    <li>
+                        Specifies the start value of the first list item in an
+                        ordered list
+                    </li>
+                    <li>
+                        Always an integer, even when the numbering type is
+                        letters or romans. E.g., to start counting list items
+                        from the letter "c" or the roman number "iii", use
+                        start="3"
+                    </li>
+                </ul>
                 <div class="container">
                     <div class="row col_header">
-                        <div class="col50">Example</div>
+                        <div class="col30">Example</div>
                         <div class="col50">HTML</div>
                     </div>
                     <div class="row">
+                        <div class="col30">
+                            <ol start="25">
+                                <li>Cat</li>
+                                <li>Dog</li>
+                                <li>Antelope</li>
+                                <li>Baboon</li>
+                            </ol>
+                        </div>
                         <div class="col50">
+                            <pre><code>&lt;ol start="25"&gt;
+    &lt;li&gt;Cat&lt;/li&gt;
+    &lt;li&gt;Dog&lt;/li&gt;
+    &lt;li&gt;Antelope&lt;/li&gt;
+    &lt;li&gt;Baboon&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="html_ordered_lists_attributes_type">Type</h3>
+                <ul>
+                    <li>
+                        Specifies the kind of marker to use in the list (letters
+                        or numbers)
+                    </li>
+                    <li>
+                        CSS
+                        <a href="#lists_different_list_types"
+                            >list-style-type</a
+                        >
+                        property offers more types
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col30">Example</div>
+                        <div class="col50">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <ol type="I">
+                                <li>Cat</li>
+                                <li>Dog</li>
+                                <li>Antelope</li>
+                                <li>Baboon</li>
+                            </ol>
+                            <br /><br />
+                            <ol type="a">
+                                <li>Cat</li>
+                                <li>Dog</li>
+                                <li>Antelope</li>
+                                <li>Baboon</li>
+                            </ol>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;ol type="I"&gt;
+    &lt;li&gt;Cat&lt;/li&gt;
+    &lt;li&gt;Dog&lt;/li&gt;
+    &lt;li&gt;Antelope&lt;/li&gt;
+    &lt;li&gt;Baboon&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol type="a"&gt;
+    &lt;li&gt;Cat&lt;/li&gt;
+    &lt;li&gt;Dog&lt;/li&gt;
+    &lt;li&gt;Antelope&lt;/li&gt;
+    &lt;li&gt;Baboon&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2 id="lists_unordered_lists">Unordered Lists</h2>
+                <ul>
+                    <li>Defines an unordered (bulleted) list</li>
+                    <li>&lt;li&gt; tag is used to define each list item</li>
+                    <li>
+                        Can use CSS
+                        <a href="#lists_different_list_types"
+                            >list-style-type</a
+                        >
+                        property to change bullet type
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col20">Example</div>
+                        <div class="col40">HTML</div>
+                        <div class="col40">Default CSS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
                             <ul>
                                 <li>Onion</li>
                                 <li>Garlic</li>
                                 <li>Potatoes</li>
                                 <li>Green Peppers</li>
                             </ul>
+                            <br /><br />
+                            <ul class="ul_list_style_type_square">
+                                <li>Onion</li>
+                                <li>Garlic</li>
+                                <li>Potatoes</li>
+                                <li>Green Peppers</li>
+                            </ul>
+                            <br /><br />
+                            <ul class="ul_list_style_type_custom">
+                                <li>Onion</li>
+                                <li>Garlic</li>
+                                <li>Potatoes</li>
+                                <li>Green Peppers</li>
+                            </ul>
                         </div>
-                        <div class="col50">
+                        <div class="col40">
                             <pre><code>&lt;ul&gt;
     &lt;li&gt;Onion&lt;/li&gt;
     &lt;li&gt;Garlic&lt;/li&gt;
     &lt;li&gt;Potatoes&lt;/li&gt;
     &lt;li&gt;Green Peppers&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+                        </div>
+                        <div class="col40">
+                            <pre><code>ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+}</code></pre>
+
+                            <h3 class="revert tiny_margin_bottom">
+                                Square bullets CSS
+                            </h3>
+                            <pre><code>.ul_list_style_type_square {
+    list-style-type: square;
+}</code></pre>
+                            <h3 class="revert tiny_margin_bottom">
+                                Custom Bullet CSS
+                            </h3>
+                            <pre class=""><code>ul.ul_list_style_type_custom {
+    list-style: none;
+    margin-left: -30px;
+}
+
+ul.ul_list_style_type_custom li::before {
+    content: "+*+";
+    color: hotpink;
+}</code></pre>
                         </div>
                     </div>
                 </div>
@@ -162,11 +421,12 @@
                 </ul>
                 <div class="container">
                     <div class="row col_header">
-                        <div class="col50">Example</div>
-                        <div class="col50">HTML</div>
+                        <div class="col20">Example</div>
+                        <div class="col40">HTML</div>
+                        <div class="col40">Default CSS</div>
                     </div>
                     <div class="row">
-                        <div class="col50">
+                        <div class="col20">
                             <dl>
                                 <dt>Agar</dt>
                                 <dd>A Jelly like dish made using seaweed</dd>
@@ -174,13 +434,33 @@
                                 <dd>A soft pudding made using cornstarch</dd>
                             </dl>
                         </div>
-                        <div class="col50">
+                        <div class="col40">
                             <pre><code>&lt;dl&gt;
     &lt;dt&gt;Agar&lt;/dt&gt;
-    &lt;dd&gt;A Jelly like dish made using seaweed&lt;/dd&gt;
+    &lt;dd&gt;A Jelly like dish 
+            made using seaweed&lt;/dd&gt;
     &lt;dt&gt;Custard&lt;/dt&gt;
-    &lt;dd&gt;A soft pudding made using cornstarch&lt;/dd&gt;
+    &lt;dd&gt;A soft pudding 
+            made using cornstarch&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
+                        </div>
+                        <div class="col40">
+                            <pre><code>dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+dt {
+    display: block;
+    margin-left: 40px;
+}
+
+dd {
+    display: block; 
+}</code></pre>
                         </div>
                     </div>
                 </div>
@@ -697,73 +977,6 @@ ul.bullet_color li::before {
 
         <hr />
         <hr />
-        <article>
-            <div>
-                <h2 id="lists_default_ordered_lists_css">
-                    Default CSS for Ordered Lists
-                </h2>
-                <pre><code>ol {
-    display: block;
-    list-style-type: decimal;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
-}</code></pre>
-            </div>
-            <div>
-                <h2 id="lists_default_unordered_lists_css">
-                    Default CSS for Unordered Lists
-                </h2>
-                <pre><code>ul {
-    display: block;
-    list-style-type: disc;
-    margin-top: 1em;
-    margin-bottom: 1 em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
-}</code></pre>
-            </div>
-            <div>
-                <h2 id="lists_default_description_lists_css">
-                    Default CSS for Description Lists
-                </h2>
-                <pre><code>dl {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}</code></pre>
-            </div>
-            <div>
-                <h2 id="lists_default_list_items_css">
-                    Default CSS for List Items
-                </h2>
-                <pre><code>li {
-    display: list-item;
-}</code></pre>
-            </div>
-            <div>
-                <h2 id="lists_default_description_terms_css">
-                    Default CSS for Description Term
-                </h2>
-                <pre><code>dt {
-    display: block;
-    margin-left: 40px;
-}</code></pre>
-            </div>
-            <div>
-                <h2 id="lists_default_description_definitions_css">
-                    Default CSS for Description Definition
-                </h2>
-                <pre><code>dd {
-    display: block; 
-}</code></pre>
-            </div>
-        </article>
 
         <!-- Bottom Links -->
         <footer>

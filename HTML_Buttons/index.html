@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>HTML Buttons</title>
+    </head>
+    <body>
+        <header>
+            <!-- Nav Menu -->
+            <!-- Nav Hanmburger -->
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML Buttons
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav">
+                    <p>HTML Basics</p>
+                    <ul>
+                        <li><a href="#Ordered_Lists">Ordered Lists</a></li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul></ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <h2 id="basic_button">Basic Button</h2>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col30">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <button type="button">Click Me!</button>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <section>
+                    <h2 id="basic_button_button_attributes">
+                        Button Attributes
+                    </h2>
+                    <table class="pretty_table">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="#basic_button_button_attributes_autofocus"
+                                        >autofocus</a
+                                    >
+                                </td>
+                                <td>autofocus</td>
+                                <td>
+                                    Specifies that a button should automatically
+                                    get focus when the page loads
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="#basic_button_button_attributes_disabled"
+                                        >disabled</a
+                                    >
+                                </td>
+                                <td>disabled</td>
+                                <td>
+                                    Specifies that a button should be disabled
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a
+                                        href="#basic_button_button_attributes_form"
+                                        >form</a
+                                    >
+                                </td>
+                                <td><i>form_id</i></td>
+                                <td>
+                                    Specifies which form the button belongs to
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+
+        <!-- Bottom Links -->
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
+                        >HTML Snippets Links</a
+                    >
+                    <br />
+                    <a href="../HTML_Links/index.html"
+                        >HTML Snippets Links - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
+                        >HTML Snippets Embeds</a
+                    >
+                    <br />
+                    <a href="../HTML_Embeds/index.html"
+                        >HTML Snippets Embeds - l</a
+                    >
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
+                        >HTML Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../HTML_Forms/index.html"
+                        >HTML Snippets Forms - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_iFrames"
+                        >HTML Snippets iFrames</a
+                    >
+                    <br />
+                    <a href="../HTML_iFrames/index.html"
+                        >HTML Snippets iFrames - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
+                        >HTML Snippets Images</a
+                    >
+                    <br />
+                    <a href="../HTML_Images/index.html"
+                        >HTML Snippets Images - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
+                        >HTML Snippets Tables</a
+                    >
+                    <br />
+                    <a href="../HTML_Tables/index.html"
+                        >HTML Snippets Tables - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
+                        >HTML Snippets Video_Audio</a
+                    >
+                    <br />
+                    <a href="../HTML_Video_Audio/index.html"
+                        >HTML Snippets Video_Audio - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Buttons"
+                        >HTML Snippets Buttons</a
+                    >
+                    <br />
+                    <a href="../HTML_Buttons/index.html"
+                        >HTML Snippets Buttons - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
+        <script src="./HTML_Buttons.js"></script>
+    </body>
+</html>
