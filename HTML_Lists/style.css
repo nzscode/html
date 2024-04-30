@@ -208,7 +208,30 @@ hr {
     all: revert;
     line-height: 300%;
 }
+ul.bullet_color {
+    list-style: none;
+}
+ul.bullet_color li::before {
+    content: "* ";
+    color: blue;
+}
 
+.column2 {
+    column-count: 2;
+}
+
+.margin_remove {
+    margin-left: -20px;
+}
+.list_type_disc {
+    list-style-type: disc;
+}
+.list_type_circle {
+    list-style-type: circle;
+}
+.list_type_square {
+    list-style-type: square;
+}
 .list_type_armenian {
     list-style-type: armenian;
 }

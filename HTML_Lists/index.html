@@ -248,6 +248,92 @@
                 </div>
             </section>
             <section>
+                <h3 id="lists_changing_bullet_color">Changing Bullet Color</h3>
+                <ul>
+                    <li>
+                        Bullet color can only be changed if bullet is removed,
+                        then a new bullet can be added and colored.
+                    </li>
+                </ul>
+                <div class="row col-header">
+                    <div class="col20">Example</div>
+                    <div class="col50">HTML</div>
+                    <div class="col30">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col20">
+                        <ul class="bullet_color">
+                            <li>Harry</li>
+                            <li>Ron</li>
+                            <li>Hermione</li>
+                        </ul>
+                    </div>
+                    <div class="col50">
+                        <pre><code>&lt;ul class="bullet_color"&gt;
+    &lt;li&gt;Harry&lt;/li&gt; 
+    &lt;li&gt;Ron&lt;/li&gt;
+    &lt;li&gt;Hermione&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="col30">
+                        <pre><code>ul.bullet_color {
+    list-style: none;
+}
+ul.bullet_color li::before {
+    content: "* ";
+    color: blue;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="lists_split_list">
+                    Splitting List into Multiple Columns
+                </h3>
+                <div class="row col-header">
+                    <div class="col20">Example</div>
+                    <div class="col50">HTML</div>
+                    <div class="col30">CSS</div>
+                </div>
+                <div class="row">
+                    <div class="col20">
+                        <ul class="column2 margin_remove">
+                            <li>Harry</li>
+                            <li>Ron</li>
+                            <li>Hermione</li>
+                            <li>Neville</li>
+                            <li>Draco</li>
+                            <li>Seamus</li>
+                            <li>Dean</li>
+                            <li>Parvati</li>
+                            <li>Padma</li>
+                        </ul>
+                    </div>
+                    <div class="col50">
+                        <pre><code>&lt;ul class="column3"&gt;
+    &lt;li>Harry&lt;/li&gt;
+    &lt;li>Ron&lt;/li&gt;
+    &lt;li>Hermione&lt;/li&gt;
+    &lt;li>Neville&lt;/li&gt;
+    &lt;li>Draco&lt;/li&gt;
+    &lt;li>Seamus&lt;/li&gt;
+    &lt;li>Dean&lt;/li&gt;
+    &lt;li>Parvati&lt;/li&gt;
+    &lt;li>Padma&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                    <div class="col30">
+                        <pre><code>.column2 {
+    column-count: 2;
+}
+
+.margin_remove {
+    margin-left: -20px;
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+            <section>
                 <h3 id="lists_different_list_types">Different List Types</h3>
                 <div class="row col_header">
                     <div class="col15">Example</div>
@@ -256,6 +342,30 @@
                 </div>
                 <div class="row">
                     <div class="col15">
+                        <h4 class="margin_bottom_1px">Disc</h4>
+                        <ol class="list_type_disc margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Square</h4>
+                        <ol class="list_type_square margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Circle</h4>
+                        <ol class="list_type_circle margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
+                        <h4 class="margin_bottom_1px">Armenian</h4>
+                        <ol class="list_type_armenian margin_top_1px">
+                            <li>Red</li>
+                            <li>Orange</li>
+                            <li>Yellow</li>
+                        </ol>
                         <h4 class="margin_bottom_1px">Armenian</h4>
                         <ol class="list_type_armenian margin_top_1px">
                             <li>Red</li>
@@ -368,8 +478,22 @@
                         </ol>
                     </div>
                     <div class="col50 smaller_font">
-                        <pre><code>&lt;h4 class="margin_bottom_1px"&gt;Armenian&lt;/h4&gt;
-&lt;ol class="list_type_armenian 
+                        <pre><code>&lt;h4 class="margin_bottom_1px"&gt;Disc&lt;/h4&gt;
+&lt;ol class="list_type_disc 
+    margin_top_1px"&gt;
+    &lt;li&gt;Re&lt&lt;/li&gt&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Square&lt;/h4&gt;
+&lt;ol class="list_type_square 
+    margin_top_1px"&gt;
+    &lt;li&gt;Re&lt&lt;/li&gt&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Yellow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="margin_bottom_1px"&gt;Circle&lt;/h4&gt;
+&lt;ol class="list_type_circle 
     margin_top_1px"&gt;
     &lt;li&gt;Re&lt&lt;/li&gt&gt;
     &lt;li&gt;Orange&lt;/li&gt;
@@ -498,7 +622,19 @@
 &lt;/ol&gt;</code></pre>
                     </div>
                     <div class="col30 smaller_font">
-                        <pre><code>.list_type_armenian {
+                        <pre><code>.list_type_disc {
+    list-style-type: disc;
+}
+.list_type_circle {
+    list-style-type: circle;
+}
+.list_type_square {
+    list-style-type: square;
+}
+.list_type_armenian {
+    list-style-type: armenian;
+}
+.list_type_armenian {
     list-style-type: armenian;
 }
 

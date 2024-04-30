@@ -126,7 +126,7 @@
                         after
                     </li>
                 </ul>
-                <table>
+                <table class="pretty_table">
                     <thead>
                         <tr>
                             <th>Element</th>
@@ -518,7 +518,27 @@
                                     >&lt;ul&gt;: Unordered List</a
                                 >
                             </td>
-                            <td></td>
+                            <td>
+                                - Defines an unordered (bulleted) list <br />
+                                - Used with &lt;li&gt; to create a list <br />-
+                                See also:
+                                <li>
+                                    <i>
+                                        <a
+                                            href="https://nzscode.github.io/Snippets-HTML/HTML_Lists/#lists_unordered_lists"
+                                            >Unordered Lists</a
+                                        >
+                                    </i>
+                                </li>
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../HTML_Lists/index.html#lists_unordered_lists"
+                                            >Unordered Lists - l</a
+                                        >
+                                    </i>
+                                </li>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -526,7 +546,19 @@
                                     >&lt;li&gt;: List Item</a
                                 >
                             </td>
-                            <td></td>
+                            <td>
+                                - Defines a list item <br />- Used inside
+                                ordered lists(&lt;ol&gt;), unordered lists
+                                (&lt;ul&gt;), and in menu lists (&lt;menu&gt;)
+                                <br />- In &lt;ul&gt; and &lt;menu&gt;, the list
+                                items will usually be displayed with bullet
+                                points <br />- In &lt;ol&gt;, the list items
+                                will usually be displayed with numbers or
+                                letters <br />- Attributes: value - Only for
+                                &lt;ol&gt; lists. Specifies the start value of a
+                                list item. The following list items will
+                                increment from that number
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -534,13 +566,35 @@
                                     >&lt;pre&gt;</a
                                 >
                             </td>
-                            <td></td>
+                            <td>
+                                - Defines preformatted text <br />- Text in a
+                                &lt;pre&gt; element is displayed in a
+                                fixed-width font, and the text preserves both
+                                spaces and line breaks. <br />- The text will be
+                                displayed exactly as written in the HTML source
+                                <br />- Attributes:
+                                <li>
+                                    &lt;code&gt;: Defines a piece of computer
+                                    code
+                                </li>
+                                <li>
+                                    &lt;samp&gt;: Defines a sample output froma
+                                    computer program
+                                </li>
+                                <li>&lt;kbd&gt;: Defines a keyboard input</li>
+                                <li>&lt;var&gt;: Defines a variable</li>
+                            </td>
                         </tr>
                         <tr>
                             <td>
                                 <a href="#block_level_element_hr">&lt;hr&gt;</a>
                             </td>
-                            <td></td>
+                            <td>
+                                - Defines a thematic break in an HTML page (e.g.
+                                a shift of topic) <br />- Most often displayed
+                                as a horizontal rule that is used to separate
+                                content
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -548,7 +602,17 @@
                                     >&lt;tfoot&gt;</a
                                 >
                             </td>
-                            <td></td>
+                            <td>
+                                - Must have one or more &lt;tr&gt; tags inside
+                                <br />- must be used in the following context:
+                                As a child of a &lt;table&gt; element, after any
+                                &lt;caption&gt;, &lt;colgroup&gt;,
+                                &lt;thead&gt;, and &lt;tbody&gt; elements.
+                                <br />The &lt;thead&gt;, &lt;tbody&gt;, and
+                                &lt;tfoot&gt; elements will not affect the
+                                layout of the table by default
+                                <br />
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -1308,7 +1372,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                     <div class="row">
                         <div class="col20">
-                            <table class="tbl revert">
+                            <table class="pretty_table">
                                 <thead>
                                     <tr>
                                         <th>Item</th>
@@ -1355,6 +1419,237 @@ ctx.fillRect(80, 80, 75, 50);
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="block_level_element_thead">THead</h3>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col20">Default CSS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
+                            <table class="blank_table">
+                                <thead>
+                                    <tr>
+                                        <th>Fruit</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Granny Smith</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red Delicious</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Macintosh</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Quantity</td>
+                                        <td>14</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Fruit&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Granny Smith&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td>Red Delicious&lt;/td&gt;
+        &lt;td>3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Macintosh&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Total Quantity&lt;/td&gt;
+        &lt;td&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                        </div>
+                        <div class="col20">
+                            <pre><code>thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="block_level_element_tbody">Tbody</h3>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col20">Default CSS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
+                            <table class="blank_table">
+                                <thead>
+                                    <tr>
+                                        <th>Fruit</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Granny Smith</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red Delicious</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Macintosh</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Quantity</td>
+                                        <td>14</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Fruit&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Granny Smith&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td>Red Delicious&lt;/td&gt;
+        &lt;td>3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Macintosh&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Total Quantity&lt;/td&gt;
+        &lt;td&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                        </div>
+                        <div class="col20">
+                            <pre><code>tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 id="block_level_element_tfoot">Tfoot</h3>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col20">Default CSS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
+                            <table class="blank_table">
+                                <thead>
+                                    <tr>
+                                        <th>Fruit</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Granny Smith</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red Delicious</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Macintosh</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Total Quantity</td>
+                                        <td>14</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Fruit&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Granny Smith&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td>Red Delicious&lt;/td&gt;
+        &lt;td>3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Macintosh&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Total Quantity&lt;/td&gt;
+        &lt;td&gt;14&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                        </div>
+                        <div class="col20">
+                            <pre><code>tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
 }</code></pre>
                         </div>
                     </div>
@@ -1474,6 +1769,31 @@ ctx.fillRect(80, 80, 75, 50);
             </section>
             <section>
                 <h3 id="block_level_element_ol">Ordered Lists</h3>
+                <ul class="columns">
+                    Other List Style Types:
+                    <li>circle</li>
+                    <li>disc</li>
+                    <li>square</li>
+                    <li>armenian</li>
+                    <li>cjk-ideographic</li>
+                    <li>decimal</li>
+                    <li>decimal-leading-zero</li>
+                    <li>georgian</li>
+                    <li>hiragana</li>
+                    <li>hiragana-iroha</li>
+                    <li>katakana</li>
+                    <li>katakana-iroha</li>
+                    <li>lower-alpha</li>
+                    <li>lower-greek</li>
+                    <li>lower-latin</li>
+                    <li>lower-roman</li>
+                    <li>upper-alpha</li>
+                    <li>upper-greek</li>
+                    <li>upper-latin</li>
+                    <li>upper-roman</li>
+                    <li>none</li>
+                    <li>inherit</li>
+                </ul>
                 <div class="container">
                     <div class="row col_header">
                         <div class="col20">Example</div>
@@ -1551,19 +1871,85 @@ ctx.fillRect(80, 80, 75, 50);
             </section>
             <section>
                 <h3 id="block_level_element_ul">Unordered Lists</h3>
+                <ul class="columns">
+                    Other List Style Types:
+                    <li>circle</li>
+                    <li>disc</li>
+                    <li>square</li>
+                    <li>armenian</li>
+                    <li>cjk-ideographic</li>
+                    <li>decimal</li>
+                    <li>decimal-leading-zero</li>
+                    <li>georgian</li>
+                    <li>hiragana</li>
+                    <li>hiragana-iroha</li>
+                    <li>katakana</li>
+                    <li>katakana-iroha</li>
+                    <li>lower-alpha</li>
+                    <li>lower-greek</li>
+                    <li>lower-latin</li>
+                    <li>lower-roman</li>
+                    <li>upper-alpha</li>
+                    <li>upper-greek</li>
+                    <li>upper-latin</li>
+                    <li>upper-roman</li>
+                    <li>none</li>
+                    <li>inherit</li>
+                </ul>
                 <div class="container">
                     <div class="row col_header">
                         <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col20">Default CSS</div>
+                        <div class="col30">HTML</div>
+                        <div class="col30">Default CSS</div>
                     </div>
                     <div class="row">
-                        <div class="col20"></div>
-                        <div class="col50">
-                            <pre><code></code></pre>
-                        </div>
                         <div class="col20">
-                            <pre><code></code></pre>
+                            <h4 class="margin_bottom_1px">
+                                List Style Type: Circle
+                            </h4>
+                            <ul class="ul_type_circle margin_top_1px">
+                                <li>Left</li>
+                                <li>Right</li>
+                                <li>Up</li>
+                                <li>Down</li>
+                            </ul>
+                            <h4 class="margin_bottom_1px">
+                                List Style Type: Disc
+                            </h4>
+                            <ul class="ul_type_disc margin_top_1px">
+                                <li>Left</li>
+                                <li>Right</li>
+                                <li>Up</li>
+                                <li>Down</li>
+                            </ul>
+                            <h4 class="margin_bottom_1px">
+                                List Style Type: Square
+                            </h4>
+                            <ul class="ul_type_square margin_top_1px">
+                                <li>Left</li>
+                                <li>Right</li>
+                                <li>Up</li>
+                                <li>Down</li>
+                            </ul>
+                        </div>
+                        <div class="col30">
+                            <pre><code>&lt;ul&gt;
+    &lt;li>Left&lt;/li&gt;
+    &lt;li>Right&lt;/li&gt;
+    &lt;li>Up&lt;/li&gt;
+    &lt;li>Down&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                        </div>
+                        <div class="col30">
+                            <pre><code>ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}</code></pre>
                         </div>
                     </div>
                 </div>
@@ -1573,16 +1959,64 @@ ctx.fillRect(80, 80, 75, 50);
                 <div class="container">
                     <div class="row col_header">
                         <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col20">Default CSS</div>
+                        <div class="col30">HTML</div>
+                        <div class="col40">Default CSS</div>
                     </div>
                     <div class="row">
-                        <div class="col20"></div>
-                        <div class="col50">
-                            <pre><code></code></pre>
-                        </div>
                         <div class="col20">
-                            <pre><code></code></pre>
+                            <ul>
+                                Unordered List
+                                <li>UL 1</li>
+                                <li>UL 2</li>
+                                <li>UL 3</li>
+                            </ul>
+
+                            <ol>
+                                Ordered List
+                                <li value="25">OL A</li>
+                                <li>OL B</li>
+                                <li>OL C</li>
+                            </ol>
+                        </div>
+                        <div class="col30">
+                            <pre><code>&lt;ul&gt;
+    Unordered List
+    &lt;li&gt;UL 1&lt;/li&gt;
+    &lt;li&gt;UL 2&lt;/li&gt;
+    &lt;li&gt;UL 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    Ordered List
+    &lt;li value="25"&gt;OL A&lt;/li&gt;
+    &lt;li&gt;OL B&lt;/li&gt;
+    &lt;li&gt;OL C&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                        </div>
+                        <div class="col40">
+                            <pre><code>ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+}</code></pre>
                         </div>
                     </div>
                 </div>
@@ -1592,16 +2026,67 @@ ctx.fillRect(80, 80, 75, 50);
                 <div class="container">
                     <div class="row col_header">
                         <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col20">Default CSS</div>
+                        <div class="col40">HTML</div>
+                        <div class="col40">Default CSS</div>
                     </div>
                     <div class="row">
-                        <div class="col20"></div>
-                        <div class="col50">
-                            <pre><code></code></pre>
-                        </div>
                         <div class="col20">
-                            <pre><code></code></pre>
+                            <pre>
+This text      has been
+        pre
+format   ted.</pre
+                            >
+
+                            <pre><code>let x = 5;
+    console.log(x);
+</code></pre>
+
+                            <pre><samp>File not found</samp></pre>
+
+                            <pre><kbd>CTRL</kbd> + <kbd>S</kbd></pre>
+
+                            <pre><var>printNum</var></pre>
+                        </div>
+                        <div class="col40">
+                            <pre><code>&lt;pre&gt;
+This text      has been
+        pre
+format   ted.&lt;/pre&gt;
+                                                            
+                                
+&lt;pre&gt;&lt;code&gt;let x = 5;
+    console.log(x);
+&lt;/code&gt;&lt;/pre&gt;
+                                
+&lt;pre&gt;&lt;samp&gt;File not found&lt;/samp&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;kbd&gt;CTRL&lt;/kbd> + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;var&gt;printNum&lt;/var&gt;&lt;/pre&gt;</code></pre>
+                        </div>
+                        <div class="col40">
+                            <pre><code>pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+}
+
+code {
+    font-family: monospace;
+}
+
+samp {
+    font-family: monospace;
+}
+
+kbd {
+    font-family: monospace;
+}
+
+var {
+    font-style: italic;
+}</code></pre>
                         </div>
                     </div>
                 </div>
@@ -1612,38 +2097,40 @@ ctx.fillRect(80, 80, 75, 50);
                     <div class="row col_header">
                         <div class="col20">Example</div>
                         <div class="col50">HTML</div>
-                        <div class="col20">Default CSS</div>
+                        <div class="col30">Default CSS</div>
                     </div>
                     <div class="row">
-                        <div class="col20"></div>
-                        <div class="col50">
-                            <pre><code></code></pre>
-                        </div>
                         <div class="col20">
-                            <pre><code></code></pre>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <hr />
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;p>Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur
+    adipisicing elit.
+&lt;/p&gt;</code></pre>
+                        </div>
+                        <div class="col30">
+                            <pre><code>hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}</code></pre>
                         </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h3 id="block_level_element_tfoot">Tfoot</h3>
-                <div class="container">
-                    <div class="row col_header">
-                        <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col20">Default CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col20"></div>
-                        <div class="col50">
-                            <pre><code></code></pre>
-                        </div>
-                        <div class="col20">
-                            <pre><code></code></pre>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <section>
                 <h3 id="block_level_element_noscript">Noscript</h3>
                 <div class="container">

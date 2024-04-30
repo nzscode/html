@@ -201,28 +201,28 @@ pre {
     border-radius: 15px;
 }
 
-table {
+.pretty_table {
     margin-left: 30px;
     border: 1px solid black;
     padding: 5px;
     width: 100vw;
     max-width: 100%;
 }
-td {
+.pretty_table td {
     padding: 10px;
 }
-th {
+.pretty_table th {
     background-color: #00000096;
     padding: 10px;
     font-size: 15px;
     color: #fcdcb9;
 }
 
-td:nth-child(1) {
+.pretty_table td:nth-child(1) {
     padding: 0px 15px;
 }
 
-tr:nth-of-type(even) {
+.pretty_table tr:nth-of-type(even) {
     background-color: #00000017;
 }
 
@@ -230,11 +230,34 @@ hr {
     border: 5px dashed #d6282876;
 }
 
+.ul_type_circle {
+    list-style-type: circle;
+}
+.ul_type_disc {
+    list-style-type: disc;
+}
+.ul_type_square {
+    list-style-type: square;
+}
+.margin_bottom_1px {
+    margin-bottom: 1px;
+}
+
+.margin_top_1px {
+    margin-top: 1px;
+}
 #flex_col_2 {
     display: flex;
     flex-flow: column;
 }
 
+.columns {
+    column-count: 4;
+}
 .tbl {
     margin: 0px;
+}
+
+.blank_table {
+    all: revert;
 }
