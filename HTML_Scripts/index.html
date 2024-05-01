@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>HTML Scripts</title>
+    </head>
+    <body>
+        <header>
+            <!-- Nav Menu -->
+            <!-- Nav Hanmburger -->
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                HTML Scripts
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav">
+                    <p>HTML Scripts</p>
+                    <ul>
+                        <li><a href="#Ordered_Lists">Ordered Lists</a></li>
+                    </ul>
+                    <p>Default CSS</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <p>List Snippets</p>
+                    <ul>
+                        <li>
+                            <a href="#Removing Bullets">Removing Bullets</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2 id="html_scripts_basics">HTML Scripts: Basics</h2>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col50">HTML</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <script>
+                                    document.getElementById("demo").innerHTML =
+                                        "Hello JavaScript!";
+                                </script>
+                                <p id="demo">Hi</p>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;script&gt;
+    document.getElementById("demo").innerHTML = 
+        "Hello JavaScript!";
+&lt;/script&gt;
+&lt;p id="demo"&gt;Hi&lt;/p&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>script {
+    display: none;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <h2>Script Attributes</h2>
+                <ul>
+                    <li></li>
+                </ul>
+                <section>
+                    <table class="pretty_table">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#html_scripts_attributes_async"
+                                        >async</a
+                                    >
+                                </td>
+                                <td>async</td>
+                                <td>
+                                    Specifies that the script is downloaded in
+                                    parallel to parsing the page, and executed
+                                    as soon as it is available (before parsing
+                                    completes) (only for external scripts)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#html_scripts_attributes_defer"
+                                        >defer</a
+                                    >
+                                </td>
+                                <td>defer</td>
+                                <td>
+                                    Specifies that the script is downloaded in
+                                    parallel to parsing the page, and executed
+                                    after the page has finished parsing (only
+                                    for external scripts)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>integrity</td>
+                                <td>filehash</td>
+                                <td>
+                                    Allows a browser to check the fetched script
+                                    to ensure that the code is never loaded if
+                                    the source has been manipulated
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nomodule</td>
+                                <td>True <br />False</td>
+                                <td>
+                                    Specifies that the script should not be
+                                    executed in browsers supporting ES2015
+                                    modules
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>referrerpolicy</td>
+                                <td>
+                                    no-referrer <br />no-referrer-when-downgrade
+                                    <br />origin <br />origin-when-cross-origin
+                                    <br />same-origin <br />strict-origin
+                                    <br />strict-origin-when-cross-origin
+                                    <br />unsafe-url
+                                </td>
+                                <td>
+                                    Specifies which referrer information to send
+                                    when fetching a script
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#html_scripts_attributes_src"
+                                        >src</a
+                                    >
+                                </td>
+                                <td>URL</td>
+                                <td>
+                                    Specifies the URL of an external script file
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#html_scripts_attributes_type"
+                                        >type</a
+                                    >
+                                </td>
+                                <td>scripttype</td>
+                                <td>Specifies the media type of the script</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3 id="html_scripts_attributes_async">Async</h3>
+                    <ul>
+                        <li>A boolean attribute</li>
+                        <li>
+                            If the async attribute is set, the script is
+                            downloaded in parallel to parsing the page, and
+                            executed as soon as it is available. The parsing of
+                            the page is interrupted once the script is
+                            downloaded completely, and then the script is
+                            executed, before the parsing of the rest of the page
+                            continues
+                        </li>
+                        <li>
+                            Only for external scripts (and should only be used
+                            if the src attribute is present)
+                        </li>
+                        <li>
+                            There are several ways an external script can be
+                            executed:
+                            <ul>
+                                <li>
+                                    If async is present: The script is
+                                    downloaded in parallel to parsing the page,
+                                    and executed as soon as it is available
+                                    (before parsing completes)
+                                </li>
+                                <li>
+                                    If defer is present (and not async): The
+                                    script is downloaded in parallel to parsing
+                                    the page, and executed after the page has
+                                    finished parsing
+                                </li>
+                                <li>
+                                    If neither async or defer is present: The
+                                    script is downloaded and executed
+                                    immediately, blocking parsing until the
+                                    script is completed
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">async</div>
+                            <div class="col75">
+                                <pre><code>&lt;script src="demo_async.js" async&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="html_scripts_attributes_defer">Defer</h3>
+                    <ul>
+                        <li>Is a boolean attribute</li>
+                        <li>
+                            If the defer attribute is set, it specifies that the
+                            script is downloaded in parallel to parsing the
+                            page, and executed after the page has finished
+                            parsing.
+                        </li>
+                        <li>
+                            The defer attribute is only for external scripts
+                            (should only be used if the src attribute is
+                            present)
+                        </li>
+                        <li>
+                            There are several ways an external script can be
+                            executed:
+                            <ul>
+                                <li>
+                                    If async is present: The script is
+                                    downloaded in parallel to parsing the page,
+                                    and executed as soon as it is available
+                                    (before parsing completes)
+                                </li>
+                                <li>
+                                    If defer is present (and not async): The
+                                    script is downloaded in parallel to parsing
+                                    the page, and executed after the page has
+                                    finished parsing
+                                </li>
+                                <li>
+                                    If neither async or defer is present: The
+                                    script is downloaded and executed
+                                    immediately, blocking parsing until the
+                                    script is completed
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">defer</div>
+                            <div class="col75">
+                                <pre><code>&lt;script src="demo_defer.js" defer&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="html_scripts_attributes_src">SRC</h3>
+                    <ul>
+                        <li>Specifies the URL of an external script file</li>
+                        <li>
+                            If you want to run the same JavaScript on several
+                            pages in a web site, you should create an external
+                            JavaScript file, instead of writing the same script
+                            over and over again. Save the script file with a .js
+                            extension, and then refer to it using the src
+                            attribute in the &lt;script&gt; tag.
+                        </li>
+                        <li>
+                            The external script file cannot contain the
+                            &lt;script&gt; tag
+                        </li>
+                        <li>
+                            Point to the external script file exactly where you
+                            would have written the script
+                        </li>
+                        <li>
+                            Possible values:
+                            <ul>
+                                <li>
+                                    An absolute URL - points to another web site
+                                    (like
+                                    src="http://www.example.com/example.js")
+                                </li>
+                                <li>
+                                    A relative URL - points to a file within a
+                                    web site (like src="/scripts/example.js")
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col50">HTML</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <script type="text/javascript">
+                                    //<![CDATA[
+                                    let x = 10;
+                                    if (x < 5) {
+                                        // some code
+                                    }
+                                    //]]>
+                                </script>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;script type="text/javascript"&gt;
+//&lt;![CDATA[
+let i = 10;
+if (i &lt; 5) {
+    // some code
+}
+//]]&gt;
+&lt;/script&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>script {
+    display: none;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="html_scripts_attributes_type">Type</h3>
+                    <ul>
+                        <li>Specifies the type of the script.</li>
+                        <li>
+                            Identifies the content between the &lt;script&gt;
+                            and &lt;/script&gt; tags
+                        </li>
+                        <li>
+                            <i>scripttype</i>: Specifies the type of the script
+                            <ul>
+                                <li>
+                                    Some common values: <br />A JavaScript MIME
+                                    type like: text/javascript (default)module:
+                                    <br />Another MIME type. src attribute will
+                                    be ignored
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col_header">
+                            <div class="col20">Example</div>
+                            <div class="col75">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <script type="text/javascript">
+                                    document.getElementById("demo").innerHTML =
+                                        "Hello JavaScript!";
+                                </script>
+                            </div>
+
+                            <div class="col75">
+                                <pre><code>&lt;script type="text/javascript"&gt;
+    document.getElementById("demo").innerHTML 
+        = "Hello JavaScript!";
+&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <!-- Bottom Links -->
+        <footer>
+            <nav>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML"
+                        >HTML Snippets Homepage</a
+                    >
+                    <br />
+                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
+                        >HTML Snippets Links</a
+                    >
+                    <br />
+                    <a href="../HTML_Links/index.html"
+                        >HTML Snippets Links - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
+                        >HTML Snippets Embeds</a
+                    >
+                    <br />
+                    <a href="../HTML_Embeds/index.html"
+                        >HTML Snippets Embeds - l</a
+                    >
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
+                        >HTML Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../HTML_Forms/index.html"
+                        >HTML Snippets Forms - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_iFrames"
+                        >HTML Snippets iFrames</a
+                    >
+                    <br />
+                    <a href="../HTML_iFrames/index.html"
+                        >HTML Snippets iFrames - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
+                        >HTML Snippets Images</a
+                    >
+                    <br />
+                    <a href="../HTML_Images/index.html"
+                        >HTML Snippets Images - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
+                        >HTML Snippets Tables</a
+                    >
+                    <br />
+                    <a href="../HTML_Tables/index.html"
+                        >HTML Snippets Tables - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
+                        >HTML Snippets Video_Audio</a
+                    >
+                    <br />
+                    <a href="../HTML_Video_Audio/index.html"
+                        >HTML Snippets Video_Audio - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Buttons"
+                        >HTML Snippets Buttons</a
+                    >
+                    <br />
+                    <a href="../HTML_Buttons/index.html"
+                        >HTML Snippets Buttons - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Scripts"
+                        >HTML Snippets Scripts</a
+                    >
+                    <br />
+                    <a href="../HTML_Scripts/index.html"
+                        >HTML Snippets Scripts - l</a
+                    >
+                </div>
+            </nav>
+        </footer>
+        <script src="./HTML_Scripts.js"></script>
+    </body>
+</html>

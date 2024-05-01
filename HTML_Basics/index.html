@@ -2404,6 +2404,12 @@ var {
                                             >HTML Links - l
                                         </a>
                                     </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>b {
+    font-weight: bold;
+}</code></pre>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>&lt;b&gt;</td>
@@ -2418,6 +2424,10 @@ var {
                                         - Insert single-line texts <br />- Is an
                                         empty tag, so no end tag
                                     </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code></code></pre>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>&lt;button&gt;</td>
@@ -2431,6 +2441,259 @@ var {
                                             >HTML Buttons - l</a
                                         >
                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;cite&gt;</td>
+                                    <td>
+                                        - Defines the title of a creative work
+                                        (e.g. a book, a poem, a song, a movie, a
+                                        painting, a sculpture, etc.)
+                                        <br />- The text in the &lt;cite&gt;
+                                        element usually renders in italic
+                                    </td>
+                                    <td>
+                                        -Default CSS:
+                                        <pre><code>cite {
+    font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;code&gt;</td>
+                                    <td>
+                                        - Define a piece of computer code. The
+                                        content inside is displayed in the
+                                        browser's default monospace font
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;em&gt;</td>
+                                    <td>
+                                        - Define emphasized text. The content
+                                        inside is typically displayed in italic
+                                    </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>em {
+    font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;i&gt;</td>
+                                    <td>
+                                        - Defines a part of text in an alternate
+                                        voice or mood. The content inside is
+                                        typically displayed in italic <br />-
+                                        Often used to indicate a technical term,
+                                        a phrase from another language, a
+                                        thought, a ship name, etc <br />- Use
+                                        the &lt;i&gt; element only when there is
+                                        not a more appropriate semantic element,
+                                        such as:
+                                        <ul>
+                                            <li>
+                                                &lt;em&gt; (emphasized text)
+                                            </li>
+                                            <li>
+                                                &lt;strong&gt; (important text)
+                                            </li>
+                                            <li>
+                                                &lt;mark&gt; (marked/highlighted
+                                                text)
+                                            </li>
+                                            <li>
+                                                &lt;cite&gt; (the title of a
+                                                work)
+                                            </li>
+                                            <li>
+                                                &lt;dfn&gt; (a definition term)
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>i {
+    font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;img&gt;</td>
+                                    <td>
+                                        - Used to embed an image in an HTML page
+                                        <br />- Has two required attributes:
+                                        <ul>
+                                            <li>
+                                                src - Specifies the path to the
+                                                image
+                                            </li>
+                                            <li>
+                                                alt - Specifies an alternate
+                                                text for the image, if the image
+                                                for some reason cannot be
+                                                displayed
+                                            </li>
+                                        </ul>
+                                        <br />- Always specify the width and
+                                        height of an image. If width and height
+                                        are not specified, the page might
+                                        flicker while the image loads <br />- To
+                                        link an image to another document,
+                                        simply nest the &lt;img&gt; tag inside
+                                        an &lt;a&gt; tag <br />- See also:
+                                        <a href="../HTML_Images/#"
+                                            >HTML Images</a
+                                        >
+                                    </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>img {
+    display: inline-block;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;input&gt;</td>
+                                    <td>
+                                        - Specifies an input field where the
+                                        user can enter data <br />- The most
+                                        important form element <br />- Can be
+                                        displayed in several ways, depending on
+                                        the type attribute <br />- See alsp
+                                        <a href="../HTML_Forms/index.html"
+                                            >HTML Forms</a
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;label&gt;</td>
+                                    <td>
+                                        - Defines a label for several elements
+                                        <br />- The for attribute of
+                                        &lt;label&gt; must be equal to the id
+                                        attribute of the related element to bind
+                                        them together. A label can also be bound
+                                        to an element by placing the element
+                                        inside the &lt;label&gt; element <br />-
+                                        Attributes:
+                                        <ul>
+                                            <li>
+                                                for: <i>element_id</i> <br />-
+                                                Specifies the id of the form
+                                                element the label should be
+                                                bound to
+                                            </li>
+                                            <li>
+                                                form: <i>form_id</i><br />-
+                                                Specifies which form the label
+                                                belongs to
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        - Default CSS:
+                                        <pre><code>label {
+    cursor: default;
+}</code></pre>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>&lt;output&gt;</td>
+                                    <td>
+                                        - Used to represent the result of a
+                                        calculation (like one performed by a
+                                        script) <br />- Attributes:
+                                        <ul>
+                                            <li>
+                                                for: <i>element_id</i><br />-
+                                                Specifies the relationship
+                                                between the result of the
+                                                calculation, and the elements
+                                                used in the calculation
+                                            </li>
+                                            <li>
+                                                form: <i>form_id</i><br />-
+                                                Specifies which form the output
+                                                element belongs to
+                                            </li>
+                                            <li>
+                                                name: <i>name</i><br />-
+                                                Specifies a name for the output
+                                                element
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>output {
+    display: inline;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;q&gt;</td>
+                                    <td>
+                                        - Defines a short quotation <br />-
+                                        Normally insert quotation marks around
+                                        the quotation <br />- Use
+                                        &lt;blockquote&gt; for long quotations
+                                        <br />Attributes:
+                                        <ul>
+                                            <li>
+                                                cite: <i>URL</i><br />-
+                                                Specifies the source URL of the
+                                                quote
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        Default CSS:
+                                        <pre><code>q {
+    display: inline;
+}
+
+    q:before {
+    content: open-quote;
+}
+
+    q:after {
+    content: close-quote;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;script&gt;</td>
+                                    <td>
+                                        - Used to embed a client-side script
+                                        (JavaScript) <br />- Either contains
+                                        scripting statements, or it points to an
+                                        external script file through the src
+                                        attribute <br />- Common uses for
+                                        JavaScript are image manipulation, form
+                                        validation, and dynamic changes of
+                                        content <br />- Also look at the
+                                        &lt;noscript&gt; element for users that
+                                        have disabled scripts in their browser,
+                                        or have a browser that doesn't support
+                                        client-side scripting <br />- See also:
+                                        <a href="../HTML_Scripts/index.html"
+                                            >HTML Scripts</a
+                                        >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;select&gt;</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;span&gt;</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;textarea&gt;</td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2524,6 +2787,16 @@ var {
                     <br />
                     <a href="../HTML_Buttons/index.html"
                         >HTML Snippets Buttons - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/Snippets-HTML/HTML_Scripts"
+                        >HTML Snippets Scripts</a
+                    >
+                    <br />
+                    <a href="../HTML_Scripts/index.html"
+                        >HTML Snippets Scripts - l</a
                     >
                 </div>
             </nav>
