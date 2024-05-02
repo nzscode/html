@@ -31,17 +31,18 @@
                 <nav id="nav">
                     <p>HTML Scripts</p>
                     <ul>
-                        <li><a href="#Ordered_Lists">Ordered Lists</a></li>
+                        <li><a href="#basic-script">Basic Script</a></li>
                     </ul>
-                    <p>Default CSS</p>
+                    <p>Script Attributes</p>
+                    <a class="title-link" href="#script-attributes"
+                        >Script Attributes</a
+                    >
+
                     <ul>
-                        <li></li>
-                    </ul>
-                    <p>List Snippets</p>
-                    <ul>
-                        <li>
-                            <a href="#Removing Bullets">Removing Bullets</a>
-                        </li>
+                        <li><a href="#async">Async</a></li>
+                        <li><a href="#defer">Defer</a></li>
+                        <li><a href="#src">Src</a></li>
+                        <li><a href="#type">Type</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,7 +50,7 @@
         <main>
             <article>
                 <section>
-                    <h2 id="html_scripts_basics">HTML Scripts: Basics</h2>
+                    <h2 id="basic-script">HTML Scripts: Basics</h2>
                     <div class="container">
                         <div class="row col_header">
                             <div class="col20">Example</div>
@@ -81,10 +82,7 @@
                 </section>
             </article>
             <article>
-                <h2>Script Attributes</h2>
-                <ul>
-                    <li></li>
-                </ul>
+                <h2 id="script-attributes">Script Attributes</h2>
                 <section>
                     <table class="pretty_table">
                         <thead>
@@ -97,9 +95,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="#html_scripts_attributes_async"
-                                        >async</a
-                                    >
+                                    <a href="#async">async</a>
                                 </td>
                                 <td>async</td>
                                 <td>
@@ -111,9 +107,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#html_scripts_attributes_defer"
-                                        >defer</a
-                                    >
+                                    <a href="#defer">defer</a>
                                 </td>
                                 <td>defer</td>
                                 <td>
@@ -157,9 +151,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#html_scripts_attributes_src"
-                                        >src</a
-                                    >
+                                    <a href="#src">src</a>
                                 </td>
                                 <td>URL</td>
                                 <td>
@@ -168,9 +160,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#html_scripts_attributes_type"
-                                        >type</a
-                                    >
+                                    <a href="#type">type</a>
                                 </td>
                                 <td>scripttype</td>
                                 <td>Specifies the media type of the script</td>
@@ -178,8 +168,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3 id="html_scripts_attributes_async">Async</h3>
+                    <h3 id="async">Async</h3>
                     <ul>
                         <li>A boolean attribute</li>
                         <li>
@@ -235,7 +226,7 @@
                     </div>
                 </section>
                 <section>
-                    <h3 id="html_scripts_attributes_defer">Defer</h3>
+                    <h3 id="defer">Defer</h3>
                     <ul>
                         <li>Is a boolean attribute</li>
                         <li>
@@ -289,7 +280,7 @@
                     </div>
                 </section>
                 <section>
-                    <h3 id="html_scripts_attributes_src">SRC</h3>
+                    <h3 id="src">SRC</h3>
                     <ul>
                         <li>Specifies the URL of an external script file</li>
                         <li>
@@ -359,7 +350,7 @@ if (i &lt; 5) {
                     </div>
                 </section>
                 <section>
-                    <h3 id="html_scripts_attributes_type">Type</h3>
+                    <h3 id="type">Type</h3>
                     <ul>
                         <li>Specifies the type of the script.</li>
                         <li>
@@ -407,98 +398,99 @@ if (i &lt; 5) {
         <footer>
             <nav>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML"
-                        >HTML Snippets Homepage</a
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_basics"
+                        >html Snippets Basics</a
                     >
                     <br />
-                    <a href="../index.html">HTML Snippets Homepage - l</a>
+                    <a href="../html_basics/index.html"
+                        >html Snippets Basics - l</a
+                    >
                 </div>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
-                        >HTML Snippets Links</a
+                    <a href="https://nzscode.github.io/snippets-html/basics"
+                        >html Snippets Homepage</a
                     >
                     <br />
-                    <a href="../HTML_Links/index.html"
-                        >HTML Snippets Links - l</a
+                    <a href="../index.html">html Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_links"
+                        >html Snippets Links</a
+                    >
+                    <br />
+                    <a href="../html_links/index.html"
+                        >html Snippets Links - l</a
+                    >
+                </div>
+
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_forms"
+                        >html Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../html_forms/index.html"
+                        >html Snippets Forms - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
-                        >HTML Snippets Embeds</a
+                        href="https://nzscode.github.io/snippets-html/html_iframes"
+                        >html Snippets iFrames</a
                     >
                     <br />
-                    <a href="../HTML_Embeds/index.html"
-                        >HTML Snippets Embeds - l</a
-                    >
-                </div>
-                <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
-                        >HTML Snippets Forms</a
-                    >
-                    <br />
-                    <a href="../HTML_Forms/index.html"
-                        >HTML Snippets Forms - l</a
+                    <a href="../html_iframes/index.html"
+                        >html Snippets iFrames - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_iFrames"
-                        >HTML Snippets iFrames</a
+                        href="https://nzscode.github.io/snippets-html/html_images"
+                        >html Snippets Images</a
                     >
                     <br />
-                    <a href="../HTML_iFrames/index.html"
-                        >HTML Snippets iFrames - l</a
+                    <a href="../html_images/index.html"
+                        >html Snippets Images - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
-                        >HTML Snippets Images</a
+                        href="https://nzscode.github.io/snippets-html/html_tables"
+                        >html Snippets Tables</a
                     >
                     <br />
-                    <a href="../HTML_Images/index.html"
-                        >HTML Snippets Images - l</a
+                    <a href="../html_tables/index.html"
+                        >html Snippets Tables - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
-                        >HTML Snippets Tables</a
+                        href="https://nzscode.github.io/snippets-html/html_video_audio"
+                        >html Snippets Video_Audio</a
                     >
                     <br />
-                    <a href="../HTML_Tables/index.html"
-                        >HTML Snippets Tables - l</a
+                    <a href="../html_video_audio/index.html"
+                        >html Snippets Video_Audio - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
-                        >HTML Snippets Video_Audio</a
+                        href="https://nzscode.github.io/snippets-html/html_buttons"
+                        >html Snippets Buttons</a
                     >
                     <br />
-                    <a href="../HTML_Video_Audio/index.html"
-                        >HTML Snippets Video_Audio - l</a
+                    <a href="../html_buttons/index.html"
+                        >html Snippets Buttons - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Buttons"
-                        >HTML Snippets Buttons</a
+                        href="https://nzscode.github.io/snippets-html/html_scripts"
+                        >html Snippets Scripts</a
                     >
                     <br />
-                    <a href="../HTML_Buttons/index.html"
-                        >HTML Snippets Buttons - l</a
-                    >
-                </div>
-                <div>
-                    <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Scripts"
-                        >HTML Snippets Scripts</a
-                    >
-                    <br />
-                    <a href="../HTML_Scripts/index.html"
-                        >HTML Snippets Scripts - l</a
+                    <a href="../html_scripts/index.html"
+                        >html Snippets Scripts - l</a
                     >
                 </div>
             </nav>

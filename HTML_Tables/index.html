@@ -31,75 +31,50 @@
                 <nav id="nav">
                     <p>Basic Table</p>
                     <ul>
-                        <li><a href="#basic_table">Basic Table</a></li>
-                        <li>
-                            <a href="#table_default_table_css"
-                                >Default Table CSS</a
-                            >
-                        </li>
-                    </ul>
-                    <p>Default CSS</p>
-                    <ul>
-                        <li>
-                            <a href="#table_default_table_css">Table CSS</a>
-                        </li>
-                        <li>
-                            <a href="#table_default_th_css">Table Header CSS</a>
-                        </li>
-                        <li>
-                            <a href="#table_default_tr_css">Table Row CSS</a>
-                        </li>
-                        <li>
-                            <a href="#table_default_td_css">Table Cell CSS</a>
-                        </li>
+                        <li><a href="#basic-table">Basic Table</a></li>
                     </ul>
                     <p>Table Snippets</p>
+                    <a href="#css-snippets">Table Snippets</a>
                     <ul>
                         <li>
-                            <a href="#table_border_around_table"
+                            <a href="#border-around-table"
                                 >Border Around Table</a
                             >
                         </li>
                         <li>
-                            <a href="#table_header_cells_bgcolor"
+                            <a href="#header-background-color"
                                 >Header Cells Background Color</a
                             >
                         </li>
                         <li>
-                            <a href="#table_bgcolor_odd_cells"
+                            <a href="#odd-cell-background-color"
                                 >Background Color for Odd Cells</a
                             >
                         </li>
                         <li>
-                            <a href="#table_padding_th_td"
-                                >Padding Around TH & TD</a
-                            >
+                            <a href="#cell-padding">Padding Around TH & TD</a>
                         </li>
                         <li>
-                            <a href="#table_different_colors_th_td"
+                            <a href="#cell-colors-different"
                                 >Different Colors for TH & TD</a
                             >
                         </li>
                         <li>
-                            <a href="#table_merging_cells">Merging Cells</a>
+                            <a href="#cell-merging">Merging Cells</a>
                         </li>
                         <li>
-                            <a href="#table_creating_table_with_caption"
+                            <a href="#table-caption"
                                 >Creating a table with a caption</a
                             >
                         </li>
                         <li>
-                            <a href="#table_center_align_table"
-                                >Center Align a Table</a
-                            >
+                            <a href="#center-align">Center Align a Table</a>
                         </li>
                         <li>
-                            <a href="#table_right_align_table"
-                                >Right Align a Table</a
-                            >
+                            <a href="#right-align">Right Align a Table</a>
                         </li>
                         <li>
-                            <a href="#table_collapsing_borders"
+                            <a href="#border-collapse"
                                 >Collapsing Borders of a Table</a
                             >
                         </li>
@@ -109,29 +84,30 @@
         </header>
 
         <article>
-            <h2 id="Basic_Table">Basic Table</h2>
-            <div class="container">
-                <div class="row col_header">
-                    <div class="col30">Example</div>
-                    <div class="col30">HTML</div>
-                    <div class="col30">CSS</div>
-                </div>
-                <div class="row">
-                    <div class="col30">
-                        <br />
-                        <table id="table1">
-                            <tr>
-                                <th>Column Title 1</th>
-                                <th>Column Title 2</th>
-                            </tr>
-                            <tr>
-                                <td>Cell 1 (R2C1)</td>
-                                <td>Cell 2 (R2C2)</td>
-                            </tr>
-                        </table>
+            <h2 id="basic-table">Basic Table</h2>
+            <section>
+                <div class="container">
+                    <div class="row col_header">
+                        <div class="col30">Example</div>
+                        <div class="col30">HTML</div>
+                        <div class="col30">Default CSS</div>
                     </div>
-                    <div class="col30">
-                        <pre><code>&lt;table id="table1"&gt;
+                    <div class="row">
+                        <div class="col30">
+                            <br />
+                            <table id="table1">
+                                <tr>
+                                    <th>Column Title 1</th>
+                                    <th>Column Title 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Cell 1 (R2C1)</td>
+                                    <td>Cell 2 (R2C2)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col30">
+                            <pre><code>&lt;table id="table1"&gt;
     &lt;tr&gt;
 &lt;th>Column Title 1&lt;/th&gt;
 &lt;th>Column Title 2&lt;/th&gt;
@@ -141,106 +117,103 @@
 &lt;td>Cell 2 (R2C2)&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-                    </div>
-                    <div class="col30">
-                        <pre><code>table#table1 table,
-table#table1 th,
-table#table1 td {
-    border: 1px solid black;
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <hr />
-        </article>
-
-        <article>
-            <h2>Default CSS</h2>
-            <div>
-                <h3 id="Default_Table_CSS">Default CSS for Tables</h3>
-                <pre><code>table {
+                        </div>
+                        <div class="col30">
+                            <h4>table</h4>
+                            <pre class="css-pre"><code>table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;
 }</code></pre>
-            </div>
-            <div>
-                <h3 id="Default_TH_CSS">Table Header Default CSS</h3>
-                <pre><code>th {
+                            <h4>th</h4>
+                            <pre class="css-pre"><code>th {
     display: table-cell;
     vertical-align: inherit;
     font-weight: bold;
     text-align: center;
 }</code></pre>
-            </div>
-            <div>
-                <h3 id="Default_TR_CSS">Table Row Default CSS</h3>
-                <pre><code>tr {
+
+                            <h4>tr</h4>
+                            <pre class="css-pre"><code>tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }</code></pre>
-            </div>
-            <div>
-                <h3 id="Default_TD_CSS">Table Cell Default CSS</h3>
-                <pre><code>td {
+
+                            <h4>td</h4>
+                            <pre class="css-pre"><code>td {
     display: table-cell;
     vertical-align: inherit;
 }</code></pre>
-            </div>
-            <hr />
-            <hr />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
+        <hr />
+        <hr />
+
         <article>
-            <h2 id="Table_Snippets_CSS">CSS Snippets for Tables</h2>
-            <ul>
-                <li>
-                    When adding a CSS property to a table using the table ID:
-                    <ul>
-                        <li>
-                            If the property is for the whole table use
-                            <i
-                                ><u><b>table#tableID</b></u></i
-                            >
-                        </li>
-                        <pre><code>table#table3{
-}</code></pre>
-                        <li>
-                            If the property is for the &lt;tr&gt; or &lt;th&gt;
-                            or &lt;td&gt; use
-                            <i
-                                ><u><b>table#tableID th</b></u></i
-                            >
-                        </li>
-                        <pre><code>table#table3 th{
-}</code></pre>
-                        <li>
-                            If the property is for odd/even columns or rows use
-                            <i
-                                ><u><b>table#tableID:nth child(odd)</b></u></i
-                            >
-                        </li>
-                        <pre><code>table#tableID:nth child(odd){
-}</code></pre>
-                        <li>
-                            If the property is for a specific row or column use
-                            <i
-                                ><u><b>table#tableID td:nth child(2).</b></u></i
-                            >
-                            <br />
-                            This will change the 2nd of the &lt;td&gt;
-                        </li>
-                        <pre><code>table#table3 td:nth child(2){
-}</code></pre>
-                    </ul>
-                </li>
-            </ul>
+            <h2 id="css-snippet">CSS Snippets for Tables</h2>
             <section>
-                <h3 id="Border_Around_Table">
-                    Adding a border around the whole table
-                </h3>
+                <ul>
+                    <li>
+                        When adding a CSS property to a table using the table
+                        ID:
+                        <ul>
+                            <li>
+                                If the property is for the whole table use
+                                <i
+                                    ><u><b>table#tableID</b></u></i
+                                >
+                            </li>
+                            <pre><code>table#table3{
+                }</code></pre>
+                            <li>
+                                If the property is for the &lt;tr&gt; or
+                                &lt;th&gt; or &lt;td&gt; use
+                                <i
+                                    ><u><b>table#tableID th</b></u></i
+                                >
+                            </li>
+                            <pre><code>table#table3 th{
+                }</code></pre>
+                            <li>
+                                If the property is for odd/even columns or rows
+                                use
+                                <i
+                                    ><u
+                                        ><b>table#tableID:nth child(odd)</b></u
+                                    ></i
+                                >
+                            </li>
+                            <pre><code>table#tableID:nth child(odd){
+                }</code></pre>
+                            <li>
+                                If the property is for a specific row or column
+                                use
+                                <i
+                                    ><u
+                                        ><b
+                                            >table#tableID td:nth child(2).</b
+                                        ></u
+                                    ></i
+                                >
+                                <br />
+                                This will change the 2nd of the &lt;td&gt;
+                            </li>
+                            <pre><code>table#table3 td:nth child(2){
+                }</code></pre>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <h3 id="border-around-table">
+                Adding a border around the whole table
+            </h3>
+            <section>
                 <div class="row">
                     <div class="col50">
                         <table id="table2">
@@ -269,10 +242,11 @@ table#table1 td {
                     </div>
                 </div>
             </section>
+
+            <h3 id="header-background-color">
+                Giving the Header cells a Background color
+            </h3>
             <section>
-                <h3 id="Header_Cells_BGColor">
-                    Giving the Header cells a Background color
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table3">
@@ -301,10 +275,11 @@ table#table1 td {
                     </div>
                 </div>
             </section>
+
+            <h3 id="odd-cell-background-color">
+                Coloring only odd rows that are not header rows
+            </h3>
             <section>
-                <h3 id="#BGColor_Odd_Cells">
-                    Coloring only odd rows that are not header rows
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table4">
@@ -345,10 +320,11 @@ table#table4 tr:nth-child(1) {
                     </div>
                 </div>
             </section>
+
+            <h3 id="cell-padding">
+                Adding padding around &lt;th&gt; and &lt;td&gt;
+            </h3>
             <section>
-                <h3 id="#Padding_TH_TD">
-                    Adding padding around &lt;th&gt; and &lt;td&gt;
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table5">
@@ -389,11 +365,12 @@ table#table5 td {
                     </div>
                 </div>
             </section>
+
+            <h3 id="cell-colors-different">
+                Making the &lt;th&gt; cells have a pale yellow color and the odd
+                &lt;td&gt; cells have a pale green color
+            </h3>
             <section>
-                <h3 id="Different_Colors_TH_TD">
-                    Making the &lt;th&gt; cells have a pale yellow color and the
-                    odd &lt;td&gt; cells have a pale green color
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table6">
@@ -434,9 +411,9 @@ table#table6 th {
                     </div>
                 </div>
             </section>
-            <section>
-                <h3 id="Merging_Cells">Merging Cells</h3>
 
+            <h3 id="cell-merging">Merging Cells</h3>
+            <section>
                 <div class="container">
                     <div class="row">
                         <div class="col25 col_header">Example</div>
@@ -517,10 +494,9 @@ table#table7 td {
                     </div>
                 </div>
             </section>
+
+            <h3 id="table-caption">Creating a table with a caption</h3>
             <section>
-                <h3 id="table_creating_table_with_caption">
-                    Creating a table with a caption
-                </h3>
                 <ul>
                     <li>
                         Used to specify whether the borders of table cells
@@ -576,10 +552,11 @@ table#table8 th{
                     </div>
                 </div>
             </section>
+
+            <h3 id="center-align">
+                Aligning the table to the center of the page using CSS
+            </h3>
             <section>
-                <h3 id="table_center_align_table">
-                    Aligning the table to the center of the page using CSS
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table9">
@@ -621,10 +598,11 @@ table#table9 th{
                     </div>
                 </div>
             </section>
+
+            <h3 id="right-align">
+                Aligning the table to the Right of the page using CSS
+            </h3>
             <section>
-                <h3 id="table_right_align_table">
-                    Aligning the table to the Right of the page using CSS
-                </h3>
                 <div class="row">
                     <div class="col50">
                         <table id="table10">
@@ -665,10 +643,16 @@ table#table10 th{
                     </div>
                 </div>
             </section>
+
+            <h3 id="border-collapse">Collapsing the Table borders</h3>
             <section>
-                <h3 id="table_collapsing_borders">
-                    Collapsing the Table borders
-                </h3>
+                <ul>
+                    <li>
+                        This means that instead of the table borders being
+                        individual components, they all join together and act as
+                        one
+                    </li>
+                </ul>
                 <div class="row">
                     <div class="col50">
                         <table id="table11">
@@ -718,77 +702,99 @@ table#table11 th{
         <footer>
             <nav>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML"
-                        >HTML Snippets Homepage</a
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_basics"
+                        >html Snippets Basics</a
                     >
                     <br />
-                    <a href="../index.html">HTML Snippets Homepage - l</a>
-                </div>
-                <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Lists"
-                        >HTML Snippets Lists</a
-                    >
-                    <br />
-                    <a href="../HTML_Lists/index.html"
-                        >HTML Snippets Lists - l</a
+                    <a href="../html_basics/index.html"
+                        >html Snippets Basics - l</a
                     >
                 </div>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
-                        >HTML Snippets Links</a
+                    <a href="https://nzscode.github.io/snippets-html/basics"
+                        >html Snippets Homepage</a
                     >
                     <br />
-                    <a href="../HTML_Links/index.html"
-                        >HTML Snippets Links - l</a
+                    <a href="../index.html">html Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_links"
+                        >html Snippets Links</a
+                    >
+                    <br />
+                    <a href="../html_links/index.html"
+                        >html Snippets Links - l</a
+                    >
+                </div>
+
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_forms"
+                        >html Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../html_forms/index.html"
+                        >html Snippets Forms - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
-                        >HTML Snippets Embeds</a
+                        href="https://nzscode.github.io/snippets-html/html_iframes"
+                        >html Snippets iFrames</a
                     >
                     <br />
-                    <a href="../HTML_Embeds/index.html"
-                        >HTML Snippets Embeds - l</a
-                    >
-                </div>
-                <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
-                        >HTML Snippets Forms</a
-                    >
-                    <br />
-                    <a href="../HTML_Forms/index.html"
-                        >HTML Snippets Forms - l</a
+                    <a href="../html_iframes/index.html"
+                        >html Snippets iFrames - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_iFrames"
-                        >HTML Snippets iFrames</a
+                        href="https://nzscode.github.io/snippets-html/html_images"
+                        >html Snippets Images</a
                     >
                     <br />
-                    <a href="../HTML_iFrames/index.html"
-                        >HTML Snippets iFrames - l</a
+                    <a href="../html_images/index.html"
+                        >html Snippets Images - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Images"
-                        >HTML Snippets Images</a
+                        href="https://nzscode.github.io/snippets-html/html_tables"
+                        >html Snippets Tables</a
                     >
                     <br />
-                    <a href="../HTML_Images/index.html"
-                        >HTML Snippets Images - l</a
+                    <a href="../html_tables/index.html"
+                        >html Snippets Tables - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
-                        >HTML Snippets Video_Audio</a
+                        href="https://nzscode.github.io/snippets-html/html_video_audio"
+                        >html Snippets Video_Audio</a
                     >
                     <br />
-                    <a href="../HTML_Video_Audio/index.html"
-                        >HTML Snippets Video_Audio - l</a
+                    <a href="../html_video_audio/index.html"
+                        >html Snippets Video_Audio - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_buttons"
+                        >html Snippets Buttons</a
+                    >
+                    <br />
+                    <a href="../html_buttons/index.html"
+                        >html Snippets Buttons - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_scripts"
+                        >html Snippets Scripts</a
+                    >
+                    <br />
+                    <a href="../html_scripts/index.html"
+                        >html Snippets Scripts - l</a
                     >
                 </div>
             </nav>

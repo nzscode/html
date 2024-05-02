@@ -99,81 +99,507 @@
                 </div>
             </div>
         </article>
+        <article>
+            <h2 id="image-attributes">Image Attributes</h2>
+            <section>
+                <table class="pretty_table">
+                    <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Value</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#alt">alt</a></td>
+                            <td>text</td>
+                            <td>Specifies an alternate text for an image</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#height">height</a></td>
+                            <td>pixels</td>
+                            <td>Specifies the height of an image</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#loading">loading</a></td>
+                            <td>eager <br />lazy</td>
+                            <td>
+                                Specifies whether a browser should load an image
+                                immediately or to defer loading of images until
+                                some conditions are met
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#longdesc">longdesc</a></td>
+                            <td>URL</td>
+                            <td>
+                                Specifies a URL to a detailed description of an
+                                image
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span id="sizes"></span>sizes</td>
+                            <td>sizes</td>
+                            <td>
+                                Specifies image sizes for different page layouts
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#src">src</a></td>
+                            <td>URL</td>
+                            <td>Specifies the path to the image</td>
+                        </tr>
+                        <tr>
+                            <td><span id="srcset">srcset</span></td>
+                            <td>URL-list</td>
+                            <td>
+                                Specifies a list of image files to use in
+                                different situations
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#width">width</a></td>
+                            <td>pixels</td>
+                            <td>Specifies the width of an image</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3 id="alt">Alt</h3>
+                <section>
+                    <ul>
+                        <li>
+                            The text should describe the image if the image
+                            contains information
+                        </li>
+                        <li>
+                            The text should explain where the link goes if the
+                            image is inside an &lt;a&gt; element
+                        </li>
+                        <li>Use alt="" if the image is only for decoration</li>
+                    </ul>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img src="../images/img.png" alt="star-image" />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img src="../images/img.png" alt="star-image" /&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h3 id="height">Height</h3>
+                <section>
+                    <ul>
+                        <li>
+                            Always specify both the height and width attributes
+                            for images. If height and width are set, the space
+                            required for the image is reserved when the page is
+                            loaded. However, without these attributes, the
+                            browser does not know the size of the image, and
+                            cannot reserve the appropriate space to it. The
+                            effect will be that the page layout will change
+                            during loading (while the images load).
+                        </li>
+                        <li>
+                            Downsizing a large image with the height and width
+                            attributes forces a user to download the large image
+                            (even if it looks small on the page). To avoid this,
+                            rescale the image with a program before using it on
+                            a page.
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img
+                                    src="../images/img.png"
+                                    alt="Star-Image"
+                                    height="100"
+                                />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+/&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h3 id="loading">Loading</h3>
+                <ul>
+                    <li>eager: Default. Loads an image immediately</li>
+                    <li>
+                        lazy: Defer loading of images until some conditions are
+                        met
+                    </li>
+                </ul>
+                <section>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img
+                                    src="../images/img.png"
+                                    alt="Star-Image"
+                                    height="100"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+    loading="lazy"
+/&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3 id="longdesc">Longdesc</h3>
+                <ul>
+                    <li>A hyperlink to a detailed description of an image.</li>
+                    <li>
+                        Possible values:
+                        <ul>
+                            <li>An id to another element</li>
+                            <li>
+                                An absolute URL - points to another web site
+                                (like
+                                longdesc="http://www.example.com/description.txt")
+                            </li>
+                            <li>
+                                A relative URL - points to a file within a web
+                                site (like longdesc="description.txt")
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <section>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img
+                                    src="../images/img.png"
+                                    alt="Star-Image"
+                                    height="100"
+                                    longdesc="https://www.example.com/explanation"
+                                />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+    longdesc="https://www.example.com/explanation"
+/&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3 id="src">Src</h3>
+                <section>
+                    <ul>
+                        <li>
+                            Absolute URL - Links to an external image that is
+                            hosted on another website. Example:
+                            src="https://www.w3schools.com/images/img_girl.jpg".
+                        </li>
+                        <li>
+                            Relative URL - Links to an image that is hosted
+                            within the website. Here, the URL does not include
+                            the domain name. If the URL begins without a slash,
+                            it will be relative to the current page. Example:
+                            src="img_girl.jpg". If the URL begins with a slash,
+                            it will be relative to the domain. Example:
+                            src="/images/img_girl.jpg".
+                        </li>
+                        <li>
+                            It is almost always best to use relative URLs. They
+                            will not break if you change domain
+                        </li>
+                        <li>
+                            A broken link icon and the alt text are shown if the
+                            browser cannot find the image
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img
+                                    src="../images/img.png"
+                                    alt="Star-Image"
+                                    height="100"
+                                />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img 
+    src="../images/img.png" 
+    alt="Star-Image"
+    height="100" 
+/&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <h3 id="width">Width</h3>
+                <ul>
+                    <li>
+                        Always specify both the height and width attributes for
+                        images. If height and width are set, the space required
+                        for the image is reserved when the page is loaded.
+                        However, without these attributes, the browser does not
+                        know the size of the image, and cannot reserve the
+                        appropriate space to it. The effect will be that the
+                        page layout will change during loading (while the images
+                        load)
+                    </li>
+                    <li>
+                        Downsizing a large image with the height and width
+                        attributes forces a user to download the large image
+                        (even if it looks small on the page). To avoid this,
+                        rescale the image with a program before using it on a
+                        page
+                    </li>
+                </ul>
+                <section>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col50">Example</div>
+                            <div class="col50">HTML</div>
+                        </div>
+                        <div class="row">
+                            <div class="col50">
+                                <img
+                                    src="../images/img.png"
+                                    alt="Star-Image"
+                                    height="100"
+                                    width="100"
+                                />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+    width="100"
+/&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2 id="figure-figcaption">Figure & FigCaption</h2>
+                <ul>
+                    <li>
+                        Figure
+                        <ul>
+                            <li>
+                                Specifies self-contained content, like
+                                illustrations, diagrams, photos, code listings,
+                                etc.
+                            </li>
+                            <li>
+                                While the content of the &lt;figure&gt; element
+                                is related to the main flow, its position is
+                                independent of the main flow, and if removed it
+                                should not affect the flow of the document
+                            </li>
+                            <li>
+                                The &lt;figcaption&gt; element is used to add a
+                                caption for the &lt;figure&gt; element
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        FigCaption
+                        <ul>
+                            <li>
+                                Defines a caption for a &lt;figure&gt; element
+                            </li>
+                            <li>
+                                Can be placed as the first or last child of the
+                                &lt;figure&gt; element
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row colheader">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col30"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
+                            <figure>
+                                <img
+                                    src="../images/img.png"
+                                    alt="star image"
+                                    style="width: 100%"
+                                />
+                                <figcaption>
+                                    Fig. 1 Pic of a star with the words Image
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;figure&gt;
+&lt;img 
+    src="../images/img.png" 
+    alt="star image" 
+    style="width:100%"&gt;
+    &lt;figcaption&gt;
+        Fig. 1 Pic of a star with the words Image
+    &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                        </div>
+                        <div class="col30">
+                            <pre><code>figcaption {
+    display: block;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
         <!--  -->
         <footer>
             <nav>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML"
-                        >HTML Snippets Homepage</a
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_basics"
+                        >html Snippets Basics</a
                     >
                     <br />
-                    <a href="../index.html">HTML Snippets Homepage - l</a>
-                </div>
-                <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Lists"
-                        >HTML Snippets Lists</a
-                    >
-                    <br />
-                    <a href="../HTML_Lists/index.html"
-                        >HTML Snippets Lists - l</a
+                    <a href="../html_basics/index.html"
+                        >html Snippets Basics - l</a
                     >
                 </div>
                 <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Links"
-                        >HTML Snippets Links</a
+                    <a href="https://nzscode.github.io/snippets-html/basics"
+                        >html Snippets Homepage</a
                     >
                     <br />
-                    <a href="../HTML_Links/index.html"
-                        >HTML Snippets Links - l</a
+                    <a href="../index.html">html Snippets Homepage - l</a>
+                </div>
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_links"
+                        >html Snippets Links</a
+                    >
+                    <br />
+                    <a href="../html_links/index.html"
+                        >html Snippets Links - l</a
+                    >
+                </div>
+
+                <div>
+                    <a href="https://nzscode.github.io/snippets-html/html_forms"
+                        >html Snippets Forms</a
+                    >
+                    <br />
+                    <a href="../html_forms/index.html"
+                        >html Snippets Forms - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Embeds"
-                        >HTML Snippets Embeds</a
+                        href="https://nzscode.github.io/snippets-html/html_iframes"
+                        >html Snippets iFrames</a
                     >
                     <br />
-                    <a href="../HTML_Embeds/index.html"
-                        >HTML Snippets Embeds - l</a
-                    >
-                </div>
-                <div>
-                    <a href="https://nzscode.github.io/Snippets-HTML/HTML_Forms"
-                        >HTML Snippets Forms</a
-                    >
-                    <br />
-                    <a href="../HTML_Forms/index.html"
-                        >HTML Snippets Forms - l</a
+                    <a href="../html_iframes/index.html"
+                        >html Snippets iFrames - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_iFrames"
-                        >HTML Snippets iFrames</a
+                        href="https://nzscode.github.io/snippets-html/html_images"
+                        >html Snippets Images</a
                     >
                     <br />
-                    <a href="../HTML_iFrames/index.html"
-                        >HTML Snippets iFrames - l</a
+                    <a href="../html_images/index.html"
+                        >html Snippets Images - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Tables"
-                        >HTML Snippets Tables</a
+                        href="https://nzscode.github.io/snippets-html/html_tables"
+                        >html Snippets Tables</a
                     >
                     <br />
-                    <a href="../HTML_Tables/index.html"
-                        >HTML Snippets Tables - l</a
+                    <a href="../html_tables/index.html"
+                        >html Snippets Tables - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/Snippets-HTML/HTML_Video_Audio"
-                        >HTML Snippets Video_Audio</a
+                        href="https://nzscode.github.io/snippets-html/html_video_audio"
+                        >html Snippets Video_Audio</a
                     >
                     <br />
-                    <a href="../HTML_Video_Audio/index.html"
-                        >HTML Snippets Video_Audio - l</a
+                    <a href="../html_video_audio/index.html"
+                        >html Snippets Video_Audio - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_buttons"
+                        >html Snippets Buttons</a
+                    >
+                    <br />
+                    <a href="../html_buttons/index.html"
+                        >html Snippets Buttons - l</a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="https://nzscode.github.io/snippets-html/html_scripts"
+                        >html Snippets Scripts</a
+                    >
+                    <br />
+                    <a href="../html_scripts/index.html"
+                        >html Snippets Scripts - l</a
                     >
                 </div>
             </nav>

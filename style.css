@@ -138,6 +138,18 @@ h3 {
     font-style: normal;
 }
 
+h4 {
+    margin-bottom: 2px;
+}
+
+.title-link {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.css-pre {
+    margin-top: 2px;
+}
+
 .container {
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -181,6 +193,9 @@ h3 {
     text-align: center;
     border-radius: 5px;
 }
+.revert {
+    all: revert;
+}
 
 pre {
     /* background-color: #20262b; */
@@ -188,31 +203,6 @@ pre {
     color: #fff;
     padding: 15px;
     border-radius: 15px;
-}
-
-table {
-    margin-left: 30px;
-    border: 1px solid black;
-    padding: 5px;
-    width: 100vw;
-    max-width: 100%;
-}
-td {
-    padding: 10px;
-}
-th {
-    background-color: #00000096;
-    padding: 10px;
-    font-size: 15px;
-    color: #fcdcb9;
-}
-
-td:nth-child(1) {
-    padding: 0px 15px;
-}
-
-tr:nth-of-type(even) {
-    background-color: #00000017;
 }
 
 .pretty_table {
@@ -242,8 +232,4 @@ tr:nth-of-type(even) {
 
 hr {
     border: 5px dashed #d6282876;
-}
-
-.revert {
-    all: revert;
 }
