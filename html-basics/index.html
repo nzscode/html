@@ -32,26 +32,29 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>html Basics</p>
+                    <p>HTML Basics</p>
                     <ul>
-                        <li><a href="#ordered-lists">Ordered Lists</a></li>
+                        <li>
+                            <a href="./index.html#html-page-parts"
+                                >Parts of an HTML page</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./index.html#block-level-elements"
+                                >Block Level Elements</a
+                            >
+                        </li>
                     </ul>
                     <p>Default CSS</p>
                     <ul>
                         <li></li>
-                    </ul>
-                    <p>List Snippets</p>
-                    <ul>
-                        <li>
-                            <a href="#removing-bullets">Removing Bullets</a>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
             <article>
-                <h2 id="basic-parts-html-page">Basic Parts of an html Page</h2>
+                <h2 id="html-page-parts">Basic Parts of an html Page</h2>
                 <div class="container">
                     <div class="row col-header">
                         <div class="col30">Example</div>
@@ -136,24 +139,28 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-div"
-                                        >&lt;div&gt;</a
+                                    <span id="div"
+                                        ><a href="#bl-div">&lt;div&gt;</a></span
                                     >
                                 </td>
                                 <td>Defines a division</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-paragraph"
-                                        >&lt;p&gt;</a
+                                    <span id="paragraph"
+                                        ><a href="#bl-paragraph"
+                                            >&lt;p&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>Defines a paragraph</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-address"
-                                        >&lt;address&gt;</a
+                                    <span id="address"
+                                        ><a href="#bl-address"
+                                            >&lt;address&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -170,8 +177,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-article"
-                                        >&lt;article&gt;</a
+                                    <span id="article"
+                                        ><a href="#bl-article"
+                                            >&lt;article&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -186,8 +195,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-aside"
-                                        >&lt;aside&gt;</a
+                                    <span id="aside"
+                                        ><a href="#bl-aside"
+                                            >&lt;aside&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -202,8 +213,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-blockquote"
-                                        >&lt;blockquote&gt;</a
+                                    <span id="blockquote"
+                                        ><a href="#bl-blockquote"
+                                            >&lt;blockquote&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -217,8 +230,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-canvas"
-                                        >&lt;canvas&gt;</a
+                                    <span id="canvas"
+                                        ><a href="#bl-canvas"
+                                            >&lt;canvas&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -236,20 +251,18 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-dl"
-                                        >&lt;dl&gt;</a
+                                    <span id="dl"
+                                        ><a href="#bl-dl">&lt;dl&gt;</a></span
                                     >
                                 </td>
                                 <td>
                                     - Used to define a Description List <br />-
                                     Used with
-                                    <a href="#block-level-element-dt"
-                                        >&lt;dt&gt;</a
-                                    >
+                                    <a href="#bl-dt">&lt;dt&gt;</a>
+
                                     to define a description term, and
-                                    <a href="#block-level-element-dd"
-                                        >&lt;dd&gt;</a
-                                    >
+                                    <a href="#bl-dd">&lt;dd&gt;</a>
+
                                     to define a description definition
                                     <br />- Also see
                                     <i
@@ -259,20 +272,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-dt"
-                                        >&lt;dt&gt;</a
+                                    <span id="dt"
+                                        ><a href="#bl-dt">&lt;dt&gt;</a></span
                                     >
                                 </td>
                                 <td>
                                     - Used to define a Description Term/Name
                                     <br />- Used with
-                                    <a href="#block-level-element-dl"
-                                        >&lt;dl&gt;</a
-                                    >
+                                    <a href="#bl-dl">&lt;dl&gt;</a>
                                     to define a description list, and
-                                    <a href="#block-level-element-dd"
-                                        >&lt;dd&gt;</a
-                                    >
+                                    <a href="#bl-dd">&lt;dd&gt;</a>
                                     to define a description definition
                                     <br />- Can put paragraphs, line breaks,
                                     images, links, lists, etc.<br />- Also see
@@ -283,20 +292,15 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-dd"
-                                        >&lt;dd&gt;</a
-                                    >
+                                    <span id="dd"></span>
+                                    <a href="#bl-dd">&lt;dd&gt;</a>
                                 </td>
                                 <td>
                                     - Used to define a Description Definition
                                     <br />- Used with
-                                    <a href="#block-level-element-dl"
-                                        >&lt;dl&gt;</a
-                                    >
+                                    <a href="#bl-dl">&lt;dl&gt;</a>
                                     to define a description list, and
-                                    <a href="#block-level-element-dt"
-                                        >&lt;dt&gt;</a
-                                    >
+                                    <a href="#bl-dt">&lt;dt&gt;</a>
                                     to define a description term/name
                                     <br />- Can put paragraphs, line breaks,
                                     images, links, lists, etc.<br />- Also see
@@ -307,8 +311,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-fieldset"
-                                        >&lt;fieldset&gt;</a
+                                    <span id="fieldset"
+                                        ><a href="#bl-fieldset"
+                                            >&lt;fieldset&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -342,8 +348,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-figure"
-                                        >&lt;figure&gt;</a
+                                    <span id="figure"
+                                        ><a href="#bl-figure"
+                                            >&lt;figure&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -358,7 +366,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-figcaption"
+                                    <a href="#bl-figcaption"
                                         >&lt;figcaption&gt;</a
                                     >
                                 </td>
@@ -371,8 +379,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-header"
-                                        >&lt;header&gt;</a
+                                    <span id="header"
+                                        ><a href="#bl-header"
+                                            >&lt;header&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -396,8 +406,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-main"
-                                        >&lt;main&gt;</a
+                                    <span id="main"
+                                        ><a href="#bl-main"
+                                            >&lt;main&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -418,8 +430,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-footer"
-                                        >&lt;footer&gt;</a
+                                    <span id="footer"
+                                        ><a href="#bl-footer"
+                                            >&lt;footer&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -439,8 +453,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-nav"
-                                        >&lt;nav&gt;</a
+                                    <span id="nav"
+                                        ><a href="#bl-nav">&lt;nav&gt;</a></span
                                     >
                                 </td>
                                 <td>
@@ -451,18 +465,18 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-section"
-                                        >&lt;section&gt;</a
-                                    >
+                                    <a href="#bl-section">&lt;section&gt;</a>
                                 </td>
                                 <td>Defines a section in a document</td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-table"
-                                        ><span id="html-basics-table"
-                                            >&lt;table&gt;</span
-                                        ></a
+                                    <span id="table"
+                                        ><a href="#bl-table"
+                                            ><span id="html-basics-table"
+                                                >&lt;table&gt;</span
+                                            ></a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -498,8 +512,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-thead"
-                                        >&lt;thead&gt;</a
+                                    <span id="thead"
+                                        ><a href="#bl-thead"
+                                            >&lt;thead&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -535,8 +551,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-tbody"
-                                        >&lt;tbody&gt;</a
+                                    <span id="tbody"
+                                        ><a href="#bl-tbody"
+                                            >&lt;tbody&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -570,8 +588,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-tfoot"
-                                        >&lt;tfoot&gt;</a
+                                    <span id="tfoot"
+                                        ><a href="#bl-tfoot"
+                                            >&lt;tfoot&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -607,8 +627,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-headings"
-                                        >&lt;headings&gt;</a
+                                    <span id="headings"
+                                        ><a href="#bl-headings"
+                                            >&lt;headings&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -624,8 +646,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-ol"
-                                        >&lt;ol&gt;: Ordered List</a
+                                    <span id="ol"
+                                        ><a href="#bl-ol"
+                                            >&lt;ol&gt;: Ordered List</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -660,8 +684,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-ul"
-                                        >&lt;ul&gt;: Unordered List</a
+                                    <span id="ul"
+                                        ><a href="#bl-ul"
+                                            >&lt;ul&gt;: Unordered List</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -689,8 +715,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-li"
-                                        >&lt;li&gt;: List Item</a
+                                    <span id="li"
+                                        ><a href="#bl-li"
+                                            >&lt;li&gt;: List Item</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -710,8 +738,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-pre"
-                                        >&lt;pre&gt;</a
+                                    <span id="pre"
+                                        ><a href="#bl-pre">&lt;pre&gt;</a></span
                                     >
                                 </td>
                                 <td>
@@ -740,8 +768,8 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-hr"
-                                        >&lt;hr&gt;</a
+                                    <span id="hr"
+                                        ><a href="#bl-hr">&lt;hr&gt;</a></span
                                     >
                                 </td>
                                 <td>
@@ -754,8 +782,10 @@
 
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-noscript"
-                                        >&lt;noscript&gt;</a
+                                    <span id="noscript"
+                                        ><a href="#bl-noscript"
+                                            >&lt;noscript&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -772,8 +802,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#block-level-element-video"
-                                        >&lt;video&gt;</a
+                                    <span id="video"
+                                        ><a href="#bl-video"
+                                            >&lt;video&gt;</a
+                                        ></span
                                     >
                                 </td>
                                 <td>
@@ -812,7 +844,7 @@
                 <br />
                 <br />
                 <section>
-                    <h3 id="block-level-element">Div</h3>
+                    <h3 id="bl-div">Div</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -836,7 +868,7 @@
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-paragraph">Paragraph</h3>
+                    <h3 id="bl-paragraph">Paragraph</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -864,7 +896,7 @@ provident, inventore sint cum nobis velit labore facere!
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-address">Address</h3>
+                    <h3 id="bl-address">Address</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -895,7 +927,7 @@ provident, inventore sint cum nobis velit labore facere!
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-article">Article</h3>
+                    <h3 id="bl-article">Article</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -928,7 +960,7 @@ provident, inventore sint cum nobis velit labore facere!
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-aside">Aside</h3>
+                    <h3 id="bl-aside">Aside</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -979,7 +1011,7 @@ provident, inventore sint cum nobis velit labore facere!
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-blockquote">Blockquote</h3>
+                    <h3 id="bl-blockquote">Blockquote</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1023,7 +1055,7 @@ provident, inventore sint cum nobis velit labore facere!
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-canvas">Canvas</h3>
+                    <h3 id="bl-canvas">Canvas</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1079,7 +1111,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-dl">Description List</h3>
+                    <h3 id="bl-dl">Description List</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1120,7 +1152,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-dt">Description Term</h3>
+                    <h3 id="bl-dt">Description Term</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1157,7 +1189,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-dd">Description Definition</h3>
+                    <h3 id="bl-dd">Description Definition</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1195,7 +1227,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-fieldset">Fieldset</h3>
+                    <h3 id="bl-fieldset">Fieldset</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1277,7 +1309,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-figure">Figure</h3>
+                    <h3 id="bl-figure">Figure</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1322,7 +1354,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-figcaption">Figcaption</h3>
+                    <h3 id="bl-figcaption">Figcaption</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1363,7 +1395,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-header">Header</h3>
+                    <h3 id="bl-header">Header</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1392,7 +1424,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-main">Main</h3>
+                    <h3 id="bl-main">Main</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1450,7 +1482,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-footer">Footer</h3>
+                    <h3 id="bl-footer">Footer</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1487,7 +1519,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-nav">Nav</h3>
+                    <h3 id="bl-nav">Nav</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1518,7 +1550,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-section">Section</h3>
+                    <h3 id="bl-section">Section</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1553,7 +1585,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-table">Table</h3>
+                    <h3 id="bl-table">Table</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1615,7 +1647,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-thead">THead</h3>
+                    <h3 id="bl-thead">THead</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1692,7 +1724,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-tbody">Tbody</h3>
+                    <h3 id="bl-tbody">Tbody</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1769,7 +1801,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-tfoot">Tfoot</h3>
+                    <h3 id="bl-tfoot">Tfoot</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -1958,7 +1990,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-ol">Ordered Lists</h3>
+                    <h3 id="bl-ol">Ordered Lists</h3>
                     <ul class="columns">
                         Other List Style Types:
                         <li>circle</li>
@@ -2060,7 +2092,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-ul">Unordered Lists</h3>
+                    <h3 id="bl-ul">Unordered Lists</h3>
                     <ul class="columns">
                         Other List Style Types:
                         <li>circle</li>
@@ -2145,7 +2177,7 @@ ctx.fillRect(80, 80, 75, 50);
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-li">List Items</h3>
+                    <h3 id="bl-li">List Items</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -2212,7 +2244,7 @@ li {
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-pre">pre</h3>
+                    <h3 id="bl-pre">pre</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -2282,7 +2314,7 @@ var {
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-hr">Hr</h3>
+                    <h3 id="bl-hr">Hr</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -2322,7 +2354,7 @@ var {
                 </section>
 
                 <section>
-                    <h3 id="block-level-element-noscript">Noscript</h3>
+                    <h3 id="bl-noscript">Noscript</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -2351,7 +2383,7 @@ var {
                     </div>
                 </section>
                 <section>
-                    <h3 id="block-level-element-video">Video</h3>
+                    <h3 id="bl-video">Video</h3>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
@@ -2378,7 +2410,7 @@ var {
             <hr />
             <article>
                 <section>
-                    <h2 id="html-basics-inline-element">Inline Elements</h2>
+                    <h2 id="inline-element">Inline Elements</h2>
                     <section>
                         <table class="pretty-table">
                             <thead>
@@ -2389,7 +2421,7 @@ var {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>&lt;a&gt;</td>
+                                    <td><span id="a">&lt;a&gt;</span></td>
                                     <td>
                                         - Defines a hyperlink, which is used to
                                         link from one page to another <br />- If
@@ -2412,14 +2444,14 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;b&gt;</td>
+                                    <td><span id="b">&lt;b&gt;</span></td>
                                     <td>
                                         - Make text bold <br />- Can also use
                                         CSS: "font-weight: bold;"
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;br&gt;</td>
+                                    <td><span id="br">&lt;br&gt;</span></td>
                                     <td>
                                         - Insert single-line texts <br />- Is an
                                         empty tag, so no end tag
@@ -2430,7 +2462,9 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;button&gt;</td>
+                                    <td>
+                                        <span id="button">&lt;button&gt;</span>
+                                    </td>
                                     <td>
                                         - A clickable button <br />- See also:
                                         <a
@@ -2443,7 +2477,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;cite&gt;</td>
+                                    <td><span id="cite">&lt;cite&gt;</span></td>
                                     <td>
                                         - Defines the title of a creative work
                                         (e.g. a book, a poem, a song, a movie, a
@@ -2459,7 +2493,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;code&gt;</td>
+                                    <td><span id="code">&lt;code&gt;</span></td>
                                     <td>
                                         - Define a piece of computer code. The
                                         content inside is displayed in the
@@ -2467,7 +2501,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;em&gt;</td>
+                                    <td><span id="em">&lt;em&gt;</span></td>
                                     <td>
                                         - Define emphasized text. The content
                                         inside is typically displayed in italic
@@ -2480,7 +2514,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;i&gt;</td>
+                                    <td><span id="i">&lt;i&gt;</span></td>
                                     <td>
                                         - Defines a part of text in an alternate
                                         voice or mood. The content inside is
@@ -2496,18 +2530,26 @@ var {
                                                 &lt;em&gt; (emphasized text)
                                             </li>
                                             <li>
-                                                &lt;strong&gt; (important text)
+                                                <span id="strong"
+                                                    >&lt;strong&gt;</span
+                                                >
+                                                (important text)
                                             </li>
                                             <li>
-                                                &lt;mark&gt; (marked/highlighted
-                                                text)
+                                                <span id="mark"
+                                                    >&lt;mark&gt;
+                                                </span>
+                                                (marked/highlighted text)
                                             </li>
                                             <li>
                                                 &lt;cite&gt; (the title of a
                                                 work)
                                             </li>
                                             <li>
-                                                &lt;dfn&gt; (a definition term)
+                                                <span id="dfn"
+                                                    >&lt;dfn&gt;</span
+                                                >
+                                                (a definition term)
                                             </li>
                                         </ul>
                                     </td>
@@ -2519,7 +2561,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;img&gt;</td>
+                                    <td><span id="img">&lt;img&gt;</span></td>
                                     <td>
                                         - Used to embed an image in an html page
                                         <br />- Has two required attributes:
@@ -2554,7 +2596,9 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;input&gt;</td>
+                                    <td>
+                                        <span id="input">&lt;input&gt;</span>
+                                    </td>
                                     <td>
                                         - Specifies an input field where the
                                         user can enter data <br />- The most
@@ -2567,7 +2611,9 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;label&gt;</td>
+                                    <td>
+                                        <span id="label">&lt;label&gt;</span>
+                                    </td>
                                     <td>
                                         - Defines a label for several elements
                                         <br />- The for attribute of
@@ -2600,7 +2646,9 @@ var {
                                 </tr>
 
                                 <tr>
-                                    <td>&lt;output&gt;</td>
+                                    <td>
+                                        <span id="output">&lt;output&gt;</span>
+                                    </td>
                                     <td>
                                         - Used to represent the result of a
                                         calculation (like one performed by a
@@ -2633,7 +2681,7 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;q&gt;</td>
+                                    <td><span id="q">&lt;q&gt;</span></td>
                                     <td>
                                         - Defines a short quotation <br />-
                                         Normally insert quotation marks around
@@ -2664,7 +2712,9 @@ var {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>&lt;script&gt;</td>
+                                    <td>
+                                        <span id="script">&lt;script&gt;</span>
+                                    </td>
                                     <td>
                                         - Used to embed a client-side script
                                         (JavaScript) <br />- Either contains
@@ -2701,6 +2751,8 @@ var {
                 </section>
             </article>
         </main>
+        <hr />
+        <hr />
         <!-- Bottom Links -->
         <footer>
             <nav>
