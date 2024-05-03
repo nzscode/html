@@ -1,20 +1,20 @@
-.ul_type_circle {
+.ul-type-circle {
     list-style-type: circle;
 }
-.ul_type_disc {
+.ul-type-disc {
     list-style-type: disc;
 }
-.ul_type_square {
+.ul-type-square {
     list-style-type: square;
 }
-.margin_bottom_1px {
+.margin-bottom-1px {
     margin-bottom: 1px;
 }
 
-.margin_top_1px {
+.margin-top-1px {
     margin-top: 1px;
 }
-#flex_col_2 {
+#flex-col-2 {
     display: flex;
     flex-flow: column;
 }

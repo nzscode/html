@@ -53,8 +53,8 @@ table#table10 {
 table#table11 {
     border-collapse: collapse;
 }
-.merge_col,
-.merge_row {
+.merge-col,
+.merge-row {
     text-align: center;
 }
 

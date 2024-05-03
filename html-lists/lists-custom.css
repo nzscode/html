@@ -1,16 +1,16 @@
-.line_height50 {
+.line-height50 {
     all: revert;
     line-height: 50%;
 }
 
-.line_height300 {
+.line-height300 {
     all: revert;
     line-height: 300%;
 }
-ul.bullet_color {
+ul.bullet-color {
     list-style: none;
 }
-ul.bullet_color li::before {
+ul.bullet-color li::before {
     content: "* ";
     color: blue;
 }
@@ -19,95 +19,95 @@ ul.bullet_color li::before {
     column-count: 2;
 }
 
-.margin_remove {
+.margin-remove {
     margin-left: -20px;
 }
-.list_type_disc {
+.list-type-disc {
     list-style-type: disc;
 }
-.list_type_circle {
+.list-type-circle {
     list-style-type: circle;
 }
-.list_type_square {
+.list-type-square {
     list-style-type: square;
 }
-.list_type_armenian {
+.list-type-armenian {
     list-style-type: armenian;
 }
 
-.list_type_cjk-ideographic {
+.list-type-cjk-ideographic {
     list-style-type: cjk-ideographic;
 }
-.list_type_decimal {
+.list-type-decimal {
     list-style-type: decimal;
 }
-.list_type_decimal-leading-zero {
+.list-type-decimal-leading-zero {
     list-style-type: decimal-leading-zero;
 }
-.list_type_georgian {
+.list-type-georgian {
     list-style-type: georgian;
 }
-.list_type_hiragana {
+.list-type-hiragana {
     list-style-type: hiragana;
 }
-.list_type_hiragana-iroha {
+.list-type-hiragana-iroha {
     list-style-type: hiragana-iroha;
 }
-.list_type_katakana {
+.list-type-katakana {
     list-style-type: katakana;
 }
-.list_type_katakana-iroha {
+.list-type-katakana-iroha {
     list-style-type: katakana-iroha;
 }
-.list_type_lower-alpha {
+.list-type-lower-alpha {
     list-style-type: lower-alpha;
 }
-.list_type_lower-greek {
+.list-type-lower-greek {
     list-style-type: lower-greek;
 }
-.list_type_lower-latin {
+.list-type-lower-latin {
     list-style-type: lower-latin;
 }
-.list_type_lower-roman {
+.list-type-lower-roman {
     list-style-type: lower-roman;
 }
-.list_type_upper-alpha {
+.list-type-upper-alpha {
     list-style-type: upper-alpha;
 }
-.list_type_upper-latin {
+.list-type-upper-latin {
     list-style-type: upper-latin;
 }
-.list_type_upper-roman {
+.list-type-upper-roman {
     list-style-type: upper-roman;
 }
-.list_type_none {
+.list-type-none {
     list-style-type: none;
 }
-.list_type_inherit {
+.list-type-inherit {
     list-style-type: inherit;
 }
 
-.margin_bottom_1px {
+.margin-bottom-1px {
     margin-bottom: 1px;
 }
 
-.margin_top_1px {
+.margin-top-1px {
     margin-top: 1px;
 }
 
-.smaller_font {
+.smaller-font {
     font-size: 12px;
 }
 
-.ul_list_style_type_square {
+.ul-list-style-type-square {
     list-style-type: square;
 }
 
-ul.ul_list_style_type_custom {
+ul.ul-list-style-type-custom {
     list-style: none;
     margin-left: -30px;
 }
-ul.ul_list_style_type_custom li::before {
+ul.ul-list-style-type-custom li::before {
     content: "+*+";
     color: hotpink;
 }
