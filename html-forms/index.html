@@ -41,7 +41,7 @@
 
                     <p>Form Attributes</p>
                     <ul>
-                        <li><a href="#form_attributes">Form Attributes</a></li>
+                        <li><a href="#form-attributes">Form Attributes</a></li>
                         <li>
                             <a href="#form-action">Action</a>
                         </li>
@@ -66,7 +66,7 @@
                     </ul>
                     <p>Form Element</p>
                     <ul>
-                        <li><a href="#form_elements">Form Elements</a></li>
+                        <li><a href="#form-elements">Form Elements</a></li>
                         <li>
                             <a href="#elements-input">Input</a>
                             <ul>
@@ -122,7 +122,7 @@
                     <p>Input Attributes</p>
                     <ul>
                         <li>
-                            <a href="#input_attributes">Input Attributes</a>
+                            <a href="#input-attributes">Input Attributes</a>
                         </li>
                         <ul>
                             <li>
@@ -178,7 +178,7 @@
         <div id="main">
             <article>
                 <section>
-                    <h2 id="basic_form">Basic Form</h2>
+                    <h2 id="basic-form">Basic Form</h2>
                     <ul>
                         <li>Used to collect user input</li>
                         <li>
@@ -190,7 +190,7 @@
                 </section>
                 <section>
                     <div class="container">
-                        <div class="row col_header">
+                        <div class="row col-header">
                             <div class="col20">Example</div>
                             <div class="col50">HTML</div>
                             <div class="col20">Default CSS</div>
@@ -199,16 +199,16 @@
                             <div class="col20">
                                 <br />
                                 <form action="">
-                                    <label for="first_name1"
+                                    <label for="first-name1"
                                         >First Name:
                                     </label>
-                                    <input type="text" id="first_name1" />
+                                    <input type="text" id="first-name1" />
                                     <br />
-                                    <label for="last_name1">Last Name: </label>
+                                    <label for="last-name1">Last Name: </label>
                                     <input
                                         type="text"
-                                        name="last_name1"
-                                        id="last_name1"
+                                        name="last-name1"
+                                        id="last-name1"
                                     />
                                     <br />
                                     <input type="submit" />
@@ -216,18 +216,18 @@
                             </div>
                             <div class="col50">
                                 <pre><code>&lt;form action=""&gt;
-    &lt;label for="First_Name1">
+    &lt;label for="First-Name1">
         First Name: &lt;/label&gt;
     &lt;input 
         type="text" 
-        id="First_Name1"&gt;
+        id="First-Name1"&gt;
     &lt;br&gt;
-    &lt;label for="Last_Name1">
+    &lt;label for="Last-Name1">
         Last Name: &lt;/label&gt;
     &lt;input 
         type="text" 
-        name="Last_Name1" 
-        id="Last_Name1"&gt;
+        name="Last-Name1" 
+        id="Last-Name1"&gt;
     &lt;br&gt;
     &lt;input type="submit"&gt;
 &lt;/form&gt;      </code></pre>
@@ -252,8 +252,8 @@
             <hr />
             <article>
                 <section>
-                    <h2 id="form_attributes">Form Attributes</h2>
-                    <table class="pretty_table">
+                    <h2 id="form-attributes">Form Attributes</h2>
+                    <table class="pretty-table">
                         <thead>
                             <tr>
                                 <th>Type</th>
@@ -271,7 +271,7 @@
                                     - Defines the action to be performed when
                                     the form is submitted
                                     <br />
-                                    - "action_page.php" contains server-side
+                                    - "action-page.php" contains server-side
                                     script that handles the form data
                                     <br />
                                     - If the "action" attribute is left blank,
@@ -283,15 +283,15 @@
                                     <a href="#form-target">Target</a>
                                 </td>
                                 <td>
-                                    _blank
+                                    -blank
                                     <br />
-                                    _self
+                                    -self
                                     <br />
-                                    _parent
+                                    -parent
                                     <br />
-                                    _top
+                                    -top
                                     <br />
-                                    _iframe
+                                    -iframe
                                 </td>
                                 <td>
                                     - Specifies where to display the response
@@ -374,54 +374,54 @@
                 <section>
                     <h3 id="form-action">Action</h3>
                     <div class="container">
-                        <div class="row col_header">
+                        <div class="row col-header">
                             <div class="col20">Example</div>
                             <div class="col75">HTML</div>
                         </div>
                         <div class="row">
                             <div class="col20">
                                 <br />
-                                <form action="./action_page.php">
-                                    <label for="f_name"> First Name: </label>
+                                <form action="./action-page.php">
+                                    <label for="f-name"> First Name: </label>
                                     <br />
                                     <input
                                         type="text"
-                                        name="f_name"
-                                        id="f_name"
+                                        name="f-name"
+                                        id="f-name"
                                         value="Jane"
                                     />
                                     <br />
-                                    <label for="l_name"> Last Name: </label>
+                                    <label for="l-name"> Last Name: </label>
                                     <br />
                                     <input
                                         type="text"
-                                        name="l_name"
-                                        id="l_name"
+                                        name="l-name"
+                                        id="l-name"
                                         value="Doe"
                                     />
                                 </form>
                             </div>
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php"&gt;
-    &lt;label for="f_name"&gt;
+                                <pre><code>&lt;form action="./action-page.php"&gt;
+    &lt;label for="f-name"&gt;
         First Name:
     &lt;/label&gt;
     &lt;br /&gt;
     &lt;input
         type="text"
-        name="f_name"
-        id="f_name"
+        name="f-name"
+        id="f-name"
         value="Jane"
     /&gt;
     &lt;br /&gt;
-    &lt;label for="l_name"&gt;
+    &lt;label for="l-name"&gt;
         Last Name:
     &lt;/label&gt;
     &lt;br /&gt;
     &lt;input
         type="text"
-        name="l_name"
-        id="l_name"
+        name="l-name"
+        id="l-name"
         value="Doe"
     /&gt;
 &lt;/form&gt;</code></pre>
@@ -436,24 +436,24 @@
                             Specifies where to display the response that is
                             received after submitting the form.
                         </li>
-                        <li>Default value is <i>_self</i></li>
+                        <li>Default value is <i>-self</i></li>
                         <li>
                             Possible Values:
                             <ul>
                                 <li>
-                                    _blank The response is displayed in a new
+                                    -blank The response is displayed in a new
                                     window or tab
                                 </li>
                                 <li>
-                                    _self The response is displayed in the
+                                    -self The response is displayed in the
                                     current window
                                 </li>
                                 <li>
-                                    _parent The response is displayed in the
+                                    -parent The response is displayed in the
                                     parent frame
                                 </li>
                                 <li>
-                                    _top The response is displayed in the full
+                                    -top The response is displayed in the full
                                     body of the window
                                 </li>
                                 <li>
@@ -464,51 +464,51 @@
                         </li>
                     </ul>
                     <div class="container">
-                        <div class="row col_header">
+                        <div class="row col-header">
                             <div class="col20">Type</div>
                             <div class="col75">HTML</div>
                         </div>
                         <div class="row">
                             <div class="col20">
                                 <br />
-                                _blank
+                                -blank
                             </div>
 
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php" target="_blank"&gt;
+                                <pre><code>&lt;form action="./action-page.php" target="-blank"&gt;
 &lt;/form&gt;</code></pre>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col20">
                                 <br />
-                                _self
+                                -self
                             </div>
 
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php" target="_self"&gt;
+                                <pre><code>&lt;form action="./action-page.php" target="-self"&gt;
                         &lt;/form&gt;</code></pre>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col20">
                                 <br />
-                                _parent
+                                -parent
                             </div>
 
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php" target="_parent"&gt;
+                                <pre><code>&lt;form action="./action-page.php" target="-parent"&gt;
 &lt;/form&gt;</code></pre>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col20">
                                 <br />
-                                _top
+                                -top
                             </div>
 
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php" target="_top"&gt;
+                                <pre><code>&lt;form action="./action-page.php" target="-top"&gt;
 &lt;/form&gt;</code></pre>
                             </div>
                         </div>
@@ -519,7 +519,7 @@
                             </div>
 
                             <div class="col75">
-                                <pre><code>&lt;form action="./action_page.php" target="<i>framename</i>"&gt;
+                                <pre><code>&lt;form action="./action-page.php" target="<i>framename</i>"&gt;
 &lt;/form&gt;</code></pre>
                             </div>
                         </div>
@@ -528,8 +528,8 @@
             </article>
             <article>
                 <section>
-                    <h2 id="form_elements">Form Elements</h2>
-                    <table class="pretty_table">
+                    <h2 id="form-elements">Form Elements</h2>
+                    <table class="pretty-table">
                         <thead>
                             <tr>
                                 <th>Type</th>
@@ -910,7 +910,7 @@
                     <section>
                         <h3 id="input-text" class="h3-plus">Text</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -944,7 +944,7 @@
                     <section>
                         <h3 id="input-button" class="h3-plus">Button</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -977,7 +977,7 @@
                     <section>
                         <h3 id="input-checkbox" class="h3-plus">Checkbox</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1042,7 +1042,7 @@
                     <section>
                         <h3 id="input-color" class="h3-plus">Color</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1074,7 +1074,7 @@
                     <section>
                         <h3 id="input-date" class="h3-plus">Date</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1106,7 +1106,7 @@
                             Datetime-local
                         </h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1138,7 +1138,7 @@
                     <section>
                         <h3 id="input-email" class="h3-plus">Email</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1170,7 +1170,7 @@
                     <section>
                         <h3 id="input-file" class="h3-plus">File</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1202,7 +1202,7 @@
                     <section>
                         <h3 id="input-hidden" class="h3-plus">Hidden</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1232,7 +1232,7 @@
                     <section>
                         <h3 id="input-image" class="h3-plus">Image</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1264,7 +1264,7 @@
                     <section>
                         <h3 id="input-month" class="h3-plus">Month</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1296,7 +1296,7 @@
                     <section>
                         <h3 id="input-number" class="h3-plus">Number</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1333,7 +1333,7 @@
                     <section>
                         <h3 id="input-password" class="h3-plus">Password</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1367,7 +1367,7 @@
                     <section>
                         <h3 id="input-radio" class="h3-plus">Radio</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1432,7 +1432,7 @@
                     <section>
                         <h3 id="input-range" class="h3-plus">Range</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1470,7 +1470,7 @@
                     <section>
                         <h3 id="input-reset" class="h3-plus">Reset</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1505,7 +1505,7 @@
                     <section>
                         <h3 id="input-search" class="h3-plus">Search</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1542,7 +1542,7 @@
                     <section>
                         <h3 id="input-submit" class="h3-plus">Submit</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1563,7 +1563,7 @@
                     <section>
                         <h3 id="input-tel" class="h3-plus">Tel</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1600,7 +1600,7 @@
                     <section>
                         <h3 id="input-time" class="h3-plus">Time</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1635,7 +1635,7 @@
                     <section>
                         <h3 id="input-url" class="h3-plus">URL</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1670,7 +1670,7 @@
                     <section>
                         <h3 id="input-week" class="h3-plus">Week</h3>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1720,7 +1720,7 @@
                             </li>
                         </ul>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1775,7 +1775,7 @@
                             <li>Allowing selection of more than one value</li>
                         </ul>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1921,7 +1921,7 @@
                             </li>
                         </ul>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -1970,7 +1970,7 @@
                             </li>
                         </ul>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
@@ -2068,13 +2068,13 @@
                             </li>
                         </ul>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
                             <div class="row">
                                 <div class="col20">
-                                    <form action="/action_page.php">
+                                    <form action="/action-page.php">
                                         <input list="colors" />
                                         <datalist id="colors">
                                             <option value="Red"></option>
@@ -2088,7 +2088,7 @@
                                     </form>
                                 </div>
                                 <div class="col75">
-                                    <pre><code>&lt;form action="/action_page.php"&gt;
+                                    <pre><code>&lt;form action="/action-page.php"&gt;
         &lt;input list="colors" /&gt;
         &lt;datalist id="colors"&gt;
             &lt;option value="Red">&lt;/option&gt;
@@ -2112,14 +2112,14 @@
                             </ul>
                         </div>
                         <div class="container">
-                            <div class="row col_header">
+                            <div class="row col-header">
                                 <div class="col20">Example</div>
                                 <div class="col75">HTML</div>
                             </div>
                             <div class="row">
                                 <div class="col20">
                                     <form
-                                        action="/action_page.php"
+                                        action="/action-page.php"
                                         oninput="result.value=parseInt(num1.value)*parseInt(num2.value)"
                                     >
                                         <label for="num1">
@@ -2153,7 +2153,7 @@
                                 </div>
                                 <div class="col75">
                                     <pre><code>&lt;form
-        action="/action_page.php"
+        action="/action-page.php"
         oninput="result.value=parseInt(num1.value)*parseInt(num2.value)"&gt;
         &lt;label for="num1"&gt;
             Pick first number (1 - 10):
@@ -2193,8 +2193,8 @@
             <hr />
             <article>
                 <section>
-                    <h2 id="input_attributes">Input Attributes</h2>
-                    <table class="pretty_table">
+                    <h2 id="input-attributes">Input Attributes</h2>
+                    <table class="pretty-table">
                         <thead>
                             <th>Type</th>
                             <th>Value</th>
@@ -2655,11 +2655,11 @@
                         <div class="col20">
                             <br />
                             <form action="">
-                                <label for="s_id"> Enter student ID: </label>
+                                <label for="s-id"> Enter student ID: </label>
                                 <input
                                     type="text"
-                                    name="s_id"
-                                    id="s_id"
+                                    name="s-id"
+                                    id="s-id"
                                     size="13"
                                     maxlength="15"
                                 />
@@ -2667,13 +2667,13 @@
                         </div>
                         <div class="col75">
                             <pre><code>&lt;form action="">&gt;
-        &lt;label for="s_id">&gt;
+        &lt;label for="s-id">&gt;
             Enter student ID:
         &lt;/label>&gt;
         &lt;input
             type="text"
-            name="s_id"
-            id="s_id"
+            name="s-id"
+            id="s-id"
             size="13"
             maxlength="15"
         />&gt;
@@ -2998,7 +2998,7 @@
                                 <br />
                                 <input
                                     type="image"
-                                    src="img_submit.gif"
+                                    src="img-submit.gif"
                                     alt="Submit"
                                     width="48"
                                     height="48"
@@ -3019,7 +3019,7 @@
     &lt;input type="text" id="lname" name="lname"&gt;
     &lt;br&gt;
     &lt;br&gt;
-    &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
+    &lt;input type="image" src="img-submit.gif" alt="Submit" width="48" height="48"&gt;
 &lt;/form&gt;</code></pre>
                         </div>
                     </div>
@@ -3071,7 +3071,7 @@
                     <div class="row">
                         <div class="col20">
                             <br />
-                            <form action="/action_page.php" autocomplete="on">
+                            <form action="/action-page.php" autocomplete="on">
                                 <label for="fname"> First name: </label>
                                 <input type="text" id="fname" name="fname" />
                                 <br />
@@ -3093,7 +3093,7 @@
                             </form>
                         </div>
                         <div class="col75">
-                            <pre><code>&lt;form action="/action_page.php" autocomplete="on"&gt;
+                            <pre><code>&lt;form action="/action-page.php" autocomplete="on"&gt;
     &lt;label for="fname"&gt;
         First name:
     &lt;/label&gt;
@@ -3126,11 +3126,11 @@
             <nav>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_basics"
+                        href="https://nzscode.github.io/snippets-html/html-basics"
                         >html Snippets Basics</a
                     >
                     <br />
-                    <a href="../html_basics/index.html"
+                    <a href="../html-basics/index.html"
                         >html Snippets Basics - l</a
                     >
                 </div>
@@ -3142,86 +3142,86 @@
                     <a href="../index.html">html Snippets Homepage - l</a>
                 </div>
                 <div>
-                    <a href="https://nzscode.github.io/snippets-html/html_links"
+                    <a href="https://nzscode.github.io/snippets-html/html-links"
                         >html Snippets Links</a
                     >
                     <br />
-                    <a href="../html_links/index.html"
+                    <a href="../html-links/index.html"
                         >html Snippets Links - l</a
                     >
                 </div>
 
                 <div>
-                    <a href="https://nzscode.github.io/snippets-html/html_forms"
+                    <a href="https://nzscode.github.io/snippets-html/html-forms"
                         >html Snippets Forms</a
                     >
                     <br />
-                    <a href="../html_forms/index.html"
+                    <a href="../html-forms/index.html"
                         >html Snippets Forms - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_iframes"
+                        href="https://nzscode.github.io/snippets-html/html-iframes"
                         >html Snippets iFrames</a
                     >
                     <br />
-                    <a href="../html_iframes/index.html"
+                    <a href="../html-iframes/index.html"
                         >html Snippets iFrames - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_images"
+                        href="https://nzscode.github.io/snippets-html/html-images"
                         >html Snippets Images</a
                     >
                     <br />
-                    <a href="../html_images/index.html"
+                    <a href="../html-images/index.html"
                         >html Snippets Images - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_tables"
+                        href="https://nzscode.github.io/snippets-html/html-tables"
                         >html Snippets Tables</a
                     >
                     <br />
-                    <a href="../html_tables/index.html"
+                    <a href="../html-tables/index.html"
                         >html Snippets Tables - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_video_audio"
-                        >html Snippets Video_Audio</a
+                        href="https://nzscode.github.io/snippets-html/html-video-audio"
+                        >html Snippets Video-Audio</a
                     >
                     <br />
-                    <a href="../html_video_audio/index.html"
-                        >html Snippets Video_Audio - l</a
+                    <a href="../html-video-audio/index.html"
+                        >html Snippets Video-Audio - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_buttons"
+                        href="https://nzscode.github.io/snippets-html/html-buttons"
                         >html Snippets Buttons</a
                     >
                     <br />
-                    <a href="../html_buttons/index.html"
+                    <a href="../html-buttons/index.html"
                         >html Snippets Buttons - l</a
                     >
                 </div>
                 <div>
                     <a
-                        href="https://nzscode.github.io/snippets-html/html_scripts"
+                        href="https://nzscode.github.io/snippets-html/html-scripts"
                         >html Snippets Scripts</a
                     >
                     <br />
-                    <a href="../html_scripts/index.html"
+                    <a href="../html-scripts/index.html"
                         >html Snippets Scripts - l</a
                     >
                 </div>
             </nav>
         </footer>
-        <script src="../nav_menu.js"></script>
+        <script src="../nav-menu.js"></script>
     </body>
 </html>

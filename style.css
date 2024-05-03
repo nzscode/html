@@ -195,7 +195,7 @@ h4 {
     width: 75%;
 }
 
-.col_header {
+.col-header {
     text-align: center;
     border-radius: 5px;
 }
@@ -211,28 +211,28 @@ pre {
     border-radius: 15px;
 }
 
-.pretty_table {
+.pretty-table {
     margin-left: 30px;
     border: 1px solid black;
     padding: 5px;
     width: 100vw;
     max-width: 90%;
 }
-.pretty_table td {
+.pretty-table td {
     padding: 10px;
 }
-.pretty_table th {
+.pretty-table th {
     background-color: #00000096;
     padding: 10px;
     font-size: 15px;
     color: #fcdcb9;
 }
 
-.pretty_table td:nth-child(1) {
+.pretty-table td:nth-child(1) {
     padding: 0px 15px;
 }
 
-.pretty_table tr:nth-of-type(even) {
+.pretty-table tr:nth-of-type(even) {
     background-color: #00000017;
 }
 
