@@ -32,19 +32,13 @@
                     <p>Basic iFrame</p>
                     <ul>
                         <li>
-                            <a href="#Basic_iFrame">Basic iFrame</a>
+                            <a href="#basic-iframe">Basic iFrame</a>
                         </li>
                     </ul>
                     <p>iFrame Attributes</p>
                     <ul>
                         <li>
-                            <a href="#iFrame_Attributes">iFrame Attributes</a>
-                        </li>
-                    </ul>
-                    <p>Default CSS</p>
-                    <ul>
-                        <li>
-                            <a href="#Default_iFrame_CSS">Default iFrame Css</a>
+                            <a href="#iframe-attributes">iFrame Attributes</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +46,7 @@
         </header>
 
         <article>
-            <h2 id="Basic_iFrame">Basic iFrame</h2>
+            <h2 id="basic-iframe">Basic iFrame</h2>
             <ul>
                 <li>
                     Used to embed another document within the current HTML
@@ -72,7 +66,7 @@
                 <div class="row col_header">
                     <div class="col30">Example</div>
                     <div class="col30">HTML</div>
-                    <div class="col30">CSS</div>
+                    <div class="col30">Default CSS</div>
                 </div>
                 <div class="row">
                     <div class="col30">
@@ -93,10 +87,20 @@
 &gt;&lt;/iframe&gt;</code></pre>
                     </div>
                     <div class="col30">
+                        <h4 class="title-css">iframe</h4>
                         <pre><code>iframe {
     border: none;
     width: 275px;
     height: 150px;
+}
+</code></pre>
+                        <h4 class="title-css">iframe:focus</h4>
+                        <pre><code>iframe:focus { 
+    outline: none; 
+}</code></pre>
+                        <h4 class="title-css">iframe[seamless]</h4>
+                        <pre><code>iframe[seamless] { 
+    display: block; 
 }</code></pre>
                     </div>
                 </div>
@@ -105,9 +109,9 @@
         <hr />
         <hr />
         <article>
-            <h2 id="iFrame_Attributes">iFrame Attributes</h2>
+            <h2 id="iframe-attributes">iFrame Attributes</h2>
             <div>
-                <table>
+                <table class="pretty_table">
                     <thead>
                         <tr>
                             <th>Attribute</th>
@@ -203,18 +207,6 @@
         </article>
         <hr />
         <hr />
-        <article>
-            <h2 id="Default_iFrame_CSS">Default CSS</h2>
-            <div>
-                <pre><code>iframe:focus {
-    outline: none;
-}
-
-iframe[seamless] {
-    display: block;
-}</code></pre>
-            </div>
-        </article>
 
         <footer>
             <nav>
