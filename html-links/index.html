@@ -30,120 +30,83 @@
                 <nav id="nav">
                     <p>Basic Links</p>
                     <ul>
-                        <li><a href="#Basic-Hyperlink">Basic Hyperlink</a></li>
-                        <li><a href="#Basic-Link">Basic Link</a></li>
-                    </ul>
-                    <p>Default CSS</p>
-                    <ul>
-                        <li>
-                            <a href="#Default-Hyperlink-CSS"
-                                >Default Hyperlink CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#Default-Link-CSS">Default Link CSS</a>
-                        </li>
+                        <li><a href="#basic-hyperlink">Basic Hyperlink</a></li>
+                        <li><a href="#basic-link">Basic Link</a></li>
                     </ul>
 
                     <p>Hyperlink Attributes</p>
 
                     <ul>
                         <li>
-                            <a href="#Hyperlink-Attributes"
-                                >Hyperlink Attributes</a
-                            >
+                            <a href="h-attributes">Hyperlink Attributes</a>
                         </li>
 
                         <li>
-                            <a href="#Hyperlink-Download">Hyperlink Download</a>
+                            <a href="#h-download">Hyperlink Download</a>
                         </li>
-                        <li><a href="#Hyperlink-Href">Hyperlink Href</a></li>
-                        <li><a href="#Hyperlink-Rel">Hyperlink Rel</a></li>
+                        <li><a href="#h-href">Hyperlink Href</a></li>
+                        <li><a href="#h-rel">Hyperlink Rel</a></li>
                         <li>
-                            <a href="#Hyperlink-Target">Hyperlink Target</a>
+                            <a href="#h-target">Hyperlink Target</a>
                         </li>
-                        <li><a href="#Hyperlink-Type">Hyperlink Type</a></li>
+                        <li><a href="#h-type">Hyperlink Type</a></li>
                     </ul>
                     <p>Link Attributes</p>
                     <ul>
-                        <li><a href="#Link-Attributes">Link Attributes</a></li>
-                        <li><a href="#Link-Href">Link Href</a></li>
-                        <li><a href="#Link-Rel">Link Rel</a></li>
-                        <li><a href="#Link-Type">Link Type</a></li>
+                        <li><a href="#l-attributes">Link Attributes</a></li>
+                        <li><a href="#l-href">Link Href</a></li>
+                        <li><a href="#l-rel">Link Rel</a></li>
+                        <li><a href="#l-type">Link Type</a></li>
                     </ul>
 
                     <p>Hyperlink States</p>
                     <ul>
                         <li>
-                            <a href="#Hyperlink-States">Hyperlink States</a>
+                            <a href="#states">Hyperlink States</a>
                         </li>
                         <li>
-                            <a href="#Hyperlink-Link">A: Link</a>
+                            <a href="#link">A: Link</a>
                         </li>
                         <li>
-                            <a href="#Hyperlink-Visited">A: Visited</a>
+                            <a href="#visited">A: Visited</a>
                         </li>
                         <li>
-                            <a href="#Hyperlink-Hover">A: Hover</a>
+                            <a href="#hover">A: Hover</a>
                         </li>
                         <li>
-                            <a href="#Hyperlink-Active">A: Active</a>
+                            <a href="#active">A: Active</a>
                         </li>
                     </ul>
                     <p>Hyperlink Cursors</p>
                     <ul>
                         <li>
-                            <a href="#Hyperlink-Cursors">Hyperlink Cursors</a>
+                            <a href="#cursors">Hyperlink Cursors</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <article>
-            <h2 id="Basic-Table">Basic Hyperlink</h2>
-            <div class="container">
-                <div class="row col-header">
-                    <div class="col50">Example</div>
-                    <div class="col50">HTML</div>
-                </div>
-                <div class="row">
-                    <div class="col50">
-                        <br />
-                        <a href="httpe://www.google.ca">Google</a>
+            <section>
+                <h2 id="basic-table">Basic Hyperlink</h2>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col30">Default CSS</div>
                     </div>
-                    <div class="col50">
-                        <pre><code>&lt;a href="httpe://www.google.ca"&gt;Google&lt;/a&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <article>
-            <h2 id="Basic-Table">Basic Link</h2>
-            <div class="container">
-                <div class="row col-header">
-                    <div class="col50">Example</div>
-                    <div class="col50">HTML</div>
-                </div>
-                <div class="row">
-                    <div class="col50">
-                        <br />
-                        <link rel="stylesheet" href="style.css" />
-                    </div>
-                    <div class="col50">
-                        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <hr />
-        <hr />
-        <article>
-            <h2>Default CSS</h2>
-            <div>
-                <h3 id="Default-Hyperlink-CSS" rev="bookmark">
-                    Default CSS for Hyperlinks
-                </h3>
-                <pre><code>a:link {
+                    <div class="row">
+                        <div class="col20">
+                            <br />
+                            <a href="httpe://www.google.ca"> Google </a>
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;a href="httpe://www.google.ca"&gt;
+    Google
+&lt;/a&gt;</code></pre>
+                        </div>
+                        <div class="col30">
+                            <pre><code>a:link {
     color: (internal value);
     text-decoration: underline;
     cursor: auto;
@@ -162,20 +125,44 @@ a:link:active {
 a:visited:active {
     color: (internal value);
 }</code></pre>
-            </div>
-            <div>
-                <h3 id="Default-Link-CSS">Default CSS for Links</h3>
-                <pre><code>link {
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <h2 id="basic-link">Basic Link</h2>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col20">Example</div>
+                        <div class="col50">HTML</div>
+                        <div class="col30">Default CSS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col20">
+                            <br />
+                            <link rel="stylesheet" href="style.css" />
+                        </div>
+                        <div class="col50">
+                            <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                        </div>
+                        <div class="col30">
+                            <pre><code>link {
     display: none;
 }</code></pre>
-            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </article>
+
         <hr />
         <hr />
         <article>
-            <h2 id="#Hyperlink-Attributes">Hyperlink Attributes</h2>
+            <h2 id="h-attributes">Hyperlink Attributes</h2>
             <section>
-                <table>
+                <table class="pretty-table">
                     <thead>
                         <tr>
                             <th>Attribute</th>
@@ -185,7 +172,11 @@ a:visited:active {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#Hyperlink-Download">download</a></td>
+                            <td>
+                                <span id="h-download"
+                                    ><a href="#hl-download">download</a></span
+                                >
+                            </td>
                             <td>filename</td>
                             <td>
                                 When the hyperlink is clicked a file will be
@@ -193,12 +184,20 @@ a:visited:active {
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Href">href</a></td>
+                            <td>
+                                <span id="h-href"
+                                    ><a href="#hl-href">href</a></span
+                                >
+                            </td>
                             <td>URL</td>
                             <td>Links to a webpage(url)</td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Rel">rel</a></td>
+                            <td>
+                                <span id="h-rel"
+                                    ><a href="#hl-rel">rel</a></span
+                                >
+                            </td>
                             <td>tag, bookmark, external, next, prev...</td>
                             <td>
                                 Links current document to another document and
@@ -206,151 +205,147 @@ a:visited:active {
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Target">target</a></td>
-                            <td>-blank, -self, -top, -parent</td>
+                            <td>
+                                <span id="h-target"
+                                    ><a href="#hl-target">target</a></span
+                                >
+                            </td>
+                            <td>-blank <br />-self <br />-top <br />-parent</td>
                             <td>Specifies where to open the link</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
             <section>
-                <div>
-                    <h3 id="#Hyperlink-Download">Hyperlink Download</h3>
-                    <ul>
-                        <li>
-                            To Specify a new filename of the downloadable file
-                            add the attribute <i>download="newFileName"</i>
-                        </li>
-                        <li>
-                            Specifies that the target will be downloaded when
-                            the hyperlink is clicked
-                        </li>
-                        <li>
-                            Only used if the <i>href</i> attribute is present
-                        </li>
-                    </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col15">Example</div>
-                            <div class="col75">HTML</div>
+                <h3 id="hl-download">Download</h3>
+                <ul>
+                    <li>
+                        To Specify a new filename of the downloadable file add
+                        the attribute <i>download="newFileName"</i>
+                    </li>
+                    <li>
+                        Specifies that the target will be downloaded when the
+                        hyperlink is clicked
+                    </li>
+                    <li>Only used if the <i>href</i> attribute is present</li>
+                </ul>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" download="Image">
+                                Download Image
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" download="Image">
-                                    Download Image
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" download="Image"&gt;
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" download="Image"&gt;
     Download Image
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 id="#Hyperlink-Href">Hyperlink Href</h3>
+            </section>
+            <section>
+                <h3 id="hl-href">Href</h3>
+                <ul>
+                    <li>To Specify a destination</li>
+                    <li>
+                        Without the &lt;<i>href</i>&gt; the &lt;a&gt; tag will
+                        not be a hyperlink
+                    </li>
                     <ul>
-                        <li>To Specify a destination</li>
+                        Possible values:
                         <li>
-                            Without the &lt;<i>href</i>&gt; the &lt;a&gt; tag
-                            will not be a hyperlink
+                            An absolute URL - points to another web site (like
+                            href="http://www.example.com/default.htm")
                         </li>
-                        <ul>
-                            Possible values:
-                            <li>
-                                An absolute URL - points to another web site
-                                (like href="http://www.example.com/default.htm")
-                            </li>
-                            <li>
-                                A relative URL - points to a file within a web
-                                site (like href="default.htm")
-                            </li>
-                            <li>
-                                Link to an element with a specified id within
-                                the page (like href="#section2")
-                            </li>
-                            <li>
-                                Other protocols (like https://, ftp://, mailto:,
-                                file:, etc..)
-                            </li>
-                            <li>
-                                A script (like
-                                href="javascript:alert('Hello');")
-                            </li>
-                        </ul>
+                        <li>
+                            A relative URL - points to a file within a web site
+                            (like href="default.htm")
+                        </li>
+                        <li>
+                            Link to an element with a specified id within the
+                            page (like href="#section2")
+                        </li>
+                        <li>
+                            Other protocols (like https://, ftp://, mailto:,
+                            file:, etc..)
+                        </li>
+                        <li>
+                            A script (like href="javascript:alert('Hello');")
+                        </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col15">Example</div>
-                            <div class="col75">HTML</div>
+                </ul>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="https://www.google.ca">Google </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="https://www.google.ca">Google </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="https://www.google.ca"&gt;Google &lt;/a&gt;</code></pre>
-                            </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="https://www.google.ca"&gt;Google &lt;/a&gt;</code></pre>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../html-Basics/index.html">
-                                    HTML Basics webpage
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../html-Basics/index.html"&gt;HTML Basics webpage &lt;/a&gt;</code></pre>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../html-basics/index.html">
+                                HTML Basics webpage
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="#ID1">ID 1 </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="#ID1"&gt;ID 1 &lt;/a&gt;</code></pre>
-                            </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="../html-Basics/index.html"&gt;HTML Basics webpage &lt;/a&gt;</code></pre>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="javascript:alert('Hello')"
-                                    >Alert Hello</a
-                                >
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="javascript:alert('Hello')"&gt;Alert Hello &lt;/a&gt;</code></pre>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="#id1">ID 1 </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="mailto:someone@example.com"
-                                    >Send E-Mail</a
-                                >
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send E-Mail &lt;/a&gt;</code></pre>
-                            </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="#ID1"&gt;ID 1 &lt;/a&gt;</code></pre>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="hhtps://www.google.ca"
-                                    ><img
-                                        src="../images/img.png"
-                                        alt="www.google.ca"
-                                        border="0"
-                                        width="50px"
-                                        height="50px"
-                                /></a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="hhtps://www.google.ca"&gt;
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="javascript:alert('Hello')">Alert Hello</a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="javascript:alert('Hello')"&gt;Alert Hello &lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="mailto:someone@example.com">Send E-Mail</a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send E-Mail &lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="hhtps://www.google.ca"
+                                ><img
+                                    src="../images/img.png"
+                                    alt="www.google.ca"
+                                    border="0"
+                                    width="50px"
+                                    height="50px"
+                            /></a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="hhtps://www.google.ca"&gt;
         &lt;img
             src="../images/img.png"
             alt="www.google.ca"
@@ -359,127 +354,115 @@ a:visited:active {
             height="50px"
     /&gt;
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="tel:+11234567890">+1 (123) 456-7890</a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="tel:+11234567890"&gt;+1 (123) 456-7890 &lt;/a&gt;</code></pre>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="tel:+11234567890">+1 (123) 456-7890</a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="tel:+11234567890"&gt;+1 (123) 456-7890 &lt;/a&gt;</code></pre>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 id="#Hyperlink-Rel">Hyperlink Rel</h3>
+            </section>
+            <section>
+                <h3 id="hl-rel">Rel</h3>
+                <ul>
+                    <li>
+                        Specifies the relationship between the current document
+                        and the linked document
+                    </li>
+                    <li>Only helpful for SEO</li>
+                    <li>Not every link needs to be defined</li>
+                    <li>Only used if the <i>href</i> attribute is present</li>
                     <ul>
+                        Possible values:
                         <li>
-                            Specifies the relationship between the current
-                            document and the linked document
+                            Alternate: Provides a link to an alternate
+                            representation of the document (i.e. print page,
+                            translated or mirror)
                         </li>
-                        <li>Only helpful for SEO</li>
-                        <li>Not every link needs to be defined</li>
                         <li>
-                            Only used if the <i>href</i> attribute is present
+                            Author: Provides a link to the author of the
+                            document
                         </li>
-                        <ul>
-                            Possible values:
-                            <li>
-                                Alternate: Provides a link to an alternate
-                                representation of the document (i.e. print page,
-                                translated or mirror)
-                            </li>
-                            <li>
-                                Author: Provides a link to the author of the
-                                document
-                            </li>
-                            <li>
-                                Bookmark: Permanent URL used for bookmarking
-                            </li>
-                            <li>
-                                External: Indicates that the referenced document
-                                is not part of the same site as the current
-                                document
-                            </li>
-                            <li>Help: Provides a link to a help document</li>
-                            <li>
-                                License: Provides a link to licensing
-                                information for the document
-                            </li>
-                            <li>
-                                Next: Provides a link to the next document in
-                                the series
-                            </li>
-                            <li>
-                                NoFollow: Links to an unendorsed document, like
-                                a paid link.
-                                <br />
-                                ("nofollow" is used by Google, to specify that
-                                the Google search spider should not follow that
-                                link)
-                            </li>
-                            <li>
-                                NoOpener: Requires that any browsing context
-                                created by following the hyperlink must not have
-                                an opener browsing context
-                            </li>
-                            <li>
-                                NoReferrer: Makes the referrer unknown. No
-                                referer header will be included when the user
-                                clicks the hyperlink
-                            </li>
-                            <li>Prev: The previous document in a selection</li>
-                            <li>
-                                Search: Links to a search tool for the document
-                            </li>
-                            <li>
-                                Tag: A tag (keyword) for the current document
-                            </li>
-                        </ul>
+                        <li>Bookmark: Permanent URL used for bookmarking</li>
+                        <li>
+                            External: Indicates that the referenced document is
+                            not part of the same site as the current document
+                        </li>
+                        <li>Help: Provides a link to a help document</li>
+                        <li>
+                            License: Provides a link to licensing information
+                            for the document
+                        </li>
+                        <li>
+                            Next: Provides a link to the next document in the
+                            series
+                        </li>
+                        <li>
+                            NoFollow: Links to an unendorsed document, like a
+                            paid link.
+                            <br />
+                            ("nofollow" is used by Google, to specify that the
+                            Google search spider should not follow that link)
+                        </li>
+                        <li>
+                            NoOpener: Requires that any browsing context created
+                            by following the hyperlink must not have an opener
+                            browsing context
+                        </li>
+                        <li>
+                            NoReferrer: Makes the referrer unknown. No referer
+                            header will be included when the user clicks the
+                            hyperlink
+                        </li>
+                        <li>Prev: The previous document in a selection</li>
+                        <li>Search: Links to a search tool for the document</li>
+                        <li>Tag: A tag (keyword) for the current document</li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col15">Example</div>
-                            <div class="col75">HTML</div>
+                </ul>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a
+                                href="https://nzscode.github.io/snippets-html/html-Print-Links"
+                                >Alternate Print Page</a
+                            >
+                            <a
+                                href="../HTML Print/Print-html-Links/index.html"
+                                rel="alternate"
+                                >Alternate Print Page - l</a
+                            >
+                            <br /><br /><br /><br />
+                            <a
+                                href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
+                                rel="author"
+                                >Author: J.K.Rowling</a
+                            >
+                            <br /><br /><br /><br />
+                            <a href="#Default-Hyperlink-CSS" rel="bookmark"
+                                >Bookmark: Default Hyperlink CSS</a
+                            >
+                            <br /><br /><br /><br />
+                            <a
+                                href="https://nzscode.github.io/snippets-html/html-Print/FAQ"
+                                >Help</a
+                            >
+                            <br />
+                            <a href="../HTML Print/FAQ/index.html" rel="help"
+                                >Help - l
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a
-                                    href="https://nzscode.github.io/snippets-html/html-Print-Links"
-                                    >Alternate Print Page</a
-                                >
-                                <a
-                                    href="../HTML Print/Print-html-Links/index.html"
-                                    rel="alternate"
-                                    >Alternate Print Page - l</a
-                                >
-                                <br /><br /><br /><br />
-                                <a
-                                    href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
-                                    rel="author"
-                                    >Author: J.K.Rowling</a
-                                >
-                                <br /><br /><br /><br />
-                                <a href="#Default-Hyperlink-CSS" rel="bookmark"
-                                    >Bookmark: Default Hyperlink CSS</a
-                                >
-                                <br /><br /><br /><br />
-                                <a
-                                    href="https://nzscode.github.io/snippets-html/html-Print/FAQ"
-                                    >Help</a
-                                >
-                                <br />
-                                <a
-                                    href="../HTML Print/FAQ/index.html"
-                                    rel="help"
-                                    >Help - l
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="https://nzscode.github.io/snippets-html/html-Print-Links"&gt;
+                        <div class="col75">
+                            <pre><code>&lt;a href="https://nzscode.github.io/snippets-html/html-Print-Links"&gt;
     Alternate Print Page&lt;/a&gt;
 &lt;a href="../HTML Print/Print-html-Links/index.html" rel="alternate"&gt;
     Alternate Print Page - l&lt;/a&gt;
@@ -500,110 +483,156 @@ a:visited:active {
     Help&lt;/a&gt;
 &lt;a href="../HTML Print/FAQ/index.html" rel="help"&gt;
     Help - l&lt;/a&gt;</code></pre>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 id="#Hyperlink-Target">Hyperlink Target</h3>
+            </section>
+            <section>
+                <h3 id="hl-target">Target</h3>
+                <ul>
+                    <li>Specifies where to open the linked document</li>
+                    <li>Possible Values:</li>
                     <ul>
-                        <li>Specifies where to open the linked document</li>
-                        <li>Possible Values:</li>
-                        <ul>
-                            <li>
-                                -blank: Opens the linked document in a new
-                                window or tab
-                            </li>
-                            <li>
-                                -self: Opens the linked document in the same
-                                frame(same page) as it was clicked (this is
-                                default)
-                            </li>
-                            <li>
-                                -parent: Opens the linked document in the parent
-                                frame
-                            </li>
-                            <li>
-                                -top: Opens the linked document in the full body
-                                of the window
-                            </li>
-                            <li>
-                                <i>framename</i>: Opens the linked document in
-                                the named iframe
-                            </li>
-                        </ul>
+                        <li>
+                            <span id="t-blank">
+                                <a href="./index.html#blank">_blank</a></span
+                            >: Opens the linked document in a new window or tab
+                        </li>
+                        <li>
+                            <span id="t-self"
+                                ><a href="./index.html#self">_self</a></span
+                            >: Opens the linked document in the same frame(same
+                            page) as it was clicked (this is default)
+                        </li>
+                        <li>
+                            <span id="t-parent"
+                                ><a href="./index.html#parent">_parent</a></span
+                            >: Opens the linked document in the parent frame
+                        </li>
+                        <li>
+                            <span id="t-top"
+                                ><a href="./index.html#top">_top</a></span
+                            >: Opens the linked document in the full body of the
+                            window
+                        </li>
+                        <li>
+                            <span id="t-framename"
+                                ><a href="./index.html#framename"
+                                    ><i>framename</i></a
+                                ></span
+                            >: Opens the linked document in the named iframe
+                        </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col15">Example</div>
-                            <div class="col75">HTML</div>
+                </ul>
+            </section>
+            <section>
+                <h3 class="h3-plus" id="blank">_blank</h3>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" target="_blank">
+                                Opens Image in New Page
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" target="-blank">
-                                    Opens Image in New Page
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" target="-blank"&gt;
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" target="_blank"&gt;
     Opens Image in New Page
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" target="-self">
-                                    Opens Image in This page
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" target="-self"&gt;
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="h3-plus" id="self">_self</h3>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" target="_self">
+                                Opens Image in This page
+                            </a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" target="_self"&gt;
     Opens Image in This Page
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" target="-parent">
-                                    Opens Image in Parent Frame(see
-                                    <i>iFrame</i>)
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" target="-parent"&gt;
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="h3-plus" id="parent">_parent</h3>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" target="_parent">
+                                Opens Image in Parent Frame(see
+                                <i>iFrame</i>)
+                            </a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" target="_parent"&gt;
     Opens Image in New Page
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" target="-top">
-                                    Opens Image in Top Frame(see
-                                    <i>iFrame</i>)
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" target="-top"&gt;
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="h3-plus" id="top">_top</h3>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" target="_top">
+                                Opens Image in Top Frame(see
+                                <i>iFrame</i>)
+                            </a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" target="_top"&gt;
     Opens Image in New Page
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col15">
-                                <br />
-                                <a href="../images/img.png" target="-blank">
-                                    Opens Image in <i>iFrame</i>
-                                </a>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;a href="../images/img.png" target="-blank"&gt;
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="h3-plus" id="framename">framename</h3>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col15">Example</div>
+                        <div class="col75">HTML</div>
+                    </div>
+                    <div class="row">
+                        <div class="col15">
+                            <br />
+                            <a href="../images/img.png" target="framename">
+                                Opens Image in <i>iFrame</i>
+                            </a>
+                        </div>
+                        <div class="col75">
+                            <pre><code>&lt;a href="../images/img.png" target="framename"&gt;
     Opens Image in New Page
 &lt;/a&gt;</code></pre>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -612,9 +641,9 @@ a:visited:active {
         <hr />
         <hr />
         <article>
-            <h2 id="#Hyperlink-Attributes">Link Attributes</h2>
+            <h2 id="#l-attributes">Link Attributes</h2>
             <section>
-                <table>
+                <table class="pretty-table">
                     <thead>
                         <tr>
                             <th>Attribute</th>
@@ -624,12 +653,12 @@ a:visited:active {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#Link-Href">href</a></td>
+                            <td><a href="#l-href">href</a></td>
                             <td>URL</td>
                             <td>Links to a URL</td>
                         </tr>
                         <tr>
-                            <td><a href="#Link-Rel">rel</a></td>
+                            <td><a href="#l-rel">rel</a></td>
                             <td>
                                 alternate <br />author <br />dns-prefetch
                                 <br />help <br />icon <br />license <br />next
@@ -643,7 +672,7 @@ a:visited:active {
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="#Link-Type">type</a></td>
+                            <td><a href="#l-type">type</a></td>
                             <td>media-type</td>
                             <td>
                                 Specifies the media type of the linked document
@@ -652,9 +681,10 @@ a:visited:active {
                     </tbody>
                 </table>
             </section>
+            <br /><br />
             <section>
                 <div>
-                    <h3 id="#Link-Href">Link Href</h3>
+                    <h3 id="#l-href">Link Href</h3>
                     <ul>
                         <li>
                             Specifies the location (URL) of the external
@@ -691,65 +721,65 @@ a:visited:active {
                 </div>
             </section>
             <section>
-                <div>
-                    <h3 id="#Link-Rel">Link Rel</h3>
+                <h3 id="#l-rel">Link Rel</h3>
+                <ul>
+                    <li>
+                        The required rel attribute specifies the relationship
+                        between the current document and the linked
+                        document/resource.
+                    </li>
+                    <li>Possible values:</li>
                     <ul>
                         <li>
-                            The required rel attribute specifies the
-                            relationship between the current document and the
-                            linked document/resource.
+                            Alternate: Provides a link to an alternate version
+                            of the document (i.e. print page, translated or
+                            mirror).
                         </li>
-                        <li>Possible values:</li>
-                        <ul>
-                            <li>
-                                Alternate: Provides a link to an alternate
-                                version of the document (i.e. print page,
-                                translated or mirror).
-                            </li>
-                            <li>
-                                Author: Provides a link to the author of the
-                                document
-                            </li>
-                            <li>
-                                Help: Provides a link to a help document.
-                                Example: &lt;link rel="help" href="/help/"&gt;
-                            </li>
-                            <li>
-                                Icon: Imports an icon to represent the document.
-                                Example: &lt;link rel="icon" href="favicon.ico"
-                                type="image/x-icon"&gt;
-                            </li>
-                            <li>
-                                Llicense: Provides a link to copyright
-                                information for the document
-                            </li>
-                            <li>
-                                Preconnect: Specifies that the browser should
-                                preemptively connect to the target resource's
-                                origin.
-                            </li>
-                            <li>
-                                Prefetch: Specifies that the browser should
-                                preemptively fetch and cache the target resource
-                                as it is likely to be required for a follow-up
-                                navigation
-                            </li>
-                            <li>
-                                Preload: Specifies that the browser agent must
-                                preemptively fetch and cache the target resource
-                                for current navigation according to the
-                                destination given by the "as" attribute (and the
-                                priority associated with that destination).
-                            </li>
-                            <li>
-                                Search: Provides a link to a resource that can
-                                be used to search through the current document
-                                and its related pages.
-                            </li>
-                            <li>Stylesheet: Imports a style sheet</li>
-                        </ul>
+                        <li>
+                            Author: Provides a link to the author of the
+                            document
+                        </li>
+                        <li>
+                            Help: Provides a link to a help document. Example:
+                            &lt;link rel="help" href="/help/"&gt;
+                        </li>
+                        <li>
+                            Icon: Imports an icon to represent the document.
+                            Example: &lt;link rel="icon" href="favicon.ico"
+                            type="image/x-icon"&gt;
+                        </li>
+                        <li>
+                            Llicense: Provides a link to copyright information
+                            for the document
+                        </li>
+                        <li>
+                            Preconnect: Specifies that the browser should
+                            preemptively connect to the target resource's
+                            origin.
+                        </li>
+                        <li>
+                            Prefetch: Specifies that the browser should
+                            preemptively fetch and cache the target resource as
+                            it is likely to be required for a follow-up
+                            navigation
+                        </li>
+                        <li>
+                            Preload: Specifies that the browser agent must
+                            preemptively fetch and cache the target resource for
+                            current navigation according to the destination
+                            given by the "as" attribute (and the priority
+                            associated with that destination).
+                        </li>
+                        <li>
+                            Search: Provides a link to a resource that can be
+                            used to search through the current document and its
+                            related pages.
+                        </li>
+                        <li>Stylesheet: Imports a style sheet</li>
                     </ul>
-                </div>
+                </ul>
+            </section>
+            <section>
                 <div class="container">
                     <div class="row col-header">
                         <div class="col15">Example</div>
@@ -768,20 +798,16 @@ a:visited:active {
                 </div>
             </section>
             <section>
-                <div>
-                    <h3 id="#Link-Type">Link Type</h3>
-                    <ul>
-                        <li>
-                            Specifies the media type of the linked
-                            document/resource
-                        </li>
-                        <li>The most common value of type is "text/css"</li>
-                        <li>
-                            If type is omitted, browser will look at rel, to
-                            guess
-                        </li>
-                    </ul>
-                </div>
+                <h3 id="#l-type">Link Type</h3>
+                <ul>
+                    <li>
+                        Specifies the media type of the linked document/resource
+                    </li>
+                    <li>The most common value of type is "text/css"</li>
+                    <li>
+                        If type is omitted, browser will look at rel, to guess
+                    </li>
+                </ul>
                 <div class="container">
                     <div class="row col-header">
                         <div class="col15">Example</div>
@@ -811,7 +837,7 @@ a:visited:active {
         <hr />
         <hr />
         <article>
-            <h2 id="Hyperlink-States">Hyperlink States</h2>
+            <h2 id="states">Hyperlink States</h2>
             <ul>
                 <li>a:hover MUST come after a:link and a:visited</li>
                 <li>a:active MUST come after a:hover</li>
@@ -829,7 +855,7 @@ a:visited:active {
                 </li>
             </ul>
             <section>
-                <table>
+                <table class="pretty-table">
                     <thead>
                         <tr>
                             <th>Attribute</th>
@@ -839,22 +865,22 @@ a:visited:active {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#Hyperlink-Link">A: Link</a></td>
+                            <td><a href="#link">A: Link</a></td>
                             <td>a: link</td>
                             <td>A normal, unvisited link</td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Visited">A: Visted</a></td>
+                            <td><a href="#visited">A: Visted</a></td>
                             <td>a: visited</td>
                             <td>A visited link</td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Hover">A: Hover</a></td>
+                            <td><a href="#hover">A: Hover</a></td>
                             <td>a: hover</td>
                             <td>A link when the user mouses over</td>
                         </tr>
                         <tr>
-                            <td><a href="#Hyperlink-Active">A: Active</a></td>
+                            <td><a href="#active">A: Active</a></td>
                             <td>a: active</td>
                             <td>A link when clicked</td>
                         </tr>
@@ -862,9 +888,9 @@ a:visited:active {
                 </table>
             </section>
             <br /><br /><br />
-            <h2 id="Hyperlink-Cursors">Hyperlink Cursors</h2>
+            <h2 id="cursors">Hyperlink Cursors</h2>
             <section>
-                <table>
+                <table class="pretty-table">
                     <thead>
                         <tr>
                             <th>Cursor</th>
@@ -1054,7 +1080,8 @@ a:visited:active {
                 </table>
             </section>
         </article>
-
+        <hr />
+        <hr />
         <footer>
             <nav>
                 <div>
