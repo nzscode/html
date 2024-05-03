@@ -35,64 +35,40 @@
                     <p>Basic Lists</p>
                     <ul>
                         <li>
-                            <a href="#lists-ordered-lists">Ordered Lists</a>
+                            <a href="#ordered-lists">Ordered Lists</a>
                         </li>
                         <li>
-                            <a href="#lists-unordered-lists">Unordered Lists</a>
+                            <a href="#unordered-lists">Unordered Lists</a>
                         </li>
                         <li>
-                            <a href="#lists-description-lists"
-                                >Description Lists</a
-                            >
+                            <a href="#description-lists">Description Lists</a>
                         </li>
                     </ul>
-                    <p>Default CSS</p>
+                    <p>Ordered List Attributes</p>
                     <ul>
-                        <li>
-                            <a href="#lists-default-ordered-lists-css"
-                                >Default &lt;ol&gt; CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#lists-default-unordered-lists-css"
-                                >Default &lt;ul&gt; CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#lists-default-description-lists-css"
-                                >Default &lt;dl&gt; CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#lists-default-list-items-css"
-                                >Default &lt;li&gt; CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#lists-default-description-terms-css"
-                                >Default &lt;dt&gt; CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#lists-default-description-definitions-css"
-                                >Default &lt;dd&gt; CSS</a
-                            >
-                        </li>
+                        <li>Reversed</li>
+                        <li>Start</li>
+                        <li>Type</li>
                     </ul>
                     <p>List Snippets</p>
                     <ul>
                         <li>
-                            <a href="#lists-removing-bullets"
-                                >Removing Bullets</a
-                            >
+                            <a href="#removing-bullets">Removing Bullets</a>
                         </li>
+                        <li>Reducing and Expanding Heights</li>
+                        <li>Changing Bullet Color</li>
+                        <li>Splitting list into Multiple Columns</li>
+                    </ul>
+                    <p>List Types</p>
+                    <ul>
+                        <li><a href="./index.html#types">List Types</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <article>
             <section>
-                <h2 id="lists-ordered-lists">Ordered Lists</h2>
+                <h2 id="ordered-lists">Ordered Lists</h2>
                 <ul>
                     <li>Defines an ordered list</li>
                     <li>Can be numerical or alphabetical</li>
@@ -146,9 +122,7 @@ li {
                 </div>
             </section>
             <section>
-                <h2 id="html-lists-ordered-lists-attributes">
-                    Ordered List Attributes
-                </h2>
+                <h2 id="attributes">Ordered List Attributes</h2>
                 <table class="pretty-table">
                     <thead>
                         <tr>
@@ -160,9 +134,8 @@ li {
                     <tbody>
                         <tr>
                             <td>
-                                <a
-                                    href="#html-ordered-lists-attributes-reversed"
-                                    >reversed</a
+                                <span id="o-reversed"
+                                    ><a href="#ol-reversed">reversed</a></span
                                 >
                             </td>
                             <td>reversed</td>
@@ -173,8 +146,8 @@ li {
                         </tr>
                         <tr>
                             <td>
-                                <a href="#html-ordered-lists-attributes-start"
-                                    >start</a
+                                <span id="o-start"
+                                    ><a href="#ol-start">start</a></span
                                 >
                             </td>
                             <td>number</td>
@@ -184,8 +157,8 @@ li {
                         </tr>
                         <tr>
                             <td>
-                                <a href="#html-ordered-lists-attributes-type"
-                                    >type</a
+                                <span id="o-type"
+                                    ><a href="#ol-type">type</a></span
                                 >
                             </td>
                             <td>1 <br />A <br />a <br />I <br />i</td>
@@ -197,7 +170,7 @@ li {
                 </table>
             </section>
             <section>
-                <h3 id="html-ordered-lists-attributes-reversed">Reversed</h3>
+                <h3 id="ol-reversed">Reversed</h3>
                 <ul>
                     <li>A boolean attribute</li>
                     <li>
@@ -231,7 +204,7 @@ li {
                 </div>
             </section>
             <section>
-                <h3 id="html-ordered-lists-attributes-start">Start</h3>
+                <h3 id="ol-start">Start</h3>
                 <ul>
                     <li>
                         Specifies the start value of the first list item in an
@@ -270,7 +243,7 @@ li {
                 </div>
             </section>
             <section>
-                <h3 id="html-ordered-lists-attributes-type">Type</h3>
+                <h3 id="ol-type">Type</h3>
                 <ul>
                     <li>
                         Specifies the kind of marker to use in the list (letters
@@ -278,9 +251,7 @@ li {
                     </li>
                     <li>
                         CSS
-                        <a href="#lists-different-list-types"
-                            >list-style-type</a
-                        >
+                        <a href="#types">list-style-type</a>
                         property offers more types
                     </li>
                 </ul>
@@ -332,9 +303,7 @@ li {
                     <li>&lt;li&gt; tag is used to define each list item</li>
                     <li>
                         Can use CSS
-                        <a href="#lists-different-list-types"
-                            >list-style-type</a
-                        >
+                        <a href="#types">list-style-type</a>
                         property to change bullet type
                     </li>
                 </ul>
@@ -414,7 +383,7 @@ ul.ul-list-style-type-custom li::before {
             </section>
 
             <section>
-                <h2 id="lists-description-lists">Description Lists</h2>
+                <h2 id="description-lists">Description Lists</h2>
                 <ul>
                     <li>&lt;dl&gt; defines a description List</li>
                     <li>&lt;dt&gt; defines the term Name</li>
@@ -614,8 +583,10 @@ ul.bullet-color li::before {
                     </div>
                 </div>
             </section>
+        </article>
+        <article>
             <section>
-                <h3 id="lists-different-list-types">Different List Types</h3>
+                <h2 id="types">Different List Types</h2>
                 <div class="row col-header">
                     <div class="col15">Example</div>
                     <div class="col50">HTML</div>
