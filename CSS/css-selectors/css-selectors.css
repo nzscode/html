@@ -1,0 +1,41 @@
+.highlight {
+    background-color: #ff7f508d;
+}
+.class-green {
+    background-color: green;
+}
+
+.class2a.class2b,
+.class6,
+.class10 {
+    background-color: aqua;
+}
+
+.class3a .class3b {
+    background-color: blue;
+}
+
+#id4 {
+    background-color: orange;
+}
+
+.star {
+    font-style: italic;
+    color: hotpink;
+}
+
+.class6 {
+    background-color: aqua;
+}
+
+p.class7 {
+    background-color: chartreuse;
+}
+
+.class8 {
+    background-color: hotpink;
+}
+
+.class9 {
+    background-color: darkgoldenrod;
+}
