@@ -43,2655 +43,312 @@
                     <table class="pretty-table">
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Selector</th>
-                                <th>Example</th>
                                 <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
+                                <td>Element Selector</td>
                                 <td>
-                                    <span id="class1"
-                                        ><a href="#class-1">.class</a></span
-                                    >
+                                    Selects all elements of a given node type
+                                    <br />
+                                    <pre><code>p {
+    background-color:orange;
+}</code></pre>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>Class Selector</td>
                                 <td>
+                                    Selects all elements with class="intro"<br />
                                     <pre><code>.intro {
     background-color: green;
 }</code></pre>
                                 </td>
-                                <td>Selects all elements with class="intro"</td>
                             </tr>
+
                             <tr>
-                                <td>2</td>
+                                <td>ID Selector</td>
+
                                 <td>
-                                    <span id="class2"
-                                        ><a href="#class-2"
-                                            >.class1.class2</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>.name1.name2 {
+                                    Selects an element with a specific id <br />
+                                    <pre><code>#title-para{
     background-color:orange;
 }</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with both name1 and
-                                    name2 set within its class attribute
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <span id="class3"
-                                        ><a href="#class-3"
-                                            >.class1 .class2</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>.name1 .name2{
-    background-color:orange;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with name2 that is a
-                                    descendant of an element with name1
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>4</td>
+                                <td>Universal Selector</td>
+
                                 <td>
-                                    <span id="class4"
-                                        ><a href="#class-4">#id</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>#firstname {
+                                    Selects all elements. Its power comes from
+                                    combining it with other selectors <br />
+                                    <pre><code>* {
     background-color:orange;
 }</code></pre>
                                 </td>
-                                <td>Selects the element with id="firstname"</td>
                             </tr>
                             <tr>
-                                <td>5</td>
+                                <td>Attribute Selector</td>
                                 <td>
-                                    <span id="class5"
-                                        ><a href="#class-5">*</a></span
-                                    >
+                                    Selects elements based on the presence or
+                                    value of some attribute
+                                    <ul>
+                                        <li>[attr] Has an attr attribute</li>
+                                        <li>
+                                            [attr=value] Has an attr attribute,
+                                            whose value is exactly value
+                                        </li>
+                                        <li>
+                                            [attr*=value] Has an attr attribute,
+                                            whose value contains value
+                                        </li>
+                                        <li>
+                                            [attr^=value] Has an attr attribute,
+                                            whose value starts with value
+                                        </li>
+                                        <li>
+                                            [attr$=value] Has an attr attribute,
+                                            whose value ends with value
+                                        </li>
+                                    </ul>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>Descendant Combiner</td>
+
                                 <td>
-                                    <pre><code>*{
+                                    Selects elements matching B that are
+                                    descendants of A <br />
+                                    <pre><code>A B {
     background-color:orange;
 }</code></pre>
                                 </td>
-                                <td>Selects all elements</td>
                             </tr>
                             <tr>
-                                <td>6</td>
+                                <td>Child Combiner</td>
+
                                 <td>
-                                    <span id="class6"
-                                        ><a href="#class-6">element</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p{
+                                    Selects elements matching B that are direct
+                                    children of A <br />
+                                    <pre><code>A > B {
     background-color:orange;
 }</code></pre>
                                 </td>
-                                <td>Selects all &lt;p&gt; elements</td>
                             </tr>
                             <tr>
-                                <td>7</td>
+                                <td>Adjacent Sibling Combiner</td>
+
                                 <td>
-                                    <span id="class7"
-                                        ><a href="#class-7"
-                                            >element.class</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p.intro{
-    background-color:orange;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all &lt;p&gt; elements with
-                                    class="intro"
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>
-                                    <span id="class8"
-                                        ><a href="#class-8"
-                                            >element,element</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>div, p {
+                                    Selects elements matching B that directly
+                                    follow A. Both elements have to share the
+                                    same parent. <br />
+                                    <pre><code>A + B {
     background-color: hotpink;
 }</code></pre>
                                 </td>
-                                <td>
-                                    Selects all &lt;div&gt; elements and all
-                                    &lt;p&gt; elements
-                                </td>
                             </tr>
                             <tr>
-                                <td>9</td>
+                                <td>General Sibling Combiner</td>
+
                                 <td>
-                                    <span id="class9"
-                                        ><a href="#class-9"
-                                            >element element</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>div p {
+                                    Selects elements matching B that follow A
+                                    (but not necessarily immediately). Both
+                                    elements have to share the same parent.
+                                    <br />
+                                    <pre><code>A ~ B {
     background-color: hotpink;
 }</code></pre>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>:hover</td>
                                 <td>
-                                    Selects all &lt;p&gt; elements inside
-                                    &lt;div&gt; elements
+                                    Selects an element, when the user's mouse is
+                                    above it
+                                    <ul>
+                                        <li>
+                                            never use it to reveal critical
+                                            information or functionality,
+                                            without a proper
+                                            touchscreen-friendly fallback
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>10</td>
+                                <td>:focus</td>
                                 <td>
-                                    <span id="class10"
-                                        ><a href="#class-10"
-                                            >element>element</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>div > p {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all &lt;p&gt; elements where the
-                                    parent is a &lt;div&gt; element
+                                    Selects an element when the user clicks or
+                                    taps on it, or selects it with the keyboard,
+                                    by using the Tab key.
                                 </td>
                             </tr>
                             <tr>
-                                <td>11</td>
+                                <td>:not()</td>
+
                                 <td>
-                                    <span id="class11"
-                                        ><a href="#class-11"
-                                            >element+element</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>div + p {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the first &lt;p&gt; element that is
-                                    placed immediately after &lt;div&gt;
-                                    elements
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>
-                                    <span id="class12"
-                                        ><a href="#class-12"
-                                            >element1~element2</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p ~ ul {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;ul&gt; element that is
-                                    preceded by a &lt;p&gt; element
+                                    Selects elements that don't match X <br />It
+                                    can be combined with other selectors,
+                                    including other pseudo-classes (but not
+                                    pseudo-elements) to exlude certain elements,
+                                    or states from receiving the styles. <br />
+                                    Ex:
+                                    <ul>
+                                        <li>
+                                            p:not(.red) — Selects all &lt;p&gt;
+                                            elements that don't have the red
+                                            class
+                                        </li>
+                                        <li>
+                                            div :not(ul) — Selects all
+                                            descendants of &lt;div&gt; elements
+                                            that aren't &lt;ul&gt; elements
+                                        </li>
+                                        <li>
+                                            button:not(:focus) — Selects all
+                                            &lt;button&gt; elements that aren't
+                                            focused
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td>13</td>
+                                <td>:any-link</td>
                                 <td>
-                                    <span id="class13"
-                                        ><a href="#class-13"
-                                            >[attribute]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>[target] {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with a target attribute
+                                    Selects anchor tags &lt;a&gt; with an href
+                                    attribute, whether it has been visited or
+                                    not.
+
+                                    <br />To only match links that haven't been
+                                    visited yet, use :link <br />To only match
+                                    links that have been visited before, use
+                                    :visited <br />Note: :any-link is not
+                                    supported in Internet Explorer, if you need
+                                    to support it use :link & :visited instead.
                                 </td>
                             </tr>
                             <tr>
-                                <td>14</td>
+                                <td>:disabled</td>
                                 <td>
-                                    <span id="class14"
-                                        ><a href="#class-14"
-                                            >[attribute=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>[target="_blank"] {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with target="_blank"
+                                    Selects disabled elements.
+                                    <br />
+                                    It's most commonly used with buttons, inputs
+                                    and other form elements that have the
+                                    disabled attribute.
                                 </td>
                             </tr>
                             <tr>
-                                <td>15</td>
+                                <td>:nth-child() & :nth-last-child()</td>
                                 <td>
-                                    <span id="class15"
-                                        ><a href="#class-15"
-                                            >[attribute~=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>[title~="flower"] {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with a title attribute
-                                    containing the word "flower"
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>16</td>
-                                <td>
-                                    <span id="class16"
-                                        ><a href="#class-16"
-                                            >[attribute|=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>[lang|="en"] {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all elements with a lang attribute
-                                    value equal to "en" or starting with "en-"
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>17</td>
-                                <td>
-                                    <span id="class17"
-                                        ><a href="#class-17"
-                                            >[attribute^=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a[href^="https"] {
-    background-color: hotpink;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;a&gt; element whose href
-                                    attribute value begins with "https"
+                                    Selects elements based on their position in
+                                    a group.<br />Ex
+                                    <ul>
+                                        <li>
+                                            :nth-child(3) Selects the third
+                                            element.
+                                        </li>
+
+                                        <li>
+                                            :nth-child(4n) Selects every fourth
+                                            element: 4, 8, 12, 16 etc.
+                                        </li>
+
+                                        <li>
+                                            :nth-child(odd) Selects the odd
+                                            elements: 1, 3, 5 etc.
+                                        </li>
+
+                                        <li>
+                                            :nth-child(even) Selects the even
+                                            elements: 2, 4, 6 etc.
+                                        </li>
+                                    </ul>
+                                    <br />
+                                    The :nth-child() selector selects elements
+                                    from the beginning, and :nth-last-child()
+                                    does the same but starting from the end.<br />There
+                                    are also a few convenience pseudo-classes,
+                                    that offer a more readable alternative for
+                                    common use cases:
+
+                                    <br />:first-child <br />:last-child
+                                    <br />:only-child
                                 </td>
                             </tr>
                             <tr>
-                                <td>18</td>
+                                <td>:nth-of-type() & :nth-last-of-type()</td>
                                 <td>
-                                    <span id="class18"
-                                        ><a href="#class-18"
-                                            >[attribute$=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a[href$=".pdf"] {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;a&gt; element whose href
-                                    attribute value ends with ".pdf"
+                                    These pseudo-classes work like :nth-child()
+                                    & :nth-last-child() but only count elements
+                                    of a given type.
+                                    <br />
+                                    Like with :nth-child() & :nth-last-child(),
+                                    there are also some convenience
+                                    pseudo-classes:
+
+                                    <br />:first-of-type <br />:last-of-type
+                                    <br />:only-of-type
                                 </td>
                             </tr>
                             <tr>
-                                <td>19</td>
+                                <td>:invalid & :valid</td>
                                 <td>
-                                    <span id="class19"
-                                        ><a href="#class-19"
-                                            >[attribute*=value]</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a[href*="w3schools"] {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;a&gt; element whose href
-                                    attribute value contains the substring
-                                    "w3schools"
+                                    :invalid selects &lt;inputs&gt; or other
+                                    form elements whose content doesn't match
+                                    its validation rules. <br />For example a
+                                    &lt;input type=”number” min="5"&gt; whose
+                                    value is 4. <br />Or, a &lt;input
+                                    type="text" required&gt; that is empty.<br />
+                                    :valid selects form elements whose content
+                                    matches its validation rules. <br />For
+                                    example a &lt;input type=”number”
+                                    min="5"&gt; whose value is 7.
                                 </td>
                             </tr>
                             <tr>
-                                <td>20</td>
+                                <td>:required & :optional</td>
                                 <td>
-                                    <span id="class20"
-                                        ><a href="#class-20">:active</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a:active {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>Selects the active link</td>
-                            </tr>
-                            <tr>
-                                <td>21</td>
-                                <td>
-                                    <span id="class21"
-                                        ><a href="#class-21">::after</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p::after {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Insert something after the content of each
-                                    &lt;p&gt; element
+                                    :required selects &lt;inputs&gt; or other
+                                    form elements which have the required
+                                    attribute. :optional selects form elements
+                                    that don't have the required attribute.
                                 </td>
                             </tr>
                             <tr>
-                                <td>22</td>
+                                <td>:root</td>
                                 <td>
-                                    <span id="class22"
-                                        ><a href="#class-22">::before</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p::before {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Insert something before the content of each
-                                    &lt;p&gt; element
+                                    It selects the root element of the document.
+                                    It's almost identical to the html selector,
+                                    but has higher specificity. It's a great
+                                    place to set global CSS variables.
                                 </td>
                             </tr>
                             <tr>
-                                <td>23</td>
+                                <td>::before / ::after</td>
                                 <td>
-                                    <span id="class23"
-                                        ><a href="#class-23">:checked</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:checked {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every checked &lt;input&gt; element
+                                    When added to another selector, they can add
+                                    additional content before or after an
+                                    element, using the content property.
                                 </td>
                             </tr>
                             <tr>
-                                <td>24</td>
+                                <td>::placeholder</td>
                                 <td>
-                                    <span id="class24"
-                                        ><a href="#class-24">:default</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:default {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the default &lt;input&gt; element
+                                    Used to apply styles to the placeholder text
+                                    in &lt;input&gt; elements.
                                 </td>
                             </tr>
                             <tr>
-                                <td>25</td>
-                                <td>
-                                    <span id="class25"
-                                        ><a href="#class-25">:disabled</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:disabled {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every disabled &lt;input&gt; element
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>26</td>
-                                <td>
-                                    <span id="class26"
-                                        ><a href="#class-26">:empty</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:empty {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that has no
-                                    children (including text nodes)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>27</td>
-                                <td>
-                                    <span id="class27"
-                                        ><a href="#class-27">:enabled</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:enabled {
-    background-color:violet;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every enabled &lt;input&gt; element
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>28</td>
-                                <td>
-                                    <span id="class28"
-                                        ><a href="#class-28"
-                                            >:first-child</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:first-child {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    first child of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>29</td>
-                                <td>
-                                    <span id="class29"
-                                        ><a href="#class-29"
-                                            >::first-letter</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p::first-letter	 {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the first letter of every &lt;p&gt;
-                                    element
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>30</td>
-                                <td>
-                                    <span id="class30"
-                                        ><a href="#class-30"
-                                            >::first-line</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p::first-line {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the first line of every &lt;p&gt;
-                                    element
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>31</td>
-                                <td>
-                                    <span id="class31"
-                                        ><a href="#class-31"
-                                            >:first-of-type</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:first-of-type {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    first &lt;p&gt; element of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>32</td>
-                                <td>
-                                    <span id="class32"
-                                        ><a href="#class-32">:focus</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:focus {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the input element which has focus
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>33</td>
-                                <td>
-                                    <span id="class33"
-                                        ><a href="#class-33"
-                                            >:fullscreen</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>:fullscreen {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the element that is in full-screen
-                                    mode
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>34</td>
-                                <td>
-                                    <span id="class34"
-                                        ><a href="#class-34">:hover</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a:hover {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>Selects links on mouse over</td>
-                            </tr>
-                            <tr>
-                                <td>35</td>
-                                <td>
-                                    <span id="class35"
-                                        ><a href="#class-35">:in-range</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:in-range {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with a value within a
-                                    specified range
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>36</td>
-                                <td>
-                                    <span id="class36"
-                                        ><a href="#class-36"
-                                            >:indeterminate</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:indeterminate {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements that are in an
-                                    indeterminate state
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>37</td>
-                                <td>
-                                    <span id="class37"
-                                        ><a href="#class-37">:invalid</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:invalid {
-    background-color:antiquewhite;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all input elements with an invalid
-                                    value
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>38</td>
-                                <td>
-                                    <span id="class38"
-                                        ><a href="#class-38"
-                                            >:lang(language)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:lang(it) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element with a lang
-                                    attribute equal to "it" (Italian)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>39</td>
-                                <td>
-                                    <span id="class39"
-                                        ><a href="#class-39"
-                                            >:last-child</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:last-child {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    last child of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>40</td>
-                                <td>
-                                    <span id="class40"
-                                        ><a href="#class-40"
-                                            >:last-of-type</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:last-of-type {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    last &lt;p&gt; element of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>41</td>
-                                <td>
-                                    <span id="class41"
-                                        ><a href="#class-41">:link</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a:link {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>Selects all unvisited links</td>
-                            </tr>
-                            <tr>
-                                <td>42</td>
-                                <td>
-                                    <span id="class42"
-                                        ><a href="#class-42">::marker</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>::marker {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>Selects the markers of list items</td>
-                            </tr>
-                            <tr>
-                                <td>43</td>
-                                <td>
-                                    <span id="class43"
-                                        ><a href="#class-43"
-                                            >:not(selector)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>:not(p) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every element that is not a
-                                    &lt;p&gt; element
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>44</td>
-                                <td>
-                                    <span id="class44"
-                                        ><a href="#class-44"
-                                            >:nth-child(n)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:nth-child(2) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    second child of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>45</td>
-                                <td>
-                                    <span id="class45"
-                                        ><a href="#class-45"
-                                            >:nth-last-child(n)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:nth-last-child(2) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    second child of its parent, counting from
-                                    the last child
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>46</td>
-                                <td>
-                                    <span id="class46"
-                                        ><a href="#class-46"
-                                            >:nth-last-of-type(n)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:nth-last-of-type(2) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    second &lt;p&gt; element of its parent,
-                                    counting from the last child
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>47</td>
-                                <td>
-                                    <span id="class47"
-                                        ><a href="#class-47"
-                                            >:nth-of-type(n)</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:nth-of-type(2) {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    second &lt;p&gt; element of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>48</td>
-                                <td>
-                                    <span id="class48"
-                                        ><a href="#class-48"
-                                            >:only-of-type</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:only-of-type {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    only &lt;p&gt; element of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>49</td>
-                                <td>
-                                    <span id="class49"
-                                        ><a href="#class-49"
-                                            >:only-child</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>p:only-child {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects every &lt;p&gt; element that is the
-                                    only child of its parent
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>50</td>
-                                <td>
-                                    <span id="class50"
-                                        ><a href="#class-50">:optional</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:optional {
-    background-color:yellow;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with no "required"
-                                    attribute
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>51</td>
-                                <td>
-                                    <span id="class51"
-                                        ><a href="#class-51"
-                                            >:out-of-range</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:out-of-range {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with a value outside
-                                    a specified range
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>52</td>
-                                <td>
-                                    <span id="class52"
-                                        ><a href="#class-52"
-                                            >::placeholder</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input::placeholder {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with the
-                                    "placeholder" attribute specified
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>53</td>
-                                <td>
-                                    <span id="class53"
-                                        ><a href="#class-53"
-                                            >:read-only</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:read-only {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with the "readonly"
-                                    attribute specified
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>54</td>
-                                <td>
-                                    <span id="class54"
-                                        ><a href="#class-54"
-                                            >:read-write</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:read-write {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with the "readonly"
-                                    attribute NOT specified
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>55</td>
-                                <td>
-                                    <span id="class55"
-                                        ><a href="#class-55">:required</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:required {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects input elements with the "required"
-                                    attribute specified
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>56</td>
-                                <td>
-                                    <span id="class56"
-                                        ><a href="#class-56">:root</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>:root {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>Selects the document's root element</td>
-                            </tr>
-                            <tr>
-                                <td>57</td>
-                                <td>
-                                    <span id="class57"
-                                        ><a href="#class-57"
-                                            >::selection</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>::selection {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the portion of an element that is
-                                    selected by a user
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>58</td>
-                                <td>
-                                    <span id="class58"
-                                        ><a href="#class-58">:target</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>#news:target {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects the current active #news element
-                                    (clicked on a URL containing that anchor
-                                    name)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>59</td>
-                                <td>
-                                    <span id="class59"
-                                        ><a href="#class-59">:valid</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>input:valid {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>
-                                    Selects all input elements with a valid
-                                    value
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>60</td>
-                                <td>
-                                    <span id="class60"
-                                        ><a href="#class-60">:visited</a></span
-                                    >
-                                </td>
-                                <td>
-                                    <pre><code>a:visited {
-    background-color:aqua;
-}</code></pre>
-                                </td>
-                                <td>Selects all visited links</td>
+                                <td>::marker</td>
+                                <td>Selects the markers of list items.</td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
             </article>
-            <br />
-            <hr />
-            <hr />
-            <br />
-            <article>
-                <h2>CSS Selectors with HTML Examples</h2>
-                <br /><br />
-                <section>
-                    <h3 id="class-1">1. Select all elements with a class</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />(Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>Background color green</p>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;p class="green"&gt;
-    Background color green
-&lt;/p&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>.green {
-    background-color: green;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p class="class-green">
-                                        Background color green
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-2">
-                        2. Select all elements with multiple classes
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit.</li>
-                                        <li>lorem2</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    <span class="highlight">&lt;p class="class2a class2b"&gt;</span>
-        Lorem, ipsum dolor.
-    &lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;ul&gt;
-        &lt;li class="class2a"&gt;
-            Lorem ipsum dolor sit.
-        &lt;/li&gt;
-        <span class="highlight">&lt;li class="class2a class2b"&gt;</span>
-            lorem2
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>.class2a.class2b {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p class="class2a class2b">
-                                        Lorem, ipsum dolor.
-                                    </p>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li class="class2a">
-                                            Lorem ipsum dolor sit.
-                                        </li>
-                                        <li class="class2a class2b">lorem2</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-3">
-                        3. Select all elements with a class that is a descendant
-                        of the first.
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p class="">
-                                        Lorem, ipsum dolor.
-                                        <span class=""
-                                            >Lorem ipsum dolor sit amet.</span
-                                        >
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p class="">Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul class="">
-                                        <li>Lorem ipsum dolor sit.</li>
-                                        <li class="">Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    <span class="highlight">&lt;p class="class3a"&gt;</span>
-        Lorem, ipsum dolor.
-        <span class="highlight">&lt;span class="class3b"</span>
-            &gt;Lorem ipsum dolor sit amet.&lt;/span
-        &gt;
-        &lt;br /&gt;
-        &lt;span>Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p class="class3a class3b"&gt;
-        Lorem ipsum dolor sit.
-    &lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    <span class="highlight">&lt;ul class="class3a"&gt;</span>
-        &lt;li>Lorem ipsum dolor sit.&lt;/li&gt;
-        <span class="highlight">&lt;li class="class3b"&gt;</span>
-            Lorem, ipsum dolor.
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>.class3a .class3b {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p class="class3a">
-                                        Lorem, ipsum dolor.
-                                        <span class="class3b"
-                                            >Lorem ipsum dolor sit amet.</span
-                                        >
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p class="class3a class3b">
-                                        Lorem ipsum dolor sit.
-                                    </p>
-                                    <br /><br />
-                                    <ul class="class3a">
-                                        <li>Lorem ipsum dolor sit.</li>
-                                        <li class="class3b">
-                                            Lorem, ipsum dolor.
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-4">4. Select the element with an id</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;p <span class="highlight">id="id4"</span>&gt;
-    Lorem, ipsum dolor.
-&lt;/p&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>#id4 {
-    background-color: orange;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <p id="id4">Lorem, ipsum dolor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-5">5. Select all elements</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>Lorem ipsum dolor sit.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span>Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span>Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Lorem ipsum dolor sit.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>* {
-    font-style: italic;
-    color: hotpink;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p class="star">
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p class="star">Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul class="star">
-                                        <li>Lorem ipsum dolor sit.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-6">6. Select all of specific element</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    <span class="highlight">&lt;p&gt;</span>
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    <span class="highlight">&lt;/p&gt;</span>
-    <span class="highlight">&lt;p&gt;</span>Lorem ipsum dolor sit.<span class="highlight">&lt;/p&gt;</span>
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            <span class="highlight">&lt;p&gt;</span>Lorem ipsum dolor sit.<span class="highlight">&lt;/p&gt;</span>
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p class="class6">
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p class="class6">Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p class="class6">
-                                                Lorem ipsum dolor sit.
-                                            </p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-7">
-                        7. Select all of specific element with specific class
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    <span class="highlight">&lt;p class="class7"&gt;</span>
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    <span class="highlight">&lt;/p&gt;</span>
-    <span class="highlight">&lt;p class="class7"&gt;</span>Lorem ipsum dolor sit.<span class="highlight">&lt;/p&gt;</span>
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li class="class7"&gt;
-            Lorem ipsum dolor sit.
-            <span class="highlight">&lt;p class="class7"&gt;</span>Lorem ipsum dolor sit.<span class="highlight">&lt;/p&gt;</span>
-        &lt;/li&gt;
-        &lt;li class="class7"&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p.class7 {
-    background-color: chartreuse;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <p class="class7">
-                                    Lorem, ipsum dolor.
-                                    <span>Lorem ipsum dolor sit amet.</span>
-                                    <br />
-                                    <span>Lorem, ipsum.</span>
-                                </p>
-                                <p class="class7">Lorem ipsum dolor sit.</p>
-                                <br /><br />
-                                <ul>
-                                    <li class="class7">
-                                        Lorem ipsum dolor sit.
-                                        <p class="class7">
-                                            Lorem ipsum dolor sit.
-                                        </p>
-                                    </li>
-                                    <li class="class7">Lorem, ipsum dolor.</li>
-                                    <li>Lorem, ipsum dolor.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-8">8. Select element 1 & element 2</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        <span class="highlight">&lt;span&gt;</span>Lorem ipsum dolor sit amet.<span class="highlight">&lt;/span&gt;</span>
-        &lt;br /&gt;
-        <span class="highlight">&lt;span&gt;</span>Lorem, ipsum.<span class="highlight">&lt;/span&gt;</span>
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        <span class="highlight">&lt;li&gt;</span>
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        <span class="highlight">&lt;/li&gt;</span>
-        <span class="highlight">&lt;li&gt;</span>Lorem, ipsum dolor.<span class="highlight">&lt;/li&gt;</span>
-        <span class="highlight">&lt;li&gt;</span>Lorem, ipsum dolor.<span class="highlight">&lt;/li&gt;</span>
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>span, li {
-    background-color: hotpink;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span class="class8"
-                                            >Lorem ipsum dolor sit amet.</span
-                                        >
-                                        <br />
-                                        <span class="class8"
-                                            >Lorem, ipsum.</span
-                                        >
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li class="class8">
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li class="class8">
-                                            Lorem, ipsum dolor.
-                                        </li>
-                                        <li class="class8">
-                                            Lorem, ipsum dolor.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-9">
-                        9. Select all element 2 inside element 1
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            <span class="highlight">&lt;p&gt;</span>Lorem ipsum dolor sit.<span class="highlight">&lt;/p&gt;</span>
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: darkgoldenrod;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p class="class9">
-                                                Lorem ipsum dolor sit.
-                                            </p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-10">
-                        10. Select all element 2, where the parent is element 1
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        <span class="highlight">&lt;span&gt;</span>Lorem ipsum dolor sit amet.<span class="highlight">&lt;/span&gt;</span>
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span class="class10"
-                                            >Lorem ipsum dolor sit amet.</span
-                                        >
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-11">
-                        11. Select the first element1, that is immediately after
-                        element 2
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;Lorem, ipsum dolor.
-            &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem, ipsum dolor.
-                                            <span>Lorem, ipsum dolor.</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-12">12.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-13">13.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-14">14.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-15">15.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-16">16.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-17">17.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-18">18.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-19">19.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="class-20">20.</h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">
-                                HTML before CSS <br />
-                                (Web Page View)
-                            </div>
-                            <div class="col50">HTML & CSS Code</div>
-                            <div class="col20">HTML after CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <h3 class="revert">HTML Code View</h3>
-                                <pre><code>&lt;div&gt;
-    &lt;p&gt;
-        Lorem, ipsum dolor.
-        &lt;span&gt;Lorem ipsum dolor sit amet.&lt;/span&gt;
-        &lt;br /&gt;
-        &lt;span&gt;Lorem, ipsum.&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;ul&gt;
-        &lt;span&gt;Lorem, ipsum dolor.&lt;/span&gt;
-        &lt;li&gt;
-            Lorem ipsum dolor sit.
-            &lt;p&gt;Lorem ipsum dolor sit.&lt;/p&gt;
-        &lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-        &lt;li&gt;Lorem, ipsum dolor.&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-                                <br />
-                                <h3 class="revert">CSS</h3>
-                                <pre><code>p {
-    background-color: aqua;
-}</code></pre>
-                            </div>
-                            <div class="col20">
-                                <div>
-                                    <p>
-                                        Lorem, ipsum dolor.
-                                        <span>Lorem ipsum dolor sit amet.</span>
-                                        <br />
-                                        <span>Lorem, ipsum.</span>
-                                    </p>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                    <br /><br />
-                                    <ul>
-                                        <span>Lorem, ipsum dolor.</span>
-                                        <li>
-                                            Lorem ipsum dolor sit.
-                                            <p>Lorem ipsum dolor sit.</p>
-                                        </li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
         </main>
-
-        <script src="../../nav-menu.js"></script>
     </body>
 </html>

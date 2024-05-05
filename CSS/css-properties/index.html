@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../style.css" />
+
+        <link rel="stylesheet" href="./css-selectors.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>CSS Properties</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <h1>
+                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
+                CSS Selector
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>CSS Selectors</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--  -->
+        <!--  -->
+        <main>
+            <article>
+                <h2>CSS Properties</h2>
+                <br />
+                <br />
+
+                <section>
+                    <h3>Width</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        Set the width of an input:
+                                    </h4>
+                                    <pre class="css-pre"><code>input {
+width: 75px;
+}</code></pre>
+                                    <h4 class="title-css">
+                                        Set the width of an &lt;input
+                                        type="text" /&gt; element to 100px.
+                                        However, when it gets focus, make it
+                                        250px wide:
+                                    </h4>
+                                    <pre
+                                        class="css-pre"
+                                    ><code>input[type=text] {
+width: 100px;
+}
+
+input[type=text]:focus {
+width: 250px;
+}</code></pre>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            auto: Default value, width
+                                            calculated by browser
+                                        </li>
+                                        <li>
+                                            length: Defines the width in px, cm,
+                                            etc.
+                                        </li>
+                                        <li>
+                                            %: Defines the width in percent of
+                                            the containing block
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br />
+                <br />
+                <section>
+                    <h3>Max-Width</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>Display</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            inline: Default value
+                                            <br />
+                                            Any height and width properties will
+                                            have no effect
+                                        </li>
+                                        <li>
+                                            block: Displays an element as a
+                                            block element (like &lt;p&gt;). It
+                                            starts on a new line, and takes up
+                                            the whole width
+                                        </li>
+                                        <li>
+                                            contents: Makes the container
+                                            disappear, making the child elements
+                                            children of the element the next
+                                            level up in the DOM
+                                        </li>
+                                        <li>
+                                            flex: Displays an element as a
+                                            block-level flex container
+                                        </li>
+                                        <li>
+                                            grid: Displays an element as a
+                                            block-level grid container
+                                        </li>
+                                        <li>
+                                            inline-block: Displays an element as
+                                            an inline-level block container. The
+                                            element itself is formatted as an
+                                            inline element, but you can apply
+                                            height and width values
+                                        </li>
+                                        <li>
+                                            inline-flex: Displays an element as
+                                            an inline-level flex container
+                                        </li>
+                                        <li>
+                                            inline-grid: Displays an element as
+                                            an inline-level grid container
+                                        </li>
+                                        <li>
+                                            inline-table: The element is
+                                            displayed as an inline-level table
+                                        </li>
+                                        <li>
+                                            list-item: Let the element behave
+                                            like a &lt;li&gt; element
+                                        </li>
+                                        <li>
+                                            table: Let the element behave like a
+                                            &lt;table&gt; element
+                                        </li>
+
+                                        <li>
+                                            none: The element is completely
+                                            removed
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Height</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Padding</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Padding-Left</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Padding-Right</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Padding-Top</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Padding-Bottom</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Margin</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Margin-Top</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Margin-Left</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Margin-Bottom</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Margin-Right</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Position</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Radius</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Top</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Left</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Right</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background-color</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Color</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Font-Size</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Font-Family</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Font-Weight</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Text Align</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Text-Decoration</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Overflow</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Transform</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Opacity</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Box-Sizing</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Box-Shadow</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Line-Height</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Z-Index</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Vertical-Align</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Cursor</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Content</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>White-Space</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Float</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Font-Style</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Min-Height</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Transition</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Min-Width</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background-Image</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Outline</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Align-Items</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Justify-Content</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Color</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Visibility</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background-Position</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>SRC</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Top</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Text-Transform</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Flex-Direction</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background-Size</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Background-Repeat</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>List-Style</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Pointer-Events</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Clear</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Font</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Width</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Flex-Wrap</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.flexWrap="nowrap"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Specifies whether the flexible items
+                                            should wrap or not
+                                        </li>
+                                        <li>
+                                            If the elements are not flexible
+                                            items, the flex-wrap property has no
+                                            effect
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            nowrap: Default value. Specifies
+                                            that the flexible items will not
+                                            wrap
+                                        </li>
+                                        <li>
+                                            wrap: Specifies that the flexible
+                                            items will wrap if necessary
+                                        </li>
+                                        <li>
+                                            wrap-reverse: Specifies that the
+                                            flexible items will wrap, if
+                                            necessary, in reverse order
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Animation</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.animation="mymove 5s infinite"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Iis a shorthand property for:
+                                            <ul>
+                                                <li>animation-name</li>
+                                                <li>animation-duration</li>
+                                                <li>
+                                                    animation-timing-function
+                                                </li>
+                                                <li>animation-delay</li>
+                                                <li>
+                                                    animation-iteration-count
+                                                </li>
+                                                <li>animation-direction</li>
+                                                <li>animation-fill-mode</li>
+                                                <li>animation-play-state</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            animation-name: Specifies the name
+                                            of the keyframe you want to bind to
+                                            the selector
+                                        </li>
+                                        <li>
+                                            animation-duration: Specifies how
+                                            many seconds or milliseconds an
+                                            animation takes to complete
+                                        </li>
+                                        <li>
+                                            animation-timing-function: Specifies
+                                            the speed curve of the animation
+                                        </li>
+                                        <li>
+                                            animation-delay: Specifies a delay
+                                            before the animation will start
+                                        </li>
+                                        <li>
+                                            animation-iteration-count: Specifies
+                                            how many times an animation should
+                                            be played
+                                        </li>
+                                        <li>
+                                            animation-direction: Specifies
+                                            whether or not the animation should
+                                            play in reverse on alternate cycles
+                                        </li>
+                                        <li>
+                                            animation-fill-mode: Specifies what
+                                            values are applied by the animation
+                                            outside the time it is executing
+                                        </li>
+                                        <li>
+                                            animation-play-state: Specifies
+                                            whether the animation is running or
+                                            paused
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Text-Overflow</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.textOverflow="ellipsis"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Specifies how overflowed content
+                                            that is not displayed should be
+                                            signaled to the user. It can be
+                                            clipped, display an ellipsis (...),
+                                            or display a custom string.
+                                        </li>
+                                        <li>
+                                            Both of the following properties are
+                                            required for text-overflow:
+                                        </li>
+                                        <ul>
+                                            <li>white-space: nowrap;</li>
+                                            <li>overflow: hidden;</li>
+                                        </ul>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            clip: Default value. The text is
+                                            clipped and not accessible
+                                        </li>
+                                        <li>
+                                            ellipsis: Render an ellipsis ("...")
+                                            to represent the clipped text
+                                        </li>
+                                        <li>
+                                            string: Render the given string to
+                                            represent the clipped text
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Flex</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.flex="1"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Sets the flexible length on flexible
+                                            items
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            flex-grow: A number specifying how
+                                            much the item will grow relative to
+                                            the rest of the flexible items
+                                        </li>
+                                        <li>
+                                            flex-shrink: A number specifying how
+                                            much the item will shrink relative
+                                            to the rest of the flexible items
+                                        </li>
+                                        <li>
+                                            flex-basis: The length of the item.
+                                            Legal values: "auto", "inherit", or
+                                            a number followed by "%", "px", "em"
+                                            or any other length unit
+                                        </li>
+                                        <li>auto: Same as 1 1 auto.</li>
+                                        <li>
+                                            initial: Same as 0 1 auto. Read
+                                            about initial
+                                        </li>
+                                        <li>none: Same as 0 0 auto.</li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Flex-Shrink & Flex-Grow</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.flexShrink="5"
+                                    object.style.flexGrow="5"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Specifies how the item will
+                                            grow/shrink relative to the rest of
+                                            the flexible items inside the same
+                                            container
+                                        </li>
+                                        <li>
+                                            If the element is not a flexible
+                                            item, the flex-grow/flex-shrink
+                                            property has no effect
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            number: A number specifying how much
+                                            the item will grow/shrink relative
+                                            to the rest of the flexible items.
+                                            Default value is 1
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Letter-Spacing</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.letterSpacing="3px"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Increases or decreases the space
+                                            between characters in a text
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Defines normal space between
+                                            characters. This is default
+                                        </li>
+                                        <li>
+                                            length: Defines a length that is
+                                            used as the space between characters
+                                            (negative values are also allowed).
+                                            Read about length units
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Left/Right/Top/Bottom</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderLeft="3px dotted blue"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            border-(left|right|top|bottom)-width
+                                            Optional. Specifies the width of the
+                                            left border. Default value is
+                                            "medium"
+                                        </li>
+                                        <li>
+                                            border-(left|right|top|bottom)-style
+                                            Required. Specifies the style of the
+                                            left border. Default value is "none"
+                                        </li>
+                                        <li>
+                                            border-(left|right|top|bottom)-color
+                                            Optional. Specifies the color of the
+                                            left border. Default value is the
+                                            color of the text
+                                        </li>
+                                        <li>
+                                            initial Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Border-Style</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderStyle="dotted double"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Sets the style of an element's four
+                                            borders. This property can have from
+                                            one to four values
+                                        </li>
+                                        <li>
+                                            Examples:
+                                            <ul>
+                                                <li>
+                                                    border-style: dotted solid
+                                                    double dashed;
+                                                    <br />
+                                                    top border is dotted
+                                                    <br />right border is solid
+                                                    <br />bottom border is
+                                                    double <br />left border is
+                                                    dashed
+                                                </li>
+
+                                                <li>
+                                                    border-style: dotted solid
+                                                    double; <br />top border is
+                                                    dotted <br />right and left
+                                                    borders are solid
+                                                    <br />bottom border is
+                                                    double
+                                                </li>
+
+                                                <li>
+                                                    border-style: dotted solid;
+                                                    <br />top and bottom borders
+                                                    are dotted <br />right and
+                                                    left borders are solid
+                                                </li>
+
+                                                <li>
+                                                    border-style: dotted;
+                                                    <br />all four borders are
+                                                    dotted
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: Default value. Specifies no
+                                            border
+                                        </li>
+                                        <li>
+                                            hidden: The same as "none", except
+                                            in border conflict resolution for
+                                            table elements
+                                        </li>
+                                        <li>
+                                            dotted: Specifies a dotted border
+                                        </li>
+                                        <li>
+                                            dashed: Specifies a dashed border
+                                        </li>
+                                        <li>solid: Specifies a solid border</li>
+                                        <li>
+                                            double: Specifies a double border
+                                        </li>
+                                        <li>
+                                            groove: Specifies a 3D grooved
+                                            border. The effect depends on the
+                                            border-color value
+                                        </li>
+                                        <li>
+                                            ridge: Specifies a 3D ridged border.
+                                            The effect depends on the
+                                            border-color value
+                                        </li>
+                                        <li>
+                                            inset: Specifies a 3D inset border.
+                                            The effect depends on the
+                                            border-color value
+                                        </li>
+                                        <li>
+                                            outset: Specifies a 3D outset
+                                            border. The effect depends on the
+                                            border-color value
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Word-Wrap</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.wordWrap="break-word"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Allows long words to be able to be
+                                            broken and wrap onto the next line
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Break words only at allowed
+                                            break points. This is default
+                                        </li>
+                                        <li>
+                                            break-word: Allows unbreakable words
+                                            to be broken
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>Word-Break</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.wordBreak="break-all"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Specifies how words should break
+                                            when reaching the end of a line
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Default value. Uses default
+                                            line break rules
+                                        </li>
+                                        <li>
+                                            break-all: To prevent overflow, word
+                                            may be broken at any character
+                                        </li>
+                                        <li>
+                                            keep-all: Word breaks should not be
+                                            used for Chinese/Japanese/Korean
+                                            (CJK) text. Non-CJK text behavior is
+                                            the same as value "normal"
+                                        </li>
+                                        <li>
+                                            break-word: To prevent overflow,
+                                            word may be broken at arbitrary
+                                            points
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>
+                        Border-Top-Left/Right-Radius &
+                        Border-Bottom-Left/Right-Radius
+                    </h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderTopLeftRadius="25px"
+                                    <br />object.style.borderTopRightRadius="25px"
+                                    <br />object.style.borderBottomLeftRadius="25px"
+                                    <br />object.style.borderBottomRightRadius="25px"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Defines the radius of the corner
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            length: Defines the shape of the
+                                            corner. Default value is 0
+                                        </li>
+                                        <li>
+                                            %: Defines the shape of the corner
+                                            in %
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>Clip-Path</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.clipPath="circle(50%)"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            lets you clip an element to a basic
+                                            shape or to an SVG source
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            clip-source: Defines a URL to an SVG
+                                            &lt;clipPath&gt; element
+                                        </li>
+                                        <li>
+                                            basic-shape: Clips an element to a
+                                            basic shape: circle, ellipse,
+                                            polygon or inset
+                                        </li>
+                                        <li>
+                                            margin-box: Uses the margin box as
+                                            the reference box
+                                        </li>
+                                        <li>
+                                            border-box: Uses the border box as
+                                            the reference box
+                                        </li>
+                                        <li>
+                                            padding-box: Uses the padding box as
+                                            the reference box
+                                        </li>
+                                        <li>
+                                            content-box: Uses the content box as
+                                            the reference box
+                                        </li>
+                                        <li>
+                                            fill-box: Uses the object bounding
+                                            box as reference box
+                                        </li>
+                                        <li>
+                                            stroke-box: Uses the stroke bounding
+                                            box as reference box
+                                        </li>
+                                        <li>
+                                            view-box: Uses the SVG viewport as
+                                            reference box
+                                        </li>
+                                        <li>
+                                            none: This is default. No clipping
+                                            is done
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3>Align-Self</h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.alignSelf="center"
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Specifies the alignment in the block
+                                            direction for the selected item
+                                            inside a flexbox or grid container
+                                        </li>
+                                        <li>
+                                            To align a grid item in the inline
+                                            direction instead of the block
+                                            direction, use justify-self or
+                                            justify-items properties
+                                        </li>
+                                        <li>
+                                            The align-self property overrides
+                                            the grid or flexible container's
+                                            align-items property
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: Default. The element inherits
+                                            its parent container's align-items
+                                            property, or "stretch" if it has no
+                                            parent container
+                                        </li>
+                                        <li>
+                                            center: The element is positioned at
+                                            the center of the container
+                                        </li>
+                                        <li>
+                                            stretch: The element is positioned
+                                            to fit the container
+                                        </li>
+                                        <li>
+                                            flex-start: The element is
+                                            positioned at the beginning of the
+                                            container
+                                        </li>
+                                        <li>
+                                            flex-end: The element is positioned
+                                            at the end of the container
+                                        </li>
+                                        <li>
+                                            baseline: The element is positioned
+                                            at the baseline of the container
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value. Read about initial
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element. Read about
+                                            inherit
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <script src="../../nav-menu.js"></script>
+    </body>
+</html>
