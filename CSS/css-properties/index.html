@@ -777,12 +777,46 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.transform="rotate(7deg)"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Applies a 2D or 3D transformation to
+                                            an element. This property allows you
+                                            to rotate, scale, move, skew, etc.,
+                                            elements
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -799,12 +833,101 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.background="red url(smiley.gif)
+                                    top left no-repeat"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>background-color</li>
+                                                <li>background-image</li>
+                                                <li>background-position</li>
+                                                <li>background-size</li>
+                                                <li>background-repeat</li>
+                                                <li>background-origin</li>
+                                                <li>background-clip</li>
+                                                <li>background-attachment</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            It does not matter if one of the
+                                            values above are missing, e.g.
+                                            background:#ff0000 url(smiley.gif);
+                                            is allowed.
+                                        </li>
+                                        <li>
+                                            If one of the properties in the
+                                            shorthand declaration is the bg-size
+                                            property, you must use a / (slash)
+                                            to separate it from the bg-position
+                                            property, e.g.
+                                            background:url(smiley.gif) 10px
+                                            20px/50px 50px; will result in a
+                                            background image, positioned 10
+                                            pixels from the left, 20 pixels from
+                                            the top, and the size of the image
+                                            will be 50 pixels wide and 50 pixels
+                                            high.
+                                        </li>
+                                        <li>
+                                            If using multiple background-image
+                                            sources but also want a
+                                            background-color, the
+                                            background-color parameter needs to
+                                            be last in the list.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            background-color: Specifies the
+                                            background color to be used
+                                        </li>
+                                        <li>
+                                            background-image: Specifies ONE or
+                                            MORE background images to be used
+                                        </li>
+                                        <li>
+                                            background-position: Specifies the
+                                            position of the background images
+                                        </li>
+                                        <li>
+                                            background-size: Specifies the size
+                                            of the background images
+                                        </li>
+                                        <li>
+                                            background-repeat: Specifies how to
+                                            repeat the background images
+                                        </li>
+                                        <li>
+                                            background-origin: Specifies the
+                                            positioning area of the background
+                                            images
+                                        </li>
+                                        <li>
+                                            background-clip: Specifies the
+                                            painting area of the background
+                                            images
+                                        </li>
+                                        <li>
+                                            background-attachment: Specifies
+                                            whether the background images are
+                                            fixed or scrolls with the rest of
+                                            the page
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -821,12 +944,51 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.opacity="0.5"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the opacity level for an
+                                            element
+                                        </li>
+                                        <li>
+                                            The opacity-level describes the
+                                            transparency-level, where 1 is not
+                                            transparent at all, 0.5 is 50%
+                                            see-through, and 0 is completely
+                                            transparent.
+                                        </li>
+                                        <li>
+                                            When using the opacity property to
+                                            add transparency to the background
+                                            of an element, all of its child
+                                            elements become transparent as well.
+                                            This can make the text inside a
+                                            fully transparent element hard to
+                                            read. If you do not want to apply
+                                            opacity to child elements, use RGBA
+                                            color values instead
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            number: Specifies the opacity. From
+                                            0.0 (fully transparent) to 1.0
+                                            (fully opaque)
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -843,12 +1005,42 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.boxSizing="border-box"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Defines how the width and height of
+                                            an element are calculated: should
+                                            they include padding and borders, or
+                                            not
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            content-box Default. The width and
+                                            height properties (and min/max
+                                            properties) includes only the
+                                            content. Border and padding are not
+                                            included
+                                        </li>
+                                        <li>
+                                            border-box The width and height
+                                            properties (and min/max properties)
+                                            includes content, padding and border
+                                        </li>
+                                        <li>
+                                            initial Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -865,12 +1057,73 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.boxShadow="10px 20px 30px blue"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Attaches one or more shadows to an
+                                            element
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: Default value. No shadow is
+                                            displayed
+                                        </li>
+                                        <li>
+                                            h-offset: Required. The horizontal
+                                            offset of the shadow. A positive
+                                            value puts the shadow on the right
+                                            side of the box, a negative value
+                                            puts the shadow on the left side of
+                                            the box
+                                        </li>
+                                        <li>
+                                            v-offset: Required. The vertical
+                                            offset of the shadow. A positive
+                                            value puts the shadow below the box,
+                                            a negative value puts the shadow
+                                            above the box
+                                        </li>
+                                        <li>
+                                            blur: Optional. The blur radius. The
+                                            higher the number, the more blurred
+                                            the shadow will be
+                                        </li>
+                                        <li>
+                                            spread: Optional. The spread radius.
+                                            A positive value increases the size
+                                            of the shadow, a negative value
+                                            decreases the size of the shadow
+                                        </li>
+                                        <li>
+                                            color: Optional. The color of the
+                                            shadow. The default value is the
+                                            text color. Look at CSS Color Values
+                                            for a complete list of possible
+                                            color values. Note: In Safari (on
+                                            PC) the color parameter is required.
+                                            If you do not specify the color, the
+                                            shadow is not displayed at all.
+                                        </li>
+                                        <li>
+                                            inset: Optional. Changes the shadow
+                                            from an outer shadow (outset) to an
+                                            inner shadow
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -887,12 +1140,43 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.lineHeight="30px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>Specifies the height of a line</li>
+                                        <li>Negative values are not allowed</li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: A normal line height. This
+                                            is default
+                                        </li>
+                                        <li>
+                                            number: A number that will be
+                                            multiplied with the current
+                                            font-size to set the line height
+                                        </li>
+                                        <li>
+                                            length: A fixed line height in px,
+                                            pt, cm, etc.
+                                        </li>
+                                        <li>
+                                            %: A line height in percent of the
+                                            current font size
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -909,12 +1193,56 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.zIndex="-1"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the stack order of an
+                                            element
+                                        </li>
+                                        <li>
+                                            An element with greater stack order
+                                            is always in front of an element
+                                            with a lower stack order.
+                                        </li>
+                                        <li>
+                                            Only works on positioned elements
+                                            (position: absolute, position:
+                                            relative, position: fixed, or
+                                            position: sticky) and flex items
+                                            (elements that are direct children
+                                            of display:flex elements).
+                                        </li>
+                                        <li>
+                                            If two positioned elements overlap
+                                            without a z-index specified, the
+                                            element positioned last in the HTML
+                                            code will be shown on top.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: Sets the stack order equal to
+                                            its parents. This is default
+                                        </li>
+                                        <li>
+                                            number: Sets the stack order of the
+                                            element. Negative numbers are
+                                            allowed
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -931,12 +1259,77 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.verticalAlign="top"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the vertical alignment of an
+                                            element
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            baseline: The element is aligned
+                                            with the baseline of the parent.
+                                            This is default
+                                        </li>
+                                        <li>
+                                            length: Raises or lower an element
+                                            by the specified length. Negative
+                                            values are allowed. Read about
+                                            length units
+                                        </li>
+                                        <li>
+                                            %: Raises or lower an element by a
+                                            percent of the "line-height"
+                                            property. Negative values are
+                                            allowed
+                                        </li>
+                                        <li>
+                                            sub: The element is aligned with the
+                                            subscript baseline of the parent
+                                        </li>
+                                        <li>
+                                            super: The element is aligned with
+                                            the superscript baseline of the
+                                            parent
+                                        </li>
+                                        <li>
+                                            top: The element is aligned with the
+                                            top of the tallest element on the
+                                            line
+                                        </li>
+                                        <li>
+                                            text-top: The element is aligned
+                                            with the top of the parent element's
+                                            font
+                                        </li>
+                                        <li>
+                                            middle: The element is placed in the
+                                            middle of the parent element
+                                        </li>
+                                        <li>
+                                            bottom: The element is aligned with
+                                            the lowest element on the line
+                                        </li>
+                                        <li>
+                                            text-bottom: The element is aligned
+                                            with the bottom of the parent
+                                            element's font
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -953,12 +1346,191 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.cursor="crosshair"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the mouse cursor to be
+                                            displayed when pointing over an
+                                            element
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            alias: The cursor indicates an alias
+                                            of something is to be created
+                                        </li>
+                                        <li>
+                                            all-scroll: The cursor indicates
+                                            that something can be scrolled in
+                                            any direction
+                                        </li>
+                                        <li>
+                                            auto: Default. The browser sets a
+                                            cursor
+                                        </li>
+                                        <li>
+                                            cell: The cursor indicates that a
+                                            cell (or set of cells) may be
+                                            selected
+                                        </li>
+                                        <li>
+                                            col-resize: The cursor indicates
+                                            that the column can be resized
+                                            horizontally
+                                        </li>
+                                        <li>
+                                            context-menu: The cursor indicates
+                                            that a context-menu is available
+                                        </li>
+                                        <li>
+                                            copy: The cursor indicates something
+                                            is to be copied
+                                        </li>
+                                        <li>
+                                            crosshair: The cursor render as a
+                                            crosshair
+                                        </li>
+                                        <li>default: The default cursor</li>
+                                        <li>
+                                            e-resize: The cursor indicates that
+                                            an edge of a box is to be moved
+                                            right (east)
+                                        </li>
+                                        <li>
+                                            ew-resize: Indicates a bidirectional
+                                            resize cursor
+                                        </li>
+                                        <li>
+                                            grab: The cursor indicates that
+                                            something can be grabbed
+                                        </li>
+                                        <li>
+                                            grabbing: The cursor indicates that
+                                            something can be grabbed
+                                        </li>
+                                        <li>
+                                            help: The cursor indicates that help
+                                            is available
+                                        </li>
+                                        <li>
+                                            move: The cursor indicates something
+                                            is to be moved
+                                        </li>
+                                        <li>
+                                            n-resize: The cursor indicates that
+                                            an edge of a box is to be moved up
+                                            (north)
+                                        </li>
+                                        <li>
+                                            ne-resize: The cursor indicates that
+                                            an edge of a box is to be moved up
+                                            and right (north/east)
+                                        </li>
+                                        <li>
+                                            nesw-resize: Indicates a
+                                            bidirectional resize cursor
+                                        </li>
+                                        <li>
+                                            ns-resize: Indicates a bidirectional
+                                            resize cursor
+                                        </li>
+                                        <li>
+                                            nw-resize: The cursor indicates that
+                                            an edge of a box is to be moved up
+                                            and left (north/west)
+                                        </li>
+                                        <li>
+                                            nwse-resize: Indicates a
+                                            bidirectional resize cursor
+                                        </li>
+                                        <li>
+                                            no-drop: The cursor indicates that
+                                            the dragged item cannot be dropped
+                                            here
+                                        </li>
+                                        <li>
+                                            none: No cursor is rendered for the
+                                            element
+                                        </li>
+                                        <li>
+                                            not-allowed: The cursor indicates
+                                            that the requested action will not
+                                            be executed
+                                        </li>
+                                        <li>
+                                            pointer: The cursor is a pointer and
+                                            indicates a link
+                                        </li>
+                                        <li>
+                                            progress: The cursor indicates that
+                                            the program is busy (in progress)
+                                        </li>
+                                        <li>
+                                            row-resize: The cursor indicates
+                                            that the row can be resized
+                                            vertically
+                                        </li>
+                                        <li>
+                                            s-resize: The cursor indicates that
+                                            an edge of a box is to be moved down
+                                            (south)
+                                        </li>
+                                        <li>
+                                            se-resize: The cursor indicates that
+                                            an edge of a box is to be moved down
+                                            and right (south/east)
+                                        </li>
+                                        <li>
+                                            sw-resize: The cursor indicates that
+                                            an edge of a box is to be moved down
+                                            and left (south/west)
+                                        </li>
+                                        <li>
+                                            text: The cursor indicates text that
+                                            may be selected
+                                        </li>
+                                        <li>
+                                            URL: A comma separated list of URLs
+                                            to custom cursors. Note: Always
+                                            specify a generic cursor at the end
+                                            of the list, in case none of the
+                                            URL-defined cursors can be used
+                                        </li>
+                                        <li>
+                                            vertical-text: The cursor indicates
+                                            vertical-text that may be selected
+                                        </li>
+                                        <li>
+                                            w-resize: The cursor indicates that
+                                            an edge of a box is to be moved left
+                                            (west)
+                                        </li>
+                                        <li>
+                                            wait: The cursor indicates that the
+                                            program is busy
+                                        </li>
+                                        <li>
+                                            zoom-in: The cursor indicates that
+                                            something can be zoomed in
+                                        </li>
+                                        <li>
+                                            zoom-out: The cursor indicates that
+                                            something can be zoomed out
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -975,12 +1547,74 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    You can't give an element a pseudo-class by
+                                    using JavaScript, but there are other ways
+                                    to get the same result.
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is used with the ::before and
+                                            ::after pseudo-elements, to insert
+                                            generated content.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Default value. Sets the
+                                            content, if specified, to normal,
+                                            which default is "none" (which is
+                                            nothing)
+                                        </li>
+                                        <li>
+                                            none: Sets the content, if
+                                            specified, to nothing
+                                        </li>
+                                        <li>
+                                            counter: Sets the content as a
+                                            counter
+                                        </li>
+                                        <li>
+                                            attr(attribute): Sets the content as
+                                            one of the selector's attribute
+                                        </li>
+                                        <li>
+                                            string: Sets the content to the text
+                                            you specify
+                                        </li>
+                                        <li>
+                                            open-quote: Sets the content to be
+                                            an opening quote
+                                        </li>
+                                        <li>
+                                            close-quote: Sets the content to be
+                                            a closing quote
+                                        </li>
+                                        <li>
+                                            no-open-quote: Removes the opening
+                                            quote from the content, if specified
+                                        </li>
+                                        <li>
+                                            no-close-quote: Removes the closing
+                                            quote from the content, if specified
+                                        </li>
+                                        <li>
+                                            url(url): Sets the content to be
+                                            some kind of media (an image, a
+                                            sound, a video, etc.)
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value. Read about initial
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -997,12 +1631,59 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.whiteSpace="nowrap"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies how white-space inside an
+                                            element is handled
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Sequences of whitespace will
+                                            collapse into a single whitespace.
+                                            Text will wrap when necessary. This
+                                            is default
+                                        </li>
+                                        <li>
+                                            nowrap: Sequences of whitespace will
+                                            collapse into a single whitespace.
+                                            Text will never wrap to the next
+                                            line. The text continues on the same
+                                            line until a <br />
+                                            tag is encountered
+                                        </li>
+                                        <li>
+                                            pre: Whitespace is preserved by the
+                                            browser. Text will only wrap on line
+                                            breaks. Acts like the &lt;pre&gt;
+                                            tag in HTML
+                                        </li>
+                                        <li>
+                                            pre-line: Sequences of whitespace
+                                            will collapse into a single
+                                            whitespace. Text will wrap when
+                                            necessary, and on line breaks
+                                        </li>
+                                        <li>
+                                            pre-wrap: Whitespace is preserved by
+                                            the browser. Text will wrap when
+                                            necessary, and on line breaks
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1019,12 +1700,53 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.cssFloat="left"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies whether an element should
+                                            float to the left, right, or not at
+                                            all
+                                        </li>
+                                        <li>
+                                            Absolutely positioned elements
+                                            ignore the float property!
+                                        </li>
+                                        <li>
+                                            Elements next to a floating element
+                                            will flow around it. To avoid this,
+                                            use the clear property or the
+                                            clearfix hack (see example at the
+                                            bottom of this page).
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: The element does not float,
+                                            (will be displayed just where it
+                                            occurs in the text). This is default
+                                        </li>
+                                        <li>
+                                            left: The element floats to the left
+                                            of its container
+                                        </li>
+                                        <li>
+                                            right: The element floats the right
+                                            of its container
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1041,39 +1763,45 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.fontStyle="italic"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the font style for a text
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: The browser displays a
+                                            normal font style. This is default
+                                        </li>
+                                        <li>
+                                            italic: The browser displays an
+                                            italic font style
+                                        </li>
+                                        <li>
+                                            oblique: The browser displays an
+                                            oblique font style
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-                <section>
-                    <h3>Min-Height</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+
                 <section>
                     <h3>Transition</h3>
                     <table class="pretty-table">
@@ -1085,19 +1813,68 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.transition="all 2s"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>transition-property</li>
+                                                <li>transition-duration</li>
+                                                <li>
+                                                    transition-timing-function
+                                                </li>
+                                                <li>transition-delay</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Always specify the
+                                            transition-duration property,
+                                            otherwise the duration is 0s, and
+                                            the transition will have no effect
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            transition-property: Specifies the
+                                            name of the CSS property the
+                                            transition effect is for
+                                        </li>
+                                        <li>
+                                            transition-duration: Specifies how
+                                            many seconds or milliseconds the
+                                            transition effect takes to complete
+                                        </li>
+                                        <li>
+                                            transition-timing-function:
+                                            Specifies the speed curve of the
+                                            transition effect
+                                        </li>
+                                        <li>
+                                            transition-delay: Defines when the
+                                            transition effect will start
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
+
                 <section>
-                    <h3>Min-Width</h3>
+                    <h3>Min-Width/Min Height</h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1107,12 +1884,53 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.minWidth="400px"
+                                    <br />object.style.minHeight="400px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Defines the minimum width of an
+                                            element
+                                        </li>
+                                        <li>
+                                            If the content is smaller than the
+                                            minimum width, the minimum width
+                                            will be applied
+                                        </li>
+                                        <li>
+                                            If the content is larger than the
+                                            minimum width, the min-width
+                                            property has no effect
+                                        </li>
+                                        <li>
+                                            This prevents the value of the width
+                                            property from becoming smaller than
+                                            min-width
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            length: Default value is 0. Defines
+                                            the minimum width in px, cm, etc.
+                                            Read about length units
+                                        </li>
+                                        <li>
+                                            %: Defines the minimum width in
+                                            percent of the containing block
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1129,12 +1947,82 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.backgroundImage="url(img_tree.gif)"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets one or more background images
+                                            for an element.
+                                        </li>
+                                        <li>
+                                            By default, a background-image is
+                                            placed at the top-left corner of an
+                                            element, and repeated both
+                                            vertically and horizontally.
+                                        </li>
+                                        <li>
+                                            The background of an element is the
+                                            total size of the element, including
+                                            padding and border (but not the
+                                            margin).
+                                        </li>
+                                        <li>
+                                            Always set a background-color to be
+                                            used if the image is unavailable
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            url('URL'): The URL to the image. To
+                                            specify more than one image,
+                                            separate the URLs with a comma
+                                        </li>
+                                        <li>
+                                            none: No background image will be
+                                            displayed. This is default
+                                        </li>
+                                        <li>
+                                            conic-gradient(): Sets a conic
+                                            gradient as the background image.
+                                            Define at least two colors
+                                        </li>
+                                        <li>
+                                            linear-gradient(): Sets a linear
+                                            gradient as the background image.
+                                            Define at least two colors (top to
+                                            bottom)
+                                        </li>
+                                        <li>
+                                            radial-gradient(): Sets a radial
+                                            gradient as the background image.
+                                            Define at least two colors (center
+                                            to edges)
+                                        </li>
+                                        <li>
+                                            repeating-conic-gradient(): Repeats
+                                            a conic gradient
+                                        </li>
+                                        <li>
+                                            repeating-linear-gradient(): Repeats
+                                            a linear gradient
+                                        </li>
+                                        <li>
+                                            repeating-radial-gradient(): Repeats
+                                            a radial gradient
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1151,12 +2039,63 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.outline="#0000FF dotted 5px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            A line that is drawn around
+                                            elements, outside the borders, to
+                                            make the element "stand out".
+                                        </li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>outline-width</li>
+                                                <li>
+                                                    outline-style (required)
+                                                </li>
+                                                <li>outline-color</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            If outline-color is omitted, the
+                                            color applied will be the color of
+                                            the text
+                                        </li>
+                                        Outlines differ from borders! Unlike
+                                        border, the outline is drawn outside the
+                                        element's border, and may overlap other
+                                        content. Also, the outline is NOT a part
+                                        of the element's dimensions; the
+                                        element's total width and height is not
+                                        affected by the width of the outline.
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            outline-width: Specifies the width
+                                            of outline
+                                        </li>
+                                        <li>
+                                            outline-style: Specifies the style
+                                            of the outline
+                                        </li>
+                                        <li>
+                                            outline-color: Specifies the color
+                                            of the outline
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1173,12 +2112,94 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.alignItems="center"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the default alignment for
+                                            items inside a flexbox or grid
+                                            container.
+                                            <ul>
+                                                <li>
+                                                    In a flexbox container, the
+                                                    flexbox items are aligned on
+                                                    the cross axis, which is
+                                                    vertical by default
+                                                    (opposite of flex-direction)
+                                                </li>
+                                                <li>
+                                                    In a grid container, the
+                                                    grid items are aligned in
+                                                    the block direction. For
+                                                    pages in English, block
+                                                    direction is downward and
+                                                    inline direction is left to
+                                                    right.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            For this property to have any
+                                            alignment effect, the items need
+                                            available space around themselves in
+                                            the appropriate direction.
+                                        </li>
+                                        <li>
+                                            Use the align-self property of each
+                                            item to override the align-items
+                                            property.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Default. Behaves like
+                                            'stretch' for flexbox and grid
+                                            items, or 'start' for grid items
+                                            with a defined block size.
+                                        </li>
+                                        <li>
+                                            stretch: Items are stretched to fit
+                                            the container
+                                        </li>
+                                        <li>
+                                            center: Items are positioned at the
+                                            center of the container
+                                        </li>
+                                        <li>
+                                            flex-start: Items are positioned at
+                                            the beginning of the container
+                                        </li>
+                                        <li>
+                                            flex-end: Items are positioned at
+                                            the end of the container
+                                        </li>
+                                        <li>
+                                            start: Items are positioned at the
+                                            beginning of their individual grid
+                                            cells, in the block direction
+                                        </li>
+                                        <li>
+                                            end: Items are positioned at the end
+                                            of the their individual grid cells,
+                                            in the block direction
+                                        </li>
+                                        <li>
+                                            baseline: Items are positioned at
+                                            the baseline of the container
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1195,12 +2216,67 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.justifyContent="space-between"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Aligns the flexible container's
+                                            items when the items do not use all
+                                            available space on the main-axis
+                                            (horizontally)
+                                        </li>
+                                        <li>
+                                            Use the align-items property to
+                                            align the items vertically
+                                        </li>
+                                        <li>
+                                            The justify-content property can
+                                            also be used on a grid container to
+                                            align grid items in the inline
+                                            direction. For pages in English,
+                                            inline direction is left to right
+                                            and block direction is downward.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            flex-start: Default value. Items are
+                                            positioned at the beginning of the
+                                            container
+                                        </li>
+                                        <li>
+                                            flex-end: Items are positioned at
+                                            the end of the container
+                                        </li>
+                                        <li>
+                                            center: Items are positioned in the
+                                            center of the container
+                                        </li>
+                                        <li>
+                                            space-between: Items will have space
+                                            between them
+                                        </li>
+                                        <li>
+                                            space-around: Items will have space
+                                            before, between, and after them
+                                        </li>
+                                        <li>
+                                            space-evenly: Items will have equal
+                                            space around them
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1217,12 +2293,87 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderColor="#FF0000 blue"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the color of an element's four
+                                            borders. This property can have from
+                                            one to four values.
+                                            <ul>
+                                                <li>
+                                                    If the border-color property
+                                                    has four values:
+
+                                                    <br />border-color: red
+                                                    green blue pink; <br />top
+                                                    border is red <br />right
+                                                    border is green <br />bottom
+                                                    border is blue <br />left
+                                                    border is pink
+                                                </li>
+                                                <li>
+                                                    If the border-color property
+                                                    has three values:
+
+                                                    <br />border-color: red
+                                                    green blue; <br />top border
+                                                    is red <br />right and left
+                                                    borders are green
+                                                    <br />bottom border is blue
+                                                </li>
+                                                <li>
+                                                    If the border-color property
+                                                    has two values:
+
+                                                    <br />border-color: red
+                                                    green; <br />top and bottom
+                                                    borders are red <br />right
+                                                    and left borders are green
+                                                </li>
+                                                <li>
+                                                    If the border-color property
+                                                    has one value:
+
+                                                    <br />border-color: red;
+                                                    <br />all four borders are
+                                                    red
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Always declare the border-style
+                                            property before the border-color
+                                            property. An element must have
+                                            borders before you can change the
+                                            color
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            color: Specifies the border color.
+                                            Look at CSS Color Values for a
+                                            complete list of possible color
+                                            values. Default color is the current
+                                            color of the element
+                                        </li>
+                                        <li>
+                                            transparent: Specifies that the
+                                            border color should be transparent
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1239,12 +2390,55 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.visibility="hidden"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies whether or not an element
+                                            is visible
+                                        </li>
+                                        <li>
+                                            Hidden elements take up space on the
+                                            page. Use the display property to
+                                            both hide and remove an element from
+                                            the document layout!
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            visible: Default value. The element
+                                            is visible
+                                        </li>
+                                        <li>
+                                            hidden: The element is hidden (but
+                                            still takes up space)
+                                        </li>
+                                        <li>
+                                            collapse: Only for table rows
+                                            (&lt;tr&gt;), row groups
+                                            (&lt;tbody&gt;), columns
+                                            (&lt;col&gt;), column groups
+                                            (&lt;colgroup>&gt;). This value
+                                            removes a row or column, but it does
+                                            not affect the table layout. The
+                                            space taken up by the row or column
+                                            will be available for other content.
+                                            If collapse is used on other
+                                            elements, it renders as "hidden"
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1261,61 +2455,68 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.backgroundPosition="center"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the starting position of a
+                                            background image
+                                        </li>
+                                        <li>
+                                            By default, a background-image is
+                                            placed at the top-left corner of an
+                                            element, and repeated both
+                                            vertically and horizontally
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            left top <br />left center
+                                            <br />left bottom <br />right top
+                                            <br />right center <br />right
+                                            bottom <br />center top <br />center
+                                            center <br />center bottom :If you
+                                            only specify one keyword, the other
+                                            value will be "center"
+                                        </li>
+                                        <li>
+                                            x% y%: The first value is the
+                                            horizontal position and the second
+                                            value is the vertical. The top left
+                                            corner is 0% 0%. The right bottom
+                                            corner is 100% 100%. If you only
+                                            specify one value, the other value
+                                            will be 50%. Default value is: 0% 0%
+                                        </li>
+                                        <li>
+                                            xpos ypos: The first value is the
+                                            horizontal position and the second
+                                            value is the vertical. The top left
+                                            corner is 0 0. Units can be pixels
+                                            (0px 0px) or any other CSS units. If
+                                            you only specify one value, the
+                                            other value will be 50%. You can mix
+                                            % and positions
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-                <section>
-                    <h3>SRC</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Border-Top</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+
                 <section>
                     <h3>Text-Transform</h3>
                     <table class="pretty-table">
@@ -1330,9 +2531,37 @@ width: 250px;
                                 <td><h4 class="title-css">JS Syntax:</h4></td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Controls the capitalization of text
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: No capitalization. The text
+                                            renders as it is. This is default
+                                        </li>
+                                        <li>
+                                            capitalize: Transforms the first
+                                            character of each word to uppercase
+                                        </li>
+                                        <li>
+                                            uppercase: Transforms all characters
+                                            to uppercase
+                                        </li>
+                                        <li>
+                                            lowercase: Transforms all characters
+                                            to lowercase
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1349,12 +2578,50 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.flexDirection="column-reverse"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the direction of the
+                                            flexible items
+                                        </li>
+                                        <li>
+                                            If the element is not a flexible
+                                            item, the flex-direction property
+                                            has no effect
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            row: Default value. The flexible
+                                            items are displayed horizontally, as
+                                            a row
+                                        </li>
+                                        <li>
+                                            row-reverse: Same as row, but in
+                                            reverse order
+                                        </li>
+                                        <li>
+                                            column: The flexible items are
+                                            displayed vertically, as a column
+                                        </li>
+                                        <li>
+                                            column-reverse: Same as column, but
+                                            in reverse order
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1371,12 +2638,62 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.backgroundSize="60px 120px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the size of the background
+                                            images
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: Default value. The background
+                                            image is displayed in its original
+                                            size
+                                        </li>
+                                        <li>
+                                            length: Sets the width and height of
+                                            the background image. The first
+                                            value sets the width, the second
+                                            value sets the height. If only one
+                                            value is given, the second is set to
+                                            "auto". Read about length units
+                                        </li>
+                                        <li>
+                                            percentage: Sets the width and
+                                            height of the background image in
+                                            percent of the parent element. The
+                                            first value sets the width, the
+                                            second value sets the height. If
+                                            only one value is given, the second
+                                            is set to "auto"
+                                        </li>
+                                        <li>
+                                            cover: Resize the background image
+                                            to cover the entire container, even
+                                            if it has to stretch the image or
+                                            cut a little bit off one of the
+                                            edges
+                                        </li>
+                                        <li>
+                                            contain: Resize the background image
+                                            to make sure the image is fully
+                                            visible
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1393,12 +2710,76 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.backgroundRepeat="repeat-x"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets if/how a background image will
+                                            be repeated
+                                        </li>
+                                        <li>
+                                            By default, a background-image is
+                                            repeated both vertically and
+                                            horizontally
+                                        </li>
+                                        <li>
+                                            The background image is placed
+                                            according to the background-position
+                                            property. If no background-position
+                                            is specified, the image is always
+                                            placed at the element's top left
+                                            corner
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            repeat: The background image is
+                                            repeated both vertically and
+                                            horizontally. The last image will be
+                                            clipped if it does not fit. This is
+                                            default
+                                        </li>
+
+                                        <li>
+                                            repeat-x: The background image is
+                                            repeated only horizontally
+                                        </li>
+                                        <li>
+                                            repeat-y: The background image is
+                                            repeated only vertically
+                                        </li>
+                                        <li>
+                                            no-repeat: The background-image is
+                                            not repeated. The image will only be
+                                            shown once
+                                        </li>
+                                        <li>
+                                            space: The background-image is
+                                            repeated as much as possible without
+                                            clipping. The first and last image
+                                            is pinned to either side of the
+                                            element, and whitespace is
+                                            distributed evenly between the
+                                            images
+                                        </li>
+                                        <li>
+                                            round: The background-image is
+                                            repeated and squished or stretched
+                                            to fill the space (no gaps)
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1415,12 +2796,53 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.listStyle="decimal inside"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is a shorthand for the following
+                                            properties:
+                                            <ul>
+                                                <li>list-style-type</li>
+                                                <li>list-style-position</li>
+                                                <li>list-style-image</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            If one of the values are missing,
+                                            the default value for that property
+                                            will be used.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            list-style-type: Specifies the type
+                                            of list-item marker. Default value
+                                            is "disc"
+                                        </li>
+                                        <li>
+                                            list-style-position: Specifies where
+                                            to place the list-item marker.
+                                            Default value is "outside"
+                                        </li>
+                                        <li>
+                                            list-style-image: Specifies the type
+                                            of list-item marker. Default value
+                                            is "none"
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1437,12 +2859,37 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.pointerEvents="none"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Defines whether or not an element
+                                            reacts to pointer events
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: The element reacts to pointer
+                                            events, like :hover and click. This
+                                            is default
+                                        </li>
+                                        <li>
+                                            none: The element does not react to
+                                            pointer events
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1459,12 +2906,51 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.clear="both"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Controls the flow next to floated
+                                            elements
+                                        </li>
+                                        <li>
+                                            Specifies what should happen with
+                                            the element that is next to a
+                                            floating element.
+                                        </li>
+                                        <li>Also look at the float property</li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: Default. The element is not
+                                            pushed below left or right floated
+                                            elements
+                                        </li>
+                                        <li>
+                                            left: The element is pushed below
+                                            left floated elements
+                                        </li>
+                                        <li>
+                                            right: The element is pushed below
+                                            right floated elements
+                                        </li>
+                                        <li>
+                                            both: The element is pushed below
+                                            both left and right floated elements
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1481,12 +2967,89 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.font="italic small-caps bold
+                                    12px arial,sans-serif"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>font-style</li>
+                                                <li>font-variant</li>
+                                                <li>font-weight</li>
+                                                <li>font-size/line-height</li>
+                                                <li>font-family</li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            The font-size and font-family values
+                                            are required. If one of the other
+                                            values is missing, their default
+                                            value are used.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            font-style: Specifies the font
+                                            style. Default value is "normal"
+                                        </li>
+                                        <li>
+                                            font-variant: Specifies the font
+                                            variant. Default value is "normal"
+                                        </li>
+                                        <li>
+                                            font-weight: Specifies the font
+                                            weight. Default value is "normal"
+                                        </li>
+                                        <li>
+                                            font-size/line-height: Specifies the
+                                            font size and the line-height.
+                                            Default value is "normal"
+                                        </li>
+                                        <li>
+                                            font-family: Specifies the font
+                                            family. Default value depends on the
+                                            browser
+                                        </li>
+                                        <li>
+                                            caption: Uses the font that are used
+                                            by captioned controls (like buttons,
+                                            drop-downs, etc.)
+                                        </li>
+                                        <li>
+                                            icon: Uses the font that are used by
+                                            icon labels
+                                        </li>
+                                        <li>
+                                            menu: Uses the fonts that are used
+                                            by dropdown menus
+                                        </li>
+                                        <li>
+                                            message-box: Uses the fonts that are
+                                            used by dialog boxes
+                                        </li>
+                                        <li>
+                                            small-caption: A smaller version of
+                                            the caption font
+                                        </li>
+                                        <li>
+                                            status-bar: Uses the fonts that are
+                                            used by the status bar
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -1503,10 +3066,48 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderWidth="1px 5px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the width of an element's four
+                                            borders. This property can have from
+                                            one to four values
+                                        </li>
+                                        <li>
+                                            Examples:
+                                            <ul>
+                                                <li>
+                                                    border-width: thin medium
+                                                    thick 10px; <br />top border
+                                                    is thin <br />right border
+                                                    is medium <br />bottom
+                                                    border is thick <br />left
+                                                    border is 10px
+                                                </li>
+                                                <li>
+                                                    border-width: thin medium
+                                                    thick; <br />top border is
+                                                    thin <br />right and left
+                                                    borders are medium
+                                                    <br />bottom border is thick
+                                                </li>
+                                                <li>
+                                                    border-width: thin medium;
+                                                    <br />top and bottom borders
+                                                    are thin <br />right and
+                                                    left borders are medium
+                                                </li>
+                                                <li>
+                                                    border-width: thin;
+                                                    <br />all four borders are
+                                                    thin
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
                                 </td>
