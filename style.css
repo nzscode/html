@@ -42,12 +42,27 @@
 }
 
 /* Side Navigation Menu */
+
+#page-title {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+h1#title-bar {
+    position: fixed;
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: #e08570;
+    width: 95%;
+    opacity: 100%;
+}
+
 .sidenav {
     width: 0;
     height: 100%;
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 20;
+    top: 72px;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -98,12 +113,15 @@ body {
     box-sizing: border-box;
     font-size: 14px;
     background-color: #eae2b7bc;
-    margin: 0px;
     padding: 15px;
     /* Roboto */
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+main {
+    margin-top: 125px;
 }
 h1 {
     background-color: #d6282876;
@@ -238,4 +256,9 @@ pre {
 
 hr {
     border: 5px dashed #d6282876;
+}
+
+.space-block {
+    height: 250px;
+    opacity: 5%;
 }

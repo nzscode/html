@@ -4,8 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../../style.css" />
-
-        <link rel="stylesheet" href="./css-selectors.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,10 +15,17 @@
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
-            <h1>
-                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                CSS Selector
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Properties</span>
             </h1>
+
             <div id="mySidenav" class="sidenav">
                 <a
                     href="javascript:void(0)"
@@ -29,9 +34,165 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Selectors</p>
+                    <p>CSS Properties</p>
                     <ul>
-                        <li></li>
+                        <li><a href="#align-items">Align-Items</a></li>
+
+                        <li><a href="#align-self">Align-Self</a></li>
+
+                        <li><a href="#animation">Animation</a></li>
+
+                        <li><a href="#background">Background</a></li>
+
+                        <li>
+                            <a href="#background-color">Background-color</a>
+                        </li>
+
+                        <li>
+                            <a href="#background-image">Background-Image</a>
+                        </li>
+
+                        <li>
+                            <a href="#background-position"
+                                >Background-Position</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#background-repeat">Background-Repeat</a>
+                        </li>
+
+                        <li><a href="#background-size">Background-Size</a></li>
+
+                        <li><a href="#border">Border</a></li>
+
+                        <li><a href="#border-color">Border-Color</a></li>
+
+                        <li>
+                            <a href="#border-left-right-top-bottom"
+                                >Border-Left|Right|Top|Bottom</a
+                            >
+                        </li>
+
+                        <li><a href="#border-radius">Border-Radius</a></li>
+
+                        <li><a href="#border-style">Border-Style</a></li>
+
+                        <li>
+                            <a
+                                href="#border-top-left-right-bottom-left-right-radius"
+                                >Border-top-left|right-radius &
+                                Border-bottom-left|right-radius</a
+                            >
+                        </li>
+
+                        <li><a href="#border-width">Border-Width</a></li>
+
+                        <li><a href="#box-shadow">Box-Shadow</a></li>
+
+                        <li><a href="#box-sizing">Box-Sizing</a></li>
+
+                        <li><a href="#clear">Clear</a></li>
+
+                        <li><a href="#clip-path">Clip-Path</a></li>
+
+                        <li><a href="#color">Color</a></li>
+
+                        <li><a href="#content">Content</a></li>
+
+                        <li><a href="#cursor">Cursor</a></li>
+
+                        <li><a href="#display">Display</a></li>
+
+                        <li><a href="#flex">Flex</a></li>
+
+                        <li><a href="#flex-direction">Flex-Direction</a></li>
+
+                        <li>
+                            <a href="#flex-shrink-grow"
+                                >Flex-Shrink & Flex-Grow</a
+                            >
+                        </li>
+
+                        <li><a href="#flex-wrap">Flex-Wrap</a></li>
+
+                        <li><a href="#float">Float</a></li>
+
+                        <li><a href="#font">Font</a></li>
+
+                        <li><a href="#font-family">Font-Family</a></li>
+
+                        <li><a href="#font-size">Font-Size</a></li>
+
+                        <li><a href="#font-style">Font-Style</a></li>
+
+                        <li><a href="#font-weight">Font-Weight</a></li>
+
+                        <li><a href="#height">Height</a></li>
+
+                        <li><a href="#justify-content">Justify-Content</a></li>
+
+                        <li><a href="#left">Left</a></li>
+
+                        <li><a href="#letter-spacing">Letter-Spacing</a></li>
+
+                        <li><a href="#line-height">Line-Height</a></li>
+
+                        <li><a href="#list-style">List-Style</a></li>
+
+                        <li><a href="#margin">Margin</a></li>
+
+                        <li><a href="#max-width-height">Max-Width</a></li>
+
+                        <li>
+                            <a href="#min-width-height">Min-Width|Min Height</a>
+                        </li>
+
+                        <li><a href="#opacity">Opacity</a></li>
+
+                        <li><a href="#outline">Outline</a></li>
+
+                        <li><a href="#overflow">Overflow</a></li>
+
+                        <li><a href="#padding">Padding</a></li>
+
+                        <li><a href="#pointer-events">Pointer-Events</a></li>
+
+                        <li><a href="#position">Position</a></li>
+
+                        <li><a href="#right">Right</a></li>
+
+                        <li><a href="#text align">Text Align</a></li>
+
+                        <li><a href="#text-decoration">Text-Decoration</a></li>
+
+                        <li><a href="#text-overflow">Text-Overflow</a></li>
+
+                        <li><a href="#text-transform">Text-Transform</a></li>
+
+                        <li><a href="#top">Top</a></li>
+
+                        <li><a href="#transform">Transform</a></li>
+
+                        <li><a href="#transition">Transition</a></li>
+
+                        <li><a href="#vertical-align">Vertical-Align</a></li>
+
+                        <li><a href="#visibility">Visibility</a></li>
+
+                        <li><a href="#white-space">White-Space</a></li>
+
+                        <li><a href="#width">Width</a></li>
+
+                        <li><a href="#word-break">Word-Break</a></li>
+
+                        <li><a href="#word-wrap">Word-Wrap</a></li>
+
+                        <li><a href="#z-index">Z-Index</a></li>
+
+                        <li>
+                            <div class="space-block"></div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +206,7 @@
                 <br />
 
                 <section>
-                    <h3>Width</h3>
+                    <h3><span id="width">Width</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -109,7 +270,11 @@ width: 250px;
                 <br />
                 <br />
                 <section>
-                    <h3>Max-Width</h3>
+                    <h3>
+                        <span id="max-width-height"
+                            >Max-Width & Max-Height</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -119,10 +284,60 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.maxWidth="600px"
+                                    object.style.maxHeight="600px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Defines the maximum width/maximum
+                                            height of an element
+                                        </li>
+                                        <li>
+                                            If the content is larger than the
+                                            maximum width/maximum height, it
+                                            will automatically change the height
+                                            of the element.
+                                        </li>
+                                        <li>
+                                            If the content is smaller than the
+                                            maximum width, the
+                                            max-width/max-height property has no
+                                            effect.
+                                        </li>
+                                        <li>
+                                            This prevents the value of the
+                                            width/height property from becoming
+                                            larger than max-width/max-height.
+                                            The value of the
+                                            max-width/max-height property
+                                            overrides the width property.
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            none: No maximum width. This is
+                                            default
+                                        </li>
+                                        <li>
+                                            length: Defines the maximum width in
+                                            px, cm, etc. Read about length units
+                                        </li>
+                                        <li>
+                                            %: Defines the maximum width in
+                                            percent of the containing block
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -131,7 +346,7 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Display</h3>
+                    <h3><span id="display">Display</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -217,7 +432,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Height</h3>
+                    <h3><span id="height">Height</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -239,7 +454,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Padding</h3>
+                    <h3><span id="padding">Padding</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -261,7 +476,30 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Padding-Left</h3>
+                    <h3><span id="margin">Margin</span></h3>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h3><span id="position">Position</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -283,7 +521,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Padding-Right</h3>
+                    <h3><span id="border">Border</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -305,7 +543,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Padding-Top</h3>
+                    <h3><span id="border-radius">Border-Radius</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -327,7 +565,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Padding-Bottom</h3>
+                    <h3><span id="top">Top</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -349,7 +587,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Margin</h3>
+                    <h3><span id="left">Left</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -371,7 +609,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Margin-Top</h3>
+                    <h3><span id="right">Right</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -393,7 +631,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Margin-Left</h3>
+                    <h3><span id="background-color">Background-color</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -415,7 +653,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Margin-Bottom</h3>
+                    <h3><span id="color">Color</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -437,7 +675,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Margin-Right</h3>
+                    <h3><span id="font-size">Font-Size</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -459,7 +697,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Position</h3>
+                    <h3><span id="font-family">Font-Family</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -481,7 +719,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border</h3>
+                    <h3><span id="font-weight">Font-Weight</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -503,7 +741,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border-Radius</h3>
+                    <h3><span id="text-align">Text Align</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -525,7 +763,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Top</h3>
+                    <h3><span id="text-decoration">Text-Decoration</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -547,7 +785,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Left</h3>
+                    <h3><span id="overflow">Overflow</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -569,205 +807,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Right</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Background-color</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Color</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Font-Size</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Font-Family</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Font-Weight</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Text Align</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Text-Decoration</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Overflow</h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3>Transform</h3>
+                    <h3><span id="transform">Transform</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -823,7 +863,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Background</h3>
+                    <h3><span id="background">Background</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -934,7 +974,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Opacity</h3>
+                    <h3><span id="opacity">Opacity</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -995,7 +1035,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Box-Sizing</h3>
+                    <h3><span id="box-sizing">Box-Sizing</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1047,7 +1087,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Box-Shadow</h3>
+                    <h3><span id="box-shadow">Box-Shadow</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1130,7 +1170,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Line-Height</h3>
+                    <h3><span id="line-height">Line-Height</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1183,7 +1223,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Z-Index</h3>
+                    <h3><span id="z-index">Z-Index</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1249,7 +1289,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Vertical-Align</h3>
+                    <h3><span id="vertical-align">Vertical-Align</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1305,7 +1345,7 @@ width: 250px;
                                         </li>
                                         <li>
                                             text-top: The element is aligned
-                                            with the top of the parent element's
+                                            with the top of the parent elements
                                             font
                                         </li>
                                         <li>
@@ -1336,7 +1376,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Cursor</h3>
+                    <h3><span id="cursor">Cursor</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1537,7 +1577,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Content</h3>
+                    <h3><span id="content">Content</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1621,7 +1661,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>White-Space</h3>
+                    <h3><span id="white-space">White-Space</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1690,7 +1730,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Float</h3>
+                    <h3><span id="float">Float</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1753,7 +1793,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Font-Style</h3>
+                    <h3><span id="font-style">Font-Style</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1803,7 +1843,7 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Transition</h3>
+                    <h3><span id="transition">Transition</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1874,7 +1914,9 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Min-Width/Min Height</h3>
+                    <h3>
+                        <span id="min-width-height">Min-Width|Min Height</span>
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1937,7 +1979,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Background-Image</h3>
+                    <h3><span id="background-image">Background-Image</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2029,7 +2071,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Outline</h3>
+                    <h3><span id="outline">Outline</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2102,7 +2144,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Align-Items</h3>
+                    <h3><span id="align-items">Align-Items</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2206,7 +2248,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Justify-Content</h3>
+                    <h3><span id="justify-content">Justify-Content</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2283,7 +2325,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border-Color</h3>
+                    <h3><span id="border-color">Border-Color</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2380,7 +2422,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Visibility</h3>
+                    <h3><span id="visibility">Visibility</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2445,7 +2487,11 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Background-Position</h3>
+                    <h3>
+                        <span id="background-position"
+                            >Background-Position</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2518,7 +2564,7 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Text-Transform</h3>
+                    <h3><span id="text-transform">Text-Transform</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2568,7 +2614,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Flex-Direction</h3>
+                    <h3><span id="flex-direction">Flex-Direction</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2628,7 +2674,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Background-Size</h3>
+                    <h3><span id="background-size">Background-Size</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2700,7 +2746,9 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Background-Repeat</h3>
+                    <h3>
+                        <span id="background-repeat">Background-Repeat</span>
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2786,7 +2834,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>List-Style</h3>
+                    <h3><span id="list-style">List-Style</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2849,7 +2897,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Pointer-Events</h3>
+                    <h3><span id="pointer-events">Pointer-Events</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2896,7 +2944,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Clear</h3>
+                    <h3><span id="clear">Clear</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -2957,7 +3005,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Font</h3>
+                    <h3><span id="font">Font</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3056,7 +3104,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border-Width</h3>
+                    <h3><span id="border-width">Border-Width</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3116,7 +3164,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Flex-Wrap</h3>
+                    <h3><span id="flex-wrap">Flex-Wrap</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3173,7 +3221,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Animation</h3>
+                    <h3><span id="animation">Animation</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3262,7 +3310,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Text-Overflow</h3>
+                    <h3><span id="text-overflow">Text-Overflow</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3323,7 +3371,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Flex</h3>
+                    <h3><span id="flex">Flex</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3379,7 +3427,11 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Flex-Shrink & Flex-Grow</h3>
+                    <h3>
+                        <span id="flex-shrink-grow"
+                            >Flex-Shrink & Flex-Grow</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3431,7 +3483,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Letter-Spacing</h3>
+                    <h3><span id="letter-spacing">Letter-Spacing</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3479,7 +3531,11 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border-Left/Right/Top/Bottom</h3>
+                    <h3>
+                        <span id="border-left-right-top-bottom"
+                            >Border-Left|Right|Top|Bottom</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3531,7 +3587,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Border-Style</h3>
+                    <h3><span id="border-style">Border-Style</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3647,7 +3703,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Word-Wrap</h3>
+                    <h3><span id="word-wrap">Word-Wrap</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3694,7 +3750,7 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Word-Break</h3>
+                    <h3><span id="word-break">Word-Break</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3753,8 +3809,11 @@ width: 250px;
 
                 <section>
                     <h3>
-                        Border-Top-Left/Right-Radius &
-                        Border-Bottom-Left/Right-Radius
+                        <span
+                            id="border-top-left-right-bottom-left-right-radius"
+                            >Border-Top-Left|Right-Radius &
+                            Border-Bottom-Left|Right-Radius</span
+                        >
                     </h3>
                     <table class="pretty-table">
                         <thead>
@@ -3803,7 +3862,7 @@ width: 250px;
                     </table>
                 </section>
                 <section>
-                    <h3>Clip-Path</h3>
+                    <h3><span id="clip-path">Clip-Path</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3883,7 +3942,7 @@ width: 250px;
                 </section>
 
                 <section>
-                    <h3>Align-Self</h3>
+                    <h3><span id="align-self">Align-Self</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -3963,5 +4022,6 @@ width: 250px;
             </article>
         </main>
         <script src="../../nav-menu.js"></script>
+        <script src="./css-properties.js"></script>
     </body>
 </html>
