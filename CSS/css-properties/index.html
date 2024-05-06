@@ -182,7 +182,7 @@
 
                         <li><a href="#white-space">White-Space</a></li>
 
-                        <li><a href="#width">Width</a></li>
+                        <li><a href="#width-height">Width & Height</a></li>
 
                         <li><a href="#word-break">Word-Break</a></li>
 
@@ -206,7 +206,7 @@
                 <br />
 
                 <section>
-                    <h3><span id="width">Width</span></h3>
+                    <h3><span id="width-height">Width & Height</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -217,40 +217,56 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <h4 class="title-css">
-                                        Set the width of an input:
-                                    </h4>
-                                    <pre class="css-pre"><code>input {
-width: 75px;
-}</code></pre>
-                                    <h4 class="title-css">
-                                        Set the width of an &lt;input
-                                        type="text" /&gt; element to 100px.
-                                        However, when it gets focus, make it
-                                        250px wide:
-                                    </h4>
-                                    <pre
-                                        class="css-pre"
-                                    ><code>input[type=text] {
-width: 100px;
-}
-
-input[type=text]:focus {
-width: 250px;
-}</code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.height="500px"
+                                    object.style.width="500px"
                                 </td>
                                 <td>
                                     <ul>
                                         <li>
-                                            auto: Default value, width
-                                            calculated by browser
+                                            Sets the width & height of an
+                                            element
                                         </li>
                                         <li>
-                                            length: Defines the width in px, cm,
-                                            etc.
+                                            The width & height of an element
+                                            does not include padding, borders,
+                                            or margins!
                                         </li>
                                         <li>
-                                            %: Defines the width in percent of
+                                            If height: auto; / weight: auto; the
+                                            element will automatically adjust
+                                            its height/weight to allow its
+                                            content to be displayed correctly.
+                                        </li>
+                                        <li>
+                                            If width/height is set to a numeric
+                                            value (like pixels, (r)em,
+                                            percentages) then if the content
+                                            does not fit within the specified
+                                            width/height, it will overflow. How
+                                            the container will handle the
+                                            overflowing content is defined by
+                                            the overflow property.
+                                        </li>
+                                        <li>
+                                            The min-width/min-height and
+                                            max-width/max-height properties
+                                            override the width/height property,
+                                            respectfully
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: The browser calculates the
+                                            height. This is default
+                                        </li>
+                                        <li>
+                                            length: Defines the height in px,
+                                            cm, etc. Read about length units
+                                        </li>
+                                        <li>
+                                            %: Defines the height in percent of
                                             the containing block
                                         </li>
                                         <li>
@@ -258,8 +274,8 @@ width: 250px;
                                             default value
                                         </li>
                                         <li>
-                                            inherit Inherits this property from
-                                            its parent element
+                                            inherit: Inherits this property from
+                                            its parent element.
                                         </li>
                                     </ul>
                                 </td>
@@ -356,21 +372,34 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.display="none"
+                                </td>
                                 <td>
                                     <ul>
                                         <li>
-                                            inline: Default value
-                                            <br />
+                                            Specifies the display behavior (the
+                                            type of rendering box) of an element
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            inline: Displays an element as an
+                                            inline element (like &lt;span&gt;).
                                             Any height and width properties will
-                                            have no effect
+                                            have no effect. This is default.
                                         </li>
                                         <li>
                                             block: Displays an element as a
-                                            block element (like &lt;p&gt;). It
-                                            starts on a new line, and takes up
-                                            the whole width
+                                            block element (like
+                                            <p>
+                                                ). It starts on a new line, and
+                                                takes up the whole width
+                                            </p>
                                         </li>
+
                                         <li>
                                             contents: Makes the container
                                             disappear, making the child elements
@@ -401,19 +430,6 @@ width: 250px;
                                             an inline-level grid container
                                         </li>
                                         <li>
-                                            inline-table: The element is
-                                            displayed as an inline-level table
-                                        </li>
-                                        <li>
-                                            list-item: Let the element behave
-                                            like a &lt;li&gt; element
-                                        </li>
-                                        <li>
-                                            table: Let the element behave like a
-                                            &lt;table&gt; element
-                                        </li>
-
-                                        <li>
                                             none: The element is completely
                                             removed
                                         </li>
@@ -423,7 +439,7 @@ width: 250px;
                                         </li>
                                         <li>
                                             inherit: Inherits this property from
-                                            its parent element
+                                            its parent element.
                                         </li>
                                     </ul>
                                 </td>
@@ -431,28 +447,7 @@ width: 250px;
                         </tbody>
                     </table>
                 </section>
-                <section>
-                    <h3><span id="height">Height</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+
                 <section>
                     <h3><span id="padding">Padding</span></h3>
                     <table class="pretty-table">
@@ -464,12 +459,93 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.padding="100px 20px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is the space between its content and
+                                            its border.
+                                        </li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>padding-top</li>
+                                                <li>padding-right</li>
+                                                <li>padding-bottom</li>
+                                                <li>padding-left</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Padding creates extra space within
+                                            an element, while margin creates
+                                            extra space around an element. This
+                                            property can have from one to four
+                                            <values class="ul"
+                                                ><li>
+                                                    If the padding property has
+                                                    four values:
+
+                                                    <br />padding:10px 5px 15px
+                                                    20px; <br />
+                                                    top padding is 10px
+                                                    <br />right padding is 5px
+                                                    <br />bottom padding is 15px
+                                                    <br />left padding is 20px
+                                                </li>
+                                                <li>
+                                                    If the padding property has
+                                                    three values:
+
+                                                    <br />padding:10px 5px 15px;
+                                                    <br />top padding is 10px
+                                                    <br />right and left padding
+                                                    are 5px <br />bottom padding
+                                                    is 15px
+                                                </li>
+                                                <li>
+                                                    If the padding property has
+                                                    two values:
+
+                                                    <br />padding:10px 5px;
+                                                    <br />top and bottom padding
+                                                    are 10px <br />right and
+                                                    left padding are 5px
+                                                </li>
+                                                <li>
+                                                    If the padding property has
+                                                    one value:
+
+                                                    <br />padding:10px;
+                                                    <br />all four paddings are
+                                                    10px
+                                                </li></values
+                                            >
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            length: Specifies the padding in px,
+                                            pt, cm, etc. Default value is 0.
+                                            Read about length units
+                                        </li>
+                                        <li>
+                                            %: Specifies the padding in percent
+                                            of the width of the containing
+                                            element
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -486,12 +562,95 @@ width: 250px;
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.margin="100px 50px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the margins for an element, and
+                                            is a shorthand property for the
+                                            following properties:
+                                            <ul>
+                                                <li>margin-top</li>
+                                                <li>margin-right</li>
+                                                <li>margin-bottom</li>
+                                                <li>margin-left</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            If the margin property has four
+                                            values:
+
+                                            <br />margin: 10px 5px 15px 20px;
+                                            <br />top margin is 10px <br />right
+                                            margin is 5px <br />bottom margin is
+                                            15px <br />left margin is 20px
+                                        </li>
+                                        <li>
+                                            If the margin property has three
+                                            values:
+
+                                            <br />margin: 10px 5px 15px;
+                                            <br />top margin is 10px <br />right
+                                            and left margins are 5px
+                                            <br />bottom margin is 15px
+                                        </li>
+                                        <li>
+                                            If the margin property has two
+                                            values:
+
+                                            <br />margin: 10px 5px; <br />top
+                                            and bottom margins are 10px
+                                            <br />right and left margins are 5px
+                                        </li>
+                                        <li>
+                                            If the margin property has one
+                                            value:
+
+                                            <br />margin: 10px; <br />all four
+                                            margins are 10px
+                                        </li>
+                                        <li>Negative values are allowed</li>
+                                        <li>
+                                            Margin Collapse <br />Top and bottom
+                                            margins of elements are sometimes
+                                            collapsed into a single margin that
+                                            is equal to the largest of the two
+                                            margins.
+
+                                            <br />This does not happen on
+                                            horizontal (left and right) margins!
+                                            Only vertical (top and bottom)
+                                            margins!
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            length: Specifies a margin in px,
+                                            pt, cm, etc. Default value is 0.
+                                            Negative values are allowed. Read
+                                            about length units
+                                        </li>
+                                        <li>
+                                            %: Specifies a margin in percent of
+                                            the width of the containing element
+                                        </li>
+                                        <li>
+                                            auto: The browser calculates a
+                                            margin
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
