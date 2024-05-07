@@ -1,0 +1,28 @@
+#ex1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+#ex2 {
+    max-width: 100px;
+    max-height: 100px;
+    background-color: cornflowerblue;
+}
+#ex4 {
+    display: flex;
+}
+#ex4-1 {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+
+    background-color: cadetblue;
+}
+
+#ex4-2 {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background-color: darkcyan;
+}

@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../../style.css" />
+        <link rel="stylesheet" href="./css-properties.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -132,8 +133,6 @@
 
                         <li><a href="#justify-content">Justify-Content</a></li>
 
-                        <li><a href="#left">Left</a></li>
-
                         <li><a href="#letter-spacing">Letter-Spacing</a></li>
 
                         <li><a href="#line-height">Line-Height</a></li>
@@ -160,8 +159,6 @@
 
                         <li><a href="#position">Position</a></li>
 
-                        <li><a href="#right">Right</a></li>
-
                         <li><a href="#text align">Text Align</a></li>
 
                         <li><a href="#text-decoration">Text-Decoration</a></li>
@@ -170,7 +167,7 @@
 
                         <li><a href="#text-transform">Text-Transform</a></li>
 
-                        <li><a href="#top">Top</a></li>
+                        <li><a href="#top-bottom-left-right">Top</a></li>
 
                         <li><a href="#transform">Transform</a></li>
 
@@ -217,6 +214,21 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex1">
+                                        box: <br />height: 100px; <br />width:
+                                        100px
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+
+                                    <pre><code>&lt;div id="ex1"&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.height="500px"
                                     object.style.width="500px"
@@ -301,6 +313,21 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex2">
+                                        box: <br />height: 200px; <br />width:
+                                        200px
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+
+                                    <pre><code>&lt;div id="ex2"&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex2 {
+    max-width: 100px;
+    max-height: 100px;
+    background-color: cornflowerblue;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.maxWidth="600px"
                                     object.style.maxHeight="600px"
@@ -449,7 +476,7 @@
                 </section>
 
                 <section>
-                    <h3><span id="padding">Padding</span></h3>
+                    <h3><span id="padding">4. Padding</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -460,6 +487,29 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex4">
+                                        <div id="ex4-1">
+                                            box: <br />height: 100px;
+                                            <br />width: 100px; <br />padding:
+                                            20px
+                                        </div>
+                                        <div id="ex4-2">
+                                            box: <br />Orig height: 100px;
+                                            <br />Orig width: 100px
+                                        </div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+
+                                    <pre><code>&lt;div id="ex4"&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex4 {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 20px;
+    background-color: cadetblue;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.padding="100px 20px"
                                 </td>
@@ -552,7 +602,7 @@
                     </table>
                 </section>
                 <section>
-                    <h3><span id="margin">Margin</span></h3>
+                    <h3><span id="margin">5. Margin</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -563,6 +613,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.margin="100px 50px"
                                 </td>
@@ -668,12 +724,70 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.position="absolute"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the type of positioning
+                                            method used for an element (static,
+                                            relative, absolute, fixed, or
+                                            sticky).
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            static: Default value. Elements
+                                            render in order, as they appear in
+                                            the document flow
+                                        </li>
+                                        <li>
+                                            absolute: The element is positioned
+                                            relative to its first positioned
+                                            (not static) ancestor element
+                                        </li>
+                                        <li>
+                                            fixed: The element is positioned
+                                            relative to the browser window
+                                        </li>
+                                        <li>
+                                            relative: The element is positioned
+                                            relative to its normal position, so
+                                            "left:20px" adds 20 pixels to the
+                                            element's LEFT position
+                                        </li>
+                                        <li>
+                                            sticky: The element is positioned
+                                            based on the user's scroll position
+                                            A sticky element toggles between
+                                            relative and fixed, depending on the
+                                            scroll position. It is positioned
+                                            relative until a given offset
+                                            position is met in the viewport -
+                                            then it "sticks" in place (like
+                                            position:fixed). Note: Not supported
+                                            in IE/Edge 15 or earlier. Supported
+                                            in Safari from version 6.1 with a
+                                            -webkit- prefix.
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -690,12 +804,57 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.border="3px solid blue"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Is a shorthand property for:
+                                            <ul>
+                                                <li>border-width</li>
+                                                <li>border-style (required)</li>
+                                                <li>border-color</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            If border-color is omitted, the
+                                            color applied will be the color of
+                                            the text.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            border-width: Specifies the width of
+                                            the border. Default value is
+                                            "medium"
+                                        </li>
+                                        <li>
+                                            border-style: Specifies the style of
+                                            the border. Default value is "none"
+                                        </li>
+                                        <li>
+                                            border-color: Specifies the color of
+                                            the border. Default value is the
+                                            color of the text
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -712,10 +871,68 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.borderRadius="25px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Defines the radius of the element's
+                                            corners
+                                        </li>
+                                        <li>
+                                            Allows you to add rounded corners to
+                                            elements!
+
+                                            <br />This property can have from
+                                            one to four values. Here are the
+                                            rules:
+                                            <ul>
+                                                <li>
+                                                    Four values - border-radius:
+                                                    15px 50px 30px 5px; (first
+                                                    value applies to top-left
+                                                    corner, second value applies
+                                                    to top-right corner, third
+                                                    value applies to
+                                                    bottom-right corner, and
+                                                    fourth value applies to
+                                                    bottom-left corner)
+                                                </li>
+                                                <li>
+                                                    Three values -
+                                                    border-radius: 15px 50px
+                                                    30px; (first value applies
+                                                    to top-left corner, second
+                                                    value applies to top-right
+                                                    and bottom-left corners, and
+                                                    third value applies to
+                                                    bottom-right corner)
+                                                </li>
+                                                <li>
+                                                    Two values - border-radius:
+                                                    15px 50px; (first value
+                                                    applies to top-left and
+                                                    bottom-right corners, and
+                                                    the second value applies to
+                                                    top-right and bottom-left
+                                                    corners)
+                                                </li>
+                                                <li>
+                                                    One value - border-radius:
+                                                    15px; (the value applies to
+                                                    all four corners, which are
+                                                    rounded equally)
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
                                 </td>
@@ -724,7 +941,11 @@
                     </table>
                 </section>
                 <section>
-                    <h3><span id="top">Top</span></h3>
+                    <h3>
+                        <span id="top-bottom-left-right"
+                            >Top|Bottom|Left|Right</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -734,61 +955,95 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.top="100px"
+                                    object.style.bottom="100px"
+                                    object.style.left="100px"
+                                    object.style.right="100px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Affects the vertical
+                                            position(top/bottom) OR
+                                            horizontal(left/right) of a
+                                            positioned element. This property
+                                            has no effect on non-positioned
+                                            elements.
+                                            <ul>
+                                                <li>
+                                                    If position: absolute; or
+                                                    position: fixed; - the
+                                                    property sets the
+                                                    repective(top|bottom|left|right)
+                                                    edge of an element to a unit
+                                                    above/below the respective
+                                                    edge of its nearest
+                                                    positioned ancestor.
+                                                </li>
+                                                <li>
+                                                    If position: relative; - the
+                                                    property makes the element's
+                                                    respective edge to move
+                                                    above/below| to the
+                                                    left|right of its normal
+                                                    position.
+                                                </li>
+                                                <li>
+                                                    If position: sticky; - the
+                                                    property behaves like its
+                                                    position is relative when
+                                                    the element is inside the
+                                                    viewport, and like its
+                                                    position is fixed when it is
+                                                    outside.
+                                                </li>
+                                                <li>
+                                                    If position: static; - the
+                                                    property has no effect.
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: Lets the browser calculate the
+                                            top edge position. This is default
+                                        </li>
+                                        <li>
+                                            length: Sets the respective edge
+                                            position in px, cm, etc. Negative
+                                            values are allowed. Read about
+                                            length units
+                                        </li>
+                                        <li>
+                                            %: Sets the respective edge position
+                                            in % of containing element. Negative
+                                            values are allowed
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-                <section>
-                    <h3><span id="left">Left</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3><span id="right">Right</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+
                 <section>
                     <h3><span id="background-color">Background-color</span></h3>
                     <table class="pretty-table">
@@ -800,12 +1055,56 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.backgroundColor="#00FF00"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets the background color of an
+                                            element.
+                                        </li>
+                                        <li>
+                                            The background of an element is the
+                                            total size of the element, including
+                                            padding and border (but not the
+                                            margin).
+                                        </li>
+                                        <li>
+                                            Use a background color and a text
+                                            color that makes the text easy to
+                                            read.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            color: Specifies the background
+                                            color. Look at CSS Color Values for
+                                            a complete list of possible color
+                                            values.
+                                        </li>
+                                        <li>
+                                            transparent: Specifies that the
+                                            background color should be
+                                            transparent. This is default
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -822,12 +1121,42 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.color="#0000FF"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>Specifies the color of text.</li>
+                                        <li>
+                                            Use a background color combined with
+                                            a text color that makes the text
+                                            easy to read.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            color: Specifies the text color.
+                                            Look at CSS Color Values for a
+                                            complete list of possible color
+                                            values.
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -844,39 +1173,82 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.fontSize="14px"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>Sets the size of a font</li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            medium: Sets the font-size to a
+                                            medium size. This is default
+                                        </li>
+                                        <li>
+                                            xx-small: Sets the font-size to an
+                                            xx-small size
+                                        </li>
+                                        <li>
+                                            x-small: Sets the font-size to an
+                                            extra small size
+                                        </li>
+                                        <li>
+                                            small: Sets the font-size to a small
+                                            size
+                                        </li>
+                                        <li>
+                                            large: Sets the font-size to a large
+                                            size
+                                        </li>
+                                        <li>
+                                            x-large: Sets the font-size to an
+                                            extra large size
+                                        </li>
+                                        <li>
+                                            xx-large: Sets the font-size to an
+                                            xx-large size
+                                        </li>
+                                        <li>
+                                            smaller: Sets the font-size to a
+                                            smaller size than the parent element
+                                        </li>
+                                        <li>
+                                            larger: Sets the font-size to a
+                                            larger size than the parent element
+                                        </li>
+                                        <li>
+                                            length: Sets the font-size to a
+                                            fixed size in px, cm, etc. Read
+                                            about length units
+                                        </li>
+                                        <li>
+                                            %: Sets the font-size to a percent
+                                            of the parent element's font size
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-                <section>
-                    <h3><span id="font-family">Font-Family</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
-                                <td>
-                                    <ul>
-                                        <li></li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+
                 <section>
                     <h3><span id="font-weight">Font-Weight</span></h3>
                     <table class="pretty-table">
@@ -888,12 +1260,54 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.fontWeight="bold"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Sets how thick or thin characters in
+                                            text should be displayed
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            normal: Defines normal characters.
+                                            This is default
+                                        </li>
+                                        <li>bold: Defines thick characters</li>
+                                        <li>
+                                            bolder: Defines thicker characters
+                                        </li>
+                                        <li>
+                                            &lt;lighter: Defines lighter
+                                            characters/li&gt;
+                                        </li>
+                                        <li>
+                                            100 <br />200 <br />300 <br />400
+                                            <br />500 <br />600 <br />700
+                                            <br />800 <br />900: Defines from
+                                            thin to thick characters. 400 is the
+                                            same as normal, and 700 is the same
+                                            as bold
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -910,12 +1324,46 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.textAlign="right"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the horizontal alignment
+                                            of text in an element
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            left: Aligns the text to the left
+                                        </li>
+                                        <li>
+                                            right: Aligns the text to the right
+                                        </li>
+                                        <li>center: Centers the text</li>
+                                        <li>
+                                            justify: Stretches the lines so that
+                                            each line has equal width (like in
+                                            newspapers and magazines)
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -932,12 +1380,64 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.textDecoration="underline"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies the decoration added to
+                                            text, and is a shorthand property
+                                            for:
+                                            <ul>
+                                                <li>
+                                                    text-decoration-line
+                                                    (required)
+                                                </li>
+                                                <li>text-decoration-color</li>
+                                                <li>text-decoration-style</li>
+                                                <li>
+                                                    text-decoration-thickness
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            text-decoration-line: Sets the kind
+                                            of text decoration to use (like
+                                            underline, overline, line-through)
+                                        </li>
+                                        <li>
+                                            text-decoration-color: Sets the
+                                            color of the text decoration
+                                        </li>
+                                        <li>
+                                            text-decoration-style: Sets the
+                                            style of the text decoration (like
+                                            solid, wavy, dotted, dashed, double)
+                                        </li>
+                                        <li>
+                                            text-decoration-thickness: Sets the
+                                            thickness of the decoration line
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -954,12 +1454,73 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                    object.style.overflow="scroll"
+                                </td>
                                 <td>
                                     <ul>
-                                        <li></li>
+                                        <li>
+                                            Specifies what should happen if
+                                            content overflows an element's box.
+                                        </li>
+                                        <li>
+                                            This property specifies whether to
+                                            clip content or to add scrollbars
+                                            when an element's content is too big
+                                            to fit in a specified area.
+                                        </li>
+                                        <li>
+                                            The overflow property only works for
+                                            block elements with a specified
+                                            height.
+                                        </li>
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            visible: The overflow is not
+                                            clipped. It renders outside the
+                                            element's box. This is default
+                                        </li>
+                                        <li>
+                                            hidden: The overflow is clipped, and
+                                            the rest of the content will be
+                                            invisible. Content can be scrolled
+                                            programmatically (e.g. by setting
+                                            scrollLeft or scrollTo())
+                                        </li>
+                                        <li>
+                                            clip: The overflow is clipped, and
+                                            the rest of the content will be
+                                            invisible. Forbids scrolling,
+                                            including programmatic scrolling.
+                                        </li>
+                                        <li>
+                                            scroll: The overflow is clipped, but
+                                            a scroll-bar is added to see the
+                                            rest of the content
+                                        </li>
+                                        <li>
+                                            auto: If overflow is clipped, a
+                                            scroll-bar should be added to see
+                                            the rest of the content
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
@@ -977,6 +1538,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.transform="rotate(7deg)"
                                 </td>
@@ -991,30 +1558,114 @@
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
                                     <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            none: Defines that there should be
+                                            no transformation
+                                        </li>
+                                        <li>
+                                            matrix(n,n,n,n,n,n:) Defines a 2D
+                                            transformation, using a matrix of
+                                            six values
+                                        </li>
+                                        <li>
+                                            matrix3d
+                                            <br />(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n):
+                                            Defines a 3D transformation, using a
+                                            4x4 matrix of 16 values
+                                        </li>
+                                        <li>
+                                            translate(x,y): Defines a 2D
+                                            translation
+                                        </li>
+                                        <li>
+                                            translate3d(x,y,z): Defines a 3D
+                                            translation
+                                        </li>
+                                        <li>
+                                            translateX(x): Defines a
+                                            translation, using only the value
+                                            for the X-axis
+                                        </li>
+                                        <li>
+                                            translateY(y): Defines a
+                                            translation, using only the value
+                                            for the Y-axis
+                                        </li>
+                                        <li>
+                                            translateZ(z): Defines a 3D
+                                            translation, using only the value
+                                            for the Z-axis
+                                        </li>
+                                        <li>
+                                            scale(x,y): Defines a 2D scale
+                                            transformation
+                                        </li>
+                                        <li>
+                                            scale3d(x,y,z): Defines a 3D scale
+                                            transformation
+                                        </li>
+                                        <li>
+                                            scaleX(x): Defines a scale
+                                            transformation by giving a value for
+                                            the X-axis
+                                        </li>
+                                        <li>
+                                            scaleY(y): Defines a scale
+                                            transformation by giving a value for
+                                            the Y-axis
+                                        </li>
+                                        <li>
+                                            scaleZ(z): Defines a 3D scale
+                                            transformation by giving a value for
+                                            the Z-axis
+                                        </li>
+                                        <li>
+                                            rotate(angle): Defines a 2D
+                                            rotation, the angle is specified in
+                                            the parameter
+                                        </li>
+                                        <li>
+                                            rotate3d(x,y,z,angle): Defines a 3D
+                                            rotation
+                                        </li>
+                                        <li>
+                                            rotateX(angle): Defines a 3D
+                                            rotation along the X-axis
+                                        </li>
+                                        <li>
+                                            rotateY(angle): Defines a 3D
+                                            rotation along the Y-axis
+                                        </li>
+                                        <li>
+                                            rotateZ(angle): Defines a 3D
+                                            rotation along the Z-axis
+                                        </li>
+                                        <li>
+                                            skew(x-angle,y-angle): Defines a 2D
+                                            skew transformation along the X- and
+                                            the Y-axis
+                                        </li>
+                                        <li>
+                                            skewX(angle): Defines a 2D skew
+                                            transformation along the X-axis
+                                        </li>
+                                        <li>
+                                            skewY(angle): Defines a 2D skew
+                                            transformation along the Y-axis
+                                        </li>
+                                        <li>
+                                            perspective(n): Defines a
+                                            perspective view for a 3D
+                                            transformed element
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value.
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -1033,6 +1684,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.background="red url(smiley.gif)
                                     top left no-repeat"
@@ -1144,6 +1801,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.opacity="0.5"
                                 </td>
@@ -1205,6 +1868,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.boxSizing="border-box"
                                 </td>
@@ -1257,6 +1926,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.boxShadow="10px 20px 30px blue"
                                 </td>
@@ -1340,6 +2015,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.lineHeight="30px"
                                 </td>
@@ -1393,6 +2074,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.zIndex="-1"
                                 </td>
@@ -1459,6 +2146,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.verticalAlign="top"
                                 </td>
@@ -1546,6 +2239,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.cursor="crosshair"
                                 </td>
@@ -1747,6 +2446,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     You can't give an element a pseudo-class by
                                     using JavaScript, but there are other ways
@@ -1831,6 +2536,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.whiteSpace="nowrap"
                                 </td>
@@ -1900,6 +2611,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.cssFloat="left"
                                 </td>
@@ -1963,6 +2680,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.fontStyle="italic"
                                 </td>
@@ -2013,6 +2736,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.transition="all 2s"
                                 </td>
@@ -2086,6 +2815,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.minWidth="400px"
                                     <br />object.style.minHeight="400px"
@@ -2149,6 +2884,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.backgroundImage="url(img_tree.gif)"
                                 </td>
@@ -2241,6 +2982,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.outline="#0000FF dotted 5px"
                                 </td>
@@ -2314,6 +3061,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.alignItems="center"
                                 </td>
@@ -2418,6 +3171,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.justifyContent="space-between"
                                 </td>
@@ -2495,6 +3254,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderColor="#FF0000 blue"
                                 </td>
@@ -2592,6 +3357,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.visibility="hidden"
                                 </td>
@@ -2661,6 +3432,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.backgroundPosition="center"
                                 </td>
@@ -2733,7 +3510,15 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><h4 class="title-css">JS Syntax:</h4></td>
+                                <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">JS Syntax:</h4>
+                                </td>
                                 <td>
                                     <ul>
                                         <li>
@@ -2784,6 +3569,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.flexDirection="column-reverse"
                                 </td>
@@ -2844,6 +3635,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.backgroundSize="60px 120px"
                                 </td>
@@ -2918,6 +3715,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.backgroundRepeat="repeat-x"
                                 </td>
@@ -3004,6 +3807,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.listStyle="decimal inside"
                                 </td>
@@ -3067,6 +3876,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.pointerEvents="none"
                                 </td>
@@ -3114,6 +3929,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.clear="both"
                                 </td>
@@ -3180,6 +4001,12 @@
                                     12px arial,sans-serif"
                                 </td>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <ul>
                                         <li>
                                             Is a shorthand property for:
@@ -3274,6 +4101,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderWidth="1px 5px"
                                 </td>
@@ -3334,6 +4167,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.flexWrap="nowrap"
                                 </td>
@@ -3395,6 +4234,12 @@
                                     object.style.animation="mymove 5s infinite"
                                 </td>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <ul>
                                         <li>
                                             Iis a shorthand property for:
@@ -3480,6 +4325,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.textOverflow="ellipsis"
                                 </td>
@@ -3541,6 +4392,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.flex="1"
                                 </td>
@@ -3601,6 +4458,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.flexShrink="5"
                                     object.style.flexGrow="5"
@@ -3653,6 +4516,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.letterSpacing="3px"
                                 </td>
@@ -3705,6 +4574,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderLeft="3px dotted blue"
                                 </td>
@@ -3757,6 +4632,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderStyle="dotted double"
                                 </td>
@@ -3873,6 +4754,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.wordWrap="break-word"
                                 </td>
@@ -3920,6 +4807,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.wordBreak="break-all"
                                 </td>
@@ -3984,6 +4877,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderTopLeftRadius="25px"
                                     <br />object.style.borderTopRightRadius="25px"
@@ -4032,6 +4931,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.clipPath="circle(50%)"
                                 </td>
@@ -4112,6 +5017,12 @@
                         <tbody>
                             <tr>
                                 <td>
+                                    <h4 id="title-css">Example:</h4>
+                                    <div id="ex">
+                                        <div id="ex"></div>
+                                    </div>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.alignSelf="center"
                                 </td>
@@ -4184,3 +5095,9 @@
         <script src="./css-properties.js"></script>
     </body>
 </html>
+<h4 id="title-css">Example:</h4>
+<div id="ex">
+    <div id="ex"></div>
+</div>
+<h4 class="title-css">HTML</h4>
+<pre><code></code></pre>
