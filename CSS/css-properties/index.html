@@ -97,8 +97,6 @@
 
                         <li><a href="#clip-path">Clip-Path</a></li>
 
-                        <li><a href="#color">Color</a></li>
-
                         <li><a href="#content">Content</a></li>
 
                         <li><a href="#cursor">Cursor</a></li>
@@ -119,17 +117,11 @@
 
                         <li><a href="#float">Float</a></li>
 
-                        <li><a href="#font">Font</a></li>
-
-                        <li><a href="#font-family">Font-Family</a></li>
-
-                        <li><a href="#font-size">Font-Size</a></li>
-
-                        <li><a href="#font-style">Font-Style</a></li>
-
-                        <li><a href="#font-weight">Font-Weight</a></li>
-
-                        <li><a href="#height">Height</a></li>
+                        <li>
+                            <a href="#font-color-size-family-weight-style"
+                                >Font Color|Size|Family|Weight|Style</a
+                            >
+                        </li>
 
                         <li><a href="#justify-content">Justify-Content</a></li>
 
@@ -159,9 +151,20 @@
 
                         <li><a href="#position">Position</a></li>
 
-                        <li><a href="#text align">Text Align</a></li>
+                        <li>
+                            <a href="#text-align-last-direction-vertical"
+                                >Text-Align | Text-Align-Last | Direction |
+                                Vertical-Align</a
+                            >
+                        </li>
 
-                        <li><a href="#text-decoration">Text-Decoration</a></li>
+                        <li>
+                            <a
+                                href="#text-decoration-line-color-style-thickness"
+                                >Text-Decoration | -Line | -Color | -Style |
+                                -Thickness</a
+                            >
+                        </li>
 
                         <li><a href="#text-overflow">Text-Overflow</a></li>
 
@@ -295,6 +298,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <br />
                 <br />
                 <section>
@@ -387,6 +391,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="display">Display</span></h3>
@@ -474,6 +479,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="padding">4. Padding</span></h3>
@@ -601,6 +607,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="margin">5. Margin</span></h3>
                     <table class="pretty-table">
@@ -614,11 +621,41 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <br />The outside border, is for example
+                                    purposes only. <br /><br />
+                                    Ex 1: No Margin:
+                                    <div id="ex5a">
+                                        <div id="ex5">
+                                            <div id="ex5-1">
+                                                box: width: 100px;
+                                                <br />height: 100px;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><br />
+                                    Ex 2: margin: 20px;
+                                    <div id="ex5b">
+                                        <div id="ex5">
+                                            <div id="ex5-2">
+                                                box: width: 100px;
+                                                <br />height: 100px;
+                                                <br />margin: 20px;
+                                            </div>
+                                        </div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div&gt;
+    box: width: 100px;
+    &lt;br /&gt;height: 100px;
+    &lt;br /&gt;margin: 20px;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex5-2 {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    margin: 20px;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.margin="100px 50px"
                                 </td>
@@ -712,9 +749,9 @@
                         </tbody>
                     </table>
                 </section>
-
+                <br /><br />
                 <section>
-                    <h3><span id="position">Position</span></h3>
+                    <h3><span id="position">6. Position</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -726,10 +763,34 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex6">
+                                        <div id="ex6-1">
+                                            <div id="ex6-1a">
+                                                <p>#ex6-1a</p>
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                        <div id="ex6-2">
+                                            <div id="ex6-2a">
+                                                <p>#ex6-2a</p>
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                        <div id="ex6-3">
+                                            <div id="ex6-3a">
+                                                <p>#ex6-3a</p>
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                        <div id="ex6-4">
+                                            <div id="ex6-4a">
+                                                <p>#ex6-4a</p>
+                                            </div>
+                                        </div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                    <h4 class="title-css">CSS</h4>
                                     <pre><code></code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.position="absolute"
@@ -793,8 +854,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="border">Border</span></h3>
+                    <h3><span id="border">7. Border</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -806,11 +868,17 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
-                                    </div>
+
+                                    <div id="ex7"></div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex7"&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex7 {
+    height: 150px;
+    width: 150px;
+    border: 5px solid green;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.border="3px solid blue"
                                 </td>
@@ -860,8 +928,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="border-radius">Border-Radius</span></h3>
+                    <h3><span id="border-radius">8. Border-Radius</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -873,11 +942,32 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
-                                    </div>
+                                    Example 8: border-radius: 10px;
+                                    <div id="ex8"></div>
+                                    Example 8-1: border-radius: 5px 10px 20px
+                                    30px;
+                                    <div id="ex8-1"></div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex8"&gt;
+&lt;/div&gt;
+
+&lt;div id="ex8"&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex8 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#ex8-1 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px 10px 20px 30px;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.borderRadius="25px"
                                 </td>
@@ -940,10 +1030,11 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3>
                         <span id="top-bottom-left-right"
-                            >Top|Bottom|Left|Right</span
+                            >9. Top|Bottom|Left|Right</span
                         >
                     </h3>
                     <table class="pretty-table">
@@ -957,11 +1048,44 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex9">
+                                        <div id="ex9-1"></div>
+                                        <div id="ex9-2"></div>
+                                        <div id="ex9-3"></div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex9"&gt;
+    &lt;div id="ex9-1"&gt;&lt;/div&gt;
+    &lt;div id="ex9-2"&gt;&lt;/div&gt;
+    &lt;div id="ex9-3"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 id="title-css">
+                                        <pre><code>#ex9 {
+    height: 300px;
+    border: 3px solid black;
+}
+#ex9-1,
+#ex9-2,
+#ex9-3 {
+    height: 100px;
+    width: 100px;
+}
+
+#ex9-1 {
+    border: 2px solid orange;
+    left: 200px;
+}
+
+#ex9-2 {
+    border: 2px solid violet;
+    top: -75px;
+    position: relative;
+}
+
+#ex9-3 {
+    border: 2px solid chartreuse;
+}</code></pre>
+                                    </h4>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.top="100px"
                                     object.style.bottom="100px"
@@ -1043,9 +1167,12 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
-                    <h3><span id="background-color">Background-color</span></h3>
+                    <h3>
+                        <span id="background-color">10. Background-color</span>
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1057,61 +1184,42 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex10">
+                                        <div id="ex10-1"></div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex10"&gt;
+    &lt;div id="ex10-1"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex10 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+#ex10-1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.backgroundColor="#00FF00"
                                 </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Sets the background color of an
-                                            element.
-                                        </li>
-                                        <li>
-                                            The background of an element is the
-                                            total size of the element, including
-                                            padding and border (but not the
-                                            margin).
-                                        </li>
-                                        <li>
-                                            Use a background color and a text
-                                            color that makes the text easy to
-                                            read.
-                                        </li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                    <ul>
-                                        <li>
-                                            color: Specifies the background
-                                            color. Look at CSS Color Values for
-                                            a complete list of possible color
-                                            values.
-                                        </li>
-                                        <li>
-                                            transparent: Specifies that the
-                                            background color should be
-                                            transparent. This is default
-                                        </li>
-                                        <li>
-                                            initial: Sets this property to its
-                                            default value.
-                                        </li>
-                                        <li>
-                                            inherit: Inherits this property from
-                                            its parent element.
-                                        </li>
-                                    </ul>
-                                </td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
+
                 <section>
-                    <h3><span id="color">Color</span></h3>
+                    <h3>
+                        <span id="font-color-size-family-weight-style"
+                            >11. Font-Color / Font-Size / Font-Family /
+                            Font-Weight / Font-Style</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1123,134 +1231,332 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <br /><br />
+                                    <div id="ex11">
+                                        <div id="ex11-1">
+                                            font color: hotpink
+                                        </div>
+                                        <br /><br />
+                                        <div id="ex11-2">font size: 150%</div>
+                                        <br /><br />
+                                        <div id="ex11-3">
+                                            font family: Arial, Helvetica,
+                                            sans-serif;
+                                        </div>
+                                        <br /><br />
+                                        <div id="ex11-4">font weight: 800</div>
+                                        <br /><br />
+                                        <div id="ex11-5">
+                                            font style: italic
+                                        </div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
-                                    <h4 class="title-css">JS Syntax:</h4>
-                                    object.style.color="#0000FF"
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Specifies the color of text.</li>
-                                        <li>
-                                            Use a background color combined with
-                                            a text color that makes the text
-                                            easy to read.
-                                        </li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                    <ul>
-                                        <li>
-                                            color: Specifies the text color.
-                                            Look at CSS Color Values for a
-                                            complete list of possible color
-                                            values.
-                                        </li>
-                                        <li>
-                                            initial: Sets this property to its
-                                            default value
-                                        </li>
-                                        <li>
-                                            inherit: Inherits this property from
-                                            its parent element.
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3><span id="font-size">Font-Size</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
-                                    </div>
-                                    <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex11-1"&gt;
+        font color: hotpink
+    &lt;/div&gt;
+    &lt;div id="ex11-2"&gt;font size: 150%&lt;/div&gt;
+    &lt;div id="ex11-3"&gt;
+        font family: Arial, Helvetica,
+        sans-serif;
+    &lt;/div&gt;
+    &lt;div id="ex11-4"&gt;font weight: 800&lt;/div&gt;
+    &lt;div id="ex11-5"&gt;
+        font style: italic
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex11-1 {
+    color: hotpink;
+}
+
+#ex11-2 {
+    font-size: 150%;
+}
+
+#ex11-3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ex11-4 {
+    font-weight: 800;
+}
+
+#ex11-5 {
+    font-style: italic;
+}
+</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.fontSize="14px"
                                 </td>
                                 <td>
                                     <ul>
-                                        <li>Sets the size of a font</li>
+                                        <h3>Font - Color</h3>
+                                        <ul>
+                                            <li>
+                                                Sets the background color of an
+                                                element.
+                                            </li>
+                                            <li>
+                                                The background of an element is
+                                                the total size of the element,
+                                                including padding and border
+                                                (but not the margin).
+                                            </li>
+                                            <li>
+                                                Use a background color and a
+                                                text color that makes the text
+                                                easy to read.
+                                            </li>
+                                        </ul>
+                                        <h4 class="title-css">
+                                            Property Values:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                color: Specifies the background
+                                                color. Look at CSS Color Values
+                                                for a complete list of possible
+                                                color values.
+                                            </li>
+                                            <li>
+                                                transparent: Specifies that the
+                                                background color should be
+                                                transparent. This is default
+                                            </li>
+                                            <li>
+                                                initial: Sets this property to
+                                                its default value.
+                                            </li>
+                                            <li>
+                                                inherit: Inherits this property
+                                                from its parent element.
+                                            </li>
+                                        </ul>
                                     </ul>
-                                    <h4 class="title-css">Property Values:</h4>
                                     <ul>
-                                        <li>
-                                            medium: Sets the font-size to a
-                                            medium size. This is default
-                                        </li>
-                                        <li>
-                                            xx-small: Sets the font-size to an
-                                            xx-small size
-                                        </li>
-                                        <li>
-                                            x-small: Sets the font-size to an
-                                            extra small size
-                                        </li>
-                                        <li>
-                                            small: Sets the font-size to a small
-                                            size
-                                        </li>
-                                        <li>
-                                            large: Sets the font-size to a large
-                                            size
-                                        </li>
-                                        <li>
-                                            x-large: Sets the font-size to an
-                                            extra large size
-                                        </li>
-                                        <li>
-                                            xx-large: Sets the font-size to an
-                                            xx-large size
-                                        </li>
-                                        <li>
-                                            smaller: Sets the font-size to a
-                                            smaller size than the parent element
-                                        </li>
-                                        <li>
-                                            larger: Sets the font-size to a
-                                            larger size than the parent element
-                                        </li>
-                                        <li>
-                                            length: Sets the font-size to a
-                                            fixed size in px, cm, etc. Read
-                                            about length units
-                                        </li>
-                                        <li>
-                                            %: Sets the font-size to a percent
-                                            of the parent element's font size
-                                        </li>
-                                        <li>
-                                            initial: Sets this property to its
-                                            default value
-                                        </li>
-                                        <li>
-                                            inherit: Inherits this property from
-                                            its parent element.
-                                        </li>
+                                        <h3>Font - Size</h3>
+                                        <ul>
+                                            <li>Sets the size of a font</li>
+                                        </ul>
+                                        <h4 class="title-css">
+                                            Property Values:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                medium: Sets the font-size to a
+                                                medium size. This is default
+                                            </li>
+                                            <li>
+                                                xx-small: Sets the font-size to
+                                                an xx-small size
+                                            </li>
+                                            <li>
+                                                x-small: Sets the font-size to
+                                                an extra small size
+                                            </li>
+                                            <li>
+                                                small: Sets the font-size to a
+                                                small size
+                                            </li>
+                                            <li>
+                                                large: Sets the font-size to a
+                                                large size
+                                            </li>
+                                            <li>
+                                                x-large: Sets the font-size to
+                                                an extra large size
+                                            </li>
+                                            <li>
+                                                xx-large: Sets the font-size to
+                                                an xx-large size
+                                            </li>
+                                            <li>
+                                                smaller: Sets the font-size to a
+                                                smaller size than the parent
+                                                element
+                                            </li>
+                                            <li>
+                                                larger: Sets the font-size to a
+                                                larger size than the parent
+                                                element
+                                            </li>
+                                            <li>
+                                                length: Sets the font-size to a
+                                                fixed size in px, cm, etc. Read
+                                                about length units
+                                            </li>
+                                            <li>
+                                                %: Sets the font-size to a
+                                                percent of the parent element's
+                                                font size
+                                            </li>
+                                            <li>
+                                                initial: Sets this property to
+                                                its default value
+                                            </li>
+                                            <li>
+                                                inherit: Inherits this property
+                                                from its parent element.
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <h3>Font - Family</h3>
+                                        <ul>
+                                            <li>
+                                                Specifies the font for an
+                                                element.
+                                            </li>
+                                            <li>
+                                                Can hold several font names as a
+                                                "fallback" system. If the
+                                                browser does not support the
+                                                first font, it tries the next
+                                                font.
+                                            </li>
+                                            <li>
+                                                There are two types of font
+                                                family names: family-name - The
+                                                name of a font-family, like
+                                                "times", "courier", "arial",
+                                                etc. generic-family - The name
+                                                of a generic-family, like
+                                                "serif", "sans-serif",
+                                                "cursive", "fantasy",
+                                                "monospace". Start with the font
+                                                you want, and always end with a
+                                                generic family, to let the
+                                                browser pick a similar font in
+                                                the generic family, if no other
+                                                fonts are available.
+                                            </li>
+                                            <li>
+                                                Separate each value with a
+                                                comma.
+                                            </li>
+                                            <li>
+                                                If a font name contains
+                                                white-space, it must be quoted.
+                                                Single quotes must be used when
+                                                using the "style" attribute in
+                                                HTML.
+                                            </li>
+                                        </ul>
+                                        <h4 class="title-css">
+                                            Property Values:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                family-name / generic-family: A
+                                                prioritized list of font family
+                                                names and/or generic family
+                                                names
+                                            </li>
+                                            <li>
+                                                initial: Sets this property to
+                                                its default value
+                                            </li>
+                                            <li>
+                                                inherit: Inherits this property
+                                                from its parent element.
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <h3>Font - Weight</h3>
+                                        <ul>
+                                            <li>
+                                                Sets how thick or thin
+                                                characters in text should be
+                                                displayed
+                                            </li>
+                                        </ul>
+                                        <h4 class="title-css">
+                                            Property Values:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                normal: Defines normal
+                                                characters. This is default
+                                            </li>
+                                            <li>
+                                                bold: Defines thick characters
+                                            </li>
+                                            <li>
+                                                bolder: Defines thicker
+                                                characters
+                                            </li>
+                                            <li>
+                                                &lt;lighter: Defines lighter
+                                                characters/li&gt;
+                                            </li>
+                                            <li>
+                                                100 <br />200 <br />300
+                                                <br />400 <br />500 <br />600
+                                                <br />700 <br />800 <br />900:
+                                                Defines from thin to thick
+                                                characters. 400 is the same as
+                                                normal, and 700 is the same as
+                                                bold
+                                            </li>
+                                            <li>
+                                                initial: Sets this property to
+                                                its default value
+                                            </li>
+                                            <li>
+                                                inherit: Inherits this property
+                                                from its parent element
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <ul>
+                                        <h3>Font - Style</h3>
+                                        <ul>
+                                            <li>
+                                                Specifies the font style for a
+                                                text
+                                            </li>
+                                        </ul>
+                                        <h4 class="title-css">
+                                            Property Values:
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                normal: The browser displays a
+                                                normal font style. This is
+                                                default
+                                            </li>
+                                            <li>
+                                                italic: The browser displays an
+                                                italic font style
+                                            </li>
+                                            <li>
+                                                oblique: The browser displays an
+                                                oblique font style
+                                            </li>
+                                            <li>
+                                                initial: Sets this property to
+                                                its default value
+                                            </li>
+                                            <li>
+                                                inherit: Inherits this property
+                                                from its parent element.
+                                            </li>
+                                        </ul>
                                     </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
-                    <h3><span id="font-weight">Font-Weight</span></h3>
+                    <h3>
+                        <span id="text-align-last-direction-vertical"
+                            >12.
+                            Text-Align/Text-Align-Last/Direction/Vertical-Align</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1262,79 +1568,190 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex12">
+                                        <div id="ex12-1-1">
+                                            Text-Align - left
+                                        </div>
+                                        <div id="ex12-1-2">
+                                            Text-Align - right
+                                        </div>
+                                        <div id="ex12-1-3">
+                                            Text-Align - center
+                                        </div>
+                                        <div id="ex12-1-4">
+                                            Text-Align - justify
+                                        </div>
+                                        <div id="ex12-2-1">
+                                            Text-Align-Last - left
+                                        </div>
+                                        <div id="ex12-2-2">
+                                            Text-Align-Last - right
+                                        </div>
+                                        <div id="ex12-2-3">
+                                            Text-Align-Last - center
+                                        </div>
+                                        <div id="ex12-2-4">
+                                            Text-Align-Last - justify
+                                        </div>
+                                        <div id="ex12-3">Direction - rtl</div>
+                                        <div id="ex12-4-1">
+                                            <img
+                                                id="ex12-4-1img"
+                                                src="../../images/dbl-color-img.png"
+                                                alt=""
+                                            />
+                                            Vertical-Align - baseline
+                                        </div>
+                                        <div id="ex12-4-2">
+                                            <img
+                                                id="ex12-4-2img"
+                                                src="../../images/dbl-color-img.png"
+                                                alt=""
+                                            />Vertical-Align - text-top
+                                        </div>
+                                        <div id="ex12-4-3">
+                                            <img
+                                                id="ex12-4-3img"
+                                                src="../../images/dbl-color-img.png"
+                                                alt=""
+                                            />Vertical-Align - text-bottom
+                                        </div>
+                                        <div id="ex12-4-4">
+                                            <img
+                                                id="ex12-4-4img"
+                                                src="../../images/dbl-color-img.png"
+                                                alt=""
+                                            />Vertical-Align - sub
+                                        </div>
+                                        <div id="ex12-4-5">
+                                            <img
+                                                id="ex12-4-5img"
+                                                src="../../images/dbl-color-img.png"
+                                                alt=""
+                                            />Vertical-Align - super
+                                        </div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code> &lt;div id="ex12"&gt;
+    &lt;div id="ex12-1-1"&gt;
+        Text-Align - left
+    &lt;/div&gt;
+    &lt;div id="ex12-1-2"&gt;
+        Text-Align - right
+    &lt;/div&gt;
+    &lt;div id="ex12-1-3"&gt;
+        Text-Align - center
+    &lt;/div&gt;
+    &lt;div id="ex12-1-4"&gt;
+        Text-Align - justify
+    &lt;/div&gt;
+    &lt;div id="ex12-2-1"&gt;
+        Text-Align-Last - left
+    &lt;/div&gt;
+    &lt;div id="ex12-2-2"&gt;
+        Text-Align-Last - right
+    &lt;/div&gt;
+    &lt;div id="ex12-2-3"&gt;
+        Text-Align-Last - center
+    &lt;/div&gt;
+    &lt;div id="ex12-2-4"&gt;
+        Text-Align-Last - justify
+    &lt;/div&gt;
+    &lt;div id="ex12-3"&gt;Direction - rtl
+    &lt;/div&gt;
+    &lt;div id="ex12-4-1"&gt;
+        &lt;img
+            id="ex12-4-1img"
+            src="../../images/dbl-color-img.png"
+            alt=""
+        /&gt;
+        Vertical-Align - baseline
+    &lt;/div&gt;
+    &lt;div id="ex12-4-2"&gt;
+        &lt;img
+            id="ex12-4-2img"
+            src="../../images/dbl-color-img.png"
+            alt=""
+        /&gt;Vertical-Align - text-top
+    &lt;/div&gt;
+    &lt;div id="ex12-4-3"&gt;
+        &lt;img
+            id="ex12-4-3img"
+            src="../../images/dbl-color-img.png"
+            alt=""
+        /&gt;Vertical-Align - text-bottom
+    &lt;/div&gt;
+    &lt;div id="ex12-4-4"&gt;
+        &lt;img
+            id="ex12-4-4img"
+            src="../../images/dbl-color-img.png"
+            alt=""
+        /&gt;Vertical-Align - sub
+    &lt;/div&gt;
+    &lt;div id="ex12-4-5"&gt;
+        &lt;img
+            id="ex12-4-5img"
+            src="../../images/dbl-color-img.png"
+            alt=""
+        /&gt;Vertical-Align - super
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex12-1-1 {
+    text-align: left;
+}
+#ex12-1-2 {
+    text-align: right;
+}
+#ex12-1-3 {
+    text-align: center;
+}
+#ex12-1-4 {
+    text-align: justify;
+}
+#ex12-2-1 {
+    text-align-last: left;
+}
+#ex12-2-2 {
+    text-align-last: right;
+}
+#ex12-2-3 {
+    text-align-last: center;
+}
+#ex12-2-4 {
+    text-align-last: justify;
+}
+#ex12-3 {
+    direction: rtl;
+}
+#ex12-4-1img {
+    vertical-align: baseline;
+}
+#ex12-4-2img {
+    vertical-align: text-top;
+}
+#ex12-4-3img {
+    vertical-align: text-bottom;
+}
+#ex12-4-4img {
+    vertical-align: sub;
+}
+#ex12-4-5img {
+    vertical-align: super;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
-                                    object.style.fontWeight="bold"
+                                    <b><u>Text-Align:</u></b>
+                                    <br />object.style.textAlign="right"
+                                    <br /><b><u>Text-Align-Last:</u></b>
+                                    <br />object.style.textAlignLast="right"
+                                    <br /><b><u>Direction:</u></b>
+                                    <br />object.style.direction="rtl" <br /><b
+                                        ><u>Vertical-Align:</u></b
+                                    >
+                                    <br />object.style.verticalAlign="top"
                                 </td>
                                 <td>
-                                    <ul>
-                                        <li>
-                                            Sets how thick or thin characters in
-                                            text should be displayed
-                                        </li>
-                                    </ul>
-                                    <h4 class="title-css">Property Values:</h4>
-                                    <ul>
-                                        <li>
-                                            normal: Defines normal characters.
-                                            This is default
-                                        </li>
-                                        <li>bold: Defines thick characters</li>
-                                        <li>
-                                            bolder: Defines thicker characters
-                                        </li>
-                                        <li>
-                                            &lt;lighter: Defines lighter
-                                            characters/li&gt;
-                                        </li>
-                                        <li>
-                                            100 <br />200 <br />300 <br />400
-                                            <br />500 <br />600 <br />700
-                                            <br />800 <br />900: Defines from
-                                            thin to thick characters. 400 is the
-                                            same as normal, and 700 is the same
-                                            as bold
-                                        </li>
-                                        <li>
-                                            initial: Sets this property to its
-                                            default value
-                                        </li>
-                                        <li>
-                                            inherit: Inherits this property from
-                                            its parent element
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3><span id="text-align">Text Align</span></h3>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>Values</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
-                                    </div>
-                                    <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
-                                    <h4 class="title-css">JS Syntax:</h4>
-                                    object.style.textAlign="right"
-                                </td>
-                                <td>
+                                    <h3>Text - Alignment</h3>
                                     <ul>
                                         <li>
                                             Specifies the horizontal alignment
@@ -1364,13 +1781,178 @@
                                             its parent element.
                                         </li>
                                     </ul>
+                                    <br />
+                                    <h3>Text - Align - Last</h3>
+                                    <ul>
+                                        <li>
+                                            Specifies how to align the last line
+                                            of a text.
+                                        </li>
+                                        <li>
+                                            Sets the alignment for all last
+                                            lines within the selected element.
+                                            So, if you have a &lt;div&gt; with
+                                            three paragraphs in it,
+                                            text-align-last will apply to the
+                                            last line of EACH of the paragraphs.
+                                            To use text-align-last on only the
+                                            last paragraph in the container, you
+                                            can use :last child
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            auto: Default value. The last line
+                                            is justified and aligned left
+                                        </li>
+                                        <li>
+                                            left: The last line is aligned to
+                                            the left
+                                        </li>
+                                        <li>
+                                            right: The last line is aligned to
+                                            the right
+                                        </li>
+                                        <li>
+                                            center: The last line is
+                                            center-aligned
+                                        </li>
+                                        <li>
+                                            justify: The last line is justified
+                                            as the rest of the lines
+                                        </li>
+                                        <li>
+                                            start: The last line is aligned at
+                                            the beginning of the line (left if
+                                            the text-direction is left-to-right,
+                                            and right is the text-direction is
+                                            right-to-left)
+                                        </li>
+                                        <li>
+                                            end: The last line is aligned at the
+                                            end of the line (right if the
+                                            text-direction is left-to-right, and
+                                            left is the text-direction is
+                                            right-to-left)
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
+                                    <br />
+                                    <h3>Direction</h3>
+                                    <ul>
+                                        <li>
+                                            Specifies the text direction/writing
+                                            direction within a block-level
+                                            element.
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            ltr: Text direction goes from
+                                            left-to-right. This is default
+                                        </li>
+                                        <li>
+                                            rtl: Text direction goes from
+                                            right-to-left
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
+                                    <h3>Vertical Align</h3>
+                                    <ul>
+                                        <li>
+                                            Sets the vertical alignment of an
+                                            element (an img, inside texts)
+                                        </li>
+                                    </ul>
+                                    <h4 class="title-css">Property Values:</h4>
+                                    <ul>
+                                        <li>
+                                            baseline: The element is aligned
+                                            with the baseline of the parent.
+                                            This is default
+                                        </li>
+                                        <li>
+                                            length: Raises or lower an element
+                                            by the specified length. Negative
+                                            values are allowed. Read about
+                                            length units
+                                        </li>
+                                        <li>
+                                            %: Raises or lower an element by a
+                                            percent of the "line-height"
+                                            property. Negative values are
+                                            allowed
+                                        </li>
+                                        <li>
+                                            sub: The element is aligned with the
+                                            subscript baseline of the parent
+                                        </li>
+                                        <li>
+                                            super: The element is aligned with
+                                            the superscript baseline of the
+                                            parent
+                                        </li>
+                                        <li>
+                                            top: The element is aligned with the
+                                            top of the tallest element on the
+                                            line
+                                        </li>
+                                        <li>
+                                            text-top: The element is aligned
+                                            with the top of the parent element's
+                                            font
+                                        </li>
+                                        <li>
+                                            middle: The element is placed in the
+                                            middle of the parent element
+                                        </li>
+                                        <li>
+                                            bottom: The element is aligned with
+                                            the lowest element on the line
+                                        </li>
+                                        <li>
+                                            text-bottom: The element is aligned
+                                            with the bottom of the parent
+                                            element's font
+                                        </li>
+                                        <li>
+                                            initial: Sets this property to its
+                                            default value
+                                        </li>
+                                        <li>
+                                            inherit: Inherits this property from
+                                            its parent element.
+                                        </li>
+                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="text-decoration">Text-Decoration</span></h3>
+                    <h3>
+                        <span id="text-decoration-line-color-style-thickness"
+                            >13. Text-Decoration | -Line | -Color | -Style |
+                            -Thickness</span
+                        >
+                    </h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1382,13 +1964,109 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex13">
+                                        <div id="ex13-1">
+                                            Text-Decoration: dotted underline
+                                            blue 5px
+                                        </div>
+                                        <br /><br /><br />
+                                        <div id="ex13-2">
+                                            Text-Decoration-Line : linethrough
+                                        </div>
+                                        <br /><br /><br />
+                                        <div id="ex13-3">
+                                            text-decoration: underline;
+                                            <br />text-decoration-color: green;
+                                            <br />text-decoration-thickness:
+                                            5px;
+                                        </div>
+                                        <br /><br /><br />
+                                        <div id="ex13-4">
+                                            text-decoration: underline;
+                                            <br />text-decoration-color: purple;
+                                            <br />text-decoration-thickness:
+                                            5px; <br />text-decoration-style:
+                                            wavy;
+                                        </div>
+                                        <br /><br /><br />
+                                        <div id="ex13-5">
+                                            text-decoration-line: line-through;
+                                            <br />text-decoration-thickness:
+                                            3px;
+                                        </div>
+                                        <br /><br /><br />
+                                        <div id="ex13-6">text</div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex13"&gt;
+    &lt;div id="ex13-1"&gt;
+        Text-Decoration: dotted underline
+        blue 5px
+    &lt;/div&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;div id="ex13-2"&gt;
+        Text-Decoration-Line : linethrough
+    &lt;/div&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;div id="ex13-3"&gt;
+        text-decoration: underline;
+        &lt;br /&gt;text-decoration-color: green;
+        &lt;br /&gt;text-decoration-thickness:
+        5px;
+    &lt;/div&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;div id="ex13-4"&gt;
+        text-decoration: underline;
+        &lt;br /&gt;text-decoration-color: purple;
+        &lt;br /&gt;text-decoration-thickness:
+        5px; &lt;br /&gt;text-decoration-style:
+        wavy;
+    &lt;/div&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;div id="ex13-5"&gt;
+        text-decoration-line: line-through;
+        &lt;br /&gt;text-decoration-thickness:
+        3px;
+    &lt;/div&gt;
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;div id="ex13-6"&gt;text&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex13-1 {
+    text-decoration: double overline blue 5px;
+}
+#ex13-2 {
+    text-decoration-line: line-through;
+    text-decoration-color: aqua;
+}
+#ex13-3 {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 5px;
+}
+#ex13-4 {
+    text-decoration: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 5px;
+    text-decoration-style: wavy;
+}
+#ex13-5 {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+}
+
+#ex13-6 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: crimson;
+    text-decoration-thickness: 2px;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
-                                    object.style.textDecoration="underline"
+                                    <u><b>Text-Decoration</b></u>
+                                    <br />object.style.textDecoration="underline"
+                                    <br />object.style.textDecorationStyle="wavy"
+                                    <br />object.style.textDecorationColor="red"
+                                    <br />object.style.textDecorationThickness="5px"
                                 </td>
                                 <td>
                                     <ul>
@@ -1411,6 +2089,26 @@
                                     </ul>
                                     <h4 class="title-css">Property Values:</h4>
                                     <ul>
+                                        <li>
+                                            text-decoration: <br />
+                                            text-decoration(solid|dotted|dashed|wavy)
+                                            works by default with underline
+                                            <br />but if text-decoration:
+                                            overline, linethrough needs to have
+                                            (solid|dotted|dashed|wavy) then they
+                                            have to be included as
+                                            line-decoration-style(solid|dotted|dashed|wavy)
+                                            <br />BUT <br />tey can all be
+                                            included:
+                                            <ul>
+                                                <li>
+                                                    text-direction:
+                                                    (solid|dotted|dashed|wavy)
+                                                    (underline|overline|line-through)
+                                                    (color) (thickness);
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li>
                                             text-decoration-line: Sets the kind
                                             of text decoration to use (like
@@ -1443,8 +2141,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="overflow">Overflow</span></h3>
+                    <h3><span id="overflow">14. Overflow</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1456,13 +2155,91 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <b><u>Overflow: Visible</u></b>
+                                    <div id="ex14-1">
+                                        Overflow: Visible. Overflow: Visible.
+                                    </div>
+                                    <br /><br />
+                                    <b><u>Overflow: Hidden</u></b>
+                                    <div id="ex14-2">
+                                        Overflow: Hidden. Overflow: Hidden.
+                                    </div>
+                                    <br /><br />
+                                    <b><u>Overflow: Auto</u></b>
+                                    <div id="ex14-3">
+                                        Overflow: Auto. Overflow: Auto.
+                                    </div>
+                                    <br /><br />
+                                    <b><u>Overflow: Clip</u></b>
+                                    <div id="ex14-4">
+                                        Overflow: Clip. Overflow: Clip.
+                                    </div>
+                                    <br /><br />
+                                    <b><u>Overflow: Scroll</u></b>
+                                    <div id="ex14-5">
+                                        Overflow: Scroll. Overflow: Scroll.
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;div id="ex14-1"&gt;
+    Overflow: Visible. Overflow: Visible.
+&lt;/div&gt;
+<br />
+&lt;div id="ex14-2"&gt;
+    Overflow: Hidden. Overflow: Hidden.
+&lt;/div&gt;
+<br />
+&lt;div id="ex14-3"&gt;
+    Overflow: Auto. Overflow: Auto.
+&lt;/div&gt;
+<br />
+&lt;div id="ex14-4"&gt;
+    Overflow: Clip. Overflow: Clip.
+&lt;/div&gt;
+<br />
+&lt;div id="ex14-5"&gt;
+    Overflow: Scroll. Overflow: Scroll.
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>div#ex14-1 {
+    width: 50px;
+    height: 50px;
+    background-color: darkorchid;
+    overflow: visible;
+}
+
+div#ex14-2 {
+    width: 50px;
+    height: 50px;
+    background-color: darkorchid;
+    overflow: hidden;
+}
+
+div#ex14-3 {
+    width: 50px;
+    height: 50px;
+    background-color: darkorchid;
+    overflow: auto;
+}
+
+div#ex14-4 {
+    width: 50px;
+    height: 50px;
+    background-color: darkorchid;
+    overflow: clip;
+}
+
+div#ex14-5 {
+    width: 50px;
+    height: 50px;
+    background-color: darkorchid;
+    overflow: scroll;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
-                                    object.style.overflow="scroll"
+                                    object.style.overflow="visible"
+                                    <br />object.style.overflow="hidden"
+                                    <br />object.style.overflow="auto"
+                                    <br />object.style.overflow="clip"
+                                    <br />object.style.overflow="scroll"
                                 </td>
                                 <td>
                                     <ul>
@@ -1526,8 +2303,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="transform">Transform</span></h3>
+                    <h3><span id="transform">15. Transform</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1539,11 +2317,48 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
-                                    </div>
+                                    <b><u>Transform: rotate(20deg)</u></b>
+                                    <br /><br />
+                                    <div id="ex15-1"></div>
+                                    <br /><br /><br /><b
+                                        ><u>Transform: skewY(20deg)</u></b
+                                    >
+                                    <br /><br />
+                                    <div id="ex15-2"></div>
+                                    <br /><br /><br /><b
+                                        ><u>Transform: scaleX(0.5)</u></b
+                                    >
+                                    <br /><br />
+                                    <div id="ex15-3"></div>
+
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code>&lt;b&gt;&lt;u&gt;Transform: rotate(20deg)&lt;/u&gt;&lt;/b&gt;
+&lt;div id="ex15-1">&lt;/div&gt;
+<br /> &lt;b&gt;&lt;u&gt;Transform: skewY(20deg)&lt;/&gt;&lt;/b&gt;
+&lt;div id="ex15-2"&gt;&lt;/div&gt;
+<br />&lt;b&gt;&lt;u&gt;Transform: scaleX(0.5)&lt;/u&gt;&lt;/b&gt;
+&lt;div id="ex15-3"&gt;&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex15-1 {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transform: rotate(20deg);
+}
+
+#ex15-2 {
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    transform: skewY(20deg);
+}
+
+#ex15-3 {
+    width: 100px;
+    height: 100px;
+    background-color: fuchsia;
+    transform: scaleX(0.5);
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.transform="rotate(7deg)"
                                 </td>
@@ -1672,8 +2487,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="background">Background</span></h3>
+                    <h3><span id="background">16. Background</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1685,14 +2501,167 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <b><u>Background</u></b>
+                                    <div id="ex16-1">Background</div>
+                                    <br /><br /><b><u>Background-Color</u></b>
+                                    <div id="ex16-2">Background Color</div>
+                                    <br /><br /><b><u>Background-Image</u></b>
+                                    <div id="ex16-3"></div>
+                                    <br /><br /><b
+                                        ><u>Background-Position</u></b
+                                    >
+                                    <div id="ex16-4"></div>
+                                    <br /><br /><b><u>Background-Size</u></b>
+                                    <div id="ex16-5"></div>
+                                    <br /><br /><b><u>Background-Repeat</u></b>
+                                    <div id="ex16-6"></div>
+                                    <br /><br /><b><u>Background-Origin</u></b>
+                                    <div id="ex16-7"></div>
+                                    <br /><br /><b><u>Background-Clip</u></b>
+                                    <div id="ex16-8"></div>
+                                    <br /><br /><b
+                                        ><u>Background-Attachment</u></b
+                                    >
+                                    <div id="ex16-9">
+                                        Background: Attachment. Background:
+                                        Attachment. Background: Attachment.
+                                        Background: Attachment. Background:
+                                        Attachment. Background: Attachment.
                                     </div>
+
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code> <b><u>Background</u></b>
+&lt;div id="ex16-1"&gt;Background&lt;/div&gt;
+<br /><b><u>Background-Color</u></b>
+&lt;div id="ex16-2"&gt;Background Color&lt;/div&gt;
+<br /><b><u>Background-Image</u></b>
+&lt;div id="ex16-3"&gt;&lt;/div&gt;
+<br /><b
+    ><u>Background-Position</u></b
+>
+&lt;div id="ex16-4"&gt;&lt;/div&gt;
+<br /><b><u>Background-Size</u></b>
+&lt;div id="ex16-5"&gt;&lt;/div&gt;
+<br /><b><u>Background-Repeat</u></b>
+&lt;div id="ex16-6"&gt;&lt;/div&gt;
+<br /><b><u>Background-Origin</u></b>
+&lt;div id="ex16-7">&lt;/div&gt;
+<br /><b><u>Background-Clip</u></b>
+&lt;div id="ex16-8"&gt;&lt;/div&gt;
+<br /><b
+    ><u>Background-Attachment</u></b
+>
+&lt;div id="ex16-9"&gt;
+    Background: Attachment. Background:
+    Attachment. Background: Attachment.
+    Background: Attachment. Background:
+    Attachment. Background: Attachment.
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex16-1 {
+    width: 150px;
+    height: 150px;
+    background: lightgreen 
+        url(../../images/img.png) 
+        no-repeat fixed left;
+}
+#ex16-2 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+#ex16-3 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+}
+#ex16-4 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-position: right bottom;
+}
+
+#ex16-5 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-size: 100px 250px;
+}
+
+#ex16-6 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-size: 50px 50px;
+    background-color: brown;
+    background-repeat: repeat-x;
+}
+#ex16-7 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-size: 50px 50px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    border: 4px dashed orange;
+}
+
+#ex16-8 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-size: 50px 50px;
+    background-color: lightgreen;
+    border: 7px dashed orange;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+#ex16-9 {
+    width: 150px;
+    height: 150px;
+    background-image: 
+        url(../../images/img.png);
+    background-size: 50px 50px;
+    background-color: lightblue;
+    border: 7px dashed purple;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: scroll;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
+                                    <b><u>Background:</u></b>
                                     object.style.background="red url(smiley.gif)
                                     top left no-repeat"
+                                    <br /><br /><b><u>Background-Color:</u></b>
+                                    <br />object.style.backgroundColor="#00FF00"
+                                    <br /><br /><b><u>Background-Image:</u></b>
+                                    <br />object.style.backgroundImage="url(img_tree.gif)"
+                                    <br /><br /><b
+                                        ><u>Background-Position:</u></b
+                                    >
+                                    <br />object.style.backgroundPosition="center"
+                                    <br /><br /><b><u>Background-Size:</u></b>
+                                    <br />object.style.backgroundSize="60px
+                                    120px" <br /><br /><b
+                                        ><u>Background-Repeat:</u></b
+                                    >
+                                    <br />object.style.backgroundRepeat="repeat-x"
+                                    <br /><br /><b><u>Background-Origin:</u></b>
+                                    <br />object.style.backgroundOrigin="content-box"
+                                    <br /><br /><b><u>Background-Clip:</u></b>
+                                    <br />object.style.backgroundClip="content-box"
+                                    <br /><br /><b
+                                        ><u>Background-Attachment:</u></b
+                                    >
+                                    <br />object.style.backgroundAttachment="fixed"
                                 </td>
                                 <td>
                                     <ul>
@@ -1789,8 +2758,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="opacity">Opacity</span></h3>
+                    <h3><span id="opacity">17. Opacity</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1802,11 +2772,134 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <br /><b><u>Opacity: 1.0</u></b>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div id="ex17-1"></div>
+                                        </div>
+                                        <div class="column">
+                                            <div id="ex17-5">
+                                                <img
+                                                    src="../../images/bubbles-colors.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><b><u>Opacity: 75%</u></b>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div id="ex17-2"></div>
+                                        </div>
+                                        <div class="column">
+                                            <div id="ex17-6">
+                                                <img
+                                                    src="../../images/bubbles-colors.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><b><u>Opacity: 0.5</u></b>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div id="ex17-3"></div>
+                                        </div>
+                                        <div class="column">
+                                            <div id="ex17-7">
+                                                <img
+                                                    src="../../images/bubbles-colors.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br /><b><u>Opacity: 25%</u></b>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div id="ex17-4"></div>
+                                        </div>
+                                        <div class="column">
+                                            <div id="ex17-8">
+                                                <img
+                                                    src="../../images/bubbles-colors.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Opacity: 1.0</u></b>
+&lt;div id="ex17-1"&gt;&lt;/div&gt;
+&lt;div id="ex17-5"&gt;
+    &lt;img
+    src="../../images/bubbles-colors.png"
+    alt=""
+    /&gt;
+&lt;/div&gt;
+
+<b><u>Opacity: 75%</u></b>
+&lt;div id="ex17-2"&gt;&lt;/div&gt;
+&lt;div id="ex17-6"&gt;
+    &lt;img
+    src="../../images/bubbles-colors.png"
+    alt=""
+    /&gt;
+&lt;/div&gt;
+
+<b><u>Opacity: 0.5</u></b>
+&lt;div id="ex17-3"&gt;&lt;/div&gt;
+&lt;div id="ex17-7"&gt;
+    &lt;img
+    src="../../images/bubbles-colors.png"
+    alt=""
+    /&gt;
+&lt;/div&gt;
+
+<b><u>Opacity: 25%</u></b>
+&lt;div id="ex17-4"&gt;&lt;/div&gt;
+&lt;div id="ex17-8"&gt;
+    &lt;img
+    src="../../images/bubbles-colors.png"
+    alt=""
+    /&gt;
+&lt;/div&gt;</code></pre>
+                                    <h4 class="title-css">CSS</h4>
+                                    <pre><code>#ex17-1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+#ex17-2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    opacity: 75%;
+}
+#ex17-3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    opacity: 0.5;
+}
+#ex17-4 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    opacity: 25%;
+}
+#ex17-5 {
+    opacity: 1.0;
+}
+#ex17-6 {
+    opacity: 75%;
+}
+#ex17-7 {
+    opacity: 0.5;
+}
+#ex17-8 {
+    opacity: 25%;
+}</code></pre>
                                     <h4 class="title-css">JS Syntax:</h4>
                                     object.style.opacity="0.5"
                                 </td>
@@ -1856,8 +2949,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="box-sizing">Box-Sizing</span></h3>
+                    <h3><span id="box-sizing">18Box-Sizing</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1869,8 +2963,8 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex18">
+                                        <div id="ex18"></div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
                                     <pre><code></code></pre>
@@ -1914,8 +3008,9 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
-                    <h3><span id="box-shadow">Box-Shadow</span></h3>
+                    <h3><span id="box-shadow">19Box-Shadow</span></h3>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -1927,8 +3022,8 @@
                             <tr>
                                 <td>
                                     <h4 id="title-css">Example:</h4>
-                                    <div id="ex">
-                                        <div id="ex"></div>
+                                    <div id="ex19">
+                                        <div id="ex19"></div>
                                     </div>
                                     <h4 class="title-css">HTML</h4>
                                     <pre><code></code></pre>
@@ -2003,6 +3098,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="line-height">Line-Height</span></h3>
                     <table class="pretty-table">
@@ -2062,6 +3158,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="z-index">Z-Index</span></h3>
                     <table class="pretty-table">
@@ -2134,6 +3231,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="vertical-align">Vertical-Align</span></h3>
                     <table class="pretty-table">
@@ -2227,6 +3325,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="cursor">Cursor</span></h3>
                     <table class="pretty-table">
@@ -2434,6 +3533,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="content">Content</span></h3>
                     <table class="pretty-table">
@@ -2524,6 +3624,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="white-space">White-Space</span></h3>
                     <table class="pretty-table">
@@ -2599,6 +3700,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="float">Float</span></h3>
                     <table class="pretty-table">
@@ -2668,6 +3770,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="font-style">Font-Style</span></h3>
                     <table class="pretty-table">
@@ -2723,6 +3826,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="transition">Transition</span></h3>
@@ -2800,6 +3904,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3>
@@ -2872,6 +3977,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="background-image">Background-Image</span></h3>
                     <table class="pretty-table">
@@ -2970,6 +4076,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="outline">Outline</span></h3>
                     <table class="pretty-table">
@@ -3049,6 +4156,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="align-items">Align-Items</span></h3>
                     <table class="pretty-table">
@@ -3159,6 +4267,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="justify-content">Justify-Content</span></h3>
                     <table class="pretty-table">
@@ -3242,6 +4351,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="border-color">Border-Color</span></h3>
                     <table class="pretty-table">
@@ -3345,6 +4455,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="visibility">Visibility</span></h3>
                     <table class="pretty-table">
@@ -3416,6 +4527,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3>
                         <span id="background-position"
@@ -3498,6 +4610,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="text-transform">Text-Transform</span></h3>
@@ -3557,6 +4670,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="flex-direction">Flex-Direction</span></h3>
                     <table class="pretty-table">
@@ -3623,6 +4737,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="background-size">Background-Size</span></h3>
                     <table class="pretty-table">
@@ -3701,6 +4816,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3>
                         <span id="background-repeat">Background-Repeat</span>
@@ -3795,6 +4911,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="list-style">List-Style</span></h3>
                     <table class="pretty-table">
@@ -3864,6 +4981,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="pointer-events">Pointer-Events</span></h3>
                     <table class="pretty-table">
@@ -3917,6 +5035,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="clear">Clear</span></h3>
                     <table class="pretty-table">
@@ -3984,6 +5103,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="font">Font</span></h3>
                     <table class="pretty-table">
@@ -4089,6 +5209,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="border-width">Border-Width</span></h3>
                     <table class="pretty-table">
@@ -4155,6 +5276,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="flex-wrap">Flex-Wrap</span></h3>
                     <table class="pretty-table">
@@ -4218,6 +5340,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="animation">Animation</span></h3>
                     <table class="pretty-table">
@@ -4313,6 +5436,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="text-overflow">Text-Overflow</span></h3>
                     <table class="pretty-table">
@@ -4380,6 +5504,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="flex">Flex</span></h3>
                     <table class="pretty-table">
@@ -4442,6 +5567,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3>
                         <span id="flex-shrink-grow"
@@ -4504,6 +5630,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="letter-spacing">Letter-Spacing</span></h3>
                     <table class="pretty-table">
@@ -4558,6 +5685,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3>
                         <span id="border-left-right-top-bottom"
@@ -4620,6 +5748,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="border-style">Border-Style</span></h3>
                     <table class="pretty-table">
@@ -4742,6 +5871,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="word-wrap">Word-Wrap</span></h3>
                     <table class="pretty-table">
@@ -4794,6 +5924,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="word-break">Word-Break</span></h3>
@@ -4858,6 +5989,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3>
@@ -4919,6 +6051,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
                 <section>
                     <h3><span id="clip-path">Clip-Path</span></h3>
                     <table class="pretty-table">
@@ -5004,6 +6137,7 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
 
                 <section>
                     <h3><span id="align-self">Align-Self</span></h3>
@@ -5089,15 +6223,10 @@
                         </tbody>
                     </table>
                 </section>
+                <br /><br />
             </article>
         </main>
         <script src="../../nav-menu.js"></script>
         <script src="./css-properties.js"></script>
     </body>
 </html>
-<h4 id="title-css">Example:</h4>
-<div id="ex">
-    <div id="ex"></div>
-</div>
-<h4 class="title-css">HTML</h4>
-<pre><code></code></pre>
