@@ -424,3 +424,70 @@ div#ex14-5 {
 #ex17-8 {
     opacity: 25%;
 }
+
+#ex18-1,
+#ex18-2 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+#ex18-1a,
+#ex18-2a {
+    width: 150;
+    height: 150px;
+    border: 5px solid green;
+}
+
+#ex18-2a {
+    box-sizing: border-box;
+}
+
+#ex19-1 {
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    box-shadow: 10px 10px 8px hotpink;
+}
+
+#ex19-2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 220, 30);
+    box-shadow: 10px 10px 8px 10px rgb(178, 255, 105);
+}
+
+#ex19-3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 37, 220);
+    box-shadow: 5px 5px 8px rgb(160, 105, 255), 8px 8px 12px rgb(233, 163, 52),
+        12px 12px 17px rgb(128, 255, 0);
+}
+
+#ex19-4 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 220, 140);
+    box-shadow: 10px 10px 15px inset rgb(9, 255, 0);
+}
+
+#ex19-4 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 220, 20);
+    box-shadow: 10px 10px 15px inset yellow, 5px 5px 12px hotpink;
+}
+
+#ex19-5 {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    box-shadow: -5px 8px orange;
+}
+
+#ex19-6 {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    box-shadow: -8px -15px 20px blue;
+}

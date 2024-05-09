@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=CSS, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="stylesheet" href="./font-text.css" />
+        <link rel="stylesheet" href="./css-properties.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>CSS Property: Font & Text</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Font & Text Properties</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>CSS Properties</p>
+                    <ul>
+                        <li><a href="#font-color">1. Font Color</a></li>
+                        <li><a href="#font-size">2. Font Size</a></li>
+                        <li><a href="#font-family">3. Font Family</a></li>
+                        <li><a href="#font-weight">4. Font Weight</a></li>
+                        <li><a href="#font-style">5. Font Style</a></li>
+                        <li><a href="#text-align">6. Text Align</a></li>
+                        <li>
+                            <a href="#text-align-last">7. Text Align Last</a>
+                        </li>
+                        <li><a href="#direction">8. Direction</a></li>
+                        <li><a href="#vertical-align">9. Vertical Align</a></li>
+                        <li>
+                            <a href="#text-decoration">10. Text Decoration</a>
+                        </li>
+                        <li>
+                            <a href="#text-decoration-line">11. Text Decoration Line</a>
+                        </li>
+                        <li>
+                            <a href="#text-decoration-color">12. Text Decoration Color</a>
+                        </li>
+                        <li>
+                            <a href="#text-decoration-style">13. Text Decoration Style</a>
+                        </li>
+                        <li>
+                            <a href="#text-decoration-thickness">14. Text Decoration Thickness</a>
+                        </li>
+                        <li>
+                            <a href="#text-transform">15. Text Transform</a>
+                        </li>
+                        <li><a href="#overflow">16. Overflow</a></li>
+                        <li><a href="#text-overflow">17. Text Overflow</a></li>
+                        <li>
+                            <a href="#letter-spacing">18. Letter Spacing</a>
+                        </li>
+                        <li><a href="#word-wrap">19. Word Wrap</a></li>
+                        <li><a href="#word-break">20. Word Break</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <h2>CSS Font & Text Properties</h2>
+                <br />
+                <br />
+
+                <section>
+                    <h3><span id="font-color">1. Font Color</span></h3>
+                    <ul>
+                        <li>Sets the background color of an element.</li>
+                        <li>
+                            The background of an element is the total size of
+                            the element, including padding and border (but not
+                            the margin).
+                        </li>
+                        <li>
+                            Use a background color and a text color that makes
+                            the text easy to read.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            color: Specifies the background color. Look at CSS
+                            Color Values for a complete list of possible color
+                            values.
+                        </li>
+                        <li>
+                            transparent: Specifies that the background color
+                            should be transparent. This is default
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.color="hotpink"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex1">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code>#ex1{
+    color: hotpink;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <br />
+                <br />
+
+                <section>
+                    <h3><span id="font-size">2. Font Size</span></h3>
+                    <ul>
+                        <li>Sets the size of a font</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            medium: Sets the font-size to a medium size. This is
+                            default
+                        </li>
+                        <li>
+                            xx-small: Sets the font-size to an xx-small size
+                        </li>
+                        <li>
+                            x-small: Sets the font-size to an extra small size
+                        </li>
+                        <li>small: Sets the font-size to a small size</li>
+                        <li>large: Sets the font-size to a large size</li>
+                        <li>
+                            x-large: Sets the font-size to an extra large size
+                        </li>
+                        <li>
+                            xx-large: Sets the font-size to an xx-large size
+                        </li>
+                        <li>
+                            smaller: Sets the font-size to a smaller size than
+                            the parent element
+                        </li>
+                        <li>
+                            larger: Sets the font-size to a larger size than the
+                            parent element
+                        </li>
+                        <li>
+                            length: Sets the font-size to a fixed size in px,
+                            cm, etc. Read about length units
+                        </li>
+                        <li>
+                            %: Sets the font-size to a percent of the parent
+                            element's font size
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.fontSize="14px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex2">
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code>#ex2 {
+    font-size: 150%;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="font-family">3. Font Family</span></h3>
+                    <ul>
+                        <li>Specifies the font for an element.</li>
+                        <li>
+                            Can hold several font names as a "fallback" system.
+                            If the browser does not support the first font, it
+                            tries the next font.
+                        </li>
+                        <li>
+                            There are two types of font family names:
+                            family-name - The name of a font-family, like
+                            "times", "courier", "arial", etc. generic-family -
+                            The name of a generic-family, like "serif",
+                            "sans-serif", "cursive", "fantasy", "monospace".
+                            Start with the font you want, and always end with a
+                            generic family, to let the browser pick a similar
+                            font in the generic family, if no other fonts are
+                            available.
+                        </li>
+                        <li>Separate each value with a comma.</li>
+                        <li>
+                            If a font name contains white-space, it must be
+                            quoted. Single quotes must be used when using the
+                            "style" attribute in HTML.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            family-name / generic-family: A prioritized list of
+                            font family names and/or generic family names
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.fontFamily</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex3">
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code>#ex3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+
+                <section>
+                    <h3><span id="font-weight">4. Font Weight</span></h3>
+                    <ul>
+                        <li>
+                            Sets how thick or thin characters in text should be
+                            displayed
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            normal: Defines normal characters. This is default
+                        </li>
+                        <li>bold: Defines thick characters</li>
+                        <li>bolder: Defines thicker characters</li>
+                        <li>&lt;lighter: Defines lighter characters/li&gt;</li>
+                        <li>
+                            100 <br />200 <br />300 <br />400 <br />500
+                            <br />600 <br />700 <br />800 <br />900: Defines
+                            from thin to thick characters. 400 is the same as
+                            normal, and 700 is the same as bold
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.fontWeight=</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex4">
+                                        Lorem ipsum dolor sit amet.
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code>#ex4 {
+    font-weight: 600;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="font-style">5. Font Style</span></h3>
+                    <ul>
+                        <li>Specifies the font style for a text</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            normal: The browser displays a normal font style.
+                            This is default
+                        </li>
+                        <li>
+                            italic: The browser displays an italic font style
+                        </li>
+                        <li>
+                            oblique: The browser displays an oblique font style
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.fontStyle = "italic"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex5">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code>#ex5 {
+    font-style: italic;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-align">6. Text Align</span></h3>
+                    <ul>
+                        <li>
+                            Specifies the horizontal alignment
+                            of text in an element
+                        </li>
+                    <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            left: Aligns the text to the left
+                        </li>
+                        <li>
+                            right: Aligns the text to the right
+                        </li>
+                        <li>center: Centers the text</li>
+                        <li>
+                            justify: Stretches the lines so that
+                            each line has equal width (like in
+                            newspapers and magazines)
+                        </li>
+                        <li>
+                            initial: Sets this property to its
+                            default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from
+                            its parent element.
+                        </li>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textAlign="right"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex6">Text Align: Right</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex6 {
+    text-align: right;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+
+                <section>
+                    <h3><span id="text-align-left">7. Text Align Last</span></h3>
+                    <ul>
+                        <li>
+                            Specifies how to align the last line
+                            of a text.
+                        </li>
+                        <li>
+                            Sets the alignment for all last
+                            lines within the selected element.
+                            So, if you have a &lt;div&gt; with
+                            three paragraphs in it,
+                            text-align-last will apply to the
+                            last line of EACH of the paragraphs.
+                            To use text-align-last on only the
+                            last paragraph in the container, you
+                            can use :last child
+                        </li>
+                    <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            auto: Default value. The last line
+                            is justified and aligned left
+                        </li>
+                        <li>
+                            left: The last line is aligned to
+                            the left
+                        </li>
+                        <li>
+                            right: The last line is aligned to
+                            the right
+                        </li>
+                        <li>
+                            center: The last line is
+                            center-aligned
+                        </li>
+                        <li>
+                            justify: The last line is justified
+                            as the rest of the lines
+                        </li>
+                        <li>
+                            start: The last line is aligned at
+                            the beginning of the line (left if
+                            the text-direction is left-to-right,
+                            and right is the text-direction is
+                            right-to-left)
+                        </li>
+                        <li>
+                            end: The last line is aligned at the
+                            end of the line (right if the
+                            text-direction is left-to-right, and
+                            left is the text-direction is
+                            right-to-left)
+                        </li>
+                        <li>
+                            initial: Sets this property to its
+                            default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from
+                            its parent element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textAlignLast="right"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p id="ex7">It was the best of times. It was the worst of times. It was the age of wisdom. It was the age of foolishness. It was the epoch of belief. It was the epoch of incredulity. It was the season of Light. It was the season of Darkness. It was the spring of hope. It was the winter of despair.</p></td>
+                                <td>
+                                    
+                                    <pre><code>#ex7 {
+    text-align: justify;
+    text-align-last: right;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="direction">8. Direction</span></h3>
+                    <ul>
+                        <li>
+                            Specifies the text direction/writing
+                            direction within a block-level
+                            element.
+                        </li>
+                    <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            ltr: Text direction goes from
+                            left-to-right. This is default
+                        </li>
+                        <li>
+                            rtl: Text direction goes from
+                            right-to-left
+                        </li>
+                        <li>
+                            initial: Sets this property to its
+                            default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from
+                            its parent element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.direction="rtl"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex8">Lorem ipsum dolor sit amet consectetur.......</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex8 {
+    direction: rtl;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="vertical-align">9. Vertical Align</span></h3>
+                    <ul>
+                        <li>
+                            Sets the vertical alignment of an
+                            element (an img, inside texts)
+                        </li>
+                    <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            baseline: The element is aligned
+                            with the baseline of the parent.
+                            This is default
+                        </li>
+                        <li>
+                            length: Raises or lower an element
+                            by the specified length. Negative
+                            values are allowed. Read about
+                            length units
+                        </li>
+                        <li>
+                            %: Raises or lower an element by a
+                            percent of the "line-height"
+                            property. Negative values are
+                            allowed
+                        </li>
+                        <li>
+                            sub: The element is aligned with the
+                            subscript baseline of the parent
+                        </li>
+                        <li>
+                            super: The element is aligned with
+                            the superscript baseline of the
+                            parent
+                        </li>
+                        <li>
+                            top: The element is aligned with the
+                            top of the tallest element on the
+                            line
+                        </li>
+                        <li>
+                            text-top: The element is aligned
+                            with the top of the parent element's
+                            font
+                        </li>
+                        <li>
+                            middle: The element is placed in the
+                            middle of the parent element
+                        </li>
+                        <li>
+                            bottom: The element is aligned with
+                            the lowest element on the line
+                        </li>
+                        <li>
+                            text-bottom: The element is aligned
+                            with the bottom of the parent
+                            element's font
+                        </li>
+                        <li>
+                            initial: Sets this property to its
+                            default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from
+                            its parent element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.verticalAlign="top"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex9"><img src="../../../images/dbl-color-img.png" alt="" id="ex9">Lorem ipsum dolor sit amet consectetur adipisicing.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex9 {
+    vertical-align: super;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-decoration">10. Text Decoration</span></h3>
+                    <ul>
+                        <li>Sets or returns one ore more decorations for a text.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none:	Defines a normal text. This is default
+                            
+                            
+                            
+                            
+                            </li>
+                            <li>underline:	Defines a line under the text</li>
+                            <li>overline:	Defines a line over the text</li>
+                            <li>line-through:	Defines a line through the text</li>
+                            <li>initial:	Sets this property to its default value</li>
+                            <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code></code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex10-1">Lorem ipsum dolor sit amet consectetur.</div></td>
+                                <td>
+                                    <h4 class="title-css">Text-Decoration (shorthand)</h4>
+                                    <pre><code>#ex10-1 {
+    text-decoration: overline wavy purple;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div id="ex10-2">Lorem ipsum dolor sit amet consectetur.</div></td>
+                                <td>
+                                    <h4 class="title-css">Text-Decoration</h4>
+                                    <pre><code>#ex10-2 {
+    text-decoration: underline;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div id="ex10-3">Lorem ipsum dolor sit amet consectetur.</div></td>
+                                <td>
+                                    <h4 class="title-css">Text-Decoration & Text-Decoration-Style</h4>
+                                    <ul><li>The dashed line is in blue color for demo.</li></ul>
+                                    <pre><code>#ex10-3 {
+    text-decoration: overline;
+    text-decoration-style: dashed;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-decoration-line">11. Text Decoration Line</span></h3>
+                    <ul>
+                        <li>Sets the kind of text decoration to use (like underline, overline, line-through).</li>
+                        <li>Also look at the text-decoration property, which is a short-hand property for text-decoration-line, text-decoration-style, text-decoration-color, and text-decoration-thickness.</li>
+                        <li>You can also combine more than one value, like underline and overline to display lines both under and over the text.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none:	Default value. Specifies no line for the text-decoration	
+                            
+                            
+                            	
+                            
+                            </li>
+                            <li>underline:	Specifies that a line will be displayed under the text	</li>
+                            <li>overline:	Specifies that a line will be displayed over the text	</li>
+                            <li>line-through:	Specifies that a line will be displayed through the text</li>
+                            <li>initial:	Sets this property to its default value</li>
+                            <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textDecorationLine="overline"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex11">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex11 {
+    text-decoration-line: overline;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-decoration-color">12. Text Decoration Color</span></h3>
+                    <ul>
+                        <li>Specifies the color of the text-decoration (underlines, overlines, linethroughs).</li>
+                        <li>Also look at the text-decoration property, which is a short-hand property for text-decoration-line, text-decoration-style, text-decoration-color, and text-decoration-thickness.</li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li>color:	Specifies the color of the text-decoration	
+                        
+                        </li>
+                        <li>initial:	Sets this property to its default value</li>
+                        <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textDecorationColor="red"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex12">Lorem ipsum dolor sit amet consectetur adipisicing.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex12 {
+    text-decoration-color: chartreuse;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-decoration-style">13. Text Decoration Style</span></h3>
+                    <ul>
+                        <li>Sets the style of the text decoration (like solid, wavy, dotted, dashed, double).</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>solid:	Default value. The line will display as a single line	
+                            
+                            
+                            	
+                            	
+                            
+                            </li>
+                            <li>double:	The line will display as a double line	</li>
+                            <li>dotted:	The line will display as a dotted line	</li>
+                            <li>dashed:	The line will display as a dashed line</li>
+                            <li>wavy:	The line will display as a wavy line</li>
+                            <li>initial:	Sets this property to its default value.</li>
+                            <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textDecorationStyle="wavy"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex13">Lorem ipsum dolor sit amet.</div></td>
+                                <td>
+                                    
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-decoration-thickness">14. Text Decoration Thickness</span></h3>
+                    <ul>
+                        <li>Specifies the thickness of the decoration line.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>auto:	The browser chooses the thickness of the decoration line
+                            
+                            
+                            </li>
+                        <li>from-font:	If a font file contains information about a preferred thickness, use that value. If not, behave as auto
+                            </li>
+                        <li>length/percentage:	Specifies the thickness as a length or %</li>
+                        <li>initial:	Sets this property to its default value</li>
+                        <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textDecorationThickness="5px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex14">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex14 {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-transform">15. Text Transform</span></h3>
+                    <ul>
+                        <li>Controls the capitalization of text</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none:	No capitalization. The text renders as it is. This is default	
+                            	
+                            
+                            
+                            
+                            </li>
+                        <li>capitalize:	Transforms the first character of each word to uppercase</li>
+                        <li>uppercase:	Transforms all characters to uppercase	</li>
+                        <li>lowercase:	Transforms all characters to lowercase	</li>
+                        <li>initial:	Sets this property to its default value</li>
+                        <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textTransform="uppercase"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex15">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, aperiam!</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex15 {
+    text-transform: capitalize;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="overflow">16. Overflow</span></h3>
+                    <ul>
+                    <li>
+                        Specifies what should happen if
+                        content overflows an element's box.
+                    </li>
+                    <li>
+                        This property specifies whether to
+                        clip content or to add scrollbars
+                        when an element's content is too big
+                        to fit in a specified area.
+                    </li>
+                    <li>
+                        The overflow property only works for
+                        block elements with a specified
+                        height.
+                    </li>
+                    <li>For Text see <a href="#text-overflow">Text Overflow</a></li>
+                <h4 class="title-css">Property Values:</h4>
+                    <li>
+                        visible: The overflow is not
+                        clipped. It renders outside the
+                        element's box. This is default
+                    </li>
+                    <li>
+                        hidden: The overflow is clipped, and
+                        the rest of the content will be
+                        invisible. Content can be scrolled
+                        programmatically (e.g. by setting
+                        scrollLeft or scrollTo())
+                    </li>
+                    <li>
+                        clip: The overflow is clipped, and
+                        the rest of the content will be
+                        invisible. Forbids scrolling,
+                        including programmatic scrolling.
+                    </li>
+                    <li>
+                        scroll: The overflow is clipped, but
+                        a scroll-bar is added to see the
+                        rest of the content
+                    </li>
+                    <li>
+                        auto: If overflow is clipped, a
+                        scroll-bar should be added to see
+                        the rest of the content
+                    </li>
+                    <li>
+                        initial: Sets this property to its
+                        default value.
+                    </li>
+                    <li>
+                        inherit: Inherits this property from
+                        its parent element.
+                    </li>
+                </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.overflow="scroll"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><h4 class="title-css">Overflow: Scroll for an image</h4>
+                                    <div id="ex16-1"><img src="../../../images/Calcifer-gif.gif" alt=""></div>
+                                    <h4 class="title-css">Overflow: Hidden for text.</h4>
+                                    <ul><li>See <a href="#text-overflow">Text Overflow</a></li></ul>
+                                    <div id="ex16-2">This is a very long paragraph, that has 4 lines. This is the second line. This is the third line. This is the 4th line.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex16-1 {
+    height: 150px;
+    width: 150px;
+    overflow: scroll;
+}
+
+#ex16-2 {
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    overflow: hidden;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="text-overflow">17. Text Overflow</span></h3>
+                    <ul>
+                        <li>Specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.</li>
+                        Both of the following properties are required for text-overflow:
+                        <ul><li>white-space: nowrap;</li>
+                        <li>overflow: hidden;</li></ul>
+                        <h4 class="title-css">Property Values:</h4>
+                        <ul><li>clip:	Default value. The text is clipped and not accessible	
+                            	
+                            	
+                            
+                            .</li>
+                        <li>ellipsis:	Render an ellipsis ("...") to represent the clipped text</li>
+                        <li>string:	Render the given string to represent the clipped text</li>
+                        <li>initial:	Sets this property to its default value</li>
+                        <li>inherit:	Inherits this property from its parent element</li></ul>
+
+
+
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.textOverflow="ellipsis"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex17">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sed eius nemo aliquid nostrum temporibus quod praesentium reprehenderit placeat ipsum.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex17 {
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="letter-spacing">18. Letter Spacing</span></h3>
+                    <ul>
+                        <li>Increases or decreases the space between characters in a text.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>normal:	Defines normal space between characters. This is default	
+                            
+                            </li>
+                        <li>length:	Defines a length that is used as the space between characters (negative values are also allowed). Read about length units	
+                            </li>
+                        <li>initial:	Sets this property to its default value.</li>
+                        <li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.letterSpacing="3px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex18">Lorem ipsum dolor sit amet.</div></td>
+                                <td>
+                                    
+                                    <pre><code>#ex18 {
+    letter-spacing: 6px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="word-wrap">19. Word Wrap</span></h3>
+                    <ul>
+                        <li>Allows long words to be able to be broken and wrap onto the next line</li>
+                        <h4 class="title-css">Property Values:</h4>
+<li>normal:	Break words only at allowed break points. This is default	
+    
+    
+    </li>
+<li>break-word:	Allows unbreakable words to be broken	</li>
+<li>initial:	Sets this property to its default value.</li>
+<li>inherit:	Inherits this property from its parent element.</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.wordWrap="break-word"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex19">kdhfskjdfiodsfjoiwejfjkdngjkdfgilfkgfdjkgnjkdfgnkdjfg</div></td>
+                                <td>
+                                    <pre><code>#ex19 {
+    width: 100px;
+    word-wrap: break-word;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="word-break">20. Word Break</span></h3>
+                    <ul>
+                        <li>Specifies how words should break when reaching the end of a line.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>normal:	Default value. Uses default line break rules	
+                            	
+                            
+                            
+                           </li>
+                        <li>break-all:	To prevent overflow, word may be broken at any character</li>
+                        <li>keep-all: 	Word breaks should not be used for Chinese/Japanese/Korean (CJK) text. Non-CJK text behavior is the same as value "normal"	
+                            </li>
+                        <li>break-word:	To prevent overflow, word may be broken at arbitrary points	</li>
+                        <li>initial:	Sets this property to its default value.</li>
+                        <li> inherit:	Inherits this property from its parent element</li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.wordBreak="break-all"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex20">This is a sentence to test out the word-break property</div></td>
+                                <td>
+                                    <pre><code>#ex20 {
+    width: 150px;
+    word-break: break-all;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+
+                <!-- <section>
+                    <h3><span id="font-size">2. Font Size</span></h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code></code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>HTML</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex2"></div></td>
+                                <td>
+                                    <h4 class="title-css">HTML</h4>
+                                    <pre><code></code></pre>
+                                </td>
+                                <td>
+                                    
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section> -->
+                <br /><br />
+            </article>
+        </main>
+        <footer></footer>
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>

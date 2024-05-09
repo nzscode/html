@@ -1,0 +1,104 @@
+#ex1 {
+    color: hotpink;
+}
+#ex2 {
+    font-size: 150%;
+}
+#ex3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+#ex4 {
+    font-weight: 600;
+}
+#ex5 {
+    font-style: italic;
+}
+#ex6 {
+    text-align: right;
+}
+
+#ex7 {
+    text-align: justify;
+    text-align-last: right;
+}
+
+#ex8 {
+    direction: rtl;
+}
+
+#ex9 {
+    vertical-align: super;
+}
+
+#ex10-1 {
+    text-decoration: overline wavy purple;
+}
+
+#ex10-2 {
+    text-decoration: underline;
+}
+
+#ex10-3 {
+    text-decoration: line-through;
+    text-decoration-style: dashed;
+    text-decoration-color: blue;
+}
+
+#ex11 {
+    text-decoration: overline;
+}
+
+#ex12 {
+    text-decoration: overline;
+    text-decoration-color: green;
+}
+
+#ex13 {
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+}
+
+#ex14 {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+#ex15 {
+    text-transform: capitalize;
+}
+
+#ex16-1 {
+    height: 150px;
+    width: 150px;
+    overflow: scroll;
+}
+
+#ex16-2 {
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    overflow: hidden;
+}
+
+#ex17 {
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#ex18 {
+    letter-spacing: 6px;
+}
+
+#ex19 {
+    width: 100px;
+    word-wrap: break-word;
+}
+
+#ex20 {
+    width: 150px;
+    word-break: break-all;
+}

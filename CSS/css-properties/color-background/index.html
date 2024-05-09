@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="stylesheet" href="./color-background.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>CSS Color & Background Properties</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Color & Background Properties</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>CSS Properties</p>
+                    <ul>
+                        <li><a href="#background">1. Background</a></li>
+                        <li>
+                            <a href="#background-color">2. Background-Color</a>
+                        </li>
+                        <li>
+                            <a href="#background-image">3. Background-Image</a>
+                        </li>
+                        <ul class="tab20">
+                            <li><a href="#bckg-image">Background Image</a></li>
+                            <li>
+                                <a href="#linear-gradient-multiple-colors"
+                                    >Linear Gradient with Multiple Colors</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#linear-gradient-percentages"
+                                    >Linear Gradient with percentage Sections</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#repeating-linear-gradient"
+                                    >Repeating Linear Gradient</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#radial-gradient">Radial Gradient</a>
+                            </li>
+                            <li>
+                                <a href="#repeating-radial-gradient"
+                                    >Repeating Radial Gradient</a
+                                >
+                            </li>
+                        </ul>
+
+                        <li>
+                            <a href="#background-repeat"
+                                >4. Background-Repeat</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#background-attachment"
+                                >5. Background-Attachment</a
+                            >
+                        </li>
+                        <ul class="tab20">
+                            <li>
+                                <a href="#bckg-attachment-scroll">Scroll</a>
+                            </li>
+                            <li><a href="#bckg-attachment-fixed">Fixed</a></li>
+                            <li><a href="#bckg-attachment-local">Local</a></li>
+                        </ul>
+
+                        <li>
+                            <a href="#background-position"
+                                >6. Background-Position</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <h2>CSS Color & Background Properties</h2>
+                <br />
+                <br />
+                <section>
+                    <h3>
+                        <span id="background" class="anchor-centered"
+                            >1. Background(shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specify all the background properties in one single
+                            property.
+                        </li>
+                        <li>
+                            When using the shorthand property the order of the
+                            property values is:
+                            <ul>
+                                <li>background-color</li>
+                                <li>background-image</li>
+                                <li>background-repeat</li>
+                                <li>background-attachment</li>
+                                <li>background-position</li>
+                            </ul>
+
+                            It does not matter if one of the property values is
+                            missing, as long as the other ones are in this
+                            order. Note that we do not use the
+                            background-attachment property in the examples
+                            above, as it does not have a value.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li></li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.background = "color image repeat attachment position size origin clip|initial|inherit"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex1"></div></td>
+                                <td>
+                                    <pre><code>#ex1 {
+    width: 200px;
+    height: 200px;
+    background: blue url("../../..//images/bubbles-colors.png") no-repeat left
+        bottom;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="background-color" class="anchor-centered"
+                            >2. Background Color</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Sets the background color of an element.</li>
+                        <li>
+                            The background of an element is the total size of
+                            the element, including padding and border (but not
+                            the margin).
+                        </li>
+                        <li>
+                            Use a background color and a text color that makes
+                            the text easy to read.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            color: Specifies the background color. Look at CSS
+                            Color Values for a complete list of possible color
+                            values.
+                        </li>
+                        <li>
+                            transparent: Specifies that the background color
+                            should be transparent. This is default
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.backgroundColor="#00FF00"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div id="ex2"></div></td>
+                                <td>
+                                    <pre><code>#ex2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="background-image" class="anchor-centered"
+                            >3. Background Image</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets one or more background images for an element.
+                        </li>
+                        <li>
+                            By default, a background-image is placed at the
+                            top-left corner of an element, and repeated both
+                            vertically and horizontally.
+                        </li>
+                        <li>
+                            The background of an element is the total size of
+                            the element, including padding and border (but not
+                            the margin).
+                        </li>
+                        <li>
+                            Always set a background-color to be used if the
+                            image is unavailable.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            url('URL'): The URL to the image. To specify more
+                            than one image, separate the URLs with a comma
+                        </li>
+                        <li>
+                            none: No background image will be displayed. This is
+                            default
+                        </li>
+                        <li>
+                            conic-gradient(): Sets a conic gradient as the
+                            background image. Define at least two colors
+                        </li>
+                        <li>
+                            linear-gradient(): Sets a linear gradient as the
+                            background image. Define at least two colors (top to
+                            bottom)
+                        </li>
+                        <li>
+                            radial-gradient(): Sets a radial gradient as the
+                            background image. Define at least two colors (center
+                            to edges)
+                        </li>
+                        <li>
+                            repeating-conic-gradient(): Repeats a conic gradient
+                        </li>
+                        <li>
+                            repeating-linear-gradient(): Repeats a linear
+                            gradient
+                        </li>
+                        <li>
+                            repeating-radial-gradient(): Repeats a radial
+                            gradient
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.backgroundImage="url(img_tree.gif)"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="bckg-image"
+                                            class="anchor-centered"
+                                            >Background Image</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-1"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3 {
+    width: 150px;
+    height: 150px;
+    background-image: url("../../../images/bubbles-colors.png");
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="linear-gradient-multiple-colors"
+                                            class="anchor-centered"
+                                            >Linear Gradient with Multiple
+                                            Colors</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-2"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-2 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(orange, green, yellow, blue, red);
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="linear-gradient-percentages"
+                                            class="anchor-centered"
+                                            >Linear Gradient with Percentage
+                                            Sections</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-3"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-3 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(green 50%, yellow, blue 25%, red);
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="repeating-linear-gradient"
+                                            class="anchor-centered"
+                                            >Repeating Linear Gradient</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-4"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-4 {
+    width: 150px;
+    height: 150px;
+    background-image: repeating-linear-gradient(hotpink, blue 30%, yellow);
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="radial-gradient"
+                                            class="anchor-centered"
+                                            >Radial Gradient</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-5"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-5 {
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(purple, aqua, yellow);
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="repeating-radial-gradient"
+                                            class="anchor-centered"
+                                            >Repeating Radial Gradient</span
+                                        >
+                                    </h4>
+                                    <br />
+                                    <div id="ex3-6"></div>
+                                    <br />
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-6 {
+    width: 150px;
+    height: 150px;
+    background-image: repeating-radial-gradient(violet, yellow, blue 25%);
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="background-repeat" class="anchor-centered"
+                            >4. Background Repeat</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets if/how a background image will be repeated.
+                        </li>
+                        <li>
+                            By default, a background-image is repeated both
+                            vertically and horizontally.
+                        </li>
+                        <li>
+                            The background image is placed according to the
+                            background-position property. If no
+                            background-position is specified, the image is
+                            always placed at the element's top left corner.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            repeat: The background image is repeated both
+                            vertically and horizontally. The last image will be
+                            clipped if it does not fit. This is default
+                        </li>
+                        <li>
+                            repeat-x: The background image is repeated only
+                            horizontally
+                        </li>
+                        <li>
+                            repeat-y: The background image is repeated only
+                            vertically
+                        </li>
+                        <li>
+                            no-repeat: The background-image is not repeated. The
+                            image will only be shown once
+                        </li>
+                        <li>
+                            space: The background-image is repeated as much as
+                            possible without clipping. The first and last image
+                            is pinned to either side of the element, and
+                            whitespace is distributed evenly between the images
+                        </li>
+                        <li>
+                            round: The background-image is repeated and squished
+                            or stretched to fill the space (no gaps)
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.backgroundRepeat="repeat-x"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="ex4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4 {
+    height: 150px;
+    width: 150px;
+    background-color: salmon;
+    background-image: url(../../../images/dbl-color-img.png);
+    background-repeat: repeat-y;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="background-attachment" class="anchor-centered"
+                            >5. Background Attachment</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets whether a background image scrolls with the
+                            rest of the page, or is fixed.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            scroll: The background image will scroll with the
+                            page. This is default
+                        </li>
+                        <li>
+                            fixed: The background image will not scroll with the
+                            page
+                        </li>
+                        <li>
+                            local: The background image will scroll with the
+                            element's contents
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.backgroundAttachment="fixed"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="bckg-attachment-scroll"
+                                            class="anchor-centered"
+                                            >Background Attachment: Scroll</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-1 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: scroll;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="bckg-attachment-fixed"
+                                            class="anchor-centered"
+                                            >Background Attachment: Fixed</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-2 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: fixed;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="bckg-attachment-local"
+                                            class="anchor-centered"
+                                            >Background Attachment: Local</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-3 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: local;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="background-position" class="anchor-centered"
+                            >6. Background Position</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets the starting position of a background image.
+                        </li>
+                        <li>
+                            By default, a background-image is placed at the
+                            top-left corner of an element, and repeated both
+                            vertically and horizontally.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            left top left center left bottom right top right
+                            center right bottom center top center center center
+                            bottom: If you only specify one keyword, the other
+                            value will be "center"
+                        </li>
+                        <li>
+                            x% y%: The first value is the horizontal position
+                            and the second value is the vertical. The top left
+                            corner is 0% 0%. The right bottom corner is 100%
+                            100%. If you only specify one value, the other value
+                            will be 50%. Default value is: 0% 0%
+                        </li>
+                        <li>
+                            xpos ypos: The first value is the horizontal
+                            position and the second value is the vertical. The
+                            top left corner is 0 0. Units can be pixels (0px
+                            0px) or any other CSS units. If you only specify one
+                            value, the other value will be 50%. You can mix %
+                            and positions
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.backgroundPosition="center"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex6"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex6 {
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+
+                <!-- 
+                <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th>CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br>
+        -->
+            </article>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../../../html-basics/">HTML Basics</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+#ex1 {
+    width: 200px;
+    height: 200px;
+    background: blue url("../../..//images/bubbles-colors.png") no-repeat left
+        bottom;
+}
+
+#ex2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+#ex3-1 {
+    width: 150px;
+    height: 150px;
+    background-image: url("../../../images/bubbles-colors.png");
+}
+#ex3-2 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(orange, green, yellow, blue, red);
+}
+#ex3-3 {
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(green 50%, yellow, blue 25%, red);
+}
+#ex3-4 {
+    width: 150px;
+    height: 150px;
+    background-image: repeating-linear-gradient(hotpink, blue 30%, yellow);
+}
+#ex3-5 {
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(purple, aqua, yellow);
+}
+#ex3-6 {
+    width: 150px;
+    height: 150px;
+    background-image: repeating-radial-gradient(violet, yellow, blue 25%);
+}
+#ex4 {
+    height: 150px;
+    width: 150px;
+    background-color: salmon;
+    background-image: url(../../../images/dbl-color-img.png);
+    background-repeat: repeat-y;
+}
+#ex5-1 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: scroll;
+}
+#ex5-2 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: fixed;
+}
+#ex5-3 {
+    height: 150px;
+    width: 150px;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-attachment: local;
+}
+#ex6 {
+    height: 200px;
+    width: 200px;
+    background-color: lightpink;
+    background-image: url(../../../images/bubbles-colors.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
