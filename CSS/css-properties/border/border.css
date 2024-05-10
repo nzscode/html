@@ -1,0 +1,224 @@
+#ex1 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid crimson;
+}
+
+#ex2-1 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin medium thick 10px;
+}
+
+#ex2-2 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin medium thick;
+}
+
+#ex2-3 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin thick;
+}
+
+#ex2-4 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: medium;
+}
+
+#ex3-1 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed double solid;
+    margin-bottom: 20px;
+}
+
+#ex3-2 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed double;
+    margin-bottom: 20px;
+}
+
+#ex3-3 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed;
+    margin-bottom: 20px;
+}
+
+#ex3-4 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted;
+    margin-bottom: 20px;
+}
+
+#ex4-1 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange pink blue;
+    margin-bottom: 15px;
+}
+
+#ex4-2 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange pink;
+    margin-bottom: 15px;
+}
+
+#ex4-3 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange;
+    margin-bottom: 15px;
+}
+
+#ex4-4 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow;
+    margin-bottom: 15px;
+}
+
+#ex5-1 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+
+#ex5-2 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid orange;
+    border-radius: 2px 20px;
+}
+
+#ex5-3 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid hotpink;
+    border-radius: 2px 20px 50px;
+}
+
+#ex5-4 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid brown;
+    border-radius: 2px 20px 50px 75px;
+}
+#ex5-5 {
+    height: 150px;
+    width: 150px;
+    border: 5px dotted green;
+    border-top-left-radius: 75px;
+}
+#ex6 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border: 5px solid transparent;
+    border-image: url(../../../images/border-image1.png) 4 round;
+}
+
+#ex7-1 {
+    height: 150px;
+    width: 150px;
+    border: 10px solid;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+}
+
+#ex7-2 {
+    height: 150px;
+    width: 150px;
+    border: 20px solid;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: fill;
+}
+
+#ex8 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+}
+
+#ex9-1 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: ;
+}
+
+#ex10-1 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: round;
+    margin: 40px 0 40px 20px;
+}
+#ex10-2 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: repeat;
+    margin: 40px 0 40px 20px;
+}
+#ex10-3 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: stretch;
+    margin: 40px 0 40px 20px;
+}
+#ex10-4 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: space;
+    margin: 40px 0 40px 20px;
+}

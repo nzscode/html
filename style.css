@@ -71,7 +71,7 @@ h1#title-bar {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 14px;
     color: #818181;
@@ -282,10 +282,18 @@ hr {
 .anchor-centered {
     padding-top: 150px;
 }
-#nav ul.tab20 {
+
+#nav ol ol {
+    list-style: lower-alpha;
+}
+
+#nav ol ul {
     margin-left: 20px;
 }
 
+#nav ol ul li {
+    list-style: lower-roman;
+}
 footer {
     background-color: #571212;
     color: #ffffffb1;
@@ -314,4 +322,8 @@ footer a:hover {
 
 .footer-column {
     padding-left: 50px;
+}
+
+ol {
+    color: #504f4f;
 }

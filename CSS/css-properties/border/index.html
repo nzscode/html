@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./border.css" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>CSS Border Property</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Border Property</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>CSS Border</p>
+                    <ol>
+                        <li><a href="#border">Border (shorthand)</a></li>
+                        <li><a href="#border-width">Border Width</a></li>
+                        <li><a href="#border-style">Border Style</a></li>
+                        <li><a href="#border-color">Border Color</a></li>
+                        <li><a href="#border-radius">Border Radius</a></li>
+                        <li>
+                            <a href="#border-block">Border Block (shorthand)</a>
+                        </li>
+                        <li>
+                            <a href="#border-block-width">Border Block Width</a>
+                        </li>
+                        <li>
+                            <a href="#border-block-style">Border Block Style</a>
+                        </li>
+                        <li>
+                            <a href="#border-block-color">Border Block Color</a>
+                        </li>
+                        <li>
+                            <a href="#border-block-start-end"
+                                >Border Block Start End (shorthand)</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-start-end-width"
+                                >Border Block Start End Width</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-start-end-style"
+                                >Border Block Start End Style</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-start-end-color"
+                                >Border Block Start End Color</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-end"
+                                >Border Block End (shorthand)</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-end-width"
+                                >Border Block End Width</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-end-style"
+                                >Border Block End Style</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-block-end-color"
+                                >Border Block End Color</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-top-bottom-left-right"
+                                >Border Top|Bottom|Left"Right (shorthand)</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-top-bottom-left-right-width"
+                                >Border Top|Bottom|Left"Right Width</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-top-bottom-left-right-style"
+                                >Border Top|Bottom|Left"Right Style</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-top-bottom-left-right-color"
+                                >Border Top|Bottom|Left"Right Color</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-image">Border Image (shorthand)</a>
+                        </li>
+                        <li>
+                            <a href="#border-image-source"
+                                >Border Image Source</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-image-slice"
+                                >Border Image Slice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#border-image-width">Border Image Width</a>
+                        </li>
+                        <li>
+                            <a href="#border-image-outset"
+                                >Border Image Outset</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-image-repeat"
+                                >Border Image Repeat</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-inline"
+                                >Border Inline(shorthand)</a
+                            >
+                        </li>
+                        <li><a href="#border-inline">Border Inline</a></li>
+                        <li>
+                            <a href="#border-inline-width"
+                                >Border Inline Width</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-inline-style"
+                                >Border Inline Style</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#border-inline-color"
+                                >Border Inline Color</a
+                            >
+                        </li>
+                        <!-- li*6>a[href="#"]> -->
+                        <!-- <li><a href="#"></a></li> -->
+                    </ol>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h3>
+                        <span id="border" class="anchor-centered"
+                            >Border (Shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Is a shorthand property for:
+                            <ul>
+                                <li>border-width</li>
+                                <li>border-style (required)</li>
+                                <li>border-color</li>
+                            </ul>
+                        </li>
+                        <li>
+                            If border-color is omitted, the color applied will
+                            be the color of the text.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            border-width: Specifies the width of the border.
+                            Default value is "medium"
+                        </li>
+                        <li>
+                            border-style: Specifies the style of the border.
+                            Default value is "none"
+                        </li>
+                        <li>
+                            border-color: Specifies the color of the border.
+                            Default value is the color of the text
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.border="3px solid blue"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex1 {
+                                        width: 150px;
+                                        height: 150px;
+                                        border: 7px solid crimson;
+                                    }</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-width" class="anchor-centered"
+                            >Border Width</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Sets the width of an element's four borders.</li>
+                        <li>This property can have from one to four values.</li>
+                        <ul>
+                            <li>
+                                <b
+                                    ><u
+                                        >border-width: thin medium thick
+                                        10px;</u
+                                    ></b
+                                >
+                                <ul>
+                                    <li>top border is thin</li>
+                                    <li>right border is medium</li>
+                                    <li>bottom border is thick</li>
+                                    <li>left border is 10px</li>
+                                </ul>
+                            </li>
+                            <br />
+                            <li>
+                                <b><u>border-width: thin medium thick;</u></b>
+                                <ul>
+                                    <li>top border is thin</li>
+                                    <li>right and left borders are medium</li>
+                                    <li>bottom border is thick</li>
+                                </ul>
+                            </li>
+                            <br />
+                            <li>
+                                <b><u>border-width: thin medium;</u></b>
+                                <ul>
+                                    <li>top and bottom borders are thin</li>
+                                    <li>right and left borders are medium</li>
+                                </ul>
+                            </li>
+                            <br />
+                            <li>
+                                <b><u>border-width: thin;</u></b>
+                                <ul>
+                                    <li>All borders are thin</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li>
+                            Always declare the border-style property before the
+                            border-width property. An element must have borders
+                            before you can set the width.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            medium: Specifies a medium border. This is default
+                        </li>
+                        <li>thin: Specifies a thin border</li>
+                        <li>thick: Specifies a thick border</li>
+                        <li>
+                            length: Allows you to define the thickness of the
+                            border. Read about length units
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderWidth="1px 5px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="all-border-widths"
+                                            class="anchor-centered"
+                                            >All Four Borders of Different
+                                            Widths</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex2-1 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin medium thick 10px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="three-border-widths"
+                                            class="anchor-centered"
+                                            >Three Border Widths</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex13-2 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin medium thick;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="two-border-widths"
+                                            class="anchor-centered"
+                                            >Two Border Widths</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex2-3 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: thin thick;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="osame-border-width"
+                                            class="anchor-centered"
+                                            >Same Border Width</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex2-4 {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: medium;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-style" class="anchor-centered"
+                            >Border Style</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Sets the style of an element's four borders.</li>
+                        <li>This property can have from one to four values.</li>
+                        <ul>
+                            <li>
+                                <b
+                                    ><u
+                                        >border-style: dotted solid double
+                                        dashed</u
+                                    ></b
+                                >
+                            </li>
+                            <ul>
+                                <li>top border is dotted</li>
+                                <li>right border is solid</li>
+                                <li>bottom border is double</li>
+                                <li>left border is dashed</li>
+                            </ul>
+                            <br />
+                            <li>
+                                <b><u>border-style: dotted solid double</u></b>
+                            </li>
+                            <ul>
+                                <li>top border is dotted</li>
+                                <li>right and left borders are solid</li>
+                                <li>bottom border is double</li>
+                            </ul>
+                            <br />
+                            <li>
+                                <b><u>border-style: dotted solid</u></b>
+                            </li>
+                            <ul>
+                                <li>top and bottom borders are dotted</li>
+                                <li>right and left borders are solid</li>
+                            </ul>
+                            <br />
+                            <li>
+                                <b><u>border-style: dotted</u></b>
+                            </li>
+                            <ul>
+                                <li>All borders are dotted</li>
+                            </ul>
+                        </ul>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none: Default value. Specifies no border</li>
+                        <li>
+                            hidden: The same as "none", except in border
+                            conflict resolution for table elements
+                        </li>
+                        <li>dotted: Specifies a dotted border</li>
+                        <li>dashed: Specifies a dashed border</li>
+                        <li>solid: Specifies a solid border</li>
+                        <li>double: Specifies a double border</li>
+                        <li>
+                            groove: Specifies a 3D grooved border. The effect
+                            depends on the border-color value
+                        </li>
+                        <li>
+                            ridge: Specifies a 3D ridged border. The effect
+                            depends on the border-color value
+                        </li>
+                        <li>
+                            inset: Specifies a 3D inset border. The effect
+                            depends on the border-color value
+                        </li>
+                        <li>
+                            outset: Specifies a 3D outset border. The effect
+                            depends on the border-color value
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderStyle="dotted double"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="four-border-styles"
+                                            class="anchor-centered"
+                                            >Four Seperate Border Styles</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-1 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed double solid;
+    margin-bottom: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="three-border-styles"
+                                            class="anchor-centered"
+                                            >Three Border Styles</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-2 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed double;
+    margin-bottom: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="two-border-styles"
+                                            class="anchor-centered"
+                                            >Two Border Styles</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-3 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted dashed;
+    margin-bottom: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="one-border-style"
+                                            class="anchor-centered"
+                                            >One Border Style</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-4 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: dotted;
+    margin-bottom: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-color" class="anchor-centered"
+                            >Border Color</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Sets the color of an element's four borders.</li>
+                        <li>Can have from one to four values.</li>
+                        <ul>
+                            <li>
+                                If the border-color property has four values:
+                            </li>
+                            <b><u>border-color: red green blue pink;</u></b>
+                            <ul>
+                                <li>top border is red</li>
+                                <li>right border is green</li>
+                                <li>bottom border is blue</li>
+                                <li>left border is pink</li>
+                            </ul>
+                            <br />
+                            <li>
+                                If the border-color property has three values:
+                            </li>
+                            <b><u>border-color: red green blue;</u></b>
+                            <ul>
+                                <li>top border is red</li>
+                                <li>right and left borders are green</li>
+                                <li>bottom border is blue</li>
+                            </ul>
+                            <br />
+                            <li>
+                                If the border-color property has two values:
+                            </li>
+                            <b><u>border-color: red green;</u></b>
+                            <ul>
+                                <li>top and bottom borders are red</li>
+                                <li>right and left borders are green</li>
+                            </ul>
+                            <br />
+                            <li>If the border-color property has one value:</li>
+                            <b><u>border-color: red;</u></b>
+                            <ul>
+                                <li>All four borders are red</li>
+                            </ul>
+                        </ul>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            color: Specifies the border color. Look at CSS Color
+                            Values for a complete list of possible color values.
+                            Default color is the current color of the element
+                        </li>
+                        <li>
+                            transparent: Specifies that the border color should
+                            be transparent
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderColor="#FF0000 blue"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="four-border-values"
+                                            class="anchor-centered"
+                                            >Four Border Values</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-1 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow;
+    margin-bottom: 15px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="three-border-values"
+                                            class="anchor-centered"
+                                            >Three Border Values</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-2 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange;
+    margin-bottom: 15px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="two-border-values"
+                                            class="anchor-centered"
+                                            >Two Border Values</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-3 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange pink;
+    margin-bottom: 15px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="one-border-value"
+                                            class="anchor-centered"
+                                            >One Border Value</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-4 {
+    height: 150px;
+    width: 150px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: yellow orange pink blue;
+    margin-bottom: 15px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-sides" class="anchor-centered"
+                            >Border Sides: Top|Right|Bottom|Left</span
+                        >
+                    </h3>
+                    <ul>
+                        <li></li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li></li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code></code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-size-style"
+                                            class="anchor-centered"
+                                            >Border Size Style</span
+                                        >
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-size-width"
+                                            class="anchor-centered"
+                                            >Border Size Width</span
+                                        >
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-size-color"
+                                            class="anchor-centered"
+                                            >Border Size Color</span
+                                        >
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-radius" class="anchor-centered"
+                            >Border Radius</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Defines the radius of the element's corners.</li>
+                        <li>
+                            Can have from one to four values:
+                            <ul>
+                                <li>Four Values:</li>
+                                <ul>
+                                    <li>
+                                        first value applies to top-left corner,
+                                        second value applies to top-right
+                                        corner, third value applies to
+                                        bottom-right corner, and fourth value
+                                        applies to bottom-left corner
+                                    </li>
+                                </ul>
+
+                                <li>Three Values:</li>
+                                <ul>
+                                    <li>
+                                        first value applies to top-left corner,
+                                        second value applies to top-right and
+                                        bottom-left corners, and third value
+                                        applies to bottom-right corner
+                                    </li>
+                                </ul>
+
+                                <li>Two Values:</li>
+                                <ul>
+                                    <li>
+                                        first value applies to top-left and
+                                        bottom-right corners, and the second
+                                        value applies to top-right and
+                                        bottom-left corners
+                                    </li>
+                                </ul>
+
+                                <li>One Value:</li>
+                                <ul>
+                                    <li>
+                                        Applies to all four corners, which are
+                                        rounded equally
+                                    </li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length: Defines the shape of the corners. Default
+                            value is 0. Read about length units
+                        </li>
+                        <li>%: Defines the shape of the corners in %</li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderRadius="25px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="all-same-corners"
+                                            class="anchor-centered"
+                                            >All Same Corners</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-1 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="two-corners"
+                                            class="anchor-centered"
+                                            >Two Corners</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-2 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid orange;
+    border-radius: 2px 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="three-corners"
+                                            class="anchor-centered"
+                                            >Three Corners</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-3 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid hotpink;
+    border-radius: 2px 20px 50px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="four-individual-corners"
+                                            class="anchor-centered"
+                                            >Four Individual Corners</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-4 {
+    height: 150px;
+    width: 150px;
+    border: 3px solid brown;
+    border-radius: 2px 20px 50px 75px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="one-corner"
+                                            class="anchor-centered"
+                                            >One Corner</span
+                                        >
+                                    </h4>
+                                    <div id="ex5-5"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-5 {
+    height: 150px;
+    width: 150px;
+    border: 5px dotted green;
+    border-top-left-radius: 75px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-image" class="anchor-centered"
+                            >Border Image</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specify an image to be used instead of the normal
+                            border around an element.
+                        </li>
+                        <li>
+                            Shorthand property for:
+                            <ul>
+                                <li>border-image-source</li>
+                                <li>border-image-slice</li>
+                                <li>border-image-width</li>
+                                <li>border-image-outset</li>
+                                <li>border-image-repeat</li>
+                            </ul>
+                        </li>
+                        <li>The property has three parts:</li>
+                        <ul>
+                            <li>The image to use as the border</li>
+                            <li>Where to slice the image</li>
+                            <li>
+                                Define whether the middle sections should be
+                                repeated or stretched
+                            </li>
+                        </ul>
+                        <li>
+                            The border-image property takes the image and slices
+                            it into nine sections, like a tic-tac-toe board. It
+                            then places the corners at the corners, and the
+                            middle sections are repeated or stretched as you
+                            specify.
+                        </li>
+                        <li>
+                            For border-image to work, the element also needs the
+                            border property set!
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            border-image: A shorthand property for setting all
+                            the border-image-* properties
+                        </li>
+
+                        <li>
+                            border-image-source: Specifies the path to the image
+                            to be used as a border
+                        </li>
+                        <li>
+                            border-image-slice: Specifies how to slice the
+                            border image
+                        </li>
+                        <li>
+                            border-image-width: Specifies the widths of the
+                            border image
+                        </li>
+                        <li>
+                            border-image-outset: Specifies the amount by which
+                            the border image area extends beyond the border box
+                        </li>
+                        <li>
+                            border-image-repeat: Specifies whether the border
+                            image should be repeated, rounded or stretched
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderImage="url(border.png) 30 round"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image"
+                                            class="anchor-centered"
+                                            >Border Image</span
+                                        >
+                                    </h4>
+                                    <div id="ex6"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex6 {
+    height: 150px;
+    width: 200px;
+    border: 5px solid transparent;
+    border-image: url(../../../images/border-image1.png) 4 round;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="" class="anchor-centered"></span></h3>
+                    <ul>
+                        <li>
+                            Specifies how to slice the image specified by
+                            border-image-source.
+                        </li>
+                        <li>
+                            The image is always sliced into nine sections: four
+                            corners, four edges and the middle.
+                        </li>
+                        <li>
+                            The "middle" part is treated as fully transparent,
+                            unless the fill keyword is set.
+                        </li>
+                        <li>
+                            Also look at the border-image property (a shorthand
+                            property for setting all the border-image-*
+                            properties).
+                        </li>
+                        <li>
+                            The border-image-slice property can take from one to
+                            four values. If the fourth value is omitted, it is
+                            the same as the second. If the third one is also
+                            omitted, it is the same as the first. If the second
+                            one is also omitted, it is the same as the first.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            number: The number(s) represent pixels for raster
+                            images or coordinates for vector images
+                        </li>
+                        <li>
+                            %: Percentages are relative to the height or width
+                            of the image
+                        </li>
+                        <li>
+                            fill: Causes the middle part of the image to be
+                            displayed
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderImageSlice="30%"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-slice"
+                                            class="anchor-centered"
+                                            >Border Image Slice</span
+                                        >
+                                    </h4>
+                                    <div id="ex7-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex7 {
+    height: 150px;
+    width: 150px;
+    border: 10px solid;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-fill"
+                                            class="anchor-centered"
+                                            >Border Image Fill</span
+                                        >
+                                    </h4>
+                                    <div id="ex7-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex7-2 {
+    height: 150px;
+    width: 150px;
+    border: 10px solid;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: fill;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-image-width" class="anchor-centered"
+                            >Border Image Width</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Specifies the width of the border image.</li>
+                        <li>
+                            Also look at the border-image property (a shorthand
+                            property for setting all the border-image-*
+                            properties).
+                        </li>
+                        <li>
+                            The border-image-width property can take from one to
+                            four values (top, right, bottom, and left sides). If
+                            the fourth value is omitted, it is the same as the
+                            second. If the third one is also omitted, it is the
+                            same as the first. If the second one is also
+                            omitted, it is the same as the first.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length: A length unit (px) specifying the size of
+                            the border-width
+                        </li>
+                        <li>
+                            number: Default value 1. Represents multiples of the
+                            corresponding border-width
+                        </li>
+                        <li>
+                            %: Refers to the size of the border image area: the
+                            width of the area for horizontal offsets, the height
+                            for vertical offsets
+                        </li>
+                        <li>
+                            auto: If specified, the width is the intrinsic width
+                            or height of the corresponding image slice
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderImageWidth="20px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex8"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex8 {
+    height: 150px;
+    width: 150px;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-image-outset" class="anchor-centered"
+                            >Border Image Outset</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the amount by which the border image area
+                            extends beyond the border box.
+                        </li>
+                        <li>
+                            Also look at the border-image property (a shorthand
+                            property for setting all the border-image-*
+                            properties).
+                        </li>
+                        <li>
+                            The border-image-outset property can take from one
+                            to four values (top, right, bottom, and left sides).
+                            If the fourth value is omitted, it is the same as
+                            the second. If the third one is also omitted, it is
+                            the same as the first. If the second one is also
+                            omitted, it is the same as the first.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length: A length unit specifying how far from the
+                            edges the border-image will appear. Default value is
+                            0
+                        </li>
+                        <li>
+                            number: Represent multiples of the corresponding
+                            border-width
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderImageOutset="10px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-outset-length"
+                                            class="anchor-centered"
+                                            >Length</span
+                                        >
+                                    </h4>
+                                    <div id="ex9-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="border-image-repeat" class="anchor-centered"
+                            >Border Image Repeat</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies whether the border image should be
+                            repeated, rounded, spaced or stretched.
+                        </li>
+                        <li>
+                            Also look at the border-image property (a shorthand
+                            property for setting all the border-image-*
+                            properties).
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            stretch: Default value. The image is stretched to
+                            fill the area
+                        </li>
+                        <li>
+                            repeat: The image is tiled (repeated) to fill the
+                            area
+                        </li>
+                        <li>
+                            round: The image is tiled (repeated) to fill the
+                            area. If it does not fill the area with a whole
+                            number of tiles, the image is rescaled so it fits
+                        </li>
+                        <li>
+                            space: The image is tiled (repeated) to fill the
+                            area. If it does not fill the area with a whole
+                            number of tiles, the extra space is distributed
+                            around the tiles
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.borderImageRepeat="round"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-round"
+                                            class="anchor-centered"
+                                            >Border Image Round</span
+                                        >
+                                    </h4>
+                                    <div id="ex10-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex10-1 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: round;
+    margin: 40px 0 40px 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-repeat"
+                                            class="anchor-centered"
+                                            >Border Image Repeat</span
+                                        >
+                                    </h4>
+                                    <div id="ex10-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex10-2 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: repeat;
+    margin: 40px 0 40px 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-stretch"
+                                            class="anchor-centered"
+                                            >Border Image Stretch</span
+                                        >
+                                    </h4>
+                                    <div id="ex10-3"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex10-3 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: stretch;
+    margin: 40px 0 40px 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="border-image-space"
+                                            class="anchor-centered"
+                                            >Border Image Space</span
+                                        >
+                                    </h4>
+                                    <div id="ex10-4"></div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex10-4 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 30px;
+    border-image-repeat: space;
+    margin: 40px 0 40px 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+            </article>
+        </main>
+        <!-- <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th>CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br> -->
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../index.html">Homepage</a>
+                        <br /><a href="../html-basics/index.html"
+                            >HTML Basics</a
+                        >
+                        <br /><a href="../html-buttons/index.html">Buttons</a>
+                        <br /><a href="../html-forms/index.html">Forms</a>
+                        <br /><a href="../html-iframes/index.html">IFrames</a>
+                        <br /><a href="../html-images/index.html">Images</a>
+                        <br /><a href="../html-links/index.html">Links</a>
+                        <br /><a href="../html-lists/index.html">Lists</a>
+                        <br /><a href="../html-scripts/index.html">Scripts</a>
+                        <br /><a href="../html-tables/index.html">Tables</a>
+                        <br /><a href="../html-video-audio/index.html"
+                            >Video & Audio</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">CSS</h3>
+                        <h4 class="revert">Properties</h4>
+                        <a
+                            href="../CSS/css-properties/color-background/index.html"
+                            >Color & Background</a
+                        >
+                        <br /><a
+                            href="../CSS/css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../CSS/css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a href="../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><br />
+                        <h4 class="revert">Selector</h4>
+                        <a href="../CSS/css-selectors/index.html">Selectors</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Javascript</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+#ex1-1a {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    display: block;
+}
+#ex1-2a {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    display: inline-block;
+}
+#ex2-1 table,
+#ex2-1 table tr,
+#ex2-1 table th,
+#ex2-1 table td {
+    all: revert;
+    border: 2px solid black;
+}
+
+#ex2-2 table,
+#ex2-2 table tr,
+#ex2-2 table th,
+#ex2-2 table td {
+    all: revert;
+    border: 2px solid black;
+    visibility: collapse;
+}
+#ex3 {
+    height: 150px;
+    width: 50px;
+    background-color: purple;
+}
+
+#ex4 {
+    max-width: 75px;
+    max-height: 75px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../../../images/bubbles-colors.png);
+}
+#ex5 {
+    height: 150px;
+    width: 150px;
+    background-color: coral;
+    /* position: absolute; */
+    left: 250px;
+}
+
+#ex6-1 {
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    box-shadow: 10px 10px 8px hotpink;
+}
+
+#ex6-2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 220, 30);
+    box-shadow: 10px 10px 8px 10px rgb(178, 255, 105);
+}
+
+#ex6-3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 37, 220);
+    box-shadow: 5px 5px 8px rgb(160, 105, 255), 8px 8px 12px rgb(233, 163, 52),
+        12px 12px 17px rgb(128, 255, 0);
+}
+
+#ex6-4 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(20, 220, 20);
+    box-shadow: 10px 10px 15px inset yellow, 5px 5px 12px hotpink;
+}
+
+#ex6-5 {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    box-shadow: -5px 8px orange;
+}
+
+#ex6-6 {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    box-shadow: -8px -15px 20px blue;
+}
+
+#ex7-1 {
+    position: relative;
+    z-index: -5;
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    background-image: url(../../../images/rose.png);
+    background-repeat: no-repeat;
+    -webkit-box-reflect: below;
+    margin-bottom: 175px;
+    z-index: -2;
+}
+
+#ex7-2 {
+    position: relative;
+    z-index: -5;
+    height: 150px;
+    width: 150px;
+    background-color: violet;
+    background-image: url(../../../images/rose.png);
+    background-repeat: no-repeat;
+    -webkit-box-reflect: below 20px;
+    margin-bottom: 190px;
+}
+#ex7-3 {
+    position: relative;
+    z-index: -5;
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-image: url(../../../images/rose.png);
+    -webkit-box-reflect: right 15px
+        linear-gradient(to left, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.155));
+    margin-right: 200px;
+}
+
+#ex8-1 {
+    box-sizing: border-box;
+    width: 100px;
+    height: 200px;
+    border: 5px solid green;
+    padding: 20px;
+}
+
+#ex8-2 {
+    box-sizing: content-box;
+    width: 100px;
+    height: 200px;
+    border: 5px solid green;
+    padding: 20px;
+}
+
+#ex11 {
+}
