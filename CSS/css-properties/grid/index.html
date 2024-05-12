@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../style.css" />
+        <link rel="stylesheet" href="../../../style.css" />
         <link rel="stylesheet" href="./grid.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
         <header>
             <h1>
                 <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                CSS Selector
+                CSS Grid
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -28,7 +28,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Selectors</p>
+                    <p>CSS Grid Properties</p>
                     <ul>
                         <li></li>
                     </ul>
@@ -36,6 +36,1044 @@
             </div>
         </header>
         <!--  -->
+        <main>
+            <article>
+                <section>
+                    <h3>
+                        <span id="grid" class="anchor-centered"
+                            >Grid (shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            A grid layout consists of a parent element, with one
+                            or more child elements.
+                        </li>
+                        <li>
+                            Is grid-based layout system, with rows and columns,
+                            making it easier to design web pages without having
+                            to use floats and positioning.
+                        </li>
+                        <li>
+                            An HTML element becomes a grid container when its
+                            display property is set to grid or inline-grid.
+                        </li>
+                        <li>
+                            All direct children of the grid container
+                            automatically become grid items.
+                        </li>
+                        <li>Is a shorthand property for:</li>
+                        <ul>
+                            <li>grid-template-rows</li>
+                            <li>grid-template-columns</li>
+                            <li>grid-template-areas</li>
+                            <li>grid-auto-rows</li>
+                            <li>grid-auto-columns</li>
+                            <li>grid-auto-flow</li>
+                        </ul>
+
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            none: Default value. No specific sizing of the
+                            columns or rows
+                        </li>
+                        <li>
+                            column-gap: Specifies the gap between the columns
+                        </li>
+
+                        <li>
+                            gap: A shorthand property for the row-gap and the
+                            column-gap properties
+                        </li>
+                        <li>grid: A shorthand property for the:</li>
+                        <ul>
+                            <li>grid-template-rows</li>
+                            <li>grid-template-columns</li>
+                            <li>grid-template-areas</li>
+                            <li>grid-auto-rows</li>
+                            <li>grid-auto-columns</li>
+                            <li>grid-auto-flow</li>
+                        </ul>
+
+                        <li>
+                            grid-area: Either specifies a name for the grid
+                            item, or this property is a shorthand property for
+                            the grid-row-start, grid-column-start, grid-row-end,
+                            and grid-column-end properties
+                        </li>
+
+                        <li>
+                            grid-template-rows / grid-template-columns:
+                            Specifies the size(s) of the columns and rows
+                        </li>
+                        <li>
+                            grid-template-areas: Specifies the grid layout using
+                            named items
+                        </li>
+                        <li>
+                            grid-template-rows / grid-auto-columns: Specifies
+                            the size (height) of the rows, and the auto size of
+                            the columns
+                        </li>
+                        <li>
+                            grid-auto-rows / grid-template-columns: Specifies
+                            the auto size of the rows, and sets the
+                            grid-template-columns property
+                        </li>
+                        <li>
+                            grid-template-rows / grid-auto-flow
+                            grid-auto-columns: Specifies the size (height) of
+                            the rows, and how to place auto-placed items, and
+                            the auto size of the columns
+                        </li>
+                        <li>
+                            grid-auto-flow grid-auto-rows /
+                            grid-template-columns: Specifies how to place
+                            auto-placed items, and the auto size of the rows,
+                            and sets the grid-template-columns property
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.grid="250px / auto auto auto"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="display-grid"
+                                            class="anchor-centered"
+                                            >Grid</span
+                                        >
+                                    </h4>
+                                    <div id="ex1-1">
+                                        <div id="ex1-1a" class="ex1-1">1</div>
+                                        <div id="ex1-2a" class="ex1-1">2</div>
+                                        <div id="ex1-3a" class="ex1-1">3</div>
+                                        <div id="ex1-4a" class="ex1-1">4</div>
+                                        <div id="ex1-5a" class="ex1-1">5</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex1-1 {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 10px;
+    background-color: lightblue;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+<b><u>Grid Item</u></b>
+.ex1-1 {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="display-inline-grid"
+                                            class="anchor-centered"
+                                            >Inline Grid</span
+                                        >
+                                    </h4>
+                                    <div id="ex1-2">
+                                        <div id="ex1-5a" class="ex1-2">1</div>
+                                        <div id="ex1-6a" class="ex1-2">2</div>
+                                        <div id="ex1-7a" class="ex1-2">3</div>
+                                        <div id="ex1-8a" class="ex1-2">4</div>
+                                        <div id="ex1-9a" class="ex1-2">5</div>
+                                        <!-- div#ex1-$@5a*5.ex1-2{$}> -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex1-2 {
+    display: inline-grid;
+    gap: 50px 10px;
+    background-color: lightblue;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+<b><u>Grid Items</u></b>
+.ex1-2 {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+
+                <section>
+                    <h3>
+                        <span id="grid-template-areas" class="anchor-centered"
+                            >Grid Template Areas</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Specifies areas within the grid layout</li>
+                        <li>
+                            You can name grid items by using the grid-area
+                            property, and then reference to the name in the
+                            grid-template-areas property.
+                        </li>
+                        <li>
+                            Each area is defined by apostrophes. Use a period
+                            sign to refer to a grid item with no name.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none: Default value. No named grid areas</li>
+                        <li>
+                            itemnames: A sequence that specifies how each
+                            columns and row should display
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridTemplateAreas=". . . myArea myArea"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex3-1">
+                                        <div id="ex3-1a" class="ex3-1">1</div>
+                                        <div id="ex3-1b" class="ex3-1">2</div>
+                                        <div id="ex3-1c" class="ex3-1">3</div>
+                                        <div id="ex3-1d" class="ex3-1">4</div>
+                                        <div id="ex3-1e" class="ex3-1">5</div>
+                                        <div id="ex3-1e" class="ex3-1">6</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="grid-template-rows" class="anchor-centered"
+                            >Grid Template Rows</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the number (and the heights) of the rows
+                            in a grid layout.
+                        </li>
+                        <li>
+                            The values are a space-separated list, where each
+                            value specifies the height of the respective row.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            none: No size is set. Rows are created if needed
+                        </li>
+                        <li>
+                            auto: The size of the rows is determined by the size
+                            of the container, and on the size of the content of
+                            the items in the row
+                        </li>
+                        <li>
+                            max-content: Sets the size of each row to depend on
+                            the largest item in the row
+                        </li>
+                        <li>
+                            min-content: Sets the size of each row to depend on
+                            the smallest item in the row
+                        </li>
+                        <li>
+                            length: Sets the size of the rows, by using a legal
+                            length value.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridTemplateRows="50px 200px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="grid-template-columns" class="anchor-centered"
+                            >Grid Template Columns</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the number (and the widths) of columns in
+                            a grid layout.
+                        </li>
+                        <li>
+                            The values are a space separated list, where each
+                            value specifies the size of the respective column.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            none: Default value. Columns are created if needed
+                        </li>
+                        <li>
+                            auto: The size of the columns is determined by the
+                            size of the container and on the size of the content
+                            of the items in the column
+                        </li>
+                        <li>
+                            max-content: Sets the size of each column to depend
+                            on the largest item in the column
+                        </li>
+                        <li>
+                            min-content: Sets the size of each column to depend
+                            on the smallest item in the column
+                        </li>
+                        <li>
+                            length: Sets the size of the columns, by using a
+                            legal length value. Read about length units
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.gridTemplateColumns="50px 50px 50px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="grid-auto-rows" class="anchor-centered"
+                            >Grid Auto Rows</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Sets a size for the rows in a grid container.</li>
+                        <li>
+                            This property affects only rows with the size not
+                            set.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            auto: Default value. The size of the rows is
+                            determined by the size of the largest item in the
+                            row
+                        </li>
+                        <li>
+                            max-content: Sets the size of each row to depend on
+                            the largest item in the row
+                        </li>
+                        <li>
+                            min-content: Sets the size of each row to depend on
+                            the smallest item in the row
+                        </li>
+                        <li>
+                            length: Sets the size of the rows, by using a legal
+                            length value.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridAutoRows="60px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="grid-auto-columns" class="anchor-centered"
+                            >Grid Auto Columns</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets a size for the columns in a grid container.
+                        </li>
+                        <li>
+                            This property affects only columns with the size not
+                            set.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            auto: Default value. The size of the columns is
+                            determined by the size of the container
+                        </li>
+                        <li>fit-content():</li>
+                        <li>
+                            max-content: Sets the size of each column depending
+                            on the largest item in the column
+                        </li>
+                        <li>
+                            min-content: Sets the size of each column depending
+                            on the smallest item in the column
+                        </li>
+                        <li>
+                            minmax(min.max): Sets a size range greater than or
+                            equal to min and less than or equal to max
+                        </li>
+                        <li>
+                            length: Sets the size of the columns, by using a
+                            legal length value. Read about length units
+                        </li>
+                        <li>
+                            %: Sets the size of the columns, by using a percent
+                            value
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridAutoColumns="120px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="grid-auto-flow" class="anchor-centered"
+                            >Grid Auto Flow</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Controls how auto-placed items get inserted in the
+                            grid.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            row: Default value. Places items by filling each row
+                        </li>
+                        <li>column: Places items by filling each column</li>
+                        <li>
+                            dense: Place items to fill any holes in the grid
+                        </li>
+                        <li>
+                            row dense: Places items by filling each row, and
+                            fill any holes in the grid
+                        </li>
+                        <li>
+                            column dense: Places items by filling each column,
+                            and fill any holes in the grid
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridAutoFlow="row dense"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="row-gap" class="anchor-centered"
+                            >Row Gap</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Defines the size of the gap between the rows in a
+                            grid layout.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length Any legal length value, like px or %. 0 is
+                            the default value
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.gridRowGap="50px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="column-gap" class="anchor-centered"
+                            >Column Gap</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Defines the size of the gap between the columns in a
+                            grid layout.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length Any legal length value, like px or %. 0 is
+                            the default value
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.gridColumnGap="50px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+            </article>
+            <article>
+                <h2>How to:</h2>
+                <section>
+                    <h3>
+                        <span id="basic-grid" class="anchor-centered"
+                            >Basic Grid</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            To create a layout using CSS grid, there must be a
+                            container and within it the grid items.
+                        </li>
+                        <li>
+                            The container must have it's display set to grid
+                        </li>
+                        <li>
+                            <b>Rows & columns</b> can be set using
+                            grid-template-rows|grid-template-columns with values
+                            in either: <br />px, %, em, eh, <b>fr</b>(is the
+                            fraction of the parent div allocated for the
+                            rows|columns. Changes dynamically)
+                        </li>
+                        <li>
+                            The number of columns|rows are determined by the
+                            number of values set: <br />- So if
+                            grid-template-rows: 20% 20% 20% <br />- This would
+                            mean 3 rows each taking up 20% of the width of the
+                            parent div.
+                        </li>
+                        <li>
+                            Rows and columns can have a default value if you
+                            don't specify a particular value
+                            <b>grid-auto-rows|grid-auto-columns</b>
+                        </li>
+                        <li>
+                            <b>Gap</b> can be used to set the gap between rows &
+                            columns by using a single value, or using two
+                            values. <br />(the first value = rows, the second
+                            value = columns)
+                        </li>
+                        <li>
+                            <b>Grid template areas</b>, allow the grid sections
+                            to be named, and then for grid items to be assigned
+                            to those areas
+                        </li>
+                    </ul>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="ht1" class="anchor-centered"
+                                            >Basic Grid</span
+                                        >
+                                    </h4>
+                                    <div id="ht1-container">
+                                        <div class="itm-ht1">1</div>
+                                        <div class="itm-ht1">2</div>
+                                        <div class="itm-ht1">3</div>
+                                        <div class="itm-ht1">4</div>
+                                        <div class="itm-ht1">5</div>
+                                        <div class="itm-ht1">6</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht1-container {
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 20% 20% 20%;
+    gap: 20px;
+}
+
+<b><u>Grid Items</u></b>
+.itm-ht1 {
+    text-align: center;
+    background-color: hotpink;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="ht2" class="anchor-centered"
+                                            >Auto Row|Column</span
+                                        >
+                                    </h4>
+                                    <div id="ht2-container">
+                                        <div class="itm-ht2">1</div>
+                                        <div class="itm-ht2">2</div>
+                                        <div class="itm-ht2">3</div>
+                                        <div class="itm-ht2">4</div>
+                                        <div class="itm-ht2">5</div>
+                                        <div class="itm-ht2">6</div>
+                                        <div class="itm-ht2">7</div>
+                                        <div class="itm-ht2">8</div>
+                                        <div class="itm-ht2">9</div>
+
+                                        <!-- div*9.itm-ht2>{$} -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht2-container {
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: 50px 30px 20px;
+    gap: 20px;
+}
+
+<b><u>Grid Items</u></b>
+.itm-ht2 {
+    text-align: center;
+    background-color: rgb(115, 255, 105);
+}
+                                    </code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="ht3" class="anchor-centered"
+                                            >Fraction Units</span
+                                        >
+                                    </h4>
+                                    <div id="ht3-container">
+                                        <div class="itm-ht3">1</div>
+                                        <div class="itm-ht3">2</div>
+                                        <div class="itm-ht3">3</div>
+                                        <div class="itm-ht3">4</div>
+                                        <div class="itm-ht3">5</div>
+                                        <div class="itm-ht3">6</div>
+                                        <div class="itm-ht3">7</div>
+                                        <div class="itm-ht3">8</div>
+                                        <div class="itm-ht3">9</div>
+                                        <div class="itm-ht3">10</div>
+                                        <div class="itm-ht3">11</div>
+                                        <div class="itm-ht3">12</div>
+                                        <div class="itm-ht3">13</div>
+
+                                        <!-- div*9.itm-ht2>{$} -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht3-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 50px;
+    gap: 20px;
+}
+                                        
+<b><u>Grid Items</u></b>
+.itm-ht3 
+    { text-align: center;
+    background-color: rgb(106, 70, 238); 
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="ht4" class="anchor-centered"
+                                            >Grid Template Areas</span
+                                        >
+                                    </h4>
+                                    <div id="ht4-container">
+                                        <div class="itm-ht4-1">
+                                            <p>Lorem ipsum 1</p>
+                                        </div>
+                                        <div class="itm-ht4-2">
+                                            <p>Lorem 2 ipsum dolor sit amet.</p>
+                                        </div>
+                                        <div class="itm-ht4-3">
+                                            <p>3 Lorem ipsum dolor s.</p>
+                                        </div>
+                                        <div class="itm-ht4-4">
+                                            <p>Lorem sit amet. 44</p>
+                                        </div>
+                                        <div class="itm-ht4-5">
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <!-- 
+                <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th>CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br>
+        -->
+            </article>
+        </main>
         <!--  -->
         <footer>
             <div class="container">

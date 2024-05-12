@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../../style.css" />
+        <link rel="stylesheet" href="../../../style.css" />
         <link rel="stylesheet" href="./flexbox.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
         <header>
             <h1>
                 <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                CSS Selector
+                CSS Flex
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -28,14 +28,638 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Selectors</p>
+                    <p>CSS Flex</p>
                     <ul>
-                        <li></li>
+                        <li><a href="#flex">Flex (shorthand)</a></li>
+                        <li><a href="#flex-grow">Flex Grow|Shrink</a></li>
+                        <li><a href="#flex-shrink">Flex Shrink</a></li>
+                        <li><a href="#flex-basis">Flex Basis</a></li>
+                        <li><a href="#flex-direction">Flex Direction</a></li>
+                        <li><a href="#flex wrap">Flex Wrap</a></li>
+                        <li><a href="#"></a></li>
+                        <!-- li*6>a[href=#]> -->
                     </ul>
                 </nav>
             </div>
         </header>
         <!--  -->
+        <main>
+            <article>
+                <section>
+                    <h3>
+                        <span id="flex" class="anchor-centered"
+                            >Flex (shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Is a shorthand property for:
+                            <ul>
+                                <li>flex-grow</li>
+                                <li>flex-shrink</li>
+                                <li>flex-basis</li>
+                            </ul>
+                        </li>
+                        <li>
+                            The flex property sets the flexible length on
+                            flexible items.
+                        </li>
+                        <li>
+                            If the element is not a flexible item, the flex
+                            property has no effect.
+                        </li>
+                        <li>
+                            A flex container
+                            <b><u>MUST</u> be defined, first</b>
+                        </li>
+                        <ul>
+                            <li>
+                                A Flexible Layout must have a parent element
+                                with the display property set to flex.
+                            </li>
+                            <li>
+                                Direct child elements(s) of the flexible
+                                container automatically becomes flexible items.
+                            </li>
+                            <li>
+                                The flex container becomes flexible by setting
+                                the display property to flex
+                            </li>
+                            <li>The flex container properties are:</li>
+                            <ul>
+                                <li>flex-direction</li>
+                                <li>flex-wrap</li>
+                                <li>flex-flow</li>
+                                <li>justify-content</li>
+                                <li>align-items</li>
+                                <li>align-content</li>
+                            </ul>
+                        </ul>
+
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            flex-grow: A number specifying how much the item
+                            will grow relative to the rest of the flexible items
+                        </li>
+                        <li>
+                            flex-shrink: A number specifying how much the item
+                            will shrink relative to the rest of the flexible
+                            items
+                        </li>
+                        <li>
+                            flex-basis: The length of the item. Legal values:
+                            "auto", "inherit", or a number followed by "%",
+                            "px", "em" or any other length unit
+                        </li>
+                        <li>auto: Same as 1 1 auto.</li>
+                        <li>initial: Same as 0 1 auto.</li>
+                        <li>none: Same as 0 0 auto.</li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.flex="1"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex1-1">
+                                        <div class="ex1-1a"></div>
+                                        <div class="ex1-1a"></div>
+                                        <div class="ex1-1a"></div>
+                                        <div class="ex1-1a"></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="flex-direction" class="anchor-centered"
+                            >Flex Direction</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Specifies the direction of the flexible items.</li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            row: Default value. The flexible items are displayed
+                            horizontally, as a row
+                        </li>
+                        <li>row-reverse: Same as row, but in reverse order</li>
+                        <li>
+                            column: The flexible items are displayed vertically,
+                            as a column
+                        </li>
+                        <li>
+                            column-reverse: Same as column, but in reverse order
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.flexDirection="column-reverse"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-direction-row"
+                                            class="anchor-centered"
+                                            >Row</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-1">
+                                        <div class="ex2-1a">1</div>
+                                        <div class="ex2-1a">2</div>
+                                        <div class="ex2-1a">3</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-direction-row-reverse"
+                                            class="anchor-centered"
+                                            >Row-Reverse</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-2">
+                                        <div class="ex2-2a">1</div>
+                                        <div class="ex2-2a">2</div>
+                                        <div class="ex2-2a">3</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-direction-column"
+                                            class="anchor-centered"
+                                            >Column</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-3">
+                                        <div class="ex2-3a">1</div>
+                                        <div class="ex2-3a">2</div>
+                                        <div class="ex2-3a">3</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-direction-column-reverse"
+                                            class="anchor-centered"
+                                            >Column-Reverse</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-4">
+                                        <div class="ex2-4a">1</div>
+                                        <div class="ex2-4a">2</div>
+                                        <div class="ex2-4a">3</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="flex-wrap" class="anchor-centered"
+                            >Flex Wrap</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies whether the flexible items should wrap or
+                            not.
+                        </li>
+                        <li>
+                            If the elements are not flexible items, the
+                            flex-wrap property has no effect.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            nowrap: Default value. Specifies that the flexible
+                            items will not wrap
+                        </li>
+                        <li>
+                            wrap: Specifies that the flexible items will wrap if
+                            necessary
+                        </li>
+                        <li>
+                            wrap-reverse: Specifies that the flexible items will
+                            wrap, if necessary, in reverse order
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.flexWrap="nowrap"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="wrap" class="anchor-centered"
+                                            >Wrap</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-1"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="wrap=reverse"
+                                            class="anchor-centered"
+                                            >Wrap Reverse</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="flex-grow-shrink" class="anchor-centered"
+                            >Flex Grow|Shrink</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies how much the item will grow|shrink
+                            relative to the rest of the flexible items inside
+                            the same container.
+                        </li>
+                        <li>
+                            If the element is not a flexible item, the
+                            flex-grow|flex-shrink property has no effect.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            number: A number specifying how much the item will
+                            grow|shrink relative to the rest of the flexible
+                            items. Default value is 0
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.flexGrow="5"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-grow"
+                                            class="anchor-centered"
+                                            >Flex Grow</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-1">
+                                        <div id="ex4-1a">1</div>
+                                        <div id="ex4-2a">2</div>
+                                        <div id="ex4-3a">3</div>
+                                        <div id="ex4-4a">4</div>
+                                        <div id="ex4-5a">5</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Container Div</u></b>
+#ex4-1 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+<b><u>2</u></b>
+#ex4-1a {
+    background-color: aqua;
+    flex-grow: 2;
+}
+
+<b><u>2</u></b>
+#ex4-2a {
+    background-color: green;
+    flex-grow: 1;
+}
+
+<b><u>3</u></b>
+#ex4-3a {
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+<b><u>4</u></b>
+#ex4-4a {
+    background-color: purple;
+    flex-grow: 5;
+}
+
+#ex4-5a {
+    background-color: orange;
+    flex-grow: 2;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-shrink"
+                                            class="anchor-centered"
+                                            >Flex Shrink</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-2">
+                                        <div id="ex4-6a">6</div>
+                                        <div id="ex4-7a">7</div>
+                                        <div id="ex4-8a">8</div>
+                                        <div id="ex4-9a">9</div>
+                                        <div id="ex4-10a">10</div>
+                                        <!-- div*5#ex4-$a{$} -->
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Container Div</u></b>
+#ex4-2 {
+    height: 150px;
+    width: 250px;
+    display: flex;
+    text-align: center;
+}
+
+<b><u>6</u></b>
+#ex4-6a {
+    background-color: aqua;
+    width: 200px;
+    flex-shrink: 2;
+}
+
+<b><u>7</u></b>
+#ex4-7a {
+    background-color: green;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+<b><u>8</u></b>
+#ex4-8a {
+    background-color: yellow;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+<b><u>9</u></b>
+#ex4-9a {
+    background-color: purple;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+<b><u>10</u></b>
+#ex4-10a {
+    background-color: orange;
+    width: 200px;
+    flex-shrink: 3;
+}
+                                    </code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="flex-basis" class="anchor-centered"
+                            >Flex Basis</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the initial length of a flexible item.
+                        </li>
+                        <li>
+                            If the element is not a flexible item, the
+                            flex-basis property has no effect.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            number: A length unit, or percentage, specifying the
+                            initial length of the flexible item(s)
+                        </li>
+                        <li>
+                            auto: Default value. The length is equal to the
+                            length of the flexible item. If the item has no
+                            length specified, the length will be according to
+                            its content
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.flexBasis="200px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th>CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="auto"
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex5-1">
+                                        <div id="ex5-1a">1</div>
+                                        <div id="ex5-2a">2</div>
+                                        <div id="ex5-3a">3</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="number"
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex5-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <!-- 
+                <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th>CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br>
+        -->
+            </article>
+        </main>
         <!--  -->
         <footer>
             <div class="container">
@@ -86,6 +710,6 @@
                 </div>
             </div>
         </footer>
-        <script src="../../nav-menu.js"></script>
+        <script src="../../../nav-menu.js"></script>
     </body>
 </html>

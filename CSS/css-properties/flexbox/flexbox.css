@@ -1,0 +1,152 @@
+th:nth-child(2) {
+    width: 50%;
+}
+#ex1-1 {
+    display: flex;
+}
+
+.ex1-1a {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    margin: auto;
+}
+
+#ex2-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ex2-1a {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: auto;
+}
+
+#ex2-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ex2-2a {
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    margin: auto;
+}
+
+#ex2-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ex2-3a {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#ex2-4 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.ex2-4a {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#ex4-1 {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#ex4-1a {
+    background-color: aqua;
+    flex-grow: 2;
+}
+
+#ex4-2a {
+    background-color: green;
+    flex-grow: 1;
+}
+
+#ex4-3a {
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+#ex4-4a {
+    background-color: purple;
+    flex-grow: 5;
+}
+
+#ex4-5a {
+    background-color: orange;
+    flex-grow: 2;
+}
+
+#ex4-2 {
+    height: 150px;
+    width: 250px;
+    display: flex;
+    text-align: center;
+}
+
+#ex4-6a {
+    background-color: aqua;
+    width: 200px;
+    flex-shrink: 2;
+}
+
+#ex4-7a {
+    background-color: green;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+#ex4-8a {
+    background-color: yellow;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+#ex4-9a {
+    background-color: purple;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+#ex4-10a {
+    background-color: orange;
+    width: 200px;
+    flex-shrink: 3;
+}
+
+#ex5-1 {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    background-color: pink;
+}
+
+#ex5-1a {
+    flex-basis: 150px;
+    background-color: violet;
+}
+#ex5-2a {
+    flex-basis: 50px;
+    background-color: blue;
+}
+#ex5-3a {
+    flex-basis: 275px;
+    background-color: chartreuse;
+}

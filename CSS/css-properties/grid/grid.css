@@ -1,0 +1,113 @@
+.css-width {
+    width: 50%;
+}
+
+#ex1-1 {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 10px;
+    background-color: lightblue;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+.ex1-1 {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#ex1-2 {
+    display: inline-grid;
+    gap: 50px 10px;
+    background-color: lightblue;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+}
+
+.ex1-2 {
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#ht1-container {
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 20% 20% 20%;
+    gap: 20px;
+}
+
+.itm-ht1 {
+    text-align: center;
+    background-color: hotpink;
+}
+
+#ht2-container {
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-template-columns: 50px 30px 20px;
+    gap: 20px;
+}
+
+.itm-ht2 {
+    text-align: center;
+    background-color: rgb(115, 255, 105);
+}
+
+#ht3-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 50px;
+    gap: 20px;
+}
+
+.itm-ht3 {
+    text-align: center;
+    background-color: rgb(106, 70, 238);
+}
+
+#ht4-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 20px;
+    border: 2px solid green;
+    padding: 5px;
+
+    grid-template-areas:
+        "firstArea secondArea thirdArea"
+        "firstArea . thirdArea"
+        "firstArea fourthArea ."
+        "fifthArea fifthArea fifthArea";
+}
+
+.itm-ht4 {
+    text-align: center;
+}
+
+.itm-ht4-1 {
+    grid-area: firstArea;
+    background-color: pink;
+}
+
+.itm-ht4-2 {
+    grid-area: secondArea;
+    background-color: rgb(190, 238, 70);
+}
+
+.itm-ht4-3 {
+    grid-area: thirdArea;
+    background-color: lightsalmon;
+}
+
+.itm-ht4-4 {
+    grid-area: fourthArea;
+    background-color: lightskyblue;
+}
+
+.itm-ht4-5 {
+    grid-area: fifthArea;
+    background-color: lightyellow;
+}
