@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="stylesheet" href="./columns.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>CSS Columns</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Columns</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>CSS Columns Properties</p>
+                    <ul>
+                        <li><a href="#grid">Grid (shorthand)</a></li>
+                        <ul class="tab20">
+                            <li><a href="#display-grid">Display: Grid</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h3>
+                        <span id="basic-columns" class="anchor-centered"
+                            >Columns (shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Is a shorthand property for:</li>
+                        <ul>
+                            <li>column-width</li>
+                            <li>column-count</li>
+                        </ul>
+                        <li>
+                            The column-width part will define the minimum width
+                            for each column, while the column-count part will
+                            define the maximum number of columns.
+                        </li>
+                        <li>
+                            By using this property, the multi-column layout will
+                            automatically break down into a single column at
+                            narrow browser widths, without the need of media
+                            queries or other rules.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            auto: Default value. Sets both the column-width and
+                            column-count to "auto"
+                        </li>
+                        <li>
+                            column-width: Defines the minimum width for each
+                            column
+                        </li>
+                        <li>
+                            column-count: Defines the maximum number of columns
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.columns="100px 3"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="col-width"
+                                            class="anchor-centered"
+                                            >Column Width</span
+                                        >
+                                    </h4>
+
+                                    <div id="ex1-1">
+                                        <div id="ex1-1a">
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Magnam nostrum maxime
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Ab
+                                                tempore maiores autem beatae.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                Facere molestiae,
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex1-1 {
+    background-color: aqua;
+    width: 400px;
+    border: 2px solid red;
+}
+#ex1-1a {
+    column-width: 150px;
+    border: 2px dotted green;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="col-count"
+                                            class="anchor-centered"
+                                            >Column Count</span
+                                        >
+                                    </h4>
+                                    <div id="ex1-2">
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Magnam
+                                            nostrum maxime
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Ab
+                                            tempore maiores autem beatae.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit.
+                                            Facere molestiae,
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex1-2 {
+    column-count: 3;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="col-gap" class="anchor-centered"
+                            >Column Gap</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sspecifies the gap between the columns in grid,
+                            flexbox or multi-column layout.
+                        </li>
+                        <li>
+                            If there is a column-rule between columns, it will
+                            appear in the middle of the gap.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length: A specified length that will set the gap
+                            between the columns
+                        </li>
+                        <li>
+                            normal: Default value. Specifies a normal gap
+                            between the columns. W3C suggests a value of 1em
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.columnGap="50px"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="gap" class="anchor-centered"
+                                            >Gap</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-1">
+                                        <p>
+                                            Lorem ipsum dolor sit amet
+                                            consectetur, adipisicing elit. Totam
+                                            quae praesentium laudantium veniam
+                                            pariatur eos incidunt vel. Culpa,
+                                            voluptates nihil?
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex2-1 {
+    column-count: 3;
+    column-gap: 50px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="grid-col-gap"
+                                            class="anchor-centered"
+                                            >Column Gap in a Grid</span
+                                        >
+                                    </h4>
+
+                                    <div id="ex2-2-container">
+                                        <div class="ex2-2">
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur
+                                            </p>
+                                        </div>
+                                        <div class="ex2-2">
+                                            <p>
+                                                Ad, itaque tempore libero non
+                                                qui in ex fuga
+                                            </p>
+                                        </div>
+                                        <div class="ex2-2">
+                                            <p>
+                                                Cumque odio velit sit
+                                                perferendis
+                                            </p>
+                                        </div>
+                                        <div class="ex2-2">
+                                            <p>
+                                                Accusantium odit voluptatum
+                                                facere consequuntur
+                                            </p>
+                                        </div>
+                                        <div class="ex2-2">
+                                            <p>
+                                                Necessitatibus, aspernatur nihil
+                                                similique
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex2-2-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-auto-rows: 100px;
+    gap: 15px;
+    padding: 15px;
+    background-color: aquamarine;
+}
+
+<b><u>All Grid Items</u></b>
+.ex2-2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="flex-col-gap"
+                                            class="anchor-centered"
+                                            >Column Gap in Flexbox</span
+                                        >
+                                    </h4>
+                                    <div id="ex2-3-container">
+                                        <div class="ex2-3">
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur
+                                            </p>
+                                        </div>
+                                        <div class="ex2-3">
+                                            <p>
+                                                Ad, itaque tempore libero non
+                                                qui in ex fuga
+                                            </p>
+                                        </div>
+                                        <div class="ex2-3">
+                                            <p>
+                                                Cumque odio velit sit
+                                                perferendis
+                                            </p>
+                                        </div>
+                                        <div class="ex2-3">
+                                            <p>
+                                                Accusantium odit voluptatum
+                                                facere consequuntur
+                                            </p>
+                                        </div>
+                                        <div class="ex2-3">
+                                            <p>
+                                                Necessitatibus, aspernatur nihil
+                                                similique
+                                            </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex2-2-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    column-gap: 25px;
+    background-color: lightyellow;
+    gap: 5px;
+    text-align: center;
+}
+
+<b><u>Flex Items</u></b>
+.ex2-2 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="col-fill" class="anchor-centered"
+                            >Column Fill</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Specifies how to fill columns, balanced or not.</li>
+                        <li>
+                            If you add a height to a multi-column element, you
+                            can control how the content fills the columns. The
+                            content can be balanced or filled sequentially.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            balance: Default value. Fills each column with about
+                            the same amount of content, but will not allow the
+                            columns to be taller than the height (so, columns
+                            might be shorter than the height as the browser
+                            distributes the content evenly horizontally)
+                        </li>
+                        <li>
+                            auto: Fills each column until it reaches the height,
+                            and do this until it runs out of content (so, this
+                            value will not necessarily fill all the columns nor
+                            fill them evenly)
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.columnFill="auto"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="col-fill-auto"
+                                            class="anchor-centered"
+                                            >Column Fill: Auto</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-1">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Impedit sit, non laudantium fugiat
+                                            aspernatur beatae assumenda delectus
+                                            hic. Ipsam, dolores!
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Iusto
+                                            nesciunt ad nam pariatur explicabo
+                                            eos! Beatae, eligendi.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-1 {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="col-fill-balance"
+                                            class="anchor-centered"
+                                            >Column Fill: Balance</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-2">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Impedit sit, non laudantium fugiat
+                                            aspernatur beatae assumenda delectus
+                                            hic. Ipsam, dolores!
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Iusto
+                                            nesciunt ad nam pariatur explicabo
+                                            eos! Beatae, eligendi.
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-2 {
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 20px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="col-rule" class="anchor-centered"
+                            >Column Rule</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Sets the width, style, and color of the rule between
+                            columns.
+                        </li>
+                        <li>
+                            Is a shorthand property for:
+                            <ul>
+                                <li>column-rule-width</li>
+                                <li>column-rule-style (required)</li>
+                                <li>column-rule-color</li>
+                            </ul>
+                        </li>
+                        <li>
+                            If column-rule-color is omitted, the color applied
+                            will be the color of the text.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            column-rule-width: Sets the width of the rule
+                            between columns. Default value is medium
+                        </li>
+                        <li>
+                            column-rule-style: Sets the style of the rule
+                            between columns. Default value is none
+                        </li>
+                        <li>
+                            column-rule-color: Sets the color of the rule
+                            between columns. Default value is the color of the
+                            element
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.columnRule="3px outset blue"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex4-1">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit. Fuga
+                                            architecto optio rem ad
+                                            necessitatibus impedit debitis
+                                            doloribus, minima modi nam hic ut,
+                                            qui doloremque perspiciatis?
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex4-2"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+            </article>
+            <article>
+                <!-- 
+                <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th class="css-width">CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br>
+        -->
+            </article>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../../../index.html">Homepage</a>
+                        <br /><a href="../../../html-basics/index.html"
+                            >HTML Basics</a
+                        >
+                        <br /><a href="../../../html-buttons/index.html"
+                            >Buttons</a
+                        >
+                        <br /><a href="../../../html-forms/index.html">Forms</a>
+                        <br /><a href="../../../html-iframes/index.html"
+                            >IFrames</a
+                        >
+                        <br /><a href="../../../html-images/index.html"
+                            >Images</a
+                        >
+                        <br /><a href="../../../html-links/index.html">Links</a>
+                        <br /><a href="../../../html-lists/index.html">Lists</a>
+                        <br /><a href="../../../html-scripts/index.html"
+                            >Scripts</a
+                        >
+                        <br /><a href="../../../html-tables/index.html"
+                            >Tables</a
+                        >
+                        <br /><a href="../../../html-video-audio/index.html"
+                            >Video & Audio</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">CSS</h3>
+                        <h4 class="revert">Properties</h4>
+                        <a href="../border/index.html">Border</a>
+                        <br /><a href="../box/index.html">Box</a> <br /><a
+                            href="../color-background/index.html"
+                            >Color & Background</a
+                        >
+                        <br /><a href="../columns/index.html">Columns</a>
+                        <br /><a href="../flexbox/index.html">Flexbox</a>
+                        <br /><a href="../font-text/index.html">Font & text</a>
+                        <br /><a href="../grid/index.html">Grid</a> <br /><a
+                            href="../lists-tables/index.html"
+                            >Lists & Tables</a
+                        >
+                        <br /><br />
+                        <h4 class="revert">Selector</h4>
+                        <a href="../CSS/css-selectors/index.html">Selectors</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Javascript</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>

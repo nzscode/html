@@ -1,0 +1,67 @@
+#ex1-1 {
+    background-color: aqua;
+    width: 400px;
+    border: 2px solid red;
+}
+#ex1-1a {
+    column-width: 150px;
+    border: 2px dotted green;
+}
+
+#ex1-2 {
+    column-count: 3;
+}
+
+#ex2-1 {
+    column-count: 3;
+    column-gap: 50px;
+}
+
+#ex2-2-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-auto-rows: 100px;
+    gap: 15px;
+    padding: 15px;
+    background-color: aquamarine;
+}
+
+.ex2-2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+#ex2-3-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    column-gap: 25px;
+    background-color: lightyellow;
+    gap: 5px;
+    text-align: center;
+}
+
+.ex2-3 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+#ex3-1 {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 20px;
+}
+
+#ex3-2 {
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 20px;
+}
+
+#ex4-1 {
+    column-count: 3;
+    column-gap: 15px;
+    column-rule: 4px double green;
+}

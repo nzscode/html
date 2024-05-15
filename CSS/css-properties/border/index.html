@@ -36,91 +36,15 @@
                 >
                 <nav id="nav">
                     <p>CSS Border</p>
-                    <ol>
+                    <ul>
                         <li><a href="#border">Border (shorthand)</a></li>
                         <li><a href="#border-width">Border Width</a></li>
                         <li><a href="#border-style">Border Style</a></li>
                         <li><a href="#border-color">Border Color</a></li>
+                        <li><a href="#border-sides">Border Sides</a></li>
                         <li><a href="#border-radius">Border Radius</a></li>
                         <li>
-                            <a href="#border-block">Border Block (shorthand)</a>
-                        </li>
-                        <li>
-                            <a href="#border-block-width">Border Block Width</a>
-                        </li>
-                        <li>
-                            <a href="#border-block-style">Border Block Style</a>
-                        </li>
-                        <li>
-                            <a href="#border-block-color">Border Block Color</a>
-                        </li>
-                        <li>
-                            <a href="#border-block-start-end"
-                                >Border Block Start End (shorthand)</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-start-end-width"
-                                >Border Block Start End Width</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-start-end-style"
-                                >Border Block Start End Style</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-start-end-color"
-                                >Border Block Start End Color</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-end"
-                                >Border Block End (shorthand)</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-end-width"
-                                >Border Block End Width</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-end-style"
-                                >Border Block End Style</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-block-end-color"
-                                >Border Block End Color</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-top-bottom-left-right"
-                                >Border Top|Bottom|Left"Right (shorthand)</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-top-bottom-left-right-width"
-                                >Border Top|Bottom|Left"Right Width</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-top-bottom-left-right-style"
-                                >Border Top|Bottom|Left"Right Style</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-top-bottom-left-right-color"
-                                >Border Top|Bottom|Left"Right Color</a
-                            >
-                        </li>
-                        <li>
                             <a href="#border-image">Border Image (shorthand)</a>
-                        </li>
-                        <li>
-                            <a href="#border-image-source"
-                                >Border Image Source</a
-                            >
                         </li>
                         <li>
                             <a href="#border-image-slice"
@@ -140,31 +64,12 @@
                                 >Border Image Repeat</a
                             >
                         </li>
-                        <li>
-                            <a href="#border-inline"
-                                >Border Inline(shorthand)</a
-                            >
-                        </li>
-                        <li><a href="#border-inline">Border Inline</a></li>
-                        <li>
-                            <a href="#border-inline-width"
-                                >Border Inline Width</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-inline-style"
-                                >Border Inline Style</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-inline-color"
-                                >Border Inline Color</a
-                            >
-                        </li>
+
                         <!-- li*6>a[href="#"]> -->
                         <!-- <li><a href="#"></a></li> -->
-                    </ol>
+                    </ul>
                 </nav>
+                <div class="space-block"></div>
             </div>
         </header>
         <main>
@@ -233,10 +138,10 @@
                                 </td>
                                 <td>
                                     <pre><code>#ex1 {
-                                        width: 150px;
-                                        height: 150px;
-                                        border: 7px solid crimson;
-                                    }</code></pre>
+    width: 150px;
+    height: 150px;
+    border: 7px solid crimson;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -766,16 +671,50 @@
                 <section>
                     <h3>
                         <span id="border-sides" class="anchor-centered"
-                            >Border Sides: Top|Right|Bottom|Left</span
+                            >Border Sides: Top|Right|Bottom|Left
+                            (shorthand)</span
                         >
                     </h3>
                     <ul>
-                        <li></li>
+                        <li>
+                            Sets all the top|right|bottom|left border properties
+                            in one declaration
+                        </li>
+                        <li>
+                            The properties that can be set must be in the
+                            following order:
+                            <ul>
+                                <li>border-top-width</li>
+                                <li>border-top-style (required)</li>
+                                <li>border-top-color</li>
+                            </ul>
+                        </li>
                         <h4 class="title-css">Property Values:</h4>
-                        <li></li>
+                        <li>
+                            border-top-width: Required. Specifies the width of
+                            the top border. Default value is "medium"
+                        </li>
+                        <li>
+                            border-top-style: Required. Specifies the style of
+                            the top border. Default value is "none"
+                        </li>
+                        <li>
+                            border-top-color: Optional. Specifies the color of
+                            the top border. Default value is the color of the
+                            text
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element
+                        </li>
                     </ul>
                     <h3 class="js-title">Javascript</h3>
-                    <pre class="js-pre"><code></code></pre>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.borderTop="3px dashed blue"</code></pre>
                     <table class="pretty-table">
                         <thead>
                             <tr>
@@ -788,45 +727,42 @@
                                 <td>
                                     <h4 class="title-css">
                                         <span
-                                            id="border-size-style"
+                                            id=""
                                             class="anchor-centered"
-                                            >Border Size Style</span
-                                        >
+                                        ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex5-1"></div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code>#ex5-1 {
+    height: 150px;
+    width: 150px;
+    border-top: 5px solid green;
+    border-right: 8px dotted hotpink;
+    border-bottom: 10px double orange;
+    border-left: 10px dashed crimson;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <h4 class="title-css">
                                         <span
-                                            id="border-size-width"
+                                            id=""
                                             class="anchor-centered"
-                                            >Border Size Width</span
-                                        >
+                                        ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex5-2"></div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-size-color"
-                                            class="anchor-centered"
-                                            >Border Size Color</span
-                                        >
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code>#ex5-2 {
+    height: 150px;
+    width: 150px;
+    border-top: 15px inset green;
+    border-right: 15px outset hotpink;
+    border-bottom: 15px ridge orange;
+    border-left: 15px groove crimson;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -919,10 +855,10 @@
                                             >All Same Corners</span
                                         >
                                     </h4>
-                                    <div id="ex5-1"></div>
+                                    <div id="ex6-1"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex5-1 {
+                                    <pre><code>#ex6-1 {
     height: 150px;
     width: 150px;
     border: 3px solid aqua;
@@ -939,10 +875,10 @@
                                             >Two Corners</span
                                         >
                                     </h4>
-                                    <div id="ex5-2"></div>
+                                    <div id="ex6-2"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex5-2 {
+                                    <pre><code>#ex6-2 {
     height: 150px;
     width: 150px;
     border: 3px solid orange;
@@ -960,10 +896,10 @@
                                             >Three Corners</span
                                         >
                                     </h4>
-                                    <div id="ex5-3"></div>
+                                    <div id="ex6-3"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex5-3 {
+                                    <pre><code>#ex6-3 {
     height: 150px;
     width: 150px;
     border: 3px solid hotpink;
@@ -980,10 +916,10 @@
                                             >Four Individual Corners</span
                                         >
                                     </h4>
-                                    <div id="ex5-4"></div>
+                                    <div id="ex6-4"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex5-4 {
+                                    <pre><code>#ex6-4 {
     height: 150px;
     width: 150px;
     border: 3px solid brown;
@@ -1000,10 +936,10 @@
                                             >One Corner</span
                                         >
                                     </h4>
-                                    <div id="ex5-5"></div>
+                                    <div id="ex6-5"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex5-5 {
+                                    <pre><code>#ex6-5 {
     height: 150px;
     width: 150px;
     border: 5px dotted green;
@@ -1104,10 +1040,10 @@
                                             >Border Image</span
                                         >
                                     </h4>
-                                    <div id="ex6"></div>
+                                    <div id="ex7"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex6 {
+                                    <pre><code>#ex7 {
     height: 150px;
     width: 200px;
     border: 5px solid transparent;
@@ -1120,7 +1056,11 @@
                 </section>
                 <br /><br />
                 <section>
-                    <h3><span id="" class="anchor-centered"></span></h3>
+                    <h3>
+                        <span id="border-image-slice" class="anchor-centered"
+                            >Border Image Slice</span
+                        >
+                    </h3>
                     <ul>
                         <li>
                             Specifies how to slice the image specified by
@@ -1188,10 +1128,10 @@
                                             >Border Image Slice</span
                                         >
                                     </h4>
-                                    <div id="ex7-1"></div>
+                                    <div id="ex8-1"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex7 {
+                                    <pre><code>#ex8 {
     height: 150px;
     width: 150px;
     border: 10px solid;
@@ -1209,10 +1149,10 @@
                                             >Border Image Fill</span
                                         >
                                     </h4>
-                                    <div id="ex7-2"></div>
+                                    <div id="ex8-2"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex7-2 {
+                                    <pre><code>#ex8-2 {
     height: 150px;
     width: 150px;
     border: 10px solid;
@@ -1293,10 +1233,10 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex8"></div>
+                                    <div id="ex9"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex8 {
+                                    <pre><code>#ex9 {
     height: 150px;
     width: 150px;
     border-image: url(../../../images/border-image1-81.png);
@@ -1372,10 +1312,20 @@
                                             >Length</span
                                         >
                                     </h4>
-                                    <div id="ex9-1"></div>
+                                    <br /><br />
+                                    <div id="ex10-1"></div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code>#ex10-1 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 25px;
+}</code></pre>
+                                    <br /><br /><br />
                                 </td>
                             </tr>
                         </tbody>
@@ -1447,10 +1397,10 @@
                                             >Border Image Round</span
                                         >
                                     </h4>
-                                    <div id="ex10-1"></div>
+                                    <div id="ex11-1"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex10-1 {
+                                    <pre><code>#ex11-1 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1472,10 +1422,10 @@
                                             >Border Image Repeat</span
                                         >
                                     </h4>
-                                    <div id="ex10-2"></div>
+                                    <div id="ex11-2"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex10-2 {
+                                    <pre><code>#ex11-2 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1497,10 +1447,10 @@
                                             >Border Image Stretch</span
                                         >
                                     </h4>
-                                    <div id="ex10-3"></div>
+                                    <div id="ex11-3"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex10-3 {
+                                    <pre><code>#ex11-3 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1522,10 +1472,10 @@
                                             >Border Image Space</span
                                         >
                                     </h4>
-                                    <div id="ex10-4"></div>
+                                    <div id="ex11-4"></div>
                                 </td>
                                 <td>
-                                    <pre><code>#ex10-4 {
+                                    <pre><code>#ex11-4 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1592,19 +1542,29 @@
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
-                        <a href="../index.html">Homepage</a>
-                        <br /><a href="../html-basics/index.html"
+                        <a href="../../../index.html">Homepage</a>
+                        <br /><a href="../../../html-basics/index.html"
                             >HTML Basics</a
                         >
-                        <br /><a href="../html-buttons/index.html">Buttons</a>
-                        <br /><a href="../html-forms/index.html">Forms</a>
-                        <br /><a href="../html-iframes/index.html">IFrames</a>
-                        <br /><a href="../html-images/index.html">Images</a>
-                        <br /><a href="../html-links/index.html">Links</a>
-                        <br /><a href="../html-lists/index.html">Lists</a>
-                        <br /><a href="../html-scripts/index.html">Scripts</a>
-                        <br /><a href="../html-tables/index.html">Tables</a>
-                        <br /><a href="../html-video-audio/index.html"
+                        <br /><a href="../../../html-buttons/index.html"
+                            >Buttons</a
+                        >
+                        <br /><a href="../../../html-forms/index.html">Forms</a>
+                        <br /><a href="../../../html-iframes/index.html"
+                            >IFrames</a
+                        >
+                        <br /><a href="../../../html-images/index.html"
+                            >Images</a
+                        >
+                        <br /><a href="../../../html-links/index.html">Links</a>
+                        <br /><a href="../../../html-lists/index.html">Lists</a>
+                        <br /><a href="../../../html-scripts/index.html"
+                            >Scripts</a
+                        >
+                        <br /><a href="../../../html-tables/index.html"
+                            >Tables</a
+                        >
+                        <br /><a href="../../../html-video-audio/index.html"
                             >Video & Audio</a
                         >
                     </div>
@@ -1612,20 +1572,15 @@
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
                         <a href="../border/index.html">Border</a>
-                        <a href="../box/index.html">Box</a>
-                        <a
-                            href="../CSS/css-properties/color-background/index.html"
+                        <br /><a href="../box/index.html">Box</a> <br /><a
+                            href="../color-background/index.html"
                             >Color & Background</a
                         >
-                        <a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a
-                            href="../CSS/css-properties/font-text/index.html"
-                            >Font & text</a
-                        >
-                        <br /><a href="../CSS/css-properties/grid/index.html"
-                            >Grid</a
-                        >
-                        <br /><a href="../lists-tables/index.html"
+                        <br /><a href="../columns/index.html">Columns</a>
+                        <br /><a href="../flexbox/index.html">Flexbox</a>
+                        <br /><a href="../font-text/index.html">Font & text</a>
+                        <br /><a href="../grid/index.html">Grid</a> <br /><a
+                            href="../lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />

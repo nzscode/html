@@ -218,28 +218,45 @@
     font-size: 20px;
 }
 
-#ex8-1-container {
+#ex8 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-auto-rows: 100px;
+    background-color: lightgreen;
+    gap: 5px 15px;
+    color: #fff;
+    padding: 5px;
+}
+
+.ex8-1 {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ex9-1-container {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     row-gap: 20px;
     background-color: chocolate;
 }
 
-.ex8-1 {
+.ex9-1 {
     background-color: aqua;
     text-align: center;
     padding: 20px 0;
     border: 1px solid black;
 }
 
-#ex9-1-container {
+#ex10-1-container {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     column-gap: 20px;
     background-color: rgb(180, 210, 30);
 }
 
-.ex9-1 {
+.ex10-1 {
     background-color: rgb(128, 0, 255);
     text-align: center;
     padding: 20px 0;

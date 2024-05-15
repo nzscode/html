@@ -283,17 +283,29 @@ hr {
     padding-top: 150px;
 }
 
-#nav ol ol {
-    list-style: lower-alpha;
-}
-
+#nav ol ol,
+#nav ul ul,
+#nav ul ol,
 #nav ol ul {
+    list-style: lower-alpha;
     margin-left: 20px;
 }
 
-#nav ol ul li {
+#nav ol ul li,
+#nav ul ul li,
+#nav ul ol li,
+#nav ol ol li {
     list-style: lower-roman;
 }
+
+#nav ul ul ul li {
+    list-style: lower-alpha;
+}
+
+#nav ul {
+    margin-left: 30px;
+}
+
 footer {
     background-color: #571212;
     color: #ffffffb1;
@@ -324,7 +336,8 @@ footer a:hover {
     padding-left: 50px;
 }
 
-ol {
+ol,
+ul {
     color: #504f4f;
 }
 

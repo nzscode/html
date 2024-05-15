@@ -1,15 +1,12 @@
-th:nth-child(2) {
-    width: 50%;
-}
 #ex1-1 {
     display: flex;
 }
 
 .ex1-1a {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     background-color: aqua;
-    margin: auto;
+    border: 1px solid black;
 }
 
 #ex2-1 {
@@ -60,6 +57,48 @@ th:nth-child(2) {
     background-color: lightpink;
     margin: auto;
     margin-bottom: 5px;
+}
+
+#ex3-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+
+.ex3-1 {
+    background-color: hotpink;
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    margin: 5px;
+}
+
+#ex3-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: beige;
+}
+
+.ex3-2 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    margin: 5px;
+}
+
+#ex3-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: beige;
+}
+
+.ex3-3 {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    margin: 5px;
 }
 
 #ex4-1 {

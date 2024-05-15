@@ -103,31 +103,49 @@
 #ex5-1 {
     height: 150px;
     width: 150px;
+    border-top: 5px solid green;
+    border-right: 8px dotted hotpink;
+    border-bottom: 10px double orange;
+    border-left: 10px dashed crimson;
+}
+
+#ex5-2 {
+    height: 150px;
+    width: 150px;
+    border-top: 15px inset green;
+    border-right: 15px outset hotpink;
+    border-bottom: 15px ridge orange;
+    border-left: 15px groove crimson;
+}
+
+#ex6-1 {
+    height: 150px;
+    width: 150px;
     border: 3px solid aqua;
     border-radius: 10px;
 }
 
-#ex5-2 {
+#ex6-2 {
     height: 150px;
     width: 150px;
     border: 3px solid orange;
     border-radius: 2px 20px;
 }
 
-#ex5-3 {
+#ex6-3 {
     height: 150px;
     width: 150px;
     border: 3px solid hotpink;
     border-radius: 2px 20px 50px;
 }
 
-#ex5-4 {
+#ex6-4 {
     height: 150px;
     width: 150px;
     border: 3px solid brown;
     border-radius: 2px 20px 50px 75px;
 }
-#ex5-5 {
+#ex6-5 {
     height: 150px;
     width: 150px;
     border: 5px dotted green;
@@ -141,7 +159,7 @@
     border-image: url(../../../images/border-image1.png) 4 round;
 }
 
-#ex7-1 {
+#ex8-1 {
     height: 150px;
     width: 150px;
     border: 10px solid;
@@ -150,7 +168,7 @@
     border-image-slice: 30%;
 }
 
-#ex7-2 {
+#ex8-2 {
     height: 150px;
     width: 150px;
     border: 20px solid;
@@ -159,26 +177,26 @@
     border-image-slice: fill;
 }
 
-#ex8 {
+#ex9 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
     border-image: url(../../../images/border-image1-81.png);
     border-image-slice: 30%;
     border-image-width: 30px;
-}
-
-#ex9-1 {
-    height: 150px;
-    width: 150px;
-    background-color: greenyellow;
-    border-image: url(../../../images/border-image1-81.png);
-    border-image-slice: 30%;
-    border-image-width: 30px;
-    border-image-outset: ;
 }
 
 #ex10-1 {
+    height: 150px;
+    width: 150px;
+    background-color: greenyellow;
+    border-image: url(../../../images/border-image1-81.png);
+    border-image-slice: 30%;
+    border-image-width: 30px;
+    border-image-outset: 25px;
+}
+
+#ex11-1 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -189,7 +207,7 @@
     border-image-repeat: round;
     margin: 40px 0 40px 20px;
 }
-#ex10-2 {
+#ex11-2 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -200,7 +218,7 @@
     border-image-repeat: repeat;
     margin: 40px 0 40px 20px;
 }
-#ex10-3 {
+#ex11-3 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -211,7 +229,7 @@
     border-image-repeat: stretch;
     margin: 40px 0 40px 20px;
 }
-#ex10-4 {
+#ex11-4 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;

@@ -16,9 +16,15 @@
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
-            <h1>
-                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                CSS Flex
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">CSS Flexbox</span>
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -31,12 +37,23 @@
                     <p>CSS Flex</p>
                     <ul>
                         <li><a href="#flex">Flex (shorthand)</a></li>
-                        <li><a href="#flex-grow">Flex Grow|Shrink</a></li>
-                        <li><a href="#flex-shrink">Flex Shrink</a></li>
-                        <li><a href="#flex-basis">Flex Basis</a></li>
+
                         <li><a href="#flex-direction">Flex Direction</a></li>
-                        <li><a href="#flex wrap">Flex Wrap</a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="#flex-wrap">Flex Wrap</a></li>
+                        <ul>
+                            <li><a href="#wrap">Wrap</a></li>
+                            <li><a href="#wrap-reverse">Wrap Reverse</a></li>
+                            <li><a href="#no-wrap">No Wrap</a></li>
+                        </ul>
+                        <li>
+                            <a href="#flex-grow-shrink">Flex Grow|Shrink</a>
+                        </li>
+                        <ul>
+                            <li><a href="#flex-grow">Flex Grow</a></li>
+                            <li><a href="#flex-shrink">Flex Shrink</a></li>
+                        </ul>
+
+                        <li><a href="#flex-basis">Flex Basis</a></li>
                         <!-- li*6>a[href=#]> -->
                     </ul>
                 </nav>
@@ -124,8 +141,8 @@
                     <table class="pretty-table">
                         <thead>
                             <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">Examples</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -145,21 +162,18 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex1-1 {
+    display: flex;
+}
+
+<b><u>Flex Items</u></b>
+.ex1-1a {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;    
+    border: 1px solid black;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -203,7 +217,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -223,7 +237,19 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex2-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+<b><u>Flex Items</u></b>
+.ex2-1a {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    margin: auto;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
@@ -242,7 +268,19 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex2-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+<b><u>Flex Items</u></b>
+.ex2-2a {
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    margin: auto;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
@@ -261,7 +299,20 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex2-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+<b><u>Flex Items</u></b>
+.ex2-3a {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    margin: auto;
+    margin-bottom: 5px;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
@@ -280,7 +331,20 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex2-4 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+<b><u>Flex Items</u></b>
+.ex2-4a {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    margin: auto;
+    margin-bottom: 5px;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -331,7 +395,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -342,25 +406,137 @@
                                             >Wrap</span
                                         >
                                     </h4>
-                                    <div id="ex3-1"></div>
+                                    <div id="ex3-1">
+                                        <div class="ex3-1">1</div>
+                                        <div class="ex3-1">2</div>
+                                        <div class="ex3-1">3</div>
+                                        <div class="ex3-1">4</div>
+                                        <div class="ex3-1">5</div>
+                                        <div class="ex3-1">6</div>
+                                        <div class="ex3-1">7</div>
+                                        <div class="ex3-1">8</div>
+                                        <div class="ex3-1">9</div>
+                                        <div class="ex3-1">10</div>
+                                        <div class="ex3-1">11</div>
+                                        <div class="ex3-1">12</div>
+                                        <div class="ex3-1">13</div>
+                                        <!-- div.ex3-1{$}*6 -->
+                                        <!-- div.ex3-1{$@8}*6 -->
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex3-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+
+<b><u>Flex Items</u></b>
+.ex3-1 {
+    background-color: hotpink;
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    margin: 5px;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <h4 class="title-css">
                                         <span
-                                            id="wrap=reverse"
+                                            id="wrap-reverse"
                                             class="anchor-centered"
                                             >Wrap Reverse</span
                                         >
                                     </h4>
-                                    <div id="ex3-2"></div>
+                                    <div id="ex3-2">
+                                        <div class="ex3-2">1</div>
+                                        <div class="ex3-2">2</div>
+                                        <div class="ex3-2">3</div>
+                                        <div class="ex3-2">4</div>
+                                        <div class="ex3-2">5</div>
+                                        <div class="ex3-2">6</div>
+                                        <div class="ex3-2">7</div>
+                                        <div class="ex3-2">8</div>
+                                        <div class="ex3-2">9</div>
+                                        <div class="ex3-2">10</div>
+                                        <div class="ex3-2">11</div>
+                                        <div class="ex3-2">12</div>
+                                        <div class="ex3-2">13</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex3-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: beige;
+}
+
+<b><u>Flex Items</u></b>
+.ex3-2 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    margin: 5px;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br /><br /><br /><br /><br /><br /><br />
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="no-wrap"
+                                            class="anchor-centered"
+                                            >No Wrap</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-3">
+                                        <div class="ex3-3">1</div>
+                                        <div class="ex3-3">2</div>
+                                        <div class="ex3-3">3</div>
+                                        <div class="ex3-3">4</div>
+                                        <div class="ex3-3">5</div>
+                                        <div class="ex3-3">6</div>
+                                        <div class="ex3-3">7</div>
+                                        <div class="ex3-3">8</div>
+                                        <div class="ex3-3">9</div>
+                                        <div class="ex3-3">10</div>
+                                        <div class="ex3-3">11</div>
+                                        <div class="ex3-3">12</div>
+                                        <div class="ex3-3">13</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex3-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: beige;
+}
+
+<b><u>Flex Items</u></b>
+.ex3-3 {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    margin: 5px;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -405,7 +581,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -574,7 +750,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -593,21 +769,28 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="number"
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex5-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Flex Container</u></b>
+#ex5-1 {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    background-color: pink;
+}
+
+<b><u>Flex Items</u></b>
+#ex5-1a {
+    flex-basis: 150px;
+    background-color: violet;
+}
+#ex5-2a {
+    flex-basis: 50px;
+    background-color: blue;
+}
+#ex5-3a {
+    flex-basis: 275px;
+    background-color: chartreuse;
+}
+</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -628,7 +811,7 @@
                     <thead>
                         <tr>
                             <th>Examples</th>
-                            <th>CSS</th>
+                            <th class="css-width">CSS</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -666,19 +849,29 @@
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
-                        <a href="../index.html">Homepage</a>
-                        <br /><a href="../html-basics/index.html"
+                        <a href="../../../index.html">Homepage</a>
+                        <br /><a href="../../../html-basics/index.html"
                             >HTML Basics</a
                         >
-                        <br /><a href="../html-buttons/index.html">Buttons</a>
-                        <br /><a href="../html-forms/index.html">Forms</a>
-                        <br /><a href="../html-iframes/index.html">IFrames</a>
-                        <br /><a href="../html-images/index.html">Images</a>
-                        <br /><a href="../html-links/index.html">Links</a>
-                        <br /><a href="../html-lists/index.html">Lists</a>
-                        <br /><a href="../html-scripts/index.html">Scripts</a>
-                        <br /><a href="../html-tables/index.html">Tables</a>
-                        <br /><a href="../html-video-audio/index.html"
+                        <br /><a href="../../../html-buttons/index.html"
+                            >Buttons</a
+                        >
+                        <br /><a href="../../../html-forms/index.html">Forms</a>
+                        <br /><a href="../../../html-iframes/index.html"
+                            >IFrames</a
+                        >
+                        <br /><a href="../../../html-images/index.html"
+                            >Images</a
+                        >
+                        <br /><a href="../../../html-links/index.html">Links</a>
+                        <br /><a href="../../../html-lists/index.html">Lists</a>
+                        <br /><a href="../../../html-scripts/index.html"
+                            >Scripts</a
+                        >
+                        <br /><a href="../../../html-tables/index.html"
+                            >Tables</a
+                        >
+                        <br /><a href="../../../html-video-audio/index.html"
                             >Video & Audio</a
                         >
                     </div>
@@ -686,20 +879,14 @@
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
                         <a href="../border/index.html">Border</a>
-                        <a href="../box/index.html">Box</a>
-                        <a
-                            href="../CSS/css-properties/color-background/index.html"
+                        <br /><a href="../box/index.html">Box</a> <br /><a
+                            href="../color-background/index.html"
                             >Color & Background</a
                         >
-                        <a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a
-                            href="../CSS/css-properties/font-text/index.html"
-                            >Font & text</a
-                        >
-                        <br /><a href="../CSS/css-properties/grid/index.html"
-                            >Grid</a
-                        >
-                        <br /><a href="../lists-tables/index.html"
+                        <br /><a href="../flexbox/index.html">Flexbox</a>
+                        <br /><a href="../font-text/index.html">Font & text</a>
+                        <br /><a href="../grid/index.html">Grid</a> <br /><a
+                            href="../lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
