@@ -327,3 +327,12 @@ footer a:hover {
 ol {
     color: #504f4f;
 }
+
+.css-width {
+    width: 50%;
+}
+
+.subtitle-css {
+    font-style: italic;
+    text-decoration: underline;
+}

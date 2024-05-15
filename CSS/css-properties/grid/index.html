@@ -30,7 +30,69 @@
                 <nav id="nav">
                     <p>CSS Grid Properties</p>
                     <ul>
-                        <li></li>
+                        <li><a href="#grid">Grid (shorthand)</a></li>
+                        <ul class="tab20">
+                            <li><a href="#display-grid">Display: Grid</a></li>
+                            <li>
+                                <a href="#display-inline-grid"
+                                    >Display: Inline-Grid</a
+                                >
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="#grid-template-areas"
+                                >Grid Template Areas</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#grid-template-rows">Grid Template Rows</a>
+                        </li>
+                        <li>
+                            <a href="#grid-template-columns"
+                                >Grid Template Columnss</a
+                            >
+                        </li>
+                        <li><a href="#grid-auto-rows">Grid Auto Rows</a></li>
+                        <li>
+                            <a href="#grid-auto-columns">Grid Auto Columns</a>
+                        </li>
+                        <li><a href="#grid-auto-flow">Grid Auto Flow</a></li>
+                        <ul class="tab20">
+                            <li>
+                                <a href="#grid-auto-flow-column"
+                                    >Grid Auto Flow: Column</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#grid-auto-flow-row"
+                                    >Grid Auto Flow: Row</a
+                                >
+                            </li>
+                        </ul>
+                        <li><a href="#row-gap">Row Gap</a></li>
+                        <li>
+                            <a href="#column-gap">Column Gap</a>
+                        </li>
+                        <li>How To:</li>
+                        <li><a href="#basic-grid">Basic Grid</a></li>
+                        <li><a href="#ht2">Auto Row|Auto Column</a></li>
+                        <li><a href="#ht3">Fraction Units</a></li>
+                        <li><a href="#ht4">Grid Template Areas</a></li>
+                        <li>
+                            <a href="#ht5">Centering Content of Grid Item</a>
+                        </li>
+                        <ul class="tab20">
+                            <li>
+                                <a href="#grid-item-flex-centering"
+                                    >Centering Grid Item Contents with FLEX</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#grid-item-padding-centering"
+                                    >Centering Grid Item using PADDING</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                 </nav>
             </div>
@@ -242,9 +304,45 @@
                             property, and then reference to the name in the
                             grid-template-areas property.
                         </li>
+                        <li>Each area is defined by apostrophes.</li>
                         <li>
-                            Each area is defined by apostrophes. Use a period
-                            sign to refer to a grid item with no name.
+                            Use a period sign to refer to a grid item with no
+                            name.
+                        </li>
+                        <li>Display must be GRID</li>
+                        <li>
+                            There must be grid-template-columns, either
+                            grid-auto-rows|grid template rows.
+                        </li>
+                        <li>Gap can be included</li>
+                        <li>
+                            The number of Areas MUST EQUAL the number of divs
+                            that will be displayed within the grid.
+                        </li>
+                        <li>
+                            The columns must equal the grid-template-columns
+                        </li>
+                        <li>
+                            The width of the columns is determined by the
+                            contents OR how wide the container is set.
+                        </li>
+                        <li>
+                            If using fr as the measurement for the columns, then
+                            it will adopt to the size of the container
+                        </li>
+                        <li>
+                            If grid-template-rows is used, remember that this
+                            will only affect the first row, all the heights of
+                            the rows thereafter will be to fit the content
+                            height only. One can add grid-auto-rows, so the
+                            subsequent rows have a default height, OR by using
+                            auto rows ONLY, all rows including the first will
+                            have the same height.
+                        </li>
+                        <li>
+                            If grid-template-rows: auto; is used then the
+                            gridArea will be extended to fit the height of the
+                            content within the container.
                         </li>
                         <h4 class="title-css">Property Values:</h4>
                         <li>none: Default value. No named grid areas</li>
@@ -261,7 +359,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -273,31 +371,42 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex3-1">
-                                        <div id="ex3-1a" class="ex3-1">1</div>
-                                        <div id="ex3-1b" class="ex3-1">2</div>
-                                        <div id="ex3-1c" class="ex3-1">3</div>
-                                        <div id="ex3-1d" class="ex3-1">4</div>
-                                        <div id="ex3-1e" class="ex3-1">5</div>
-                                        <div id="ex3-1e" class="ex3-1">6</div>
+                                    <div id="ex2-1-container">
+                                        <div id="ex2-1a">1</div>
+                                        <div id="ex2-1b">2</div>
+                                        <div id="ex2-1c">3</div>
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex2-1 {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-auto-rows: 100px;
+    gap: 15px;
+    grid-template-areas:
+        "area1 area2 area3"
+        "area1 . area3"
+        "area1 . .";
+}
+
+<b><u>Grid Area 1</u></b>
+#ex2-1a {
+    grid-area: area1;
+    background-color: aquamarine;
+}
+
+<b><u>Grid Area 2</u></b>
+#ex2-1b {
+    grid-area: area2;
+    background-color: rgb(178, 127, 255);
+}
+
+<b><u>Grid Area 3</u></b>
+#ex2-1c {
+    grid-area: area3;
+    background-color: rgb(244, 255, 127);
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -349,7 +458,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -361,24 +470,44 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex3-1-container">
+                                        <div id="ex3-1a">1</div>
+                                        <div id="ex3-1b">2</div>
+                                        <div id="ex3-1c">3</div>
+                                        <div id="ex3-1d">4</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex3-1-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+<b><u>Grid Item 1</u></b>
+#ex3-1a {
+    background-color: blue;
+}
+
+<b><u>Grid Item 2</u></b>
+#ex3-1b {
+    background-color: green;
+}
+
+<b><u>Grid Item 3</u></b>
+#ex3-1c {
+    background-color: yellow;
+}
+
+<b><u>Grid Item 4</u></b>
+#ex3-1d {
+    background-color: orange;
+}
+                                    </code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -437,7 +566,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -449,24 +578,67 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex4-1-container">
+                                        <div id="ex4-1a">1</div>
+                                        <div id="ex4-1b">2</div>
+                                        <div id="ex4-1c">3</div>
+                                        <div id="ex4-1d">4</div>
+                                        <div id="ex4-1e">5</div>
+                                        <div id="ex4-1f">6</div>
+                                        <div id="ex4-1g">7</div>
+                                        <div id="ex4-1h">8</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex4-1-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+<b><u>Grid Item 1</u></b>
+#ex4-1a {
+    background-color: blue;
+}
+
+<b><u>Grid Item 2</u></b>
+#ex4-1b {
+    background-color: violet;
+}
+
+<b><u>Grid Item 3</u></b>
+#ex4-1c {
+    background-color: green;
+}
+
+<b><u>Grid Item 4</u></b>
+#ex4-1d {
+    background-color: orange;
+}
+
+<b><u>Grid Item 5</u></b>
+#ex4-1e {
+    background-color: red;
+}
+
+<b><u>Grid Item 6</u></b>
+#ex4-1f {
+    background-color: hotpink;
+}
+
+<b><u>Grid Item 7</u></b>
+#ex4-1g {
+    background-color: chartreuse;
+}
+
+<b><u>Grid Item 8</u></b>
+#ex4-1h {
+    background-color: brown;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -512,7 +684,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -524,24 +696,82 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex5-1-container">
+                                        <div id="ex5-1a">
+                                            <span class="grid-item-text"
+                                                >1</span
+                                            >
+                                        </div>
+                                        <div id="ex5-1b">2</div>
+                                        <div id="ex5-1c">3</div>
+                                        <div id="ex5-1d">4</div>
+                                        <div id="ex5-1e">5</div>
+                                        <div id="ex5-1f">6</div>
+                                        <div id="ex5-1g">7</div>
+                                        <div id="ex5-1h">8</div>
+                                        <div id="ex5-1i">9</div>
+                                        <div id="ex5-1j">10</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex5-1-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 1fr;
+    grid-auto-rows: 100px;
+    gap: 4px;
+}
+
+<b><u>Grid Item 1</u></b>
+#ex5-1a {
+    background-color: blueviolet;
+}
+
+<b><u>Grid Item 2</u></b>
+#ex5-1b {
+    background-color: rgb(155, 77, 227);
+}
+
+<b><u>Grid Item 3</u></b>
+#ex5-1c {
+    background-color: rgb(165, 114, 213);
+}
+
+<b><u>Grid Item 43</u></b>
+#ex5-1d {
+    background-color: rgb(93, 29, 153);
+}
+
+<b><u>Grid Item 5</u></b>
+#ex5-1e {
+    background-color: rgb(62, 19, 103);
+}
+
+<b><u>Grid Item 6</u></b>
+#ex5-1f {
+    background-color: rgb(43, 80, 226);
+}
+
+<b><u>Grid Item 7</u></b>
+#ex5-1g {
+    background-color: rgb(95, 112, 137);
+}
+
+<b><u>Grid Item 8</u></b>
+#ex5-1h {
+    background-color: rgb(31, 52, 145);
+}
+
+<b><u>Grid Item 9</u></b>
+#ex5-1i {
+    background-color: rgb(31, 66, 146);
+}
+
+<b><u>Grid Item 10</u></b>
+#ex5-1j {
+    background-color: rgb(58, 91, 151);
+}
+</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -597,7 +827,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -609,24 +839,60 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex6-1-container">
+                                        <div id="ex6-1a">1</div>
+                                        <div id="ex6-1b">2</div>
+                                        <div id="ex6-1c">3</div>
+                                        <div id="ex6-1d">4</div>
+                                        <div id="ex6-1e">5</div>
+                                        <div id="ex6-1f">6</div>
+                                        <div id="ex6-1g">7</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex6-1-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+    gap: 5px;
+}
+
+<b><u>Grid Item 1</u></b>
+#ex6-1a {
+    background-color: aqua;
+}
+
+<b><u>Grid Item 2</u></b>
+#ex6-1b {
+    background-color: green;
+}
+
+<b><u>Grid Item 3</u></b>
+#ex6-1c {
+    background-color: purple;
+}
+
+<b><u>Grid Item 4</u></b>
+#ex6-1d {
+    background-color: rgb(34, 162, 162);
+}
+
+<b><u>Grid Item 5</u></b>
+#ex6-1e {
+    background-color: rgb(58, 177, 58);
+}
+
+<b><u>Grid Item 6</u></b>
+#ex6-1f {
+    background-color: rgb(212, 68, 212);
+}
+
+<b><u>Grid Item 7</u></b>
+#ex6-1g {
+    background-color: rgb(37, 89, 89);
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -669,7 +935,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -677,28 +943,82 @@
                                 <td>
                                     <h4 class="title-css">
                                         <span
-                                            id=""
+                                            id="grid-auto-flow-column"
                                             class="anchor-centered"
-                                        ></span>
+                                            >Grid Auto Flow: Column</span
+                                        >
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex7-1-container">
+                                        <div id="7-1a" class="7-1">1</div>
+                                        <div id="7-1b" class="7-1">2</div>
+                                        <div id="7-1c" class="7-1">3</div>
+                                        <div id="7-1d" class="7-1">4</div>
+                                        <div id="7-1e" class="7-1">5</div>
+                                        <div id="7-1f" class="7-1">6</div>
+                                        <div id="7-1g" class="7-1">7</div>
+                                        <div id="7-1h" class="7-1">8</div>
+                                        <div id="7-1i" class="7-1">9</div>
+                                        <div id="7-1j" class="7-1">10</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex7-1-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background-color: lightcyan;
+}
+
+<b><u>All Grid Items</u></b>
+#ex7-1-container > div {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}</code></pre>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <h4 class="title-css">
                                         <span
-                                            id=""
+                                            id="grid-auto-flow-row"
                                             class="anchor-centered"
-                                        ></span>
+                                            >Grid Auto Flow: Row</span
+                                        >
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex7-2-container">
+                                        <div id="7-2a" class="7-2">1</div>
+                                        <div id="7-2b" class="7-2">2</div>
+                                        <div id="7-2c" class="7-2">3</div>
+                                        <div id="7-2d" class="7-2">4</div>
+                                        <div id="7-2e" class="7-2">5</div>
+                                        <div id="7-2f" class="7-2">6</div>
+                                        <div id="7-2g" class="7-2">7</div>
+                                        <div id="7-2h" class="7-2">8</div>
+                                        <div id="7-2i" class="7-2">9</div>
+                                        <div id="7-2j" class="7-2">10</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex7-2-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background-color: lightcyan;
+}
+
+<b><u>All Grid Items</u></b>
+#ex7-2-container > div {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -730,7 +1050,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -742,24 +1062,33 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex8-1-container">
+                                        <div id="ex8-1a" class="ex8-1">1</div>
+                                        <div id="ex8-1b" class="ex8-1">2</div>
+                                        <div id="ex8-1c" class="ex8-1">3</div>
+                                        <div id="ex8-1d" class="ex8-1">4</div>
+                                        <div id="ex8-1e" class="ex8-1">5</div>
+                                        <div id="ex8-1f" class="ex8-1">6</div>
+                                        <div id="ex8-1g" class="ex8-1">7</div>
+                                        <div id="ex8-1h" class="ex8-1">8</div>
+                                    </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ex8-1-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    row-gap: 20px;
+    background-color: chocolate;
+}
+
+<b><u>All Grid Items</u></b>
+.ex8-1 {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid black;
+}</code></pre>
                                 </td>
                             </tr>
                         </tbody>
@@ -791,7 +1120,7 @@
                         <thead>
                             <tr>
                                 <th>Examples</th>
-                                <th>CSS</th>
+                                <th class="css-width">CSS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -803,21 +1132,18 @@
                                             class="anchor-centered"
                                         ></span>
                                     </h4>
-                                    <div id="ex"></div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex"></div>
+                                    <div id="ex9-1-container">
+                                        <div id="ex9-1a" class="ex9-1">1</div>
+                                        <div id="ex9-1b" class="ex9-1">2</div>
+                                        <div id="ex9-1c" class="ex9-1">3</div>
+                                        <div id="ex9-1d" class="ex9-1">4</div>
+                                        <div id="ex9-1e" class="ex9-1">5</div>
+                                        <div id="ex9-1f" class="ex9-1">6</div>
+                                        <div id="ex9-1g" class="ex9-1">7</div>
+                                        <div id="ex9-1h" class="ex9-1">8</div>
+                                        <div id="ex9-1i" class="ex9-1">9</div>
+                                        <div id="ex9-1j" class="ex9-1">10</div>
+                                    </div>
                                 </td>
                                 <td>
                                     <pre><code></code></pre>
@@ -1021,7 +1347,293 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <pre><code></code></pre>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht4-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 20px;
+    border: 2px solid green;
+    padding: 5px;
+
+    grid-template-areas:
+        "firstArea secondArea thirdArea"
+        "firstArea . thirdArea"
+        "firstArea fourthArea ."
+        "fifthArea fifthArea fifthArea";
+}
+
+<b><u>General Grid Item CSS</u></b>
+.itm-ht4 {
+    text-align: center;
+}
+
+<b><u>Grid Section: 1</u></b>
+.itm-ht4-1 {
+    grid-area: firstArea;
+    background-color: pink;
+}
+
+<b><u>Grid Section: 2</u></b>
+.itm-ht4-2 {
+    grid-area: secondArea;
+    background-color: rgb(190, 238, 70);
+}
+
+<b><u>Grid Section: 3</u></b>
+.itm-ht4-3 {
+    grid-area: thirdArea;
+    background-color: lightsalmon;
+}
+
+<b><u>Grid Section: 4</u></b>
+.itm-ht4-4 {
+    grid-area: fourthArea;
+    background-color: lightskyblue;
+}
+
+<b><u>Grid Section: 5</u></b>
+.itm-ht4-5 {
+    grid-area: fifthArea;
+    background-color: lightyellow;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="ht5" class="anchor-centered"
+                            >Centering Content of Grid Item</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Grid Items are children of the grid container. If we
+                            center the items, we cannot center the content of
+                            the items, because it is cansidered the children NOT
+                            of Grid Container but of Grid Items.
+                        </li>
+                        <li>
+                            So we have to turn the display of the Grid Item into
+                            flex, and then center the contents.
+                        </li>
+                        <li>
+                            To make sure all the Grid-Items are centered, we can
+                            add the display:flex; justify-content:center; and
+                            align-items:center; to a class, that is used by all
+                            the Grid Items
+                        </li>
+                        <li>
+                            And we can treat each grid item as a seperate id,
+                            with their own background color.
+                        </li>
+                    </ul>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="grid-item-flex-centering"
+                                            class="anchor-centered"
+                                            >Centering Grid-Item Contents Using
+                                            display:flex;</span
+                                        >
+                                    </h4>
+                                    <div id="ht5-1-container">
+                                        <div id="ht5-1a" class="ht5-1-item">
+                                            1
+                                        </div>
+                                        <div id="ht5-1b" class="ht5-1-item">
+                                            2
+                                        </div>
+                                        <div id="ht5-1c" class="ht5-1-item">
+                                            3
+                                        </div>
+                                        <div id="ht5-1d" class="ht5-1-item">
+                                            4
+                                        </div>
+                                        <div id="ht5-1e" class="ht5-1-item">
+                                            5
+                                        </div>
+                                        <div id="ht5-1f" class="ht5-1-item">
+                                            6
+                                        </div>
+                                        <div id="ht5-1g" class="ht5-1-item">
+                                            7
+                                        </div>
+                                        <div id="ht5-1h" class="ht5-1-item">
+                                            8
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht5-1-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+
+<b><u>Grid Items Class</u></b>
+.ht5-1-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+<b><u>Grid-Item 1</u></b>
+#ht5-1a {
+    background-color: orange;
+}
+
+<b><u>Grid-Item 2</u></b>
+#ht5-1b {
+    background-color: rgb(200, 139, 26);
+}
+
+<b><u>Grid-Item 3</u></b>
+#ht5-1c {
+    background-color: rgb(151, 114, 44);
+}
+
+<b><u>Grid-Item 4</u></b>
+#ht5-1d {
+    background-color: rgb(140, 109, 53);
+}
+
+<b><u>Grid-Item 5</u></b>
+#ht5-1e {
+    background-color: rgb(123, 102, 62);
+}
+
+<b><u>Grid-Item 6</u></b>
+#ht5-1f {
+    background-color: rgb(108, 94, 69);
+}
+
+<b><u>Grid-Item 7</u></b>
+#ht5-1g {
+    background-color: rgb(98, 89, 74);
+}
+
+<b><u>Grid-Item 8</u></b>
+#ht5-1h {
+    background-color: rgb(82, 79, 73);
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="grid-item-padding-centering"
+                                            class="anchor-centered"
+                                            >Centering Grid Items using
+                                            Padding</span
+                                        >
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            This also affects the height of the
+                                            Grid Item
+                                        </li>
+                                    </ul>
+                                    <br />
+                                    <br />
+                                    <span class="subtitle-css"
+                                        >without
+                                        Grid-Template-Row|Grid-Auto-Row</span
+                                    >
+                                    <ul>
+                                        <li>
+                                            Without any sort of row height
+                                            measurement set in place, the
+                                            padding(Top & Bottom), ensures that
+                                            the contents are vertically cenetred
+                                        </li>
+                                    </ul>
+
+                                    <div id="ht6-1-container">
+                                        <div id="ht6-1a" class="ht6-1">1</div>
+                                        <div id="ht6-1b" class="ht6-1">2</div>
+                                        <div id="ht6-1c" class="ht6-1">3</div>
+                                        <div id="ht6-1d" class="ht6-1">4</div>
+                                        <div id="ht6-1e" class="ht6-1">5</div>
+                                        <div id="ht6-1f" class="ht6-1">6</div>
+                                        <div id="ht6-1g" class="ht6-1">7</div>
+                                    </div>
+
+                                    <br /><br /><br />
+                                    <span class="subtitle-css"
+                                        >with
+                                        Grid-Template-Row|Grid-Auto-Row</span
+                                    >
+                                    <ul>
+                                        <li>
+                                            You would have to guesstimate where
+                                            the center point is, since auto rows
+                                            has the default row height set to
+                                            100px
+                                        </li>
+                                    </ul>
+
+                                    <div id="ht6-2-container">
+                                        <div id="ht6-2a" class="ht6-2">1</div>
+                                        <div id="ht6-2b" class="ht6-2">2</div>
+                                        <div id="ht6-2c" class="ht6-2">3</div>
+                                        <div id="ht6-2d" class="ht6-2">4</div>
+                                        <div id="ht6-2e" class="ht6-2">5</div>
+                                        <div id="ht6-2f" class="ht6-2">6</div>
+                                        <div id="ht6-2g" class="ht6-2">7</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                                    <pre><code><b><u>Grid Container</u></b>
+#ht6-1-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: burlywood;
+    gap: 5px;
+}
+
+<b><u>All Grid Items</u></b>
+.ht6-1 {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px 0;
+}</code></pre>
+
+                                    <br /><br /><br /><br /><br /><br /><br />
+                                    <code>
+                                        <pre><b><u>Grid Container</u></b>
+#ht6-2-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 100px;
+    background-color: cornflowerblue;
+    gap: 5px;
+    padding: 5px;
+}
+
+<b><u>All Grid Items</u></b>
+.ht6-2 {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 45px 0 45px 0;
+}</pre>
+                                    </code>
                                 </td>
                             </tr>
                         </tbody>
@@ -1042,7 +1654,7 @@
                     <thead>
                         <tr>
                             <th>Examples</th>
-                            <th>CSS</th>
+                            <th class="css-width">CSS</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1099,10 +1711,13 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
+                        <a href="../border/index.html">Border</a>
+                        <a href="../box/index.html">Box</a>
                         <a
                             href="../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
+                        <a href="../flexbox/index.html">Flexbox</a>
                         <br /><a
                             href="../CSS/css-properties/font-text/index.html"
                             >Font & text</a
@@ -1110,8 +1725,8 @@
                         <br /><a href="../CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
-                        <br /><a href="../CSS/css-properties/flexbox/index.html"
-                            >Flexbox</a
+                        <br /><a href="../lists-tables/index.html"
+                            >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>
@@ -1124,6 +1739,6 @@
                 </div>
             </div>
         </footer>
-        <script src="../../nav-menu.js"></script>
+        <script src="../../../nav-menu.js"></script>
     </body>
 </html>

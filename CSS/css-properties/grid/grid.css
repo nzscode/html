@@ -1,7 +1,3 @@
-.css-width {
-    width: 50%;
-}
-
 #ex1-1 {
     display: grid;
     row-gap: 50px;
@@ -29,6 +25,226 @@
     background-color: lightgreen;
     border: 1px solid black;
     padding: 10px;
+}
+
+#ex2-1-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-auto-rows: 100px;
+    gap: 15px;
+    grid-template-areas:
+        "area1 area2 area3"
+        "area1 . area3"
+        "area1 . .";
+}
+
+#ex2-1a {
+    grid-area: area1;
+    background-color: aquamarine;
+}
+
+#ex2-1b {
+    grid-area: area2;
+    background-color: rgb(178, 127, 255);
+}
+
+#ex2-1c {
+    grid-area: area3;
+    background-color: rgb(244, 255, 127);
+}
+
+#ex3-1-container {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#ex3-1a {
+    background-color: blue;
+}
+
+#ex3-1b {
+    background-color: green;
+}
+
+#ex3-1c {
+    background-color: yellow;
+}
+
+#ex3-1d {
+    background-color: orange;
+}
+
+#ex4-1-container {
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-columns: 2fr 1fr 3fr;
+    gap: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#ex4-1a {
+    background-color: blue;
+}
+
+#ex4-1b {
+    background-color: violet;
+}
+
+#ex4-1c {
+    background-color: green;
+}
+
+#ex4-1d {
+    background-color: orange;
+}
+
+#ex4-1e {
+    background-color: red;
+}
+
+#ex4-1f {
+    background-color: hotpink;
+}
+
+#ex4-1g {
+    background-color: chartreuse;
+}
+
+#ex4-1h {
+    background-color: brown;
+}
+
+#ex5-1-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 1fr;
+    grid-auto-rows: 100px;
+    gap: 4px;
+}
+
+#ex5-1a {
+    background-color: blueviolet;
+}
+
+#ex5-1b {
+    background-color: rgb(155, 77, 227);
+}
+
+#ex5-1c {
+    background-color: rgb(165, 114, 213);
+}
+
+#ex5-1d {
+    background-color: rgb(93, 29, 153);
+}
+
+#ex5-1e {
+    background-color: rgb(62, 19, 103);
+}
+
+#ex5-1f {
+    background-color: rgb(43, 80, 226);
+}
+
+#ex5-1g {
+    background-color: rgb(95, 112, 137);
+}
+
+#ex5-1h {
+    background-color: rgb(31, 52, 145);
+}
+
+#ex5-1i {
+    background-color: rgb(31, 66, 146);
+}
+
+#ex5-1j {
+    background-color: rgb(58, 91, 151);
+}
+
+#ex6-1-container {
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px;
+    gap: 5px;
+}
+
+#ex6-1a {
+    background-color: aqua;
+}
+
+#ex6-1b {
+    background-color: green;
+}
+
+#ex6-1c {
+    background-color: purple;
+}
+
+#ex6-1d {
+    background-color: rgb(34, 162, 162);
+}
+
+#ex6-1e {
+    background-color: rgb(58, 177, 58);
+}
+
+#ex6-1f {
+    background-color: rgb(212, 68, 212);
+}
+
+#ex6-1g {
+    background-color: rgb(37, 89, 89);
+}
+
+#ex7-1-container,
+#ex7-2-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+    background-color: lightcyan;
+}
+
+#ex7-1-container > div,
+#ex7-2-container > div {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+#ex8-1-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    row-gap: 20px;
+    background-color: chocolate;
+}
+
+.ex8-1 {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid black;
+}
+
+#ex9-1-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    column-gap: 20px;
+    background-color: rgb(180, 210, 30);
+}
+
+.ex9-1 {
+    background-color: rgb(128, 0, 255);
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid black;
+    color: #fff;
 }
 
 #ht1-container {
@@ -110,4 +326,78 @@
 .itm-ht4-5 {
     grid-area: fifthArea;
     background-color: lightyellow;
+}
+
+#ht5-1-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+
+.ht5-1-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ht5-1a {
+    background-color: orange;
+}
+
+#ht5-1b {
+    background-color: rgb(200, 139, 26);
+}
+
+#ht5-1c {
+    background-color: rgb(151, 114, 44);
+}
+
+#ht5-1d {
+    background-color: rgb(140, 109, 53);
+}
+
+#ht5-1e {
+    background-color: rgb(123, 102, 62);
+}
+
+#ht5-1f {
+    background-color: rgb(108, 94, 69);
+}
+
+#ht5-1g {
+    background-color: rgb(98, 89, 74);
+}
+
+#ht5-1h {
+    background-color: rgb(82, 79, 73);
+}
+
+#ht6-1-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: burlywood;
+    gap: 5px;
+    padding: 5px;
+}
+
+.ht6-1 {
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#ht6-2-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 100px;
+    background-color: cornflowerblue;
+    gap: 5px;
+    padding: 5px;
+}
+
+.ht6-2 {
+    background-color: lightgreen;
+    text-align: center;
+    padding: 45px 0 45px 0;
 }
