@@ -1103,17 +1103,91 @@ object.style.maxHeight="600px"</code></pre>
                 </table>
             </section>
             <br /><br />
+
             <section>
-                <h3>
-                    <span id="content" class="anchor-centered">Content</span>
-                </h3>
+                <h3><span id="margin" class="anchor-centered">Margin</span></h3>
                 <ul>
-                    <li></li>
+                    <li>Concerning Padding: Remember top|right|bottom|left</li>
+                    <li>
+                        Sets the margins for an element, and is a shorthand
+                        property for the following properties:
+                    </li>
+                    <ul>
+                        <li>margin-top</li>
+                        <li>margin-right</li>
+                        <li>margin-bottom</li>
+                        <li>margin-left</li>
+                    </ul>
+                    <li>If the margin property has four values:</li>
+                    <ul>
+                        <li>margin: 10px 5px 15px 20px;</li>
+                        <ul>
+                            <li>top margin is 10px</li>
+                            <li>right margin is 5px</li>
+                            <li>bottom margin is 15px</li>
+                            <li>left margin is 20px</li>
+                        </ul>
+                    </ul>
+                    <li>If the margin property has three values:</li>
+                    <ul>
+                        <li>margin: 10px 5px 15px;</li>
+                        <ul>
+                            <li>top margin is 10px</li>
+                            <li>right and left margins are 5px</li>
+                            <li>bottom margin is 15px</li>
+                        </ul>
+                    </ul>
+                    <li>If the margin property has two values:</li>
+                    <ul>
+                        <li>margin: 10px 5px;</li>
+                        <ul>
+                            <li>top and bottom margins are 10px</li>
+                            <li>right and left margins are 5px</li>
+                        </ul>
+                    </ul>
+                    <li>If the margin property has one value:</li>
+                    <ul>
+                        <li>margin: 10px;</li>
+                        <ul>
+                            <li>all four margins are 10px</li>
+                        </ul>
+                    </ul>
+
+                    <li>Negative values are allowed.</li>
+                    <br /><br />
+                    <b><u>Margin Collapse</u></b>
+                    <ul>
+                        <li>
+                            Top and bottom margins of elements are sometimes
+                            collapsed into a single margin that is equal to the
+                            largest of the two margins.
+                        </li>
+                        <li>
+                            This does not happen on horizontal (left and right)
+                            margins! Only vertical (top and bottom) margins!
+                        </li>
+                    </ul>
+                    <br /><br />
                     <h4 class="title-css">Property Values:</h4>
-                    <li></li>
+                    <li>
+                        length: Specifies a margin in px, pt, cm, etc. Default
+                        value is 0. Negative values are allowed. Read about
+                        length units
+                    </li>
+                    <li>
+                        %: Specifies a margin in percent of the width of the
+                        containing element
+                    </li>
+                    <li>auto: The browser calculates a margin</li>
+                    <li>initial: Sets this property to its default value.</li>
+                    <li>
+                        inherit: Inherits this property from its parent element.
+                    </li>
                 </ul>
                 <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
+                <pre
+                    class="js-pre"
+                ><code>object.style.margin="100px 50px"</code></pre>
                 <table class="pretty-table">
                     <thead>
                         <tr>
@@ -1125,9 +1199,111 @@ object.style.maxHeight="600px"</code></pre>
                         <tr>
                             <td>
                                 <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
+                                    <span id="" class="anchor-centered"
+                                        >Margin (shorthand)</span
+                                    >
                                 </h4>
-                                <div id="ex9"></div>
+                                <div id="ex10-1">
+                                    <p class="ex10-1a">
+                                        Lorem, ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Est
+                                        vero dicta fuga, possimus inventore
+                                        illo.
+                                    </p>
+                                    <p id="ex10-1b" class="ex10-1a">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                    <p class="ex10-1a">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <pre><code>#ex10-1b {
+    margin: 75px 50px 2px 100px;
+}
+
+.ex10-1a {
+    background-color: lightpink;
+    padding: 10px;
+}</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"
+                                        >Margin (three)</span
+                                    >
+                                </h4>
+                                <div id="ex10-2">
+                                    <p class="ex10-2a">
+                                        Lorem, ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Est
+                                        vero dicta fuga, possimus inventore
+                                        illo.
+                                    </p>
+                                    <p id="ex10-2b" class="ex10-2a">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                    <p class="ex10-2a">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <pre><code>#ex10-2b {
+    margin: 75px 100px 2px;
+}
+
+.ex10-2a {
+    background-color: lightpink;
+    padding: 10px;
+}</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"
+                                        >Margin (two)</span
+                                    >
+                                </h4>
+                                <div id="ex10-3">
+                                    <p class="ex10-3a">
+                                        Lorem, ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Est
+                                        vero dicta fuga, possimus inventore
+                                        illo.
+                                    </p>
+                                    <p id="ex10-3b" class="ex10-3a">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                    <p class="ex10-3a">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                </div>
                             </td>
                             <td>
                                 <pre><code></code></pre>
@@ -1136,41 +1312,31 @@ object.style.maxHeight="600px"</code></pre>
                         <tr>
                             <td>
                                 <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
+                                    <span id="" class="anchor-centered"
+                                        >Margin (one)</span
+                                    >
                                 </h4>
-                                <div id="ex"></div>
-                            </td>
-                            <td>
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br /><br />
-            <section>
-                <h3><span id="margin" class="anchor-centered">margin</span></h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex10"></div>
+                                <div id="ex10-4">
+                                    <p class="ex10-4a">
+                                        Lorem, ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Est
+                                        vero dicta fuga, possimus inventore
+                                        illo.
+                                    </p>
+                                    <p id="ex10-4b" class="ex10-4a">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                    <p class="ex10-4a">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                </div>
                             </td>
                             <td>
                                 <pre><code></code></pre>
@@ -1185,55 +1351,38 @@ object.style.maxHeight="600px"</code></pre>
                                         >Margin Collapse</span
                                     >
                                 </h4>
-                                <div id="ex"></div>
+                                <div id="ex10-5">
+                                    <p class="ex10-5a">
+                                        Lorem, ipsum dolor Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Est
+                                        vero dicta fuga, possimus inventore
+                                        illo.
+                                    </p>
+                                    <p id="ex10-5b" class="ex10-5a">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Perferendis, minus.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                    <p class="ex10-5a">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Est vero dicta fuga,
+                                        possimus inventore illo.
+                                    </p>
+                                </div>
                             </td>
                             <td>
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br /><br />
-            <section>
-                <h3>
-                    <span id="padding" class="anchor-centered">Padding</span>
-                </h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex11"></div>
-                            </td>
-                            <td>
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div>
-                            </td>
-                            <td>
-                                <pre><code></code></pre>
+                                <pre><code>#ex10-5b {
+    margin: 20px 0 0 0;
+}
+
+.ex10-5a {
+    background-color: rgb(236, 255, 182);
+    padding: 10px;
+}
+</code></pre>
                             </td>
                         </tr>
                     </tbody>

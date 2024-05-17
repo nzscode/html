@@ -143,5 +143,47 @@
     padding: 20px;
 }
 
-#ex11 {
+#ex10-1b {
+    margin: 75px 50px 2px 100px;
+}
+
+.ex10-1a {
+    background-color: lightpink;
+    padding: 10px;
+}
+
+#ex10-2b {
+    margin: 75px 100px 2px;
+}
+
+.ex10-2a {
+    background-color: rgb(242, 182, 255);
+    padding: 10px;
+}
+
+#ex10-3b {
+    margin: 75px 100px;
+}
+
+.ex10-3a {
+    background-color: rgb(182, 255, 242);
+    padding: 10px;
+}
+
+#ex10-4b {
+    margin: 15px;
+}
+
+.ex10-4a {
+    background-color: rgb(182, 255, 198);
+    padding: 10px;
+}
+
+#ex10-5b {
+    margin: 20px 0 0 0;
+}
+
+.ex10-5a {
+    background-color: rgb(236, 255, 182);
+    padding: 10px;
 }
