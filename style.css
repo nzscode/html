@@ -349,3 +349,71 @@ ul {
     font-style: italic;
     text-decoration: underline;
 }
+
+.outer-table {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+}
+
+.head-row,
+.body-row {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
+}
+
+.cell-header {
+    background-color: #504f4f;
+    text-align: center;
+    padding: 10px;
+}
+
+.cells {
+    padding: 5px;
+}
+.cell-header {
+    color: #fcdcb9;
+    font-weight: bold;
+}
+
+.odd-bg {
+    background-color: #00000017;
+}
+
+.basic-table {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.basic-table .head-row,
+.basic-table .body-row {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
+}
+
+.basic-table .cell-header {
+    background-color: #504f4f;
+    text-align: center;
+    padding: 10px;
+}
+
+.basic-table .cells {
+    padding: 5px;
+}
+.basic-table .cell-header {
+    color: #fcdcb9;
+    font-weight: bold;
+}
+
+.basic-table .odd-bg {
+    background-color: #00000017;
+}

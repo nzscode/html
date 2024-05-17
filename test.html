@@ -4,40 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./test.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>Test</title>
     </head>
     <body>
-        <div>
-            <p>
-                Don't put peanut butter on the dog's nose.
-                <span
-                    >He invested some skill points in Charisma and
-                    Strength.</span
-                >
-                <br />
-                <span>Best friends are like old tomatoes and shoelaces.</span>
-            </p>
-            <p title="jam pyot">
-                He strives to keep the best lawn in the neighborhood.
-            </p>
-            <br /><br />
-            <ul>
-                <li>
-                    Which is faster, a train or a bus?
-
-                    <p>I drink when I am thirsty.</p>
-                </li>
-                <li title="jojo jam">He ordered a latte.</li>
-                <li>Those apples are very red.</li>
-            </ul>
+        <div id="outer-table" class="outer-table">
+            <div class="head-row">
+                <div class="cell-header">Example</div>
+                <div class="cell-header">CSS</div>
+            </div>
+            <div class="body-row">
+                <div class="cells">Row 1 Cell 1</div>
+                <div class="cells">Row 1 Cell 2</div>
+            </div>
+            <div class="body-row">
+                <div class="cells odd-bg">Row 2 Cell 1</div>
+                <div class="cells odd-bg">
+                    <pre><code></code></pre>
+                </div>
+            </div>
+            <div class="body-row">
+                <div class="cells">Row 2 Cell 1</div>
+                <div class="cells">
+                    <pre><code></code></pre>
+                </div>
+            </div>
         </div>
-
-        <div id="coded">haha</div>
         <script src="./raw.js"></script>
     </body>
 </html>
-
-<!-- 
-
-
- -->

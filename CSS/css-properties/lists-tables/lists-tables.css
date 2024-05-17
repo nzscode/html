@@ -1,3 +1,7 @@
+#ex1 ul {
+    list-style: square inside url(../../../images/dbl-color-img.png);
+}
+
 #ex2 ul li {
     list-style-image: url(../../../images/dbl-color-img.png);
 }
@@ -42,4 +46,168 @@
     content: "**/**";
     padding-right: 8px;
     color: red;
+}
+
+#ex6-1,
+#ex6-1 tr,
+#ex6-1 th,
+#ex6-1 td {
+    border: 2px solid blue;
+}
+
+#ex6-2,
+table#ex6-2 th,
+table#ex6-2 td {
+    border: 2px solid black;
+}
+
+table#ex6-2 {
+    width: 100%;
+}
+
+#ex6-3-1,
+#ex6-3-1 tr,
+#ex6-3-1 th,
+#ex6-3-1 td {
+    border: 4px solid hotpink;
+}
+
+#ex6-3-2,
+#ex6-3-2 tr,
+#ex6-3-2 th,
+#ex6-3-2 td {
+    border: 4px solid hotpink;
+    border-collapse: collapse;
+}
+
+#ex6-4-1,
+#ex6-4-1 tr,
+#ex6-4-1 th,
+#ex6-4-1 td {
+    border: 4px solid green;
+}
+
+#ex6-4-2 {
+    border: 4px solid green;
+    border-collapse: collapse;
+}
+
+#ex7,
+#ex7 th,
+#ex7 td {
+    border: 2px solid green;
+}
+
+#ex7 {
+    width: 100%;
+}
+
+#ex7 td {
+    height: 150px;
+}
+
+#ex8-1 {
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
+}
+
+table#ex8-1 th,
+table#ex8-1 td {
+    padding: 10px;
+}
+
+table#ex8-1 th:nth-child(2),
+table#ex8-1 td:nth-child(2) {
+    border-left: 1px solid black;
+}
+
+#ex8-2 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex8-2 th,
+table#ex8-2 td {
+    padding: 10px;
+    height: 100px;
+}
+
+table#ex8-2 tr:nth-child(1) {
+    vertical-align: top;
+}
+
+table#ex8-2 tr:nth-child(3) {
+    vertical-align: bottom;
+}
+
+table#ex8-2 td {
+    border-bottom: 1px solid black;
+}
+
+/*  */
+#ex9-1 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex9-1 th,
+table#ex9-1 td {
+    padding: 10px;
+}
+
+/*  */
+#ex9-2 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex9-2 th,
+table#ex9-2 td {
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/*  */
+#ex9-3 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex9-3 th,
+table#ex9-3 td {
+    padding: 10px;
+}
+
+table#ex9-3 tr:hover {
+    background-color: salmon;
+}
+/*  */
+#ex9-4 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex9-4 th,
+table#ex9-4 td {
+    padding: 10px;
+}
+
+table#ex9-4 tr:nth-child(even) {
+    background-color: cadetblue;
+}
+/*  */
+#ex9-5 {
+    border: 2px solid black;
+    width: 100%;
+}
+
+table#ex9-5 th,
+table#ex9-5 td {
+    padding: 10px;
+}
+
+table#ex9-5 th {
+    background-color: rgb(144, 30, 210);
+    color: #fff;
 }
