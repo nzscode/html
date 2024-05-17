@@ -65,3 +65,36 @@
     column-gap: 15px;
     column-rule: 4px double green;
 }
+
+#ex5 {
+    column-count: 3;
+    column-gap: 15px;
+    column-rule-width: 10px;
+    column-rule-style: dotted;
+    column-rule-color: hotpink;
+}
+
+#ex6 {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-width: 30px;
+    column-rule-style: ridge;
+    column-rule-color: goldenrod;
+}
+
+#ex7 {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-width: 30px;
+    column-rule-style: double;
+    column-rule-color: blueviolet;
+}
+
+#ex8 {
+    column-count: 3;
+    column-gap: 20px;
+    column-span: all;
+    column-rule-width: 30px;
+    column-rule-style: double;
+    column-rule-color: blueviolet;
+}

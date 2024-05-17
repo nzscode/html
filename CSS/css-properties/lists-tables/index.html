@@ -37,13 +37,569 @@
                 <nav id="nav">
                     <p>CSS Lists & Tables Properties</p>
                     <ul>
-                        <li><a href="#grid">Grid (shorthand)</a></li>
+                        <li><a href="#list">List (shorthand)</a></li>
+
+                        <li>
+                            <a href="#list-style-item">List Item Markers</a>
+                        </li>
+                        <li>
+                            <a href="#list-style-image"
+                                >Image as List Item Marker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#list-style-type"
+                                >Type of List Item Marker</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="#list-style-position"
+                                >Position of List Item Marker</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#list-item-marker-color"
+                                >Color of List Item Marker</a
+                            >
+                        </li>
+                        <ul>
+                            <li>
+                                <a href="#remove-default">Remove Default</a>
+                            </li>
+                            <li><a href="#new-bullet">New Color Bullet</a></li>
+                        </ul>
                     </ul>
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
+            <article>
+                <section>
+                    <h3>
+                        <span id="list" class="anchor-centered"
+                            >List (shorthand)</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Is a shorthand for the following properties:</li>
+                        <ul>
+                            <li>list-style-type</li>
+                            <li>list-style-position</li>
+                            <li>list-style-image</li>
+                        </ul>
+                        <li>
+                            If one of the values are missing, the default value
+                            for that property will be used.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            list-style-type: Specifies the type of list-item
+                            marker. Default value is "disc"
+                        </li>
+                        <li>
+                            list-style-position: Specifies where to place the
+                            list-item marker. Default value is "outside"
+                        </li>
+                        <li>
+                            list-style-image: Specifies the type of list-item
+                            marker. Default value is "none"
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.listStyle="decimal inside"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="list-style-image" class="anchor-centered"
+                            >List Style Image</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>Replaces the list-item marker with an image.</li>
+                        <li>
+                            Always specify the list-style-type property in
+                            addition. This property is used if the image for
+                            some reason is unavailable.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            none: No image will be displayed. Instead, the
+                            list-style-type property will define what type of
+                            list marker will be rendered. This is default
+                        </li>
+                        <li>
+                            url: The path to the image to be used as a list-item
+                            marker
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.listStyleImage="url('smiley.gif')"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex2">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex2 ul li {
+    list-style-image: url(../../../images/dbl-color-img.png);
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="list-style-position" class="anchor-centered"
+                            >List Style Position</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the position of the list-item markers
+                            (bullet points).
+                        </li>
+                        <li>
+                            list-style-position: outside; means that the bullet
+                            points will be outside the list item. The start of
+                            each line of a list item will be aligned vertically:
+                        </li>
+                        <li>
+                            list-style-position: inside; means that the bullet
+                            points will be inside the list item. As it is part
+                            of the list item, it will be part of the text and
+                            push the text at the start:
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            inside: The bullet points will be inside the list
+                            item
+                        </li>
+                        <li>
+                            outside: The bullet points will be outside the list
+                            item. This is default
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.listStylePosition="inside"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="inside"
+                                            class="anchor-centered"
+                                            >Inside</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-1">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-1 ul li {
+    border: 3px solid purple;
+}
+
+#ex3-1 ul {
+    list-style-position: inside;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="outside"
+                                            class="anchor-centered"
+                                            >Outside</span
+                                        >
+                                    </h4>
+                                    <div id="ex3-2">
+                                        <ul>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex3-2 ul li {
+    border: 3px solid hotpink;
+}
+
+#ex3-2 ul {
+    list-style-position: outside;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="list-style-type" class="anchor-centered"
+                            >List Style Type</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Specifies the type of list-item marker in a list.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            disc: Default value. The marker is a filled circle
+                        </li>
+                        <li>
+                            armenian: The marker is traditional Armenian
+                            numbering
+                        </li>
+                        <li>circle: The marker is a circle</li>
+                        <li>
+                            cjk-ideographic: The marker is plain ideographic
+                            numbers
+                        </li>
+                        <li>decimal: The marker is a number</li>
+                        <li>
+                            decimal-leading-zero: The marker is a number with
+                            leading zeros (01, 02, 03, etc.)
+                        </li>
+                        <li>
+                            georgian: The marker is traditional Georgian
+                            numbering
+                        </li>
+                        <li>
+                            hiragana: The marker is traditional Hiragana
+                            numbering
+                        </li>
+                        <li>
+                            hiragana-iroha: The marker is traditional Hiragana
+                            iroha numbering
+                        </li>
+                        <li>
+                            katakana: The marker is traditional Katakana
+                            numbering
+                        </li>
+                        <li>
+                            katakana-iroha: The marker is traditional Katakana
+                            iroha numbering
+                        </li>
+                        <li>
+                            lower-alpha: The marker is lower-alpha (a, b, c, d,
+                            e, etc.)
+                        </li>
+                        <li>lower-greek: The marker is lower-greek</li>
+                        <li>
+                            lower-latin: The marker is lower-latin (a, b, c, d,
+                            e, etc.)
+                        </li>
+                        <li>
+                            lower-roman: The marker is lower-roman (i, ii, iii,
+                            iv, v, etc.)
+                        </li>
+                        <li>none: No marker is shown</li>
+                        <li>square: The marker is a square</li>
+                        <li>
+                            upper-alpha: The marker is upper-alpha (A, B, C, D,
+                            E, etc.)
+                        </li>
+                        <li>upper-greek: The marker is upper-greek</li>
+                        <li>
+                            upper-latin: The marker is upper-latin (A, B, C, D,
+                            E, etc.)
+                        </li>
+                        <li>
+                            upper-roman: The marker is upper-roman (I, II, III,
+                            IV, V, etc.)
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.listStyleType="square"</code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="" class="anchor-centered"
+                                            >Upper Alpha</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-1">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-1 ul li {
+    list-style-type: upper-alpha;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span id="" class="anchor-centered"
+                                            >Lower Roman</span
+                                        >
+                                    </h4>
+                                    <div id="ex4-2">
+                                        <ul>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                            <li>11</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex4-2 ul li {
+    list-style-type: lower-roman;
+}</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span
+                            id="list-item-marker-colors"
+                            class="anchor-centered"
+                            >List Item Marker Colors</span
+                        >
+                    </h3>
+                    <ul>
+                        <li>
+                            Adding bullet colors for &lt;ul&gt; or &lt;ol&gt; by
+                            removing their default bullets and adding a HTML
+                            entity that looks like bullets (&#38;bull;):
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li></li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code></code></pre>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Examples</th>
+                                <th class="css-width">CSS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="removing-default"
+                                            class="anchor-centered"
+                                            >Removing Bullets</span
+                                        >
+                                    </h4>
+                                    <br /><br />
+                                    <div id="ex5-1">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code>#ex5-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id="new-bullet"
+                                            class="anchor-centered"
+                                            >Adding New Bullet & Color</span
+                                        >
+                                    </h4>
+                                    <br /><br />
+                                    <div id="ex5-2">
+                                        <ul>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                            <li>11</li>
+                                            <li>12</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <pre><code><b><u>Removing Default Bullet</u></b>
+#ex5-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+<b><u>Adding New Bullet</u></b>
+#ex5-2 li::before {
+    content: "**/**";
+    padding-right: 8px;
+    color: red;
+}</code></pre>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="title-css">
+                                        <span
+                                            id=""
+                                            class="anchor-centered"
+                                        ></span>
+                                    </h4>
+                                    <div id="ex"></div>
+                                </td>
+                                <td>
+                                    <pre><code></code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br /><br />
+            </article>
             <!-- 
                 <section>
                 <h3><span id="" class="anchor-centered"></span></h3>

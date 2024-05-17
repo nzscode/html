@@ -1,0 +1,45 @@
+#ex2 ul li {
+    list-style-image: url(../../../images/dbl-color-img.png);
+}
+
+#ex3-1 ul li {
+    border: 3px solid purple;
+}
+
+#ex3-1 ul {
+    list-style-position: inside;
+}
+
+#ex3-2 ul li {
+    border: 3px solid hotpink;
+}
+
+#ex3-2 ul {
+    list-style-position: outside;
+}
+
+#ex4-1 ul li {
+    list-style-type: upper-alpha;
+}
+
+#ex4-2 ul li {
+    list-style-type: lower-roman;
+}
+
+#ex5-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ex5-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ex5-2 li::before {
+    content: "**/**";
+    padding-right: 8px;
+    color: red;
+}
