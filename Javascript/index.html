@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./javascript.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Javascript</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">Javascript</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav">
+                    <p>Functions</p>
+                    <ul>
+                        <li><a href="#basic-function">Basic Function</a></li>
+                        <li><a href="#arrow-function">Arrow Function</a></li>
+                    </ul>
+                </nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <h2>Functions</h2>
+                <section>
+                    <h3>
+                        <span id="basic-function" class="anchor-centered"
+                            >Basic Function</span
+                        >
+                    </h3>
+                    <ul>
+                        <ol>
+                            <li></li>
+                        </ol>
+                    </ul>
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u>Function Declaration</u></b>
+                            <pre><code>function add(a, b){
+    return a + b;
+}
+
+add(2, 3);</code></pre>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <br />
+
+                <section>
+                    <h3>
+                        <span id="arrow-function" class="anchor-centered"
+                            >Arrow Function</span
+                        >
+                    </h3>
+                    <ul>
+                        <ol>
+                            <li>Must have parentheses</li>
+                            <li>Function keyword is not used</li>
+                            <li>
+                                Inside the parentheses will be the parameters
+                            </li>
+                            <li>After the parentheses, comes an arrow</li>
+                            <li>
+                                Then comes a code block, followed by a
+                                semi-colon.
+                            </li>
+                            <li>
+                                for one parameter, the parentheses can be
+                                removed.
+                            </li>
+                        </ol>
+                    </ul>
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u>Code without Arrow Function </u></b>
+                            <pre><code>const add = function(a, 3){
+    return a + b;
+}</code></pre>
+                        </div>
+                        <div class="table-side">
+                            <b><u>Code using Arrow Function</u></b>
+                            <pre><code>const add = (a, 3) => {
+    return a + b;
+};</code></pre>
+                        </div>
+                    </div>
+                    <div class="table-container-full">
+                        <div class="table-side">
+                            <b><u>Code with one parameter </u></b>
+                            <pre><code>const add = a => {
+    return a + 3;
+}</code></pre>
+                        </div>
+                    </div>
+                    <div class="table-container-full">
+                        <div class="table-side">
+                            <b><u>Code with one return statement </u></b>
+                            <pre><code>const add = a => a + 3;</code></pre>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+            </article>
+        </main>
+        <!-- <section>
+                <h3><span id="" class="anchor-centered"></span></h3>
+                <ul>
+                    <li></li>
+                    <h4 class="title-css">Property Values:</h4>
+                    <li></li>
+                </ul>
+                <h3 class="js-title">Javascript</h3>
+                <pre class="js-pre"><code></code></pre>
+                <table class="pretty-table">
+                    <thead>
+                        <tr>
+                            <th>Examples</th>
+                            <th>CSS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4 class="title-css">
+                                    <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title-css">
+                                <span id="" class="anchor-centered"></span>
+                                </h4>
+                                <div id="ex"></div></td>                            
+                            <td>
+                                
+                                <pre><code></code></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br><br> -->
+
+        <script src="./js.js"></script>
+        <script src="../nav-menu.js"></script>
+    </body>
+</html>

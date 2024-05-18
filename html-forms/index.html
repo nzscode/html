@@ -15,14 +15,15 @@
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
-            <h1>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
                 <span
-                    id="openSideNav"
+                    id="nav-hamburger"
                     style="cursor: pointer"
                     onclick="openNav()"
                     >&#9776;</span
                 >
-                HTML Forms
+                <span id="page-title">HTML Forms</span>
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -173,12 +174,16 @@
                         </ul>
                     </ul>
                 </nav>
+                <div class="space-block"></div>
             </div>
         </header>
-        <div id="main">
+        <main>
             <article>
                 <section>
-                    <h2 id="basic-form">Basic Form</h2>
+                    <h2>
+                        <span id="basic-form" class="anchor-centered"></span
+                        >Basic Form
+                    </h2>
                     <ul>
                         <li>Used to collect user input</li>
                         <li>
@@ -3125,7 +3130,7 @@
 
             <hr />
             <hr />
-        </div>
+        </main>
         <footer>
             <div class="container">
                 <div class="row">
@@ -3150,10 +3155,23 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
+                        <a href="../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a href="../CSS/css-properties/box/index.html"
+                            >Box</a
+                        >
                         <a
                             href="../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
+                        <br /><a href="../CSS/css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+
                         <br /><a
                             href="../CSS/css-properties/font-text/index.html"
                             >Font & text</a
@@ -3161,8 +3179,9 @@
                         <br /><a href="../CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
-                        <br /><a href="../CSS/css-properties/flexbox/index.html"
-                            >Flexbox</a
+                        <br /><a
+                            href="../CSS/css-properties/lists-tables/index.html"
+                            >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>

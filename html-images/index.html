@@ -15,9 +15,15 @@
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
-            <h1>
-                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                HTML Images
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">HTML Images</span>
             </h1>
             <div id="mySidenav" class="sidenav">
                 <a
@@ -34,171 +40,369 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="space-block"></div>
             </div>
         </header>
         <!--  -->
-        <article>
-            <h2 id="Basic-Image">Basic Image</h2>
-            <ul>
-                <li>The tag is empty.</li>
-                <li>
-                    Contains attributes only, and does not have a closing tag.
-                </li>
-                <li>
-                    Has two required attributes:
-                    <ul>
-                        <li>src - Specifies the path to the image</li>
-                        <li>alt - Specifies an alternate text for the image</li>
-                    </ul>
-                </li>
-                <li>
-                    Can also have a size attribute:
-                    <ul>
-                        <li>
-                            Width & Height can be set on the image using the
-                            style attribute (Recommended)
-                        </li>
-                        <li>
-                            Width & Height can also be set through the
-                            Stylesheet. If setting via Stylesheet, remeber
-                            stylesheets are not hardcoded, whereas the style
-                            attribute is. To use Stylesheet, follow the CSS
-                            given
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="container">
-                <div class="row col-header">
-                    <div class="col30">Example</div>
-                    <div class="col30">HTML</div>
-                    <div class="col30">CSS</div>
-                </div>
-                <div class="row">
-                    <div class="col30">
-                        <br />
-                        <img
-                            src="../images/img.png"
-                            alt="Star Image"
-                            style="width: 25px; height: 25px"
-                        />
+        <main>
+            <article>
+                <h2 id="Basic-Image">Basic Image</h2>
+                <ul>
+                    <li>The tag is empty.</li>
+                    <li>
+                        Contains attributes only, and does not have a closing
+                        tag.
+                    </li>
+                    <li>
+                        Has two required attributes:
+                        <ul>
+                            <li>src - Specifies the path to the image</li>
+                            <li>
+                                alt - Specifies an alternate text for the image
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Can also have a size attribute:
+                        <ul>
+                            <li>
+                                Width & Height can be set on the image using the
+                                style attribute (Recommended)
+                            </li>
+                            <li>
+                                Width & Height can also be set through the
+                                Stylesheet. If setting via Stylesheet, remeber
+                                stylesheets are not hardcoded, whereas the style
+                                attribute is. To use Stylesheet, follow the CSS
+                                given
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="container">
+                    <div class="row col-header">
+                        <div class="col30">Example</div>
+                        <div class="col30">HTML</div>
+                        <div class="col30">CSS</div>
                     </div>
-                    <div class="col30">
-                        <pre><code>&lt;img 
+                    <div class="row">
+                        <div class="col30">
+                            <br />
+                            <img
+                                src="../images/img.png"
+                                alt="Star Image"
+                                style="width: 25px; height: 25px"
+                            />
+                        </div>
+                        <div class="col30">
+                            <pre><code>&lt;img 
     src="../images/img.png" 
     alt="Star Image"
     style="width: 25px; 
             height: 25px" /&gt;</code></pre>
-                    </div>
-                    <div class="col30">
-                        <pre><code>img {
+                        </div>
+                        <div class="col30">
+                            <pre><code>img {
     width: 25px; 
     height: 25px
 }</code></pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
-        <article>
-            <h2 id="image-attributes">Image Attributes</h2>
-            <section>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Attribute</th>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="#alt">alt</a></td>
-                            <td>text</td>
-                            <td>Specifies an alternate text for an image</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#height">height</a></td>
-                            <td>pixels</td>
-                            <td>Specifies the height of an image</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#loading">loading</a></td>
-                            <td>eager <br />lazy</td>
-                            <td>
-                                Specifies whether a browser should load an image
-                                immediately or to defer loading of images until
-                                some conditions are met
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="#longdesc">longdesc</a></td>
-                            <td>URL</td>
-                            <td>
-                                Specifies a URL to a detailed description of an
-                                image
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span id="sizes"></span>sizes</td>
-                            <td>sizes</td>
-                            <td>
-                                Specifies image sizes for different page layouts
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="#src">src</a></td>
-                            <td>URL</td>
-                            <td>Specifies the path to the image</td>
-                        </tr>
-                        <tr>
-                            <td><span id="srcset">srcset</span></td>
-                            <td>URL-list</td>
-                            <td>
-                                Specifies a list of image files to use in
-                                different situations
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><a href="#width">width</a></td>
-                            <td>pixels</td>
-                            <td>Specifies the width of an image</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section>
-                <h3 id="alt">Alt</h3>
+            </article>
+            <article>
+                <h2 id="image-attributes">Image Attributes</h2>
                 <section>
+                    <table class="pretty-table">
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#alt">alt</a></td>
+                                <td>text</td>
+                                <td>
+                                    Specifies an alternate text for an image
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#height">height</a></td>
+                                <td>pixels</td>
+                                <td>Specifies the height of an image</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#loading">loading</a></td>
+                                <td>eager <br />lazy</td>
+                                <td>
+                                    Specifies whether a browser should load an
+                                    image immediately or to defer loading of
+                                    images until some conditions are met
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#longdesc">longdesc</a></td>
+                                <td>URL</td>
+                                <td>
+                                    Specifies a URL to a detailed description of
+                                    an image
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span id="sizes"></span>sizes</td>
+                                <td>sizes</td>
+                                <td>
+                                    Specifies image sizes for different page
+                                    layouts
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#src">src</a></td>
+                                <td>URL</td>
+                                <td>Specifies the path to the image</td>
+                            </tr>
+                            <tr>
+                                <td><span id="srcset">srcset</span></td>
+                                <td>URL-list</td>
+                                <td>
+                                    Specifies a list of image files to use in
+                                    different situations
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#width">width</a></td>
+                                <td>pixels</td>
+                                <td>Specifies the width of an image</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3 id="alt">Alt</h3>
+                    <section>
+                        <ul>
+                            <li>
+                                The text should describe the image if the image
+                                contains information
+                            </li>
+                            <li>
+                                The text should explain where the link goes if
+                                the image is inside an &lt;a&gt; element
+                            </li>
+                            <li>
+                                Use alt="" if the image is only for decoration
+                            </li>
+                        </ul>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="star-image"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img src="../images/img.png" alt="star-image" /&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h3 id="height">Height</h3>
+                    <section>
+                        <ul>
+                            <li>
+                                Always specify both the height and width
+                                attributes for images. If height and width are
+                                set, the space required for the image is
+                                reserved when the page is loaded. However,
+                                without these attributes, the browser does not
+                                know the size of the image, and cannot reserve
+                                the appropriate space to it. The effect will be
+                                that the page layout will change during loading
+                                (while the images load).
+                            </li>
+                            <li>
+                                Downsizing a large image with the height and
+                                width attributes forces a user to download the
+                                large image (even if it looks small on the
+                                page). To avoid this, rescale the image with a
+                                program before using it on a page.
+                            </li>
+                        </ul>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="Star-Image"
+                                        height="100"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+/&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h3 id="loading">Loading</h3>
+                    <ul>
+                        <li>eager: Default. Loads an image immediately</li>
+                        <li>
+                            lazy: Defer loading of images until some conditions
+                            are met
+                        </li>
+                    </ul>
+                    <section>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="Star-Image"
+                                        height="100"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+    loading="lazy"
+/&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <h3 id="longdesc">Longdesc</h3>
                     <ul>
                         <li>
-                            The text should describe the image if the image
-                            contains information
+                            A hyperlink to a detailed description of an image.
                         </li>
                         <li>
-                            The text should explain where the link goes if the
-                            image is inside an &lt;a&gt; element
+                            Possible values:
+                            <ul>
+                                <li>An id to another element</li>
+                                <li>
+                                    An absolute URL - points to another web site
+                                    (like
+                                    longdesc="http://www.example.com/description.txt")
+                                </li>
+                                <li>
+                                    A relative URL - points to a file within a
+                                    web site (like longdesc="description.txt")
+                                </li>
+                            </ul>
                         </li>
-                        <li>Use alt="" if the image is only for decoration</li>
                     </ul>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img src="../images/img.png" alt="star-image" />
+                    <section>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
                             </div>
-                            <div class="col50">
-                                <pre><code>&lt;img src="../images/img.png" alt="star-image" /&gt;</code></pre>
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="Star-Image"
+                                        height="100"
+                                        longdesc="https://www.example.com/explanation"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img
+    src="../images/img.png"
+    alt="Star-Image"
+    height="100"
+    longdesc="https://www.example.com/explanation"
+/&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-            </section>
-            <section>
-                <h3 id="height">Height</h3>
+
                 <section>
+                    <h3 id="src">Src</h3>
+                    <section>
+                        <ul>
+                            <li>
+                                Absolute URL - Links to an external image that
+                                is hosted on another website. Example:
+                                src="https://www.w3schools.com/images/img-girl.jpg".
+                            </li>
+                            <li>
+                                Relative URL - Links to an image that is hosted
+                                within the website. Here, the URL does not
+                                include the domain name. If the URL begins
+                                without a slash, it will be relative to the
+                                current page. Example: src="img-girl.jpg". If
+                                the URL begins with a slash, it will be relative
+                                to the domain. Example:
+                                src="/images/img-girl.jpg".
+                            </li>
+                            <li>
+                                It is almost always best to use relative URLs.
+                                They will not break if you change domain
+                            </li>
+                            <li>
+                                A broken link icon and the alt text are shown if
+                                the browser cannot find the image
+                            </li>
+                        </ul>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
+                            </div>
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="Star-Image"
+                                        height="100"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img 
+    src="../images/img.png" 
+    alt="Star-Image"
+    height="100" 
+/&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h3 id="width">Width</h3>
                     <ul>
                         <li>
                             Always specify both the height and width attributes
@@ -208,283 +412,105 @@
                             browser does not know the size of the image, and
                             cannot reserve the appropriate space to it. The
                             effect will be that the page layout will change
-                            during loading (while the images load).
+                            during loading (while the images load)
                         </li>
                         <li>
                             Downsizing a large image with the height and width
                             attributes forces a user to download the large image
                             (even if it looks small on the page). To avoid this,
                             rescale the image with a program before using it on
-                            a page.
+                            a page
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img
-                                    src="../images/img.png"
-                                    alt="Star-Image"
-                                    height="100"
-                                />
+                    <section>
+                        <div class="container">
+                            <div class="row colheader">
+                                <div class="col50">Example</div>
+                                <div class="col50">HTML</div>
                             </div>
-                            <div class="col50">
-                                <pre><code>&lt;img
-    src="../images/img.png"
-    alt="Star-Image"
-    height="100"
-/&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section>
-                <h3 id="loading">Loading</h3>
-                <ul>
-                    <li>eager: Default. Loads an image immediately</li>
-                    <li>
-                        lazy: Defer loading of images until some conditions are
-                        met
-                    </li>
-                </ul>
-                <section>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img
-                                    src="../images/img.png"
-                                    alt="Star-Image"
-                                    height="100"
-                                    loading="lazy"
-                                />
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;img
-    src="../images/img.png"
-    alt="Star-Image"
-    height="100"
-    loading="lazy"
-/&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section>
-                <h3 id="longdesc">Longdesc</h3>
-                <ul>
-                    <li>A hyperlink to a detailed description of an image.</li>
-                    <li>
-                        Possible values:
-                        <ul>
-                            <li>An id to another element</li>
-                            <li>
-                                An absolute URL - points to another web site
-                                (like
-                                longdesc="http://www.example.com/description.txt")
-                            </li>
-                            <li>
-                                A relative URL - points to a file within a web
-                                site (like longdesc="description.txt")
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <section>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img
-                                    src="../images/img.png"
-                                    alt="Star-Image"
-                                    height="100"
-                                    longdesc="https://www.example.com/explanation"
-                                />
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;img
-    src="../images/img.png"
-    alt="Star-Image"
-    height="100"
-    longdesc="https://www.example.com/explanation"
-/&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-            <section>
-                <h3 id="src">Src</h3>
-                <section>
-                    <ul>
-                        <li>
-                            Absolute URL - Links to an external image that is
-                            hosted on another website. Example:
-                            src="https://www.w3schools.com/images/img-girl.jpg".
-                        </li>
-                        <li>
-                            Relative URL - Links to an image that is hosted
-                            within the website. Here, the URL does not include
-                            the domain name. If the URL begins without a slash,
-                            it will be relative to the current page. Example:
-                            src="img-girl.jpg". If the URL begins with a slash,
-                            it will be relative to the domain. Example:
-                            src="/images/img-girl.jpg".
-                        </li>
-                        <li>
-                            It is almost always best to use relative URLs. They
-                            will not break if you change domain
-                        </li>
-                        <li>
-                            A broken link icon and the alt text are shown if the
-                            browser cannot find the image
-                        </li>
-                    </ul>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img
-                                    src="../images/img.png"
-                                    alt="Star-Image"
-                                    height="100"
-                                />
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;img 
-    src="../images/img.png" 
-    alt="Star-Image"
-    height="100" 
-/&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section>
-                <h3 id="width">Width</h3>
-                <ul>
-                    <li>
-                        Always specify both the height and width attributes for
-                        images. If height and width are set, the space required
-                        for the image is reserved when the page is loaded.
-                        However, without these attributes, the browser does not
-                        know the size of the image, and cannot reserve the
-                        appropriate space to it. The effect will be that the
-                        page layout will change during loading (while the images
-                        load)
-                    </li>
-                    <li>
-                        Downsizing a large image with the height and width
-                        attributes forces a user to download the large image
-                        (even if it looks small on the page). To avoid this,
-                        rescale the image with a program before using it on a
-                        page
-                    </li>
-                </ul>
-                <section>
-                    <div class="container">
-                        <div class="row colheader">
-                            <div class="col50">Example</div>
-                            <div class="col50">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col50">
-                                <img
-                                    src="../images/img.png"
-                                    alt="Star-Image"
-                                    height="100"
-                                    width="100"
-                                />
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;img
+                            <div class="row">
+                                <div class="col50">
+                                    <img
+                                        src="../images/img.png"
+                                        alt="Star-Image"
+                                        height="100"
+                                        width="100"
+                                    />
+                                </div>
+                                <div class="col50">
+                                    <pre><code>&lt;img
     src="../images/img.png"
     alt="Star-Image"
     height="100"
     width="100"
 /&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2 id="figure-figcaption">Figure & FigCaption</h2>
-                <ul>
-                    <li>
-                        Figure
-                        <ul>
-                            <li>
-                                Specifies self-contained content, like
-                                illustrations, diagrams, photos, code listings,
-                                etc.
-                            </li>
-                            <li>
-                                While the content of the &lt;figure&gt; element
-                                is related to the main flow, its position is
-                                independent of the main flow, and if removed it
-                                should not affect the flow of the document
-                            </li>
-                            <li>
-                                The &lt;figcaption&gt; element is used to add a
-                                caption for the &lt;figure&gt; element
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        FigCaption
-                        <ul>
-                            <li>
-                                Defines a caption for a &lt;figure&gt; element
-                            </li>
-                            <li>
-                                Can be placed as the first or last child of the
-                                &lt;figure&gt; element
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="container">
-                    <div class="row colheader">
-                        <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col30"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col20">
-                            <figure>
-                                <img
-                                    src="../images/img.png"
-                                    alt="star image"
-                                    style="width: 100%"
-                                />
-                                <figcaption>
-                                    Fig. 1 Pic of a star with the words Image
-                                </figcaption>
-                            </figure>
+            </article>
+            <article>
+                <section>
+                    <h2 id="figure-figcaption">Figure & FigCaption</h2>
+                    <ul>
+                        <li>
+                            Figure
+                            <ul>
+                                <li>
+                                    Specifies self-contained content, like
+                                    illustrations, diagrams, photos, code
+                                    listings, etc.
+                                </li>
+                                <li>
+                                    While the content of the &lt;figure&gt;
+                                    element is related to the main flow, its
+                                    position is independent of the main flow,
+                                    and if removed it should not affect the flow
+                                    of the document
+                                </li>
+                                <li>
+                                    The &lt;figcaption&gt; element is used to
+                                    add a caption for the &lt;figure&gt; element
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            FigCaption
+                            <ul>
+                                <li>
+                                    Defines a caption for a &lt;figure&gt;
+                                    element
+                                </li>
+                                <li>
+                                    Can be placed as the first or last child of
+                                    the &lt;figure&gt; element
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row colheader">
+                            <div class="col20">Example</div>
+                            <div class="col50">HTML</div>
+                            <div class="col30"></div>
                         </div>
-                        <div class="col50">
-                            <pre><code>&lt;figure&gt;
+                        <div class="row">
+                            <div class="col20">
+                                <figure>
+                                    <img
+                                        src="../images/img.png"
+                                        alt="star image"
+                                        style="width: 100%"
+                                    />
+                                    <figcaption>
+                                        Fig. 1 Pic of a star with the words
+                                        Image
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;figure&gt;
 &lt;img 
     src="../images/img.png" 
     alt="star image" 
@@ -493,16 +519,18 @@
         Fig. 1 Pic of a star with the words Image
     &lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
-                        </div>
-                        <div class="col30">
-                            <pre><code>figcaption {
+                            </div>
+                            <div class="col30">
+                                <pre><code>figcaption {
     display: block;
 }</code></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </article>
+                </section>
+            </article>
+        </main>
+        <br /><br /><br />
         <!--  -->
         <footer>
             <div class="container">
@@ -528,10 +556,23 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
+                        <a href="../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a href="../CSS/css-properties/box/index.html"
+                            >Box</a
+                        >
                         <a
                             href="../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
+                        <br /><a href="../CSS/css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+
                         <br /><a
                             href="../CSS/css-properties/font-text/index.html"
                             >Font & text</a
@@ -539,8 +580,9 @@
                         <br /><a href="../CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
-                        <br /><a href="../CSS/css-properties/flexbox/index.html"
-                            >Flexbox</a
+                        <br /><a
+                            href="../CSS/css-properties/lists-tables/index.html"
+                            >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>

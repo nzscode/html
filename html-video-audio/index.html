@@ -17,10 +17,17 @@
     <body>
         <!-- NAVIGATION MENU - SIDE OPEN -->
         <header>
-            <h1>
-                <span style="cursor: pointer" onclick="openNav()">&#9776;</span>
-                HTML Video & Audio
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">HTML Video & Audio</span>
             </h1>
+
             <div id="mySidenav" class="sidenav">
                 <a
                     href="javascript:void(0)"
@@ -49,225 +56,235 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="space-block"></div>
             </div>
         </header>
-        <article>
-            <section>
-                <h2 id="video-basic">Basic Video</h2>
-                <ul>
-                    <li>Used to embed video content in a document</li>
-                    <li>
-                        Contains one or more &lt;source /&gt; tags with
-                        different video sources. The browser will choose the
-                        first source it supports
-                    </li>
-                    <li>
-                        The text between the &lt;video&gt; and &lt;/video&gt;
-                        tags will only be displayed in browsers that do not
-                        support the &lt;video&gt; element.
-                    </li>
-                    <li>
-                        Supported video formats in HTML: MP4, WebM, and OGG.
-                    </li>
-                </ul>
-                <div class="container">
-                    <div class="row col-header">
-                        <div class="col20">Example</div>
-                        <div class="col75">HTML</div>
-                    </div>
-                    <div class="row">
-                        <div class="col20">
-                            <br />
-                            <video width="150" height="100" controls>
-                                <source
-                                    src="https://www.youtube.com/watch?v=Oqt8K-3TdTk&ab-channel=SweetyBijou"
-                                    type="video/mp4"
-                                />
-                            </video>
+        <main>
+            <article>
+                <section>
+                    <h2 id="video-basic">Basic Video</h2>
+                    <ul>
+                        <li>Used to embed video content in a document</li>
+                        <li>
+                            Contains one or more &lt;source /&gt; tags with
+                            different video sources. The browser will choose the
+                            first source it supports
+                        </li>
+                        <li>
+                            The text between the &lt;video&gt; and
+                            &lt;/video&gt; tags will only be displayed in
+                            browsers that do not support the &lt;video&gt;
+                            element.
+                        </li>
+                        <li>
+                            Supported video formats in HTML: MP4, WebM, and OGG.
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col75">HTML</div>
                         </div>
-                        <div class="col75">
-                            <pre><code>&lt;video width="150" height="100" controls&gt;
+                        <div class="row">
+                            <div class="col20">
+                                <br />
+                                <video width="150" height="100" controls>
+                                    <source
+                                        src="https://www.youtube.com/watch?v=Oqt8K-3TdTk&ab-channel=SweetyBijou"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;video width="150" height="100" controls&gt;
     &lt;source
         src="https://www.youtube.com/watch?v=Oqt8K-3TdTk&ab-channel=SweetyBijou"
         type="video/mp4"
     /&gt;
     This Video Can Not Be Viewed At This Time
 &lt;/video&gt;</code></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section>
-                <h2 id="video-attributes">Video Attributes</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Attribute</th>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>autoplay</td>
-                            <td>autoplay</td>
-                            <td>
-                                Video will start playing as soon as it is ready
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>controls</td>
-                            <td>controls</td>
-                            <td>
-                                Video controls should be displayed (such as a
-                                play/pause button etc).
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>loop</td>
-                            <td>loop</td>
-                            <td>Video will loop everytime it is finished</td>
-                        </tr>
-                        <tr>
-                            <td>muted</td>
-                            <td>muted</td>
-                            <td>Audio Output will be muted</td>
-                        </tr>
-                        <tr>
-                            <td>poster</td>
-                            <td>URL</td>
-                            <td>
-                                Image will be shown while video is downloading
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>preload</td>
-                            <td>auto <br />metadata <br />none</td>
-                            <td>
-                                Specifies if and how the author thinks the video
-                                should be loaded when the page loads
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>src</td>
-                            <td>URL</td>
-                            <td>URL of Video</td>
-                        </tr>
-                        <tr>
-                            <td>width</td>
-                            <td>px</td>
-                            <td>Width in px</td>
-                        </tr>
-                        <tr>
-                            <td>height</td>
-                            <td>px</td>
-                            <td>height in px</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </article>
-        <hr />
-        <hr />
-        <article>
-            <section>
-                <h2 id="audio-basic">Basic Audio</h2>
-                <ul>
-                    <li>Used to embed sound content in a document</li>
-                    <li>
-                        Contains one or more &lt;source /&gt; tags with
-                        different audio sources. The browser will choose the
-                        first source it supports
-                    </li>
-                    <li>
-                        The text between the &lt;audio&gt; and &lt;/audio&gt;
-                        tags will only be displayed in browsers that do not
-                        support the &lt;audio&gt; element.
-                    </li>
-                    <li>Supported video formats in HTML: MP3, WAV, and OGG.</li>
-                </ul>
-                <div class="container">
-                    <div class="row col-header">
-                        <div class="col30">Example</div>
-                        <div class="col50">HTML</div>
-                    </div>
-                    <div class="row">
-                        <div class="col30">
-                            <br />
-                            <audio controls>
-                                <source
-                                    src="../images/1 - Easy.mp3"
-                                    type="audio/mp3"
-                                />
-                                Your browser does not support the audio tag.
-                            </audio>
+                <section>
+                    <h2 id="video-attributes">Video Attributes</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>autoplay</td>
+                                <td>
+                                    Video will start playing as soon as it is
+                                    ready
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>controls</td>
+                                <td>
+                                    Video controls should be displayed (such as
+                                    a play/pause button etc).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>loop</td>
+                                <td>
+                                    Video will loop everytime it is finished
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>muted</td>
+                                <td>Audio Output will be muted</td>
+                            </tr>
+                            <tr>
+                                <td>poster</td>
+                                <td>URL</td>
+                                <td>
+                                    Image will be shown while video is
+                                    downloading
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>preload</td>
+                                <td>auto <br />metadata <br />none</td>
+                                <td>
+                                    Specifies if and how the author thinks the
+                                    video should be loaded when the page loads
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>URL</td>
+                                <td>URL of Video</td>
+                            </tr>
+                            <tr>
+                                <td>width</td>
+                                <td>px</td>
+                                <td>Width in px</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>px</td>
+                                <td>height in px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+            <hr />
+            <hr />
+            <article>
+                <section>
+                    <h2 id="audio-basic">Basic Audio</h2>
+                    <ul>
+                        <li>Used to embed sound content in a document</li>
+                        <li>
+                            Contains one or more &lt;source /&gt; tags with
+                            different audio sources. The browser will choose the
+                            first source it supports
+                        </li>
+                        <li>
+                            The text between the &lt;audio&gt; and
+                            &lt;/audio&gt; tags will only be displayed in
+                            browsers that do not support the &lt;audio&gt;
+                            element.
+                        </li>
+                        <li>
+                            Supported video formats in HTML: MP3, WAV, and OGG.
+                        </li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col30">Example</div>
+                            <div class="col50">HTML</div>
                         </div>
-                        <div class="col50">
-                            <pre><code>&lt;audio controls&gt;
+                        <div class="row">
+                            <div class="col30">
+                                <br />
+                                <audio controls>
+                                    <source
+                                        src="../images/1 - Easy.mp3"
+                                        type="audio/mp3"
+                                    />
+                                    Your browser does not support the audio tag.
+                                </audio>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;audio controls&gt;
 &lt;source src="../images/1 - Easy.mp3" type="audio/mp3"&gt;
 Your browser does not support the audio tag.
 &lt;/audio&gt;</code></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <h2 id="audio-attributes">Audio Attributes</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Attribute</th>
-                            <th>Value</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>autoplay</td>
-                            <td>autoplay</td>
-                            <td>
-                                Audio will start playing as soon as it is ready
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>controls</td>
-                            <td>controls</td>
-                            <td>
-                                Audio controls should be displayed (such as a
-                                play/pause button etc)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>loop</td>
-                            <td>loop</td>
-                            <td>Loops audio when finished playing</td>
-                        </tr>
-                        <tr>
-                            <td>muted</td>
-                            <td>muted</td>
-                            <td>Mutes audio</td>
-                        </tr>
-                        <tr>
-                            <td>preload</td>
-                            <td>auto <br />metadata <br />none</td>
-                            <td>
-                                Specifies if and how the author thinks the audio
-                                should be loaded when the page loads
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>src</td>
-                            <td>URL</td>
-                            <td>URL of the audio file</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </article>
-        <hr />
-        <hr />
-        <article></article>
+                </section>
+                <section>
+                    <h2 id="audio-attributes">Audio Attributes</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>autoplay</td>
+                                <td>autoplay</td>
+                                <td>
+                                    Audio will start playing as soon as it is
+                                    ready
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>controls</td>
+                                <td>controls</td>
+                                <td>
+                                    Audio controls should be displayed (such as
+                                    a play/pause button etc)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>loop</td>
+                                <td>loop</td>
+                                <td>Loops audio when finished playing</td>
+                            </tr>
+                            <tr>
+                                <td>muted</td>
+                                <td>muted</td>
+                                <td>Mutes audio</td>
+                            </tr>
+                            <tr>
+                                <td>preload</td>
+                                <td>auto <br />metadata <br />none</td>
+                                <td>
+                                    Specifies if and how the author thinks the
+                                    audio should be loaded when the page loads
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>src</td>
+                                <td>URL</td>
+                                <td>URL of the audio file</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+        <br /><br /><br />
         <footer>
             <div class="container">
                 <div class="row">
@@ -292,10 +309,23 @@ Your browser does not support the audio tag.
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
+                        <a href="../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a href="../CSS/css-properties/box/index.html"
+                            >Box</a
+                        >
                         <a
                             href="../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
+                        <br /><a href="../CSS/css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+
                         <br /><a
                             href="../CSS/css-properties/font-text/index.html"
                             >Font & text</a
@@ -303,8 +333,9 @@ Your browser does not support the audio tag.
                         <br /><a href="../CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
-                        <br /><a href="../CSS/css-properties/flexbox/index.html"
-                            >Flexbox</a
+                        <br /><a
+                            href="../CSS/css-properties/lists-tables/index.html"
+                            >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>
