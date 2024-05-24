@@ -288,7 +288,7 @@ hr {
 #nav ul ol,
 #nav ol ul {
     list-style: lower-alpha;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #nav ol ul li,
@@ -303,7 +303,7 @@ hr {
 }
 
 #nav ul {
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 footer {
@@ -371,14 +371,12 @@ ul {
     background-color: #504f4f;
     text-align: center;
     padding: 10px;
+    color: #fcdcb9;
+    font-weight: bold;
 }
 
 .cells {
     padding: 5px;
-}
-.cell-header {
-    color: #fcdcb9;
-    font-weight: bold;
 }
 
 .odd-bg {
@@ -416,4 +414,9 @@ ul {
 
 .basic-table .odd-bg {
     background-color: #00000017;
+}
+
+span a,
+a {
+    cursor: pointer;
 }

@@ -1,0 +1,2621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="stylesheet" href="../../basics-custom.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>HTML Basics - Block Level Elements</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">HTML Basics</span>
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav">
+                    <p>HTML Block Level Elements</p>
+                    <ul>
+                        <a href="./index.html#block-level-elements"
+                            >Block Level Elements</a
+                        >
+                        <ul>
+                            <li>
+                                <a href="./index.html#div">Div</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#paragraph">Paragraph</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#address">Address</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#article">Article</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#aside">Aside</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#blockquote">Blockquote</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#canvas">Canvas</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#div">Div</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#dl">DL</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#dt">DT</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#dd">DD</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#fieldset">Fieldset</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#figure">Figure</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#figcaption">Figcaption</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#header">Header</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#main">Main</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#footer">Footer</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#nav">Nav</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#section">Section</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#table">Table</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#thead">THead</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#tbody">TBody</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#tfoot">TFoot</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#headings">Headings</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#ol">Ol</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#ul">Ul</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#li">Li</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#pre">Pre</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#hr">Hr</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#noscript">Noscript</a>
+                            </li>
+                            <li>
+                                <a href="./index.html#video">Video</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2>
+                        <span id="block-level-elements" class="anchor-centered"
+                            >Block Level Elements</span
+                        >
+                    </h2>
+                    <ul>
+                        <li>Always takes up full width available</li>
+                        <li>Always starts on a new line</li>
+                        <li>
+                            Browser automatically adds space(margin) before and
+                            after
+                        </li>
+                    </ul>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Element</div>
+                            <div class="cell-header">Value</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="div"
+                                    ><a href="#bl-div" class="anchor-centered"
+                                        >&lt;div&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">Defines a division</div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="paragraph"
+                                    ><a
+                                        href="#bl-paragraph"
+                                        class="anchor-centered"
+                                        >&lt;p&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">Defines a paragraph</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="address"
+                                    ><a
+                                        href="#bl-address"
+                                        class="anchor-centered"
+                                        >&lt;address&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines the contact information for the
+                                author/owner of a document or an article.
+                                <br />- Can be an email address, URL, physical
+                                address, phone number, social media handle, etc
+                                <br />- Text in the &lt;address&gt; element
+                                usually renders in italic, and browsers will
+                                always add a line break before and after the
+                                &lt;address&gt; element.
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="article"
+                                    ><a
+                                        href="#bl-article"
+                                        class="anchor-centered"
+                                        >&lt;article&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Independent, self-contained content <br />-
+                                Should make sense on its own and it should be
+                                possible to distribute it independently from the
+                                rest of the site. <br />- Does not render as
+                                anything special in a browser. However, you can
+                                use CSS to style the &lt;article&gt; element
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="aside"
+                                    ><a href="#bl-aside" class="anchor-centered"
+                                        >&lt;aside&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines some content aside from the content it
+                                is placed in <br />- Should be indirectly
+                                related to the surrounding content <br />- Often
+                                placed as a sidebar in a document <br />- Does
+                                not render as anything special in a browser, can
+                                use CSS to style it
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="blockquote"
+                                    ><a
+                                        href="#bl-blockquote"
+                                        class="anchor-centered"
+                                        >&lt;blockquote&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Section that is quoted from another source
+                                <br />- Browsers usually indent
+                                &lt;blockquote&gt; elements <br />- Use
+                                &lt;q&gt; for inline (short) quotations. <br />-
+                                Cite: specifies the source of the quotation
+                                (URL, book citation, etc.)
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="canvas"
+                                    ><a
+                                        href="#bl-canvas"
+                                        class="anchor-centered"
+                                        >&lt;canvas&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to draw graphics, on the fly, via
+                                scripting (usually JavaScript) <br />-
+                                &lt;canvas&gt; tag is transparent, and is only a
+                                container for graphics, you must use a script to
+                                actually draw the graphics <br />- Any text
+                                inside the &lt;canvas&gt; element will be
+                                displayed in browsers with JavaScript disabled
+                                and in browsers that do not support
+                                &lt;canvas&gt; <br />- Height & Width: Default
+                                150px height, 300px width
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="dl"
+                                    ><a href="#bl-dl" class="anchor-centered"
+                                        >&lt;dl&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to define a Description List <br />- Used
+                                with
+                                <a href="#bl-dt">&lt;dt&gt;</a>
+
+                                to define a description term, and
+                                <a href="#bl-dd">&lt;dd&gt;</a>
+
+                                to define a description definition
+                                <br />- Also see
+                                <i><a href="#lists-description-lists"></a></i>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="dt"
+                                    ><a href="#bl-dt" class="anchor-centered"
+                                        >&lt;dt&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to define a Description Term/Name <br />-
+                                Used with
+                                <a href="#bl-dl">&lt;dl&gt;</a>
+                                to define a description list, and
+                                <a href="#bl-dd">&lt;dd&gt;</a>
+                                to define a description definition
+                                <br />- Can put paragraphs, line breaks, images,
+                                links, lists, etc.<br />- Also see
+                                <i><a href="#lists-description-lists"></a></i>
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="dd"
+                                    ><a href="#bl-dd" class="anchor-centered"
+                                        >&lt;dd&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to define a Description Definition
+                                <br />- Used with
+                                <a href="#bl-dl">&lt;dl&gt;</a>
+                                to define a description list, and
+                                <a href="#bl-dt">&lt;dt&gt;</a>
+                                to define a description term/name
+                                <br />- Can put paragraphs, line breaks, images,
+                                links, lists, etc.<br />- Also see
+                                <i><a href="#lists-description-lists"></a></i>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="fieldset"
+                                    ><a
+                                        href="#bl-fieldset"
+                                        class="anchor-centered"
+                                        >&lt;fieldset&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to group related elements in a form
+                                <br />- draws a box around the related elements
+                                <br />- Attributes: <i>disabled</i> - Specifies
+                                that a group of related form elements should be
+                                disabled <br />- Attributes: form - a
+                                <i>form-id</i> Specifies which form the fieldset
+                                belongs to <br />- Attributes: name - a
+                                <i>text</i> that specifies a name for the
+                                fieldset <br />- See also
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-Forms/index.html#form-elements-fieldset-legends"
+                                            >Fieldset & Legends</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="figure"
+                                    ><a
+                                        href="#bl-figure"
+                                        class="anchor-centered"
+                                        >&lt;figure&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to mark up a photo/image in a document,
+                                and can uses a &lt;figcaption&gt; to define a
+                                caption for the photo/image <br />- Specifies
+                                self-contained content, like illustrations,
+                                diagrams, photos, code listings, etc <br />-
+                                &lt;figcaption&gt; element is used to add a
+                                caption
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="figcaption"
+                                    ><a
+                                        href="#bl-figcaption"
+                                        class="anchor-centered"
+                                        >&lt;figcaption&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines a caption for a &lt;figure&gt;
+                                element. <br />- Can be placed as the first or
+                                last child of the &lt;figure&gt; element.
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="header"
+                                    ><a
+                                        href="#bl-header"
+                                        class="anchor-centered"
+                                        >&lt;header&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Container for introductory content or a set of
+                                navigational links <br />- Typically contains:
+                                <ul>
+                                    <li>
+                                        one or more heading elements (&lt;h1&gt;
+                                        - &lt;h6&gt;)
+                                    </li>
+                                    <li>logo or icon</li>
+                                    <li>authorship information</li>
+                                </ul>
+                                - There can be several &lt;header&gt; elements
+                                in one html doc. <br />- Cannot be placed within
+                                a &lt;footer&gt;, &lt;address&gt; or another
+                                &lt;header&gt; element
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="main"
+                                    ><a href="#bl-main" class="anchor-centered"
+                                        >&lt;main&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Specifies the main content of a document
+                                <br />- Ccontent inside the &lt;main&gt; element
+                                should be unique to the document <br />- There
+                                must not be more than one &lt;main&gt; element
+                                in a document <br />- Must NOT be a descendant
+                                of an &lt;article&gt;, &lt;aside&gt;,
+                                &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt;
+                                element. <br />- Should not contain any content
+                                that is repeated across documents such as
+                                sidebars, navigation links, copyright
+                                information, site logos, and search forms.
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="footer"
+                                    ><a
+                                        href="#bl-footer"
+                                        class="anchor-centered"
+                                        >&lt;footer&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines a footer for a document or section
+                                <br />- Typically contains:
+                                <ul>
+                                    <li>authorship information</li>
+                                    <li>copyright information</li>
+                                    <li>contact information</li>
+                                    <li>sitemap</li>
+                                    <li>back to top links</li>
+                                    <li>related documents</li>
+                                </ul>
+                                - Can have several &lt;footer&gt; elements in
+                                one document
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="nav"
+                                    ><a href="#bl-nav" class="anchor-centered"
+                                        >&lt;nav&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines a set of navigation links <br />-
+                                Intended only for major blocks of navigation
+                                links
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="section"
+                                    ><a
+                                        href="#bl-section"
+                                        class="anchor-centered"
+                                        >&lt;section&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                Defines a section in a document
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="table"
+                                    ><a href="#bl-table" class="anchor-centered"
+                                        >&lt;table&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Consists of one &lt;table&gt; element, with
+                                one or more &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;
+
+                                <br />- The &lt;tr&gt; element defines a table
+                                row, the &lt;th&gt; element defines a table
+                                header, and the &lt;td&gt; element defines a
+                                table cell. <br />- May also include
+                                &lt;caption&gt;, &lt;colgroup&gt;,
+                                &lt;thead&gt;, &lt;tfoot&gt;, and &lt;tbody&gt;
+                                elements.<br />- See also
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-Tables/index.html#table-basic-table"
+                                            >Tables</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="thead"
+                                    ><a href="#bl-thead" class="anchor-centered"
+                                        >&lt;thead&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Must have one or more &lt;tr&gt; tags inside
+                                <br />- Used to group header content in an html
+                                table <br />- Must be used as a child of a
+                                &lt;table&gt; element, after any
+                                &lt;caption&gt;, &lt;colgroup&gt; elements but
+                                before &lt;tbody&gt;, &lt;tfoot&gt;, and
+                                &lt;tr&gt; elements. <br />The &lt;thead&gt;,
+                                &lt;tbody&gt;, and &lt;tfoot&gt; elements will
+                                not affect the layout of the table by default
+                                <br />- See also
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-Basics/index.html#html-basics-table"
+                                            >html Basics: Table</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="tbody"
+                                    ><a href="#bl-tbody" class="anchor-centered"
+                                        >&lt;tbody&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Must have one or more &lt;tr&gt; tags inside
+                                <br />- Used to group the body content in an
+                                html table <br />- Must be used as a child of a
+                                &lt;table&gt; element, after any
+                                &lt;caption&gt;, &lt;colgroup&gt;,
+                                &lt;thead&gt;. <br />The &lt;thead&gt;,
+                                &lt;tbody&gt;, and &lt;tfoot&gt; elements will
+                                not affect the layout of the table by default
+                                <br />- See also
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-Basics/index.html#html-basics-table"
+                                            >html Basics: Table</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="tfoot"
+                                    ><a href="#bl-tfoot" class="anchor-centered"
+                                        >&lt;tfoot&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Must have one or more &lt;tr&gt; tags inside
+                                <br />- Used to group footer content in an html
+                                table <br />- Must be used in the following
+                                context: As a child of a &lt;table&gt; element,
+                                after any &lt;caption&gt;, &lt;colgroup&gt;,
+                                &lt;thead&gt;, and &lt;tbody&gt; elements.
+                                <br />The &lt;thead&gt;, &lt;tbody&gt;, and
+                                &lt;tfoot&gt; elements will not affect the
+                                layout of the table by default <br />- See also
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-Basics/index.html#html-basics-table"
+                                            >html Basics: Table</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="headings"
+                                    ><a
+                                        href="#bl-headings"
+                                        class="anchor-centered"
+                                        >&lt;headings&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - &lt;h1&gt; defines the most important heading
+                                <br />- &lt;h6&gt; defines the least important
+                                heading <br />- Only use one &lt;h1&gt; per page
+                                - this should represent the main heading/subject
+                                for the whole page <br />- Do not skip heading
+                                levels - start with &lt;h1&gt;, then use
+                                &lt;h2&gt;, etc.
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="ol"
+                                    ><a href="#bl-ol" class="anchor-centered"
+                                        >&lt;ol&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Can be numerical or alphabetical <br />-
+                                &lt;li&gt; tag is used to define list items
+                                <br />
+                                -Attributes: <i>reversed</i> - Specifies that
+                                the list order should be reversed (9,8,7...)
+                                <br />
+                                - Attributes: start - Specifies the start
+                                value(number) of an ordered list <br />-
+                                Attributes: type - Specifies the kind of marker
+                                to use in the list <br />- See also:
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-lists/index.html#lists-ordered-lists"
+                                            >Ordered Lists</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="ul"
+                                    ><a href="#bl-ul" class="anchor-centered"
+                                        >&lt;ul&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines an unordered (bulleted) list
+                                <br />
+                                - Used with &lt;li&gt; to create a list
+                                <br />- See also:
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-lists/index.html#lists-unordered-lists"
+                                            >Unordered Lists</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="li"
+                                    ><a href="#bl-li" class="anchor-centered"
+                                        >&lt;li&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines a list item <br />- Used inside
+                                ordered lists(&lt;ol&gt;), unordered lists
+                                (&lt;ul&gt;), and in menu lists (&lt;menu&gt;)
+                                <br />- In &lt;ul&gt; and &lt;menu&gt;, the list
+                                items will usually be displayed with bullet
+                                points <br />- In &lt;ol&gt;, the list items
+                                will usually be displayed with numbers or
+                                letters <br />- Attributes: value - Only for
+                                &lt;ol&gt; lists. Specifies the start value of a
+                                list item. The following list items will
+                                increment from that number
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="pre"
+                                    ><a href="#bl-pre" class="anchor-centered"
+                                        >&lt;pre&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines preformatted text <br />- Text in a
+                                &lt;pre&gt; element is displayed in a
+                                fixed-width font, and the text preserves both
+                                spaces and line breaks. <br />- The text will be
+                                displayed exactly as written in the html source
+                                <br />- Attributes:
+                                <ul>
+                                    <li>
+                                        &lt;code&gt;: Defines a piece of
+                                        computer code
+                                    </li>
+                                    <li>
+                                        &lt;samp&gt;: Defines a sample output
+                                        froma computer program
+                                    </li>
+                                    <li>
+                                        &lt;kbd&gt;: Defines a keyboard input
+                                    </li>
+                                    <li>&lt;var&gt;: Defines a variable</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="hr"
+                                    ><a href="#bl-hr" class="anchor-centered"
+                                        >&lt;hr&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines a thematic break in an html page (e.g.
+                                a shift of topic) <br />- Most often displayed
+                                as a horizontal rule that is used to separate
+                                content
+                            </div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="noscript"
+                                    ><a
+                                        href="#bl-noscript"
+                                        class="anchor-centered"
+                                        >&lt;noscript&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Defines an alternate content to be displayed
+                                to users that have disabled scripts in their
+                                browser or have a browser that doesn't support
+                                script. <br />- Can be used in both &lt;head&gt;
+                                and &lt;body&gt;. When used inside &lt;head&gt;,
+                                the &lt;noscript&gt; element could only contain
+                                &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt;
+                                elements
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <span id="video"
+                                    ><a href="#bl-video" class="anchor-centered"
+                                        >&lt;video&gt;</a
+                                    ></span
+                                >
+                            </div>
+                            <div class="cells">
+                                - Used to embed video content in a document,
+                                such as a movie clip or other video streams
+                                <br />- Contains one or more &lt;source&gt; tags
+                                with different video sources. The browser will
+                                choose the first source it supports <br />- The
+                                text between the &lt;video&gt; and
+                                &lt;/video&gt; tags will only be displayed in
+                                browsers that do not support the &lt;video&gt;
+                                element <br />- Supported video formats in html:
+                                MP4, WebM, and OGG <br />- See also
+
+                                <li>
+                                    <i>
+                                        <a
+                                            href="../html-video-audio/index.html#video-audio-video-attributes"
+                                            >Video Attributes</a
+                                        >
+                                    </i>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- 
+                            <div class="body-row">
+                            <div class="cells">
+                                <span id="" 
+                                    ><a href="#bl-" class="anchor-centered">&lt;&gt;</a
+                                ></span>
+                            </div>
+                            <div class="cells"></div>
+                        </div>
+                        <div class="body-row odd-bg">
+                            <div class="cells">
+                                <span id="" 
+                                    ><a href="#bl-" class="anchor-centered">&lt;&gt;</a
+                                ></span>
+                            </div>
+                            <div class="cells"></div>
+                        </div>
+                    --></div>
+                </section>
+            </article>
+            <br /><br />
+            <br />
+            <br />
+            <article>
+                <section>
+                    <h3>
+                        <span id="bl-div" class="anchor-centered">Div</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Deafult CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <div style="background-color: aqua">
+                                    The div is a block level element, so the
+                                    whole background is colored this aqua
+                                </div>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;div style="background-color: aqua;"&gt;
+    The div is a block level element, 
+    so the whole background is colored this aqua&lt;/div&gt;</code></pre>
+                            </div>
+                            <div class="col20"></div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-paragraph" class="anchor-centered"
+                            >Paragraph</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing
+                                    <br />elit. Obcaecati, dicta consequuntur?
+                                    Blanditiis provident, <br />inventore sint
+                                    cum nobis velit labore facere!
+                                </p>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;p&gt;
+Lorem ipsum, dolor sit amet consectetur adipisicing
+elit. Obcaecati, dicta consequuntur? Blanditiis 
+provident, inventore sint cum nobis velit labore facere!
+&lt;p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-address" class="anchor-centered"
+                            >Address</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <address class="col20">
+                                Lily Potter
+                                <br />1234 Tulip lane, <br />Random City, London
+                                <br />UK
+                            </address>
+                            <div class="col50">
+                                <pre><code>&lt;address&gt;
+Lily Potter
+&lt;br&gt;1234 Tulip lane,
+&lt;br&gt;Random City, London
+&lt;br&gt;UK
+&lt;/address&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>address {
+display: block;
+font-style: italic;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-article" class="anchor-centered"
+                            >Article</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <article class="col20">
+                                <h2 class="revert">Lorem, ipsum dolor.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Ad, facilis!
+                                </p>
+                            </article>
+                            <div class="col50">
+                                <pre><code>&lt;article class="col20"&gt;
+&lt;h2 class="reevrt"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
+&lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Ad, facilis!
+&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>article {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-aside" class="anchor-centered">Aside</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h2 class="revert">Lorem, ipsum.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
+                                </p>
+
+                                <aside>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                </aside>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing.
+                                </p>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;h2 class="revert"&gt;Lorem, ipsum.&lt;/h2&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit, amet consectetur
+adipisicing elit.
+&lt;/p&gt;
+
+&lt;aside&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
+&lt;/aside&gt;
+
+&lt;p&gt;
+Lorem ipsum dolor sit amet consectetur
+adipisicing.
+&lt;/p&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>aside {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-blockquote" class="anchor-centered"
+                            >Blockquote</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <p>A memorable quote from William Blake</p>
+                                <blockquote cite="https://www.example.com">
+                                    Lorem ipsum dolor
+                                </blockquote>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur.
+                                    <q>Lorem, ipsum dolor.</q> Lorem ipsum,
+                                    dolor
+                                </p>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;p&gt;A memorable quote from William Blake&lt;/p&gt;
+&lt;blockquote cite="https://www.example.com"&gt;
+Lorem ipsum dolor 
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Lorem ipsum dolor sit amet consectetur.
+&lt;q&gt;Lorem, ipsum dolor.&lt;/q&gt; Lorem ipsum, dolor
+&lt;/p&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>blockquote {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 40px;
+margin-right: 40px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-canvas" class="anchor-centered"
+                            >Canvas</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <canvas id="myCanvas">
+                                    Your browser does not support the canvas
+                                    tag.
+                                </canvas>
+
+                                <script>
+                                    let c = document.getElementById("myCanvas");
+                                    let ctx = c.getContext("2d");
+                                    ctx.fillStyle = "red";
+                                    ctx.fillRect(20, 20, 75, 50);
+                                    //Turn transparency on
+                                    ctx.globalAlpha = 0.2;
+                                    ctx.fillStyle = "blue";
+                                    ctx.fillRect(50, 50, 75, 50);
+                                    ctx.fillStyle = "green";
+                                    ctx.fillRect(80, 80, 75, 50);
+                                </script>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;canvas id="myCanvas"&gt;
+Your browser does not support the canvas tag.
+&lt;/canvas&gt;
+
+&lt;script&gt;
+let c = document.getElementById("myCanvas");
+let ctx = c.getContext("2d");
+ctx.fillStyle = "red";
+ctx.fillRect(20, 20, 75, 50);
+
+//Turn transparency on
+ctx.globalAlpha = 0.2;
+ctx.fillStyle = "blue";
+ctx.fillRect(50, 50, 75, 50);
+ctx.fillStyle = "green";
+ctx.fillRect(80, 80, 75, 50);
+&lt;/script&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>canvas {
+height: 150px;
+width: 300px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-dl" class="anchor-centered"
+                            >Description List</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <dl>
+                                    <dt>Math</dt>
+                                    <dd>Calculus, Algebra</dd>
+                                    <dt>English</dt>
+                                    <dd>Literature, Core</dd>
+                                    <dt>Science</dt>
+                                    <dd>Physics, Biology, Chemistry</dd>
+                                </dl>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;dl&gt;
+&lt;dt&gt;Math&lt;/dt&gt;
+    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+&lt;dt&gt;English&lt;/dt&gt;
+    &lt;dd&gt;Literature, Core&lt;/dd&gt;
+&lt;dt&gt;Science&lt;/dt&gt;
+    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>dl {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-dt" class="anchor-centered"
+                            >Description Term</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <dl>
+                                    <dt>Math</dt>
+                                    <dd>Calculus, Algebra</dd>
+                                    <dt>English</dt>
+                                    <dd>Literature, Core</dd>
+                                    <dt>Science</dt>
+                                    <dd>Physics, Biology, Chemistry</dd>
+                                </dl>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;dl&gt;
+&lt;dt&gt;Math&lt;/dt&gt;
+    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+&lt;dt&gt;English&lt;/dt&gt;
+    &lt;dd&gt;Literature, Core&lt;/dd&gt;
+&lt;dt&gt;Science&lt;/dt&gt;
+    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>dt {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-dd" class="anchor-centered">
+                            Description Definition</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <dl>
+                                    <dt>Math</dt>
+                                    <dd>Calculus, Algebra</dd>
+                                    <dt>English</dt>
+                                    <dd>Literature, Core</dd>
+                                    <dt>Science</dt>
+                                    <dd>Physics, Biology, Chemistry</dd>
+                                </dl>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;dl&gt;
+&lt;dt&gt;Math&lt;/dt&gt;
+    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+&lt;dt&gt;English&lt;/dt&gt;
+    &lt;dd&gt;Literature, Core&lt;/dd&gt;
+&lt;dt&gt;Science&lt;/dt&gt;
+    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>dd {
+display: block;
+margin-left: 40px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-fieldset" class="anchor-centered"
+                            >Fieldset</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col40">html</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <form action="">
+                                    <fieldset>
+                                        <label for="fName">First Name: </label>
+                                        <input
+                                            type="text"
+                                            name="fName"
+                                            id="fName"
+                                            size="10"
+                                        />
+                                        <br />
+                                        <br />
+                                        <label for="lName">Last Name: </label>
+                                        <input
+                                            type="text"
+                                            name="lName"
+                                            id="lName"
+                                            size="10"
+                                        />
+                                        <br />
+                                        <br />
+                                        <label for="studentID"
+                                            >Student ID:</label
+                                        >
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="studentID"
+                                            id="studentID"
+                                            size="10"
+                                        />
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="col40">
+                                <pre><code>&lt;form action=""&gt;
+&lt;fieldset&gt;
+    &lt;label for="fName"&gt;First Name: &lt;/label&gt;
+    &lt;input 
+        type="text" 
+        name="fName" 
+        id="fName" /&gt;
+    &lt;label for="lName"&gt;Last Name: &lt;/label&gt;
+    &lt;input 
+        type="text" 
+        name="lName" 
+        id="lName" /&gt;
+    &lt;label for="studentID"&gt;Student ID:
+        &lt;/label&gt;
+    &lt;input
+        type="number"
+        name="studentID"
+        id="studentID"
+    /&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>fieldset {
+display: block;
+margin-left: 2px;
+margin-right: 2px;
+padding-top: 0.35em;
+padding-bottom: 0.625em;
+padding-left: 0.75em;
+padding-right: 0.75em;
+border: 2px groove 
+    (internal value);
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-figure" class="anchor-centered"
+                            >Figure</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <figure>
+                                    <img
+                                        src="../../images/img.png"
+                                        alt="Star Image"
+                                        style="width: 100%"
+                                    />
+                                    <figcaption>
+                                        Fig.1 - Image of a star
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;figure&gt;
+&lt;img
+    src="../../images/img.png"
+    alt="Star Image"
+    style="width: 100%"
+/&gt;
+&lt;figcaption&gt;
+    Fig.1 - Image of a star
+&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>figure {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 40px;
+margin-right: 40px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-figcaption" class="anchor-centered">
+                            Figcaption</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <figure>
+                                    <img
+                                        src="../../images/img.png"
+                                        alt="Star Image"
+                                        style="width: 100%"
+                                    />
+                                    <figcaption>
+                                        Fig.1 - Image of a star
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;figure&gt;
+&lt;img
+    src="../../images/img.png"
+    alt="Star Image"
+    style="width: 100%"
+/&gt;
+&lt;figcaption&gt;
+    Fig.1 - Image of a star
+&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>figcaption {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-header" class="anchor-centered"
+                            >Header</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <header>
+                                    <h1 class="revert">Lorem, ipsum dolor.</h1>
+                                    <p>Lorem ipsum dolor sit.</p>
+                                </header>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;header&gt;
+&lt;h1 class="revert"&gt;Lorem, ipsum dolor.&lt;/h1&gt;
+&lt;p>Lorem ipsum dolor sit.&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>header {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-main" class="anchor-centered">Main</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col75">html</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <main class="revert">
+                                    <h1 class="revert head1">Lorem, ipsum.</h1>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <article class="browser">
+                                        <h2 class="revert">
+                                            Lorem, ipsum dolor.
+                                        </h2>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </article>
+                                    <article class="browser">
+                                        <h2 class="revert">Lorem, ipsum.</h2>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet
+                                            <br />consectetur adipisicing elit.
+                                        </p>
+                                    </article>
+                                    <article class="browser">
+                                        <h2 class="revert">
+                                            Lorem, ipsum dolor.
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor <br />sit amet
+                                            consectetur.
+                                        </p>
+                                    </article>
+                                </main>
+                            </div>
+                            <div class="col75">
+                                <pre><code>&lt;main&gt;
+&lt;h1 class="revert head1">Lorem, ipsum.&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;article class="browser"&gt;
+&lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/article&gt;
+&lt;article class="browser"&gt;
+&lt;h2 class="revert">Lorem, ipsum.&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum, dolor sit amet consectetur 
+    adipisicing elit.&lt;/p&gt;
+&lt;/article&gt;
+&lt;article class="browser"&gt;
+&lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
+&lt;p>Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
+&lt;/article&gt;
+&lt;/main&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-footer" class="anchor-centered"
+                            >Footer</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <footer
+                                    class="revert"
+                                    style="background-color: lightgreen"
+                                >
+                                    <p>
+                                        Author: Hege Refsnes<br />
+                                        <a href="mailto:hege@example.com"
+                                            >hege@example.com</a
+                                        >
+                                    </p>
+                                </footer>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;footer&gt;
+&lt;p&gt;
+    Author: Hege Refsnes&lt;br /&gt;
+    &lt;a href="mailto:hege@example.com"
+        &gt;hege@example.com&lt;/a
+    &gt;
+&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>footer {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-nav" class="anchor-centered">Nav</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <nav>
+                                    <a href="/html/">html</a> |
+                                    <a href="/css/">CSS</a> |
+                                    <a href="/js/">JavaScript</a>
+                                </nav>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;nav&gt;
+&lt;a href="/html/"&gt;html&lt;/a&gt; |
+&lt;a href="/css/"&gt;CSS&lt;/a&gt; |
+&lt;a href="/js/"&gt;JavaScript&lt;/a&gt; 
+&lt;/nav&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>nav {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-section" class="anchor-centered"
+                            >Section</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <section>
+                                    <h2 class="revert">Lorem, ipsum dolor.</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Ratione.
+                                    </p>
+                                </section>
+                                <br /><br />
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;section&gt;
+&lt;h2 class="revert"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
+&lt;p&gt;
+    Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Ratione.
+&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>section {
+display: block;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-table" class="anchor-centered">Table</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col40">html</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <table class="blank-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Onion</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Potato</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col40">
+                                <pre><code>&lt;table&gt;
+&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Item&lt;/th&gt;
+        &lt;t&gt;>Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            Onion
+        &lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Potato&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>table {
+display: table;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-thead" class="anchor-centered">THead</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <table class="blank-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Granny Smith</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Red Delicious</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Macintosh</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total Quantity</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;thead&gt;
+&lt;tr&gt;
+    &lt;th&gt;Fruit&lt;/th&gt;
+    &lt;th&gt;Quantity&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td&gt;Granny Smith&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td>Red Delicious&lt;/td&gt;
+    &lt;td>3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Macintosh&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+    &lt;td&gt;Total Quantity&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>thead {
+display: table-header-group;
+vertical-align: middle;
+border-color: inherit;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-tbody" class="anchor-centered">Tbody</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <table class="blank-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Granny Smith</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Red Delicious</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Macintosh</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total Quantity</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;thead&gt;
+&lt;tr&gt;
+    &lt;th&gt;Fruit&lt;/th&gt;
+    &lt;th&gt;Quantity&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td&gt;Granny Smith&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td>Red Delicious&lt;/td&gt;
+    &lt;td>3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Macintosh&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+    &lt;td&gt;Total Quantity&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>tbody {
+display: table-row-group;
+vertical-align: middle;
+border-color: inherit;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-tfoot" class="anchor-centered">Tfoot</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col20">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <table class="blank-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Granny Smith</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Red Delicious</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Macintosh</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total Quantity</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;thead&gt;
+&lt;tr&gt;
+    &lt;th&gt;Fruit&lt;/th&gt;
+    &lt;th&gt;Quantity&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+    &lt;td&gt;Granny Smith&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td>Red Delicious&lt;/td&gt;
+    &lt;td>3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Macintosh&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+    &lt;td&gt;Total Quantity&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+                            </div>
+                            <div class="col20">
+                                <pre><code>tfoot {
+display: table-footer-group;
+vertical-align: middle;
+border-color: inherit;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-headings" class="anchor-centered"
+                            >Headings</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col30">html</div>
+                            <div class="col50">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h1 class="revert head1">Heading 1</h1>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre>
+                            </div>
+                            <div class="col50">
+                                <pre><code>h1 {
+display: block;
+font-size: 2em;
+margin-top: 0.67em;
+margin-bottom: 0.67em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h2 class="revert">Heading 2</h2>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre>
+                            </div>
+                            <div class="col50">
+                                <pre><code>h2 {
+display: block;
+font-size: 1.5em;
+margin-top: 0.83em;
+margin-bottom: 0.83em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h3 class="revert">Heading 3</h3>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
+                            </div>
+                            <div class="col50">
+                                <pre><code>h3 {
+display: block;
+font-size: 1.17em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h4 class="revert">Heading 4</h4>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+                            </div>
+                            <div class="col50">
+                                <pre><code>h4 {
+display: block;
+font-size: 1em;
+margin-top: 1.33em;
+margin-bottom: 1.33em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h5 class="revert">Heading 5</h5>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
+                            </div>
+                            <div class="col50">
+                                <pre><code>h5 {
+display: block;
+font-size: .83em;
+margin-top: 1.67em;
+margin-bottom: 1.67em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col20"><br />normal</div>
+                            <div class="col30">
+                                <pre><code>normal</code></pre>
+                            </div>
+                            <div class="col50"></div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-ol" class="anchor-centered"
+                            >Ordered Lists</span
+                        >
+                    </h3>
+                    <ul class="columns">
+                        Other List Style Types:
+                        <li>circle</li>
+                        <li>disc</li>
+                        <li>square</li>
+                        <li>armenian</li>
+                        <li>cjk-ideographic</li>
+                        <li>decimal</li>
+                        <li>decimal-leading-zero</li>
+                        <li>georgian</li>
+                        <li>hiragana</li>
+                        <li>hiragana-iroha</li>
+                        <li>katakana</li>
+                        <li>katakana-iroha</li>
+                        <li>lower-alpha</li>
+                        <li>lower-greek</li>
+                        <li>lower-latin</li>
+                        <li>lower-roman</li>
+                        <li>upper-alpha</li>
+                        <li>upper-greek</li>
+                        <li>upper-latin</li>
+                        <li>upper-roman</li>
+                        <li>none</li>
+                        <li>inherit</li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col40">html</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <ol type="a">
+                                    <li>violet</li>
+                                    <li>indigo</li>
+                                    <li>blue</li>
+                                </ol>
+                                <ol type="A">
+                                    <li>violet</li>
+                                    <li>indigo</li>
+                                    <li>blue</li>
+                                </ol>
+                                <ol type="i">
+                                    <li>violet</li>
+                                    <li>indigo</li>
+                                    <li>blue</li>
+                                </ol>
+                                <ol type="I">
+                                    <li>violet</li>
+                                    <li>indigo</li>
+                                    <li>blue</li>
+                                </ol>
+                                <ol type="1">
+                                    <li>violet</li>
+                                    <li>indigo</li>
+                                    <li>blue</li>
+                                </ol>
+                            </div>
+                            <div class="col40">
+                                <pre><code>&lt;ol type="a"&gt;
+&lt;li>violet&lt;/li&gt;
+&lt;li>indigo&lt;/li&gt;
+&lt;li>blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol type="A"&gt;
+&lt;li>violet&lt;/li&gt;
+&lt;li>indigo&lt;/li&gt;
+&lt;li>blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol type="i"&gt;
+&lt;li>violet&lt;/li&gt;
+&lt;li>indigo&lt;/li&gt;
+&lt;li>blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol type="I"&gt;
+&lt;li>violet&lt;/li&gt;
+&lt;li>indigo&lt;/li&gt;
+&lt;li>blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol type="1"&gt;
+&lt;li>violet&lt;/li&gt;
+&lt;li>indigo&lt;/li&gt;
+&lt;li>blue&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>ol {
+display: block;
+list-style-type: decimal;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-ul" class="anchor-centered"
+                            >Unordered Lists</span
+                        >
+                    </h3>
+                    <ul class="columns">
+                        Other List Style Types:
+                        <li>circle</li>
+                        <li>disc</li>
+                        <li>square</li>
+                        <li>armenian</li>
+                        <li>cjk-ideographic</li>
+                        <li>decimal</li>
+                        <li>decimal-leading-zero</li>
+                        <li>georgian</li>
+                        <li>hiragana</li>
+                        <li>hiragana-iroha</li>
+                        <li>katakana</li>
+                        <li>katakana-iroha</li>
+                        <li>lower-alpha</li>
+                        <li>lower-greek</li>
+                        <li>lower-latin</li>
+                        <li>lower-roman</li>
+                        <li>upper-alpha</li>
+                        <li>upper-greek</li>
+                        <li>upper-latin</li>
+                        <li>upper-roman</li>
+                        <li>none</li>
+                        <li>inherit</li>
+                    </ul>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col30">html</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <h4 class="margin-bottom-1px">
+                                    List Style Type: Circle
+                                </h4>
+                                <ul class="ul-type-circle margin-top-1px">
+                                    <li>Left</li>
+                                    <li>Right</li>
+                                    <li>Up</li>
+                                    <li>Down</li>
+                                </ul>
+                                <h4 class="margin-bottom-1px">
+                                    List Style Type: Disc
+                                </h4>
+                                <ul class="ul-type-disc margin-top-1px">
+                                    <li>Left</li>
+                                    <li>Right</li>
+                                    <li>Up</li>
+                                    <li>Down</li>
+                                </ul>
+                                <h4 class="margin-bottom-1px">
+                                    List Style Type: Square
+                                </h4>
+                                <ul class="ul-type-square margin-top-1px">
+                                    <li>Left</li>
+                                    <li>Right</li>
+                                    <li>Up</li>
+                                    <li>Down</li>
+                                </ul>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;ul&gt;
+&lt;li>Left&lt;/li&gt;
+&lt;li>Right&lt;/li&gt;
+&lt;li>Up&lt;/li&gt;
+&lt;li>Down&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>ul {
+display: block;
+list-style-type: disc;
+margin-top: 1em;
+margin-bottom: 1 em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-li" class="anchor-centered"
+                            >List Items</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col30">html</div>
+                            <div class="col40">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <ul>
+                                    Unordered List
+                                    <li>UL 1</li>
+                                    <li>UL 2</li>
+                                    <li>UL 3</li>
+                                </ul>
+
+                                <ol>
+                                    Ordered List
+                                    <li value="25">OL A</li>
+                                    <li>OL B</li>
+                                    <li>OL C</li>
+                                </ol>
+                            </div>
+                            <div class="col30">
+                                <pre><code>&lt;ul&gt;
+Unordered List
+&lt;li&gt;UL 1&lt;/li&gt;
+&lt;li&gt;UL 2&lt;/li&gt;
+&lt;li&gt;UL 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+Ordered List
+&lt;li value="25"&gt;OL A&lt;/li&gt;
+&lt;li&gt;OL B&lt;/li&gt;
+&lt;li&gt;OL C&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                            </div>
+                            <div class="col40">
+                                <pre><code>ul {
+display: block;
+list-style-type: disc;
+margin-top: 1em;
+margin-bottom: 1 em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}
+
+ol {
+display: block;
+list-style-type: decimal;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}
+
+li {
+display: list-item;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-pre" class="anchor-centered">pre</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col40">html</div>
+                            <div class="col40">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <pre>
+This text      has been
+    pre
+format   ted.</pre
+                                >
+
+                                <pre><code>let x = 5;
+console.log(x);
+</code></pre>
+
+                                <pre><samp>File not found</samp></pre>
+
+                                <pre><kbd>CTRL</kbd> + <kbd>S</kbd></pre>
+
+                                <pre><var>printNum</var></pre>
+                            </div>
+                            <div class="col40">
+                                <pre><code>&lt;pre&gt;
+This text      has been
+    pre
+format   ted.&lt;/pre&gt;
+                                                        
+                            
+&lt;pre&gt;&lt;code&gt;let x = 5;
+console.log(x);
+&lt;/code&gt;&lt;/pre&gt;
+                            
+&lt;pre&gt;&lt;samp&gt;File not found&lt;/samp&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;kbd&gt;CTRL&lt;/kbd> + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;var&gt;printNum&lt;/var&gt;&lt;/pre&gt;</code></pre>
+                            </div>
+                            <div class="col40">
+                                <pre><code>pre {
+display: block;
+font-family: monospace;
+white-space: pre;
+margin: 1em 0;
+}
+
+code {
+font-family: monospace;
+}
+
+samp {
+font-family: monospace;
+}
+
+kbd {
+font-family: monospace;
+}
+
+var {
+font-style: italic;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3><span id="bl-hr" class="anchor-centered">Hr</span></h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                            <div class="col30">Default CSS</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                                <hr />
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;p>Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet consectetur
+adipisicing elit.
+&lt;/p&gt;</code></pre>
+                            </div>
+                            <div class="col30">
+                                <pre><code>hr {
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+
+                <section>
+                    <h3>
+                        <span id="bl-noscript" class="anchor-centered"
+                            >Noscript</span
+                        >
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <script>
+                                    document.write("Hello World!");
+                                </script>
+                                <noscript
+                                    >Your browser does not support
+                                    JavaScript!</noscript
+                                >
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;script&gt;
+document.write("Hello World!");
+&lt;/script&gt;
+&lt;noscript
+&gt;Your browser does not support
+JavaScript!&lt;/noscript
+&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3>
+                        <span id="bl-video" class="anchor-centered">Video</span>
+                    </h3>
+                    <div class="container">
+                        <div class="row col-header">
+                            <div class="col20">Example</div>
+                            <div class="col50">html</div>
+                        </div>
+                        <div class="row">
+                            <div class="col20">
+                                <video width="100" height="100" controls>
+                                    <source src="" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="col50">
+                                <pre><code>&lt;video width="320" height="240" controls&gt;
+&lt;source src="" type="video/mp4" /&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+            </article>
+        </main>
+        <br /><br /><br /><br />
+        <!-- Bottom Links -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../../../index.html">Homepage</a>
+                        <br /><a href="../../html-basics/index.html"
+                            >HTML Basics</a
+                        >
+                        <br /><a href="../../html-buttons/index.html"
+                            >Buttons</a
+                        >
+                        <br /><a href="../../html-forms/index.html">Forms</a>
+                        <br /><a href="../../html-iframes/index.html"
+                            >IFrames</a
+                        >
+                        <br /><a href="../../html-images/index.html">Images</a>
+                        <br /><a href="../../html-links/index.html">Links</a>
+                        <br /><a href="../../html-lists/index.html">Lists</a>
+                        <br /><a href="../../html-scripts/index.html"
+                            >Scripts</a
+                        >
+                        <br /><a href="../../html-tables/index.html">Tables</a>
+                        <br /><a href="../../html-video-audio/index.html"
+                            >Video & Audio</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">CSS</h3>
+                        <h4 class="revert">Properties</h4>
+                        <a href="../../../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/box/index.html"
+                            >Box</a
+                        ><br />
+                        <a
+                            href="../../../CSS/css-properties/color-background/index.html"
+                            >Color & Background</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+
+                        <br /><a
+                            href="../../../CSS/css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/lists-tables/index.html"
+                            >Lists & Tables</a
+                        >
+                        <br /><br />
+                        <h4 class="revert">Selector</h4>
+                        <a href="../../../CSS/css-selectors/index.html"
+                            >Selectors</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Javascript</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>

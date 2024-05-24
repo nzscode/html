@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="stylesheet" href="../../html-basics/basics-custom.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>HTML Basics - Inline Level Elements</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">HTML Inline Elements</span>
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav">
+                    <p>HTML Inline Elements</p>
+                    <li>
+                        <a href="./index.html#inline-level-elements"
+                            >Inline Level Elements</a
+                        >
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="./index.html#a">a</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#b">b</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#br">br</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#button">button</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#cite">cite</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#code">code</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#em">em</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#i">i</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#strong">strong</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#mark">mark</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#img">img</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#input">input</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#label">label</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#output">output</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#q">q</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#script">script</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2>
+                        <span id="inline-element" class="anchor-centered"
+                            >Inline Elements</span
+                        >
+                    </h2>
+                    <section>
+                        <table class="pretty-table">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Value</th>
+                                    <th>Default CSS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span id="a" class="anchor-centered"
+                                            >&lt;a&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Defines a hyperlink, which is used to
+                                        link from one page to another <br />- If
+                                        the &lt;a&gt; tag has no href attribute,
+                                        it is only a placeholder for a hyperlink
+                                        <br />- See also:
+
+                                        <a href="../html-links/index.html"
+                                            >html Links
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <pre><code>b {
+font-weight: bold;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="b" class="anchor-centered"
+                                            >&lt;b&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Make text bold <br />- Can also use
+                                        CSS: "font-weight: bold;"
+                                    </td>
+                                    <td>
+                                        <pre><code>b {
+    font-weight: bold;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span id="br">&lt;br&gt;</span></td>
+                                    <td>
+                                        - Insert single-line texts <br />- Is an
+                                        empty tag, so no end tag
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span
+                                            id="button"
+                                            class="anchor-centered"
+                                            >&lt;button&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - A clickable button <br />- See also:
+
+                                        <a href="../html-buttons/index.html"
+                                            >html Buttons</a
+                                        >
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="cite" class="anchor-centered"
+                                            >&lt;cite&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Defines the title of a creative work
+                                        (e.g. a book, a poem, a song, a movie, a
+                                        painting, a sculpture, etc.)
+                                        <br />- The text in the &lt;cite&gt;
+                                        element usually renders in italic
+                                    </td>
+                                    <td>
+                                        <pre><code>cite {
+font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="code" class="anchor-centered"
+                                            >&lt;code&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Define a piece of computer code. The
+                                        content inside is displayed in the
+                                        browser's default monospace font
+                                    </td>
+                                    <td>
+                                        <pre><code>code {
+    font-family: monospace;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="em" class="anchor-centered"
+                                            >&lt;em&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Define emphasized text. The content
+                                        inside is typically displayed in italic
+                                    </td>
+                                    <td>
+                                        <pre><code>em {
+font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="i" class="anchor-centered"
+                                            >&lt;i&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Defines a part of text in an alternate
+                                        voice or mood. The content inside is
+                                        typically displayed in italic <br />-
+                                        Often used to indicate a technical term,
+                                        a phrase from another language, a
+                                        thought, a ship name, etc <br />- Use
+                                        the &lt;i&gt; element only when there is
+                                        not a more appropriate semantic element,
+                                        such as:
+                                        <ul>
+                                            <li>
+                                                &lt;em&gt; (emphasized text)
+                                            </li>
+                                            <li>
+                                                <span
+                                                    id="strong"
+                                                    class="anchor-centered"
+                                                    >&lt;strong&gt;</span
+                                                >
+                                                (important text)
+                                            </li>
+                                            <li>
+                                                <span
+                                                    id="mark"
+                                                    class="anchor-centered"
+                                                    >&lt;mark&gt;
+                                                </span>
+                                                (marked/highlighted text)
+                                            </li>
+                                            <li>
+                                                &lt;cite&gt; (the title of a
+                                                work)
+                                            </li>
+                                            <li>
+                                                <span
+                                                    id="dfn"
+                                                    class="anchor-centered"
+                                                    >&lt;dfn&gt;</span
+                                                >
+                                                (a definition term)
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <pre><code>i {
+font-style: italic;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="img" class="anchor-centered"
+                                            >&lt;img&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Used to embed an image in an html page
+                                        <br />- Has two required attributes:
+                                        <ul>
+                                            <li>
+                                                src - Specifies the path to the
+                                                image
+                                            </li>
+                                            <li>
+                                                alt - Specifies an alternate
+                                                text for the image, if the image
+                                                for some reason cannot be
+                                                displayed
+                                            </li>
+                                        </ul>
+                                        <br />- Always specify the width and
+                                        height of an image. If width and height
+                                        are not specified, the page might
+                                        flicker while the image loads <br />- To
+                                        link an image to another document,
+                                        simply nest the &lt;img&gt; tag inside
+                                        an &lt;a&gt; tag <br />- See also:
+                                        <a href="../html-images/#"
+                                            >html Images</a
+                                        >
+                                    </td>
+                                    <td>
+                                        <pre><code>img {
+display: inline-block;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="input" class="anchor-centered"
+                                            >&lt;input&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Specifies an input field where the
+                                        user can enter data <br />- The most
+                                        important form element <br />- Can be
+                                        displayed in several ways, depending on
+                                        the type attribute <br />- See alsp
+                                        <a href="../html-forms/index.html"
+                                            >html Forms</a
+                                        >
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="label" class="anchor-centered"
+                                            >&lt;label&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Defines a label for several elements
+                                        <br />- The for attribute of
+                                        &lt;label&gt; must be equal to the id
+                                        attribute of the related element to bind
+                                        them together. A label can also be bound
+                                        to an element by placing the element
+                                        inside the &lt;label&gt; element <br />-
+                                        Attributes:
+                                        <ul>
+                                            <li>
+                                                for: <i>element-id</i> <br />-
+                                                Specifies the id of the form
+                                                element the label should be
+                                                bound to
+                                            </li>
+                                            <li>
+                                                form: <i>form-id</i><br />-
+                                                Specifies which form the label
+                                                belongs to
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <pre><code>label {
+cursor: default;
+}</code></pre>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span
+                                            id="output"
+                                            class="anchor-centered"
+                                            >&lt;output&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Used to represent the result of a
+                                        calculation (like one performed by a
+                                        script) <br />- Attributes:
+                                        <ul>
+                                            <li>
+                                                for: <i>element-id</i><br />-
+                                                Specifies the relationship
+                                                between the result of the
+                                                calculation, and the elements
+                                                used in the calculation
+                                            </li>
+                                            <li>
+                                                form: <i>form-id</i><br />-
+                                                Specifies which form the output
+                                                element belongs to
+                                            </li>
+                                            <li>
+                                                name: <i>name</i><br />-
+                                                Specifies a name for the output
+                                                element
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <pre><code>output {
+display: inline;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span id="q" class="anchor-centered"
+                                            >&lt;q&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Defines a short quotation <br />-
+                                        Normally insert quotation marks around
+                                        the quotation <br />- Use
+                                        &lt;blockquote&gt; for long quotations
+                                        <br />Attributes:
+                                        <ul>
+                                            <li>
+                                                cite: <i>URL</i><br />-
+                                                Specifies the source URL of the
+                                                quote
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <pre><code>q {
+display: inline;
+}
+
+q:before {
+content: open-quote;
+}
+
+q:after {
+content: close-quote;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span
+                                            id="script"
+                                            class="anchor-centered"
+                                            >&lt;script&gt;</span
+                                        >
+                                    </td>
+                                    <td>
+                                        - Used to embed a client-side script
+                                        (JavaScript) <br />- Either contains
+                                        scripting statements, or it points to an
+                                        external script file through the src
+                                        attribute <br />- Common uses for
+                                        JavaScript are image manipulation, form
+                                        validation, and dynamic changes of
+                                        content <br />- Also look at the
+                                        &lt;noscript&gt; element for users that
+                                        have disabled scripts in their browser,
+                                        or have a browser that doesn't support
+                                        client-side scripting <br />- See also:
+                                        <a href="../html-scripts/index.html"
+                                            >html Scripts</a
+                                        >
+                                    </td>
+                                    <td>
+                                        <pre><code>script {
+    display: none;
+}</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;select&gt;</td>
+                                    <td>
+                                        - Used to create a drop-down list.
+                                        <br />- Most often used in a form, to
+                                        collect user input. <br />-
+                                        <i>name</i> attribute is needed to
+                                        reference the form data after the form
+                                        is submitted (if you omit the name
+                                        attribute, no data from the drop-down
+                                        list will be submitted). <br />-
+                                        <i>id</i> attribute is needed to
+                                        associate the drop-down list with a
+                                        label. <br />-
+                                        <i>&lt;option&gt;</i> tags inside the
+                                        &lt;select&gt; element define the
+                                        available options in the drop-down list.
+                                        <br />- Always add the &lt;label&gt; tag
+                                        for best accessibility practices!
+                                        <br />Attributes:
+                                        <ul>
+                                            <li>
+                                                autofocus: autofocus - Specifies
+                                                that the drop-down list should
+                                                automatically get focus when the
+                                                page loads
+                                            </li>
+                                            <li>
+                                                disabled: disabled - Specifies
+                                                that a drop-down list should be
+                                                disabled
+                                            </li>
+                                            <li>
+                                                form: form_id - Defines which
+                                                form the drop-down list belongs
+                                                to
+                                            </li>
+                                            <li>
+                                                multiple: multiple - Specifies
+                                                that multiple options can be
+                                                selected at once
+                                            </li>
+                                            <li>
+                                                name: name - Defines a name for
+                                                the drop-down list
+                                            </li>
+                                            <li>
+                                                required: required - Specifies
+                                                that the user is required to
+                                                select a value before submitting
+                                                the form
+                                            </li>
+                                            <li>
+                                                size: number - Defines the
+                                                number of visible options in a
+                                                drop-down list
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;span&gt;</td>
+                                    <td>
+                                        - Used to mark up a part of a text, or a
+                                        part of a document. <br />- Styled by
+                                        CSS or manipulated with JavaScript using
+                                        the class or id attribute. <br />- Like
+                                        the &lt;div&gt; element, but &lt;div&gt;
+                                        is a block-level element and
+                                        &lt;span&gt; is an inline element.
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;textarea&gt;</td>
+                                    <td>
+                                        - Defines a multi-line text input
+                                        control. <br />- Used in a form, to
+                                        collect user inputs like comments or
+                                        reviews. <br />- Can hold an unlimited
+                                        number of characters, and the text
+                                        renders in a fixed-width font (usually
+                                        Courier). <br />- Size of a text area is
+                                        specified by the cols and rows
+                                        attributes (or with CSS). <br />-
+                                        <i>name</i> attribute is needed to
+                                        reference the form data after the form
+                                        is submitted (if you omit the name
+                                        attribute, no data from the text area
+                                        will be submitted). <br />-
+                                        <i>id</i> attribute is needed to
+                                        associate the text area with a label.
+                                        <br />- Always add the &lt;label&gt; tag
+                                        for best accessibility practices!
+                                        <br />-Attributes:
+                                        <ul>
+                                            <li>
+                                                autofocus: autofocus - Specifies
+                                                that a text area should
+                                                automatically get focus when the
+                                                page loads
+                                            </li>
+                                            <li>
+                                                cols: number - Specifies the
+                                                visible width of a text area
+                                            </li>
+                                            <li>
+                                                dirname: textareaname.dir -
+                                                Specifies that the text
+                                                direction of the textarea will
+                                                be submitted
+                                            </li>
+                                            <li>
+                                                disabled: disabled - Specifies
+                                                that a text area should be
+                                                disabled
+                                            </li>
+                                            <li>
+                                                form: form_id - Specifies which
+                                                form the text area belongs to
+                                            </li>
+                                            <li>
+                                                maxlength: number - Specifies
+                                                the maximum number of characters
+                                                allowed in the text area
+                                            </li>
+                                            <li>
+                                                name: text - Specifies a name
+                                                for a text area
+                                            </li>
+                                            <li>
+                                                placeholder: text - Specifies a
+                                                short hint that describes the
+                                                expected value of a text area
+                                            </li>
+                                            <li>
+                                                readonly: readonly - Specifies
+                                                that a text area should be
+                                                read-only
+                                            </li>
+                                            <li>
+                                                required: required - Specifies
+                                                that a text area is
+                                                required/must be filled out
+                                            </li>
+                                            <li>
+                                                rows: number - Specifies the
+                                                visible number of lines in a
+                                                text area
+                                            </li>
+                                            <li>
+                                                wrap: Specifies how the text in
+                                                a text area is to be wrapped
+                                                when submitted in a form
+                                            </li>
+                                            <ul>
+                                                <li>hard</li>
+                                                <li>soft</li>
+                                            </ul>
+                                        </ul>
+                                    </td>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <br /><br />
+                </section>
+                <br /><br />
+            </article>
+        </main>
+        <br /><br /><br /><br />
+        <!-- Bottom Links -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../../../index.html">Homepage</a>
+                        <br /><a href="../../html-basics/index.html"
+                            >HTML Basics</a
+                        >
+                        <br /><a href="../../html-buttons/index.html"
+                            >Buttons</a
+                        >
+                        <br /><a href="../../html-forms/index.html">Forms</a>
+                        <br /><a href="../../html-iframes/index.html"
+                            >IFrames</a
+                        >
+                        <br /><a href="../../html-images/index.html">Images</a>
+                        <br /><a href="../../html-links/index.html">Links</a>
+                        <br /><a href="../../html-lists/index.html">Lists</a>
+                        <br /><a href="../../html-scripts/index.html"
+                            >Scripts</a
+                        >
+                        <br /><a href="../../html-tables/index.html">Tables</a>
+                        <br /><a href="../../html-video-audio/index.html"
+                            >Video & Audio</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">CSS</h3>
+                        <h4 class="revert">Properties</h4>
+                        <a href="../../../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/box/index.html"
+                            >Box</a
+                        ><br />
+                        <a
+                            href="../../../CSS/css-properties/color-background/index.html"
+                            >Color & Background</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+
+                        <br /><a
+                            href="../../../CSS/css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../../../CSS/css-properties/lists-tables/index.html"
+                            >Lists & Tables</a
+                        >
+                        <br /><br />
+                        <h4 class="revert">Selector</h4>
+                        <a href="../../../CSS/css-selectors/index.html"
+                            >Selectors</a
+                        >
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Javascript</h3>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="../../../nav-menu.js"></script>
+    </body>
+</html>
