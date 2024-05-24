@@ -185,6 +185,7 @@ h4 {
 }
 .row {
     display: flex;
+    padding-left: 50px;
 }
 .col15,
 .col20,
@@ -356,6 +357,15 @@ ul {
     background-color: transparent;
     width: 90%;
     margin: auto;
+}
+
+.head-row3,
+.body-row3 {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
 }
 
 .head-row,
