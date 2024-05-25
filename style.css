@@ -52,8 +52,9 @@ h1#title-bar {
     position: fixed;
     margin-top: -25px;
     margin-left: -25px;
+
     background-color: #e08570;
-    width: 95%;
+    width: 99%;
     opacity: 100%;
 }
 
