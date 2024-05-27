@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./snippets-page.css" />
+        <link rel="stylesheet" href="./site-format-templates.css" />
         <link rel="stylesheet" href="../style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
                     onclick="openNav()"
                     >&#9776;</span
                 >
-                <span id="page-title">Snippets - Page Building</span>
+                <span id="page-title">Site Format Templates</span>
             </h1>
 
             <div id="mySidenav" class="sidenav">
@@ -36,17 +36,21 @@
                 >
                 <nav id="nav">
                     <ul>
-                        <li><a href="#iframes-3">3 iFrames in a Section</a></li>
-                        <li><a href="#nav-menu">Navigation Menu</a></li>
+                        <li>
+                            <a href="./#iframes-3">3 iFrames in a Section</a>
+                        </li>
+                        <li><a href="./#nav-menu">Navigation Menu</a></li>
                         <ul>
                             <li>
-                                <a href="#nav-menu-css-js"
+                                <a href="./#nav-menu-css-js"
                                     >Navigation Menu CSS & JS</a
                                 >
                             </li>
                         </ul>
                         <li>
-                            <a href="#section-template1">Section Template 1</a>
+                            <a href="./#section-template1"
+                                >Section Template 1</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -57,10 +61,6 @@
             <article id="iframes-3">
                 <h2>3 IFrames</h2>
                 <section class="menu-frame">
-                    <div class="menu-frame3sections">
-                        <h3>Frame1</h3>
-                        <iframe src="" frameborder="2"></iframe>
-                    </div>
                     <div class="menu-frame3sections">
                         <h3>HTML</h3>
 
@@ -128,24 +128,30 @@ iframe {
                 <section class="menu-frame">
                     <div class="menu-frame-3sections">
                         <h3>HTML</h3>
-                        <iframe
-                            src="./navigation-menu/index.html"
-                            frameborder="2"
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./navigation-menu/index.html"
+                                frameborder="2"
+                            ></iframe>
+                        </div>
                     </div>
                     <div class="menu-frame-3sections">
                         <h3>CSS</h3>
-                        <iframe
-                            src="./navigation-menu/navigation-menu.css"
-                            frameborder="2"
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./navigation-menu/navigation-menu.css"
+                                frameborder="2"
+                            ></iframe>
+                        </div>
                     </div>
                     <div class="menu-frame-3sections">
                         <h3>Javascript</h3>
-                        <iframe
-                            src="./navigation-menu/navigation-menu.js"
-                            frameborder="2"
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./navigation-menu/navigation-menu.js"
+                                frameborder="2"
+                            ></iframe>
+                        </div>
                     </div>
                 </section>
             </article>
@@ -155,12 +161,13 @@ iframe {
                 <h2>Section Template 1</h2>
                 <section class="menu-frame">
                     <div class="menu-frame3sections">
-                        <iframe
-                            src="./section-template/index.html"
-                            frameborder="2"
-                            class="menu-frame-html"
-                            
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./section-template/index.html"
+                                frameborder="2"
+                                class="menu-frame-html"
+                            ></iframe>
+                        </div>
                     </div>
                     <div class="menu-frame3sections">
                         <h3>HTML</h3>
@@ -233,24 +240,28 @@ iframe {
 
                     <div class="menu-frame3sections">
                         <h3>CSS</h3>
-                        <iframe
-                            src="./section-template/section-template.css"
-                            frameborder="2"
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./section-template/section-template.css"
+                                frameborder="2"
+                            ></iframe>
+                        </div>
                     </div>
                 </section>
             </article>
             <hr />
             <br /><br />
-            <article padding: 20px">
+            <article>
                 <h2>Attribute Table and Definition</h2>
 
                 <section class="menu-frame">
                     <div class="menu-frame3sections">
-                        <iframe
-                            src="./attribute-table/index.html"
-                            frameborder="2"
-                        ></iframe>
+                        <dic class="test1">
+                            <iframe
+                                src="./attribute-table/index.html"
+                                frameborder="2"
+                            ></iframe>
+                        </dic>
                     </div>
 
                     <div class="menu-frame3sections">
@@ -396,10 +407,12 @@ Could be CSS or JS&lt;/code&gt;&lt;/pre&gt;
 
                     <div class="menu-frame3sections">
                         <h3>CSS</h3>
-                        <iframe
-                            src="./attribute-table/attribute.css"
-                            frameborder="2"
-                        ></iframe>
+                        <div class="test1">
+                            <iframe
+                                src="./attribute-table/attribute.css"
+                                frameborder="2"
+                            ></iframe>
+                        </div>
                     </div>
                 </section>
             </article>
