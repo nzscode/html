@@ -1,0 +1,65 @@
+/* Side Navigation Menu */
+
+#page-title {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+h1#title-bar {
+    position: fixed;
+
+    background-color: #e08570;
+    width: 99%;
+    opacity: 100%;
+}
+
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 72px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 5px;
+    margin-top: 2px;
+}
+
+#nav li {
+    margin-left: 0px;
+}
+
+#nav p {
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}

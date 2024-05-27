@@ -1,0 +1,97 @@
+/* Page */
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #eae2b7bc;
+    padding: 15px;
+    /* Roboto */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    background-color: #f77f0076;
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+    padding: 10px;
+    /* Kanit Medium */
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h3 {
+    background-color: #fcbf4976;
+    border-radius: 5px;
+    margin: 5px 25px 5px 25px;
+    padding: 3px 15px;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.row {
+    display: flex;
+    padding-left: 50px;
+}
+
+.col20,
+.col75 {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col75 {
+    width: 75%;
+}
+
+pre {
+    /* background-color: #20262b; */
+    background-color: #003049;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.anchor-centered {
+    padding-top: 150px;
+}
+
+.outer-table {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+}
+
+.head-row3,
+.body-row3 {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
+}
+
+.cell-header {
+    background-color: #504f4f;
+    text-align: center;
+    padding: 10px;
+    color: #fcdcb9;
+    font-weight: bold;
+}
+
+.cells {
+    padding: 5px;
+}
+
+.odd-bg {
+    background-color: #00000017;
+}
