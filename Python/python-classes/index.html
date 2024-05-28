@@ -23,7 +23,7 @@
                     onclick="openNav()"
                     >&#9776;</span
                 >
-                <span id="page-title">Python Classes</span>
+                <span id="page-title">Classes</span>
             </h1>
 
             <div id="mySidenav" class="sidenav">
@@ -45,40 +45,43 @@
         </header>
         <main>
             <article>
-                <h3>Classes</h3>
-                <ul>
-                    <li>
-                        A class is an object constructor, a blueprint for an
-                        object
-                    </li>
-                    <li>
-                        Use the "__init__()" function to set up the initializing
-                        properties and corresponding values for the objects
-                    </li>
-                    <li>Methods can also be part of classes</li>
-                </ul>
-
-                <ul>
-                    <li>Basic Class - Object Literal</li>
+                <section id="classes">
+                    <h2>Classes</h2>
                     <ul>
-                        <li>Not very useful</li>
+                        <li>
+                            A class is an object constructor, a blueprint for an
+                            object
+                        </li>
+                        <li>
+                            Use the "__init__()" function to set up the
+                            initializing properties and corresponding values for
+                            the objects
+                        </li>
+                        <li>Methods can also be part of classes</li>
                     </ul>
-                    <pre>
+
+                    <section id="basic-class">
+                        <h3>Basic Class - Object Literal</h3>
+                        <ul>
+                            <li>Not very useful</li>
+                        </ul>
+                        <pre>
 <code>class Apple:
     color = "red"
     num = 5</code></pre>
-                </ul>
-                <ul>
-                    <li>Basic Object</li>
-                    <pre>
+                    </section>
+                    <section id="basic-object">
+                        <h3>Basic Object</h3>
+                        <pre>
 <code>fruit1 = Apple()
 print(fruit1.color)</code></pre>
-                    <pre>
+                        <pre>
 <code class="output"># Output:
 red</code></pre>
-
-                    <li>Creating Objects with __init__()</li>
-                    <pre>
+                    </section>
+                    <section id="objects-init">
+                        <h3>Creating Objects with __init__()</h3>
+                        <pre>
 <code>class Robot:
     def __init__(self, name, weight, color):
         self.name = name
@@ -97,7 +100,7 @@ r1.intro()
 print("Robot 2:")
 r2 = Robot("Garibaldi", 126.9, "Fire house yellow")
 r2.intro()</code></pre>
-                    <pre><code class="output"># Output:
+                        <pre><code class="output"># Output:
 Robot 1:
 My name is Jane, 
 I weigh 25 lbs 
@@ -107,12 +110,18 @@ Robot 2:
 My name is Garibaldi, 
 I weigh 126.9 lbs 
 and I am Fire house yellow in color!</code></pre>
-                    <li>The Pass Statement</li>
-                    <pre>
+                    </section>
+                    <section id="pass-statement">
+                        <h3>The Pass Statement</h3>
+                        <pre>
 <code>class Person:
     pass</code></pre>
-                    <h3>Creating Objects with Super class</h3>
-
+                    </section>
+                </section>
+            </article>
+            <article id="super-class">
+                <h3>Creating Objects with Super class</h3>
+                <section id="creating-with-super-class">
                     <div>
                         <span class="situ-solu">Super Class:</span>
                         <ul>
@@ -124,9 +133,10 @@ and I am Fire house yellow in color!</code></pre>
                                 Adds functionality of super class into current
                                 class.
                             </li>
-                            <br />
-                            <span class="situ-solu">Super Class</span>
-                            <pre><code>
+                        </ul>
+                        <br />
+                        <span class="situ-solu">Super Class</span>
+                        <pre><code>
 class RobotIntro:
 def __init__(self):
     self.name = ""
@@ -134,10 +144,13 @@ def __init__(self):
 def intro(self):
     print(f"My name is Bond. {self.name} Bond!")   
                     </code></pre>
-                            <span class="situ-solu"
-                                >Adding Super Class to current class</span
-                            >
-                            <pre>
+                    </div>
+                </section>
+                <section id="adding-super-class">
+                    <span class="situ-solu"
+                        >Adding Super Class to current class</span
+                    >
+                    <pre>
 <code>class RobotIntro:
     def __init__(self):
         self.name = ""
@@ -155,16 +168,16 @@ class Robot4(RobotIntro):                   #Adding Super Class as an argument w
 
 r5 = Robot4("Kia", 87)
 r5.intro()</code></pre>
-                            <pre><code># Output:
+                    <pre><code># Output:
 My name is Bond. Kia Bond!</code></pre>
-                        </ul>
-                    </div>
-                    <li>Deleting Objects</li>
-                    <ul>
-                        <pre>
+                </section>
+                <section id="deleting-objects">
+                    <h3>Deleting Objects</h3>
+                    <pre>
 <code>del p1</code></pre>
-                    </ul>
-                </ul>
+                </section>
+            </article>
+            <article id="how-to">
                 <div id="HowTos">
                     <br /><br />
                     <h1>How Tos:</h1>
@@ -220,82 +233,91 @@ print(result)</code></pre>
             <div class="container">
                 <div class="row">
                     <div class="footer-column">
+                        <a href="./index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
+                <div class="row">
+                    <div class="footer-column">
                         <h3 class="revert">Python</h3>
-                        <a href="../Python/index.html">Python Homepage</a>
-                        <br /><a href="./Python/python-basics/index.html"
-                            >Basics</a
+                        <a href="./Python/python-basics/index.html"
+                            >Python Basics</a
                         >
-                        <br /><a href="./python-classes/index.html">Classes</a>
-                        <br /><a href="./python-dictionaries/index.html"
+                        <br /><a href="./Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a href="./Python/python-dictionaries/index.html"
                             >Dictionaries</a
                         >
-                        <br /><a href="./python-functions/index.html"
+                        <br /><a href="./Python/python-functions/index.html"
                             >Functions</a
                         >
-                        <br /><a href="./python-lists/index.html">Lists</a>
-                        <br /><a href="./python-tuples/index.html">Tuples</a>
+                        <br /><a href="./Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="./Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
                     </div>
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
-                        <a href="../index.html">Homepage</a>
-                        <br /><a href="../HTML/html-basics/index.html"
+
+                        <br /><a href="./HTML/html-basics/index.html"
                             >HTML Basics</a
                         >
-                        <br /><a href="../HTML/html-buttons/index.html"
+                        <br /><a href="./HTML/html-buttons/index.html"
                             >Buttons</a
                         >
-                        <br /><a href="../HTML/html-forms/index.html">Forms</a>
-                        <br /><a href="../HTML/html-iframes/index.html"
+                        <br /><a href="./HTML/html-forms/index.html">Forms</a>
+                        <br /><a href="./HTML/html-iframes/index.html"
                             >IFrames</a
                         >
-                        <br /><a href="../HTML/html-images/index.html"
-                            >Images</a
-                        >
-                        <br /><a href="../HTML/html-links/index.html">Links</a>
-                        <br /><a href="../HTML/html-lists/index.html">Lists</a>
-                        <br /><a href="../HTML/html-scripts/index.html"
+                        <br /><a href="./HTML/html-images/index.html">Images</a>
+                        <br /><a href="./HTML/html-links/index.html">Links</a>
+                        <br /><a href="./HTML/html-lists/index.html">Lists</a>
+                        <br /><a href="./HTML/html-scripts/index.html"
                             >Scripts</a
                         >
-                        <br /><a href="../HTML/html-tables/index.html"
-                            >Tables</a
-                        >
-                        <br /><a href="../HTML/html-video-audio/index.html"
+                        <br /><a href="./HTML/html-tables/index.html">Tables</a>
+                        <br /><a href="./HTML/html-video-audio/index.html"
                             >Video & Audio</a
                         >
                     </div>
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../CSS/css-properties/border/index.html"
+                        <a href="./CSS/css-properties/border/index.html"
                             >Border</a
                         >
-                        <br /><a href="../CSS/css-properties/box/index.html"
+                        <br /><a href="./CSS/css-properties/box/index.html"
                             >Box</a
                         >
-                        <br /><a
-                            href="../CSS/css-properties/color-background/index.html"
+                        <br />
+                        <a
+                            href="./CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../CSS/css-properties/columns/index.html"
+                        <br /><a href="./CSS/css-properties/columns/index.html"
                             >Columns</a
                         >
-                        <br /><a href="../CSS/css-properties/flexbox/index.html"
+                        <br /><a href="./CSS/css-properties/flexbox/index.html"
                             >Flexbox</a
                         >
+
                         <br /><a
-                            href="../CSS/css-properties/font-text/index.html"
+                            href="./CSS/css-properties/font-text/index.html"
                             >Font & text</a
                         >
-                        <br /><a href="../CSS/css-properties/grid/index.html"
+                        <br /><a href="./CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
                         <br /><a
-                            href="../CSS/css-properties/lists-tables/index.html"
+                            href="./CSS/css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>
-                        <a href="../CSS/css-selectors/index.html">Selectors</a>
+                        <a href="./CSS/css-selectors/index.html">Selectors</a>
                     </div>
                     <div class="footer-column">
                         <h3 class="revert">Javascript</h3>
