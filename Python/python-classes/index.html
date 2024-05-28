@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article>
+                <h3>Classes</h3>
+                <ul>
+                    <li>
+                        A class is an object constructor, a blueprint for an
+                        object
+                    </li>
+                    <li>
+                        Use the "__init__()" function to set up the initializing
+                        properties and corresponding values for the objects
+                    </li>
+                    <li>Methods can also be part of classes</li>
+                </ul>
+
+                <ul>
+                    <li>Basic Class - Object Literal</li>
+                    <ul>
+                        <li>Not very useful</li>
+                    </ul>
+                    <pre>
+<code>class Apple:
+    color = "red"
+    num = 5</code></pre>
+                </ul>
+                <ul>
+                    <li>Basic Object</li>
+                    <pre>
+<code>fruit1 = Apple()
+print(fruit1.color)</code></pre>
+                    <pre>
+<code class="output"># Output:
+red</code></pre>
+
+                    <li>Creating Objects with __init__()</li>
+                    <pre>
+<code>class Robot:
+    def __init__(self, name, weight, color):
+        self.name = name
+        self.weight = weight
+        self.color = color
+
+    def intro(self):
+        print(f"My name is {self.name},\n" 
+        f"I weigh {self.weight} lbs \n"
+        f"and I am {self.color} in color!")
+
+print("Robot 1:")
+r1 = Robot("Jane", 25, "Pink")
+r1.intro()
+
+print("Robot 2:")
+r2 = Robot("Garibaldi", 126.9, "Fire house yellow")
+r2.intro()</code></pre>
+                    <pre><code class="output"># Output:
+Robot 1:
+My name is Jane, 
+I weigh 25 lbs 
+and I am Pink in color!
+
+Robot 2:
+My name is Garibaldi, 
+I weigh 126.9 lbs 
+and I am Fire house yellow in color!</code></pre>
+                    <li>The Pass Statement</li>
+                    <pre>
+<code>class Person:
+    pass</code></pre>
+                    <h3>Creating Objects with Super class</h3>
+
+                    <div>
+                        <span class="situ-solu">Super Class:</span>
+                        <ul>
+                            <li>
+                                An already defined class, that will be adopted
+                                by the current class.
+                            </li>
+                            <li>
+                                Adds functionality of super class into current
+                                class.
+                            </li>
+                            <br />
+                            <span class="situ-solu">Super Class</span>
+                            <pre><code>
+class RobotIntro:
+def __init__(self):
+    self.name = ""
+
+def intro(self):
+    print(f"My name is Bond. {self.name} Bond!")   
+                    </code></pre>
+                            <span class="situ-solu"
+                                >Adding Super Class to current class</span
+                            >
+                            <pre>
+<code>class RobotIntro:
+    def __init__(self):
+        self.name = ""
+
+    def intro(self):
+        print(f"My name is Bond. {self.name} Bond!")
+
+
+class Robot4(RobotIntro):                   #Adding Super Class as an argument when building the class
+    def __init__(self, name, weight):
+        super().__init__()                  #Initializing the Super Class
+        self.name = name
+        self.weight = weight
+
+
+r5 = Robot4("Kia", 87)
+r5.intro()</code></pre>
+                            <pre><code># Output:
+My name is Bond. Kia Bond!</code></pre>
+                        </ul>
+                    </div>
+                    <li>Deleting Objects</li>
+                    <ul>
+                        <pre>
+<code>del p1</code></pre>
+                    </ul>
+                </ul>
+                <div id="HowTos">
+                    <br /><br />
+                    <h1>How Tos:</h1>
+                    <h3>Specifying the data type of the variable</h3>
+                    <div>
+                        <span class="situ-solu">Solu: </span>
+                        <ul>
+                            <pre>
+<code>a = str(2)
+b = int(5)
+c = float(8)
+
+print(type(a))
+print(type(b))
+print(type(c))</code></pre>
+                            <pre>
+<code class="output"># Output:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;
+&lt;class 'float'&gt;</code></pre>
+                        </ul>
+                    </div>
+                    <br />
+
+                    <h3>Recursion - Functions within functions</h3>
+                    <div>
+                        <span class="situ-solu">Solu: </span>
+                        <ul>
+                            <pre>
+<code>def multiplication(multiplier):
+    def myFunc(x):
+        return multiplier * x
+
+    return myFunc
+
+multiplyBy3 = multiplication(3)
+print(multiplyBy3(10))
+
+def doAdditionON(x, operation):
+    return operation(x)
+
+result = doAdditionON(5, multiplyBy3)
+print(result)</code></pre>
+                            <pre><code># Output:
+30
+15</code></pre>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

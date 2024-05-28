@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Tuples</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article>
+                <li class="title">Tuples - (Round Brackets)</li>
+                <ul>
+                    <li>Ordered</li>
+                    <li>Unchangeable</li>
+                    <li>Indexed</li>
+                    <li>Can have duplicates</li>
+                    <li>
+                        Can store String("anything within single/double
+                        quotations"), int(Integers/Floats), and
+                        Boolean(True/False) data types
+                    </li>
+                </ul>
+                <pre>
+<code>myTuple = (2.358, "Robby", False, "John", "Lisa", "Li -Mae", "Carey", ("Onions, Potatoes"))</code></pre>
+                <ul>
+                    <li class="sub-title">Constructing a Tuple</li>
+                    If creating a tuple with only one item, a comma must be used
+                    after, if not it will NOT be considered a tuple.
+                    <ul>
+                        <li>Creating a tuple by variable declaration</li>
+                        <pre>
+<code>myTuple = ()
+print(type(myTuple))</code></pre>
+                        <pre><code class="output"># Output:
+&lt;class 'tuple'&gt;
+</code></pre>
+                        <li>Using a tuple() Constructor</li>
+                        <pre>
+<code>newTuple = tuple("a", 1, True)</code>
+                </pre>
+                    </ul>
+                    <li class="sub-title">Accessing Tuple Items</li>
+
+                    <ul>
+                        <li>Using the index number</li>
+                        <pre><code>print(myTuple[1])</code></pre>
+
+                        <pre><code class="output"># Output: 
+Robby</code></pre>
+                        <li>Using a range of Index Numbers</li>
+                        <pre>
+<code>print(f"Length of Tuple : {len(myTuple)}")
+print(f"Items from index 3 to the end {myTuple[3:]}")
+print(f"Items from the start to index 4{myTuple[:4]}")
+print(f"Items from index 2 to the 5{myTuple[2:5]}")</code></pre>
+                        <pre><code class="output"># Output:
+Length of Tuple : 8
+Items from index 3 to the end ('John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
+Items from the start to index 4(2.358, 'Robby', False, 'John')
+Items from index 2 to the 5(False, 'John', 'Lisa')</code></pre>
+                    </ul>
+                    <li class="sub-title">Checking if an item exists</li>
+
+                    <pre>
+<code>if "Carey" in myTuple:
+print("Carey is in myTuple")</code></pre>
+                    <pre><code class="output"># Output: 
+Carey is in myTuple</code></pre>
+                    <li class="sub-title">Change the values of the tuple</li>
+                    <ol>
+                        <li>
+                            Since a tuple is unchangeable, first convert the
+                            tuple to a list
+                        </li>
+                        <pre>
+<code>tupleList = list(myTuple)</code></pre>
+                        <li>Now change the item at the required index</li>
+                        <pre>
+<code>tupleList[3] = "Anna"</code></pre>
+                        <li>
+                            Now convert the list back into a tuple(Can replace
+                            original tuple, with this new tuple)
+                        </li>
+                        <pre>
+<code>myTuple = tuple(tupleList)</code></pre>
+                    </ol>
+                    <pre>
+<code>tupleList = list(myTuple)
+tupleList[3] = "Anna"
+myTuple = tuple(tupleList)
+print(myTuple)</code></pre>
+                    <pre><code class="output"># Output: 
+(2.358, 'Robby', False, 'Anna', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
+</code></pre>
+                    <li class="sub-title">Adding a tuple to a tuple</li>
+                    <pre>
+<code>newTuple = (5, "Amy Adams", ["ten", "eleven"])
+myTuple += newTuple
+print(myTuple)</code></pre>
+                    <pre><code class="output"># Output:
+(2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes', 5, 'Amy Adams', ['ten', 'eleven'])</code></pre>
+                    <li class="sub-title">Removing items from a Tuple</li>
+                    <ol>
+                        <li>
+                            Since a tuple is unchangeable, first convert the
+                            tuple to a list
+                        </li>
+                        <pre>
+<code>tupleList = list(myTuple)</code></pre>
+                        <li>Now remove the item.</li>
+                        <ul>
+                            <li>
+                                When removing an item that is made up of
+                                multiple items, you have to list them all.(See
+                                below)
+                            </li>
+                        </ul>
+                        <pre>
+<code>tupleList.remove("Onions, Potatoes")</code></pre>
+                        <li>
+                            Now convert the list back into a tuple(Can replace
+                            original tuple, with this new tuple)
+                        </li>
+                        <pre>
+<code>myTuple = tuple(tupleList)</code></pre>
+                    </ol>
+                    <pre>
+<code>tupleList = list(myTuple)
+tupleList.remove("Onions, Potatoes")
+myTuple = tuple(tupleList)
+print(myTuple)</code></pre>
+                    <pre><code class="output"># Output: 
+(2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey')
+</code></pre>
+                    <li class="sub-title">Deleting a Tuple</li>
+                    <pre>
+<code>del myTuple
+print(myTuple)</code></pre>
+                    <ul>
+                        <li>
+                            Raises an error since the tuple no longer exists.
+                        </li>
+                    </ul>
+                    <pre><code class="output"># Output: 
+NameError: name 'myTuple' is not defined. Did you mean: 'tuple'?</code></pre>
+                    <li class="sub-title">Unpacking a Tuple</li>
+                    <ul>
+                        <li>
+                            In Python, values from within the tuple can be
+                            extracted out and assigned to variables.
+                        </li>
+                        <li>
+                            The number of variables must match the number of
+                            Tuples.
+                            <ul>
+                                <li>
+                                    If you want more than one item to belong to
+                                    the variable, you must place a * in front of
+                                    the variable.
+                                </li>
+                                <li>
+                                    If there is more than one set of data within
+                                    the tuple, that has more than one element
+                                    assigned to it,<br />
+                                    then the data must be unpacked together as
+                                    one variable, and then break it down with
+                                    lists.
+                                </li>
+                                <ol>
+                                    <li>Assign the tuple data to variables:</li>
+                                    <pre>
+<code>cost, teacher, bring_lunch, *students_and_assistants, bus_company = tuple_data</code></pre>
+                                    <li>
+                                        Break down the combined tuple data into
+                                        their own variables, using indexes
+                                    </li>
+                                    <pre>
+<code>students = students_and_assistants[:4]
+assistant_teachers = students_and_assistants[4:6]</code></pre>
+                                </ol>
+                                <pre>
+<code>tuple_data = (50, "Mr. Smith", True, "John", "Alice", "Bob", "Emily", "Ms. Johnson", "Mr. Brown", "ABC Bus Company")
+
+cost, teacher, bring_lunch, *students_and_assistants, bus_company = tuple_data
+
+students = students_and_assistants[:4]
+assistant_teachers = students_and_assistants[4:6]
+
+print("Cost:", cost)
+print("Teacher:", teacher)
+print("Bring lunch:", bring_lunch)
+print("Students:", students)
+print("Assistant Teachers:", assistant_teachers)
+print("Bus Company:", bus_company)</code></pre>
+                            </ul>
+                        </li>
+                    </ul>
+                    <pre>
+<code>myTuple = (2.358, "Robby", False, "John", "Lisa", "Li -Mae", "Carey", ("Onions, Potatoes"))
+(cost, teacher, bring_lunch, *students, groceries) = myTuple
+print(f"Cost = {cost}\n"
+f"Teacher = {teacher}\n"
+f"Bring Lunch = {bring_lunch}\n"
+f"Students = {students}\n"
+f"Groceries = {groceries}")</code></pre>
+                    <li class="sub-title">Looping through Tuples</li>
+                    <ul>
+                        <li class="sub-sub-title">Iterating through a Tuple</li>
+                        <pre><code>for i in myTuple:
+print(i)</code></pre>
+                        <pre><code class="output"># Output: 
+2.358
+Robby
+False
+John
+Lisa
+Li -Mae
+Carey
+Onions, Potatoes</code></pre>
+                        <li class="sub-sub-title">
+                            Looping through the index numbers of the Tuples
+                        </li>
+                        <pre><code>for i in range(len(myTuple)):
+print(myTuple[i])</code></pre>
+                        <pre><code class="output"># Output:
+2.358
+Robby
+False
+John
+Lisa
+Li -Mae
+Carey
+Onions, Potatoes
+</code></pre>
+                        <li class="sub-sub-title">
+                            Looping throught the tuple using a while loop
+                        </li>
+                        <pre><code>i = 0
+while (i &lt; (len(myTuple))):
+print(myTuple[i])
+i += 1</code></pre>
+                        <pre><code class="output"># Output:
+2.358
+Robby
+False
+John
+Lisa
+Li -Mae
+Carey
+Onions, Potatoes
+</code></pre>
+                    </ul>
+                    <li class="sub-title">Tuple Methods</li>
+                    <ul>
+                        <li class="sub-sub-title">count ()</li>
+                        Counts how many times a given item occurs in the tuple
+                        <pre>
+<code>myTuple = ("John", "Lisa", "Li -Mae", "Carey", "John", "Yusuf", "John", "Tracy")
+print(myTuple.count("John"))</code></pre>
+                        <pre><code class="output"># Output: 
+3</code></pre>
+                        <li class="sub-sub-title">index()</li>
+                        Searches for the first index
+                        <pre>
+<code>myTuple = ("John", "Lisa", "Li -Mae", "Carey", "John", "Yusuf", "John", "Tracy")
+print(myTuple.index("John"))</code></pre>
+                        <pre><code class="output"># Output: 
+0</code></pre>
+                    </ul>
+                </ul>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

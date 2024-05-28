@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Lists</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article>
+                <ul>
+                    <li class="title">Lists - [Square Brackets]</li>
+                    <ul>
+                        <li>Ordered</li>
+                        <li>
+                            Changeable : items within can be changed, added,
+                            removed
+                        </li>
+                        <li>Indexed</li>
+                        <li>
+                            Can have duplicates, because items are stored by
+                            index.
+                        </li>
+                        <li>
+                            Can store String("anything within single/double
+                            quotations"), int(Integers/Floats), and
+                            Boolean(True/False) data types
+                        </li>
+                    </ul>
+                    <pre>
+<code>x = [1.912, "Tim", True]
+for i in range(len(x)):
+print(f"At index {i}: {x[i]}, is of type {type(x[i])}")</code></pre>
+                    <pre>
+<code class="output"># Output:
+At index 0: 1.912, is of type &lt;class 'int'&gt;
+At index 1: Tim, is of type &lt;class 'str'&gt;
+At index 2: True, is of type &lt;class 'bool'&gt;</code></pre>
+                    <ul>
+                        <li class="sub-title">Constructing a List</li>
+                        Must use double round brackets when creating the list
+                        with initial values
+
+                        <pre><code>myList = list(("Shoes", "t-shirts", "pants"))
+print(myList)</code></pre>
+                        <pre><code class="output"># Output:
+['Shoes', 't-shirts', 'pants']</code></pre>
+                        <li class="sub-title">Accessing List Items</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Using the Index Numbers
+                            </li>
+                            <pre>
+<code>myList = ["Shoes", "t-shirts", "pants"]
+print(myList[1])</code></pre>
+                            <pre><code class="output"># Output: 
+t-shirts</code></pre>
+                            <li class="sub-sub-title">
+                                Using a range of Index Numbers
+                            </li>
+                            <pre><code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+print(f"Length of List : {len(myList)}")
+print(f"Items from index 3 to the end {myList[3:]}")
+print(f"Items from the start to index 4{myList[:4]}")
+print(f"Items from index 2 to the 5{myList[2:5]}")</code></pre>
+                            <pre><code class="output"># Output:
+Length of List : 6
+Items from index 3 to the end ['birds', 'hamsters', 'ferrets']
+Items from the start to index 4['dogs', 'cats', 'rabbits', 'birds']
+Items from index 2 to the 5['rabbits', 'birds', 'hamsters']</code></pre>
+                        </ul>
+                        <li class="sub-title">Checking if an Item Exists</li>
+                        <pre>
+<code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+if "rabbits" in myList:
+x = myList.index("rabbits")
+print(f"Yes, rabbits exist in this list at index {x}")</code></pre>
+                        <pre><code class="output"># Output:
+Yes, rabbits is in myList at Index 2</code></pre>
+                        <li class="sub-title">Change the values of a List</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Change the values of a single Index
+                            </li>
+                            <pre><code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+myList[3] = "mice"
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['dogs', 'cats', 'rabbits', 'mice', 'hamsters', 'ferrets']</code></pre>
+                            <li class="sub-sub-title">
+                                Change the values at a range of indexes
+                            </li>
+                            <pre>
+<code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+myList[1:4] = ["mice", "snakes", "toads"]                       #When exact number of items to replace
+print(f"Exact : {myList}")
+myList[1:4] = ["mice", "snakes", "toads", "lizards", "fish"]    #When more number of items to replace
+print(f"More : {myList}")
+myList[1:4] = ["mice", "snakes"]                                #When less number of items to replace
+print(f"Less : {myList}")</code></pre>
+                            <pre><code class="output"># Output:
+Exact : ['dogs', 'mice', 'snakes', 'toads', 'hamsters', 'ferrets']
+More : ['dogs', 'mice', 'snakes', 'toads', 'lizards', 'fish', 'hamsters', 'ferrets']
+Less : ['dogs', 'mice', 'snakes', 'lizards', 'fish', 'hamsters', 'ferrets']</code></pre>
+                        </ul>
+
+                        <li class="sub-title">Add Items to a list</li>
+                        <ul>
+                            <li class="sub-sub-title">Append Items</li>
+                            Inserts items to the end of the list
+                            <pre>
+<code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+myList.append("Banana")
+print(myList)</code></pre>
+                            <pre><code class="output"># Output :
+['dogs', 'cats', 'rabbits', 'birds', 'hamsters', 'ferrets', 'Banana']</code></pre>
+                            <li class="sub-sub-title">
+                                Insert Items at Specified Index
+                            </li>
+                            <pre>
+<code>myList = ["dogs", "cats", "rabbits", "birds", "hamsters", "ferrets"]
+myList.insert(2, "Banana")
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['dogs', 'cats', 'Banana', 'rabbits', 'birds', 'hamsters', 'ferrets']</code></pre>
+                            <li class="sub-sub-title">
+                                Insert items from another iterable (list,
+                                tuples, sets, dictionaries, etc.)
+                            </li>
+                            <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+newTuple = ("Apples", "Oranges")
+newList = ["Red", "Pink"]
+newDict = {
+"Shapes": ["Square", "Circle"],
+"Directions": ("North", "South")
+}
+myList.extend(newList)
+print(myList)
+
+myList.extend(newTuple)
+print(myList)
+
+myList.extend(newDict)
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['birds', 'hamsters', 'ferrets', 'Red', 'Pink']
+['birds', 'hamsters', 'ferrets', 'Red', 'Pink', 'Apples', 'Oranges']
+['birds', 'hamsters', 'ferrets', 'Red', 'Pink', 'Apples', 'Oranges', 'Shapes', 'Directions']</code></pre>
+                        </ul>
+                        <li class="sub-title">Removing items from a List</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Remove a specified item
+                            </li>
+                            If there is more than one occurrence, the remove()
+                            method only removes the first occurrence.
+                            <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+myList.remove("hamsters")
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['birds', 'ferrets']</code></pre>
+                            <li class="sub-sub-title">
+                                Remove the item at a specified index
+                            </li>
+                            <ul>
+                                <li>Using pop()</li>
+                                If index is not specified, last item in the list
+                                will be removed
+                                <pre><code>myList = ["birds", "hamsters", "ferrets"]
+myList.pop(1)
+print(myList)</code></pre>
+                                <pre><code class="output"># Output:
+['birds', 'ferrets']</code></pre>
+                                <li>Using del</li>
+                                Must specifiy an index
+                                <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+del myList[1]
+print(myList)</code></pre>
+                                <pre><code class="output"># Output:
+['birds', 'ferrets']
+</code></pre>
+                            </ul>
+                        </ul>
+                        <li class="sub-title">Clearing / Emptying a list</li>
+                        <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+myList.clear()
+print(myList)</code></pre>
+                        <pre><code class="output"># Output:
+[]</code></pre>
+                        <li class="sub-title">Deleting a List</li>
+                        Will give an error.
+                        <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+del myList
+print(myList)</code></pre>
+                        <pre><code class="output"># Output:
+NameError: name 'myList' is not defined</code></pre>
+                        <li class="sub-title">Loop through a List</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Iterating items of a list
+                            </li>
+                            <pre><code>myList = ["birds", "hamsters", "ferrets"]
+for i in myList:
+print(i)</code></pre>
+                            <pre><code class="output"># Output:
+birds
+hamsters
+ferrets</code></pre>
+                            <li class="sub-sub-title">
+                                Iterating through items at index numbers
+                            </li>
+                            <pre>
+<code>myList = ["birds", "hamsters", "ferrets"]
+for i in range(len(myList)):
+print(myList[i])</code></pre>
+                            <pre><code class="output"># Output:
+birds
+hamsters
+ferrets</code></pre>
+                            <li class="sub-sub-title">
+                                Iterate using a While Loop
+                            </li>
+                            <pre><code>myList = ["birds", "hamsters", "ferrets"]
+i = 0
+while i &lt; len(myList):
+print(myList[i])
+i += 1</code></pre>
+                            <pre><code class="output"># Output:
+birds
+hamsters
+ferrets</code></pre>
+                            <li class="sub-sub-title">
+                                Looping using list comprehension
+                            </li>
+                            <pre><code>myList = ["birds", "hamsters", "ferrets"]
+[print(item) for item in myList]</code></pre>
+                            <pre><code class="output"># Output:
+birds
+hamsters
+ferrets</code></pre>
+                        </ul>
+                        <li class="sub-title">Sorting Lists</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Sort List Alphanumerically
+                            </li>
+                            <ul>
+                                <li>Uppercase, comes Before lowercase</li>
+                                <li>Default descending order</li>
+                            </ul>
+                            <pre>
+<code>myList = ["onions", "broccolii", "garlic", "tomatoes", "Green chillies", "Bell pepper"]
+myList.sort()
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['Bell pepper', 'Green chillies', 'broccoli', 'garlic', 'onions', 'tomatoes']</code></pre>
+                            <li class="sub-sub-title">Sort list, descending</li>
+                            <pre>
+<code>myList = ["onions", "garlic", "tomatoes", "green chillies", "bell pepper"]
+myList.sort(reverse=True)
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['tomatoes', 'onions', 'green chillies', 'garlic', 'bell pepper']</code></pre>
+                            <li class="sub-sub-title">Case-Insensitive Sort</li>
+                            <pre>
+<code>myList = ["onions", "broccoli", "garlic", "tomatoes", "Green chillies", "Bell pepper"]
+myList.sort(key=str.lower)
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['Bell pepper', 'broccoli', 'garlic', 'Green chillies', 'onions', 'tomatoes']</code></pre>
+                        </ul>
+                        <li class="sub-title">Reverse Order</li>
+                        <pre>
+<code>myList = []"onions", "broccoli", "garlic", "tomatoes", "Green chillies", "Bell pepper"]
+myList.sort(reverse=True)
+print(myList)</code></pre>
+                        <pre><code class="output"># Output:
+['tomatoes', 'onions', 'garlic', 'broccoli', 'Green chillies', 'Bell pepper']</code></pre>
+                        <li class="sub-title">Copying a List</li>
+                        <ul>
+                            <li class="sub-sub-title">copy()</li>
+                            <pre>
+<code>myList = ["onions", "broccoli", "garlic", "tomatoes", "Green chillies", "Bell pepper"]
+newList = myList.copy()
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['onions', 'broccoli', 'garlic', 'tomatoes', 'Green chillies', 'Bell pepper']</code></pre>
+                            <li class="sub-sub-title">list()</li>
+                            <pre>
+<code>myList = ["onions", "broccoli", "garlic", "tomatoes", "Green chillies", "Bell pepper"]
+newList = list(myList)
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['onions', 'broccoli', 'garlic', 'tomatoes', 'Green chillies', 'Bell pepper']</code></pre>
+                        </ul>
+                        <li class="sub-title">Join Lists</li>
+                        <ul>
+                            <li class="sub-sub-title">Using "+"</li>
+                            <pre>
+<code>myList = ["Sheila", "Anne", "Rodney"]
+otherList = ["Lions", "Bears"]
+newList = myList + otherList
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['Sheila', 'Anne', 'Rodney', 'Lions', 'Bears']</code></pre>
+                            <li class="sub-sub-title">append()</li>
+                            <pre>
+<code>myList = ["Sheila", "Anne", "Rodney"]
+otherList = ["Lions", "Bears"]
+
+for x in otherList:
+myList.append(x)
+
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['Sheila', 'Anne', 'Rodney', 'Lions', 'Bears']</code></pre>
+                            <li class="sub-sub-title">extend()</li>
+                            <pre>
+<code>myList = ["Sheila", "Anne", "Rodney"]
+otherList = ["Lions", "Bears"]
+myList.extend(otherList)
+print(myList)</code></pre>
+                            <pre><code class="output"># Output:
+['Sheila', 'Anne', 'Rodney', 'Lions', 'Bears']</code></pre>
+                        </ul>
+                        <li class="sub-title">List Methods</li>
+                        <ul>
+                            <li class="sub-sub-title">count()</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+x = myList.count("cherry")
+print(x)</code></pre>
+                            <pre><code class="output"># Output:
+2</code></pre>
+                            <li class="sub-sub-title">index()</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+x = myList.index("melon")
+print(x)</code></pre>
+                            <pre><code class="output"># Output:
+3</code></pre>
+                        </ul>
+                        <li class="sub-title">List Comprehension</li>
+                        <ul>
+                            <li class="sub-sub-title">Example 1</li>
+                            <ul class="left-side">
+                                <li>For</li>
+                                <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = []
+
+for x in myList:
+if "e" in x:
+newList.append(x)
+
+print(newList)</code></pre>
+                                <pre><code class="output"># Output:
+['cherry', 'apple', 'melon', 'cherry']</code></pre>
+                            </ul>
+                            <ul class="right-side">
+                                <li>List Comprehension</li>
+                                <pre>
+<code>newList = [x for x in myList if "e" in x]
+print(newList)</code></pre>
+                                <pre><code class="output"># Output:
+['cherry', 'apple', 'melon', 'cherry']</code></pre>
+                            </ul>
+                            <li class="sub-sub-title">Example 2</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = [x for x in myList if x != "melon"]
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['kiwi', 'cherry', 'apple', 'cherry']</code></pre>
+
+                            <li class="sub-sub-title">Example 3</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = [x for x in myList]
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['kiwi', 'cherry', 'apple', 'melon', 'cherry']</code></pre>
+                            <li class="sub-sub-title">Example 4</li>
+                            <pre>
+<code>newList = [x for x in range(10)]
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
+                            <li class="sub-sub-title">Example 5</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = [x.upper() for x in myList]
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['KIWI', 'CHERRY', 'APPLE', 'MELON', 'CHERRY']</code></pre>
+                            <li class="sub-sub-title">Example 6</li>
+                            <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = ["fruity" for x in myList]
+print(newList)</code></pre>
+                            <pre><code class="output"># Output:
+['fruity', 'fruity', 'fruity', 'fruity', 'fruity']</code></pre>
+                            <li class="sub-sub-title">Example 7</li>
+                            <ul>
+                                <li>For</li>
+                                <pre>
+<code>newList2 = []
+for x in myList:
+if x != "cherry":
+newList2.append(x)
+else:
+newList2.append("orange")
+print(newList2)</code></pre>
+                                <pre><code class="output"># Output:
+['kiwi', 'orange', 'apple', 'melon', 'orange']</code></pre>
+                            </ul>
+                            <ul>
+                                <li>List Comprehension</li>
+                                <pre>
+<code>myList = ["kiwi", "cherry", "apple", "melon", "cherry"]
+
+newList = [x if x != "cherry" else "orange" for x in myList]
+print(newList)</code></pre>
+                                <pre><code class="output"># Output:
+['kiwi', 'orange', 'apple', 'melon', 'orange']</code></pre>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

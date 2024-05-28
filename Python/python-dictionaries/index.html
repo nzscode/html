@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Dictionaries</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article>
+                <li class="title">Dictionaries - {Curly Brackets}</li>
+                <ul>
+                    <li>Ordered</li>
+                    <li>Changeable</li>
+                    <li>Duplicates are NOT allowed</li>
+                    <li>Contain keys and values</li>
+                </ul>
+                <pre>
+<code>
+myDict = {
+1: 0.253,
+"two": 693,
+3: "five",
+"fruits": ["apples", "bananas", "oranges"],
+"grades": {
+    "English": 97,
+    "Math": 85,
+    "French": 99,
+},
+}
+
+for key, value in myDict.items():
+print(f"key is {key} : value is {value}")</code></pre>
+                <pre>
+<code class="output"># Output: 
+key is 1 : value is 0.253
+key is two : value is 693
+key is 3 : value is five
+key is fruits : value is ['apples', 'bananas', 'oranges']
+key is grades : value is {'English': 97, 'Math': 85, 'French': 99}
+</code></pre>
+
+                <ul>
+                    <li class="sub-title">Deleting a dictionary</li>
+                    <ul>
+                        <li>
+                            This will cause an error since the dictionary no
+                            longer exists.
+                        </li>
+                    </ul>
+                    <pre><code>del myDict
+print(myDict)</code></pre>
+                    <pre><code class="output"># Output:
+NameError: name 'myDict' is not defined
+</code></pre>
+                    <li class="sub-title">Emptying a dictionary</li>
+                    <pre><code>myDict.clear()
+print(myDict)</code></pre>
+                    <pre><code class="output"># Output:
+{}
+</code></pre>
+
+                    <li class="sub-title">Accessing items in a dictionary</li>
+                    <ul>
+                        <li class="sub-sub-title">Referring by key name</li>
+                        <pre>
+<code>a = myDict[1]
+print(f"a is {a}")
+
+b = myDict["two"]
+print(f"b is {b}")
+
+c = myDict["fruits"][2]
+print(f"c is {c}")
+
+d = myDict["grades"]["English"]
+print(f"d is {d}")</code></pre>
+                        <pre>
+<code class="output"># Output
+a is 0.253
+b is 693
+c is oranges
+d is 97</code></pre>
+                    </ul>
+                    <ul>
+                        <li class="sub-sub-title">Using Get Keys method</li>
+                        <pre>
+<code>dictKeys = myDict.keys()
+print(f"Keys of the dict are: {dictKeys}")</code></pre>
+                        <pre>
+<code class="output"># Output: 
+Keys of the dict are: dict_keys([1, 'two', 3, 'fruits', 'grades'])</code></pre>
+                    </ul>
+
+                    <ul>
+                        <li class="sub-sub-title">
+                            Getting the Values of dictionary keys
+                        </li>
+                        <pre>
+<code>The Values of the Dictionary are dict_values([0.253, 693, 'five', ['apples', 'bananas', 'oranges'], 
+                    {'English': 97, 'Math': 85, 'French': 99}])</code></pre>
+                    </ul>
+                    <ul>
+                        <li class="sub-sub-title">
+                            Getting the key: value pairs of a dictionary
+                        </li>
+                        <pre>
+<code>dictValues = myDict.items()
+print(f"The key: values of the Dictionary are {dictValues}")</code></pre>
+                        <pre><code class="output"># Output:
+The key: values of the Dictionary are dict_items([(1, 0.253), ('two', 693), (3, 'five'), 
+        ('fruits', ['apples', 'bananas', 'oranges']), 
+        ('grades', {'English': 97, 'Math': 85, 'French': 99})])
+</code></pre>
+                    </ul>
+                    <li class="sub-title">Adding an item to a dictionary</li>
+                    <pre>
+<code>myDict["pets"] = {
+"dog" : "Sammy",
+"cat" : "Dean"
+}
+dictKeys = myDict.keys()
+print(f"Keys of the dict are: {dictKeys}")</code></pre>
+                    <pre><code class="output"># Output: 
+Keys of the dict are: dict_keys([1, 'two', 3, 'fruits', 'grades', 'pets'])
+</code></pre>
+                    <li class="sub-title">Checking if a key exists</li>
+                    <pre>
+<code>if "grades" in myDict:
+print("This exists in myDict")</code></pre>
+                    <pre>
+<code class="output"># Output:
+This key exists in myDict</code></pre>
+                    <li class="sub-title">Checking if a value exists</li>
+                    <pre>
+<code>if "grades" in myDict.values():
+print("This value exists in myDict")</code></pre>
+                    <pre>
+<code class="output"># Output:
+This exists in myDict</code></pre>
+                    <li class="sub-title">Updating a dictionary</li>
+                    <pre>
+<code>myDict.update({3: "twelve"})
+print(f"The key value pair is: 3 : {myDict[3]}")</code></pre>
+                    <pre><code class="output"># Output:
+The key value pair is: 3 : twelve
+</code></pre>
+                    <li class="sub-title">Removing Items</li>
+                    <ul>
+                        <li class="sub-sub-title">Using "pop" method</li>
+                        <pre>
+<code>myDict.pop(3)
+print(myDict)</code></pre>
+                        <pre><code class="output"># Output:
+{1: 0.253, 'two': 693, 'fruits': ['apples', 'bananas', 'oranges'], 
+'grades': {'English': 97, 'Math': 85, 'French': 99}}
+</code></pre>
+                        <li class="sub-sub-title">Using the "del" keyword</li>
+                        <ul>
+                            <li>Removes the item with the specified keyword</li>
+                        </ul>
+                        <pre><code>del myDict["grades"]
+print(myDict)</code></pre>
+                        <pre><code class="output"># Output:
+{1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges']}</code></pre>
+                    </ul>
+                    <li class="sub-title">Looping through a dictionary</li>
+                    <ul>
+                        <li>Using a for loop</li>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Print all keys in the dictionary
+                            </li>
+                            <pre>
+<code>for k in myDict:
+print(k)</code></pre>
+
+                            <pre>
+<code class="output"># Output:
+1
+two
+3
+fruits
+grades</code></pre>
+                            <ul>
+                                <li>Using .keys()</li>
+                            </ul>
+                            <ul>
+                                <pre>
+<code>for k in myDict.keys():
+print(k)</code></pre>
+                                <pre><code class="output">1
+two
+3
+fruits
+grades</code></pre>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Printing all values in the dictionary
+                            </li>
+
+                            <ul>
+                                <pre>
+<code>for v in myDict:
+print(myDict[v])</code></pre>
+                                <pre>
+<code class="output"># Output: 
+0.253
+693
+five
+['apples', 'bananas', 'oranges']
+{'English': 97, 'Math': 85, 'French': 99}</code>    </pre>
+                                <li>Using .values()</li>
+                                <pre>
+<code>for v in myDict.values():
+print(v)</code></pre>
+                                <pre>
+<code class="output"># Output: 
+0.253
+693
+five
+['apples', 'bananas', 'oranges']
+{'English': 97, 'Math': 85, 'French': 99}</code></pre>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li class="sub-sub-title">
+                                Printing all Keys and Values is a dictionary
+                            </li>
+                            <pre>
+<code>for k, v in myDict.items():
+print(f"keys = {k} : values = {v}")</code></pre>
+                            <pre><code class="output"># Output:
+keys = 1 : values = 0.253
+keys = two : values = 693
+keys = 3 : values = five
+keys = fruits : values = ['apples', 'bananas', 'oranges']
+keys = grades : values = {'English': 97, 'Math': 85, 'French': 99}</code></pre>
+                        </ul>
+                    </ul>
+                    <li class="sub-title">Copying a Dictionary</li>
+                    <ul>
+                        <li class="sub-sub-title">Using the copy() method</li>
+                        <pre>
+<code>newDict = myDict.copy()
+print(newDict)</code></pre>
+                        <pre><code class="output"># Output:
+{1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges'], 
+    'grades': {'English': 97, 'Math': 85, 'French': 99}}</code></pre>
+                        <li class="sub-sub-title">
+                            Using the built in dict() function
+                        </li>
+                        <pre>
+<code>newDict = dict(myDict)
+print(newDict)</code></pre>
+                        <pre><code class="output"># Output :
+{1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges'], 
+    'grades': {'English': 97, 'Math': 85, 'French': 99}}</code></pre>
+                    </ul>
+                </ul>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Functions</title>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <article>
+                <h3>Functions</h3>
+                <ul>
+                    <li>Basic Function</li>
+                    <pre>
+<code>def greet():
+    print("Hello World!")
+</code></pre>
+                    <li>Calling a Function</li>
+                    <pre>
+<code>greet()</code></pre>
+                    <li>Function with Arguments</li>
+                    <pre>
+<code>def add(a, b):
+    return a + b
+
+print(add(2, 3))</code></pre>
+                    <pre>
+<code># Output
+5</code></pre>
+                    <pre>
+<code>def add(a1, b1):
+    result = a1 + b1
+    print(result)
+
+add(2, 3)</code></pre>
+                    <pre><code># Output:
+5</code></pre>
+                    <ul>
+                        <li>Default Arguments</li>
+                        <ul>
+                            <li>
+                                If no explicit values are passed, the default
+                                values will be used.
+                            </li>
+                        </ul>
+                        <pre>
+<code>def sayHello(a, b="Portia"):
+    print(f"Hello {a} & {b}")
+
+sayHello("Tom", "Jerry")
+sayHello("Ellen")</code></pre>
+                        <pre>
+<code class="output"># Output:
+Hello Tom & Jerry
+Hello Ellen & Portia</code></pre>
+                        <li>*args</li>
+                        <ul>
+                            <li>
+                                Allows a function to accept any number of
+                                arguments
+                            </li>
+                        </ul>
+                        <pre>
+<code>def addNums (*num):
+return sum(num)
+
+print(addNums(1, 2, 3, 4, 5))</code></pre>
+                        <pre>
+<code class="output"># Output:
+15</code></pre>
+                        <li>*kwargs</li>
+                        <ul>
+                            <li>
+                                Allows a function to accept any number of
+                                keyword arguments
+                            </li>
+                        </ul>
+                        <pre>
+<code>def greet(*fnames):
+print (f"Hello {fnames}")
+
+greet("Jane", "July", "Tom")</code></pre>
+                        <pre>
+<code class="output"># Output:
+Hello ('Jane', 'July', 'Tom')</code></pre>
+                        <pre>
+<code>def greet(*fnames):
+for i in range(len(fnames)):
+print(f"Hello {fnames[i]}")
+
+greet("Jane", "July", "Tom")</code></pre>
+                        <pre>
+<code class="output"># Output:
+Hello Jane
+Hello July
+Hello Tom</code></pre>
+                    </ul>
+
+                    <li>Pass Statement</li>
+                    <ul>
+                        <li>Used as a placeholder for future code.</li>
+                        <li>If called, will execute with no issues.</li>
+                    </ul>
+                    <pre>
+<code>def multiply(a, b):
+    pass</code></pre>
+                </ul>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>
