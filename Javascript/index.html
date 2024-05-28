@@ -53,18 +53,30 @@
                         >
                     </h3>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            Template Strings use arguments to fill in parameters
+                        </li>
+                        <ol>
+                            <li>
+                                In a div, with the id: "ex1", and text "hiya"
+                            </li>
+                            <li>
+                                We will change the text from "hiya" to "hello"
+                                and a name
+                            </li>
+                        </ol>
                     </ul>
                     <div class="table-container">
                         <div class="table-side">
                             <b><u></u></b>
-                            <pre><code></code></pre>
+                            <pre><code>let ex1 = document.getElementById("ex1");
+
+let printName = function (name) {
+    ex1.innerText = `Hello ${name}`;
+};
+
+printName("Alice");</code></pre>
                         </div>
-                    </div>
-                    <div class="table-side">
-                        <b><u></u></b>
-                        <pre><code></code></pre>
                     </div>
                 </section>
                 <br /><br />
@@ -101,7 +113,7 @@
     return a + b;
 }
 
-add(2, 3);</code></pre>
+console.log(add(2, 3));</code></pre>
                         </div>
                         <div class="table-side">
                             <b><u>Function Expression</u></b>
@@ -109,14 +121,154 @@ add(2, 3);</code></pre>
     return a + b;
 };
 
-add(2, 3);</code></pre>
+console.log(add(2, 3));</code></pre>
                         </div>
                     </div>
                 </section>
                 <br />
                 <br />
-                <section></section>
+                <section>
+                    <h3>
+                        <span id="parameters-arguments" class="anchor-centered"
+                            >Parameters & Arguments</span
+                        >
+                    </h3>
+                    <ul>
+                        <ol>
+                            <li>Seen in template strings/functions</li>
+                            <li>Order or parameters matters</li>
+                        </ol>
+                    </ul>
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u>Function without parametres</u></b>
+                            <pre><code>const add = function(){
+    return 1 + 2;
+}
 
+console.log(add());
+
+<i>//3</i></code></pre>
+                        </div>
+                        <div class="table-side">
+                            <b><u>Function with parametres</u></b>
+                            <pre><code>const add = function(a, b){
+    return a + b;
+}
+
+console.log(add(3, 2));
+
+<i>//5</i></code></pre>
+                        </div>
+                        <div class="table-side">
+                            <b><u>Template String with parametres</u></b>
+                            <pre><code>let nameF = "Alice";
+console.log(`Hello ${nameF}`);
+
+
+<i>//Hello Alice</i></code></pre>
+                        </div>
+                        <div class="table-side">
+                            <b><u>Parameter order</u></b>
+                            <pre><code>let nameF = "Alice";
+let age = 19;
+console.log(`Hello ${nameF}, you are ${age} years old.`);
+
+
+<i>//Hello Alice, you are 19 years old</i></code></pre>
+                            <pre><code>let greet = function(name, age){
+    console.log(`Hello ${name}, you are ${age} years old today!);
+};
+
+greet(5, "Tanya");
+
+<i>//Hello 5, you are Tanya years old today!</i></code></pre>
+                        </div>
+                        <div class="table-side">
+                            <b><u>Default Parameters</u></b>
+                            <pre><code>let greet = function(name = "James", age = 23){
+    console.log(`Hello ${name}, you are ${age} years old today!);
+};
+
+greet("Rob", 31);
+
+greet();
+
+greet("Olaf");
+
+<i>//Hello Rob, you are 31 years old today!</i>
+
+<i>//Hello James, you are 23 years old today!</i>
+
+<i>Hello Olaf, you are 23 years old today!</i></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u></u></b>
+                            <pre><code></code></pre>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        <span id="return-values" class="anchor-centered"
+                            >Return Values</span
+                        >
+                    </h3>
+                    <ul>
+                        <ol>
+                            <li>Returns a result as a variable</li>
+                            <li>
+                                the return can be stored as a local variable
+                                within the scope of the function (i.e:
+                                resultAdd), or it can be returned, and then
+                                stored in an outer scope variable(i.e: rAdd)
+                            </li>
+                        </ol>
+                    </ul>
+
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u></u></b>
+                            <pre><code>const add = function (a, b) {
+    // let resultAdd = a + b;
+    // return resultAdd;
+    return a + b;
+};
+
+let rAdd = add(3, 2);
+
+const multiply2 = function (resultAdd) {
+    return 2 * resultAdd;
+};
+
+console.log(multiply2(rAdd));</code></pre>
+                        </div>
+                    </div>
+                </section>
+                <!-- 
+                <section>
+                    <h3>
+                        <span id="" class="anchor-centered"></span>
+                    </h3>
+                    <ul>
+                        <ol>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </ul>
+
+                    <div class="table-container2">
+                        <div class="table-side">
+                            <b><u></u></b>
+                            <pre><code></code></pre>
+                        </div>
+                    </div>
+                </section>
+            -->
                 <section>
                     <h3>
                         <span id="arrow-function" class="anchor-centered"
@@ -146,13 +298,21 @@ add(2, 3);</code></pre>
                             <b><u>Code without Arrow Function </u></b>
                             <pre><code>const add = function(a, 3){
     return a + b;
-}</code></pre>
+};
+
+console.log(add(2, 5));
+
+<i>//7</i></code></pre>
                         </div>
                         <div class="table-side">
                             <b><u>Code using Arrow Function</u></b>
                             <pre><code>const add = (a, 3) => {
     return a + b;
-};</code></pre>
+};
+
+console.log(add(2, 5));
+
+<i>//7</i></code></pre>
                         </div>
                     </div>
                     <div class="table-container-full">
@@ -160,7 +320,11 @@ add(2, 3);</code></pre>
                             <b><u>Code with one parameter </u></b>
                             <pre><code>const add = a => {
     return a + 3;
-}</code></pre>
+};
+
+console.log(add(2, 5));
+
+<i>//7</i></code></pre>
                         </div>
                     </div>
                     <div class="table-container-full">
