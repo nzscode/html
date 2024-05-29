@@ -269,6 +269,35 @@ console.log(multiply2(rAdd));</code></pre>
                     </div>
                 </section>
             -->
+                <pre><code>
+            Javascript Array to CSV
+            let arr = ["cat", "dog", "rabbit", "elephant"];
+            let arrMultiple = [["blue"], ["green", "yellow"], ["orange"], ["purple"]];
+
+            const arrayToCSV = (arr, delimiter = ',') => {
+                return arr
+                .map((row) => {
+                    return row.map((value) => `"${value}").join(delimiter);
+                })
+                .join('\n');
+            };
+        </code></pre>
+
+                <pre><code>
+            Save an Array of Strings to a JSON File:
+let fs = require("fs");
+
+            let arr = ["cat", "dog", "rabbit", "elephant"];
+            let arrMultiple = [["blue"], ["green", "yellow"], ["orange"], ["purple"]];
+            const jsonContent = json.stringify(arr);
+
+            fs.writeFile("./arr.json", jsonContent, "utf-8", (err) => {
+                if (err) {
+                    return console.log(err)
+                }
+                console.log("the file was saved")
+            })
+        </code></pre>
                 <section>
                     <h3>
                         <span id="arrow-function" class="anchor-centered"
