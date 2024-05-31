@@ -34,86 +34,198 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>Functions</p>
-                    <ul>
-                        <li><a href="#basic-function">Basic Function</a></li>
-                        <li><a href="#arrow-function">Arrow Function</a></li>
-                    </ul>
+                    <div id="nav-links"></div>
                 </nav>
+                <!-- <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="./#basic-tuple"
+                                >Tuples - (Round Brackets)</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./#constructing-tuple"
+                                >Constructing a Tuple</a
+                            >
+                        </li>
+                        <ul>
+                            <li>
+                                <a href="./#using-constructor"
+                                    >Using a tuple() Constructor</a
+                                >
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="./#accessing">Accessing Tuple Items</a>
+                        </li>
+                        <ul>
+                            <li>
+                                <a href="./#using-index"
+                                    >Using the Index Number</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="./#using-range"
+                                    >Using a Range of Index Numbers</a
+                                >
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="./#item-exists"
+                                >Checking if an item exists</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./#change-value"
+                                >Change the values of the tuple</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./#adding-tuple-to-tuple"
+                                >Adding a tuple to a tuple</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./#remove-item"
+                                >Removing items from a Tuple</a
+                            >
+                        </li>
+                        <li>
+                            <a href="./#deleting-tuple">Deleting a Tuple</a>
+                        </li>
+                        <li>
+                            <a href="./#unpacking-tuple">Unpacking a Tuple</a>
+                        </li>
+                        <li><a href="./#looping">Looping through Tuples</a></li>
+                        <ul>
+                            <li>
+                                <a href="./#iterating-through"
+                                    >Iterating through a Tuple</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="./#looping-through-indexes"
+                                    >Looping through the index numbers of the
+                                    Tuples</a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="./#using-while-loop"
+                                    >Looping throught the tuple using a while
+                                    loop</a
+                                >
+                            </li>
+                        </ul>
+                        <li><a href="./#tuple-methods">Tuple Methods</a></li>
+                        <ul>
+                            <li><a href="./#count">count ()</a></li>
+
+                            <li><a href="./#index">index()</a></li>
+                        </ul>
+                    </ul>
+                </nav> -->
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <li class="title">Tuples - (Round Brackets)</li>
-                <ul>
-                    <li>Ordered</li>
-                    <li>Unchangeable</li>
-                    <li>Indexed</li>
-                    <li>Can have duplicates</li>
-                    <li>
-                        Can store String("anything within single/double
-                        quotations"), int(Integers/Floats), and
-                        Boolean(True/False) data types
-                    </li>
-                </ul>
-                <pre>
-<code>myTuple = (2.358, "Robby", False, "John", "Lisa", "Li -Mae", "Carey", ("Onions, Potatoes"))</code></pre>
-                <ul>
-                    <li class="sub-title">Constructing a Tuple</li>
-                    If creating a tuple with only one item, a comma must be used
-                    after, if not it will NOT be considered a tuple.
+                <section id="basic-tuple">
+                    <h2 class="lv2">Tuples - (Round Brackets)</h2>
                     <ul>
-                        <li>Creating a tuple by variable declaration</li>
-                        <pre>
-<code>myTuple = ()
-print(type(myTuple))</code></pre>
-                        <pre><code class="output"># Output:
-&lt;class 'tuple'&gt;
-</code></pre>
-                        <li>Using a tuple() Constructor</li>
-                        <pre>
-<code>newTuple = tuple("a", 1, True)</code>
-                </pre>
+                        <li>Ordered</li>
+                        <li>Unchangeable</li>
+                        <li>Indexed</li>
+                        <li>Can have duplicates</li>
+                        <li>
+                            Can store String("anything within single/double
+                            quotations"), int(Integers/Floats), and
+                            Boolean(True/False) data types
+                        </li>
+                        <ul></ul>
                     </ul>
-                    <li class="sub-title">Accessing Tuple Items</li>
 
+                    <pre>
+<code>myTuple = (2.358, "Robby", False, "John", "Lisa", "Li -Mae", "Carey", ("Onions, Potatoes"))</code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="constructing-tuple">
+                    <h2>Constructing a Tuple</h2>
                     <ul>
-                        <li>Using the index number</li>
-                        <pre><code>print(myTuple[1])</code></pre>
+                        <li>
+                            If creating a tuple with only one item, a comma must
+                            be used after, if not it will NOT be considered a
+                            tuple.
+                        </li>
+                        <li>Creating a tuple by variable declaration</li>
+                    </ul>
+                    <pre>
+<code>myTuple = ()
+print(type(myTuple))
 
-                        <pre><code class="output"># Output: 
-Robby</code></pre>
-                        <li>Using a range of Index Numbers</li>
+<span class="output">//&lt;class 'tuple'&gt;</span>
+</code></pre>
+                    <br /><br />
+                    <section id="using-constructor">
+                        <h3>Using a tuple() Constructor</h3>
+
+                        <pre>
+<code>newTuple = tuple("a", 1, True)</code></pre>
+                    </section>
+                </section>
+                <br /><br /><br /><br />
+                <section id="accessing">
+                    <h2>Accessing Tuple Items</h2>
+                    <br /><br />
+                    <section id="using-index">
+                        <h3>Using the Index Number</h3>
+
+                        <pre><code>print(myTuple[1])
+<span class="output">// Robby</span></code></pre>
+                    </section>
+                    <br /><br />
+                    <section id="using-range">
+                        <h3>Using a Range of Index Numbers</h3>
                         <pre>
 <code>print(f"Length of Tuple : {len(myTuple)}")
 print(f"Items from index 3 to the end {myTuple[3:]}")
 print(f"Items from the start to index 4{myTuple[:4]}")
-print(f"Items from index 2 to the 5{myTuple[2:5]}")</code></pre>
-                        <pre><code class="output"># Output:
-Length of Tuple : 8
-Items from index 3 to the end ('John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
-Items from the start to index 4(2.358, 'Robby', False, 'John')
-Items from index 2 to the 5(False, 'John', 'Lisa')</code></pre>
-                    </ul>
-                    <li class="sub-title">Checking if an item exists</li>
+print(f"Items from index 2 to the 5{myTuple[2:5]}")
+
+<span class="output">
+// Length of Tuple : 8
+// Items from index 3 to the end ('John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
+// Items from the start to index 4(2.358, 'Robby', False, 'John')
+// Items from index 2 to the 5(False, 'John', 'Lisa')</span></code></pre>
+                    </section>
+                </section>
+                <br /><br /><br /><br />
+                <section id="item-exists">
+                    <h2>Checking if an item exists</h2>
 
                     <pre>
 <code>if "Carey" in myTuple:
-print("Carey is in myTuple")</code></pre>
-                    <pre><code class="output"># Output: 
-Carey is in myTuple</code></pre>
-                    <li class="sub-title">Change the values of the tuple</li>
+    print("Carey is in myTuple")
+<span class="output">// Carey is in myTuple</span></code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="change-value">
+                    <h2>Change the values of the tuple</h2>
                     <ol>
                         <li>
                             Since a tuple is unchangeable, first convert the
                             tuple to a list
                         </li>
+
                         <pre>
 <code>tupleList = list(myTuple)</code></pre>
+
                         <li>Now change the item at the required index</li>
                         <pre>
 <code>tupleList[3] = "Anna"</code></pre>
+
                         <li>
                             Now convert the list back into a tuple(Can replace
                             original tuple, with this new tuple)
@@ -121,22 +233,29 @@ Carey is in myTuple</code></pre>
                         <pre>
 <code>myTuple = tuple(tupleList)</code></pre>
                     </ol>
+                    <br /><br />
                     <pre>
 <code>tupleList = list(myTuple)
 tupleList[3] = "Anna"
 myTuple = tuple(tupleList)
-print(myTuple)</code></pre>
-                    <pre><code class="output"># Output: 
-(2.358, 'Robby', False, 'Anna', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
-</code></pre>
-                    <li class="sub-title">Adding a tuple to a tuple</li>
+print(myTuple)
+
+<span class="output">// (2.358, 'Robby', False, 'Anna', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes')
+</span></code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="adding-tuple-to-tuple">
+                    <h2>Adding a tuple to a tuple</h2>
                     <pre>
 <code>newTuple = (5, "Amy Adams", ["ten", "eleven"])
 myTuple += newTuple
-print(myTuple)</code></pre>
-                    <pre><code class="output"># Output:
-(2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes', 5, 'Amy Adams', ['ten', 'eleven'])</code></pre>
-                    <li class="sub-title">Removing items from a Tuple</li>
+print(myTuple)
+
+<span class="output">// (2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey', 'Onions, Potatoes', 5, 'Amy Adams', ['ten', 'eleven'])</span></code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="remove-item">
+                    <h2>Removing items from a Tuple</h2>
                     <ol>
                         <li>
                             Since a tuple is unchangeable, first convert the
@@ -161,26 +280,34 @@ print(myTuple)</code></pre>
                         <pre>
 <code>myTuple = tuple(tupleList)</code></pre>
                     </ol>
+                    <br />
+                    <br />
                     <pre>
 <code>tupleList = list(myTuple)
 tupleList.remove("Onions, Potatoes")
 myTuple = tuple(tupleList)
-print(myTuple)</code></pre>
-                    <pre><code class="output"># Output: 
-(2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey')
-</code></pre>
-                    <li class="sub-title">Deleting a Tuple</li>
-                    <pre>
-<code>del myTuple
-print(myTuple)</code></pre>
+print(myTuple)
+
+<span class="output">// (2.358, 'Robby', False, 'John', 'Lisa', 'Li -Mae', 'Carey')</span></code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="deleting-tuple">
+                    <h2>Deleting a Tuple</h2>
                     <ul>
                         <li>
                             Raises an error since the tuple no longer exists.
                         </li>
                     </ul>
-                    <pre><code class="output"># Output: 
-NameError: name 'myTuple' is not defined. Did you mean: 'tuple'?</code></pre>
-                    <li class="sub-title">Unpacking a Tuple</li>
+
+                    <pre>
+<code>del myTuple
+print(myTuple)
+
+<span class="output">// NameError: name 'myTuple' is not defined. Did you mean: 'tuple'?</span></code></pre>
+                </section>
+                <br /><br /><br /><br />
+                <section id="unpacking-tuple">
+                    <h2>Unpacking a Tuple</h2>
                     <ul>
                         <li>
                             In Python, values from within the tuple can be
@@ -240,71 +367,92 @@ f"Teacher = {teacher}\n"
 f"Bring Lunch = {bring_lunch}\n"
 f"Students = {students}\n"
 f"Groceries = {groceries}")</code></pre>
-                    <li class="sub-title">Looping through Tuples</li>
-                    <ul>
-                        <li class="sub-sub-title">Iterating through a Tuple</li>
+                </section>
+                <br /><br /><br /><br />
+                <section id="looping">
+                    <h2>Looping through Tuples</h2>
+                    <br /><br />
+                    <section id="iterating-through">
+                        <h3>Iterating through a Tuple</h3>
+
                         <pre><code>for i in myTuple:
-print(i)</code></pre>
-                        <pre><code class="output"># Output: 
-2.358
-Robby
-False
-John
-Lisa
-Li -Mae
-Carey
-Onions, Potatoes</code></pre>
-                        <li class="sub-sub-title">
-                            Looping through the index numbers of the Tuples
-                        </li>
+    print(i)
+
+<span class="output">//2.358
+// Robby
+// False
+// John
+// Lisa
+// Li -Mae
+// Carey
+// Onions, Potatoes</span></code></pre>
+                    </section>
+                    <br /><br />
+                    <section id="looping-through-indexes">
+                        <h3>Looping through the index numbers of the Tuples</h3>
                         <pre><code>for i in range(len(myTuple)):
-print(myTuple[i])</code></pre>
-                        <pre><code class="output"># Output:
-2.358
-Robby
-False
-John
-Lisa
-Li -Mae
-Carey
-Onions, Potatoes
-</code></pre>
-                        <li class="sub-sub-title">
-                            Looping throught the tuple using a while loop
-                        </li>
+    print(myTuple[i])
+
+<span class="output">// 2.358
+// Robby
+// False
+// John
+// Lisa
+// Li -Mae
+// Carey
+// Onions, Potatoes</span></code></pre>
+                    </section>
+                    <br /><br />
+                    <section id="using-while-loop">
+                        <h3>Looping throught the tuple using a while loop</h3>
                         <pre><code>i = 0
 while (i &lt; (len(myTuple))):
-print(myTuple[i])
-i += 1</code></pre>
-                        <pre><code class="output"># Output:
-2.358
-Robby
-False
-John
-Lisa
-Li -Mae
-Carey
-Onions, Potatoes
-</code></pre>
-                    </ul>
-                    <li class="sub-title">Tuple Methods</li>
-                    <ul>
-                        <li class="sub-sub-title">count ()</li>
-                        Counts how many times a given item occurs in the tuple
+    print(myTuple[i])
+    i += 1
+
+<span class="output">// 2.358
+// Robby
+// False
+// John
+// Lisa
+// Li -Mae
+// Carey
+// Onions, Potatoes</span></code></pre>
+                    </section>
+                </section>
+                <br /><br /><br /><br />
+                <section id="tuple-methods">
+                    <h2>Tuple Methods</h2>
+                    <br /><br />
+                    <section id="count">
+                        <h3>count ()</h3>
+                        <ul>
+                            <li>
+                                Counts how many times a given item occurs in the
+                                tuple
+                            </li>
+                        </ul>
+
                         <pre>
 <code>myTuple = ("John", "Lisa", "Li -Mae", "Carey", "John", "Yusuf", "John", "Tracy")
-print(myTuple.count("John"))</code></pre>
-                        <pre><code class="output"># Output: 
-3</code></pre>
-                        <li class="sub-sub-title">index()</li>
-                        Searches for the first index
+print(myTuple.count("John"))
+
+<span class="output">// 3</span></code></pre>
+                    </section>
+                    <br /><br />
+                    <section id="index">
+                        <h3>index()</h3>
+                        <ul>
+                            <li>Searches for the first index</li>
+                        </ul>
+
                         <pre>
 <code>myTuple = ("John", "Lisa", "Li -Mae", "Carey", "John", "Yusuf", "John", "Tracy")
-print(myTuple.index("John"))</code></pre>
-                        <pre><code class="output"># Output: 
-0</code></pre>
-                    </ul>
-                </ul>
+print(myTuple.index("John"))
+
+<span class="output">// 0</span></code></pre>
+                    </section>
+                </section>
             </article>
         </main>
         <footer>
@@ -395,6 +543,8 @@ print(myTuple.index("John"))</code></pre>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../nav-menu.js"></script>
+        <script src="../../jj.js"></script>
     </body>
 </html>

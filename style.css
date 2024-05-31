@@ -431,3 +431,7 @@ span a,
 a {
     cursor: pointer;
 }
+
+.output {
+    color: grey;
+}

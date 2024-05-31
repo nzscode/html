@@ -10,17 +10,3 @@
 // };
 
 // printName("Alice");
-
-const add = function (a, b) {
-    // let resultAdd = a + b;
-    // return resultAdd;
-    return a + b;
-};
-
-let rAdd = add(3, 2);
-
-const multiply2 = function (resultAdd) {
-    return 2 * resultAdd;
-};
-
-console.log(multiply2(rAdd));
