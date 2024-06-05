@@ -36,7 +36,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Properties</p>
+                    <!-- <p>CSS Properties</p>
                     <ul>
                         <li><a href="#font-color">Font Color</a></li>
                         <li><a href="#font-size">Font Size</a></li>
@@ -86,18 +86,14 @@
                         </li>
                         <li><a href="#word-wrap">Word Wrap</a></li>
                         <li><a href="#word-break">Word Break</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
         </header>
         <main>
             <article>
-                <h2>CSS Font & Text Properties</h2>
-                <br />
-                <br />
-
                 <section>
-                    <h3><span id="font-color">Font Color</span></h3>
+                    <h2 id="font-color" class="lvl2">Font Color</h2>
                     <ul>
                         <li>Sets the background color of an element.</li>
                         <li>
@@ -131,35 +127,32 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.color="hotpink"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex1">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex1{
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex1">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex1{
     color: hotpink;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-                <br />
-                <br />
-
+            </article>
+            <br /><br />
+            <br />
+            <br />
+            <article>
                 <section>
-                    <h3><span id="font-size">Font Size</span></h3>
+                    <h2 id="font-size" class="lvl2">Font Size</h2>
                     <ul>
                         <li>Sets the size of a font</li>
                         <h4 class="title-css">Property Values:</h4>
@@ -209,32 +202,28 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.fontSize="14px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex2">
-                                        Lorem ipsum dolor sit amet.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex2 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex2">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex2 {
     font-size: 150%;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br /><br /><br />
+            <article>
                 <section>
-                    <h3><span id="font-family">Font Family</span></h3>
+                    <h2 id="font-family" class="lvl2">Font Family</h2>
                     <ul>
                         <li>Specifies the font for an element.</li>
                         <li>
@@ -276,34 +265,29 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.fontFamily</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex3">
-                                        Lorem ipsum dolor sit amet.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex3 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex3">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex3 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="font-weight">Font Weight</span></h3>
+                    <h2 id="font-weight" class="lvl2">Font Weight</h2>
                     <ul>
                         <li>
                             Sets how thick or thin characters in text should be
@@ -334,32 +318,28 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.fontWeight=</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex4">
-                                        Lorem ipsum dolor sit amet.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex4">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex4 {
     font-weight: 600;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="font-style">Font Style</span></h3>
+                    <h2 id="font-style" class="lvl2">Font Style</h2>
                     <ul>
                         <li>Specifies the font style for a text</li>
                         <h4 class="title-css">Property Values:</h4>
@@ -385,32 +365,31 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.fontStyle = "italic"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex5">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex5 {
+
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex5">
+                                    Lorem ipsum dolor sit amet consectetur.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex5 {
     font-style: italic;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="text-align">Text Align</span></h3>
+                    <h2 id="text-align" class="lvl2">Text Align</h2>
                     <ul>
                         <li>
                             Specifies the horizontal alignment of text in an
@@ -436,29 +415,29 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textAlign="right"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><div id="ex6">Text Align: Right</div></td>
-                                <td>
-                                    <pre><code>#ex6 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex6">Text Align: Right</div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex6 {
     text-align: right;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
 
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="text-align-left">Text Align Last</span></h3>
+                    <h2 id="text-align-last" class="lvl2">Text Align Last</h2>
                     <ul>
                         <li>Specifies how to align the last line of a text.</li>
                         <li>
@@ -504,40 +483,37 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textAlignLast="right"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p id="ex7">
-                                        It was the best of times. It was the
-                                        worst of times. It was the age of
-                                        wisdom. It was the age of foolishness.
-                                        It was the epoch of belief. It was the
-                                        epoch of incredulity. It was the season
-                                        of Light. It was the season of Darkness.
-                                        It was the spring of hope. It was the
-                                        winter of despair.
-                                    </p>
-                                </td>
-                                <td>
-                                    <pre><code>#ex7 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <p id="ex7">
+                                    It was the best of times. It was the worst
+                                    of times. It was the age of wisdom. It was
+                                    the age of foolishness. It was the epoch of
+                                    belief. It was the epoch of incredulity. It
+                                    was the season of Light. It was the season
+                                    of Darkness. It was the spring of hope. It
+                                    was the winter of despair.
+                                </p>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex7 {
     text-align: justify;
     text-align-last: right;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="direction">Direction</span></h3>
+                    <h2 id="direction" class="lvl2">Direction</h2>
                     <ul>
                         <li>
                             Specifies the text direction/writing direction
@@ -561,33 +537,32 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.direction="rtl"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex8">
-                                        Lorem ipsum dolor sit amet
-                                        consectetur.......
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex8 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex8">
+                                    Lorem ipsum dolor sit amet
+                                    consectetur.......
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex8 {
     direction: rtl;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="vertical-align">Vertical Align</span></h3>
+                    <h2 id="vertical-align" class="lvl2">Vertical Align</h2>
                     <ul>
                         <li>
                             Sets the vertical alignment of an element (an img,
@@ -647,37 +622,35 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.verticalAlign="top"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex9">
-                                        <img
-                                            src="../../../images/dbl-color-img.png"
-                                            alt=""
-                                            id="ex9"
-                                        />Lorem ipsum dolor sit amet consectetur
-                                        adipisicing.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex9 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex9">
+                                    <img
+                                        src="../../../images/dbl-color-img.png"
+                                        alt=""
+                                        id="ex9"
+                                    />Lorem ipsum dolor sit amet consectetur
+                                    adipisicing.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex9 {
     vertical-align: super;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="text-decoration">Text Decoration</span></h3>
+                    <h2 id="text-decoration" class="lvl2">Text Decoration</h2>
                     <ul>
                         <li>
                             Sets or returns one ore more decorations for a text.
@@ -697,74 +670,88 @@
                     </ul>
                     <h3 class="js-title">Javascript</h3>
                     <pre class="js-pre"><code></code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
+                    <section>
+                        <h3 class="lvl3" id="txt-deco">
+                            Text-Decoration (shorthand)
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex10-1">
                                         Lorem ipsum dolor sit amet consectetur.
                                     </div>
-                                </td>
-                                <td>
-                                    <h4 class="title-css">
-                                        Text-Decoration (shorthand)
-                                    </h4>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex10-1 {
     text-decoration: overline wavy purple;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="underline">
+                            Text -Decoration: Underline
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex10-2">
                                         Lorem ipsum dolor sit amet consectetur.
                                     </div>
-                                </td>
-                                <td>
-                                    <h4 class="title-css">Text-Decoration</h4>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex10-2 {
     text-decoration: underline;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="lvl3" id="txt-deco-style">
+                            Text Decoration & Style
+                        </h3>
+                        <ul>
+                            <li>The dashed line is in blue color for demo.</li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex10-3">
                                         Lorem ipsum dolor sit amet consectetur.
                                     </div>
-                                </td>
-                                <td>
-                                    <h4 class="title-css">
-                                        Text-Decoration & Text-Decoration-Style
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            The dashed line is in blue color for
-                                            demo.
-                                        </li>
-                                    </ul>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex10-3 {
     text-decoration: overline;
     text-decoration-style: dashed;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="text-decoration-line"
-                            >Text Decoration Line</span
-                        >
-                    </h3>
+                    <h2 id="text-decoration-line" class="lvl2">
+                        Text Decoration Line
+                    </h2>
                     <ul>
                         <li>
                             Sets the kind of text decoration to use (like
@@ -810,37 +797,33 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textDecorationLine="overline"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex11">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex11 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex11">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex11 {
     text-decoration-line: overline;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="text-decoration-color"
-                            >Text Decoration Color</span
-                        >
-                    </h3>
+                    <h2 id="text-decoration-color" class="lvl2">
+                        Text Decoration Color
+                    </h2>
                     <ul>
                         <li>
                             Specifies the color of the text-decoration
@@ -868,37 +851,34 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textDecorationColor="red"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex12">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex12 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex12">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex12 {
     text-decoration-color: chartreuse;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="text-decoration-style"
-                            >Text Decoration Style</span
-                        >
-                    </h3>
+                    <h2 id="text-decoration-style" class="lvl2">
+                        Text Decoration Style
+                    </h2>
                     <ul>
                         <li>
                             Sets the style of the text decoration (like solid,
@@ -925,34 +905,26 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textDecorationStyle="wavy"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex13">
-                                        Lorem ipsum dolor sit amet.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex13">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="cells"></div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="text-decoration-thickness"
-                            >Text Decoration Thickness</span
-                        >
-                    </h3>
+                    <h2 id="text-decoration-thickness" class="lvl2">
+                        Text Decoration Thickness
+                    </h2>
                     <ul>
                         <li>Specifies the thickness of the decoration line.</li>
                         <h4 class="title-css">Property Values:</h4>
@@ -981,34 +953,32 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textDecorationThickness="5px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex14">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex14 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex14">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex14 {
     text-decoration: underline;
     text-decoration-thickness: 4px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="text-transform">Text Transform</span></h3>
+                    <h2 id="text-transform" class="lvl2">Text Transform</h2>
                     <ul>
                         <li>Controls the capitalization of text</li>
                         <h4 class="title-css">Property Values:</h4>
@@ -1038,33 +1008,31 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textTransform="uppercase"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex15">
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Recusandae, aperiam!
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex15 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex15">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Recusandae, aperiam!
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex15 {
     text-transform: capitalize;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="overflow">Overflow</span></h3>
+                    <h2 id="overflow" class="lvl2">Overflow</h2>
                     <ul>
                         <li>
                             Specifies what should happen if content overflows an
@@ -1119,67 +1087,74 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.overflow="scroll"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="scroll"
-                                            >Overflow: Scroll for an image</span
-                                        >
-                                    </h4>
+                    <section>
+                        <h3 class="lvl3" id="scroll">
+                            Overflow: Scroll for an image
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex16-1">
                                         <img
                                             src="../../../images/Calcifer-gif.gif"
                                             alt=""
                                         />
                                     </div>
-                                    <h4 class="title-css">
-                                        <span id="hidden"
-                                            >Overflow: Hidden for text.</span
-                                        >
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            See
-                                            <a href="#text-overflow"
-                                                >Text Overflow</a
-                                            >
-                                        </li>
-                                    </ul>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex16-1 {
+    height: 150px;
+    width: 150px;
+    overflow: scroll;
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="hidden">
+                            Overflow: Hidden for text
+                        </h3>
+                        <ul>
+                            <li>
+                                See
+                                <a href="#text-overflow">Text Overflow</a>
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex16-2">
                                         This is a very long paragraph, that has
                                         4 lines. This is the second line. This
                                         is the third line. This is the 4th line.
                                     </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex16-1 {
-    height: 150px;
-    width: 150px;
-    overflow: scroll;
-}
-
-#ex16-2 {
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex16-2 {
     height: 100px;
     width: 100px;
     background-color: coral;
     overflow: hidden;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="text-overflow">Text Overflow</span></h3>
+                    <h2 id="text-overflow" class="lvl2">Text Overflow</h2>
                     <ul>
                         <li>
                             Specifies how overflowed content that is not
@@ -1220,39 +1195,37 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.textOverflow="ellipsis"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex17">
-                                        Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Quas sed eius nemo
-                                        aliquid nostrum temporibus quod
-                                        praesentium reprehenderit placeat ipsum.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex17 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex17">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Quas sed eius nemo aliquid
+                                    nostrum temporibus quod praesentium
+                                    reprehenderit placeat ipsum.
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex17 {
     width: 100px;
     height: 100px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="letter-spacing">Letter Spacing</span></h3>
+                    <h2 id="letter-spacing" class="lvl2">Letter Spacing</h2>
                     <ul>
                         <li>
                             Increases or decreases the space between characters
@@ -1280,32 +1253,28 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.letterSpacing="3px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex18">
-                                        Lorem ipsum dolor sit amet.
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex18 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex18">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex18 {
     letter-spacing: 6px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="word-wrap">Word Wrap</span></h3>
+                    <h2 id="word-wrap" class="lvl2">Word Wrap</h2>
                     <ul>
                         <li>
                             Allows long words to be able to be broken and wrap
@@ -1331,33 +1300,31 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.wordWrap="break-word"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex19">
-                                        kdhfskjdfiodsfjoiwejfjkdngjkdfgilfkgfdjkgnjkdfgnkdjfg
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex19 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex19">
+                                    kdhfskjdfiodsfjoiwejfjkdngjkdfgilfkgfdjkgnjkdfgnkdjfg
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex19 {
     width: 100px;
     word-wrap: break-word;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3><span id="word-break">Word Break</span></h3>
+                    <h2 id="word-break" class="lvl2">Word Break</h2>
                     <ul>
                         <li>
                             Specifies how words should break when reaching the
@@ -1392,68 +1359,38 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.wordBreak="break-all"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex20">
-                                        This is a sentence to test out the
-                                        word-break property
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex20 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex20">
+                                    This is a sentence to test out the
+                                    word-break property
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex20 {
     width: 150px;
     word-break: break-all;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-
-                <!-- <section>
-                    <h3><span id="font-size">2. Font Size</span></h3>
-                    <ul>
-                        <li></li>
-                    </ul>
-                    <h3 class="js-title">Javascript</h3>
-                    <pre class="js-pre"><code></code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>HTML</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><div id="ex2"></div></td>
-                                <td>
-                                    <h4 class="title-css">HTML</h4>
-                                    <pre><code></code></pre>
-                                </td>
-                                <td>
-                                    
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section> -->
-                <br /><br />
             </article>
         </main>
+        <br /><br />
         <footer>
             <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
@@ -1493,16 +1430,26 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
+                        <a href="../css-properties/border/index.html">Border</a>
+                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <br /><a
+                            href="../css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
+                        <br /><a href="../css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><a href="../css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
@@ -1513,9 +1460,34 @@
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>

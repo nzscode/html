@@ -285,27 +285,11 @@ hr {
     padding-top: 150px;
 }
 
-#nav ol ol,
-#nav ul ul,
-#nav ul ol,
-#nav ol ul {
-    list-style: lower-alpha;
-    margin-left: 40px;
-}
-
-#nav ol ul li,
-#nav ul ul li,
-#nav ul ol li,
-#nav ol ol li {
-    list-style: lower-roman;
-}
-
-#nav ul ul ul li {
-    list-style: lower-alpha;
-}
-
-#nav ul {
-    margin-left: 40px;
+#nav,
+#nav ul,
+#nav ul ul {
+    list-style-type: none;
+    margin-left: 15px;
 }
 
 footer {
@@ -360,21 +344,10 @@ ul {
     margin: auto;
 }
 
-.head-row,
-.body-row,
-.headrow3,
-.body-row3,
-.head-row40,
-.body-row40,
-.head-row50,
-.body-row50,
-.head-row60,
-.body-row60,
-.head-row75,
-.body-row75,
-.head-row-full,
-.body-row-full {
+.head-row3,
+.body-row3 {
     display: grid;
+    grid-template-columns: 30% 30% auto;
     grid-auto-rows: auto;
     column-gap: 3px;
     padding: 5px;
@@ -382,37 +355,11 @@ ul {
 
 .head-row,
 .body-row {
+    display: grid;
     grid-template-columns: 30% auto;
-}
-
-.head-row3,
-.body-row3 {
-    grid-template-columns: 30% 30% auto;
-}
-
-.head-row40,
-.body-row40 {
-    grid-template-columns: 40% auto;
-}
-
-.head-row50,
-.body-row50 {
-    grid-template-columns: 50% auto;
-}
-
-.head-row60,
-.body-row60 {
-    grid-template-columns: 60% auto;
-}
-
-.head-row75,
-.body-row75 {
-    grid-template-columns: 75% auto;
-}
-
-.head-row-full,
-.body-row-full {
-    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
 }
 
 .cell-header {
@@ -421,12 +368,10 @@ ul {
     padding: 10px;
     color: #fcdcb9;
     font-weight: bold;
-    min-width: 25%;
 }
 
-.cells:nth-child(odd) {
+.cells {
     padding: 5px;
-    border-right: 2px solid #000;
 }
 
 .odd-bg {

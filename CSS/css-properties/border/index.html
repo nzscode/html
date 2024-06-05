@@ -35,39 +35,8 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Border</p>
-                    <ul>
-                        <li><a href="#border">Border (shorthand)</a></li>
-                        <li><a href="#border-width">Border Width</a></li>
-                        <li><a href="#border-style">Border Style</a></li>
-                        <li><a href="#border-color">Border Color</a></li>
-                        <li><a href="#border-sides">Border Sides</a></li>
-                        <li><a href="#border-radius">Border Radius</a></li>
-                        <li>
-                            <a href="#border-image">Border Image (shorthand)</a>
-                        </li>
-                        <li>
-                            <a href="#border-image-slice"
-                                >Border Image Slice
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#border-image-width">Border Image Width</a>
-                        </li>
-                        <li>
-                            <a href="#border-image-outset"
-                                >Border Image Outset</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#border-image-repeat"
-                                >Border Image Repeat</a
-                            >
-                        </li>
-
-                        <!-- li*6>a[href="#"]> -->
-                        <!-- <li><a href="#"></a></li> -->
-                    </ul>
+                    <!-- li*6>a[href="#"]> -->
+                    <!-- <li><a href="#"></a></li> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -75,11 +44,7 @@
         <main>
             <article>
                 <section>
-                    <h3>
-                        <span id="border" class="anchor-centered"
-                            >Border (Shorthand)</span
-                        >
-                    </h3>
+                    <h2 id="border" class="lvl2">Border (Shorthand)</h2>
                     <ul>
                         <li>
                             Is a shorthand property for:
@@ -118,42 +83,38 @@
                     <pre
                         class="js-pre"
                     ><code>	object.style.border="3px solid blue"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex1 {
-    width: 150px;
-    height: 150px;
-    border: 7px solid crimson;
-}</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells" id="ex1"></div>
+                            <div class="cells">
+                                <pre><code>#ex1 {
+            width: 150px;
+            height: 150px;
+            border: 7px solid crimson;
+        }</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                     
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"></div>
+                            <div class="cells"></div>
+                        </div>
+                    </div> 
+                --></section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-width" class="anchor-centered"
-                            >Border Width</span
-                        >
-                    </h3>
+                    <h2 id="border-width" class="lvl2">Border Width</h2>
                     <ul>
                         <li>Sets the width of an element's four borders.</li>
                         <li>This property can have from one to four values.</li>
@@ -224,105 +185,87 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderWidth="1px 5px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="all-border-widths"
-                                            class="anchor-centered"
-                                            >All Four Borders of Different
-                                            Widths</span
-                                        >
-                                    </h4>
-                                    <div id="ex2-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex2-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells" id="all-border-widths">
+                                <h4 class="title-css">
+                                    <span
+                                        >All Four Borders of Different
+                                        Widths</span
+                                    >
+                                </h4>
+                                <div id="ex2-1"></div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex2-1 {
     width: 150px;
     height: 150px;
     border-style: solid;
     border-width: thin medium thick 10px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="three-border-widths"
-                                            class="anchor-centered"
-                                            >Three Border Widths</span
-                                        >
-                                    </h4>
-                                    <div id="ex2-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex13-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells" id="three-border-widths">
+                                <h4 class="title-css">
+                                    <span>Three Border Widths</span>
+                                </h4>
+                                <div id="ex2-2"></div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex13-2 {
     width: 150px;
     height: 150px;
     border-style: solid;
     border-width: thin medium thick;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="two-border-widths"
-                                            class="anchor-centered"
-                                            >Two Border Widths</span
-                                        >
-                                    </h4>
-                                    <div id="ex2-3"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex2-3 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <h4 class="title-css">
+                                    <span id="two-border-widths"
+                                        >Two Border Widths</span
+                                    >
+                                </h4>
+                                <div id="ex2-3"></div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex2-3 {
     width: 150px;
     height: 150px;
     border-style: solid;
     border-width: thin thick;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="osame-border-width"
-                                            class="anchor-centered"
-                                            >Same Border Width</span
-                                        >
-                                    </h4>
-                                    <div id="ex2-4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex2-4 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <h4 class="title-css">
+                                    <span id="osame-border-width"
+                                        >Same Border Width</span
+                                    >
+                                </h4>
+                                <div id="ex2-4"></div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex2-4 {
     width: 150px;
     height: 150px;
     border-style: solid;
     border-width: medium;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-style" class="anchor-centered"
-                            >Border Style</span
-                        >
-                    </h3>
+                    <h2 id="border-style" class="lvl2">Border Style</h2>
                     <ul>
                         <li>Sets the style of an element's four borders.</li>
                         <li>This property can have from one to four values.</li>
@@ -404,108 +347,92 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderStyle="dotted double"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="four-border-styles"
-                                            class="anchor-centered"
-                                            >Four Seperate Border Styles</span
-                                        >
-                                    </h4>
-                                    <div id="ex3-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="four-border-styles"
+                                        >Four Seperate Border Styles</span
+                                    >
+                                </h4>
+                                <div id="ex3-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex3-1 {
     height: 150px;
     width: 150px;
     border-width: 5px;
     border-style: dotted dashed double solid;
     margin-bottom: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="three-border-styles"
-                                            class="anchor-centered"
-                                            >Three Border Styles</span
-                                        >
-                                    </h4>
-                                    <div id="ex3-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="three-border-styles"
+                                        >Three Border Styles</span
+                                    >
+                                </h4>
+                                <div id="ex3-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex3-2 {
     height: 150px;
     width: 150px;
     border-width: 5px;
     border-style: dotted dashed double;
     margin-bottom: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="two-border-styles"
-                                            class="anchor-centered"
-                                            >Two Border Styles</span
-                                        >
-                                    </h4>
-                                    <div id="ex3-3"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-3 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="two-border-styles"
+                                        >Two Border Styles</span
+                                    >
+                                </h4>
+                                <div id="ex3-3"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex3-3 {
     height: 150px;
     width: 150px;
     border-width: 5px;
     border-style: dotted dashed;
     margin-bottom: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="one-border-style"
-                                            class="anchor-centered"
-                                            >One Border Style</span
-                                        >
-                                    </h4>
-                                    <div id="ex3-4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-4 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="one-border-style"
+                                        >One Border Style</span
+                                    >
+                                </h4>
+                                <div id="ex3-4"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex3-4 {
     height: 150px;
     width: 150px;
     border-width: 5px;
     border-style: dotted;
     margin-bottom: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-color" class="anchor-centered"
-                            >Border Color</span
-                        >
-                    </h3>
+                    <h2 id="border-color" class="lvl2">Border Color</h2>
                     <ul>
                         <li>Sets the color of an element's four borders.</li>
                         <li>Can have from one to four values.</li>
@@ -568,27 +495,22 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderColor="#FF0000 blue"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="four-border-values"
-                                            class="anchor-centered"
-                                            >Four Border Values</span
-                                        >
-                                    </h4>
-                                    <div id="ex4-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="four-border-values"
+                                        >Four Border Values</span
+                                    >
+                                </h4>
+                                <div id="ex4-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex4-1 {
     height: 150px;
     width: 150px;
     border-width: 5px;
@@ -596,21 +518,19 @@
     border-color: yellow;
     margin-bottom: 15px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="three-border-values"
-                                            class="anchor-centered"
-                                            >Three Border Values</span
-                                        >
-                                    </h4>
-                                    <div id="ex4-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="three-border-values"
+                                        >Three Border Values</span
+                                    >
+                                </h4>
+                                <div id="ex4-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex4-2 {
     height: 150px;
     width: 150px;
     border-width: 5px;
@@ -618,21 +538,19 @@
     border-color: yellow orange;
     margin-bottom: 15px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="two-border-values"
-                                            class="anchor-centered"
-                                            >Two Border Values</span
-                                        >
-                                    </h4>
-                                    <div id="ex4-3"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4-3 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="two-border-values"
+                                        >Two Border Values</span
+                                    >
+                                </h4>
+                                <div id="ex4-3"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex4-3 {
     height: 150px;
     width: 150px;
     border-width: 5px;
@@ -640,21 +558,19 @@
     border-color: yellow orange pink;
     margin-bottom: 15px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="one-border-value"
-                                            class="anchor-centered"
-                                            >One Border Value</span
-                                        >
-                                    </h4>
-                                    <div id="ex4-4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4-4 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="one-border-value"
+                                        >One Border Value</span
+                                    >
+                                </h4>
+                                <div id="ex4-4"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex4-4 {
     height: 150px;
     width: 150px;
     border-width: 5px;
@@ -662,19 +578,15 @@
     border-color: yellow orange pink blue;
     margin-bottom: 15px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-sides" class="anchor-centered"
-                            >Border Sides: Top|Right|Bottom|Left
-                            (shorthand)</span
-                        >
-                    </h3>
+                    <h2 id="border-sides" class="lvl2">
+                        Border Sides: Top|Right|Bottom|Left (shorthand)
+                    </h2>
                     <ul>
                         <li>
                             Sets all the top|right|bottom|left border properties
@@ -715,26 +627,20 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderTop="3px dashed blue"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex5-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex5-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id=""></span>
+                                </h4>
+                                <div id="ex5-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex5-1 {
     height: 150px;
     width: 150px;
     border-top: 5px solid green;
@@ -742,20 +648,17 @@
     border-bottom: 10px double orange;
     border-left: 10px dashed crimson;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex5-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex5-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id=""></span>
+                                </h4>
+                                <div id="ex5-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex5-2 {
     height: 150px;
     width: 150px;
     border-top: 15px inset green;
@@ -763,18 +666,13 @@
     border-bottom: 15px ridge orange;
     border-left: 15px groove crimson;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-radius" class="anchor-centered"
-                            >Border Radius</span
-                        >
-                    </h3>
+                    <h2 id="border-radius" class="lvl2">Border Radius</h2>
                     <ul>
                         <li>Defines the radius of the element's corners.</li>
                         <li>
@@ -838,125 +736,102 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderRadius="25px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="all-same-corners"
-                                            class="anchor-centered"
-                                            >All Same Corners</span
-                                        >
-                                    </h4>
-                                    <div id="ex6-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="all-same-corners"
+                                        >All Same Corners</span
+                                    >
+                                </h4>
+                                <div id="ex6-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex6-1 {
     height: 150px;
     width: 150px;
     border: 3px solid aqua;
     border-radius: 10px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="two-corners"
-                                            class="anchor-centered"
-                                            >Two Corners</span
-                                        >
-                                    </h4>
-                                    <div id="ex6-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="two-corners">Two Corners</span>
+                                </h4>
+                                <div id="ex6-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex6-2 {
     height: 150px;
     width: 150px;
     border: 3px solid orange;
     border-radius: 2px 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="three-corners"
-                                            class="anchor-centered"
-                                            >Three Corners</span
-                                        >
-                                    </h4>
-                                    <div id="ex6-3"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6-3 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="three-corners"
+                                        >Three Corners</span
+                                    >
+                                </h4>
+                                <div id="ex6-3"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex6-3 {
     height: 150px;
     width: 150px;
     border: 3px solid hotpink;
     border-radius: 2px 20px 50px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="four-individual-corners"
-                                            class="anchor-centered"
-                                            >Four Individual Corners</span
-                                        >
-                                    </h4>
-                                    <div id="ex6-4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6-4 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="four-individual-corners"
+                                        >Four Individual Corners</span
+                                    >
+                                </h4>
+                                <div id="ex6-4"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex6-4 {
     height: 150px;
     width: 150px;
     border: 3px solid brown;
     border-radius: 2px 20px 50px 75px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="one-corner"
-                                            class="anchor-centered"
-                                            >One Corner</span
-                                        >
-                                    </h4>
-                                    <div id="ex6-5"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6-5 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="one-corner">One Corner</span>
+                                </h4>
+                                <div id="ex6-5"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex6-5 {
     height: 150px;
     width: 150px;
     border: 5px dotted green;
     border-top-left-radius: 75px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-image" class="anchor-centered"
-                            >Border Image</span
-                        >
-                    </h3>
+                    <h2 id="border-image" class="lvl2">Border Image</h2>
                     <ul>
                         <li>
                             Specify an image to be used instead of the normal
@@ -1023,44 +898,34 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderImage="url(border.png) 30 round"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image"
-                                            class="anchor-centered"
-                                            >Border Image</span
-                                        >
-                                    </h4>
-                                    <div id="ex7"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex7 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image">Border Image</span>
+                                </h4>
+                                <div id="ex7"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex7 {
     height: 150px;
     width: 200px;
     border: 5px solid transparent;
     border-image: url(../../../images/border-image1.png) 4 round;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-image-slice" class="anchor-centered"
-                            >Border Image Slice</span
-                        >
-                    </h3>
+                    <h2 id="border-image-slice" class="lvl2">
+                        Border Image Slice
+                    </h2>
                     <ul>
                         <li>
                             Specifies how to slice the image specified by
@@ -1111,48 +976,42 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderImageSlice="30%"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-slice"
-                                            class="anchor-centered"
-                                            >Border Image Slice</span
-                                        >
-                                    </h4>
-                                    <div id="ex8-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex8 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-slice"
+                                        >Border Image Slice</span
+                                    >
+                                </h4>
+                                <div id="ex8-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex8 {
     height: 150px;
     width: 150px;
     border: 10px solid;
     border-image: url(../../../images/border-image1-81.png);
     border-image-slice: 30%;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-fill"
-                                            class="anchor-centered"
-                                            >Border Image Fill</span
-                                        >
-                                    </h4>
-                                    <div id="ex8-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex8-2 {
+                            </div>
+                        </div>
+
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-fill"
+                                        >Border Image Fill</span
+                                    >
+                                </h4>
+                                <div id="ex8-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex8-2 {
     height: 150px;
     width: 150px;
     border: 10px solid;
@@ -1160,18 +1019,15 @@
     border-image: url(../../../images/border-image1-81.png);
     border-image-slice: fill;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-image-width" class="anchor-centered"
-                            >Border Image Width</span
-                        >
-                    </h3>
+                    <h2 id="border-image-width" class="lvl2">
+                        Border Image Width
+                    </h2>
                     <ul>
                         <li>Specifies the width of the border image.</li>
                         <li>
@@ -1217,44 +1073,35 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderImageWidth="20px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex9"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex9 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id=""></span>
+                                </h4>
+                                <div id="ex9"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex9 {
     height: 150px;
     width: 150px;
     border-image: url(../../../images/border-image1-81.png);
     border-image-slice: 30%;
     border-image-width: 30px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-image-outset" class="anchor-centered"
-                            >Border Image Outset</span
-                        >
-                    </h3>
+                    <h2 id="border-image-outset" class="lvl2">
+                        Border Image Outset
+                    </h2>
                     <ul>
                         <li>
                             Specifies the amount by which the border image area
@@ -1295,28 +1142,23 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.borderImageOutset="10px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-outset-length"
-                                            class="anchor-centered"
-                                            >Length</span
-                                        >
-                                    </h4>
-                                    <br /><br />
-                                    <div id="ex10-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex10-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-outset-length"
+                                        >Length</span
+                                    >
+                                </h4>
+                                <br /><br />
+                                <div id="ex10-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex10-1 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1325,19 +1167,15 @@
     border-image-width: 30px;
     border-image-outset: 25px;
 }</code></pre>
-                                    <br /><br /><br />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="border-image-repeat" class="anchor-centered"
-                            >Border Image Repeat</span
-                        >
-                    </h3>
+                    <h2 id="border-image-repeat" class="lvl2">
+                        Border Image Repeat
+                    </h2>
                     <ul>
                         <li>
                             Specifies whether the border image should be
@@ -1380,27 +1218,22 @@
                     <pre
                         class="js-pre"
                     ><code>	object.style.borderImageRepeat="round"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-round"
-                                            class="anchor-centered"
-                                            >Border Image Round</span
-                                        >
-                                    </h4>
-                                    <div id="ex11-1"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex11-1 {
+                    <div id="outer-table" class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-round"
+                                        >Border Image Round</span
+                                    >
+                                </h4>
+                                <div id="ex11-1"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex11-1 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1411,21 +1244,19 @@
     border-image-repeat: round;
     margin: 40px 0 40px 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-repeat"
-                                            class="anchor-centered"
-                                            >Border Image Repeat</span
-                                        >
-                                    </h4>
-                                    <div id="ex11-2"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex11-2 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-repeat"
+                                        >Border Image Repeat</span
+                                    >
+                                </h4>
+                                <div id="ex11-2"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex11-2 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1436,21 +1267,19 @@
     border-image-repeat: repeat;
     margin: 40px 0 40px 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-stretch"
-                                            class="anchor-centered"
-                                            >Border Image Stretch</span
-                                        >
-                                    </h4>
-                                    <div id="ex11-3"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex11-3 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-stretch"
+                                        >Border Image Stretch</span
+                                    >
+                                </h4>
+                                <div id="ex11-3"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex11-3 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1461,21 +1290,19 @@
     border-image-repeat: stretch;
     margin: 40px 0 40px 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="border-image-space"
-                                            class="anchor-centered"
-                                            >Border Image Space</span
-                                        >
-                                    </h4>
-                                    <div id="ex11-4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex11-4 {
+                            </div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cell">
+                                <h4 class="title-css">
+                                    <span id="border-image-space"
+                                        >Border Image Space</span
+                                    >
+                                </h4>
+                                <div id="ex11-4"></div>
+                            </div>
+                            <div class="cell">
+                                <pre><code>#ex11-4 {
     height: 150px;
     width: 150px;
     background-color: greenyellow;
@@ -1486,16 +1313,15 @@
     border-image-repeat: space;
     margin: 40px 0 40px 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
             </article>
         </main>
         <!-- <section>
-                <h3><span id="" class="anchor-centered"></span></h3>
+                <h3><span id="" ></span></h3>
                 <ul>
                     <li></li>
                     <h4 class="title-css">Property Values:</h4>
@@ -1514,7 +1340,7 @@
                         <tr>
                             <td>
                                 <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
+                                    <span id="" ></span>
                                 </h4>
                                 <div id="ex"></div></td>                            
                             <td>
@@ -1524,7 +1350,7 @@
                         </tr>
                         <tr>
                             <td><h4 class="title-css">
-                                <span id="" class="anchor-centered"></span>
+                                <span id="" ></span>
                                 </h4>
                                 <div id="ex"></div></td>                            
                             <td>
@@ -1539,6 +1365,12 @@
 
         <footer>
             <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
@@ -1578,16 +1410,26 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
+                        <a href="../css-properties/border/index.html">Border</a>
+                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <br /><a
+                            href="../css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
+                        <br /><a href="../css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><a href="../css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
@@ -1598,9 +1440,35 @@
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
+        <!-- <script src="../../../jj.js"></script> -->
     </body>
 </html>

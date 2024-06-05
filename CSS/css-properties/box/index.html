@@ -35,7 +35,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Properties</p>
+                    <!-- <p>CSS Properties</p>
                     <ul>
                         <li><a href="#display">Display</a></li>
                         <li><a href="#visibility">Visibility</a></li>
@@ -108,141 +108,138 @@
                                 <a href="#margin-collapse">Margin Collapse</a>
                             </li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
-            <section>
-                <h3>
-                    <span id="display" class="anchor-centered">1. Display</span>
-                </h3>
-                <ul>
-                    <li>Specify how an element is shown on a web page.</li>
-                    <li>
-                        Every HTML element has a default display value,
-                        depending on what type of element it is. The default
-                        display value for most elements is block or inline.
-                    </li>
-                    <li>
-                        The display property is used to change the default
-                        display behavior of HTML elements.
-                    </li>
-                    <li>
-                        A block-level element ALWAYS starts on a new line and
-                        takes up the full width available (stretches out to the
-                        left and right as far as it can).
-                    </li>
-                    <li>
-                        An inline element DOES NOT start on a new line and only
-                        takes up as much width as necessary.
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>inline: Displays an element as an inline element</li>
-                    <li>block: Displays an element as a block element</li>
-                    <li>
-                        contents: Makes the container disappear, making the
-                        child elements children of the element the next level up
-                        in the DOM
-                    </li>
-                    <li>
-                        flex: Displays an element as a block-level flex
-                        container
-                    </li>
-                    <li>
-                        grid: Displays an element as a block-level grid
-                        container
-                    </li>
-                    <li>
-                        inline-block: Displays an element as an inline-level
-                        block container. The element itself is formatted as an
-                        inline element, but you can apply height and width
-                        values
-                    </li>
-                    <li>
-                        inline-flex: Displays an element as an inline-level flex
-                        container
-                    </li>
-                    <li>
-                        inline-grid: Displays an element as an inline-level grid
-                        container
-                    </li>
-                    <li>
-                        inline-table: The element is displayed as an
-                        inline-level table
-                    </li>
-                    <li>
-                        list-item: Let the element behave like a &lt;li&gt;
-                        element
-                    </li>
-                    <li>
-                        run-in: Displays an element as either block or inline,
-                        depending on context
-                    </li>
-                    <li>
-                        table: Let the element behave like a &lt;table&gt;
-                        element
-                    </li>
-                    <li>
-                        table-caption: Let the element behave like a
-                        &lt;caption&gt; element
-                    </li>
-                    <li>
-                        table-column-group: Let the element behave like a
-                        &lt;colgroup&gt; element
-                    </li>
-                    <li>
-                        table-header-group: Let the element behave like a
-                        &lt;thead&gt; element
-                    </li>
-                    <li>
-                        table-footer-group: Let the element behave like a
-                        &lt;tfoot&gt; element
-                    </li>
-                    <li>
-                        table-row-group: Let the element behave like a
-                        &lt;tbody&gt; element
-                    </li>
-                    <li>
-                        table-cell: Let the element behave like a &lt;td&gt;
-                        element
-                    </li>
-                    <li>
-                        table-column: Let the element behave like a &lt;col&gt;
-                        element
-                    </li>
-                    <li>
-                        table-row: Let the element behave like a &lt;tr&gt;
-                        element
-                    </li>
-                    <li>none: The element is completely removed</li>
-                    <li>initial: Sets this property to its default value</li>
-                    <li>
-                        inherit: Inherits this property from its parent element
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.display = value</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="display-block"
-                                        class="anchor-centered"
-                                        >Display: Block</span
-                                    >
-                                </h4>
+            <article>
+                <section>
+                    <h2 id="display" class="lvl2">Display</h2>
+                    <ul>
+                        <li>Specify how an element is shown on a web page.</li>
+                        <li>
+                            Every HTML element has a default display value,
+                            depending on what type of element it is. The default
+                            display value for most elements is block or inline.
+                        </li>
+                        <li>
+                            The display property is used to change the default
+                            display behavior of HTML elements.
+                        </li>
+                        <li>
+                            A block-level element ALWAYS starts on a new line
+                            and takes up the full width available (stretches out
+                            to the left and right as far as it can).
+                        </li>
+                        <li>
+                            An inline element DOES NOT start on a new line and
+                            only takes up as much width as necessary.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            inline: Displays an element as an inline element
+                        </li>
+                        <li>block: Displays an element as a block element</li>
+                        <li>
+                            contents: Makes the container disappear, making the
+                            child elements children of the element the next
+                            level up in the DOM
+                        </li>
+                        <li>
+                            flex: Displays an element as a block-level flex
+                            container
+                        </li>
+                        <li>
+                            grid: Displays an element as a block-level grid
+                            container
+                        </li>
+                        <li>
+                            inline-block: Displays an element as an inline-level
+                            block container. The element itself is formatted as
+                            an inline element, but you can apply height and
+                            width values
+                        </li>
+                        <li>
+                            inline-flex: Displays an element as an inline-level
+                            flex container
+                        </li>
+                        <li>
+                            inline-grid: Displays an element as an inline-level
+                            grid container
+                        </li>
+                        <li>
+                            inline-table: The element is displayed as an
+                            inline-level table
+                        </li>
+                        <li>
+                            list-item: Let the element behave like a &lt;li&gt;
+                            element
+                        </li>
+                        <li>
+                            run-in: Displays an element as either block or
+                            inline, depending on context
+                        </li>
+                        <li>
+                            table: Let the element behave like a &lt;table&gt;
+                            element
+                        </li>
+                        <li>
+                            table-caption: Let the element behave like a
+                            &lt;caption&gt; element
+                        </li>
+                        <li>
+                            table-column-group: Let the element behave like a
+                            &lt;colgroup&gt; element
+                        </li>
+                        <li>
+                            table-header-group: Let the element behave like a
+                            &lt;thead&gt; element
+                        </li>
+                        <li>
+                            table-footer-group: Let the element behave like a
+                            &lt;tfoot&gt; element
+                        </li>
+                        <li>
+                            table-row-group: Let the element behave like a
+                            &lt;tbody&gt; element
+                        </li>
+                        <li>
+                            table-cell: Let the element behave like a &lt;td&gt;
+                            element
+                        </li>
+                        <li>
+                            table-column: Let the element behave like a
+                            &lt;col&gt; element
+                        </li>
+                        <li>
+                            table-row: Let the element behave like a &lt;tr&gt;
+                            element
+                        </li>
+                        <li>none: The element is completely removed</li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.display = value</code></pre>
+                </section>
+                <section>
+                    <h3 id="display-block" class="lvl3">Display: Block</h3>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
                                 <div id="ex1-1">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
@@ -251,25 +248,31 @@
                                         hic explicabo sint nam tempora.
                                     </p>
                                 </div>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="cells">
                                 <pre><code>#ex1-1a {
     height: 50px;
     width: 50px;
     background-color: aqua;
     display: block;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="display-inline"
-                                        class="anchor-centered"
-                                        >Display: Inline-Block</span
-                                    >
-                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br /><br />
+                <section>
+                    <h3 class="lvl3" id="display-inline">
+                        Display: Inline-Block
+                    </h3>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+
+                        <div class="body-row">
+                            <div class="cells">
                                 <div id="ex1-2">
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur
@@ -278,136 +281,150 @@
                                         repellat rerum eius quos?
                                     </p>
                                 </div>
-                            </td>
-                            <td>
+                            </div>
+                            <div class="cells">
                                 <pre><code>#ex1-2a {
     height: 50px;
     width: 50px;
     background-color: aqua;
     display: inline-block;
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
             <br /><br />
-            <section>
-                <h3>
-                    <span id="visibility" class="anchor-centered"
-                        >2. Visibility</span
-                    >
-                </h3>
-                <ul>
-                    <li>Specifies whether or not an element is visible.</li>
-                    <li>
-                        Hidden elements take up space on the page. Use the
-                        display property to both hide and remove an element from
-                        the document layout!
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>visible: Default value. The element is visible</li>
-                    <li>
-                        hidden: The element is hidden (but still takes up space)
-                    </li>
-                    <li>
-                        collapse: Only for table rows (&lt;tr&gt;), row groups
-                        (&lt;tbody&gt;), columns (&lt;col&gt;), column groups
-                        (&lt;colgroup&gt;). This value removes a row or column,
-                        but it does not affect the table layout. The space taken
-                        up by the row or column will be available for other
-                        content. If collapse is used on other elements, it
-                        renders as "hidden"
-                    </li>
-                    <li>initial: Sets this property to its default value.</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.visibility="hidden"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Visibility: Visible</span
-                                    >
-                                </h4>
-                                <div id="ex2-1">
-                                    <table class="revert">
-                                        <thead>
-                                            <tr>
-                                                <th>col1</th>
-                                                <th>col2</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>row1 col1</td>
-                                                <td>row1 col2</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <td>row2 col1</td>
-                                                <td>row2 col2</td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+            <article>
+                <section>
+                    <h2 id="visibility" class="lvl2">Visibility</h2>
+                    <ul>
+                        <li>Specifies whether or not an element is visible.</li>
+                        <li>
+                            Hidden elements take up space on the page. Use the
+                            display property to both hide and remove an element
+                            from the document layout!
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>visible: Default value. The element is visible</li>
+                        <li>
+                            hidden: The element is hidden (but still takes up
+                            space)
+                        </li>
+                        <li>
+                            collapse: Only for table rows (&lt;tr&gt;), row
+                            groups (&lt;tbody&gt;), columns (&lt;col&gt;),
+                            column groups (&lt;colgroup&gt;). This value removes
+                            a row or column, but it does not affect the table
+                            layout. The space taken up by the row or column will
+                            be available for other content. If collapse is used
+                            on other elements, it renders as "hidden"
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.visibility="hidden"</code></pre>
+                    <!-- <div class="outer-table">
+                    <div class="head-row">
+                        <div class="cell-header"></div>
+                        <div class="cell-header"></div>
+                    </div>
+                    <div class="body-row">
+                        <div class="cells"></div>
+                        <div class="cells"></div>
+                    </div>
+                </div> -->
+                    <section>
+                        <h3 class="lvl3" id="visibility-visible">
+                            Visibility: Visible
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex2-1">
+                                        <table class="revert">
+                                            <thead>
+                                                <tr>
+                                                    <th>col1</th>
+                                                    <th>col2</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>row1 col1</td>
+                                                    <td>row1 col2</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>row2 col1</td>
+                                                    <td>row2 col2</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex2-1 table,
+                                <div class="cells">
+                                    <pre><code>#ex2-1 table,
 #ex2-1 table tr,
 #ex2-1 table th,
 #ex2-1 table td {
     all: revert;
     border: 2px solid black;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Visibility: Collapse</span
-                                    >
-                                </h4>
-                                <div id="ex2-2">
-                                    <table class="revert">
-                                        <thead>
-                                            <tr>
-                                                <th>col1</th>
-                                                <th>col2</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>row1 col1</td>
-                                                <td>row1 col2</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <td>row2 col1</td>
-                                                <td>row2 col2</td>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex2-2 table,
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="visibility-collapse">
+                            Visibility: Collapse
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex2-2">
+                                        <table class="revert">
+                                            <thead>
+                                                <tr>
+                                                    <th>col1</th>
+                                                    <th>col2</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>row1 col1</td>
+                                                    <td>row1 col2</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td>row2 col1</td>
+                                                    <td>row2 col2</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex2-2 table,
 #ex2-2 table tr,
 #ex2-2 table th,
 #ex2-2 table td {
@@ -415,146 +432,139 @@
     border: 2px solid black;
     visibility: collapse;
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
             <br /><br />
-            <section>
-                <h3>
-                    <span id="width-height" class="anchor-centered"
-                        >3. Width & Height</span
-                    >
-                </h3>
-                <ul>
-                    <li>Sets the width & height of an element</li>
-                    <li>
-                        The width & height of an element does not include
-                        padding, borders, or margins!
-                    </li>
-                    <li>
-                        If height: auto; / weight: auto; the element will
-                        automatically adjust its height/weight to allow its
-                        content to be displayed correctly.
-                    </li>
-                    <li>
-                        If width/height is set to a numeric value (like pixels,
-                        (r)em, percentages) then if the content does not fit
-                        within the specified width/height, it will overflow. How
-                        the container will handle the overflowing content is
-                        defined by the overflow property.
-                    </li>
-                    <li>
-                        The min-width/min-height and max-width/max-height
-                        properties override the width/height property,
-                        respectfully
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>
-                        auto: The browser calculates the height. This is default
-                    </li>
-                    <li>
-                        length: Defines the height in px, cm, etc. Read about
-                        length units
-                    </li>
-                    <li>
-                        %: Defines the height in percent of the containing block
-                    </li>
-                    <li>initial: Sets this property to its default value</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code>object.style.height="500px"<br>
+            <article>
+                <section>
+                    <h2 id="width-height" class="lvl2">Width & Height</h2>
+                    <ul>
+                        <li>Sets the width & height of an element</li>
+                        <li>
+                            The width & height of an element does not include
+                            padding, borders, or margins!
+                        </li>
+                        <li>
+                            If height: auto; / weight: auto; the element will
+                            automatically adjust its height/weight to allow its
+                            content to be displayed correctly.
+                        </li>
+                        <li>
+                            If width/height is set to a numeric value (like
+                            pixels, (r)em, percentages) then if the content does
+                            not fit within the specified width/height, it will
+                            overflow. How the container will handle the
+                            overflowing content is defined by the overflow
+                            property.
+                        </li>
+                        <li>
+                            The min-width/min-height and max-width/max-height
+                            properties override the width/height property,
+                            respectfully
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            auto: The browser calculates the height. This is
+                            default
+                        </li>
+                        <li>
+                            length: Defines the height in px, cm, etc. Read
+                            about length units
+                        </li>
+                        <li>
+                            %: Defines the height in percent of the containing
+                            block
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.height="500px"<br>
 object.style.width="500px"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex3"></div>
-                            </td>
-                            <td>
+
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex3"></div></div>
+                            <div class="cells">
                                 <pre><code>#ex3 {
     height: 150px;
     width: 50px;
     background-color: purple;
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
             <br /><br />
-            <section>
-                <h3>
-                    <span id="max-width-max-height" class="anchor-centered"
-                        >4. Max-Width & Max-Height</span
-                    >
-                </h3>
-                <ul>
-                    <li>
-                        Defines the maximum width/maximum height of an element
-                    </li>
-                    <li>
-                        If the content is larger than the maximum width/maximum
-                        height, it will automatically change the height of the
-                        element.
-                    </li>
-                    <li>
-                        If the content is smaller than the maximum width, the
-                        max-width/max-height property has no effect.
-                    </li>
-                    <li>
-                        This prevents the value of the width/height property
-                        from becoming larger than max-width/max-height. The
-                        value of the max-width/max-height property overrides the
-                        width property.
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>none: No maximum width. This is default</li>
-                    <li>
-                        length: Defines the maximum width in px, cm, etc. Read
-                        about length units
-                    </li>
-                    <li>
-                        %: Defines the maximum width in percent of the
-                        containing block
-                    </li>
-                    <li>initial: Sets this property to its default value</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code>object.style.maxWidth="600px"<br>
+            <article>
+                <section>
+                    <h2 id="max-width-max-height" class="lvl2">
+                        Max-Width & Max-Height
+                    </h2>
+                    <ul>
+                        <li>
+                            Defines the maximum width/maximum height of an
+                            element
+                        </li>
+                        <li>
+                            If the content is larger than the maximum
+                            width/maximum height, it will automatically change
+                            the height of the element.
+                        </li>
+                        <li>
+                            If the content is smaller than the maximum width,
+                            the max-width/max-height property has no effect.
+                        </li>
+                        <li>
+                            This prevents the value of the width/height property
+                            from becoming larger than max-width/max-height. The
+                            value of the max-width/max-height property overrides
+                            the width property.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none: No maximum width. This is default</li>
+                        <li>
+                            length: Defines the maximum width in px, cm, etc.
+                            Read about length units
+                        </li>
+                        <li>
+                            %: Defines the maximum width in percent of the
+                            containing block
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre class="js-pre"><code>object.style.maxWidth="600px"<br>
 object.style.maxHeight="600px"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex4"></div>
-                            </td>
-                            <td>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex4"></div></div>
+                            <div class="cells">
                                 <pre><code>#ex4 {
     max-width: 75px;
     max-height: 75px;
@@ -562,362 +572,333 @@ object.style.maxHeight="600px"</code></pre>
     height: 100px;
     background-image: url(../../../images/bubbles-colors.png);
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
             <br /><br />
-            <section>
-                <h3>
-                    <span id="position" class="anchor-centered"
-                        >5. Position</span
-                    >
-                </h3>
-                <ul>
-                    <li>
-                        pecifies the type of positioning method used for an
-                        element (static, relative, absolute, fixed, or sticky).
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>
-                        static: Default value. Elements render in order, as they
-                        appear in the document flow
-                    </li>
-                    <li>
-                        absolute: The element is positioned relative to its
-                        first positioned (not static) ancestor element
-                    </li>
-                    <li>
-                        fixed: The element is positioned relative to the browser
-                        window
-                    </li>
-                    <li>
-                        relative: The element is positioned relative to its
-                        normal position, so "left:20px" adds 20 pixels to the
-                        element's LEFT position
-                    </li>
-                    <li>
-                        sticky: The element is positioned based on the user's
-                        scroll position A sticky element toggles between
-                        relative and fixed, depending on the scroll position. It
-                        is positioned relative until a given offset position is
-                        met in the viewport - then it "sticks" in place (like
-                        position:fixed). Note: Not supported in IE/Edge 15 or
-                        earlier. Supported in Safari from version 6.1 with a
-                        -webkit- prefix.
-                    </li>
-                    <li>initial: Sets this property to its default value.</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>	object.style.position="absolute"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex5"></div>
-                            </td>
-                            <td>
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <article>
+                <section>
+                    <h2 id="position" class="lvl2">Position</h2>
+                    <ul>
+                        <li>
+                            pecifies the type of positioning method used for an
+                            element (static, relative, absolute, fixed, or
+                            sticky).
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            static: Default value. Elements render in order, as
+                            they appear in the document flow
+                        </li>
+                        <li>
+                            absolute: The element is positioned relative to its
+                            first positioned (not static) ancestor element
+                        </li>
+                        <li>
+                            fixed: The element is positioned relative to the
+                            browser window
+                        </li>
+                        <li>
+                            relative: The element is positioned relative to its
+                            normal position, so "left:20px" adds 20 pixels to
+                            the element's LEFT position
+                        </li>
+                        <li>
+                            sticky: The element is positioned based on the
+                            user's scroll position A sticky element toggles
+                            between relative and fixed, depending on the scroll
+                            position. It is positioned relative until a given
+                            offset position is met in the viewport - then it
+                            "sticks" in place (like position:fixed). Note: Not
+                            supported in IE/Edge 15 or earlier. Supported in
+                            Safari from version 6.1 with a -webkit- prefix.
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>	object.style.position="absolute"</code></pre>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex5"></div></div>
+                            <div class="cells"></div>
+                        </div>
+                    </div>
+                </section>
+            </article>
 
             <br /><br />
-            <section>
-                <h3>
-                    <span id="box-shadow" class="anchor-centered"
-                        >6. Box Shadow</span
-                    >
-                </h3>
-                <ul>
-                    <li>Attaches one or more shadows to an element.</li>
-                    <li>
-                        To attach more than one shadow to an element, add a
-                        comma-separated list of shadows.
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>none: Default value. No shadow is displayed</li>
-                    <li>
-                        h-offset: Required. The horizontal offset of the shadow.
-                        A positive value puts the shadow on the right side of
-                        the box, a negative value puts the shadow on the left
-                        side of the box
-                    </li>
-                    <li>
-                        v-offset: Required. The vertical offset of the shadow. A
-                        positive value puts the shadow below the box, a negative
-                        value puts the shadow above the box
-                    </li>
-                    <li>
-                        blur: Optional. The blur radius. The higher the number,
-                        the more blurred the shadow will be
-                    </li>
-                    <li>
-                        spread: Optional. The spread radius. A positive value
-                        increases the size of the shadow, a negative value
-                        decreases the size of the shadow
-                    </li>
-                    <li>
-                        color: Optional. The color of the shadow. The default
-                        value is the text color. Look at CSS Color Values for a
-                        complete list of possible color values. Note: In Safari
-                        (on PC) the color parameter is required. If you do not
-                        specify the color, the shadow is not displayed at all.
-                    </li>
-                    <li>
-                        inset: Optional. Changes the shadow from an outer shadow
-                        (outset) to an inner shadow
-                    </li>
-                    <li>initial: Sets this property to its default value</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.boxShadow="10px 20px 30px blue"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="blur-effect"
-                                        class="anchor-centered"
-                                        >Blur Effect</span
-                                    >
-                                </h4>
-                                <div id="ex6-1"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-1 {
+            <article>
+                <section>
+                    <h2 id="box-shadow" class="lvl2">Box Shadow</h2>
+                    <ul>
+                        <li>Attaches one or more shadows to an element.</li>
+                        <li>
+                            To attach more than one shadow to an element, add a
+                            comma-separated list of shadows.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>none: Default value. No shadow is displayed</li>
+                        <li>
+                            h-offset: Required. The horizontal offset of the
+                            shadow. A positive value puts the shadow on the
+                            right side of the box, a negative value puts the
+                            shadow on the left side of the box
+                        </li>
+                        <li>
+                            v-offset: Required. The vertical offset of the
+                            shadow. A positive value puts the shadow below the
+                            box, a negative value puts the shadow above the box
+                        </li>
+                        <li>
+                            blur: Optional. The blur radius. The higher the
+                            number, the more blurred the shadow will be
+                        </li>
+                        <li>
+                            spread: Optional. The spread radius. A positive
+                            value increases the size of the shadow, a negative
+                            value decreases the size of the shadow
+                        </li>
+                        <li>
+                            color: Optional. The color of the shadow. The
+                            default value is the text color. Look at CSS Color
+                            Values for a complete list of possible color values.
+                            Note: In Safari (on PC) the color parameter is
+                            required. If you do not specify the color, the
+                            shadow is not displayed at all.
+                        </li>
+                        <li>
+                            inset: Optional. Changes the shadow from an outer
+                            shadow (outset) to an inner shadow
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.boxShadow="10px 20px 30px blue"</code></pre>
+                    <section>
+                        <h3 class="lvl3" id="blur-effect">Blur Effect</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-1"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-1 {
     width: 150px;
     height: 150px;
     background-color: crimson;
     box-shadow: 10px 10px 8px hotpink;
 }</code></pre>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="shadow-spread-radius"
-                                        class="anchor-centered"
-                                        >Shadow Spread Radius</span
-                                    >
-                                </h4>
-                                <div id="ex6-2"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-2 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="shadow-spread-radius">
+                            Shadow Spread Radius
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-2"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-2 {
     width: 150px;
     height: 150px;
     background-color: rgb(20, 220, 30);
     box-shadow: 10px 10px 8px 10px rgb(178, 255, 105);
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="multiple-shadows"
-                                        class="anchor-centered"
-                                        >Multiple Shadows</span
-                                    >
-                                </h4>
-                                <div id="ex6-3"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-3 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="multiple-shadows">
+                            Multiple Shadows
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-3"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-3 {
     width: 150px;
     height: 150px;
     background-color: rgb(20, 37, 220);
     box-shadow: 5px 5px 8px rgb(160, 105, 255), 8px 8px 12px rgb(233, 163, 52),
         12px 12px 17px rgb(128, 255, 0);
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="inset-shadow"
-                                        class="anchor-centered"
-                                        >Inset Shadow</span
-                                    >
-                                </h4>
-                                <div id="ex6-4"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-4 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="inset-shadow">Inset Shadow</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-4"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-4 {
     width: 150px;
     height: 150px;
     background-color: rgb(20, 220, 20);
     box-shadow: 10px 10px 15px inset yellow, 5px 5px 12px hotpink;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="box-shadow-without-blur"
-                                        class="anchor-centered"
-                                        >Box Shadow without Blur</span
-                                    >
-                                </h4>
-                                <div id="ex6-5"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-5 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="box-shadow-without-blur">
+                            Box Shadow without Blur
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-5"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-5 {
     width: 150px;
     height: 150px;
     background-color: brown;
     box-shadow: -5px 8px orange;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="left-shadow"
-                                        class="anchor-centered"
-                                        >Left Shadow</span
-                                    >
-                                </h4>
-                                <div id="ex6-6"></div>
-                                <br /><br />
-                            </td>
-                            <td>
-                                <pre><code>#ex6-6 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="left-shadow">Left Shadow</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex6-6"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex6-6 {
     width: 150px;
     height: 150px;
     background-color: coral;
     box-shadow: -8px -15px 20px blue;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <!-- <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div>
-                            </td>
-                            <td>
-                                <pre><code></code></pre>
-                            </td>
-                        </tr> -->
-                    </tbody>
-                </table>
-            </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
             <br /><br />
-            <section>
-                <h3>
-                    <span id="box-reflect" class="anchor-centered"
-                        >Box Reflect</span
-                    >
-                </h3>
-                <ul>
-                    <li>Used to create a reflection of an element.</li>
-                    <li>
-                        The value of the box-reflect property can be: below,
-                        above, left, or right.
-                    </li>
-                    <li>
-                        Since the box-reflect property is non-standard and must
-                        be written with -webkit- prefix.
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>none: Default value. No reflection is displayed.</li>
-                    <li>below: Creates a reflection below the element.</li>
-                    <li>above: Creates a reflection above the element.</li>
-                    <li>
-                        left: Creates a reflection to the left of the element.
-                    </li>
-                    <li>
-                        right: Creates a reflection to the right of the element.
-                    </li>
-                    <li>
-                        position: offset Two value syntax: <br />- position sets
-                        reflection below, above, left, or right of the element.
-                        <br />- offset sets the distance to the reflection.
-                        Distance is set in px, pt, cm, etc. Default value is 0.
-                        Read about length units
-                    </li>
-                    <li>
-                        position offset gradient: Three value syntax: <br />-
-                        position sets reflection below, above, left, or right of
-                        the element. <br />- offset sets the distance to the
-                        reflection. Distance is set in px, pt, cm, etc. Default
-                        value is 0. Read about length units <br />- gradient
-                        sets a transition for the reflection, i.e. a fading
-                        effect.
-                    </li>
-                    <li>initial: Sets this property to its default value</li>
-                    <li>
-                        inherit: Inherits this property from its parent element
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.webkitBoxReflect="below"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="below-above-left-right"
-                                        class="anchor-centered"
-                                        >Below|Above|Left|Right</span
-                                    >
-                                </h4>
-                                <div id="ex7-1"></div>
-                            </td>
-
-                            <td>
-                                <pre><code>#ex7-1 {
+            <article>
+                <section>
+                    <h2 class="lvl2" id="box-reflect">Box Reflect</h2>
+                    <ul>
+                        <li>Used to create a reflection of an element.</li>
+                        <li>
+                            The value of the box-reflect property can be: below,
+                            above, left, or right.
+                        </li>
+                        <li>
+                            Since the box-reflect property is non-standard and
+                            must be written with -webkit- prefix.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            none: Default value. No reflection is displayed.
+                        </li>
+                        <li>below: Creates a reflection below the element.</li>
+                        <li>above: Creates a reflection above the element.</li>
+                        <li>
+                            left: Creates a reflection to the left of the
+                            element.
+                        </li>
+                        <li>
+                            right: Creates a reflection to the right of the
+                            element.
+                        </li>
+                        <li>
+                            position: offset Two value syntax: <br />- position
+                            sets reflection below, above, left, or right of the
+                            element. <br />- offset sets the distance to the
+                            reflection. Distance is set in px, pt, cm, etc.
+                            Default value is 0. Read about length units
+                        </li>
+                        <li>
+                            position offset gradient: Three value syntax:
+                            <br />- position sets reflection below, above, left,
+                            or right of the element. <br />- offset sets the
+                            distance to the reflection. Distance is set in px,
+                            pt, cm, etc. Default value is 0. Read about length
+                            units <br />- gradient sets a transition for the
+                            reflection, i.e. a fading effect.
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.webkitBoxReflect="below"</code></pre>
+                    <section>
+                        <h3 class="lvl3" id="below-above-left-right">
+                            Below|Above|Left|Right
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex7-1"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex7-1 {
     height: 150px;
     width: 150px;
     background-color: orange;
@@ -926,22 +907,25 @@ object.style.maxHeight="600px"</code></pre>
     -webkit-box-reflect: below;
     margin-bottom: 175px;
 }</code></pre>
-                            </td>
-                        </tr>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
 
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="position-offset"
-                                        class="anchor-centered"
-                                        >Position Offset</span
-                                    >
-                                </h4>
-                                <div id="ex7-2"></div>
-                            </td>
-                            <td>
-                                <pre><code>#ex7-2 {
+                    <section>
+                        <h3 class="lvl3" id="position-offset">
+                            Position Offset
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex7-2"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex7-2 {
     height: 150px;
     width: 150px;
     background-color: violet;
@@ -950,21 +934,25 @@ object.style.maxHeight="600px"</code></pre>
     -webkit-box-reflect: below 20px;
     margin-bottom: 190px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="position-offset-gradient"
-                                        class="anchor-centered"
-                                        >Position Offset Gradient</span
-                                    >
-                                </h4>
-                                <div id="ex7-3"></div>
-                            </td>
-                            <td>
-                                <pre><code>#ex7-3 {
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="position-offset-gradient">
+                            Position Offset Gradient
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex7-3"></div></div>
+                                <div class="cells">
+                                    <pre><code>#ex7-3 {
     height: 150px;
     width: 150px;
     background-color: yellow;
@@ -973,251 +961,245 @@ object.style.maxHeight="600px"</code></pre>
     -webkit-box-reflect: right 15px
         linear-gradient(to left, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.155));
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
             <br /><br />
-            <section>
-                <h3>
-                    <span id="box-sizing" class="anchor-centered"
-                        >Box Sizing</span
-                    >
-                </h3>
-                <ul>
-                    <li>
-                        Defines how the width and height of an element are
-                        calculated: should they include padding and borders, or
-                        not.
-                    </li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>
-                        content-box: Default. The width and height properties
-                        (and min/max properties) includes only the content.
-                        Border and padding are not included
-                    </li>
-                    <li>
-                        border-box: The width and height properties (and min/max
-                        properties) includes content, padding and border
-                    </li>
-                    <li>initial: Sets this property to its default value.</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.boxSizing="border-box"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>Explanation</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="border-box"
-                                        class="anchor-centered"
-                                        >Border Box</span
+            <article>
+                <section>
+                    <h2 class="lvl2" id="box-sizing">Box Sizing</h2>
+                    <ul>
+                        <li>
+                            Defines how the width and height of an element are
+                            calculated: should they include padding and borders,
+                            or not.
+                        </li>
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            content-box: Default. The width and height
+                            properties (and min/max properties) includes only
+                            the content. Border and padding are not included
+                        </li>
+                        <li>
+                            border-box: The width and height properties (and
+                            min/max properties) includes content, padding and
+                            border
+                        </li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.boxSizing="border-box"</code></pre>
+                    <section>
+                        <h3 class="lvl3" id="border-box">Border Box</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex8-1"></div>
+                                    <br /><br />width:
+                                    <span style="font-weight: bold; color: red"
+                                        >100px</span
+                                    >; <br />height: 200px; <br />border: 5px
+                                    solid green; <br />padding: 20px;
+                                    <br />border-box-full width = border +
+                                    padding + width + padding + border = 100px
+                                    <br />border-box-new sizes = 5 + 20 +
+                                    <span style="font-weight: bold; color: red"
+                                        >50</span
                                     >
-                                </h4>
-                                <div id="ex8-1"></div>
-                            </td>
-                            <td>
-                                width:
-                                <span style="font-weight: bold; color: red"
-                                    >100px</span
-                                >; <br />height: 200px; <br />border: 5px solid
-                                green; <br />padding: 20px;
-                                <br />border-box-full width = border + padding +
-                                width + padding + border = 100px
-                                <br />border-box-new sizes = 5 + 20 +
-                                <span style="font-weight: bold; color: red"
-                                    >50</span
-                                >
-                                + 20 + 5
-                            </td>
-
-                            <td>
-                                <pre><code>#ex8-1 {
+                                    + 20 + 5
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex8-1 {
     box-sizing: border-box;
     width: 100px;
     height: 200px;
     border: 5px solid green;
     padding: 20px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="content-box"
-                                        class="anchor-centered"
-                                        >Content Box</span
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="content-box">Content Box</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex8-2"></div>
+                                    <br /><br />width:
+                                    <span style="font-weight: bold; color: red"
+                                        >100px</span
+                                    >; <br />height: 200px; <br />border: 5px
+                                    solid green; <br />padding: 20px;
+                                    <br />content-box-full width = border +
+                                    padding + width + padding + border
+                                    <br />content-box-full width = 5 + 20 +
+                                    <span style="font-weight: bold; color: red"
+                                        >100</span
                                     >
-                                </h4>
-                                <div id="ex8-2"></div>
-                            </td>
-                            <td>
-                                width:
-                                <span style="font-weight: bold; color: red"
-                                    >100px</span
-                                >; <br />height: 200px; <br />border: 5px solid
-                                green; <br />padding: 20px;
-                                <br />content-box-full width = border + padding
-                                + width + padding + border
-                                <br />content-box-full width = 5 + 20 +
-                                <span style="font-weight: bold; color: red"
-                                    >100</span
-                                >
-                                + 20 + 5 = 150px
-                            </td>
-                            <td>
-                                <pre><code>#ex8-2 {
+                                    + 20 + 5 = 150px
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex8-2 {
     box-sizing: content-box;
     width: 100px;
     height: 200px;
     border: 5px solid green;
     padding: 20px;
 }</code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br /><br />
-
-            <section>
-                <h3><span id="margin" class="anchor-centered">Margin</span></h3>
-                <ul>
-                    <li>Concerning Padding: Remember top|right|bottom|left</li>
-                    <li>
-                        Sets the margins for an element, and is a shorthand
-                        property for the following properties:
-                    </li>
-                    <ul>
-                        <li>margin-top</li>
-                        <li>margin-right</li>
-                        <li>margin-bottom</li>
-                        <li>margin-left</li>
-                    </ul>
-                    <li>If the margin property has four values:</li>
-                    <ul>
-                        <li>margin: 10px 5px 15px 20px;</li>
-                        <ul>
-                            <li>top margin is 10px</li>
-                            <li>right margin is 5px</li>
-                            <li>bottom margin is 15px</li>
-                            <li>left margin is 20px</li>
-                        </ul>
-                    </ul>
-                    <li>If the margin property has three values:</li>
-                    <ul>
-                        <li>margin: 10px 5px 15px;</li>
-                        <ul>
-                            <li>top margin is 10px</li>
-                            <li>right and left margins are 5px</li>
-                            <li>bottom margin is 15px</li>
-                        </ul>
-                    </ul>
-                    <li>If the margin property has two values:</li>
-                    <ul>
-                        <li>margin: 10px 5px;</li>
-                        <ul>
-                            <li>top and bottom margins are 10px</li>
-                            <li>right and left margins are 5px</li>
-                        </ul>
-                    </ul>
-                    <li>If the margin property has one value:</li>
-                    <ul>
-                        <li>margin: 10px;</li>
-                        <ul>
-                            <li>all four margins are 10px</li>
-                        </ul>
-                    </ul>
-
-                    <li>Negative values are allowed.</li>
-                    <br /><br />
-                    <b><u>Margin Collapse</u></b>
-                    <ul>
-                        <li>
-                            Top and bottom margins of elements are sometimes
-                            collapsed into a single margin that is equal to the
-                            largest of the two margins.
-                        </li>
-                        <li>
-                            This does not happen on horizontal (left and right)
-                            margins! Only vertical (top and bottom) margins!
-                        </li>
-                    </ul>
-                    <br /><br />
-                    <h4 class="title-css">Property Values:</h4>
-                    <li>
-                        length: Specifies a margin in px, pt, cm, etc. Default
-                        value is 0. Negative values are allowed. Read about
-                        length units
-                    </li>
-                    <li>
-                        %: Specifies a margin in percent of the width of the
-                        containing element
-                    </li>
-                    <li>auto: The browser calculates a margin</li>
-                    <li>initial: Sets this property to its default value.</li>
-                    <li>
-                        inherit: Inherits this property from its parent element.
-                    </li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre
-                    class="js-pre"
-                ><code>object.style.margin="100px 50px"</code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="margin-sh" class="anchor-centered"
-                                        >Margin (shorthand)</span
-                                    >
-                                </h4>
-                                <div id="ex10-1">
-                                    <p class="ex10-1a">
-                                        Lorem, ipsum dolor Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Est
-                                        vero dicta fuga, possimus inventore
-                                        illo.
-                                    </p>
-                                    <p id="ex10-1b" class="ex10-1a">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis, minus.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
-                                    <p class="ex10-1a">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex10-1b {
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
+            <br /><br />
+            <article>
+                <section>
+                    <h2 id="margin" class="lvl2">Margin</h2>
+                    <ul>
+                        <li>
+                            Concerning Padding: Remember top|right|bottom|left
+                        </li>
+                        <li>
+                            Sets the margins for an element, and is a shorthand
+                            property for the following properties:
+                        </li>
+                        <ul>
+                            <li>margin-top</li>
+                            <li>margin-right</li>
+                            <li>margin-bottom</li>
+                            <li>margin-left</li>
+                        </ul>
+                        <li>If the margin property has four values:</li>
+                        <ul>
+                            <li>margin: 10px 5px 15px 20px;</li>
+                            <ul>
+                                <li>top margin is 10px</li>
+                                <li>right margin is 5px</li>
+                                <li>bottom margin is 15px</li>
+                                <li>left margin is 20px</li>
+                            </ul>
+                        </ul>
+                        <li>If the margin property has three values:</li>
+                        <ul>
+                            <li>margin: 10px 5px 15px;</li>
+                            <ul>
+                                <li>top margin is 10px</li>
+                                <li>right and left margins are 5px</li>
+                                <li>bottom margin is 15px</li>
+                            </ul>
+                        </ul>
+                        <li>If the margin property has two values:</li>
+                        <ul>
+                            <li>margin: 10px 5px;</li>
+                            <ul>
+                                <li>top and bottom margins are 10px</li>
+                                <li>right and left margins are 5px</li>
+                            </ul>
+                        </ul>
+                        <li>If the margin property has one value:</li>
+                        <ul>
+                            <li>margin: 10px;</li>
+                            <ul>
+                                <li>all four margins are 10px</li>
+                            </ul>
+                        </ul>
+
+                        <li>Negative values are allowed.</li>
+                        <br /><br />
+                        <b><u>Margin Collapse</u></b>
+                        <ul>
+                            <li>
+                                Top and bottom margins of elements are sometimes
+                                collapsed into a single margin that is equal to
+                                the largest of the two margins.
+                            </li>
+                            <li>
+                                This does not happen on horizontal (left and
+                                right) margins! Only vertical (top and bottom)
+                                margins!
+                            </li>
+                        </ul>
+                        <br /><br />
+                        <h4 class="title-css">Property Values:</h4>
+                        <li>
+                            length: Specifies a margin in px, pt, cm, etc.
+                            Default value is 0. Negative values are allowed.
+                            Read about length units
+                        </li>
+                        <li>
+                            %: Specifies a margin in percent of the width of the
+                            containing element
+                        </li>
+                        <li>auto: The browser calculates a margin</li>
+                        <li>
+                            initial: Sets this property to its default value.
+                        </li>
+                        <li>
+                            inherit: Inherits this property from its parent
+                            element.
+                        </li>
+                    </ul>
+                    <h3 class="js-title">Javascript</h3>
+                    <pre
+                        class="js-pre"
+                    ><code>object.style.margin="100px 50px"</code></pre>
+                    <section>
+                        <h3 class="lvl3" id="margin-sh">Margin (shorthand)</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex10-1">
+                                        <p class="ex10-1a">
+                                            Lorem, ipsum dolor Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                        <p id="ex10-1b" class="ex10-1a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perferendis, minus. Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Est vero dicta
+                                            fuga, possimus inventore illo.
+                                        </p>
+                                        <p class="ex10-1a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex10-1b {
     margin: 75px 50px 2px 100px;
 }
 
@@ -1225,39 +1207,46 @@ object.style.maxHeight="600px"</code></pre>
     background-color: lightpink;
     padding: 10px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Margin (three)</span
-                                    >
-                                </h4>
-                                <div id="ex10-2">
-                                    <p class="ex10-2a">
-                                        Lorem, ipsum dolor Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Est
-                                        vero dicta fuga, possimus inventore
-                                        illo.
-                                    </p>
-                                    <p id="ex10-2b" class="ex10-2a">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis, minus.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
-                                    <p class="ex10-2a">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex10-2b {
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="margin-three">Margin (three)</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex10-2">
+                                        <p class="ex10-2a">
+                                            Lorem, ipsum dolor Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                        <p id="ex10-2b" class="ex10-2a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perferendis, minus. Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Est vero dicta
+                                            fuga, possimus inventore illo.
+                                        </p>
+                                        <p class="ex10-2a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex10-2b {
     margin: 75px 100px 2px;
 }
 
@@ -1265,39 +1254,46 @@ object.style.maxHeight="600px"</code></pre>
     background-color: lightpink;
     padding: 10px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Margin (two)</span
-                                    >
-                                </h4>
-                                <div id="ex10-3">
-                                    <p class="ex10-3a">
-                                        Lorem, ipsum dolor Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Est
-                                        vero dicta fuga, possimus inventore
-                                        illo.
-                                    </p>
-                                    <p id="ex10-3b" class="ex10-3a">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis, minus.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
-                                    <p class="ex10-3a">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex10-3b {
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="margin-two">Margin (two)</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex10-3">
+                                        <p class="ex10-3a">
+                                            Lorem, ipsum dolor Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                        <p id="ex10-3b" class="ex10-3a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perferendis, minus. Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Est vero dicta
+                                            fuga, possimus inventore illo.
+                                        </p>
+                                        <p class="ex10-3a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex10-3b {
     margin: 75px 100px;
 }
 
@@ -1305,39 +1301,46 @@ object.style.maxHeight="600px"</code></pre>
     background-color: rgb(182, 255, 242);
     padding: 10px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Margin (one)</span
-                                    >
-                                </h4>
-                                <div id="ex10-4">
-                                    <p class="ex10-4a">
-                                        Lorem, ipsum dolor Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Est
-                                        vero dicta fuga, possimus inventore
-                                        illo.
-                                    </p>
-                                    <p id="ex10-4b" class="ex10-4a">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis, minus.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
-                                    <p class="ex10-4a">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex10-4b {
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="margin-one">Margin (one)</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex10-4">
+                                        <p class="ex10-4a">
+                                            Lorem, ipsum dolor Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                        <p id="ex10-4b" class="ex10-4a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perferendis, minus. Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Est vero dicta
+                                            fuga, possimus inventore illo.
+                                        </p>
+                                        <p class="ex10-4a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex10-4b {
     margin: 15px;
 }
 
@@ -1345,41 +1348,49 @@ object.style.maxHeight="600px"</code></pre>
     background-color: rgb(182, 255, 198);
     padding: 10px;
 }</code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span
-                                        id="margin-collapse"
-                                        class="anchor-centered"
-                                        >Margin Collapse</span
-                                    >
-                                </h4>
-                                <div id="ex10-5">
-                                    <p class="ex10-5a">
-                                        Lorem, ipsum dolor Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Est
-                                        vero dicta fuga, possimus inventore
-                                        illo.
-                                    </p>
-                                    <p id="ex10-5b" class="ex10-5a">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Perferendis, minus.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
-                                    <p class="ex10-5a">
-                                        Lorem ipsum dolor sit amet consectetur.
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Est vero dicta fuga,
-                                        possimus inventore illo.
-                                    </p>
                                 </div>
-                            </td>
-                            <td>
-                                <pre><code>#ex10-5b {
+                            </div>
+                        </div>
+                    </section>
+
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="margin-collapse">
+                            Margin Collapse
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <div id="ex10-5">
+                                        <p class="ex10-5a">
+                                            Lorem, ipsum dolor Lorem ipsum dolor
+                                            sit amet consectetur adipisicing
+                                            elit. Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                        <p id="ex10-5b" class="ex10-5a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit.
+                                            Perferendis, minus. Lorem ipsum
+                                            dolor sit amet consectetur
+                                            adipisicing elit. Est vero dicta
+                                            fuga, possimus inventore illo.
+                                        </p>
+                                        <p class="ex10-5a">
+                                            Lorem ipsum dolor sit amet
+                                            consectetur. Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit.
+                                            Est vero dicta fuga, possimus
+                                            inventore illo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex10-5b {
     margin: 20px 0 0 0;
 }
 
@@ -1388,58 +1399,21 @@ object.style.maxHeight="600px"</code></pre>
     padding: 10px;
 }
 </code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br /><br />
-
-            <!-- <section>
-                <h3><span id="" class="anchor-centered"></span></h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4 class="title-css">
-                                <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br><br> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
         </main>
         <footer>
             <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
@@ -1479,16 +1453,26 @@ object.style.maxHeight="600px"</code></pre>
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
+                        <a href="../css-properties/border/index.html">Border</a>
+                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <br /><a
+                            href="../css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
+                        <br /><a href="../css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><a href="../css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
@@ -1499,9 +1483,34 @@ object.style.maxHeight="600px"</code></pre>
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>

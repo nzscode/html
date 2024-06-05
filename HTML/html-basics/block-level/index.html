@@ -35,7 +35,7 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>HTML Block Level Elements</p>
+                    <!-- <p>HTML Block Level Elements</p>
                     <ul>
                         <a href="./index.html#block-level-elements"
                             >Block Level Elements</a
@@ -135,7 +135,7 @@
                                 <a href="./index.html#video">Video</a>
                             </li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -170,6 +170,36 @@
                                 >
                             </div>
                             <div class="cells">Defines a division</div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-div" class="anchor-centered"
+                                        >Div</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Deafult CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <div style="background-color: aqua">
+                                                The div is a block level
+                                                element, so the whole background
+                                                is colored this aqua
+                                            </div>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;div style="background-color: aqua;"&gt;
+                The div is a block level element, 
+                so the whole background is colored this aqua&lt;/div&gt;</code></pre>
+                                        </div>
+                                        <div class="col20"></div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -182,6 +212,41 @@
                                 >
                             </div>
                             <div class="cells">Defines a paragraph</div>
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-paragraph"
+                                        class="anchor-centered"
+                                        >Paragraph</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <p>
+                                                Lorem ipsum, dolor sit amet
+                                                consectetur adipisicing
+                                                <br />elit. Obcaecati, dicta
+                                                consequuntur? Blanditiis
+                                                provident, <br />inventore sint
+                                                cum nobis velit labore facere!
+                                            </p>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;p&gt;
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Obcaecati, dicta consequuntur? Blanditiis 
+            provident, inventore sint cum nobis velit labore facere!
+            &lt;p&gt;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -203,6 +268,44 @@
                                 always add a line break before and after the
                                 &lt;address&gt; element.
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-address"
+                                        class="anchor-centered"
+                                        >Address</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <address class="col20">
+                                            Lily Potter
+                                            <br />1234 Tulip lane, <br />Random
+                                            City, London <br />UK
+                                        </address>
+                                        <div class="col50">
+                                            <pre><code>&lt;address&gt;
+            Lily Potter
+            &lt;br&gt;1234 Tulip lane,
+            &lt;br&gt;Random City, London
+            &lt;br&gt;UK
+            &lt;/address&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>address {
+            display: block;
+            font-style: italic;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -222,6 +325,49 @@
                                 anything special in a browser. However, you can
                                 use CSS to style the &lt;article&gt; element
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-article"
+                                        class="anchor-centered"
+                                        >Article</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <article class="col20">
+                                            <h2 class="revert">
+                                                Lorem, ipsum dolor.
+                                            </h2>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Ad, facilis!
+                                            </p>
+                                        </article>
+                                        <div class="col50">
+                                            <pre><code>&lt;article class="col20"&gt;
+            &lt;h2 class="reevrt"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ad, facilis!
+            &lt;/p&gt;
+            &lt;/article&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>article {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -239,6 +385,65 @@
                                 not render as anything special in a browser, can
                                 use CSS to style it
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-aside" class="anchor-centered"
+                                        >Aside</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h2 class="revert">
+                                                Lorem, ipsum.
+                                            </h2>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet
+                                                consectetur adipisicing elit.
+                                            </p>
+
+                                            <aside>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur.
+                                                </p>
+                                            </aside>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing.
+                                            </p>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;h2 class="revert"&gt;Lorem, ipsum.&lt;/h2&gt;
+            &lt;p&gt;
+            Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit.
+            &lt;/p&gt;
+            
+            &lt;aside&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
+            &lt;/aside&gt;
+            
+            &lt;p&gt;
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing.
+            &lt;/p&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>aside {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -258,6 +463,63 @@
                                 Cite: specifies the source of the quotation
                                 (URL, book citation, etc.)
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-blockquote"
+                                        class="anchor-centered"
+                                        >Blockquote</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <p>
+                                                A memorable quote from William
+                                                Blake
+                                            </p>
+                                            <blockquote
+                                                cite="https://www.example.com"
+                                            >
+                                                Lorem ipsum dolor
+                                            </blockquote>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur.
+                                                <q>Lorem, ipsum dolor.</q> Lorem
+                                                ipsum, dolor
+                                            </p>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;p&gt;A memorable quote from William Blake&lt;/p&gt;
+            &lt;blockquote cite="https://www.example.com"&gt;
+            Lorem ipsum dolor 
+            &lt;/blockquote&gt;
+            
+            &lt;p&gt;
+            Lorem ipsum dolor sit amet consectetur.
+            &lt;q&gt;Lorem, ipsum dolor.&lt;/q&gt; Lorem ipsum, dolor
+            &lt;/p&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>blockquote {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 40px;
+            margin-right: 40px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -281,6 +543,70 @@
                                 &lt;canvas&gt; <br />- Height & Width: Default
                                 150px height, 300px width
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-canvas" class="anchor-centered"
+                                        >Canvas</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <canvas id="myCanvas">
+                                                Your browser does not support
+                                                the canvas tag.
+                                            </canvas>
+
+                                            <script>
+                                                let c =
+                                                    document.getElementById(
+                                                        "myCanvas"
+                                                    );
+                                                let ctx = c.getContext("2d");
+                                                ctx.fillStyle = "red";
+                                                ctx.fillRect(20, 20, 75, 50);
+                                                //Turn transparency on
+                                                ctx.globalAlpha = 0.2;
+                                                ctx.fillStyle = "blue";
+                                                ctx.fillRect(50, 50, 75, 50);
+                                                ctx.fillStyle = "green";
+                                                ctx.fillRect(80, 80, 75, 50);
+                                            </script>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;canvas id="myCanvas"&gt;
+            Your browser does not support the canvas tag.
+            &lt;/canvas&gt;
+            
+            &lt;script&gt;
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(20, 20, 75, 50);
+            
+            //Turn transparency on
+            ctx.globalAlpha = 0.2;
+            ctx.fillStyle = "blue";
+            ctx.fillRect(50, 50, 75, 50);
+            ctx.fillStyle = "green";
+            ctx.fillRect(80, 80, 75, 50);
+            &lt;/script&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>canvas {
+            height: 150px;
+            width: 300px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -302,6 +628,54 @@
                                 <br />- Also see
                                 <i><a href="#lists-description-lists"></a></i>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-dl" class="anchor-centered"
+                                        >Description List</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <dl>
+                                                <dt>Math</dt>
+                                                <dd>Calculus, Algebra</dd>
+                                                <dt>English</dt>
+                                                <dd>Literature, Core</dd>
+                                                <dt>Science</dt>
+                                                <dd>
+                                                    Physics, Biology, Chemistry
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;dl&gt;
+            &lt;dt&gt;Math&lt;/dt&gt;
+                &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+            &lt;dt&gt;English&lt;/dt&gt;
+                &lt;dd&gt;Literature, Core&lt;/dd&gt;
+            &lt;dt&gt;Science&lt;/dt&gt;
+                &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+            &lt;/dl&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>dl {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -322,6 +696,50 @@
                                 links, lists, etc.<br />- Also see
                                 <i><a href="#lists-description-lists"></a></i>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-dt" class="anchor-centered"
+                                        >Description Term</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <dl>
+                                                <dt>Math</dt>
+                                                <dd>Calculus, Algebra</dd>
+                                                <dt>English</dt>
+                                                <dd>Literature, Core</dd>
+                                                <dt>Science</dt>
+                                                <dd>
+                                                    Physics, Biology, Chemistry
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;dl&gt;
+            &lt;dt&gt;Math&lt;/dt&gt;
+                &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+            &lt;dt&gt;English&lt;/dt&gt;
+                &lt;dd&gt;Literature, Core&lt;/dd&gt;
+            &lt;dt&gt;Science&lt;/dt&gt;
+                &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+            &lt;/dl&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>dt {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -342,6 +760,51 @@
                                 links, lists, etc.<br />- Also see
                                 <i><a href="#lists-description-lists"></a></i>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-dd" class="anchor-centered">
+                                        Description Definition</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <dl>
+                                                <dt>Math</dt>
+                                                <dd>Calculus, Algebra</dd>
+                                                <dt>English</dt>
+                                                <dd>Literature, Core</dd>
+                                                <dt>Science</dt>
+                                                <dd>
+                                                    Physics, Biology, Chemistry
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;dl&gt;
+            &lt;dt&gt;Math&lt;/dt&gt;
+                &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
+            &lt;dt&gt;English&lt;/dt&gt;
+                &lt;dd&gt;Literature, Core&lt;/dd&gt;
+            &lt;dt&gt;Science&lt;/dt&gt;
+                &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
+            &lt;/dl&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>dd {
+            display: block;
+            margin-left: 40px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -372,6 +835,99 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-fieldset"
+                                        class="anchor-centered"
+                                        >Fieldset</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col40">html</div>
+                                        <div class="col30">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <form action="">
+                                                <fieldset>
+                                                    <label for="fName"
+                                                        >First Name:
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        name="fName"
+                                                        id="fName"
+                                                        size="10"
+                                                    />
+                                                    <br />
+                                                    <br />
+                                                    <label for="lName"
+                                                        >Last Name:
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        name="lName"
+                                                        id="lName"
+                                                        size="10"
+                                                    />
+                                                    <br />
+                                                    <br />
+                                                    <label for="studentID"
+                                                        >Student ID:</label
+                                                    >
+                                                    <br />
+                                                    <input
+                                                        type="text"
+                                                        name="studentID"
+                                                        id="studentID"
+                                                        size="10"
+                                                    />
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>&lt;form action=""&gt;
+            &lt;fieldset&gt;
+                &lt;label for="fName"&gt;First Name: &lt;/label&gt;
+                &lt;input 
+                    type="text" 
+                    name="fName" 
+                    id="fName" /&gt;
+                &lt;label for="lName"&gt;Last Name: &lt;/label&gt;
+                &lt;input 
+                    type="text" 
+                    name="lName" 
+                    id="lName" /&gt;
+                &lt;label for="studentID"&gt;Student ID:
+                    &lt;/label&gt;
+                &lt;input
+                    type="number"
+                    name="studentID"
+                    id="studentID"
+                /&gt;
+            &lt;/fieldset&gt;
+            &lt;/form&gt;</code></pre>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>fieldset {
+            display: block;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding-top: 0.35em;
+            padding-bottom: 0.625em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            border: 2px groove 
+                (internal value);
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -392,6 +948,56 @@
                                 &lt;figcaption&gt; element is used to add a
                                 caption
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-figure" class="anchor-centered"
+                                        >Figure</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <figure>
+                                                <img
+                                                    src="../../images/img.png"
+                                                    alt="Star Image"
+                                                    style="width: 100%"
+                                                />
+                                                <figcaption>
+                                                    Fig.1 - Image of a star
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;figure&gt;
+            &lt;img
+                src="../../images/img.png"
+                alt="Star Image"
+                style="width: 100%"
+            /&gt;
+            &lt;figcaption&gt;
+                Fig.1 - Image of a star
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>figure {
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 40px;
+            margin-right: 40px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -408,6 +1014,55 @@
                                 element. <br />- Can be placed as the first or
                                 last child of the &lt;figure&gt; element.
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span
+                                        id="bl-figcaption"
+                                        class="anchor-centered"
+                                    >
+                                        Figcaption</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <figure>
+                                                <img
+                                                    src="../../images/img.png"
+                                                    alt="Star Image"
+                                                    style="width: 100%"
+                                                />
+                                                <figcaption>
+                                                    Fig.1 - Image of a star
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;figure&gt;
+            &lt;img
+                src="../../images/img.png"
+                alt="Star Image"
+                style="width: 100%"
+            /&gt;
+            &lt;figcaption&gt;
+                Fig.1 - Image of a star
+            &lt;/figcaption&gt;
+            &lt;/figure&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>figcaption {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -435,6 +1090,42 @@
                                 a &lt;footer&gt;, &lt;address&gt; or another
                                 &lt;header&gt; element
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-header" class="anchor-centered"
+                                        >Header</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <header>
+                                                <h1 class="revert">
+                                                    Lorem, ipsum dolor.
+                                                </h1>
+                                                <p>Lorem ipsum dolor sit.</p>
+                                            </header>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;header&gt;
+            &lt;h1 class="revert"&gt;Lorem, ipsum dolor.&lt;/h1&gt;
+            &lt;p>Lorem ipsum dolor sit.&lt;/p&gt;
+            &lt;/header&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>header {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -457,6 +1148,81 @@
                                 sidebars, navigation links, copyright
                                 information, site logos, and search forms.
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-main" class="anchor-centered"
+                                        >Main</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col75">html</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <main class="revert">
+                                                <h1 class="revert head1">
+                                                    Lorem, ipsum.
+                                                </h1>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                                <article class="browser">
+                                                    <h2 class="revert">
+                                                        Lorem, ipsum dolor.
+                                                    </h2>
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet.
+                                                    </p>
+                                                </article>
+                                                <article class="browser">
+                                                    <h2 class="revert">
+                                                        Lorem, ipsum.
+                                                    </h2>
+                                                    <p>
+                                                        Lorem ipsum, dolor sit
+                                                        amet
+                                                        <br />consectetur
+                                                        adipisicing elit.
+                                                    </p>
+                                                </article>
+                                                <article class="browser">
+                                                    <h2 class="revert">
+                                                        Lorem, ipsum dolor.
+                                                    </h2>
+                                                    <p>
+                                                        Lorem ipsum dolor
+                                                        <br />sit amet
+                                                        consectetur.
+                                                    </p>
+                                                </article>
+                                            </main>
+                                        </div>
+                                        <div class="col75">
+                                            <pre><code>&lt;main&gt;
+            &lt;h1 class="revert head1">Lorem, ipsum.&lt;/h1&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;article class="browser"&gt;
+            &lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class="browser"&gt;
+            &lt;h2 class="revert">Lorem, ipsum.&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;article class="browser"&gt;
+            &lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
+            &lt;p>Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
+            &lt;/article&gt;
+            &lt;/main&gt;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -482,6 +1248,54 @@
                                 - Can have several &lt;footer&gt; elements in
                                 one document
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-footer" class="anchor-centered"
+                                        >Footer</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <footer
+                                                class="revert"
+                                                style="
+                                                    background-color: lightgreen;
+                                                "
+                                            >
+                                                <p>
+                                                    Author: Hege Refsnes<br />
+                                                    <a
+                                                        href="mailto:hege@example.com"
+                                                        >hege@example.com</a
+                                                    >
+                                                </p>
+                                            </footer>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;footer&gt;
+            &lt;p&gt;
+                Author: Hege Refsnes&lt;br /&gt;
+                &lt;a href="mailto:hege@example.com"
+                    &gt;hege@example.com&lt;/a
+                &gt;
+            &lt;/p&gt;
+            &lt;/footer&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>footer {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -496,6 +1310,42 @@
                                 Intended only for major blocks of navigation
                                 links
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-nav" class="anchor-centered"
+                                        >Nav</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <nav>
+                                                <a href="/html/">html</a> |
+                                                <a href="/css/">CSS</a> |
+                                                <a href="/js/">JavaScript</a>
+                                            </nav>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;nav&gt;
+            &lt;a href="/html/"&gt;html&lt;/a&gt; |
+            &lt;a href="/css/"&gt;CSS&lt;/a&gt; |
+            &lt;a href="/js/"&gt;JavaScript&lt;/a&gt; 
+            &lt;/nav&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>nav {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -845,791 +1695,38 @@
             <br />
             <br />
             <article>
-                <section>
-                    <h3>
-                        <span id="bl-div" class="anchor-centered">Div</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Deafult CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <div style="background-color: aqua">
-                                    The div is a block level element, so the
-                                    whole background is colored this aqua
-                                </div>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;div style="background-color: aqua;"&gt;
-    The div is a block level element, 
-    so the whole background is colored this aqua&lt;/div&gt;</code></pre>
-                            </div>
-                            <div class="col20"></div>
-                        </div>
-                    </div>
-                </section>
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-paragraph" class="anchor-centered"
-                            >Paragraph</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing
-                                    <br />elit. Obcaecati, dicta consequuntur?
-                                    Blanditiis provident, <br />inventore sint
-                                    cum nobis velit labore facere!
-                                </p>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;p&gt;
-Lorem ipsum, dolor sit amet consectetur adipisicing
-elit. Obcaecati, dicta consequuntur? Blanditiis 
-provident, inventore sint cum nobis velit labore facere!
-&lt;p&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-address" class="anchor-centered"
-                            >Address</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <address class="col20">
-                                Lily Potter
-                                <br />1234 Tulip lane, <br />Random City, London
-                                <br />UK
-                            </address>
-                            <div class="col50">
-                                <pre><code>&lt;address&gt;
-Lily Potter
-&lt;br&gt;1234 Tulip lane,
-&lt;br&gt;Random City, London
-&lt;br&gt;UK
-&lt;/address&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>address {
-display: block;
-font-style: italic;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-article" class="anchor-centered"
-                            >Article</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <article class="col20">
-                                <h2 class="revert">Lorem, ipsum dolor.</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Ad, facilis!
-                                </p>
-                            </article>
-                            <div class="col50">
-                                <pre><code>&lt;article class="col20"&gt;
-&lt;h2 class="reevrt"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
-&lt;p&gt;
-    Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Ad, facilis!
-&lt;/p&gt;
-&lt;/article&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>article {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-aside" class="anchor-centered">Aside</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h2 class="revert">Lorem, ipsum.</h2>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur
-                                    adipisicing elit.
-                                </p>
 
-                                <aside>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur.
-                                    </p>
-                                </aside>
+                <br /><br />
 
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing.
-                                </p>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;h2 class="revert"&gt;Lorem, ipsum.&lt;/h2&gt;
-&lt;p&gt;
-Lorem ipsum dolor sit, amet consectetur
-adipisicing elit.
-&lt;/p&gt;
+                <br /><br />
 
-&lt;aside&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
-&lt;/aside&gt;
+                <br /><br />
 
-&lt;p&gt;
-Lorem ipsum dolor sit amet consectetur
-adipisicing.
-&lt;/p&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>aside {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-blockquote" class="anchor-centered"
-                            >Blockquote</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <p>A memorable quote from William Blake</p>
-                                <blockquote cite="https://www.example.com">
-                                    Lorem ipsum dolor
-                                </blockquote>
 
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur.
-                                    <q>Lorem, ipsum dolor.</q> Lorem ipsum,
-                                    dolor
-                                </p>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;p&gt;A memorable quote from William Blake&lt;/p&gt;
-&lt;blockquote cite="https://www.example.com"&gt;
-Lorem ipsum dolor 
-&lt;/blockquote&gt;
+                <br /><br />
 
-&lt;p&gt;
-Lorem ipsum dolor sit amet consectetur.
-&lt;q&gt;Lorem, ipsum dolor.&lt;/q&gt; Lorem ipsum, dolor
-&lt;/p&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>blockquote {
-display: block;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 40px;
-margin-right: 40px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-canvas" class="anchor-centered"
-                            >Canvas</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <canvas id="myCanvas">
-                                    Your browser does not support the canvas
-                                    tag.
-                                </canvas>
 
-                                <script>
-                                    let c = document.getElementById("myCanvas");
-                                    let ctx = c.getContext("2d");
-                                    ctx.fillStyle = "red";
-                                    ctx.fillRect(20, 20, 75, 50);
-                                    //Turn transparency on
-                                    ctx.globalAlpha = 0.2;
-                                    ctx.fillStyle = "blue";
-                                    ctx.fillRect(50, 50, 75, 50);
-                                    ctx.fillStyle = "green";
-                                    ctx.fillRect(80, 80, 75, 50);
-                                </script>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;canvas id="myCanvas"&gt;
-Your browser does not support the canvas tag.
-&lt;/canvas&gt;
+                <br /><br />
 
-&lt;script&gt;
-let c = document.getElementById("myCanvas");
-let ctx = c.getContext("2d");
-ctx.fillStyle = "red";
-ctx.fillRect(20, 20, 75, 50);
+                <br /><br />
 
-//Turn transparency on
-ctx.globalAlpha = 0.2;
-ctx.fillStyle = "blue";
-ctx.fillRect(50, 50, 75, 50);
-ctx.fillStyle = "green";
-ctx.fillRect(80, 80, 75, 50);
-&lt;/script&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>canvas {
-height: 150px;
-width: 300px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-dl" class="anchor-centered"
-                            >Description List</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <dl>
-                                    <dt>Math</dt>
-                                    <dd>Calculus, Algebra</dd>
-                                    <dt>English</dt>
-                                    <dd>Literature, Core</dd>
-                                    <dt>Science</dt>
-                                    <dd>Physics, Biology, Chemistry</dd>
-                                </dl>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;dl&gt;
-&lt;dt&gt;Math&lt;/dt&gt;
-    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
-&lt;dt&gt;English&lt;/dt&gt;
-    &lt;dd&gt;Literature, Core&lt;/dd&gt;
-&lt;dt&gt;Science&lt;/dt&gt;
-    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>dl {
-display: block;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-dt" class="anchor-centered"
-                            >Description Term</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <dl>
-                                    <dt>Math</dt>
-                                    <dd>Calculus, Algebra</dd>
-                                    <dt>English</dt>
-                                    <dd>Literature, Core</dd>
-                                    <dt>Science</dt>
-                                    <dd>Physics, Biology, Chemistry</dd>
-                                </dl>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;dl&gt;
-&lt;dt&gt;Math&lt;/dt&gt;
-    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
-&lt;dt&gt;English&lt;/dt&gt;
-    &lt;dd&gt;Literature, Core&lt;/dd&gt;
-&lt;dt&gt;Science&lt;/dt&gt;
-    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>dt {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-dd" class="anchor-centered">
-                            Description Definition</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <dl>
-                                    <dt>Math</dt>
-                                    <dd>Calculus, Algebra</dd>
-                                    <dt>English</dt>
-                                    <dd>Literature, Core</dd>
-                                    <dt>Science</dt>
-                                    <dd>Physics, Biology, Chemistry</dd>
-                                </dl>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;dl&gt;
-&lt;dt&gt;Math&lt;/dt&gt;
-    &lt;dd&gt;Calculus, Algebra&lt;/dd&gt;
-&lt;dt&gt;English&lt;/dt&gt;
-    &lt;dd&gt;Literature, Core&lt;/dd&gt;
-&lt;dt&gt;Science&lt;/dt&gt;
-    &lt;dd&gt;Physics, Biology, Chemistry&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>dd {
-display: block;
-margin-left: 40px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-fieldset" class="anchor-centered"
-                            >Fieldset</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">html</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="">
-                                    <fieldset>
-                                        <label for="fName">First Name: </label>
-                                        <input
-                                            type="text"
-                                            name="fName"
-                                            id="fName"
-                                            size="10"
-                                        />
-                                        <br />
-                                        <br />
-                                        <label for="lName">Last Name: </label>
-                                        <input
-                                            type="text"
-                                            name="lName"
-                                            id="lName"
-                                            size="10"
-                                        />
-                                        <br />
-                                        <br />
-                                        <label for="studentID"
-                                            >Student ID:</label
-                                        >
-                                        <br />
-                                        <input
-                                            type="text"
-                                            name="studentID"
-                                            id="studentID"
-                                            size="10"
-                                        />
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;form action=""&gt;
-&lt;fieldset&gt;
-    &lt;label for="fName"&gt;First Name: &lt;/label&gt;
-    &lt;input 
-        type="text" 
-        name="fName" 
-        id="fName" /&gt;
-    &lt;label for="lName"&gt;Last Name: &lt;/label&gt;
-    &lt;input 
-        type="text" 
-        name="lName" 
-        id="lName" /&gt;
-    &lt;label for="studentID"&gt;Student ID:
-        &lt;/label&gt;
-    &lt;input
-        type="number"
-        name="studentID"
-        id="studentID"
-    /&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <pre><code>fieldset {
-display: block;
-margin-left: 2px;
-margin-right: 2px;
-padding-top: 0.35em;
-padding-bottom: 0.625em;
-padding-left: 0.75em;
-padding-right: 0.75em;
-border: 2px groove 
-    (internal value);
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-figure" class="anchor-centered"
-                            >Figure</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <figure>
-                                    <img
-                                        src="../../images/img.png"
-                                        alt="Star Image"
-                                        style="width: 100%"
-                                    />
-                                    <figcaption>
-                                        Fig.1 - Image of a star
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;figure&gt;
-&lt;img
-    src="../../images/img.png"
-    alt="Star Image"
-    style="width: 100%"
-/&gt;
-&lt;figcaption&gt;
-    Fig.1 - Image of a star
-&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>figure {
-display: block;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 40px;
-margin-right: 40px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-figcaption" class="anchor-centered">
-                            Figcaption</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <figure>
-                                    <img
-                                        src="../../images/img.png"
-                                        alt="Star Image"
-                                        style="width: 100%"
-                                    />
-                                    <figcaption>
-                                        Fig.1 - Image of a star
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;figure&gt;
-&lt;img
-    src="../../images/img.png"
-    alt="Star Image"
-    style="width: 100%"
-/&gt;
-&lt;figcaption&gt;
-    Fig.1 - Image of a star
-&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>figcaption {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-header" class="anchor-centered"
-                            >Header</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <header>
-                                    <h1 class="revert">Lorem, ipsum dolor.</h1>
-                                    <p>Lorem ipsum dolor sit.</p>
-                                </header>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;header&gt;
-&lt;h1 class="revert"&gt;Lorem, ipsum dolor.&lt;/h1&gt;
-&lt;p>Lorem ipsum dolor sit.&lt;/p&gt;
-&lt;/header&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>header {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-main" class="anchor-centered">Main</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col75">html</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <main class="revert">
-                                    <h1 class="revert head1">Lorem, ipsum.</h1>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <article class="browser">
-                                        <h2 class="revert">
-                                            Lorem, ipsum dolor.
-                                        </h2>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                    </article>
-                                    <article class="browser">
-                                        <h2 class="revert">Lorem, ipsum.</h2>
-                                        <p>
-                                            Lorem ipsum, dolor sit amet
-                                            <br />consectetur adipisicing elit.
-                                        </p>
-                                    </article>
-                                    <article class="browser">
-                                        <h2 class="revert">
-                                            Lorem, ipsum dolor.
-                                        </h2>
-                                        <p>
-                                            Lorem ipsum dolor <br />sit amet
-                                            consectetur.
-                                        </p>
-                                    </article>
-                                </main>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;main&gt;
-&lt;h1 class="revert head1">Lorem, ipsum.&lt;/h1&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;article class="browser"&gt;
-&lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/article&gt;
-&lt;article class="browser"&gt;
-&lt;h2 class="revert">Lorem, ipsum.&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum, dolor sit amet consectetur 
-    adipisicing elit.&lt;/p&gt;
-&lt;/article&gt;
-&lt;article class="browser"&gt;
-&lt;h2 class="revert">Lorem, ipsum dolor.&lt;/h2&gt;
-&lt;p>Lorem ipsum dolor sit amet consectetur.&lt;/p&gt;
-&lt;/article&gt;
-&lt;/main&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-footer" class="anchor-centered"
-                            >Footer</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <footer
-                                    class="revert"
-                                    style="background-color: lightgreen"
-                                >
-                                    <p>
-                                        Author: Hege Refsnes<br />
-                                        <a href="mailto:hege@example.com"
-                                            >hege@example.com</a
-                                        >
-                                    </p>
-                                </footer>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;footer&gt;
-&lt;p&gt;
-    Author: Hege Refsnes&lt;br /&gt;
-    &lt;a href="mailto:hege@example.com"
-        &gt;hege@example.com&lt;/a
-    &gt;
-&lt;/p&gt;
-&lt;/footer&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>footer {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-nav" class="anchor-centered">Nav</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <nav>
-                                    <a href="/html/">html</a> |
-                                    <a href="/css/">CSS</a> |
-                                    <a href="/js/">JavaScript</a>
-                                </nav>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;nav&gt;
-&lt;a href="/html/"&gt;html&lt;/a&gt; |
-&lt;a href="/css/"&gt;CSS&lt;/a&gt; |
-&lt;a href="/js/"&gt;JavaScript&lt;/a&gt; 
-&lt;/nav&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>nav {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <br /><br />
                 <section>
                     <h3>
@@ -2545,26 +2642,43 @@ Your browser does not support the video tag.
             <div class="container">
                 <div class="row">
                     <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
+                <div class="row">
+                    <div class="footer-column">
                         <h3 class="revert">HTML</h3>
                         <a href="../../../index.html">Homepage</a>
-                        <br /><a href="../../html-basics/index.html"
+                        <br /><a href="../../../HTML/html-basics/index.html"
                             >HTML Basics</a
                         >
-                        <br /><a href="../../html-buttons/index.html"
+                        <br /><a href="../../../HTML/html-buttons/index.html"
                             >Buttons</a
                         >
-                        <br /><a href="../../html-forms/index.html">Forms</a>
-                        <br /><a href="../../html-iframes/index.html"
+                        <br /><a href="../../../HTML/html-forms/index.html"
+                            >Forms</a
+                        >
+                        <br /><a href="../../../HTML/html-iframes/index.html"
                             >IFrames</a
                         >
-                        <br /><a href="../../html-images/index.html">Images</a>
-                        <br /><a href="../../html-links/index.html">Links</a>
-                        <br /><a href="../../html-lists/index.html">Lists</a>
-                        <br /><a href="../../html-scripts/index.html"
+                        <br /><a href="../../../HTML/html-images/index.html"
+                            >Images</a
+                        >
+                        <br /><a href="../../../HTML/html-links/index.html"
+                            >Links</a
+                        >
+                        <br /><a href="../../../HTML/html-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../HTML/html-scripts/index.html"
                             >Scripts</a
                         >
-                        <br /><a href="../../html-tables/index.html">Tables</a>
-                        <br /><a href="../../html-video-audio/index.html"
+                        <br /><a href="../../../HTML/html-tables/index.html"
+                            >Tables</a
+                        >
+                        <br /><a
+                            href="../../../HTML/html-video-audio/index.html"
                             >Video & Audio</a
                         >
                     </div>
@@ -2577,8 +2691,8 @@ Your browser does not support the video tag.
                         <br /><a
                             href="../../../CSS/css-properties/box/index.html"
                             >Box</a
-                        ><br />
-                        <a
+                        >
+                        <br /><a
                             href="../../../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
@@ -2590,7 +2704,6 @@ Your browser does not support the video tag.
                             href="../../../CSS/css-properties/flexbox/index.html"
                             >Flexbox</a
                         >
-
                         <br /><a
                             href="../../../CSS/css-properties/font-text/index.html"
                             >Font & text</a
@@ -2613,9 +2726,34 @@ Your browser does not support the video tag.
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone">-</div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>

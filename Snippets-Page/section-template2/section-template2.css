@@ -1,0 +1,82 @@
+body {
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #eae2b7bc;
+    padding: 15px;
+    /* Roboto */
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    margin-top: 125px;
+    z-index: -20;
+}
+
+h3 {
+    background-color: #fcbf4976;
+    border-radius: 5px;
+    margin: 5px 25px 5px 25px;
+    padding: 3px 15px;
+    font-size: 18px;
+    /* Kanit Regular */
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+pre {
+    /* background-color: #20262b; */
+    background-color: #003049;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.outer-table {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+}
+
+.head-row3,
+.body-row3 {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
+}
+
+.head-row,
+.body-row {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-auto-rows: auto;
+    column-gap: 3px;
+    padding: 5px;
+}
+
+.cell-header {
+    background-color: #504f4f;
+    text-align: center;
+    padding: 10px;
+    color: #fcdcb9;
+    font-weight: bold;
+}
+
+.cells:nth-child(odd) {
+    padding: 5px;
+    border-right: 2px solid #000;
+}
+
+.body-row:nth-child(even) {
+    border-bottom: 2px solid #000;
+}
+
+.odd-bg {
+    background-color: #00000017;
+}

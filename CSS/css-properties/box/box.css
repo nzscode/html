@@ -25,6 +25,7 @@
     all: revert;
     border: 2px solid black;
     visibility: collapse;
+    width: 300px;
 }
 #ex3 {
     height: 150px;

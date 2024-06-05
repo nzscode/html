@@ -35,7 +35,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Lists & Tables Properties</p>
+                    <!-- <p>CSS Lists & Tables Properties</p>
                     <ul class="tab20">
                         <p>Lists</p>
                         <li><a href="#list">List (shorthand)</a></li>
@@ -113,7 +113,7 @@
                             <li><a href="#striped-table">Striped Table</a></li>
                             <li><a href="#table-color">Table Color</a></li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -121,11 +121,7 @@
         <main>
             <article>
                 <section>
-                    <h3>
-                        <span id="list" class="anchor-centered"
-                            >List (shorthand)</span
-                        >
-                    </h3>
+                    <h2 id="list" class="lvl2">List (shorthand)</h2>
                     <ul>
                         <li>Is a shorthand for the following properties:</li>
                         <ul>
@@ -191,13 +187,11 @@
                         </div>
                     </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="list-image" class="anchor-centered"
-                            >List Style Image</span
-                        >
-                    </h3>
+                    <h2 id="list-image" class="lvl2">List Style Image</h2>
                     <ul>
                         <li>Replaces the list-item marker with an image.</li>
                         <li>
@@ -251,13 +245,11 @@
                         </div>
                     </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="list-position" class="anchor-centered"
-                            >List Style Position</span
-                        >
-                    </h3>
+                    <h2 id="list-position" class="lvl2">List Style Position</h2>
                     <ul>
                         <li>
                             Specifies the position of the list-item markers
@@ -295,24 +287,15 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.listStylePosition="inside"</code></pre>
-
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="inside"
-                                            class="anchor-centered"
-                                            >Inside</span
-                                        >
-                                    </h4>
+                    <section>
+                        <h3 id="inside" class="lvl3">Inside</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex3-1">
                                         <ul>
                                             <li>1</li>
@@ -322,8 +305,8 @@
                                             <li>5</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex3-1 ul li {
     border: 3px solid purple;
 }
@@ -331,17 +314,20 @@
 #ex3-1 ul {
     list-style-position: inside;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="outside"
-                                            class="anchor-centered"
-                                            >Outside</span
-                                        >
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="lvl3" id="outside">Outside</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex3-2">
                                         <ul>
                                             <li>6</li>
@@ -351,8 +337,8 @@
                                             <li>10</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex3-2 ul li {
     border: 3px solid hotpink;
 }
@@ -360,18 +346,16 @@
 #ex3-2 ul {
     list-style-position: outside;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="list-type" class="anchor-centered"
-                            >List Style Type</span
-                        >
-                    </h3>
+                    <h2 id="list-type" class="lvl2">List Style Type</h2>
                     <ul>
                         <li>
                             Specifies the type of list-item marker in a list.
@@ -454,21 +438,15 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.listStyleType="square"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="" class="anchor-centered"
-                                            >Upper Alpha</span
-                                        >
-                                    </h4>
+                    <section>
+                        <h3 class="lvl3" id="upper-alpha">Upper Alpha</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex4-1">
                                         <ul>
                                             <li>1</li>
@@ -479,20 +457,24 @@
                                             <li>6</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex4-1 ul li {
     list-style-type: upper-alpha;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="" class="anchor-centered"
-                                            >Lower Roman</span
-                                        >
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="lower-roman">Lower Roman</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex4-2">
                                         <ul>
                                             <li>7</li>
@@ -502,23 +484,23 @@
                                             <li>11</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex4-2 ul li {
     list-style-type: lower-roman;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="list-colors" class="anchor-centered"
-                            >List Item Marker Colors</span
-                        >
-                    </h3>
+                    <h2 id="list-colors" class="lvl2">
+                        List Item Marker Colors
+                    </h2>
                     <ul>
                         <li>
                             Adding bullet colors for &lt;ul&gt; or &lt;ol&gt; by
@@ -526,25 +508,17 @@
                             entity that looks like bullets (&#38;bull;):
                         </li>
                     </ul>
-
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="removing-default"
-                                            class="anchor-centered"
-                                            >Removing Bullets</span
-                                        >
-                                    </h4>
-                                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="removing-bullets">
+                            Removing Bullets
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex5-1">
                                         <ul>
                                             <li>1</li>
@@ -554,25 +528,28 @@
                                             <li>5</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex5-1 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="new-bullet"
-                                            class="anchor-centered"
-                                            >Adding New Bullet & Color</span
-                                        >
-                                    </h4>
-                                    <br /><br />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="new-bullet">
+                            Adding New Bullet & Color
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex5-2">
                                         <ul>
                                             <li>6</li>
@@ -584,8 +561,8 @@
                                             <li>12</li>
                                         </ul>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code><b><u>Removing Default Bullet</u></b>
 #ex5-2 ul {
     list-style: none;
@@ -599,160 +576,68 @@
     padding-right: 8px;
     color: red;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="tables" class="anchor-centered">Tables</span>
-                    </h3>
-                    <div id="outer-table" class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Example</div>
-                            <div class="cell-header">CSS</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="table-borders"
-                                        class="anchor-centered"
-                                        >Table Borders</span
-                                    >
-                                </h4>
-                                <table id="ex6-1" class="revert">
-                                    <thead class="revert">
-                                        <tr>
-                                            <th>col1</th>
-                                            <th>col2</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="revert">
-                                        <tr>
-                                            <td>row1</td>
-                                            <td>row1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>row2</td>
-                                            <td>row2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                </div>
                             </div>
-                            <div class="cells">
-                                <pre><code>#ex6-1 table,
+                        </div>
+                    </section>
+                </section>
+            </article>
+            <br /><br />
+            <article>
+                <section>
+                    <h2 id="tables" class="lvl2">Tables</h2>
+                    <section>
+                        <h3 class="lvl3" id="table-borders">Table Borders</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex6-1" class="revert">
+                                        <thead class="revert">
+                                            <tr>
+                                                <th>col1</th>
+                                                <th>col2</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="revert">
+                                            <tr>
+                                                <td>row1</td>
+                                                <td>row1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>row2</td>
+                                                <td>row2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex6-1 table,
 #ex6-1 tr,
 #ex6-1 th,
 #ex6-1 td {
     all: revert;
     border: 2px solid blue;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells odd-bg">
-                                <h4 class="title-css">
-                                    <span
-                                        id="full-width-table"
-                                        class="anchor-centered"
-                                        >Full Width Table</span
-                                    >
-                                </h4>
-                                <table id="ex6-2" class="revert">
-                                    <thead>
-                                        <tr>
-                                            <th>col1</th>
-                                            <th>col2</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>row1</td>
-                                            <td>row1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>row2</td>
-                                            <td>row2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="full-width-table">
+                            Full Width Table
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
                             </div>
-                            <div class="cells odd-bg">
-                                <pre><code>#ex6-2,
-table#ex6-2 th,
-table#ex6-2 td {
-    border: 2px solid black;
-}
-
-table#ex6-2 {
-    width: 100%;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="double-borders"
-                                        class="anchor-centered"
-                                        >Double Borders</span
-                                    >
-                                </h4>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        ><u>Table with Double Borders</u></span
-                                    >
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Notice that the table in the example
-                                        above has double borders. This is
-                                        because both the table and the
-                                        &lt;th&gt; and &lt;td&gt; elements have
-                                        separate borders.
-                                    </li>
-                                </ul>
-                                <table id="ex6-3-1">
-                                    <thead>
-                                        <tr>
-                                            <th>col1</th>
-                                            <th>col2</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>row1</td>
-                                            <td>row1</td>
-                                        </tr>
-                                        <tr>
-                                            <td>row2</td>
-                                            <td>row2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="cells">
-                                <pre><code><b><u>Table with Double Borders</u></b>
-#ex6-3-1,
-#ex6-3-1 tr,
-#ex6-3-1 th,
-#ex6-3-1 td {
-    border: 4px solid hotpink;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells odd-bg">
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"
-                                        >Double Borders</span
-                                    >
-                                </h4>
-                                <div>
-                                    <table id="ex6-4-1" class="revert">
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex6-2" class="revert">
                                         <thead>
                                             <tr>
                                                 <th>col1</th>
@@ -771,15 +656,122 @@ table#ex6-2 {
                                         </tbody>
                                     </table>
                                 </div>
-                                <br />
-                                <h4 class="title-css">
-                                    <span
-                                        id="collapse-table-borders"
-                                        class="anchor-centered"
-                                        >Collapsed Borders</span
-                                    >
-                                </h4>
-                                <div>
+                                <div class="cells">
+                                    <pre><code>#ex6-2,
+table#ex6-2 th,
+table#ex6-2 td {
+    border: 2px solid black;
+}
+
+table#ex6-2 {
+    width: 100%;
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="double-borders">
+                            Table with Double Borders
+                        </h3>
+                        <ul>
+                            <li>
+                                Notice that the table in the example above has
+                                double borders. This is because both the table
+                                and the &lt;th&gt; and &lt;td&gt; elements have
+                                separate borders.
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex6-3-1">
+                                        <thead>
+                                            <tr>
+                                                <th>col1</th>
+                                                <th>col2</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>row1</td>
+                                                <td>row1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>row2</td>
+                                                <td>row2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code><b><u>Table with Double Borders</u></b>
+#ex6-3-1,
+#ex6-3-1 tr,
+#ex6-3-1 th,
+#ex6-3-1 td {
+    border: 4px solid hotpink;
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="double-borders">Double Borders</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex6-4-1" class="revert">
+                                        <thead>
+                                            <tr>
+                                                <th>col1</th>
+                                                <th>col2</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>row1</td>
+                                                <td>row1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>row2</td>
+                                                <td>row2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br /><br />
+                                </div>
+                                <div class="cells">
+                                    <pre><code><b><u>Double Borders</u></b>
+#ex6-4-1,
+#ex6-4-1 tr,
+#ex6-4-1 th,
+#ex6-4-1 td {
+    border: 4px solid green;
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="collapse-table-borders">
+                            Collapsed Borders
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex6-4-2" class="revert">
                                         <thead>
                                             <tr>
@@ -799,35 +791,28 @@ table#ex6-2 {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells odd-bg">
-                                <pre><code><b><u>Double Borders</u></b>
-#ex6-4-1,
-#ex6-4-1 tr,
-#ex6-4-1 th,
-#ex6-4-1 td {
-    border: 4px solid green;
-}
-
-<b><u>Collapsed Borders</u></b>
+                                <div class="cells">
+                                    <pre><code><b><u>Collapsed Borders</u></b>
 #ex6-4-2 {
     border: 4px solid green;
     border-collapse: collapse;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="table-size" class="anchor-centered"
-                            >Table Size</span
-                        >
-                    </h3>
+                    <h2 id="table-size" class="lvl2">Table Size</h2>
                     <ul>
                         <li>Defined by the width and height properties.</li>
                     </ul>
+                    <h3 class="lvl3" id="table-width-height">
+                        Table Width & Height
+                    </h3>
                     <div id="outer-table" class="outer-table">
                         <div class="head-row">
                             <div class="cell-header">Example</div>
@@ -835,13 +820,6 @@ table#ex6-2 {
                         </div>
                         <div class="body-row">
                             <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="table-width-height"
-                                        class="anchor-centered"
-                                        >Table Width & Height</span
-                                    >
-                                </h4>
                                 <table id="ex7" class="revert">
                                     <thead>
                                         <tr>
@@ -873,13 +851,11 @@ table#ex6-2 {
                         </div>
                     </div>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="table-alignment" class="anchor-centered"
-                            >Table Alignment</span
-                        >
-                    </h3>
+                    <h2 id="table-alignment" class="lvl2">Table Alignment</h2>
                     <ul>
                         <b
                             ><u
@@ -912,45 +888,42 @@ table#ex6-2 {
                             elements).
                         </li>
                     </ul>
-                    <div id="outer-table" class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Example</div>
-                            <div class="cell-header">CSS</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="horizontal-alignment"
-                                        class="anchor-centered"
-                                        >Horizontal Alignment</span
-                                    >
-                                </h4>
-                                <table id="ex8-1">
-                                    <thead>
-                                        <tr>
-                                            <th>Col1 Header</th>
-                                            <th>Col2 Header</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Row1 Cell1</td>
-                                            <td>Row1 Cell2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Row2 Cell1</td>
-                                            <td>Row2 Cell2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Row3 Cell1</td>
-                                            <td>Row3 Cell2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <section>
+                        <h3 class="lvl3" id="horizontal-alignment">
+                            Horizontal Alignment
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
                             </div>
-                            <div class="cells">
-                                <pre><code>#ex8 {
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex8-1">
+                                        <thead>
+                                            <tr>
+                                                <th>Col1 Header</th>
+                                                <th>Col2 Header</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Row1 Cell1</td>
+                                                <td>Row1 Cell2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Row2 Cell1</td>
+                                                <td>Row2 Cell2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Row3 Cell1</td>
+                                                <td>Row3 Cell2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex8 {
     border: 2px solid black;
     text-align: center;
 }
@@ -966,43 +939,47 @@ table#ex8 td {
 #ex8 tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.192);
 }</code></pre>
+                                </div>
                             </div>
                         </div>
+                    </section>
 
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="vertical-alignment"
-                                        class="anchor-centered"
-                                        >Vertical Alignment</span
-                                    >
-                                </h4>
-                                <table id="ex8-2">
-                                    <thead>
-                                        <tr>
-                                            <th>Col1 Header</th>
-                                            <th>Col2 Header</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Row1 Cell1</td>
-                                            <td>Row1 Cell2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Row2 Cell1</td>
-                                            <td>Row2 Cell2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Row3 Cell1</td>
-                                            <td>Row3 Cell2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    <section>
+                        <h3 class="lvl3" id="vertical-alignment">
+                            Vertical Alignment
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
                             </div>
-                            <div class="cells">
-                                <pre><code>#ex8 {
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="ex8-2">
+                                        <thead>
+                                            <tr>
+                                                <th>Col1 Header</th>
+                                                <th>Col2 Header</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Row1 Cell1</td>
+                                                <td>Row1 Cell2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Row2 Cell1</td>
+                                                <td>Row2 Cell2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Row3 Cell1</td>
+                                                <td>Row3 Cell2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex8 {
     border: 2px solid black;
     text-align: center;
 }
@@ -1018,17 +995,16 @@ table#ex8 td {
 #ex8 tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.192);
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="table-style" class="anchor-centered"
-                            >Table Style</span
-                        >
-                    </h3>
+                    <h2 id="table-style" class="lvl2">Table Style</h2>
                     <ul>
                         <li>
                             To control the space between the border and the
@@ -1052,21 +1028,15 @@ table#ex8 td {
                         <h4 class="title-css">Property Values:</h4>
                         <li></li>
                     </ul>
-                    <div id="outer-table" class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Example</div>
-                            <div class="cell-header">CSS</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="table-padding"
-                                        class="anchor-centered"
-                                        >Table Padding</span
-                                    >
-                                </h4>
-                                <div>
+                    <section>
+                        <h3 class="lvl3" id="table-padding">Table Padding</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex9-1">
                                         <thead>
                                             <tr>
@@ -1090,9 +1060,8 @@ table#ex8 td {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells">
-                                <pre><code>#ex9-1 {
+                                <div class="cells">
+                                    <pre><code>#ex9-1 {
     border: 2px solid black;
     width: 100%;
 }
@@ -1104,18 +1073,21 @@ table#ex9-1 th,
 table#ex9-1 td {
     padding: 10px;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells odd-bg">
-                                <h4 class="title-css">
-                                    <span
-                                        id="horizontal-dividers"
-                                        class="anchor-centered"
-                                        >Horizontal Dividers</span
-                                    >
-                                </h4>
-                                <div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="horizontal-dividers">
+                            Horizontal Dividers
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex9-2">
                                         <thead>
                                             <tr>
@@ -1139,9 +1111,8 @@ table#ex9-1 td {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells odd-bg">
-                                <pre><code>#ex9-2 {
+                                <div class="cells">
+                                    <pre><code>#ex9-2 {
     border: 2px solid black;
     width: 100%;
 }
@@ -1151,18 +1122,19 @@ table#ex9-2 td {
     padding: 10px;
     border-bottom: 2px solid #ddd;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="hovering-table"
-                                        class="anchor-centered"
-                                        >Hovering Table</span
-                                    >
-                                </h4>
-                                <div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="hovering-table">Hovering Table</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex9-3">
                                         <thead>
                                             <tr>
@@ -1186,9 +1158,8 @@ table#ex9-2 td {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells">
-                                <pre><code>#ex9-3 {
+                                <div class="cells">
+                                    <pre><code>#ex9-3 {
     border: 2px solid black;
     width: 100%;
 }
@@ -1201,18 +1172,19 @@ table#ex9-3 td {
 table#ex9-3 tr:hover {
     background-color: salmon;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells odd-bg">
-                                <h4 class="title-css">
-                                    <span
-                                        id="striped-table"
-                                        class="anchor-centered"
-                                        >Striped Table</span
-                                    >
-                                </h4>
-                                <div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="striped-table">Striped Table</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex9-4">
                                         <thead>
                                             <tr>
@@ -1244,9 +1216,8 @@ table#ex9-3 tr:hover {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells odd-bg">
-                                <pre><code>#ex9-4 {
+                                <div class="cells">
+                                    <pre><code>#ex9-4 {
     border: 2px solid black;
     width: 100%;
 }
@@ -1259,18 +1230,19 @@ table#ex9-4 td {
 table#ex9-4 tr:nth-child(even) {
     background-color: cadetblue;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <h4 class="title-css">
-                                    <span
-                                        id="table-color"
-                                        class="anchor-centered"
-                                        >Table Color</span
-                                    >
-                                </h4>
-                                <div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="table-color">Table Color</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <table id="ex9-5">
                                         <thead>
                                             <tr>
@@ -1294,9 +1266,8 @@ table#ex9-4 tr:nth-child(even) {
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class="cells">
-                                <pre><code>#ex9-5 {
+                                <div class="cells">
+                                    <pre><code>#ex9-5 {
     border: 2px solid black;
     width: 100%;
 }
@@ -1310,82 +1281,22 @@ table#ex9-5 th {
     background-color: rgb(144, 30, 210);
     color: #fff;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-                <br /><br />
             </article>
-            <!-- 
-                <section>
-                <h3><span id="" class="anchor-centered"></span></h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th class="css-width">CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4 class="title-css">
-                                <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br><br>
-        -->
-
-            <!-- <div id="outer-table" class="outer-table">
-            <div class="head-row">
-                <div class="cell-header">Example</div>
-                <div class="cell-header">CSS</div>
-            </div>
-            <div class="body-row">
-                <div class="cells">Row 1 Cell 1</div>
-                <div class="cells">Row 1 Cell 2</div>
-            </div>
-            <div class="body-row">
-                <div class="cells odd-bg">Row 2 Cell 1</div>
-                <div class="cells odd-bg">
-                    <pre><code></code></pre>
-                </div>
-            </div>
-            <div class="body-row">
-                <div class="cells">Row 2 Cell 1</div>
-                <div class="cells">
-                    <pre><code></code></pre>
-                </div>
-            </div>
-        </div> -->
         </main>
+        <br /><br />
         <footer>
             <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
@@ -1425,16 +1336,26 @@ table#ex9-5 th {
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
+                        <a href="../css-properties/border/index.html">Border</a>
+                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <br /><a
+                            href="../css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
+                        <br /><a href="../css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><a href="../css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
@@ -1445,9 +1366,34 @@ table#ex9-5 th {
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>

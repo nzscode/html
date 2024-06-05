@@ -1,0 +1,19 @@
+#nav-ribbon {
+    font-size: 35px;
+}
+
+#nav-container {
+    display: none;
+    width: 20%;
+    min-height: 300px;
+    z-index: 10;
+    background-color: darkgray;
+}
+
+#nav-close {
+    display: block;
+    text-align: right;
+    margin-right: 25px;
+    padding-top: 15px;
+    font-size: 25px;
+}

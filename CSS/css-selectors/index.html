@@ -34,7 +34,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Selectors</p>
+                    <!-- <p>CSS Selectors</p>
                     <ul>
                         <li>
                             <a href="#element-selector">Element Selector</a>
@@ -88,7 +88,7 @@
                         <li><a href="#before-after">::before | ::after</a></li>
                         <li><a href="#placeholder">::placeholder</a></li>
                         <li><a href="#marker">::marker</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -98,520 +98,722 @@
         <main>
             <article>
                 <section>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Selector</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="element-selector"
-                                            class="anchor-centered"
-                                            >Element Selector</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects all elements of a given node type
-                                    <br />
-                                    <pre><code>p {
+                    <h2 class="lvl2" id="element-selector">Element Selector</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects all elements of a given node type
+                            </div>
+                            <div class="cells">
+                                <pre><code>p {
     background-color:orange;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="class-selector"
-                                            class="anchor-centered"
-                                            >Class Selector</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects all elements with class="intro"<br />
-                                    <pre><code>.intro {
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="class-selector">Class Selector</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects all elements with class="intro"
+                            </div>
+                            <div class="cells">
+                                <pre><code>.intro {
     background-color: green;
 }</code></pre>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="id-selector"
-                                            class="anchor-centered"
-                                            >ID Selector</span
-                                        >
-                                    </h4>
-                                </td>
-
-                                <td>
-                                    Selects an element with a specific id <br />
-                                    <pre><code>#title-para{
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="id-selector">ID Selector</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects an element with a specific id
+                            </div>
+                            <div class="cells">
+                                <pre><code>#title-para{
     background-color:orange;
 }</code></pre>
-                                </td>
-                            </tr>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="universal-selector"
-                                            class="anchor-centered"
-                                            >Universal Selector</span
-                                        >
-                                    </h4>
-                                </td>
-
-                                <td>
-                                    Selects all elements. Its power comes from
-                                    combining it with other selectors <br />
-                                    <pre><code>* {
+                <section>
+                    <h2 class="lvl2" id="universal-selector">
+                        Universal Selector
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects all elements. Its power comes from
+                                combining it with other selectors
+                            </div>
+                            <div class="cells">
+                                <pre><code>* {
     background-color:orange;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="attribute-selector"
-                                            class="anchor-centered"
-                                            >Attribute Selector</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects elements based on the presence or
-                                    value of some attribute
-                                    <ul>
-                                        <li>[attr] Has an attr attribute</li>
-                                        <li>
-                                            [attr=value] Has an attr attribute,
-                                            whose value is exactly value
-                                        </li>
-                                        <li>
-                                            [attr*=value] Has an attr attribute,
-                                            whose value contains value
-                                        </li>
-                                        <li>
-                                            [attr^=value] Has an attr attribute,
-                                            whose value starts with value
-                                        </li>
-                                        <li>
-                                            [attr$=value] Has an attr attribute,
-                                            whose value ends with value
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="descendant-combiner"
-                                            class="anchor-centered"
-                                            >Descendant Combiner</span
-                                        >
-                                    </h4>
-                                </td>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="attribute-selector">
+                        Attribute Selector
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements based on the presence or value
+                                of some attribute
+                                <ul>
+                                    <li>[attr] Has an attr attribute</li>
+                                    <li>
+                                        [attr=value] Has an attr attribute,
+                                        whose value is exactly value
+                                    </li>
+                                    <li>
+                                        [attr*=value] Has an attr attribute,
+                                        whose value contains value
+                                    </li>
+                                    <li>
+                                        [attr~=value] Is used to select elements
+                                        with an attribute value containing a
+                                        specified word
+                                    </li>
+                                    <li>
+                                        [attr|=value] Is used to select elements
+                                        with the specified attribute, whose
+                                        value can be exactly the specified
+                                        value, or the specified value followed
+                                        by a hyphen (-).
 
-                                <td>
-                                    Selects elements matching B that are
-                                    descendants of A <br />
-                                    <pre><code>A B {
+                                        <br /><br />Note: The value has to be a
+                                        whole word, either alone, like
+                                        class="top", or followed by a hyphen( -
+                                        ), like class="top-text".
+                                    </li>
+                                    <li>
+                                        [attr^=value] Has an attr attribute,
+                                        whose value starts with value
+                                    </li>
+                                    <li>
+                                        [attr$=value] Has an attr attribute,
+                                        whose value ends with value
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>[attr] selector</u></b>
+a[target] {
+  background-color: yellow;
+}
+
+<b><u>[attr=value]</u></b>
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+<b><u>[attr*=value]</u></b>
+[class*="te"] {
+    background: yellow;
+}
+
+<b><u>[attr~=value]</u></b>
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+
+<b><u>[attr|=value]</u></b>
+[class|="top"] {
+  background: yellow;
+}
+
+<b><u>[attr^=value]</u></b>
+[class^="top"] {
+  background: yellow;
+}
+
+<b><u>[attr$=value]</u></b>
+[class$="test"] {
+  background: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="lvl2" id="descendant-combiner">
+                        Descendant Combiner
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements matching B that are descendants
+                                of A
+                            </div>
+                            <div class="cells">
+                                <pre><code>A B {
     background-color:orange;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="child-combiner"
-                                            class="anchor-centered"
-                                            >Child Combiner</span
-                                        >
-                                    </h4>
-                                </td>
-
-                                <td>
-                                    Selects elements matching B that are direct
-                                    children of A <br />
-                                    <pre><code>A > B {
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="child-combiner">Child Combiner</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements matching B that are direct
+                                children of A
+                            </div>
+                            <div class="cells">
+                                <pre><code>A > B {
     background-color:orange;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="adjacent-sibling-combiner"
-                                            class="anchor-centered"
-                                            >Adjacent Sibling Combiner</span
-                                        >
-                                    </h4>
-                                </td>
-
-                                <td>
-                                    Selects elements matching B that directly
-                                    follow A. Both elements have to share the
-                                    same parent. <br />
-                                    <pre><code>A + B {
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="adjacent-sibling-combiner">
+                        Adjacent Sibling Combiner
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements matching B that directly follow
+                                A. Both elements have to share the same parent.
+                            </div>
+                            <div class="cells">
+                                <pre><code>A + B {
     background-color: hotpink;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="general-sibling-combiner"
-                                            class="anchor-centered"
-                                            >General Sibling Combiner</span
-                                        >
-                                    </h4>
-                                </td>
-
-                                <td>
-                                    Selects elements matching B that follow A
-                                    (but not necessarily immediately). Both
-                                    elements have to share the same parent.
-                                    <br />
-                                    <pre><code>A ~ B {
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="general-sibling-combiner">
+                        General Sibling Combiner
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements matching B that follow A (but
+                                not necessarily immediately). Both elements have
+                                to share the same parent.
+                            </div>
+                            <div class="cells">
+                                <pre><code>A ~ B {
     background-color: hotpink;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="hover" class="anchor-centered"
-                                            >:hover</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects an element, when the user's mouse is
-                                    above it
-                                    <ul>
-                                        <li>
-                                            never use it to reveal critical
-                                            information or functionality,
-                                            without a proper
-                                            touchscreen-friendly fallback
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="focus" class="anchor-centered"
-                                            >:focus</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects an element when the user clicks or
-                                    taps on it, or selects it with the keyboard,
-                                    by using the Tab key.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="not" class="anchor-centered"
-                                            >:not()</span
-                                        >
-                                    </h4>
-                                </td>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                <td>
-                                    Selects elements that don't match X <br />It
-                                    can be combined with other selectors,
-                                    including other pseudo-classes (but not
-                                    pseudo-elements) to exlude certain elements,
-                                    or states from receiving the styles. <br />
-                                    Ex:
-                                    <ul>
-                                        <li>
-                                            p:not(.red) — Selects all &lt;p&gt;
-                                            elements that don't have the red
-                                            class
-                                        </li>
-                                        <li>
-                                            div :not(ul) — Selects all
-                                            descendants of &lt;div&gt; elements
-                                            that aren't &lt;ul&gt; elements
-                                        </li>
-                                        <li>
-                                            button:not(:focus) — Selects all
-                                            &lt;button&gt; elements that aren't
-                                            focused
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="any-link"
-                                            class="anchor-centered"
-                                            >:any-link</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects anchor tags &lt;a&gt; with an href
-                                    attribute, whether it has been visited or
-                                    not.
+                <section>
+                    <h2 class="lvl2" id="hover">:hover</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects an element, when the user's mouse is
+                                above it
+                                <ul>
+                                    <li>
+                                        never use it to reveal critical
+                                        information or functionality, without a
+                                        proper touchscreen-friendly fallback
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code>a:hover {
+  background-color: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="focus">:focus</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects an element when the user clicks or taps
+                                on it, or selects it with the keyboard, by using
+                                the Tab key.
+                            </div>
+                            <div class="cells">
+                                <pre><code>input:focus {
+  background-color: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="not">:not()</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements that don't match X <br />It can
+                                be combined with other selectors, including
+                                other pseudo-classes (but not pseudo-elements)
+                                to exlude certain elements, or states from
+                                receiving the styles. <br />
+                                Ex:
+                                <ul>
+                                    <li>
+                                        p:not(.red) — Selects all &lt;p&gt;
+                                        elements that don't have the red class
+                                    </li>
+                                    <li>
+                                        div :not(ul) — Selects all descendants
+                                        of &lt;div&gt; elements that aren't
+                                        &lt;ul&gt; elements
+                                    </li>
+                                    <li>
+                                        button:not(:focus) — Selects all
+                                        &lt;button&gt; elements that aren't
+                                        focused
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code>:not(p) {
+  background: #ff0000;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                    <br />To only match links that haven't been
-                                    visited yet, use :link <br />To only match
-                                    links that have been visited before, use
-                                    :visited <br />Note: :any-link is not
-                                    supported in Internet Explorer, if you need
-                                    to support it use :link & :visited instead.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="disabled"
-                                            class="anchor-centered"
-                                            >:disabled</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects disabled elements.
-                                    <br />
-                                    It's most commonly used with buttons, inputs
-                                    and other form elements that have the
-                                    disabled attribute.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="nth-child-nth-last-child"
-                                            class="anchor-centered"
-                                            >:nth-child() &
-                                            :nth-last-child()</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Selects elements based on their position in
-                                    a group.<br />Ex
-                                    <ul>
-                                        <li>
-                                            :nth-child(3) Selects the third
-                                            element.
-                                        </li>
+                <section>
+                    <h2 class="lvl2" id="any-link">:any-link</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects anchor tags &lt;a&gt; with an href
+                                attribute, whether it has been visited or not.
 
-                                        <li>
-                                            :nth-child(4n) Selects every fourth
-                                            element: 4, 8, 12, 16 etc.
-                                        </li>
+                                <br />To only match links that haven't been
+                                visited yet, use :link <br />To only match links
+                                that have been visited before, use :visited
+                                <br />Note: :any-link is not supported in
+                                Internet Explorer, if you need to support it use
+                                :link & :visited instead.
+                            </div>
+                            <div class="cells">
+                                <pre><code>a:link {
+  background-color: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                        <li>
-                                            :nth-child(odd) Selects the odd
-                                            elements: 1, 3, 5 etc.
-                                        </li>
+                <section>
+                    <h2 class="lvl2" id="disabled">:disabled</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects disabled elements.
+                                <br />
+                                It's most commonly used with buttons, inputs and
+                                other form elements that have the disabled
+                                attribute.
+                            </div>
+                            <div class="cells">
+                                <pre><code>input[type="text"]:disabled {
+  background: #dddddd;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="nth-child-nth-last-child">
+                        :nth-child() & :nth-last-child()
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects elements based on their position in a
+                                group.<br />Ex
+                                <ul>
+                                    <li>
+                                        :nth-child(3) Selects the third element.
+                                    </li>
 
-                                        <li>
-                                            :nth-child(even) Selects the even
-                                            elements: 2, 4, 6 etc.
-                                        </li>
-                                    </ul>
-                                    <br />
-                                    The :nth-child() selector selects elements
-                                    from the beginning, and :nth-last-child()
-                                    does the same but starting from the end.<br />There
-                                    are also a few convenience pseudo-classes,
-                                    that offer a more readable alternative for
-                                    common use cases:
+                                    <li>
+                                        :nth-child(4n) Selects every fourth
+                                        element: 4, 8, 12, 16 etc.
+                                    </li>
 
-                                    <br />:first-child <br />:last-child
-                                    <br />:only-child
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="nth-of-type-nth-last-of-type"
-                                            class="anchor-centered"
-                                            >:nth-of-type() &
-                                            :nth-last-of-type()</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    These pseudo-classes work like :nth-child()
-                                    & :nth-last-child() but only count elements
-                                    of a given type.
-                                    <br />
-                                    Like with :nth-child() & :nth-last-child(),
-                                    there are also some convenience
-                                    pseudo-classes:
+                                    <li>
+                                        :nth-child(odd) Selects the odd
+                                        elements: 1, 3, 5 etc.
+                                    </li>
 
-                                    <br />:first-of-type <br />:last-of-type
-                                    <br />:only-of-type
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="invalid-valid"
-                                            class="anchor-centered"
-                                            >:invalid & :valid</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    :invalid selects &lt;inputs&gt; or other
-                                    form elements whose content doesn't match
-                                    its validation rules. <br />For example a
-                                    &lt;input type=”number” min="5"&gt; whose
-                                    value is 4. <br />Or, a &lt;input
-                                    type="text" required&gt; that is empty.<br />
-                                    :valid selects form elements whose content
-                                    matches its validation rules. <br />For
-                                    example a &lt;input type=”number”
-                                    min="5"&gt; whose value is 7.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="required-optional"
-                                            class="anchor-centered"
-                                            >:required & :optional</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    :required selects &lt;inputs&gt; or other
-                                    form elements which have the required
-                                    attribute. :optional selects form elements
-                                    that don't have the required attribute.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="root" class="anchor-centered"
-                                            >:root</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    It selects the root element of the document.
-                                    It's almost identical to the html selector,
-                                    but has higher specificity. It's a great
-                                    place to set global CSS variables.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="before-after"
-                                            class="anchor-centered"
-                                            >::before | ::after</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    When added to another selector, they can add
-                                    additional content before or after an
-                                    element, using the content property.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="palceholder"
-                                            class="anchor-centered"
-                                            >::placeholder</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>
-                                    Used to apply styles to the placeholder text
-                                    in &lt;input&gt; elements.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="marker"
-                                            class="anchor-centered"
-                                            >::marker</span
-                                        >
-                                    </h4>
-                                </td>
-                                <td>Selects the markers of list items.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    <li>
+                                        :nth-child(even) Selects the even
+                                        elements: 2, 4, 6 etc.
+                                    </li>
+                                </ul>
+                                <br />
+                                The :nth-child() selector selects elements from
+                                the beginning, and :nth-last-child() does the
+                                same but starting from the end.<br />There are
+                                also a few convenience pseudo-classes, that
+                                offer a more readable alternative for common use
+                                cases:
+
+                                <br />:first-child <br />:last-child
+                                <br />:only-child
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>:nth-child</u></b>
+/* Selects the second element of div siblings */
+div:nth-child(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-child(3) {
+  background: yellow;
+}
+
+<b><u>:nth-last-child</u></b>
+p:nth-last-child(2) {
+  background: red;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="lvl2" id="nth-of-type-nth-last-of-type">
+                        :nth-of-type() & :nth-last-of-type()
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                These pseudo-classes work like :nth-child() &
+                                :nth-last-child() but only count elements of a
+                                given type.
+                                <br />
+                                Like with :nth-child() & :nth-last-child(),
+                                there are also some convenience pseudo-classes:
+
+                                <br />:first-of-type <br />:last-of-type
+                                <br />:only-of-type
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>:nth-of-type()</u></b>
+/* Selects the second element of div siblings */
+div:nth-of-type(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+li:nth-of-type(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-of-type(3) {
+  background: yellow;
+}
+
+<b><u>:nth-last-of-type()</u></b>
+p:nth-last-of-type(2) {
+  background: red;
+}
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="lvl2" id="invalid-valid">:invalid & :valid</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                :invalid selects &lt;inputs&gt; or other form
+                                elements whose content doesn't match its
+                                validation rules. <br />For example a &lt;input
+                                type=”number” min="5"&gt; whose value is 4.
+                                <br />Or, a &lt;input type="text" required&gt;
+                                that is empty.<br />
+                                :valid selects form elements whose content
+                                matches its validation rules. <br />For example
+                                a &lt;input type=”number” min="5"&gt; whose
+                                value is 7.
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>:invalid</u></b>
+input:invalid {
+  border: 2px solid red;
+}
+
+<b><u>:valid</u></b>
+input:valid {
+  background-color: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="lvl2" id="required-optional">
+                        :required & :optional
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                :required selects &lt;inputs&gt; or other form
+                                elements which have the required attribute.
+                                :optional selects form elements that don't have
+                                the required attribute.
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>:required</u></b>
+input:required {
+  background-color: yellow;
+}
+
+<b><u>:optional</u></b>
+input:optional {
+  background-color: yellow;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="root">:root</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                It selects the root element of the document.
+                                It's almost identical to the html selector, but
+                                has higher specificity. It's a great place to
+                                set global CSS variables.
+                            </div>
+                            <div class="cells">
+                                <pre><code>:root {
+  background: #ff0000;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="before-after">::before | ::after</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                When added to another selector, they can add
+                                additional content before or after an element,
+                                using the content property.
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>::before</u></b>
+p::before {
+  content: "Read this: ";
+}
+
+<b><u>::after</u></b>
+p::after {
+  content: " - Remember this";
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="lvl2" id="palceholder">::placeholder</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Used to apply styles to the placeholder text in
+                                &lt;input&gt; elements.
+                            </div>
+                            <div class="cells">
+                                <pre><code>::-ms-input-placeholder { /* Edge 12-18 */
+  color: red;
+}
+
+::placeholder {
+  color: red;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="marker">::marker</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                Selects the markers of list items.
+                            </div>
+                            <div class="cells">
+                                <pre><code>::marker {
+  color: red;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
         </main>
+        <br /><br /><br /><br />
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="footer-column">
-                        <h3 class="revert">HTML</h3>
                         <a href="../../index.html">Homepage</a>
-                        <br /><a href="../../HTML/html-basics/index.html"
+                    </div>
+                </div>
+                <hr class="revert" />
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">HTML</h3>
+                        <a href="../../../HTML/html-basics/index.html"
                             >HTML Basics</a
                         >
-                        <br /><a href="../../HTML/html-buttons/index.html"
+                        <br /><a href="../../../HTML/html-buttons/index.html"
                             >Buttons</a
                         >
-                        <br /><a href="../../HTML/html-forms/index.html"
+                        <br /><a href="../../../HTML/html-forms/index.html"
                             >Forms</a
                         >
-                        <br /><a href="../../HTML/html-iframes/index.html"
+                        <br /><a href="../../../HTML/html-iframes/index.html"
                             >IFrames</a
                         >
-                        <br /><a href="../../HTML/html-images/index.html"
+                        <br /><a href="../../../HTML/html-images/index.html"
                             >Images</a
                         >
-                        <br /><a href="../../HTML/html-links/index.html"
+                        <br /><a href="../../../HTML/html-links/index.html"
                             >Links</a
                         >
-                        <br /><a href="../../HTML/html-lists/index.html"
+                        <br /><a href="../../../HTML/html-lists/index.html"
                             >Lists</a
                         >
-                        <br /><a href="../../HTML/html-scripts/index.html"
+                        <br /><a href="../../../HTML/html-scripts/index.html"
                             >Scripts</a
                         >
-                        <br /><a href="../../HTML/html-tables/index.html"
+                        <br /><a href="../../../HTML/html-tables/index.html"
                             >Tables</a
                         >
-                        <br /><a href="../../HTML/html-video-audio/index.html"
+                        <br /><a
+                            href="../../../HTML/html-video-audio/index.html"
                             >Video & Audio</a
                         >
                     </div>
@@ -642,15 +844,40 @@
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>
-                        <a href="./index.html">Selectors</a>
+                        <a href="../../css-selectors/index.html">Selectors</a>
                     </div>
                     <div class="footer-column">
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../nav-menu.js"></script>
     </body>
 </html>

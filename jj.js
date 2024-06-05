@@ -2,64 +2,44 @@
 // ALSO ADD THIS SCRIPT.
 
 let testZone = document.getElementById("test-zone");
+let nav = document.getElementById("nav");
+let lvl2List = document.getElementsByClassName("lvl2");
+console.log(lvl2List);
+let allHTML = `<ul>`;
+for (let i = 0; i < lvl2List.length; i++) {
+    const lvl2Item = lvl2List[i];
+    const lvl2ID = lvl2Item.getAttribute("id");
+    const lvl2Text = lvl2Item.innerHTML;
+    console.log(lvl2Item);
+    allHTML += `<li><a href="./#${lvl2ID}">${lvl2Text}</a></li>`;
+    let lvl3List = lvl2Item.parentElement.getElementsByClassName("lvl3");
+    if (lvl3List.length > 0) {
+        let lvl3HTML = `<ul>`;
+        for (let j = 0; j < lvl3List.length; j++) {
+            const lvl3Item = lvl3List[j];
+            const lvl3ID = lvl3Item.getAttribute("id");
+            const lvl3Text = lvl3Item.innerHTML;
 
-// To Find All H2 Elements, and get their keywords(id), and their Titles, and their child nodes
-let h2 = document.querySelectorAll("article section h2");
-let links = "";
-let linksToSegment = "";
-for (let i = 0; i < h2.length; i++) {
-    const h2ID = h2[i].parentElement;
-    const h2IDAttr = h2[i].parentNode.getAttribute("id");
-    const h2HTML = h2[i].innerHTML;
+            lvl3HTML += `<li><a href="./#${lvl3ID}">${lvl3Text}</a></li>`;
 
-    // console.log(`<li><a href="./#${h2IDAttr}"]>${h2HTML}</a></li>`);
-    links += `<li><a href="./#${h2IDAttr}">${h2HTML}</a></li>`;
-    linksToSegment +=
-        '<li><a href="./#' + h2IDAttr + '">' + h2HTML + "</a></li>";
+            let lvl4List =
+                lvl3Item.parentElement.getElementsByClassName("lvl4");
+            if (lvl4List.length > 0) {
+                let lvl4HTML = `<ul>`;
+                for (let k = 0; k < lvl4List.length; k++) {
+                    const lvl4Item = lvl4List[k];
+                    const lvl4ID = lvl4Item.getAttribute("id");
+                    const lvl4Text = lvl4Item.innerHTML;
 
-    // console.log(h2HTML);
-    let h2IDChildren = h2ID.children;
-    for (let j = 0; j < h2IDChildren.length; j++) {
-        const parentChildren = h2IDChildren[j].querySelectorAll("h3");
-
-        if (parentChildren.length > 0) {
-            for (let k = 0; k < parentChildren.length; k++) {
-                links += `<ul>`;
-                linksToSegment += "<ul>";
-
-                const h3ID = parentChildren[k].parentElement;
-
-                const h3IDAttr =
-                    parentChildren[k].parentNode.getAttribute("id");
-                const h3HTML = parentChildren[k].innerHTML;
-                // console.log(h3IDAttr);
-                // console.log(`<li><a href="./#${h3IDAttr}"]>${h3HTML}</a></li>`);
-                links += `<li><a href="./#${h3IDAttr}">${h3HTML}</a></li>`;
-                linksToSegment +=
-                    '<li><a href="./#' + h3IDAttr + '">' + h3HTML + "</a></li>";
-                // console.log(h3HTML);
+                    lvl4HTML += `<li><a href="./#${lvl4ID}">${lvl4Text}</a></li>`;
+                }
+                lvl4HTML += `</ul>`;
+                lvl3HTML += lvl4HTML;
             }
-            links += `</ul>`;
-            linksToSegment += "</ul>";
         }
+        lvl3HTML += `</ul>`;
+        allHTML += lvl3HTML;
     }
 }
-
-console.log(links);
-let navLinks = document.getElementById("nav-links");
-for (let i = 0; i < links.length; i++) {
-    let row = links[i];
-    navLinks.innerText = row;
-}
-
-navLinks.innerHTML = links;
-
-console.log(linksToSegment);
-
-// let h = links.length;
-// testZone.innerHTML = links;
-// console.log(links);
-
-// let regUL = /\<\/ul\>\<ul\>/gm;
-// let newLinks = links.replace(regUL, "");
-// navLinks.innerHTML = newLinks;
+testZone.innerHTML += allHTML;
+nav.innerHTML += allHTML;

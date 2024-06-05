@@ -35,7 +35,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Columns Properties</p>
+                    <!-- <p>CSS Columns Properties</p>
                     <ul>
                         <li>
                             <a href="#basic-columns">Columns (shorthand)</a>
@@ -70,7 +70,7 @@
                         <li><a href="#col-rule-style">Column Rule Style</a></li>
                         <li><a href="#col-rule-color">Column Rule Color</a></li>
                         <li><a href="#col-span">Column Span</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -78,11 +78,7 @@
         <main>
             <article>
                 <section>
-                    <h3>
-                        <span id="basic-columns" class="anchor-centered"
-                            >Columns (shorthand)</span
-                        >
-                    </h3>
+                    <h2 id="basic-columns" class="lvl2">Columns (shorthand)</h2>
                     <ul>
                         <li>Is a shorthand property for:</li>
                         <ul>
@@ -124,24 +120,15 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.columns="100px 3"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="col-width"
-                                            class="anchor-centered"
-                                            >Column Width</span
-                                        >
-                                    </h4>
-
+                    <section>
+                        <h3 class="lvl3" id="col-width">Column Width</h3>
+                        <div class="outer-table">
+                            <div class="head-row40">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row40">
+                                <div class="cells">
                                     <div id="ex1-1">
                                         <div id="ex1-1a">
                                             <p>
@@ -163,8 +150,8 @@
                                             </p>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex1-1 {
     background-color: aqua;
     width: 400px;
@@ -174,17 +161,19 @@
     column-width: 150px;
     border: 2px dotted green;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="col-count"
-                                            class="anchor-centered"
-                                            >Column Count</span
-                                        >
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="col-count">Column Count</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex1-2">
                                         <p>
                                             Lorem ipsum dolor sit amet
@@ -204,23 +193,21 @@
                                             Facere molestiae,
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex1-2 {
     column-count: 3;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="col-gap" class="anchor-centered"
-                            >Column Gap</span
-                        >
-                    </h3>
+                    <h2 id="col-gap" class="lvl2">Column Gap</h2>
                     <ul>
                         <li>
                             Sspecifies the gap between the columns in grid,
@@ -251,21 +238,15 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.columnGap="50px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span id="gap" class="anchor-centered"
-                                            >Gap</span
-                                        >
-                                    </h4>
+                    <section>
+                        <h3 class="lvl3" id="gap">Gap</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex2-1">
                                         <p>
                                             Lorem ipsum dolor sit amet
@@ -275,24 +256,27 @@
                                             voluptates nihil?
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex2-1 {
     column-count: 3;
     column-gap: 50px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="grid-col-gap"
-                                            class="anchor-centered"
-                                            >Column Gap in a Grid</span
-                                        >
-                                    </h4>
-
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="grid-col-gap">
+                            Column Gap in a Grid
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row40">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row40">
+                                <div class="cells">
                                     <div id="ex2-2-container">
                                         <div class="ex2-2">
                                             <p>
@@ -325,8 +309,8 @@
                                             </p>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code><b><u>Grid Container</u></b>
 #ex2-2-container {
     display: grid;
@@ -343,17 +327,21 @@
     height: 100px;
     background-color: lightblue;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="flex-col-gap"
-                                            class="anchor-centered"
-                                            >Column Gap in Flexbox</span
-                                        >
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="flex-col-gap">
+                            Column Gap in Flexbox
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex2-3-container">
                                         <div class="ex2-3">
                                             <p>
@@ -386,8 +374,8 @@
                                             </p>
                                         </div>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code><b><u>Flex Container</u></b>
 #ex2-2-container {
     display: flex;
@@ -405,18 +393,16 @@
     height: 100px;
     background-color: orange;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="col-fill" class="anchor-centered"
-                            >Column Fill</span
-                        >
-                    </h3>
+                    <h2 id="col-fill" class="lvl2">Column Fill</h2>
                     <ul>
                         <li>Specifies how to fill columns, balanced or not.</li>
                         <li>
@@ -450,23 +436,17 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.columnFill="auto"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="col-fill-auto"
-                                            class="anchor-centered"
-                                            >Column Fill: Auto</span
-                                        >
-                                    </h4>
+                    <section>
+                        <h3 class="lvl3" id="col-fill-auto">
+                            Column Fill: Auto
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex3-1">
                                         <p>
                                             Lorem ipsum dolor sit, amet
@@ -483,24 +463,28 @@
                                             eos! Beatae, eligendi.
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex3-1 {
     column-count: 2;
     column-fill: auto;
     column-gap: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="col-fill-balance"
-                                            class="anchor-centered"
-                                            >Column Fill: Balance</span
-                                        >
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="col-fill-balance">
+                            Column Fill: Balance
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex3-2">
                                         <p>
                                             Lorem ipsum dolor sit, amet
@@ -517,25 +501,23 @@
                                             eos! Beatae, eligendi.
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex3-2 {
     column-count: 2;
     column-fill: balance;
     column-gap: 20px;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="col-rule" class="anchor-centered"
-                            >Column Rule</span
-                        >
-                    </h3>
+                    <h2 id="col-rule" class="lvl2">Column Rule</h2>
                     <ul>
                         <li>
                             Sets the width, style, and color of the rule between
@@ -579,88 +561,68 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.columnRule="3px outset blue"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex4-1">
-                                        <p>
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit. Fuga
-                                            architecto optio rem ad
-                                            necessitatibus impedit debitis
-                                            doloribus, minima modi nam hic ut,
-                                            qui doloremque perspiciatis?
-                                        </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4-1 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <div id="ex4-1">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing elit. Fuga architecto optio
+                                        rem ad necessitatibus impedit debitis
+                                        doloribus, minima modi nam hic ut, qui
+                                        doloremque perspiciatis?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex4-1 {
     column-count: 3;
     column-gap: 15px;
     column-rule: 4px double green;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="col-rule-width" class="anchor-centered"
-                            >Column Rule: Width</span
-                        >
-                    </h3>
-                    <ul>
-                        <li>
-                            Specifies the width of the rule between columns.
-                        </li>
-                        <h4 class="title-css">Property Values:</h4>
-                        <li>medium: Default value. Defines a medium rule</li>
-                        <li>thin: Defines a thin rule</li>
-                        <li>thick: Defines a thick rule</li>
-                        <li>length: Specifies the width of the rule</li>
-                        <li>
-                            initial: Sets this property to its default value.
-                        </li>
-                        <li>
-                            inherit: Inherits this property from its parent
-                            element.
-                        </li>
-                    </ul>
-                    <h3 class="js-title">Javascript</h3>
-                    <pre
-                        class="js-pre"
-                    ><code>object.style.columnRuleWidth="10px"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <section>
+                        <h3 id="col-rule-width" class="lvl3">
+                            Column Rule: Width
+                        </h3>
+                        <ul>
+                            <li>
+                                Specifies the width of the rule between columns.
+                            </li>
+                            <h4 class="title-css">Property Values:</h4>
+                            <li>
+                                medium: Default value. Defines a medium rule
+                            </li>
+                            <li>thin: Defines a thin rule</li>
+                            <li>thick: Defines a thick rule</li>
+                            <li>length: Specifies the width of the rule</li>
+                            <li>
+                                initial: Sets this property to its default
+                                value.
+                            </li>
+                            <li>
+                                inherit: Inherits this property from its parent
+                                element.
+                            </li>
+                        </ul>
+                        <h3 class="js-title">Javascript</h3>
+                        <pre
+                            class="js-pre"
+                        ><code>object.style.columnRuleWidth="10px"</code></pre>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex5">
                                         <p>
                                             Lorem ipsum dolor sit amet
@@ -671,76 +633,71 @@
                                             labore.
                                         </p>
                                     </div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="col-rule-style" class="anchor-centered"
-                            >Column Rule: Style</span
-                        >
-                    </h3>
-                    <ul>
-                        <li>
-                            Specifies the style of the rule between columns.
-                        </li>
-                        <h4 class="title-css">Property Values:</h4>
-                        <li>none: Default value. Defines no rule</li>
-                        <li>hidden: Defines a hidden rule</li>
-                        <li>dotted: Defines a dotted rule</li>
-                        <li>dashed: Defines a dashed rule</li>
-                        <li>solid: Defines a solid rule</li>
-                        <li>double: Defines a double rule</li>
-                        <li>
-                            groove: Specifies a 3D grooved rule. The effect
-                            depends on the width and color values
-                        </li>
-                        <li>
-                            ridge: Specifies a 3D ridged rule. The effect
-                            depends on the width and color values
-                        </li>
-                        <li>
-                            inset: Specifies a 3D inset rule. The effect depends
-                            on the width and color values
-                        </li>
-                        <li>
-                            outset: Specifies a 3D outset rule. The effect
-                            depends on the width and color values
-                        </li>
-                        <li>
-                            initial: Sets this property to its default value.
-                        </li>
-                        <li>
-                            inherit: Inherits this property from its parent
-                            element
-                        </li>
-                    </ul>
-                    <h3 class="js-title">Javascript</h3>
-                    <pre
-                        class="js-pre"
-                    ><code>	object.style.columnRuleStyle="dotted"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>#ex5 {
+    column-count: 3;
+    column-gap: 15px;
+    column-rule-width: 10px;
+    column-rule-style: dotted;
+    column-rule-color: hotpink;
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="col-rule-style" class="lvl3">
+                            Column Rule: Style
+                        </h3>
+                        <ul>
+                            <li>
+                                Specifies the style of the rule between columns.
+                            </li>
+                            <h4 class="title-css">Property Values:</h4>
+                            <li>none: Default value. Defines no rule</li>
+                            <li>hidden: Defines a hidden rule</li>
+                            <li>dotted: Defines a dotted rule</li>
+                            <li>dashed: Defines a dashed rule</li>
+                            <li>solid: Defines a solid rule</li>
+                            <li>double: Defines a double rule</li>
+                            <li>
+                                groove: Specifies a 3D grooved rule. The effect
+                                depends on the width and color values
+                            </li>
+                            <li>
+                                ridge: Specifies a 3D ridged rule. The effect
+                                depends on the width and color values
+                            </li>
+                            <li>
+                                inset: Specifies a 3D inset rule. The effect
+                                depends on the width and color values
+                            </li>
+                            <li>
+                                outset: Specifies a 3D outset rule. The effect
+                                depends on the width and color values
+                            </li>
+                            <li>
+                                initial: Sets this property to its default
+                                value.
+                            </li>
+                            <li>
+                                inherit: Inherits this property from its parent
+                                element
+                            </li>
+                        </ul>
+                        <h3 class="js-title">Javascript</h3>
+                        <pre
+                            class="js-pre"
+                        ><code>	object.style.columnRuleStyle="dotted"</code></pre>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex6">
                                         <p>
                                             Lorem ipsum dolor sit amet
@@ -753,8 +710,8 @@
                                             aspernatur vel earum!
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex6 {
     column-count: 3;
     column-gap: 20px;
@@ -762,56 +719,45 @@
     column-rule-style: ridge;
     column-rule-color: goldenrod;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="col-rule-color" class="anchor-centered"
-                            >Column Rule: Color</span
-                        >
-                    </h3>
-                    <ul>
-                        <li>
-                            Specifies the color of the rule between columns.
-                        </li>
-                        <h4 class="title-css">Property Values:</h4>
-                        <li>
-                            color: Specifies the color of the rule. Look at CSS
-                            Color Values for a complete list of possible color
-                            values
-                        </li>
-                        <li>
-                            initial: Sets this property to its default value.
-                        </li>
-                        <li>
-                            inherit: Inherits this property from its parent
-                            element.
-                        </li>
-                    </ul>
-                    <h3 class="js-title">Javascript</h3>
-                    <pre
-                        class="js-pre"
-                    ><code>object.style.columnRuleColor="#0000ff"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="col-rule-color" class="lvl3">
+                            Column Rule: Color
+                        </h3>
+                        <ul>
+                            <li>
+                                Specifies the color of the rule between columns.
+                            </li>
+                            <h4 class="title-css">Property Values:</h4>
+                            <li>
+                                color: Specifies the color of the rule. Look at
+                                CSS Color Values for a complete list of possible
+                                color values
+                            </li>
+                            <li>
+                                initial: Sets this property to its default
+                                value.
+                            </li>
+                            <li>
+                                inherit: Inherits this property from its parent
+                                element.
+                            </li>
+                        </ul>
+                        <h3 class="js-title">Javascript</h3>
+                        <pre
+                            class="js-pre"
+                        ><code>object.style.columnRuleColor="#0000ff"</code></pre>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <div id="ex7">
                                         <p>
                                             Lorem ipsum, dolor sit amet
@@ -822,8 +768,8 @@
                                             magni, ut fugit placeat?
                                         </p>
                                     </div>
-                                </td>
-                                <td>
+                                </div>
+                                <div class="cells">
                                     <pre><code>#ex7 {
     column-count: 3;
     column-gap: 20px;
@@ -831,18 +777,16 @@
     column-rule-style: double;
     column-rule-color: blueviolet;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
-                <br /><br />
+            </article>
+            <br /><br />
+            <article>
                 <section>
-                    <h3>
-                        <span id="col-span" class="anchor-centered"
-                            >Column Span</span
-                        >
-                    </h3>
+                    <h2 id="col-span" class="lvl2">Column Span</h2>
                     <ul>
                         <li>
                             Specifies how many columns an element should span
@@ -866,93 +810,49 @@
                     <pre
                         class="js-pre"
                     ><code>	object.style.columnSpan="all"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th class="css-width">CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex8">
-                                        <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit. Sed
-                                            eos aperiam, nesciunt maxime
-                                            recusandae est repudiandae ducimus
-                                            beatae impedit possimus cumque
-                                            tempore nisi officiis iste aliquid
-                                            quae. Cum ipsum nesciunt quae, earum
-                                            esse expedita nam!
-                                        </p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <pre><code></code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="outer-table">
+                        <div class="head-row50">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row50">
+                            <div class="cells">
+                                <div id="ex8">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Sed eos aperiam,
+                                        nesciunt maxime recusandae est
+                                        repudiandae ducimus beatae impedit
+                                        possimus cumque tempore nisi officiis
+                                        iste aliquid quae. Cum ipsum nesciunt
+                                        quae, earum esse expedita nam!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cells">
+                                <pre><code>#ex8 {
+    column-count: 3;
+    column-gap: 20px;
+    column-span: all;
+    column-rule-width: 30px;
+    column-rule-style: double;
+    column-rule-color: blueviolet;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-            </article>
-            <article>
-                <!-- 
-                <section>
-                <h3><span id="" class="anchor-centered"></span></h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th class="css-width">CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4 class="title-css">
-                                <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br><br>
-        -->
             </article>
         </main>
+        <br /><br />
         <footer>
             <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="../../index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
                 <div class="row">
                     <div class="footer-column">
                         <h3 class="revert">HTML</h3>
@@ -992,16 +892,26 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
+                        <a href="../css-properties/border/index.html">Border</a>
+                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <br /><a
+                            href="../css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
+                        <br /><a href="../css-properties/columns/index.html"
+                            >Columns</a
+                        >
+                        <br /><a href="../css-properties/flexbox/index.html"
+                            >Flexbox</a
+                        >
+                        <br /><a href="../css-properties/font-text/index.html"
+                            >Font & text</a
+                        >
+                        <br /><a href="../css-properties/grid/index.html"
+                            >Grid</a
+                        >
+                        <br /><a
+                            href="../css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
@@ -1012,9 +922,34 @@
                         <h3 class="revert">Javascript</h3>
                         <a href=""></a>
                     </div>
+                    <div class="footer-column">
+                        <h3 class="revert">Python</h3>
+                        <a href="../../../Python/python-basics/index.html"
+                            >Python Basics</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-classes/index.html"
+                            >Classes</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-dictionaries/index.html"
+                            >Dictionaries</a
+                        >
+                        <br /><a
+                            href="../../../Python/python-functions/index.html"
+                            >Functions</a
+                        >
+                        <br /><a href="../../../Python/python-lists/index.html"
+                            >Lists</a
+                        >
+                        <br /><a href="../../../Python/python-tuples/index.html"
+                            >Tuples</a
+                        >
+                    </div>
                 </div>
             </div>
         </footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>

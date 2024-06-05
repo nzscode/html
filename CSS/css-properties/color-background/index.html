@@ -35,7 +35,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>CSS Properties</p>
+                    <!-- <p>CSS Properties</p>
                     <ul>
                         <li><a href="#background">Background</a></li>
                         <li>
@@ -91,23 +91,17 @@
                             <a href="#background-position"
                                 >Background-Position</a
                             >
-                        </li>
-                        <!-- li*6>a[href=#]> -->
-                    </ul>
+                        </li> </ul>-->
+
+                    <!-- li*6>a[href=#]> -->
                 </nav>
             </div>
         </header>
         <main>
             <article>
-                <h2>CSS Color & Background Properties</h2>
-                <br />
-                <br />
                 <section>
-                    <h3>
-                        <span id="background" class="anchor-centered"
-                            >1. Background(shorthand)</span
-                        >
-                    </h3>
+                    <h2 id="background" class="lvl2">Background(shorthand)</h2>
+
                     <ul>
                         <li>
                             Specify all the background properties in one single
@@ -137,35 +131,25 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.background = "color image repeat attachment position size origin clip|initial|inherit"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><div id="ex1"></div></td>
-                                <td>
-                                    <pre><code>#ex1 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex1"></div></div>
+                            <div class="cells"><pre><code>#ex1 {
     width: 200px;
     height: 200px;
     background: blue url("../../..//images/bubbles-colors.png") no-repeat left
         bottom;
-}</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+}</code></pre></div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="background-color" class="anchor-centered"
-                            >2. Background Color</span
-                        >
-                    </h3>
+                    <h2 id="background-color" class="lvl2">Background Color</h2>
                     <ul>
                         <li>Sets the background color of an element.</li>
                         <li>
@@ -199,34 +183,24 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.backgroundColor="#00FF00"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><div id="ex2"></div></td>
-                                <td>
-                                    <pre><code>#ex2 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex2"></div></div>
+                            <div class="cells"><pre><code>#ex2 {
     width: 100px;
     height: 100px;
     background-color: green;
-}</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+}</code></pre></div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="background-image" class="anchor-centered"
-                            >3. Background Image</span
-                        >
-                    </h3>
+                    <h2 id="background-image" class="lvl2">Background Image</h2>
                     <ul>
                         <li>
                             Sets one or more background images for an element.
@@ -291,152 +265,133 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.backgroundImage="url(img_tree.gif)"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="bckg-image"
-                                            class="anchor-centered"
-                                            >Background Image</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-1"></div>
-                                    <br />
-                                </td>
-                                <td>
-                                    <pre><code>#ex3 {
+                    <section>
+                        <h3 class="lvl3" id="bckg-image">Background Image</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex3-1"></div></div>
+                                <div class="cells"><pre><code>#ex3 {
     width: 150px;
     height: 150px;
     background-image: url("../../../images/bubbles-colors.png");
-}</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="linear-gradient-multiple-colors"
-                                            class="anchor-centered"
-                                            >Linear Gradient with Multiple
-                                            Colors</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-2"></div>
-                                    <br />
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-2 {
+}</code></pre></div>
+                            </div>
+                        
+                        
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="linear-gradient-multiple-colors">
+                            Linear Gradient with Multiple Colors
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"> <div id="ex3-2"></div></div>
+                                <div class="cells"><pre><code>#ex3-2 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient(orange, green, yellow, blue, red);
-}</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="linear-gradient-percentages"
-                                            class="anchor-centered"
-                                            >Linear Gradient with Percentage
-                                            Sections</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-3"></div>
-                                    <br />
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-3 {
+}</code></pre></div>
+                            </div>
+                       
+                        
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="linear-gradient-percentages">
+                            Linear Gradient with Percentage Sections
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex3-3"></div></div>
+                                <div class="cells"><pre><code>#ex3-3 {
     width: 150px;
     height: 150px;
     background-image: linear-gradient(green 50%, yellow, blue 25%, red);
-}</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="repeating-linear-gradient"
-                                            class="anchor-centered"
-                                            >Repeating Linear Gradient</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-4"></div>
-                                    <br />
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-4 {
+}</code></pre></div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="repeating-linear-gradient">
+                            Repeating Linear Gradient
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex3-4"></div></div>
+                                <div class="cells"><pre><code>#ex3-4 {
     width: 150px;
     height: 150px;
     background-image: repeating-linear-gradient(hotpink, blue 30%, yellow);
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="radial-gradient"
-                                            class="anchor-centered"
-                                            >Radial Gradient</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-5"></div>
-                                    <br />
-                                </td>
-                                <td>
-                                    <pre><code>#ex3-5 {
+                                </div>
+                            </div>
+                        
+                        
+                    </section>
+
+                    <section>
+                        <h3 class="lvl3" id="radial-gradient">
+                            Radial Gradient
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex3-5"></div></div>
+                                <div class="cells"><pre><code>#ex3-5 {
     width: 150px;
     height: 150px;
     background-image: radial-gradient(purple, aqua, yellow);
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="repeating-radial-gradient"
-                                            class="anchor-centered"
-                                            >Repeating Radial Gradient</span
-                                        >
-                                    </h4>
-                                    <br />
-                                    <div id="ex3-6"></div>
-                                    <br />
-                                </td>
-                                <td>
+                                </div>
+                            </div>
+                        
+                        
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="repeating-radial-gradient">
+                            Repeating Radial Gradient
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex3-6"></div></div>
+                                <div class="cells">
                                     <pre><code>#ex3-6 {
     width: 150px;
     height: 150px;
     background-image: repeating-radial-gradient(violet, yellow, blue 25%);
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                    </section>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="background-repeat" class="anchor-centered"
-                            >4. Background Repeat</span
-                        >
-                    </h3>
+                    <h2 id="background-repeat" class="lvl2">Background Repeat 2</h2>
                     <ul>
                         <li>
                             Sets if/how a background image will be repeated.
@@ -491,38 +446,29 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.backgroundRepeat="repeat-x"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div id="ex4"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex4 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><div id="ex4"></div></div>
+                            <div class="cells">
+                                <pre><code>#ex4 {
     height: 150px;
     width: 150px;
     background-color: salmon;
     background-image: url(../../../images/dbl-color-img.png);
     background-repeat: repeat-y;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="background-attachment" class="anchor-centered"
-                            >5. Background Attachment</span
-                        >
-                    </h3>
+                    <h2 id="background-attachment" class="lvl2">Background Attachment</h2>
                     <ul>
                         <li>
                             Sets whether a background image scrolls with the
@@ -553,84 +499,73 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.backgroundAttachment="fixed"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="bckg-attachment-scroll"
-                                            class="anchor-centered"
-                                            >Background Attachment: Scroll</span
-                                        >
-                                    </h4>
-                                    <div id="ex5-1"></div>
-                                </td>
-                                <td>
+                    <section>
+                        <h3 class="lvl3" id="bckg-attachment-scroll">
+                            Background Attachment: Scroll
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex5-1"></div></div>
+                                <div class="cells">
                                     <pre><code>#ex5-1 {
     height: 150px;
     width: 150px;
     background-image: url(../../../images/bubbles-colors.png);
     background-attachment: scroll;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="bckg-attachment-fixed"
-                                            class="anchor-centered"
-                                            >Background Attachment: Fixed</span
-                                        >
-                                    </h4>
-                                    <div id="ex5-2"></div>
-                                </td>
-                                <td>
+                                </div>
+                            </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="bckg-attachment-fixed">
+                            Background Attachment: Fixed
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex5-2"></div></div>
+                                <div class="cells">
                                     <pre><code>#ex5-2 {
     height: 150px;
     width: 150px;
     background-image: url(../../../images/bubbles-colors.png);
     background-attachment: fixed;
 }</code></pre>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id="bckg-attachment-local"
-                                            class="anchor-centered"
-                                            >Background Attachment: Local</span
-                                        >
-                                    </h4>
-                                    <div id="ex5-3"></div>
-                                </td>
-                                <td>
+                                </div>
+                            </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="bckg-attachment-local">
+                            Background Attachment: Local
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><div id="ex5-3"></div></div>
+                                <div class="cells">
                                     <pre><code>#ex5-3 {
     height: 150px;
     width: 150px;
     background-image: url(../../../images/bubbles-colors.png);
     background-attachment: local;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                            </div>
+                    </section>
                 </section>
                 <br /><br />
                 <section>
-                    <h3>
-                        <span id="background-position" class="anchor-centered"
-                            >6. Background Position</span
-                        >
-                    </h3>
+                    <h2 id="background-position" class="lvl2">Background Position 2</h2>
                     <ul>
                         <li>
                             Sets the starting position of a background image.
@@ -674,26 +609,15 @@
                     <pre
                         class="js-pre"
                     ><code>object.style.backgroundPosition="center"</code></pre>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Examples</th>
-                                <th>CSS</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4 class="title-css">
-                                        <span
-                                            id=""
-                                            class="anchor-centered"
-                                        ></span>
-                                    </h4>
-                                    <div id="ex6"></div>
-                                </td>
-                                <td>
-                                    <pre><code>#ex6 {
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"> <div id="ex6"></div></div>
+                            <div class="cells">
+                                <pre><code>#ex6 {
     height: 200px;
     width: 200px;
     background-color: lightpink;
@@ -701,125 +625,118 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 }</code></pre>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                        </div>
+                   
                 </section>
-                <br /><br />
-
-                <!-- 
-                <section>
-                <h3><span id="" class="anchor-centered"></span></h3>
-                <ul>
-                    <li></li>
-                    <h4 class="title-css">Property Values:</h4>
-                    <li></li>
-                </ul>
-                <h3 class="js-title">Javascript</h3>
-                <pre class="js-pre"><code></code></pre>
-                <table class="pretty-table">
-                    <thead>
-                        <tr>
-                            <th>Examples</th>
-                            <th>CSS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4 class="title-css">
-                                    <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4 class="title-css">
-                                <span id="" class="anchor-centered"></span>
-                                </h4>
-                                <div id="ex"></div></td>                            
-                            <td>
-                                
-                                <pre><code></code></pre>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <br><br>
-        -->
             </article>
         </main>
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="footer-column">
-                        <h3 class="revert">HTML</h3>
-                        <a href="../../../index.html">Homepage</a>
-                        <br /><a href="../../../HTML/html-basics/index.html"
-                            >HTML Basics</a
-                        >
-                        <br /><a href="../../../HTML/html-buttons/index.html"
-                            >Buttons</a
-                        >
-                        <br /><a href="../../../HTML/html-forms/index.html"
-                            >Forms</a
-                        >
-                        <br /><a href="../../../HTML/html-iframes/index.html"
-                            >IFrames</a
-                        >
-                        <br /><a href="../../../HTML/html-images/index.html"
-                            >Images</a
-                        >
-                        <br /><a href="../../../HTML/html-links/index.html"
-                            >Links</a
-                        >
-                        <br /><a href="../../../HTML/html-lists/index.html"
-                            >Lists</a
-                        >
-                        <br /><a href="../../../HTML/html-scripts/index.html"
-                            >Scripts</a
-                        >
-                        <br /><a href="../../../HTML/html-tables/index.html"
-                            >Tables</a
-                        >
-                        <br /><a
-                            href="../../../HTML/html-video-audio/index.html"
-                            >Video & Audio</a
-                        >
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="revert">CSS</h3>
-                        <h4 class="revert">Properties</h4>
-                        <a href="../border/index.html">Border</a>
-                        <br /><a href="../box/index.html">Box</a> <br /><a
-                            href="../color-background/index.html"
-                            >Color & Background</a
-                        >
-                        <br /><a href="../columns/index.html">Columns</a>
-                        <br /><a href="../flexbox/index.html">Flexbox</a>
-                        <br /><a href="../font-text/index.html">Font & text</a>
-                        <br /><a href="../grid/index.html">Grid</a> <br /><a
-                            href="../lists-tables/index.html"
-                            >Lists & Tables</a
-                        >
-                        <br /><br />
-                        <h4 class="revert">Selector</h4>
-                        <a href="../../css-selectors/index.html">Selectors</a>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="revert">Javascript</h3>
-                        <a href=""></a>
-                    </div>
-                </div>
+<br><br><br><br>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-column">
+                <a href="../../index.html">Homepage</a>
             </div>
-        </footer>
-
+        </div>
+        <hr class="revert" />
+        <div class="row">
+            <div class="footer-column">
+                <h3 class="revert">HTML</h3>
+                <a href="../../../index.html">Homepage</a>
+                <br /><a href="../../../HTML/html-basics/index.html"
+                    >HTML Basics</a
+                >
+                <br /><a href="../../../HTML/html-buttons/index.html"
+                    >Buttons</a
+                >
+                <br /><a href="../../../HTML/html-forms/index.html"
+                    >Forms</a
+                >
+                <br /><a href="../../../HTML/html-iframes/index.html"
+                    >IFrames</a
+                >
+                <br /><a href="../../../HTML/html-images/index.html"
+                    >Images</a
+                >
+                <br /><a href="../../../HTML/html-links/index.html"
+                    >Links</a
+                >
+                <br /><a href="../../../HTML/html-lists/index.html"
+                    >Lists</a
+                >
+                <br /><a href="../../../HTML/html-scripts/index.html"
+                    >Scripts</a
+                >
+                <br /><a href="../../../HTML/html-tables/index.html"
+                    >Tables</a
+                >
+                <br /><a
+                    href="../../../HTML/html-video-audio/index.html"
+                    >Video & Audio</a
+                >
+            </div>
+            <div class="footer-column">
+                <h3 class="revert">CSS</h3>
+                <h4 class="revert">Properties</h4>
+                <a href="../css-properties/border/index.html">Border</a>
+                <br /><a href="../css-properties/box/index.html">Box</a>
+                <br /><a
+                    href="../css-properties/color-background/index.html"
+                    >Color & Background</a
+                >
+                <br /><a href="../css-properties/columns/index.html"
+                    >Columns</a
+                >
+                <br /><a href="../css-properties/flexbox/index.html"
+                    >Flexbox</a
+                >
+                <br /><a href="../css-properties/font-text/index.html"
+                    >Font & text</a
+                >
+                <br /><a href="../css-properties/grid/index.html"
+                    >Grid</a
+                >
+                <br /><a
+                    href="../css-properties/lists-tables/index.html"
+                    >Lists & Tables</a
+                >
+                <br /><br />
+                <h4 class="revert">Selector</h4>
+                <a href="../../css-selectors/index.html">Selectors</a>
+            </div>
+            <div class="footer-column">
+                <h3 class="revert">Javascript</h3>
+                <a href=""></a>
+            </div>
+            <div class="footer-column">
+                <h3 class="revert">Python</h3>
+                <a href="../../../Python/python-basics/index.html"
+                    >Python Basics</a
+                >
+                <br /><a
+                    href="../../../Python/python-classes/index.html"
+                    >Classes</a
+                >
+                <br /><a
+                    href="../../../Python/python-dictionaries/index.html"
+                    >Dictionaries</a
+                >
+                <br /><a
+                    href="../../../Python/python-functions/index.html"
+                    >Functions</a
+                >
+                <br /><a href="../../../Python/python-lists/index.html"
+                    >Lists</a
+                >
+                <br /><a href="../../../Python/python-tuples/index.html"
+                    >Tuples</a
+                >
+            </div>
+        </div>
+    </div>
+</footer>
+        <div id="test-zone"></div>
         <script src="../../../nav-menu.js"></script>
     </body>
 </html>
