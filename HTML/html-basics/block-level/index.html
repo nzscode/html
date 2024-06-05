@@ -1360,6 +1360,47 @@
                             <div class="cells">
                                 Defines a section in a document
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-section" class="anchor-centered"
+                                        >Section</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <section>
+                                                <h2 class="revert">Lorem, ipsum dolor.</h2>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Ratione.
+                                                </p>
+                                            </section>
+                                            <br /><br />
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;section&gt;
+            &lt;h2 class="revert"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Ratione.
+            &lt;/p&gt;
+            &lt;/section&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>section {
+            display: block;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1389,6 +1430,71 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-table" class="anchor-centered">Table</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col40">html</div>
+                                        <div class="col30">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <table class="blank-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Onion</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Potato</td>
+                                                        <td>2</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>&lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Item&lt;/th&gt;
+                    &lt;t&gt;>Quantity&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;
+                        Onion
+                    &lt;/td&gt;
+                    &lt;td&gt;5&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Potato&lt;/td&gt;
+                    &lt;td&gt;2&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;/table&gt;</code></pre>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: gray;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -1419,6 +1525,86 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-thead" class="anchor-centered">THead</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <table class="blank-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Fruit</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Granny Smith</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Red Delicious</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Macintosh</td>
+                                                        <td>6</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Quantity</td>
+                                                        <td>14</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Fruit&lt;/th&gt;
+                &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Granny Smith&lt;/td&gt;
+                &lt;td&gt;5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>Red Delicious&lt;/td&gt;
+                &lt;td>3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Macintosh&lt;/td&gt;
+                &lt;td&gt;6&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Total Quantity&lt;/td&gt;
+                &lt;td&gt;14&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tfoot&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1448,6 +1634,86 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-tbody" class="anchor-centered">Tbody</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <table class="blank-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Fruit</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Granny Smith</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Red Delicious</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Macintosh</td>
+                                                        <td>6</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Quantity</td>
+                                                        <td>14</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Fruit&lt;/th&gt;
+                &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Granny Smith&lt;/td&gt;
+                &lt;td&gt;5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>Red Delicious&lt;/td&gt;
+                &lt;td>3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Macintosh&lt;/td&gt;
+                &lt;td&gt;6&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Total Quantity&lt;/td&gt;
+                &lt;td&gt;14&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tfoot&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -1477,6 +1743,86 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-tfoot" class="anchor-centered">Tfoot</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col20">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <table class="blank-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Fruit</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Granny Smith</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Red Delicious</td>
+                                                        <td>3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Macintosh</td>
+                                                        <td>6</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Total Quantity</td>
+                                                        <td>14</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Fruit&lt;/th&gt;
+                &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Granny Smith&lt;/td&gt;
+                &lt;td&gt;5&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>Red Delicious&lt;/td&gt;
+                &lt;td>3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Macintosh&lt;/td&gt;
+                &lt;td&gt;6&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Total Quantity&lt;/td&gt;
+                &lt;td&gt;14&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tfoot&gt;</code></pre>
+                                        </div>
+                                        <div class="col20">
+                                            <pre><code>tfoot {
+            display: table-footer-group;
+            vertical-align: middle;
+            border-color: inherit;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1497,6 +1843,123 @@
                                 levels - start with &lt;h1&gt;, then use
                                 &lt;h2&gt;, etc.
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-headings" class="anchor-centered"
+                                        >Headings</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col30">html</div>
+                                        <div class="col50">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h1 class="revert head1">Heading 1</h1>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>h1 {
+            display: block;
+            font-size: 2em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h2 class="revert">Heading 2</h2>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h3 class="revert">Heading 3</h3>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h4 class="revert">Heading 4</h4>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>h4 {
+            display: block;
+            font-size: 1em;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h5 class="revert">Heading 5</h5>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>h5 {
+            display: block;
+            font-size: .83em;
+            margin-top: 1.67em;
+            margin-bottom: 1.67em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20"><br />normal</div>
+                                        <div class="col30">
+                                            <pre><code>normal</code></pre>
+                                        </div>
+                                        <div class="col50"></div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1527,6 +1990,113 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-ol" class="anchor-centered"
+                                        >Ordered Lists</span
+                                    >
+                                </h3>
+                                <ul class="columns">
+                                    Other List Style Types:
+                                    <li>circle</li>
+                                    <li>disc</li>
+                                    <li>square</li>
+                                    <li>armenian</li>
+                                    <li>cjk-ideographic</li>
+                                    <li>decimal</li>
+                                    <li>decimal-leading-zero</li>
+                                    <li>georgian</li>
+                                    <li>hiragana</li>
+                                    <li>hiragana-iroha</li>
+                                    <li>katakana</li>
+                                    <li>katakana-iroha</li>
+                                    <li>lower-alpha</li>
+                                    <li>lower-greek</li>
+                                    <li>lower-latin</li>
+                                    <li>lower-roman</li>
+                                    <li>upper-alpha</li>
+                                    <li>upper-greek</li>
+                                    <li>upper-latin</li>
+                                    <li>upper-roman</li>
+                                    <li>none</li>
+                                    <li>inherit</li>
+                                </ul>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col40">html</div>
+                                        <div class="col30">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <ol type="a">
+                                                <li>violet</li>
+                                                <li>indigo</li>
+                                                <li>blue</li>
+                                            </ol>
+                                            <ol type="A">
+                                                <li>violet</li>
+                                                <li>indigo</li>
+                                                <li>blue</li>
+                                            </ol>
+                                            <ol type="i">
+                                                <li>violet</li>
+                                                <li>indigo</li>
+                                                <li>blue</li>
+                                            </ol>
+                                            <ol type="I">
+                                                <li>violet</li>
+                                                <li>indigo</li>
+                                                <li>blue</li>
+                                            </ol>
+                                            <ol type="1">
+                                                <li>violet</li>
+                                                <li>indigo</li>
+                                                <li>blue</li>
+                                            </ol>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>&lt;ol type="a"&gt;
+            &lt;li>violet&lt;/li&gt;
+            &lt;li>indigo&lt;/li&gt;
+            &lt;li>blue&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="A"&gt;
+            &lt;li>violet&lt;/li&gt;
+            &lt;li>indigo&lt;/li&gt;
+            &lt;li>blue&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="i"&gt;
+            &lt;li>violet&lt;/li&gt;
+            &lt;li>indigo&lt;/li&gt;
+            &lt;li>blue&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="I"&gt;
+            &lt;li>violet&lt;/li&gt;
+            &lt;li>indigo&lt;/li&gt;
+            &lt;li>blue&lt;/li&gt;
+            &lt;/ol&gt;
+            &lt;ol type="1"&gt;
+            &lt;li>violet&lt;/li&gt;
+            &lt;li>indigo&lt;/li&gt;
+            &lt;li>blue&lt;/li&gt;
+            &lt;/ol&gt;</code></pre>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>ol {
+            display: block;
+            list-style-type: decimal;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 40px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -1551,6 +2121,96 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-ul" class="anchor-centered"
+                                        >Unordered Lists</span
+                                    >
+                                </h3>
+                                <ul class="columns">
+                                    Other List Style Types:
+                                    <li>circle</li>
+                                    <li>disc</li>
+                                    <li>square</li>
+                                    <li>armenian</li>
+                                    <li>cjk-ideographic</li>
+                                    <li>decimal</li>
+                                    <li>decimal-leading-zero</li>
+                                    <li>georgian</li>
+                                    <li>hiragana</li>
+                                    <li>hiragana-iroha</li>
+                                    <li>katakana</li>
+                                    <li>katakana-iroha</li>
+                                    <li>lower-alpha</li>
+                                    <li>lower-greek</li>
+                                    <li>lower-latin</li>
+                                    <li>lower-roman</li>
+                                    <li>upper-alpha</li>
+                                    <li>upper-greek</li>
+                                    <li>upper-latin</li>
+                                    <li>upper-roman</li>
+                                    <li>none</li>
+                                    <li>inherit</li>
+                                </ul>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col30">html</div>
+                                        <div class="col30">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <h4 class="margin-bottom-1px">
+                                                List Style Type: Circle
+                                            </h4>
+                                            <ul class="ul-type-circle margin-top-1px">
+                                                <li>Left</li>
+                                                <li>Right</li>
+                                                <li>Up</li>
+                                                <li>Down</li>
+                                            </ul>
+                                            <h4 class="margin-bottom-1px">
+                                                List Style Type: Disc
+                                            </h4>
+                                            <ul class="ul-type-disc margin-top-1px">
+                                                <li>Left</li>
+                                                <li>Right</li>
+                                                <li>Up</li>
+                                                <li>Down</li>
+                                            </ul>
+                                            <h4 class="margin-bottom-1px">
+                                                List Style Type: Square
+                                            </h4>
+                                            <ul class="ul-type-square margin-top-1px">
+                                                <li>Left</li>
+                                                <li>Right</li>
+                                                <li>Up</li>
+                                                <li>Down</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;ul&gt;
+            &lt;li>Left&lt;/li&gt;
+            &lt;li>Right&lt;/li&gt;
+            &lt;li>Up&lt;/li&gt;
+            &lt;li>Down&lt;/li&gt;
+            &lt;/ul&gt;</code></pre>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>ul {
+            display: block;
+            list-style-type: disc;
+            margin-top: 1em;
+            margin-bottom: 1 em;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 40px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1573,6 +2233,78 @@
                                 list item. The following list items will
                                 increment from that number
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-li" class="anchor-centered"
+                                        >List Items</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col30">html</div>
+                                        <div class="col40">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <ul>
+                                                Unordered List
+                                                <li>UL 1</li>
+                                                <li>UL 2</li>
+                                                <li>UL 3</li>
+                                            </ul>
+            
+                                            <ol>
+                                                Ordered List
+                                                <li value="25">OL A</li>
+                                                <li>OL B</li>
+                                                <li>OL C</li>
+                                            </ol>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>&lt;ul&gt;
+            Unordered List
+            &lt;li&gt;UL 1&lt;/li&gt;
+            &lt;li&gt;UL 2&lt;/li&gt;
+            &lt;li&gt;UL 3&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;ol&gt;
+            Ordered List
+            &lt;li value="25"&gt;OL A&lt;/li&gt;
+            &lt;li&gt;OL B&lt;/li&gt;
+            &lt;li&gt;OL C&lt;/li&gt;
+            &lt;/ol&gt;</code></pre>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>ul {
+            display: block;
+            list-style-type: disc;
+            margin-top: 1em;
+            margin-bottom: 1 em;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 40px;
+            }
+            
+            ol {
+            display: block;
+            list-style-type: decimal;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 40px;
+            }
+            
+            li {
+            display: list-item;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -1604,6 +2336,79 @@
                                     <li>&lt;var&gt;: Defines a variable</li>
                                 </ul>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-pre" class="anchor-centered">pre</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col40">html</div>
+                                        <div class="col40">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <pre>
+            This text      has been
+                pre
+            format   ted.</pre
+                                            >
+            
+                                            <pre><code>let x = 5;
+            console.log(x);
+            </code></pre>
+            
+                                            <pre><samp>File not found</samp></pre>
+            
+                                            <pre><kbd>CTRL</kbd> + <kbd>S</kbd></pre>
+            
+                                            <pre><var>printNum</var></pre>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>&lt;pre&gt;
+            This text      has been
+                pre
+            format   ted.&lt;/pre&gt;
+                                                                    
+                                        
+            &lt;pre&gt;&lt;code&gt;let x = 5;
+            console.log(x);
+            &lt;/code&gt;&lt;/pre&gt;
+                                        
+            &lt;pre&gt;&lt;samp&gt;File not found&lt;/samp&gt;&lt;/pre&gt;
+            
+            &lt;pre&gt;&lt;kbd&gt;CTRL&lt;/kbd> + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/pre&gt;
+            
+            &lt;pre&gt;&lt;var&gt;printNum&lt;/var&gt;&lt;/pre&gt;</code></pre>
+                                        </div>
+                                        <div class="col40">
+                                            <pre><code>pre {
+            display: block;
+            font-family: monospace;
+            white-space: pre;
+            margin: 1em 0;
+            }
+            
+            code {
+            font-family: monospace;
+            }
+            
+            samp {
+            font-family: monospace;
+            }
+            
+            kbd {
+            font-family: monospace;
+            }
+            
+            var {
+            font-style: italic;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1619,6 +2424,46 @@
                                 as a horizontal rule that is used to separate
                                 content
                             </div>
+
+                            <section>
+                                <h3><span id="bl-hr" class="anchor-centered">Hr</span></h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                        <div class="col30">Default CSS</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <p>Lorem ipsum dolor sit amet.</p>
+                                            <hr />
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                            </p>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;p>Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;hr /&gt;
+            &lt;p&gt;
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+            &lt;/p&gt;</code></pre>
+                                        </div>
+                                        <div class="col30">
+                                            <pre><code>hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+            }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row odd-bg">
                             <div class="cells">
@@ -1640,6 +2485,40 @@
                                 &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt;
                                 elements
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-noscript" class="anchor-centered"
+                                        >Noscript</span
+                                    >
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <script>
+                                                document.write("Hello World!");
+                                            </script>
+                                            <noscript
+                                                >Your browser does not support
+                                                JavaScript!</noscript
+                                            >
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;script&gt;
+            document.write("Hello World!");
+            &lt;/script&gt;
+            &lt;noscript
+            &gt;Your browser does not support
+            JavaScript!&lt;/noscript
+            &gt;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <div class="body-row">
                             <div class="cells">
@@ -1670,6 +2549,32 @@
                                     </i>
                                 </li>
                             </div>
+
+                            <section>
+                                <h3>
+                                    <span id="bl-video" class="anchor-centered">Video</span>
+                                </h3>
+                                <div class="container">
+                                    <div class="row col-header">
+                                        <div class="col20">Example</div>
+                                        <div class="col50">html</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col20">
+                                            <video width="100" height="100" controls>
+                                                <source src="" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <div class="col50">
+                                            <pre><code>&lt;video width="320" height="240" controls&gt;
+            &lt;source src="" type="video/mp4" /&gt;
+            Your browser does not support the video tag.
+            &lt;/video&gt;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                         <!-- 
                             <div class="body-row">
@@ -1690,951 +2595,7 @@
                         </div>
                     --></div>
                 </section>
-            </article>
-            <br /><br />
-            <br />
-            <br />
-            <article>
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-section" class="anchor-centered"
-                            >Section</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <section>
-                                    <h2 class="revert">Lorem, ipsum dolor.</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Ratione.
-                                    </p>
-                                </section>
-                                <br /><br />
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;section&gt;
-&lt;h2 class="revert"&gt;Lorem, ipsum dolor.&lt;/h2&gt;
-&lt;p&gt;
-    Lorem ipsum dolor sit amet consectetur
-    adipisicing elit. Ratione.
-&lt;/p&gt;
-&lt;/section&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>section {
-display: block;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-table" class="anchor-centered">Table</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">html</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <table class="blank-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Item</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Onion</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Potato</td>
-                                            <td>2</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;table&gt;
-&lt;thead&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Item&lt;/th&gt;
-        &lt;t&gt;>Quantity&lt;/th&gt;
-    &lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;
-            Onion
-        &lt;/td&gt;
-        &lt;td&gt;5&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Potato&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <pre><code>table {
-display: table;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-thead" class="anchor-centered">THead</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <table class="blank-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Fruit</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Granny Smith</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Red Delicious</td>
-                                            <td>3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Macintosh</td>
-                                            <td>6</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td>Total Quantity</td>
-                                            <td>14</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;thead&gt;
-&lt;tr&gt;
-    &lt;th&gt;Fruit&lt;/th&gt;
-    &lt;th&gt;Quantity&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td&gt;Granny Smith&lt;/td&gt;
-    &lt;td&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td>Red Delicious&lt;/td&gt;
-    &lt;td>3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Macintosh&lt;/td&gt;
-    &lt;td&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tfoot&gt;
-&lt;tr&gt;
-    &lt;td&gt;Total Quantity&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tfoot&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>thead {
-display: table-header-group;
-vertical-align: middle;
-border-color: inherit;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-tbody" class="anchor-centered">Tbody</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <table class="blank-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Fruit</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Granny Smith</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Red Delicious</td>
-                                            <td>3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Macintosh</td>
-                                            <td>6</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td>Total Quantity</td>
-                                            <td>14</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;thead&gt;
-&lt;tr&gt;
-    &lt;th&gt;Fruit&lt;/th&gt;
-    &lt;th&gt;Quantity&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td&gt;Granny Smith&lt;/td&gt;
-    &lt;td&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td>Red Delicious&lt;/td&gt;
-    &lt;td>3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Macintosh&lt;/td&gt;
-    &lt;td&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tfoot&gt;
-&lt;tr&gt;
-    &lt;td&gt;Total Quantity&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tfoot&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>tbody {
-display: table-row-group;
-vertical-align: middle;
-border-color: inherit;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-tfoot" class="anchor-centered">Tfoot</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col20">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <table class="blank-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Fruit</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Granny Smith</td>
-                                            <td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Red Delicious</td>
-                                            <td>3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Macintosh</td>
-                                            <td>6</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td>Total Quantity</td>
-                                            <td>14</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;thead&gt;
-&lt;tr&gt;
-    &lt;th&gt;Fruit&lt;/th&gt;
-    &lt;th&gt;Quantity&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-    &lt;td&gt;Granny Smith&lt;/td&gt;
-    &lt;td&gt;5&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td>Red Delicious&lt;/td&gt;
-    &lt;td>3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-    &lt;td&gt;Macintosh&lt;/td&gt;
-    &lt;td&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tfoot&gt;
-&lt;tr&gt;
-    &lt;td&gt;Total Quantity&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tfoot&gt;</code></pre>
-                            </div>
-                            <div class="col20">
-                                <pre><code>tfoot {
-display: table-footer-group;
-vertical-align: middle;
-border-color: inherit;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-headings" class="anchor-centered"
-                            >Headings</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col30">html</div>
-                            <div class="col50">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h1 class="revert head1">Heading 1</h1>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></pre>
-                            </div>
-                            <div class="col50">
-                                <pre><code>h1 {
-display: block;
-font-size: 2em;
-margin-top: 0.67em;
-margin-bottom: 0.67em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h2 class="revert">Heading 2</h2>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></pre>
-                            </div>
-                            <div class="col50">
-                                <pre><code>h2 {
-display: block;
-font-size: 1.5em;
-margin-top: 0.83em;
-margin-bottom: 0.83em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h3 class="revert">Heading 3</h3>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code></pre>
-                            </div>
-                            <div class="col50">
-                                <pre><code>h3 {
-display: block;
-font-size: 1.17em;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h4 class="revert">Heading 4</h4>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code></pre>
-                            </div>
-                            <div class="col50">
-                                <pre><code>h4 {
-display: block;
-font-size: 1em;
-margin-top: 1.33em;
-margin-bottom: 1.33em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h5 class="revert">Heading 5</h5>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code></pre>
-                            </div>
-                            <div class="col50">
-                                <pre><code>h5 {
-display: block;
-font-size: .83em;
-margin-top: 1.67em;
-margin-bottom: 1.67em;
-margin-left: 0;
-margin-right: 0;
-font-weight: bold;
-}</code></pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20"><br />normal</div>
-                            <div class="col30">
-                                <pre><code>normal</code></pre>
-                            </div>
-                            <div class="col50"></div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-ol" class="anchor-centered"
-                            >Ordered Lists</span
-                        >
-                    </h3>
-                    <ul class="columns">
-                        Other List Style Types:
-                        <li>circle</li>
-                        <li>disc</li>
-                        <li>square</li>
-                        <li>armenian</li>
-                        <li>cjk-ideographic</li>
-                        <li>decimal</li>
-                        <li>decimal-leading-zero</li>
-                        <li>georgian</li>
-                        <li>hiragana</li>
-                        <li>hiragana-iroha</li>
-                        <li>katakana</li>
-                        <li>katakana-iroha</li>
-                        <li>lower-alpha</li>
-                        <li>lower-greek</li>
-                        <li>lower-latin</li>
-                        <li>lower-roman</li>
-                        <li>upper-alpha</li>
-                        <li>upper-greek</li>
-                        <li>upper-latin</li>
-                        <li>upper-roman</li>
-                        <li>none</li>
-                        <li>inherit</li>
-                    </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">html</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <ol type="a">
-                                    <li>violet</li>
-                                    <li>indigo</li>
-                                    <li>blue</li>
-                                </ol>
-                                <ol type="A">
-                                    <li>violet</li>
-                                    <li>indigo</li>
-                                    <li>blue</li>
-                                </ol>
-                                <ol type="i">
-                                    <li>violet</li>
-                                    <li>indigo</li>
-                                    <li>blue</li>
-                                </ol>
-                                <ol type="I">
-                                    <li>violet</li>
-                                    <li>indigo</li>
-                                    <li>blue</li>
-                                </ol>
-                                <ol type="1">
-                                    <li>violet</li>
-                                    <li>indigo</li>
-                                    <li>blue</li>
-                                </ol>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;ol type="a"&gt;
-&lt;li>violet&lt;/li&gt;
-&lt;li>indigo&lt;/li&gt;
-&lt;li>blue&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol type="A"&gt;
-&lt;li>violet&lt;/li&gt;
-&lt;li>indigo&lt;/li&gt;
-&lt;li>blue&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol type="i"&gt;
-&lt;li>violet&lt;/li&gt;
-&lt;li>indigo&lt;/li&gt;
-&lt;li>blue&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol type="I"&gt;
-&lt;li>violet&lt;/li&gt;
-&lt;li>indigo&lt;/li&gt;
-&lt;li>blue&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol type="1"&gt;
-&lt;li>violet&lt;/li&gt;
-&lt;li>indigo&lt;/li&gt;
-&lt;li>blue&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <pre><code>ol {
-display: block;
-list-style-type: decimal;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-ul" class="anchor-centered"
-                            >Unordered Lists</span
-                        >
-                    </h3>
-                    <ul class="columns">
-                        Other List Style Types:
-                        <li>circle</li>
-                        <li>disc</li>
-                        <li>square</li>
-                        <li>armenian</li>
-                        <li>cjk-ideographic</li>
-                        <li>decimal</li>
-                        <li>decimal-leading-zero</li>
-                        <li>georgian</li>
-                        <li>hiragana</li>
-                        <li>hiragana-iroha</li>
-                        <li>katakana</li>
-                        <li>katakana-iroha</li>
-                        <li>lower-alpha</li>
-                        <li>lower-greek</li>
-                        <li>lower-latin</li>
-                        <li>lower-roman</li>
-                        <li>upper-alpha</li>
-                        <li>upper-greek</li>
-                        <li>upper-latin</li>
-                        <li>upper-roman</li>
-                        <li>none</li>
-                        <li>inherit</li>
-                    </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col30">html</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h4 class="margin-bottom-1px">
-                                    List Style Type: Circle
-                                </h4>
-                                <ul class="ul-type-circle margin-top-1px">
-                                    <li>Left</li>
-                                    <li>Right</li>
-                                    <li>Up</li>
-                                    <li>Down</li>
-                                </ul>
-                                <h4 class="margin-bottom-1px">
-                                    List Style Type: Disc
-                                </h4>
-                                <ul class="ul-type-disc margin-top-1px">
-                                    <li>Left</li>
-                                    <li>Right</li>
-                                    <li>Up</li>
-                                    <li>Down</li>
-                                </ul>
-                                <h4 class="margin-bottom-1px">
-                                    List Style Type: Square
-                                </h4>
-                                <ul class="ul-type-square margin-top-1px">
-                                    <li>Left</li>
-                                    <li>Right</li>
-                                    <li>Up</li>
-                                    <li>Down</li>
-                                </ul>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;ul&gt;
-&lt;li>Left&lt;/li&gt;
-&lt;li>Right&lt;/li&gt;
-&lt;li>Up&lt;/li&gt;
-&lt;li>Down&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <pre><code>ul {
-display: block;
-list-style-type: disc;
-margin-top: 1em;
-margin-bottom: 1 em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-li" class="anchor-centered"
-                            >List Items</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col30">html</div>
-                            <div class="col40">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <ul>
-                                    Unordered List
-                                    <li>UL 1</li>
-                                    <li>UL 2</li>
-                                    <li>UL 3</li>
-                                </ul>
-
-                                <ol>
-                                    Ordered List
-                                    <li value="25">OL A</li>
-                                    <li>OL B</li>
-                                    <li>OL C</li>
-                                </ol>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;ul&gt;
-Unordered List
-&lt;li&gt;UL 1&lt;/li&gt;
-&lt;li&gt;UL 2&lt;/li&gt;
-&lt;li&gt;UL 3&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-Ordered List
-&lt;li value="25"&gt;OL A&lt;/li&gt;
-&lt;li&gt;OL B&lt;/li&gt;
-&lt;li&gt;OL C&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                            </div>
-                            <div class="col40">
-                                <pre><code>ul {
-display: block;
-list-style-type: disc;
-margin-top: 1em;
-margin-bottom: 1 em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
-}
-
-ol {
-display: block;
-list-style-type: decimal;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
-}
-
-li {
-display: list-item;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-pre" class="anchor-centered">pre</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">html</div>
-                            <div class="col40">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <pre>
-This text      has been
-    pre
-format   ted.</pre
-                                >
-
-                                <pre><code>let x = 5;
-console.log(x);
-</code></pre>
-
-                                <pre><samp>File not found</samp></pre>
-
-                                <pre><kbd>CTRL</kbd> + <kbd>S</kbd></pre>
-
-                                <pre><var>printNum</var></pre>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;pre&gt;
-This text      has been
-    pre
-format   ted.&lt;/pre&gt;
-                                                        
-                            
-&lt;pre&gt;&lt;code&gt;let x = 5;
-console.log(x);
-&lt;/code&gt;&lt;/pre&gt;
-                            
-&lt;pre&gt;&lt;samp&gt;File not found&lt;/samp&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;kbd&gt;CTRL&lt;/kbd> + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;var&gt;printNum&lt;/var&gt;&lt;/pre&gt;</code></pre>
-                            </div>
-                            <div class="col40">
-                                <pre><code>pre {
-display: block;
-font-family: monospace;
-white-space: pre;
-margin: 1em 0;
-}
-
-code {
-font-family: monospace;
-}
-
-samp {
-font-family: monospace;
-}
-
-kbd {
-font-family: monospace;
-}
-
-var {
-font-style: italic;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3><span id="bl-hr" class="anchor-centered">Hr</span></h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <hr />
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit.
-                                </p>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;p>Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;
-Lorem ipsum dolor sit amet consectetur
-adipisicing elit.
-&lt;/p&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <pre><code>hr {
-display: block;
-margin-top: 0.5em;
-margin-bottom: 0.5em;
-margin-left: auto;
-margin-right: auto;
-border-style: inset;
-border-width: 1px;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-
-                <section>
-                    <h3>
-                        <span id="bl-noscript" class="anchor-centered"
-                            >Noscript</span
-                        >
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <script>
-                                    document.write("Hello World!");
-                                </script>
-                                <noscript
-                                    >Your browser does not support
-                                    JavaScript!</noscript
-                                >
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;script&gt;
-document.write("Hello World!");
-&lt;/script&gt;
-&lt;noscript
-&gt;Your browser does not support
-JavaScript!&lt;/noscript
-&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <h3>
-                        <span id="bl-video" class="anchor-centered">Video</span>
-                    </h3>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">html</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <video width="100" height="100" controls>
-                                    <source src="" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;video width="320" height="240" controls&gt;
-&lt;source src="" type="video/mp4" /&gt;
-Your browser does not support the video tag.
-&lt;/video&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-            </article>
+           
         </main>
         <br /><br /><br /><br />
         <!-- Bottom Links -->
