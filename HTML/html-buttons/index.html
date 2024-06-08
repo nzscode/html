@@ -35,7 +35,7 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>HTML Buttons</p>
+                    <!-- <p>HTML Buttons</p>
                     <ul>
                         <li>
                             <a href="./index.html#basic-button">Basic Button</a>
@@ -84,332 +84,75 @@
                             <li><a href="./index.html#type">Type</a></li>
                             <li><a href="./index.html#value">Value</a></li>
                         </ol>
-                    </ul>
+                    </ul> -->
                 </nav>
+                <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <h2>
-                    <span id="basic-button" class="anchor-centered"
-                        >Basic Button</span
-                    >
-                </h2>
-                <div class="container">
-                    <div class="row col-header">
-                        <div class="col30">Example</div>
-                        <div class="col75">HTML</div>
-                    </div>
-                    <div class="row">
-                        <div class="col30">
-                            <button type="button">Click Me!</button>
-                        </div>
-                        <div class="col75">
-                            <pre><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
                 <section>
-                    <h2>
-                        <span id="button-attributes" class="anchor-centered"
-                            >Button Attributes</span
-                        >
-                    </h2>
+                    <h2 id="basic-button" class="lvl2">Basic Button</h2>
                     <div class="outer-table">
-                        <div class="head-row3">
-                            <div class="cell-header">Attribute</div>
-                            <div class="cell-header">Value</div>
-                            <div class="cell-header">Description</div>
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="body-row3">
+                        <div class="body-row">
                             <div class="cells">
-                                <span id="autofocus"
-                                    ><a
-                                        href="#def-autofocus"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >autofocus</a
-                                    ></span
-                                >
+                                <button type="button">Click Me!</button>
                             </div>
-                            <div class="cells">autofocus</div>
                             <div class="cells">
-                                Specifies that a button should automatically get
-                                focus when the page loads
+                                <pre><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code></pre>
                             </div>
                         </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="disabled"
-                                    ><a
-                                        href="#def-disabled"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >disabled</a
-                                    ></span
-                                >
-                            </div>
-                            <div class="cells">autofocus</div>
-                            <div class="cells">
-                                Specifies that a button should be disabled
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="form">
-                                    <a
-                                        href="#def-form"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >form</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">form-id</div>
-                            <div class="cells">
-                                Specifies which form the button belongs to
-                                <br />
-                                See also: <br />
-                                <a
-                                    href="https://nzscode.github.io/snippets-html/html-Forms"
-                                    >HTML Forms</a
-                                ><br /><a href="../html-Forms/index.html"
-                                    >HTML Forms - l</a
-                                >
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="formaction">
-                                    <a
-                                        href="#def-formaction"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >formaction</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">URL</div>
-                            <div class="cells">
-                                Specifies where to send the form-data when a
-                                form is submitted. Only for type="submit"
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="formmethod">
-                                    <a
-                                        href="#def-formmethod"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >formmethod</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">
-                                get <br />
-                                post
-                            </div>
-                            <div class="cells">
-                                Specifies how to send the form-data (which HTTP
-                                method to use). Only for type="submit"
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="formnovalidate">
-                                    <a
-                                        href="#def-formnovalidate"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >formnovalidate</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">formnovalidate</div>
-                            <div class="cells">
-                                Specifies that the form-data should not be
-                                validated on submission. Only for type="submit"
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="formtarget">
-                                    <a
-                                        href="#def-formtarget"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >formtarget</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">
-                                -blank <br />-self <br />-parent <br />-top
-                                <br /><i>framenameform-id</i>
-                            </div>
-                            <div class="cells">
-                                Specifies which form the button belongs to
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="popover">
-                                    <a
-                                        href="#def-popover"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >popover</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells"><i>element-id</i></div>
-                            <div class="cells">
-                                Specifies a which popover element to invoke
-                            </div>
-                        </div>
-
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="popovertargetaction">
-                                    <a
-                                        href="#def-popovertargetaction"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >popovertargetaction</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">
-                                hide <br />show <br />toggle
-                            </div>
-                            <div class="cells">
-                                Specifies what happens to the popover element
-                                when the button is clicked
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="name">
-                                    <a
-                                        href="#def-name"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >name</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells"><i>name</i></div>
-                            <div class="cells">
-                                Specifies a name for the button
-                            </div>
-                        </div>
-
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="type">
-                                    <a
-                                        href="#def-type"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >type</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells">
-                                button <br />reset <br />submit
-                            </div>
-                            <div class="cells">
-                                Specifies the type of button
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="value">
-                                    <a
-                                        href="#def-value"
-                                        class="anchor-centered"
-                                        tabindex="1"
-                                        >value</a
-                                    >
-                                </span>
-                            </div>
-                            <div class="cells"><i>text</i></div>
-                            <div class="cells">
-                                Specifies an initial value for the button
-                            </div>
-                        </div>
-                        <!-- 
-                            <div class="body-row3">
-                            <div class="cells">
-                                <span id="">
-                                    <a href="#def-" class="anchor-centered" tabindex="1"></a>
-                                </span>
-                            </div>
-                            <div class="cells"></div>
-                            <div class="cells"></div>
-                        </div>
-
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="">
-                                    <a href="#def-" class="anchor-centered" tabindex="1"></a>
-                                </span>
-                            </div>
-                            <div class="cells"></div>
-                            <div class="cells"></div>
-                        </div>
-                        -->
                     </div>
                 </section>
             </article>
-            <br />
-            <br />
-            <br /><br /><br />
-
+            <br /><br /><br /><br /><br /><br />
             <article>
                 <section>
-                    <div>
-                        <h3>
-                            <span id="def-autofocus" style="padding-top: 100px"
-                                >Autofocus</span
-                            >
-                        </h3>
+                    <h2 id="button-attributes" class="lvl2">
+                        Button Attributes
+                    </h2>
 
+                    <section>
+                        <h3 class="lvl3" id="autofocus">autofocus</h3>
                         <ul>
+                            <li>
+                                Specifies that a button should automatically get
+                                focus when the page loads
+                            </li>
                             <li>Is a boolean attribute</li>
                             <li>
                                 When present, it specifies that a button should
                                 automatically get focus when the page loads
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <button type="button">Autofocus Button</button>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;button type="button" autofocus&gt; 
+                            <div class="body-row">
+                                <div class="cells">
+                                    <button type="button">
+                                        Autofocus Button
+                                    </button>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;button type="button" autofocus&gt; 
     Autofocus Button 
 &lt;/button&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-disabled" style="padding-top: 100px"
-                                >Disabled</span
-                            >
-                        </h3>
-
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="disabled">disabled</h3>
                         <ul>
+                            <li>Specifies that a button should be disabled</li>
                             <li>Is a boolean attribute</li>
                             <li>
                                 When present, it specifies that the button
@@ -424,33 +167,43 @@
                                 make the button clickable again
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <button type="button" disabled>
-                                    Disabled Button
-                                </button>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;button type="button" disabled&gt; 
+                            <div class="body-row">
+                                <div class="cells">
+                                    <button type="button" disabled>
+                                        Disabled Button
+                                    </button>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;button type="button" disabled&gt; 
     Disabled Button 
 &lt;/button&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-form" style="padding-top: 100px"
-                                >Form</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="form">form</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>form-id</li>
+                            </ul>
+                            <li>Specifies which form the button belongs to</li>
+                            <li>See also:</li>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://nzscode.github.io/snippets-html/html-Forms"
+                                        >HTML Forms</a
+                                    >
+                                </li>
+                            </ul>
                             <li>Specifies the form the button belongs to</li>
                             <li>
                                 Value of this attribute must be equal to the id
@@ -458,37 +211,39 @@
                                 document
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" id="formID">
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
                                     <button type="button" form="formID">
                                         Form Button
                                     </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="" id="formID"&gt; 
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="" id="formID"&gt; 
     &lt;button type="button" form="formID"&gt; 
         Form Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-formaction" style="padding-top: 100px"
-                                >Formaction</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="formaction">formaction</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>URL</li>
+                            </ul>
+                            <li>
+                                Specifies where to send the form-data when a
+                                form is submitted. Only for type="submit"
+                            </li>
                             <li>
                                 Specifies where to send the form-data when a
                                 form is submitted. This attribute overrides the
@@ -511,23 +266,24 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php">
-                                    <button
-                                        type="submit"
-                                        formaction="/action-page2.php"
-                                    >
-                                        Formaction Button
-                                    </button>
-                                </form>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <form action="/action-page.php">
+                                        <button
+                                            type="submit"
+                                            formaction="/action-page2.php"
+                                        >
+                                            Formaction Button
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="/action-page.php"&gt;
     &lt;button
         type="submit"
         formaction="/action-page2.php"
@@ -535,19 +291,23 @@
         Formaction Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-formmethod" style="padding-top: 100px"
-                                >Formmethod</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="formmethod">formmethod</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>get</li>
+                                <li>post</li>
+                            </ul>
+                            <li>
+                                Specifies how to send the form-data (which HTTP
+                                method to use). Only for type="submit"
+                            </li>
                             <li>
                                 Specifies which HTTP method to use when sending
                                 the form-data. This attribute overrides the
@@ -590,40 +350,40 @@
                                 limitations
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <button type="submit">
-                                        Formmethod Button
-                                    </button>
-                                </form>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <form
+                                        action="/action-page.php"
+                                        method="get"
+                                    >
+                                        <button type="submit">
+                                            Formmethod Button
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="/action-page.php" method="get"&gt;
     &lt;button type="submit"&gt;
         Formmethod Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-
-                <section>
-                    <div>
-                        <h3>
-                            <span
-                                id="def-formnovalidate"
-                                style="padding-top: 100px"
-                                >Formnovalidate</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="formnovalidate">formnovalidate</h3>
                         <ul>
+                            <li>
+                                Specifies that the form-data should not be
+                                validated on submission. Only for type="submit"
+                            </li>
                             <li>Is a boolean attribute</li>
                             <li>
                                 When present, it specifies that the form-data
@@ -632,37 +392,46 @@
                             <li>Overrides the form's novalidate attribute</li>
                             <li>Only used for buttons with type="submit"</li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" formnovalidate>
-                                    <button type="button">
-                                        Formnovalidate Button
-                                    </button>
-                                </form>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formnovalidate&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <form
+                                        action="/action-page.php"
+                                        formnovalidate
+                                    >
+                                        <button type="button">
+                                            Formnovalidate Button
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="/action-page.php" formnovalidate&gt;
     &lt;button type="button"&gt;
         Fromnovalidate Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-formtarget" style="padding-top: 100px"
-                                >Formtarget</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+
+                    <section>
+                        <h3 class="lvl3" id="formtarget">formtarget</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>blank</li>
+                                <li>self</li>
+                                <li>parent</li>
+                                <li>top</li>
+                            </ul>
+                            <li><i>framenameform-id</i></li>
+                            <li>Specifies which form the button belongs to</li>
                             <li>
                                 Specifies where to display the response after
                                 submitting the form
@@ -672,280 +441,359 @@
                                 attribute
                             </li>
                             <li>Only used for buttons with type="submit"</li>
-                            <li>
-                                <ul>
-                                    <li>
-                                        -blank: Loads the response in a new
-                                        window/tab
-                                    </li>
-                                    <li>
-                                        -self: Loads the response in the same
-                                        frame (this is default)
-                                    </li>
-                                    <li>
-                                        -parent: Loads the response in the
-                                        parent frame
-                                    </li>
-                                    <li>
-                                        -top: Loads the response in the full
-                                        body of the window
-                                    </li>
-                                    <li>
-                                        <i>framename</i>: Loads the response in
-                                        a named iframe
-                                    </li>
-                                </ul>
-                            </li>
+                            <ul>
+                                <li>
+                                    -blank: Loads the response in a new
+                                    window/tab
+                                </li>
+                                <li>
+                                    -self: Loads the response in the same frame
+                                    (this is default)
+                                </li>
+                                <li>
+                                    -parent: Loads the response in the parent
+                                    frame
+                                </li>
+                                <li>
+                                    -top: Loads the response in the full body of
+                                    the window
+                                </li>
+                                <li>
+                                    <i>framename</i>: Loads the response in a
+                                    named iframe
+                                </li>
+                            </ul>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form
-                                    action="/action-page.php"
-                                    formtarget="-blank"
-                                >
-                                    <button type="submit">
-                                        Formtarget Button -blank
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formtarget="-blank";
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="blank">_blank</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            formtarget="-blank"
+                                        >
+                                            <button type="submit">
+                                                Formtarget Button -blank
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" formtarget="-blank";
     &lt;button type="submit"&gt;
         Formtarget Button -blank
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form
-                                    action="/action-page.php"
-                                    formtarget="-self"
-                                >
-                                    <button type="submit">
-                                        Formtarget Button -self
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formtarget="-self";
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="self">_self</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">CSS</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            formtarget="-self"
+                                        >
+                                            <button type="submit">
+                                                Formtarget Button -self
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" formtarget="-self";
     &lt;button type="submit"&gt;
         Formtarget Button -self
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form
-                                    action="/action-page.php"
-                                    formtarget="-parent"
-                                >
-                                    <button type="submit">
-                                        Formtarget Button -parent
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formtarget="-parent";
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl3 h3-plus" id="parent">_parent</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            formtarget="-parent"
+                                        >
+                                            <button type="submit">
+                                                Formtarget Button -parent
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" formtarget="-parent";
     &lt;button type="submit"&gt;
         Formtarget Button -parent
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form
-                                    action="/action-page.php"
-                                    formtarget="-top"
-                                >
-                                    <button type="submit">
-                                        Formtarget Button -top
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formtarget="-top";
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="top">_top</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            formtarget="-top"
+                                        >
+                                            <button type="submit">
+                                                Formtarget Button -top
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" formtarget="-top";
     &lt;button type="submit"&gt;
         Formtarget Button -top
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form
-                                    action="/action-page.php"
-                                    formtarget="-framename"
-                                >
-                                    <button type="submit">
-                                        Formtarget Button -framename
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" formtarget="-framename";
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="form-id">
+                                <i>form-id</i>
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            formtarget="-framename"
+                                        >
+                                            <button type="submit">
+                                                Formtarget Button -framename
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" formtarget="-framename";
     &lt;button type="submit"&gt;
         Formtarget Button -framename
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3 id="def-popover">
-                            <span style="padding-top: 100px"></span>Popover
-                        </h3>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h1 popover class="revert" id="popoverID">
-                                    This is a popover
-                                </h1>
-                                <button popovertarget="popoverID">
-                                    Popover Button
-                                </button>
+                        </section>
+                    </section>
+                    <br /><br /><br /><br />
+
+                    <section>
+                        <h3 class="lvl3" id="popover">popover</h3>
+                        <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li><i>element-id</i></li>
+                            </ul>
+                            <li>Specifies a which popover element to invoke</li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HMTL</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;h1 popover id="popoverID">This is a popover&lt;/h1&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <h1 popover class="revert" id="popoverID">
+                                        This is a popover
+                                    </h1>
+                                    <button popovertarget="popoverID">
+                                        Popover Button
+                                    </button>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;h1 popover id="popoverID">This is a popover&lt;/h1&gt;
 &lt;button popovertarget="popoverID"&gt;
     Popover Button
 &lt;/button&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span
-                                id="def-popovertargetaction"
-                                style="padding-top: 100px"
-                                >Popovertargetaction</span
-                            >
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="popovertargetaction">
+                            popovertargetaction
                         </h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>hide</li>
+                                <li>show</li>
+                                <li>toggle</li>
+                            </ul>
+                            <li>
+                                Specifies what happens to the popover element
+                                when the button is clicked
+                            </li>
                             <li>
                                 Allows you to define what happens when you click
                                 the button
                             </li>
                             <li>Default is toggle</li>
-                            <li>
-                                <ul>
-                                    <li>
-                                        show: The popover element is showed when
-                                        you click the button, and remains open
-                                        after.
-                                    </li>
-                                    <li>
-                                        hide: The popover element is
-                                        hidden(never shown) when you click the
-                                        button
-                                    </li>
-                                    <li>
-                                        toggle: Default value. The popover
-                                        element is toggled between hidding and
-                                        showing when you click the button
-                                    </li>
-                                </ul>
-                            </li>
+                            <ul>
+                                <li>
+                                    show: The popover element is showed when you
+                                    click the button, and remains open after.
+                                </li>
+                                <li>
+                                    hide: The popover element is hidden(never
+                                    shown) when you click the button
+                                </li>
+                                <li>
+                                    toggle: Default value. The popover element
+                                    is toggled between hidding and showing when
+                                    you click the button
+                                </li>
+                            </ul>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h1
-                                    popover
-                                    class="revert"
-                                    id="popovertargetactionIDshow"
-                                >
-                                    This is a popovertargetaction
-                                </h1>
-                                <button
-                                    popovertarget="popovertargetactionIDshow"
-                                    popovertargetaction="show"
-                                >
-                                    Popovertargetaction Button: show
-                                </button>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;h1 popover id="popovertargetactionIDshow">This is a popovertargetaction&lt;/h1&gt;
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="show">show</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <h1
+                                            popover
+                                            class="revert"
+                                            id="popovertargetactionIDshow"
+                                        >
+                                            This is a popovertargetaction
+                                        </h1>
+                                        <button
+                                            popovertarget="popovertargetactionIDshow"
+                                            popovertargetaction="show"
+                                        >
+                                            Popovertargetaction Button: show
+                                        </button>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;h1 popover id="popovertargetactionIDshow">This is a popovertargetaction&lt;/h1&gt;
 &lt;button popovertarget="popovertargetactionIDshow" popovertargetaction="show"&gt;
     Popovertargetaction Button: show
 &lt;/button&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h1
-                                    popover
-                                    class="revert"
-                                    id="popovertargetactionIDhide"
-                                >
-                                    This is a popovertargetaction
-                                </h1>
-                                <button
-                                    popovertarget="popovertargetactionIDhide"
-                                    popovertargetaction="hide"
-                                >
-                                    Popovertargetaction Button: hide
-                                </button>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;h1 popover id="popovertargetactionIDhide">This is a popovertargetaction&lt;/h1&gt;
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="hide">hide</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <h1
+                                            popover
+                                            class="revert"
+                                            id="popovertargetactionIDhide"
+                                        >
+                                            This is a popovertargetaction
+                                        </h1>
+                                        <button
+                                            popovertarget="popovertargetactionIDhide"
+                                            popovertargetaction="hide"
+                                        >
+                                            Popovertargetaction Button: hide
+                                        </button>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;h1 popover id="popovertargetactionIDhide">This is a popovertargetaction&lt;/h1&gt;
 &lt;button popovertarget="popovertargetactionIDhide" popovertargetaction="hide"&gt;
     Popovertargetaction Button: hide
 &lt;/button&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <h1
-                                    popover
-                                    class="revert"
-                                    id="popovertargetactionIDtoggle"
-                                >
-                                    This is a popovertargetaction
-                                </h1>
-                                <button
-                                    popovertarget="popovertargetactionIDtoggle"
-                                    popovertargetaction="toggle"
-                                >
-                                    Popovertargetaction Button: toggle
-                                </button>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;h1 popover id="popovertargetactionIDtoggle">This is a popovertargetaction&lt;/h1&gt;
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="h3-plus lvl4" id="toggle">Toggle</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">CSS</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <h1
+                                            popover
+                                            class="revert"
+                                            id="popovertargetactionIDtoggle"
+                                        >
+                                            This is a popovertargetaction
+                                        </h1>
+                                        <button
+                                            popovertarget="popovertargetactionIDtoggle"
+                                            popovertargetaction="toggle"
+                                        >
+                                            Popovertargetaction Button: toggle
+                                        </button>
+                                    </div>
+                                    <div class="cells">
+                                        <div class="col75">
+                                            <pre><code>&lt;h1 popover id="popovertargetactionIDtoggle">This is a popovertargetaction&lt;/h1&gt;
 &lt;button popovertarget="popovertargetactionIDtoggle" popovertargetaction="toggle"&gt;
     Popovertargetaction Button: toggle
 &lt;/button&gt;</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-name" style="padding-top: 100px"
-                                >Name</span
-                            >
-                        </h3>
+                        </section>
+                    </section>
+                    <br /><br /><br /><br />
+
+                    <section>
+                        <h3 class="lvl3" id="name">name</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li><i>name</i></li>
+                            </ul>
+                            <li>Specifies a name for the button</li>
                             <li>
                                 Specifies the name for a &lt;button&gt; element
                             </li>
@@ -961,37 +809,43 @@
                                 different values when used in a form
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <button name="buttonName" type="submit">
-                                        Name Button
-                                    </button>
-                                </form>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <form
+                                        action="/action-page.php"
+                                        method="get"
+                                    >
+                                        <button name="buttonName" type="submit">
+                                            Name Button
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="/action-page.php" method="get"&gt;
     &lt;button name="buttonName" type="submit"&gt;
         Name Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-type" style="padding-top: 100px"
-                                >Type</span
-                            >
-                        </h3>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="type">type</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>button</li>
+                                <li>reset</li>
+                                <li>submit</li>
+                            </ul>
+                            <li>Specifies the type of button</li>
                             <li>Specifies the type of button</li>
                             <li>
                                 Always specify the type attribute for the
@@ -1018,40 +872,67 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <button type="button">Type Button</button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="type-button">
+                                button
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            method="get"
+                                        >
+                                            <button type="button">
+                                                Type Button
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" method="get"&gt;
     &lt;button type="button"&gt;
         Type Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <label for="firstName">First Name:</label>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        id="firstName"
-                                    />
-                                    <button type="submit">
-                                        Type Button: submit
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="type-submit">
+                                submit
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            method="get"
+                                        >
+                                            <label for="firstName"
+                                                >First Name:</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="firstName"
+                                                id="firstName"
+                                            />
+                                            <button type="submit">
+                                                Type Button: submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" method="get"&gt;
 &lt;label for="firstName"&gt;First Name:&lt;/label&gt;
 &lt;input
     type="text"
@@ -1062,24 +943,39 @@
         Type Button: submit
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <label for="firstName">First Name:</label>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        id="firstName"
-                                    />
-                                    <button type="reset">
-                                        Type Button: reset
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="type-reset">reset</h3>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <form
+                                            action="/action-page.php"
+                                            method="get"
+                                        >
+                                            <label for="firstName"
+                                                >First Name:</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="firstName"
+                                                id="firstName"
+                                            />
+                                            <button type="reset">
+                                                Type Button: reset
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;form action="/action-page.php" method="get"&gt;
 &lt;label for="firstName"&gt;First Name:&lt;/label&gt;
 &lt;input
     type="text"
@@ -1090,19 +986,20 @@
         Type Button: reset
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <br /><br />
-                <section>
-                    <div>
-                        <h3>
-                            <span id="def-value" style="padding-top: 100px"
-                                >Value</span
-                            >
-                        </h3>
+                        </section>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h3 class="lvl3" id="value">value</h3>
                         <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li><i>text</i></li>
+                            </ul>
+                            <li>Specifies an initial value for the button</li>
                             <li>
                                 Specifies the initial value for a &lt;button&gt;
                                 in an HTML form
@@ -1113,27 +1010,35 @@
                                 submit the form
                             </li>
                         </ul>
-                        <div class="row colheader">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <form action="/action-page.php" method="get">
-                                    <button type="submit" value="val-Button">
-                                        Value Button
-                                    </button>
-                                </form>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-                            <div class="col75">
-                                <pre><code>&lt;form action="/action-page.php" method="get"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <form
+                                        action="/action-page.php"
+                                        method="get"
+                                    >
+                                        <button
+                                            type="submit"
+                                            value="val-Button"
+                                        >
+                                            Value Button
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;form action="/action-page.php" method="get"&gt;
     &lt;button type="submit" value="val-Button"&gt;
         Value Button
     &lt;/button&gt;
 &lt;/form&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
             </article>
         </main>

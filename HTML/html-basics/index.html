@@ -37,7 +37,7 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>HTML Basics</p>
+                    <!-- <p>HTML Basics</p>
                     <ul>
                         <li>
                             <a href="./index.html#html-page-parts"
@@ -277,33 +277,33 @@
                                 >
                             </li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <h2>
-                    <span id="html-page-parts" class="anchor-centered"></span
-                    >Basic Parts of an html Page
-                </h2>
-                <div class="container">
-                    <div class="row col-header">
-                        <div class="col50">Example</div>
-                        <div class="col50">html</div>
-                    </div>
-                    <div class="row">
-                        <div class="col50">
-                            <br />
-                            <img
-                                src="../../images/Screenshot 2024-04-27 153032.png"
-                                alt=""
-                                style="width: 100%"
-                            />
+                <section>
+                    <h2 id="html-page-parts" class="lvl2">
+                        Basic Parts of an html Page
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="col50">
-                            <pre><code>&lt;html&gt;
+                        <div class="body-row">
+                            <div class="cells">
+                                <br />
+                                <img
+                                    src="../../images/Screenshot 2024-04-27 153032.png"
+                                    alt=""
+                                    style="width: 100%"
+                                />
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;html&gt;
     &lt;head&gt;
         &lt;meta&gt;
         &lt;link rel="stylesheet" 
@@ -343,18 +343,15 @@
         &lt;/footer&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </article>
             <br /><br />
             <article>
                 <section>
-                    <h2 class="title-css">
-                        <span id="boilerplate" class="anchor-centered"
-                            >Boilerplate</span
-                        >
-                    </h2>
+                    <h2 class="lvl2" id="boilerplate">Boilerplate</h2>
                     <ul>
                         <li>
                             Use emmet abbreviations: type
@@ -366,19 +363,28 @@
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
     &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
+
 &lt;body&gt;
-    
+    &lt;header&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=""&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                 </section>
                 <br /><br />
                 <br /><br />
                 <section>
-                    <h2>
-                        <span id="title" class="anchor-centered">Title</span>
-                    </h2>
+                    <h2 id="title" class="lvl2">Title</h2>
                     <ul>
                         <li>Defines the title of the document</li>
                         <li>
@@ -408,23 +414,22 @@
                             </ul>
                         </li>
                     </ul>
-
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">HTML</div>
-                            <div class="col30">Default CSS</div>
+                    <div class="outer-table">
+                        <div class="head-row3">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="row">
-                            <div class="col20">
+                        <div class="body-row3">
+                            <div class="cells">
                                 <title style="display: inline">
                                     A meaningful title
                                 </title>
                             </div>
-                            <div class="col50">
+                            <div class="cells">
                                 <pre><code>&lt;title style="display: inline"&gt;A meaningful title&lt;/title&gt;</code></pre>
                             </div>
-                            <div class="col30">
+                            <div class="cells">
                                 <pre><code>title {
     display: none;
 }</code></pre>
@@ -434,7 +439,7 @@
                 </section>
                 <br /><br />
                 <section>
-                    <h2><span id="meta" class="anchor-centered">Meta</span></h2>
+                    <h2 id="meta" class="lvl2">Meta</h2>
                     <ul>
                         <li>
                             Typically used to specify the character set, page
@@ -448,12 +453,12 @@
                             other web services
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col75">HTML</div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col75">
+                        <div class="body-row-full">
+                            <div class="cells">
                                 <pre><code>//Defining the character set:
 &lt;meta charset="UTF-8"&gt;
 //Define keywords for search engines:
@@ -483,10 +488,8 @@
                 </section>
                 <br /><br />
                 <section>
-                    <h2>
-                        <span id="style-stylesheet" class="anchor-centered"
-                            >Style & Stylesheet</span
-                        >
+                    <h2 id="style-stylesheet" class="lvl2">
+                        Style & Stylesheet
                     </h2>
                     <ul>
                         <li>
@@ -494,20 +497,36 @@
                             styleshet
                         </li>
                     </ul>
-                    <h3>
-                        <span id="style" class="anchor-centered">Style</span>
-                    </h3>
-                    <pre><code>&lt;style&gt;
+                    <section>
+                        <h3 id="style" class="lvl3">Style</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>&lt;style&gt;
     body {background-color: powderblue;}
     h1 {color: red;}
     p {color: blue;}
 &lt;/style&gt;</code></pre>
-                    <h3>
-                        <span id="stylesheet" class="anchor-centered"
-                            >CSS Stylesheet</span
-                        >
-                    </h3>
-                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 id="stylesheet" class="lvl3">CSS Stylesheet</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
         </main>
@@ -618,6 +637,7 @@
                 </div>
             </div>
         </footer>
+        <!-- <div id="test-zone"></div> -->
         <script src="../../nav-menu.js"></script>
     </body>
 </html>

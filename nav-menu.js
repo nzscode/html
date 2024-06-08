@@ -6,7 +6,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-let testZone = document.getElementById("test-zone");
+// let testZone = document.getElementById("test-zone");
 let nav = document.getElementById("nav");
 let lvl2List = document.getElementsByClassName("lvl2");
 
@@ -45,5 +45,16 @@ for (let i = 0; i < lvl2List.length; i++) {
         allHTML += lvl3HTML;
     }
 }
-testZone.innerHTML += allHTML;
+// testZone.innerHTML += allHTML;
+
 nav.innerHTML += allHTML;
+
+function insertTestZone() {
+    let newTestZone = document.createElement("div");
+    let textTestZone = document.createTextNode("");
+    newTestZone.appendChild(textTestZone);
+    let footTag = document.querySelector("footer").appendChild(newTestZone);
+    newTestZone += allHTML;
+}
+
+insertTestZone();

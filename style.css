@@ -362,7 +362,7 @@ ul {
 
 .head-row,
 .body-row,
-.headrow3,
+.head-row3,
 .body-row3,
 .head-row40,
 .body-row40,
@@ -388,6 +388,11 @@ ul {
 .head-row3,
 .body-row3 {
     grid-template-columns: 30% 30% auto;
+}
+
+.body-row3 > .cells:nth-child(2) {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
 }
 
 .head-row40,
@@ -424,9 +429,31 @@ ul {
     min-width: 25%;
 }
 
-.cells:nth-child(odd) {
+.body-row > .cells:nth-child(2),
+.body-row40 > .cells:nth-child(2),
+.body-row50 > .cells:nth-child(2),
+.body-row60 > .cells:nth-child(2),
+.body-row75 > .cells:nth-child(2),
+.body-row-full > .cells:nth-child(2) {
     padding: 5px;
-    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.body-row > .cells,
+.body-row-full > .cells,
+.body-row3 > .cells,
+.body-row40 > .cells,
+.body-row50 > .cells,
+.body-row60 > .cells,
+.body-row75 > .cells,
+.head-row > .cell-header,
+.head-row-full > .cell-header,
+.head-row3 > .cell-header,
+.head-row40 > .cell-header,
+.head-row50 > .cell-header,
+.head-row60 > .cell-header,
+.head-row75 > .cell-header {
+    padding: 15px;
 }
 
 .odd-bg {

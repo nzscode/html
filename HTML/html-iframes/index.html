@@ -35,7 +35,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>Basic iFrame</p>
+                    <!-- <p>Basic iFrame</p>
                     <ul>
                         <li>
                             <a href="./index.html#basic-iframe">Basic iFrame</a>
@@ -65,187 +65,229 @@
                             <li><a href="./index.html#srdoc">srdoc</a></li>
                             <li><a href="./index.html#width">width</a></li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <h2>
-                    <span id="basic-iframe" class="anchor-centered"></span>Basic
-                    iFrame
-                </h2>
-                <ul>
-                    <li>
-                        Used to embed another document within the current HTML
-                        document.
-                    </li>
-                    <li>
-                        The HTML &lt;iframe&gt; tag specifies an inline frame
-                    </li>
-                    <li>
-                        The src attribute defines the URL of the page to embed
-                    </li>
-                    <li>
-                        Always include a title attribute (for screen readers)
-                    </li>
-                    <li>
-                        The height and width attributes specify the size of the
-                        iframe
-                    </li>
-                    <li>
-                        Use border:none; to remove the border around the iframe
-                    </li>
-                    <li>Can use CSS to style if needed.</li>
-                </ul>
-                <div class="container">
-                    <div class="row col-header">
-                        <div class="col30">Example</div>
-                        <div class="col30">HTML</div>
-                        <div class="col30">Default CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col30">
-                            <br />
-                            <iframe
-                                src="https://mashable.com/"
-                                frameborder="0"
-                                width="275px"
-                                height="150px"
-                            ></iframe>
+                <section>
+                    <h2 id="basic-iframe" class="lvl2">Basic iFrame</h2>
+                    <ul>
+                        <li>
+                            Used to embed another document within the current
+                            HTML document.
+                        </li>
+                        <li>
+                            The HTML &lt;iframe&gt; tag specifies an inline
+                            frame
+                        </li>
+                        <li>
+                            The src attribute defines the URL of the page to
+                            embed
+                        </li>
+                        <li>
+                            Always include a title attribute (for screen
+                            readers)
+                        </li>
+                        <li>
+                            The height and width attributes specify the size of
+                            the iframe
+                        </li>
+                        <li>
+                            Use border:none; to remove the border around the
+                            iframe
+                        </li>
+                        <li>Can use CSS to style if needed.</li>
+                    </ul>
+
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="col30">
-                            <pre><code>&lt;iframe
+                        <div class="body-row">
+                            <div class="cells">
+                                <iframe
+                                    src="https://mashable.com/"
+                                    frameborder="0"
+                                    width="275px"
+                                    height="150px"
+                                ></iframe>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;iframe
     src="https://mashable.com/"
     frameborder="0" //Can use CSS
     width="275px"   //Can use CSS
     height="150px"  //Can use CSS
 &gt;&lt;/iframe&gt;</code></pre>
+                            </div>
                         </div>
-                        <div class="col30">
-                            <h4 class="title-css">iframe</h4>
-                            <pre><code>iframe {
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code><b><u>iframe</u></b>
+iframe {
     border: none;
     width: 275px;
     height: 150px;
 }
-</code></pre>
-                            <h4 class="title-css">iframe:focus</h4>
-                            <pre><code>iframe:focus { 
+
+<b><u>iframe:focus</u></b>
+iframe:focus { 
     outline: none; 
-}</code></pre>
-                            <h4 class="title-css">iframe[seamless]</h4>
-                            <pre><code>iframe[seamless] { 
+}
+
+<b><u>iframe[seamless]</u></b>
+iframe[seamless] { 
     display: block; 
-}</code></pre>
+}
+                        </code></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </article>
             <hr />
             <hr />
             <article>
-                <h2 id="iframe-attributes">iFrame Attributes</h2>
-                <div>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="allowfullscreen">
-                                    <span>allowfullscreen</span>
-                                </td>
-                                <td>true/false</td>
-                                <td>
-                                    Set to true if the &lt;iframe&gt; can
-                                    activate fullscreen mode by calling the
-                                    requestFullscreen() method
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="height"><span>height</span></td>
-                                <td>px</td>
-                                <td>Default height is 150 pixels</td>
-                            </tr>
-                            <tr>
-                                <td id="name"><span>name</span></td>
-                                <td>text</td>
-                                <td>Sets the name of the &lt;iframe&gt;</td>
-                            </tr>
-                            <tr>
-                                <td id="sandbox"><span>sandbox</span></td>
-                                <td>
-                                    allow-forms <br />allow-orientation-lock
-                                    <br />allow-pointer-lock <br />allow-popups
-                                    <br />allow-popups-to-escape-sandbox
-                                    <br />allow-presentation
-                                    <br />allow-same-origin <br />allow-scripts
-                                    <br />allow-top-navigation
-                                    <br />allow-top-navigation-by-user-activation
-                                </td>
-                                <td>
-                                    <ul>
-                                        <b> allow-forms</b
-                                        >: Allows form submission
-                                        <br /><b>allow-orientation-lock</b
-                                        >: Allows to lock the screen orientation
-                                        <br /><b>allow-pointer-lock</b
-                                        >: Allows to use the Pointer Lock API
-                                        <br /><b>allow-popups</b
-                                        >: Allows popups
-                                        <br /><b
-                                            >allow-popups-to-escape-sandbox</b
-                                        >: Allows popups to open new windows
-                                        without inheriting the sandboxing
-                                        <br /><b>allow-presentation</b
-                                        >: Allows to start a presentation
-                                        session
-                                        <br /><b>allow-same-origin</b
-                                        >: Allows the iframe content to be
-                                        treated as being from the same origin
-                                        <br /><b>allow-scripts</b
-                                        >: Allows to run scripts
-                                        <br /><b>allow-top-navigation</b
-                                        >: Allows the iframe content to navigate
-                                        its top-level browsing context
-                                        <br /><b
-                                            >allow-top-navigation-by-user-activation</b
-                                        >: Allows the iframe content to navigate
+                <section>
+                    <h2 id="iframe-attributes">iFrame Attributes</h2>
+                    <div class="outer-table">
+                        <div class="head-row3">
+                            <div class="cell-header">Attribute</div>
+                            <div class="cell-header">Value</div>
+                            <div class="cell-header">Description</div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">
+                                <span id="allowfullscreen"
+                                    >allowfullscreen</span
+                                >
+                            </div>
+                            <div class="cells">true/false</div>
+                            <div class="cells">
+                                Set to true if the &lt;iframe&gt; can activate
+                                fullscreen mode by calling the
+                                requestFullscreen() method
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">
+                                <span id="height">height</span>
+                            </div>
+                            <div class="cells">px</div>
+                            <div class="cells">
+                                Default height is 150 pixels
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">
+                                <span id="name"> name </span>
+                            </div>
+                            <div class="cells">text</div>
+                            <div class="cells">
+                                Sets the name of the &lt;iframe&gt;
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">
+                                <span id="sandbox">sandbox</span>
+                            </div>
+                            <div class="cells">
+                                <ul>
+                                    <li>allow-forms:</li>
+                                    <li>allow-orientation-lock :</li>
+                                    <li>allow-pointer-lock</li>
+                                    <li>allow-popups</li>
+                                    <li>allow-popups-to-escape-sandbox</li>
+                                    <li>allow-presentation</li>
+                                    <li>allow-same-origin</li>
+                                    <li>allow-scripts</li>
+                                    <li>allow-top-navigation</li>
+                                    <li>
+                                        allow-top-navigation-by-user-activation
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <ul>
+                                    <li>allow-forms: Allows form submission</li>
+                                    <li>
+                                        allow-orientation-lock: Allows to lock
+                                        the screen orientation
+                                    </li>
+                                    <li>
+                                        allow-pointer-lock: Allows to use the
+                                        Pointer Lock API
+                                    </li>
+                                    <li>allow-popups: Allows popups</li>
+                                    <li>
+                                        allow-popups-to-escape-sandbox: Allows
+                                        popups to open new windows without
+                                        inheriting the sandboxing
+                                    </li>
+                                    <li>
+                                        allow-presentation: Allows to start a
+                                        presentation session
+                                    </li>
+                                    <li>
+                                        allow-same-origin: Allows the iframe
+                                        content to be treated as being from the
+                                        same origin
+                                    </li>
+                                    <li>
+                                        allow-scripts: Allows to run scripts
+                                    </li>
+                                    <li>
+                                        allow-top-navigation: Allows the iframe
+                                        content to navigate its top-level
+                                        browsing context
+                                    </li>
+                                    <li>
+                                        allow-top-navigation-by-user-activation:
+                                        Allows the iframe content to navigate
                                         its top-level browsing context, but only
                                         if initiated by user
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr id="src">
-                                <td><span>src</span></td>
-                                <td>URL</td>
-                                <td>
-                                    Specifies the address of the document to
-                                    embed in the &lt;iframe&gt;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="srdoc"><span>srdoc</span></td>
-                                <td>HTML Code</td>
-                                <td>
-                                    Specifies the HTML content of the page to
-                                    show in the &lt;iframe&gt;
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="width"><span>width</span></td>
-                                <td>px</td>
-                                <td>Default width is 300 pixels</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">
+                                <span id="src">src</span>
+                            </div>
+                            <div class="cells">URL</div>
+                            <div class="cells">
+                                Specifies the address of the document to embed
+                                in the &lt;iframe&gt;
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">
+                                <span id="srdoc">srdoc</span>
+                            </div>
+                            <div class="cells">HTML Code</div>
+                            <div class="cells">
+                                Specifies the HTML content of the page to show
+                                in the &lt;iframe&gt;
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">
+                                <span id="width">width</span>
+                            </div>
+                            <div class="cells">px</div>
+                            <div class="cells">Default width is 300 pixels</div>
+                        </div>
+                    </div>
+                </section>
             </article>
         </main>
         <br /><br /><br />
