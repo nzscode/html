@@ -166,12 +166,6 @@ h4 {
     margin-bottom: 2px;
 }
 
-.h3-plus {
-    background-color: #e1ea6665;
-    width: 75%;
-    margin-left: 75px;
-}
-
 .title-link {
     margin-left: 2px;
     margin-top: 2px;
@@ -500,4 +494,93 @@ a {
 
 .output {
     color: grey;
+}
+
+h1 {
+    background-color: #d6282876;
+    border: 2px solid #d6282876;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    /* Kanit Bold */
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h2 {
+    background-color: #f77f0076;
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+    padding: 10px;
+    /* Kanit Medium */
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h3 {
+    background-color: #fcbf4976;
+    border-radius: 5px;
+    margin: 5px 25px 5px 25px;
+    padding: 3px 15px;
+    font-size: 18px;
+    /* Kanit Regular */
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h4 {
+    margin-bottom: 2px;
+}
+
+.lvl1 {
+    background-color: #e08570;
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+    padding: 10px;
+    /* Kanit Medium */
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lvl2 {
+    background-color: #e8c477dd;
+    border-radius: 5px;
+    margin: 15px 20px 5px;
+    padding: 10px;
+    /* Kanit Medium */
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lvl3 {
+    background-color: #e0f987c4;
+    width: 90%;
+    padding: 10px;
+    margin-left: 75px;
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lvl4 {
+    background-color: #87f9c0a7;
+    width: 80%;
+    padding: 10px;
+    margin-left: 100px;
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+.lvl5 {
+    background-color: #74e4fd88;
+    width: 70%;
+    padding: 10px;
+    margin-left: 125px;
+
+    font-weight: 600;
+    font-style: normal;
 }

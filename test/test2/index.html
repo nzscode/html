@@ -3,31 +3,96 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../../style.css" />
+
         <title>Test 2</title>
     </head>
     <body>
-        <div
-            id="test1-zone1"
-            style="
-                border: 2px solid green;
-                border-radius: 15px;
-                margin: 15px;
-                padding: 15px;
-            "
-        ></div>
-        <div
-            id="test3-zone1"
-            style="
-                border: 2px solid green;
-                border-radius: 15px;
-                margin: 15px;
-                padding: 15px;
-            "
-        ></div>
-
-        <div id="nav">
-            <a href="../test1/index.html">Test1</a>
-        </div>
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">HTML TEST 2</span>
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav"></nav>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1 class="lvl1" id="A">Level 1 RED</h1>
+                <section>
+                    <h2 class="lvl2" id="B">Level 2 RED</h2>
+                    <section>
+                        <h3 class="lvl3" id="C">Level 3 RED</h3>
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="D">Level 4 RED</h3>
+                            <section>
+                                <h4 class="lvl5" id="E">
+                                    <b><u>Level 5 RED</u></b>
+                                </h4>
+                                <div>Lorem ipsum dolor sit amet.</div>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </div>
+            <div>
+                <h1 class="lvl1" id="A2">Level 1 BLUE</h1>
+                <section>
+                    <h2 class="lvl2" id="B2">Level 2 BLUE</h2>
+                    <section>
+                        <h3 class="lvl3" id="C2">Level 3 BLUE</h3>
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="D2">Level 4 BLUE</h3>
+                            <section>
+                                <h4 class="lvl5" id="E2">
+                                    <b><u>Level 5 BLUE</u></b>
+                                </h4>
+                                <div>Lorem ipsum dolor sit amet.</div>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </div>
+            <div>
+                <h1 class="lvl1" id="A3">Level 1 GREEN</h1>
+                <section>
+                    <h2 class="lvl2" id="B3">Level 2 GREEN</h2>
+                    <section>
+                        <h3 class="lvl3" id="C3">Level 3 GREEN</h3>
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="D3">Level 4 GREEN</h3>
+                            <section>
+                                <h4 class="lvl5" id="E3">
+                                    <b><u>Level 5 GREEN</u></b>
+                                </h4>
+                                <div>Lorem ipsum dolor sit amet.</div>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <footer>xxx</footer>
         <script src="./test2.js"></script>
     </body>
 </html>
