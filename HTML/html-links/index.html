@@ -34,693 +34,706 @@
                     onclick="closeNav()"
                     >&times;</a
                 >
-                <nav id="nav">
-                    <!-- <p>Basic Links</p>
-                    <ul>
-                        <li>
-                            <a href="./index.html#basic-hyperlink"
-                                >Basic Hyperlink</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./index.html#basic-link">Basic Link</a>
-                        </li>
-                    </ul>
-
-                    <p>Hyperlink Attributes</p>
-
-                    <ul>
-                        <li>
-                            <a href="./index.html#h-attributes"
-                                >Hyperlink Attributes</a
-                            >
-                        </li>
-
-                        <li>
-                            <a href="./index.html#h-download"
-                                >Hyperlink Download</a
-                            >
-                        </li>
-                        <li>
-                            <a href="./index.html#h-href">Hyperlink Href</a>
-                        </li>
-                        <li><a href="./index.html#h-rel">Hyperlink Rel</a></li>
-                        <li>
-                            <a href="./index.html#h-target">Hyperlink Target</a>
-                        </li>
-                    </ul>
-                    <p>Link Attributes</p>
-                    <ul>
-                        <li>
-                            <a href="./index.html#l-attributes"
-                                >Link Attributes</a
-                            >
-                        </li>
-                        <li><a href="./index.html#l-href">Link Href</a></li>
-                        <li><a href="./index.html#l-rel">Link Rel</a></li>
-                        <li><a href="./index.html#l-type">Link Type</a></li>
-                    </ul>
-
-                    <p>Hyperlink States</p>
-                    <ul>
-                        <li>
-                            <a href="./index.html#states">Hyperlink States</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#link">A: Link</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#visited">A: Visited</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#hover">A: Hover</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#active">A: Active</a>
-                        </li>
-                    </ul>
-                    <p>Hyperlink Cursors</p>
-                    <ul>
-                        <li>
-                            <a href="./index.html#cursors">Hyperlink Cursors</a>
-                        </li>
-                    </ul> -->
-                </nav>
+                <nav id="nav"></nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
                 <section>
-                    <h2 id="basic-table" class="lvl2">Basic Hyperlink</h2>
-                    <h3 class="lvl3" id="hyperlink-attributes">
-                        Hyperlink Attributes
-                    </h3>
-                    <ul>
-                        <li>download</li>
-                        <li>href</li>
-                        <li>rel</li>
-                        <li>target</li>
-                    </ul>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">HTML</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                <a href="httpe://www.google.ca"> Google </a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="httpe://www.google.ca"&gt;
-                                    Google
-                                &lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="outer-table">
-                        <div class="head-row-full">
-                            <div class="cell-header">Default CSS</div>
-                        </div>
-                        <div class="body-row-full">
-                            <div class="cells">
-                                <pre><code>a:link {
-                                    color: (internal value);
-                                    text-decoration: underline;
-                                    cursor: auto;
-                                }
-                                
-                                a:visited {
-                                    color: (internal value);
-                                    text-decoration: underline;
-                                    cursor: auto;
-                                }
-                                
-                                a:link:active {
-                                    color: (internal value);
-                                }
-                                
-                                a:visited:active {
-                                    color: (internal value);
-                                }</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="lvl4 h3-plus" id="download">Download</h3>
-                    <ul>
-                        <li>Value:</li>
-                        <ul>
-                            <li>filename</li>
-                        </ul>
-                        <li>
-                            When the hyperlink is clicked a file will be
-                            downloaded
-                        </li>
-                    </ul>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">CSS</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells"></div>
-                            <div class="cells"></div>
-                        </div>
-                    </div>
-                    <h3 class="lvl4 h3-plus" id="href">Href</h3>
-                    <ul>
-                        <li>To Specify a destination</li>
-                        <li>
-                            Without the &lt;<i>href</i>&gt; the &lt;a&gt; tag
-                            will not be a hyperlink
-                        </li>
-                        <ul>
-                            Possible values:
-                            <li>
-                                An absolute URL - points to another web site
-                                (like href="http://www.example.com/default.htm")
-                            </li>
-                            <li>
-                                A relative URL - points to a file within a web
-                                site (like href="default.htm")
-                            </li>
-                            <li>
-                                Link to an element with a specified id within
-                                the page (like href="#section2")
-                            </li>
-                            <li>
-                                Other protocols (like https://, ftp://, mailto:,
-                                file:, etc..)
-                            </li>
-                            <li>
-                                A script (like
-                                href="javascript:alert('Hello');")
-                            </li>
-                        </ul>
-                    </ul>
-                        <h3 class="lvl5" id="absolute-url">
-                            Absolute URL
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">HTML</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="https://www.google.ca">Google </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="https://www.google.ca"&gt;Google &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="lvl5" id="id-hyperlink">
-                            ID Hyperlink
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="#id1">ID 1 </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="#ID1"&gt;ID 1 &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <section>
-                        <h3 class="lvl5" id="js-alert">
-                            Javascript Alert
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="javascript:alert('Hello')"
-                                        >Alert Hello</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="javascript:alert('Hello')"&gt;Alert Hello &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl5" id="send-mail">Send E-Mail</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="mailto:someone@example.com"
-                                        >Send E-Mail</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send E-Mail &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl5" id="image-link">
-                            Image as Hyperlink
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="hhtps://www.google.ca"
-                                        ><img
-                                            src="../../images/img.png"
-                                            alt="www.google.ca"
-                                            border="0"
-                                            width="50px"
-                                            height="50px"
-                                    /></a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="hhtps://www.google.ca"&gt;
-        &lt;img
-            src="../../images/img.png"
-            alt="www.google.ca"
-            border="0"
-            width="50px"
-            height="50px"
-    /&gt;
-&lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl5" id="tel-hyperlink">
-                            Telephone Hyperlink
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="tel:+11234567890"
-                                        >+1 (123) 456-7890</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="tel:+11234567890"&gt;+1 (123) 456-7890 &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <h3 class="lvl4 h3-plus" id="rel">Rel</h3>
-                    <ul>
-                        <li>
-                            Specifies the relationship between the current
-                            document and the linked document
-                        </li>
-                        <li>Only helpful for SEO</li>
-                        <li>Not every link needs to be defined</li>
-                        <li>
-                            Only used if the <i>href</i> attribute is present
-                        </li>
-                        <ul>
-                            Possible values:
-                            <li>
-                                Alternate: Provides a link to an alternate
-                                representation of the document (i.e. print page,
-                                translated or mirror)
-                            </li>
-                            <li>
-                                Author: Provides a link to the author of the
-                                document
-                            </li>
-                            <li>
-                                Bookmark: Permanent URL used for bookmarking
-                            </li>
-                            <li>
-                                External: Indicates that the referenced document
-                                is not part of the same site as the current
-                                document
-                            </li>
-                            <li>Help: Provides a link to a help document</li>
-                            <li>
-                                License: Provides a link to licensing
-                                information for the document
-                            </li>
-                            <li>
-                                Next: Provides a link to the next document in
-                                the series
-                            </li>
-                            <li>
-                                NoFollow: Links to an unendorsed document, like
-                                a paid link.
-                                <br />
-                                ("nofollow" is used by Google, to specify that
-                                the Google search spider should not follow that
-                                link)
-                            </li>
-                            <li>
-                                NoOpener: Requires that any browsing context
-                                created by following the hyperlink must not have
-                                an opener browsing context
-                            </li>
-                            <li>
-                                NoReferrer: Makes the referrer unknown. No
-                                referer header will be included when the user
-                                clicks the hyperlink
-                            </li>
-                            <li>Prev: The previous document in a selection</li>
-                            <li>
-                                Search: Links to a search tool for the document
-                            </li>
-                            <li>
-                                Tag: A tag (keyword) for the current document
-                            </li>
-                        </ul>
-                    </ul>
-                    <br /><br />
-                    <section>
-                        <h3 class="lvl4 h3-plus">rel = alternate</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="https://nzscode.github.io/snippets-html/html-Print-Links"
-                                        >Alternate Print Page</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="https://nzscode.github.io/snippets-html/html-Print-Links"&gt;
-                                Alternate Print Page&lt;/a&gt;
-                            &lt;a href="../HTML Print/Print-html-Links/index.html" rel="alternate"&gt;
-                                Alternate Print Page - l&lt;/a&gt</code></pre>
-                                    ;
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus">rel = author</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
-                                        rel="author"
-                                        >Author: J.K.Rowling</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="https://en.wikipedia.org/wiki/J.-K.-Rowling" rel="author" &gt;
-                                Author: J.K.Rowling&lt;/a &gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus">rel = bookmark</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
-                                        rel="author"
-                                        >Author: J.K.Rowling</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="#Default-Hyperlink-CSS" rel="bookmark" &gt;
-                                Bookmark: Default Hyperlink CSS&lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus">rel = help</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a href="../html-print/FAQ/index.html"
-                                        >FAQ</a
-                                    >
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../html-print/FAQ/index.html"&gt;FAQ&lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="stylesheet">
-                            rel = stylesheet
-                        </h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    invisible <i>link to stylesheet</i>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <section>
-                    <h3 class="lvl3" id="target">Target</h3>
-                    <ul>
-                        <li>Specifies where to open the linked document</li>
-                        <li>Possible Values:</li>
-                        <ul>
-                            <li>
-                                _blank : Opens the linked document in a new
-                                window or tab
-                            </li>
-                            <li>
-                                _self: Opens the linked document in the same
-                                frame(same page) as it was clicked (this is
-                                default)
-                            </li>
-                            <li>
-                                _parent: Opens the linked document in the parent
-                                frame
-                            </li>
-                            <li>
-                                _top: Opens the linked document in the full body
-                                of the window
-                            </li>
-                            <li>
-                                <i>framename</i>: Opens the linked document in
-                                the named iframe
-                            </li>
-                        </ul>
-                    </ul>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="t-blank">_blank</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="../../images/img.png"
-                                        target="_blank"
-                                    >
-                                        Opens Image in New Page
-                                    </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../../images/img.png" target="_blank"&gt;
-    Opens Image in New Page
-&lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="t-self">_self</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="../../images/img.png"
-                                        target="_self"
-                                    >
-                                        Opens Image in This page
-                                    </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../../images/img.png" target="_self"&gt;
-                Opens Image in This Page
-            &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="t-parent">_parent</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="../../images/img.png"
-                                        target="_parent"
-                                    >
-                                        Opens Image in Parent Frame(see
-                                        <i>iFrame</i>)
-                                    </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../../images/img.png" target="_parent"&gt;
-                Opens Image in New Page
-            &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="t-top">top</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="../../images/img.png"
-                                        target="_top"
-                                    >
-                                        Opens Image in Top Frame(see
-                                        <i>iFrame</i>)
-                                    </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../../images/img.png" target="_top"&gt;
-                Opens Image in New Page
-            &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="framename">Framename</h3>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <a
-                                        href="../../images/img.png"
-                                        target="framename"
-                                    >
-                                        Opens Image in <i>iFrame</i>
-                                    </a>
-                                </div>
-                                <div class="cells">
-                                    <pre><code>&lt;a href="../../images/img.png" target="framename"&gt;
-                Opens Image in New Page
-            &lt;/a&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2 class="lvl2" id="hyperlink-states">Hyperlink States</h2>
-                    <ul>
-                        <li>a:hover MUST come after a:link and a:visited</li>
-                        <li>a:active MUST come after a:hover</li>
-                        <li>
-                            Every browser has different default colors, but it
-                            can be customized through CSS
-                        </li>
-                        <li>
-                            Text-Decoration can be used in CSS to
-                            add(underline)/remove(none) underlines:
-                        </li>
-                        <li>
-                            Background-color, color(text-color),
-                            font-size/family, etc. can be changed on different
-                            states using CSS
-                        </li>
-                    </ul>
-                    <section>
+                        <h2 id="basic-table" class="lvl2">Basic Hyperlink</h2>
+                        <br /><br />
                         <section>
-                            <h3 class="lvl3" id="a-link">A: Link</h3>
+                            <h3 class="lvl3" id="hyperlink-attributes">
+                                Hyperlink Attributes
+                            </h3>
+                            <ul>
+                                <li>download</li>
+                                <li>href</li>
+                                <li>rel</li>
+                                <li>target</li>
+                            </ul>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <a href="httpe://www.google.ca">
+                                            Google
+                                        </a>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;a href="httpe://www.google.ca"&gt;
+                                            Google
+                                        &lt;/a&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>a:link {
+                                            color: (internal value);
+                                            text-decoration: underline;
+                                            cursor: auto;
+                                        }
+                                        
+                                        a:visited {
+                                            color: (internal value);
+                                            text-decoration: underline;
+                                            cursor: auto;
+                                        }
+                                        
+                                        a:link:active {
+                                            color: (internal value);
+                                        }
+                                        
+                                        a:visited:active {
+                                            color: (internal value);
+                                        }</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
                             <section>
+                                <h3 class="lvl4 h3-plus" id="download">
+                                    Download
+                                </h3>
                                 <ul>
-                                    <li>A normal, unvisited link</li>
+                                    <li>Value:</li>
+                                    <ul>
+                                        <li>filename</li>
+                                    </ul>
+                                    <li>
+                                        When the hyperlink is clicked a file
+                                        will be downloaded
+                                    </li>
                                 </ul>
                                 <div class="outer-table">
-                                    <div class="head-row-full">
-                                        <div class="cell-header">
-                                            Default CSS
-                                        </div>
+                                    <div class="head-row">
+                                        <div class="cell-header">Examples</div>
+                                        <div class="cell-header">CSS</div>
                                     </div>
-                                    <div class="body-row-full">
-                                        <div class="cells">
-                                            <pre><code></code></pre>
-                                        </div>
+                                    <div class="body-row">
+                                        <div class="cells"></div>
+                                        <div class="cells"></div>
                                     </div>
                                 </div>
                             </section>
+                            <br /><br />
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="href">Href</h3>
+                                <ul>
+                                    <li>To Specify a destination</li>
+                                    <li>
+                                        Without the &lt;<i>href</i>&gt; the
+                                        &lt;a&gt; tag will not be a hyperlink
+                                    </li>
+                                    <ul>
+                                        Possible values:
+                                        <li>
+                                            An absolute URL - points to another
+                                            web site (like
+                                            href="http://www.example.com/default.htm")
+                                        </li>
+                                        <li>
+                                            A relative URL - points to a file
+                                            within a web site (like
+                                            href="default.htm")
+                                        </li>
+                                        <li>
+                                            Link to an element with a specified
+                                            id within the page (like
+                                            href="#section2")
+                                        </li>
+                                        <li>
+                                            Other protocols (like https://,
+                                            ftp://, mailto:, file:, etc..)
+                                        </li>
+                                        <li>
+                                            A script (like
+                                            href="javascript:alert('Hello');")
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="absolute-url">
+                                        Absolute URL
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">HTML</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a href="https://www.google.ca"
+                                                    >Google
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="https://www.google.ca"&gt;Google &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="id-hyperlink">
+                                        ID Hyperlink
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a href="#id1">ID 1 </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="#ID1"&gt;ID 1 &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="js-alert">
+                                        Javascript Alert
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="javascript:alert('Hello')"
+                                                    >Alert Hello</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="javascript:alert('Hello')"&gt;Alert Hello &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="send-mail">
+                                        Send E-Mail
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="mailto:someone@example.com"
+                                                    >Send E-Mail</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="mailto:someone@example.com"&gt;Send E-Mail &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="image-link">
+                                        Image as Hyperlink
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a href="hhtps://www.google.ca"
+                                                    ><img
+                                                        src="../../images/img.png"
+                                                        alt="www.google.ca"
+                                                        border="0"
+                                                        width="50px"
+                                                        height="50px"
+                                                /></a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="hhtps://www.google.ca"&gt;
+                    &lt;img
+                        src="../../images/img.png"
+                        alt="www.google.ca"
+                        border="0"
+                        width="50px"
+                        height="50px"
+                /&gt;
+            &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="tel-hyperlink">
+                                        Telephone Hyperlink
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a href="tel:+11234567890"
+                                                    >+1 (123) 456-7890</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="tel:+11234567890"&gt;+1 (123) 456-7890 &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <br /><br />
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="rel">Rel</h3>
+                                <ul>
+                                    <li>
+                                        Specifies the relationship between the
+                                        current document and the linked document
+                                    </li>
+                                    <li>Only helpful for SEO</li>
+                                    <li>Not every link needs to be defined</li>
+                                    <li>
+                                        Only used if the <i>href</i> attribute
+                                        is present
+                                    </li>
+                                    <ul>
+                                        Possible values:
+                                        <li>
+                                            Alternate: Provides a link to an
+                                            alternate representation of the
+                                            document (i.e. print page,
+                                            translated or mirror)
+                                        </li>
+                                        <li>
+                                            Author: Provides a link to the
+                                            author of the document
+                                        </li>
+                                        <li>
+                                            Bookmark: Permanent URL used for
+                                            bookmarking
+                                        </li>
+                                        <li>
+                                            External: Indicates that the
+                                            referenced document is not part of
+                                            the same site as the current
+                                            document
+                                        </li>
+                                        <li>
+                                            Help: Provides a link to a help
+                                            document
+                                        </li>
+                                        <li>
+                                            License: Provides a link to
+                                            licensing information for the
+                                            document
+                                        </li>
+                                        <li>
+                                            Next: Provides a link to the next
+                                            document in the series
+                                        </li>
+                                        <li>
+                                            NoFollow: Links to an unendorsed
+                                            document, like a paid link.
+                                            <br />
+                                            ("nofollow" is used by Google, to
+                                            specify that the Google search
+                                            spider should not follow that link)
+                                        </li>
+                                        <li>
+                                            NoOpener: Requires that any browsing
+                                            context created by following the
+                                            hyperlink must not have an opener
+                                            browsing context
+                                        </li>
+                                        <li>
+                                            NoReferrer: Makes the referrer
+                                            unknown. No referer header will be
+                                            included when the user clicks the
+                                            hyperlink
+                                        </li>
+                                        <li>
+                                            Prev: The previous document in a
+                                            selection
+                                        </li>
+                                        <li>
+                                            Search: Links to a search tool for
+                                            the document
+                                        </li>
+                                        <li>
+                                            Tag: A tag (keyword) for the current
+                                            document
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5">rel = alternate</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="https://nzscode.github.io/snippets-html/html-Print-Links"
+                                                    >Alternate Print Page</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="https://nzscode.github.io/snippets-html/html-Print-Links"&gt;
+                                    Alternate Print Page&lt;/a&gt;
+                                &lt;a href="../HTML Print/Print-html-Links/index.html" rel="alternate"&gt;
+                                    Alternate Print Page - l&lt;/a&gt</code></pre>
+                                                ;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5">rel = author</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
+                                                    rel="author"
+                                                    >Author: J.K.Rowling</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="https://en.wikipedia.org/wiki/J.-K.-Rowling" rel="author" &gt;
+                                    Author: J.K.Rowling&lt;/a &gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5">rel = bookmark</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="https://en.wikipedia.org/wiki/J.-K.-Rowling"
+                                                    rel="author"
+                                                    >Author: J.K.Rowling</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="#Default-Hyperlink-CSS" rel="bookmark" &gt;
+                                    Bookmark: Default Hyperlink CSS&lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5">rel = help</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../html-print/FAQ/index.html"
+                                                    >FAQ</a
+                                                >
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../html-print/FAQ/index.html"&gt;FAQ&lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5 h3-plus" id="stylesheet">
+                                        rel = stylesheet
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                invisible
+                                                <i>link to stylesheet</i>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <br /><br />
+
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="target">Target</h3>
+                                <ul>
+                                    <li>
+                                        Specifies where to open the linked
+                                        document
+                                    </li>
+                                    <li>Possible Values:</li>
+                                    <ul>
+                                        <li>
+                                            _blank : Opens the linked document
+                                            in a new window or tab
+                                        </li>
+                                        <li>
+                                            _self: Opens the linked document in
+                                            the same frame(same page) as it was
+                                            clicked (this is default)
+                                        </li>
+                                        <li>
+                                            _parent: Opens the linked document
+                                            in the parent frame
+                                        </li>
+                                        <li>
+                                            _top: Opens the linked document in
+                                            the full body of the window
+                                        </li>
+                                        <li>
+                                            <i>framename</i>: Opens the linked
+                                            document in the named iframe
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="t-blank">_blank</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../../images/img.png"
+                                                    target="_blank"
+                                                >
+                                                    Opens Image in New Page
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../../images/img.png" target="_blank"&gt;
+            Opens Image in New Page
+        &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="t-self">_self</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../../images/img.png"
+                                                    target="_self"
+                                                >
+                                                    Opens Image in This page
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../../images/img.png" target="_self"&gt;
+                        Opens Image in This Page
+                    &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="t-parent">_parent</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../../images/img.png"
+                                                    target="_parent"
+                                                >
+                                                    Opens Image in Parent
+                                                    Frame(see
+                                                    <i>iFrame</i>)
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../../images/img.png" target="_parent"&gt;
+                        Opens Image in New Page
+                    &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="t-top">_top</h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../../images/img.png"
+                                                    target="_top"
+                                                >
+                                                    Opens Image in Top Frame(see
+                                                    <i>iFrame</i>)
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../../images/img.png" target="_top"&gt;
+                        Opens Image in New Page
+                    &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <br /><br />
+                                <section>
+                                    <h3 class="lvl5" id="framename">
+                                        <i>Framename</i>
+                                    </h3>
+                                    <div class="outer-table">
+                                        <div class="head-row">
+                                            <div class="cell-header">
+                                                Examples
+                                            </div>
+                                            <div class="cell-header">CSS</div>
+                                        </div>
+                                        <div class="body-row">
+                                            <div class="cells">
+                                                <a
+                                                    href="../../images/img.png"
+                                                    target="framename"
+                                                >
+                                                    Opens Image in <i>iFrame</i>
+                                                </a>
+                                            </div>
+                                            <div class="cells">
+                                                <pre><code>&lt;a href="../../images/img.png" target="framename"&gt;
+                        Opens Image in New Page
+                    &lt;/a&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
                         </section>
+                    </section>
+                    <br /><br /><br /><br />
+                    <section>
+                        <h2 class="lvl2" id="hyperlink-states">
+                            Hyperlink States
+                        </h2>
+                        <ul>
+                            <li>
+                                a:hover MUST come after a:link and a:visited
+                            </li>
+                            <li>a:active MUST come after a:hover</li>
+                            <li>
+                                Every browser has different default colors, but
+                                it can be customized through CSS
+                            </li>
+                            <li>
+                                Text-Decoration can be used in CSS to
+                                add(underline)/remove(none) underlines:
+                            </li>
+                            <li>
+                                Background-color, color(text-color),
+                                font-size/family, etc. can be changed on
+                                different states using CSS
+                            </li>
+                        </ul>
+                        <br /><br />
                         <section>
-                            <h3 class="lvl3" id="a-visited">A: Visited</h3>
+                            <h3 class="lvl3" id="a-link">A: Link</h3>
+                            <ul>
+                                <li>A normal, unvisited link</li>
+                            </ul>
                             <div class="outer-table">
                                 <div class="head-row-full">
                                     <div class="cell-header">Default CSS</div>
@@ -732,6 +745,26 @@
                                 </div>
                             </div>
                         </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl3" id="a-visited">A: Visited</h3>
+                            <ul>
+                                <li>
+                                    A link which the user has already visited
+                                </li>
+                            </ul>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code></code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br /><br />
                         <section>
                             <h3 class="lvl3" id="a-hover">A: Hover</h3>
                             <ul>
@@ -748,6 +781,7 @@
                                 </div>
                             </div>
                         </section>
+                        <br /><br />
                         <section>
                             <h3 class="lvl3" id="a-active">A: Active</h3>
                             <ul>
@@ -766,464 +800,505 @@
                             </div>
                         </section>
                     </section>
-                </section>
-            </article>
-            <article>
-                <h2 id="cursors">Hyperlink Cursors</h2>
-                <section>
-                    <div class="outer-table">
-                        <div class="head-row3">
-                            <div class="cell-header">Cursor</div>
-                            <div class="cell-header">Example</div>
-                            <div class="cell-header">Code</div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-auto">Auto</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: auto">Auto Cursor</a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: auto"&gt;Auto Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-crosshair">Crosshair</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: crosshair"
-                                    >Crosshair Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: crosshair"&gt;Crosshair Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-default">Default</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: default"
-                                    >Default Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: default"&gt;Default Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-e-resize">E-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: e-resize"
-                                    >E-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: e-resize"&gt;E-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-n-resize">N-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: n-resize"
-                                    >N-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: n-resize"&gt;N-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-ne-resize">NE-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: ne-resize"
-                                    >NE-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: ne-resize"&gt;NE-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-nw-resize">NW-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: nw-resize"
-                                    >NW-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: nw-resize"&gt;NW-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-s-resize">S-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: s-resize"
-                                    >S-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: s-resize"&gt;S-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-se-resize">SE-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: se-resize"
-                                    >SE-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: se-resize"&gt;SE-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-sw-resize">SW-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: sw-resize"
-                                    >SW-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: sw-resize"&gt;SW-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-w-resize">W-Resize</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: w-resize"
-                                    >W-Resize Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: w-resize"&gt;W-Resize Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-help">Help</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: help">Help Cursor</a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: help"&gt;Help Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-move">Move</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: move">Move Cursor</a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: move"&gt;Move Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-pointer">Pointer</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: pointer"
-                                    >Pointer Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: pointer"&gt;Pointer Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-progress">Progress</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: progress"
-                                    >Progress Cursor</a
-                                >
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: progress"&gt;Progress Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3 odd-bg">
-                            <div class="cells">
-                                <span id="c-text">Text</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: text">Text Cursor</a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: text"&gt;Text Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="body-row3">
-                            <div class="cells">
-                                <span id="c-wait">Wait</span>
-                            </div>
-                            <div class="cells">
-                                <a href="" style="cursor: wait">Wait Cursor</a>
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;a href="" style="cursor: wait"&gt;Wait Cursor&lt;/a&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h2 class="lvl2" id="basic-link">Basic Link</h2>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">CSS</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells">
-                                invisible &lt;link rel="stylesheet"
-                                href="style.css" /&gt;
-                            </div>
-                            <div class="cells">
-                                <pre><code>&lt;link rel="stylesheet" href="style.css" /&gt;</code></pre>
-                            </div>
-                        </div>
-                        <div class="head-row-full">
-                            <div class="cell-header">Default CSS</div>
-                        </div>
-                        <div class="body-row-full">
-                            <div class="cells">
-                                <pre><code>link {
-    display: none;
-}</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
-            <article>
-                <section>
-                    <h3 class="lvl3" id="link-attributes">Link Attributes</h3>
-                    <ul>
-                        <li>href:</li>
-                        <ul>
-                            <li>Value:</li>
-                            <ul>
-                                <li>URL</li>
-                            </ul>
-                            <li>Links to URL</li>
-                        </ul>
-                        <li>rel:</li>
-                        <ul>
-                            <li>Value:</li>
-                            <ul>
-                                <li>alternate</li>
-                                <li>author</li>
-                                <li>dns-prefetch</li>
-                                <li>help</li>
-                                <li>icon</li>
-                                <li>license</li>
-                                <li>next</li>
-                                <li>pingback</li>
-                                <li>preconnect</li>
-                                <li>prefetch</li>
-                                <li>preload</li>
-                                <li>prerender</li>
-                                <li>prev</li>
-                                <li>search</li>
-                                <li>stylesheet</li>
-                            </ul>
-                            <li>
-                                Required. Specifies the relationship between the
-                                current document and the linked document
-                            </li>
-                        </ul>
-                        <li>type:</li>
-                        <ul>
-                            <li>Value:</li>
-                            <ul>
-                                <li>media-type</li>
-                            </ul>
-                            <li>
-                                Specifies the media type of the linked document
-                            </li>
-                        </ul>
-                    </ul>
-                    <br /><br /><br />
-
+                    <br /><br /><br /><br />
                     <section>
-                        <h3 class="lvl4 h3-plus" id="link-href">Href</h3>
-                        <ul>
-                            <li>
-                                Specifies the location (URL) of the external
-                                resource (most often a style sheet file)
-                            </li>
-                            <li>Possible values:</li>
-                            <ul>
-                                <li>
-                                    An absolute URL - points to another web site
-                                    (like
-                                    href="http://www.example.com/theme.css")
-                                </li>
-                                <li>
-                                    A relative URL - points to a file within a
-                                    web site (like href="/themes/theme.css")
-                                </li>
-                            </ul>
-                        </ul>
+                        <h2 id="cursors" class="lvl2">Hyperlink Cursors</h2>
                         <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
+                            <div class="head-row3">
+                                <div class="cell-header">Cursor</div>
+                                <div class="cell-header">Example</div>
+                                <div class="cell-header">Code</div>
                             </div>
-                            <div class="body-row">
+                            <div class="body-row3">
                                 <div class="cells">
-                                    <link rel="stylesheet" href="styles.css" />
-                                    invisible &lt;<i>link to stylesheet</i>&gt;
+                                    <span id="c-auto">Auto</span>
                                 </div>
                                 <div class="cells">
-                                    <pre><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+                                    <a href="" style="cursor: auto"
+                                        >Auto Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: auto"&gt;Auto Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-crosshair">Crosshair</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: crosshair"
+                                        >Crosshair Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: crosshair"&gt;Crosshair Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-default">Default</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: default"
+                                        >Default Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: default"&gt;Default Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-e-resize">E-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: e-resize"
+                                        >E-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: e-resize"&gt;E-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-n-resize">N-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: n-resize"
+                                        >N-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: n-resize"&gt;N-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-ne-resize">NE-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: ne-resize"
+                                        >NE-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: ne-resize"&gt;NE-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-nw-resize">NW-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: nw-resize"
+                                        >NW-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: nw-resize"&gt;NW-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-s-resize">S-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: s-resize"
+                                        >S-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: s-resize"&gt;S-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-se-resize">SE-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: se-resize"
+                                        >SE-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: se-resize"&gt;SE-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-sw-resize">SW-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: sw-resize"
+                                        >SW-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: sw-resize"&gt;SW-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-w-resize">W-Resize</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: w-resize"
+                                        >W-Resize Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: w-resize"&gt;W-Resize Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-help">Help</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: help"
+                                        >Help Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: help"&gt;Help Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-move">Move</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: move"
+                                        >Move Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: move"&gt;Move Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-pointer">Pointer</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: pointer"
+                                        >Pointer Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: pointer"&gt;Pointer Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-progress">Progress</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: progress"
+                                        >Progress Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: progress"&gt;Progress Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3 odd-bg">
+                                <div class="cells">
+                                    <span id="c-text">Text</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: text"
+                                        >Text Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: text"&gt;Text Cursor&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="body-row3">
+                                <div class="cells">
+                                    <span id="c-wait">Wait</span>
+                                </div>
+                                <div class="cells">
+                                    <a href="" style="cursor: wait"
+                                        >Wait Cursor</a
+                                    >
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;a href="" style="cursor: wait"&gt;Wait Cursor&lt;/a&gt;</code></pre>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <br /><br /><br /><br />
                     <section>
-                        <h3 class="lvl4 h3-plus" id="link-rel">Rel</h3>
-                        <ul>
-                            <li>
-                                The required rel attribute specifies the
-                                relationship between the current document and
-                                the linked document/resource.
-                            </li>
-                            <li>Possible values:</li>
+                        <h2 class="lvl2" id="basic-link">Basic Link</h2>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    invisible &lt;link rel="stylesheet"
+                                    href="style.css" /&gt;
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;link rel="stylesheet" href="style.css" /&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>link {
+        display: none;
+    }</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl3" id="link-attributes">
+                                Link Attributes
+                            </h3>
                             <ul>
-                                <li>
-                                    Alternate: Provides a link to an alternate
-                                    version of the document (i.e. print page,
-                                    translated or mirror).
-                                </li>
-                                <li>
-                                    Author: Provides a link to the author of the
-                                    document
-                                </li>
-                                <li>
-                                    Help: Provides a link to a help document.
-                                    Example: &lt;link rel="help"
-                                    href="/help/"&gt;
-                                </li>
-                                <li>
-                                    Icon: Imports an icon to represent the
-                                    document. Example: &lt;link rel="icon"
-                                    href="favicon.ico" type="image/x-icon"&gt;
-                                </li>
-                                <li>
-                                    Llicense: Provides a link to copyright
-                                    information for the document
-                                </li>
-                                <li>
-                                    Preconnect: Specifies that the browser
-                                    should preemptively connect to the target
-                                    resource's origin.
-                                </li>
-                                <li>
-                                    Prefetch: Specifies that the browser should
-                                    preemptively fetch and cache the target
-                                    resource as it is likely to be required for
-                                    a follow-up navigation
-                                </li>
-                                <li>
-                                    Preload: Specifies that the browser agent
-                                    must preemptively fetch and cache the target
-                                    resource for current navigation according to
-                                    the destination given by the "as" attribute
-                                    (and the priority associated with that
-                                    destination).
-                                </li>
-                                <li>
-                                    Search: Provides a link to a resource that
-                                    can be used to search through the current
-                                    document and its related pages.
-                                </li>
-                                <li>Stylesheet: Imports a style sheet</li>
+                                <li>href:</li>
+                                <ul>
+                                    <li>Value:</li>
+                                    <ul>
+                                        <li>URL</li>
+                                    </ul>
+                                    <li>Links to URL</li>
+                                </ul>
+                                <li>rel:</li>
+                                <ul>
+                                    <li>Value:</li>
+                                    <ul>
+                                        <li>alternate</li>
+                                        <li>author</li>
+                                        <li>dns-prefetch</li>
+                                        <li>help</li>
+                                        <li>icon</li>
+                                        <li>license</li>
+                                        <li>next</li>
+                                        <li>pingback</li>
+                                        <li>preconnect</li>
+                                        <li>prefetch</li>
+                                        <li>preload</li>
+                                        <li>prerender</li>
+                                        <li>prev</li>
+                                        <li>search</li>
+                                        <li>stylesheet</li>
+                                    </ul>
+                                    <li>
+                                        Required. Specifies the relationship
+                                        between the current document and the
+                                        linked document
+                                    </li>
+                                </ul>
+                                <li>type:</li>
+                                <ul>
+                                    <li>Value:</li>
+                                    <ul>
+                                        <li>media-type</li>
+                                    </ul>
+                                    <li>
+                                        Specifies the media type of the linked
+                                        document
+                                    </li>
+                                </ul>
                             </ul>
-                        </ul>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    <link rel="stylesheet" href="styles.css" />
-                                    invisible &lt;<i>link to stylesheet</i>&gt;
+                            <br /><br />
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="link-href">
+                                    Href
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Specifies the location (URL) of the
+                                        external resource (most often a style
+                                        sheet file)
+                                    </li>
+                                    <li>Possible values:</li>
+                                    <ul>
+                                        <li>
+                                            An absolute URL - points to another
+                                            web site (like
+                                            href="http://www.example.com/theme.css")
+                                        </li>
+                                        <li>
+                                            A relative URL - points to a file
+                                            within a web site (like
+                                            href="/themes/theme.css")
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <div class="outer-table">
+                                    <div class="head-row">
+                                        <div class="cell-header">Examples</div>
+                                        <div class="cell-header">CSS</div>
+                                    </div>
+                                    <div class="body-row">
+                                        <div class="cells">
+                                            <link
+                                                rel="stylesheet"
+                                                href="styles.css"
+                                            />
+                                            invisible &lt;<i
+                                                >link to stylesheet</i
+                                            >&gt;
+                                        </div>
+                                        <div class="cells">
+                                            <pre><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="cells">
-                                    <pre><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+                            </section>
+                            <br /><br />
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="link-rel">Rel</h3>
+                                <ul>
+                                    <li>
+                                        The required rel attribute specifies the
+                                        relationship between the current
+                                        document and the linked
+                                        document/resource.
+                                    </li>
+                                    <li>Possible values:</li>
+                                    <ul>
+                                        <li>
+                                            Alternate: Provides a link to an
+                                            alternate version of the document
+                                            (i.e. print page, translated or
+                                            mirror).
+                                        </li>
+                                        <li>
+                                            Author: Provides a link to the
+                                            author of the document
+                                        </li>
+                                        <li>
+                                            Help: Provides a link to a help
+                                            document. Example: &lt;link
+                                            rel="help" href="/help/"&gt;
+                                        </li>
+                                        <li>
+                                            Icon: Imports an icon to represent
+                                            the document. Example: &lt;link
+                                            rel="icon" href="favicon.ico"
+                                            type="image/x-icon"&gt;
+                                        </li>
+                                        <li>
+                                            Llicense: Provides a link to
+                                            copyright information for the
+                                            document
+                                        </li>
+                                        <li>
+                                            Preconnect: Specifies that the
+                                            browser should preemptively connect
+                                            to the target resource's origin.
+                                        </li>
+                                        <li>
+                                            Prefetch: Specifies that the browser
+                                            should preemptively fetch and cache
+                                            the target resource as it is likely
+                                            to be required for a follow-up
+                                            navigation
+                                        </li>
+                                        <li>
+                                            Preload: Specifies that the browser
+                                            agent must preemptively fetch and
+                                            cache the target resource for
+                                            current navigation according to the
+                                            destination given by the "as"
+                                            attribute (and the priority
+                                            associated with that destination).
+                                        </li>
+                                        <li>
+                                            Search: Provides a link to a
+                                            resource that can be used to search
+                                            through the current document and its
+                                            related pages.
+                                        </li>
+                                        <li>
+                                            Stylesheet: Imports a style sheet
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <div class="outer-table">
+                                    <div class="head-row">
+                                        <div class="cell-header">Examples</div>
+                                        <div class="cell-header">CSS</div>
+                                    </div>
+                                    <div class="body-row">
+                                        <div class="cells">
+                                            <link
+                                                rel="stylesheet"
+                                                href="styles.css"
+                                            />
+                                            invisible &lt;<i
+                                                >link to stylesheet</i
+                                            >&gt;
+                                        </div>
+                                        <div class="cells">
+                                            <pre><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></pre>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <h3 class="lvl4 h3-plus" id="link-type">Type</h3>
-                        <ul>
-                            <li>
-                                Specifies the media type of the linked
-                                document/resource
-                            </li>
-                            <li>The most common value of type is "text/css"</li>
-                            <li>
-                                If type is omitted, browser will look at rel, to
-                                guess
-                            </li>
-                        </ul>
-                        <div class="outer-table">
-                            <div class="head-row">
-                                <div class="cell-header">Examples</div>
-                                <div class="cell-header">CSS</div>
-                            </div>
-                            <div class="body-row">
-                                <div class="cells">
-                                    &lt;<i>link</i> is invisible
-                                    <link
-                                        rel="stylesheet"
-                                        type="text/css"
-                                        href="styles.css"
-                                    />&gt;
+                            </section>
+                            <br /><br />
+                            <section>
+                                <h3 class="lvl4 h3-plus" id="link-type">
+                                    Type
+                                </h3>
+                                <ul>
+                                    <li>
+                                        Specifies the media type of the linked
+                                        document/resource
+                                    </li>
+                                    <li>
+                                        The most common value of type is
+                                        "text/css"
+                                    </li>
+                                    <li>
+                                        If type is omitted, browser will look at
+                                        rel, to guess
+                                    </li>
+                                </ul>
+                                <div class="outer-table">
+                                    <div class="head-row">
+                                        <div class="cell-header">Examples</div>
+                                        <div class="cell-header">CSS</div>
+                                    </div>
+                                    <div class="body-row">
+                                        <div class="cells">
+                                            &lt;<i>link</i> is invisible
+                                            <link
+                                                rel="stylesheet"
+                                                type="text/css"
+                                                href="styles.css"
+                                            />&gt;
+                                        </div>
+                                        <div class="cells">
+                                            <pre><code>&lt;link
+        rel="stylesheet"
+        type="text/css"
+        href="styles.css"
+    /&gt;</code></pre>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="cells">
-                                    <pre><code>&lt;link
-    rel="stylesheet"
-    type="text/css"
-    href="styles.css"
-/&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </section>
                 </section>
             </article>
         </main>
         <br /><br /><br />
+        <!--  -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -1271,31 +1346,40 @@
                     <div class="footer-column">
                         <h3 class="revert">CSS</h3>
                         <h4 class="revert">Properties</h4>
-                        <a href="../css-properties/border/index.html">Border</a>
-                        <br /><a href="../css-properties/box/index.html">Box</a>
+                        <a href="../../CSS/css-properties/border/index.html"
+                            >Border</a
+                        >
+                        <br /><a href="../../CSS/css-properties/box/index.html"
+                            >Box</a
+                        >
                         <br /><a
-                            href="../css-properties/color-background/index.html"
+                            href="../../CSS/css-properties/color-background/index.html"
                             >Color & Background</a
                         >
-                        <br /><a href="../css-properties/columns/index.html"
+                        <br /><a
+                            href="../../CSS/css-properties/columns/index.html"
                             >Columns</a
                         >
-                        <br /><a href="../css-properties/flexbox/index.html"
+                        <br /><a
+                            href="../../CSS/css-properties/flexbox/index.html"
                             >Flexbox</a
                         >
-                        <br /><a href="../css-properties/font-text/index.html"
+                        <br /><a
+                            href="../../CSS/css-properties/font-text/index.html"
                             >Font & text</a
                         >
-                        <br /><a href="../css-properties/grid/index.html"
+                        <br /><a href="../../CSS/css-properties/grid/index.html"
                             >Grid</a
                         >
                         <br /><a
-                            href="../css-properties/lists-tables/index.html"
+                            href="../../CSS/css-properties/lists-tables/index.html"
                             >Lists & Tables</a
                         >
                         <br /><br />
                         <h4 class="revert">Selector</h4>
-                        <a href="../../css-selectors/index.html">Selectors</a>
+                        <a href="../../CSS/css-selectors/index.html"
+                            >Selectors</a
+                        >
                     </div>
                     <div class="footer-column">
                         <h3 class="revert">Javascript</h3>
