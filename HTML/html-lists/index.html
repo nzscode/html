@@ -149,127 +149,156 @@ li {
                     </div>
                 </section>
                 <section>
-                    <h2 id="attributes" class="lvl2">Ordered List Attributes</h2>
+                    <h2 id="attributes" class="lvl2">
+                        Ordered List Attributes
+                    </h2>
                     <ul>
                         <li>Reversed</li>
                         <ul>
-                            <li>Value: </li>
-                            <ul><li>Reversed</li></ul>
-                            <li>Specifies that the list order should be reversed (9,8,7...) </li>
+                            <li>Value:</li>
+                            <ul>
+                                <li>Reversed</li>
+                            </ul>
+                            <li>
+                                Specifies that the list order should be reversed
+                                (9,8,7...)
+                            </li>
                         </ul>
-                    <li>Start</li>
-                    <ul><li>Value: </li>
-                    <ul>
-                        <li>Number</li>
+                        <li>Start</li>
+                        <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>Number</li>
+                            </ul>
+                            <li>
+                                Specifies the start value of an ordered list
+                            </li>
+                        </ul>
+                        <li>Type</li>
+                        <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>1</li>
+                                <li>A</li>
+                                <li>a</li>
+                                <li>I</li>
+                                <li>i</li>
+                            </ul>
+                            <li>
+                                Specifies the kind of marker to use in the list
+                            </li>
+                        </ul>
                     </ul>
-                <li>Specifies the start value of an ordered list </li></ul>
-                   <li>Type</li><ul>
-                    <li>Value: </li>
-                    <ul>
-                        <li>1</li>
-                        <li>A</li>
-                        <li>a</li>
-                        <li>I</li>
-                        <li>i</li>
-                    </ul>
-                    <li>Specifies the kind of marker to use in the list </li>
-                   </ul> </ul>
-                   <section>
-                    <h3 class="lvl3" id="o-reversed">Reversed</h3>
-                    <ul><li>A boolean attribute</li>
-                        <li>
-                            Specifies that the list order should be descending
-                            (9,8,7...), instead of ascending (1, 2, 3...)
-                        </li></ul>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">HTML</div>
-                        </div>
-                        <div class="body-row">
-                            <div class="cells"> <ol reversed>
-                                    <li>Cat</li>
-                                    <li>Dog</li>
-                                    <li>Antelope</li>
-                                    <li>Baboon</li>
-                                </ol></div>
-                            <div class="cells"><pre><code>&lt;ol reversed&gt;
+                    <section>
+                        <h3 class="lvl3" id="o-reversed">Reversed</h3>
+                        <ul>
+                            <li>A boolean attribute</li>
+                            <li>
+                                Specifies that the list order should be
+                                descending (9,8,7...), instead of ascending (1,
+                                2, 3...)
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <ol reversed>
+                                        <li>Cat</li>
+                                        <li>Dog</li>
+                                        <li>Antelope</li>
+                                        <li>Baboon</li>
+                                    </ol>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;ol reversed&gt;
     &lt;li>Cat&lt;/li&gt;
     &lt;li>Dog&lt;/li&gt;
     &lt;li>Antelope&lt;/li&gt;
     &lt;li>Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div>
-                        </div>   
-                    </div>
-                   </section>
-                   <section>
-                    <h3 class="lvl3" id="o-start">Start</h3>
-                    <ul>
-                        <li>
-                            Specifies the start value of the first list item in
-                            an ordered list
-                        </li>
-                        <li>
-                            Always an integer, even when the numbering type is
-                            letters or romans. E.g., to start counting list
-                            items from the letter "c" or the roman number "iii",
-                            use start="3"
-                        </li>
-                    </ul>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">HTML</div>
+&lt;/ol&gt;</code></pre>
+                                </div>
+                            </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells"><ol start="25">
-                                    <li>Cat</li>
-                                    <li>Dog</li>
-                                    <li>Antelope</li>
-                                    <li>Baboon</li>
-                                </ol></div>
-                            <div class="cells"><pre><code>&lt;ol start="25"&gt;
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="o-start">Start</h3>
+                        <ul>
+                            <li>
+                                Specifies the start value of the first list item
+                                in an ordered list
+                            </li>
+                            <li>
+                                Always an integer, even when the numbering type
+                                is letters or romans. E.g., to start counting
+                                list items from the letter "c" or the roman
+                                number "iii", use start="3"
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <ol start="25">
+                                        <li>Cat</li>
+                                        <li>Dog</li>
+                                        <li>Antelope</li>
+                                        <li>Baboon</li>
+                                    </ol>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;ol start="25"&gt;
     &lt;li&gt;Cat&lt;/li&gt;
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
     &lt;li&gt;Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div>
-                        </div>   
-                    </div>
-                   </section>
-                   <section>
-                    <h3 class="lvl3" id="o-type">Type</h3>
-                    <ul><li>
-                            Specifies the kind of marker to use in the list
-                            (letters or numbers)
-                        </li>
-                        <li>
-                            CSS
-                            <a href="#types">list-style-type</a>
-                            property offers more types
-                        </li>
-                        
-                    </ul>
-                    <div class="outer-table">
-                        <div class="head-row">
-                            <div class="cell-header">Examples</div>
-                            <div class="cell-header">HTML</div>
+&lt;/ol&gt;</code></pre>
+                                </div>
+                            </div>
                         </div>
-                        <div class="body-row">
-                            <div class="cells"><ol type="I">
-                                    <li>Cat</li>
-                                    <li>Dog</li>
-                                    <li>Antelope</li>
-                                    <li>Baboon</li>
-                                </ol>
-                                <br /><br />
-                                <ol type="a">
-                                    <li>Cat</li>
-                                    <li>Dog</li>
-                                    <li>Antelope</li>
-                                    <li>Baboon</li>
-                                </ol></div>
-                            <div class="cells"><pre><code>&lt;ol type="I"&gt;
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="o-type">Type</h3>
+                        <ul>
+                            <li>
+                                Specifies the kind of marker to use in the list
+                                (letters or numbers)
+                            </li>
+                            <li>
+                                CSS
+                                <a href="#types">list-style-type</a>
+                                property offers more types
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <ol type="I">
+                                        <li>Cat</li>
+                                        <li>Dog</li>
+                                        <li>Antelope</li>
+                                        <li>Baboon</li>
+                                    </ol>
+                                    <br /><br />
+                                    <ol type="a">
+                                        <li>Cat</li>
+                                        <li>Dog</li>
+                                        <li>Antelope</li>
+                                        <li>Baboon</li>
+                                    </ol>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;ol type="I"&gt;
     &lt;li&gt;Cat&lt;/li&gt;
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
@@ -281,10 +310,11 @@ li {
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
     &lt;li&gt;Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div>
-                        </div>   
-                    </div>
-                   </section>
+&lt;/ol&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
             <article>
@@ -306,7 +336,8 @@ li {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><ul>
+                            <div class="cells">
+                                <ul>
                                     <li>Onion</li>
                                     <li>Garlic</li>
                                     <li>Potatoes</li>
@@ -325,21 +356,25 @@ li {
                                     <li>Garlic</li>
                                     <li>Potatoes</li>
                                     <li>Green Peppers</li>
-                                </ul></div>
-                            <div class="cells"><pre><code>&lt;ul&gt;
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;ul&gt;
     &lt;li&gt;Onion&lt;/li&gt;
     &lt;li&gt;Garlic&lt;/li&gt;
     &lt;li&gt;Potatoes&lt;/li&gt;
     &lt;li&gt;Green Peppers&lt;/li&gt;
-&lt;/ul&gt;</code></pre></div>
-                        </div>   
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code><b><u>Disc Style BUllet(default CSS)</u></b>
+                            <div class="cells">
+                                <pre><code><b><u>Disc Style BUllet(default CSS)</u></b>
 ul {
     display: block;
     list-style-type: disc;
@@ -368,15 +403,17 @@ ul.ul-list-style-type-custom {
 ul.ul-list-style-type-custom li::before {
     content: "+*+";
     color: hotpink;
-}</code></pre></div>
-                        </div>   
+}</code></pre>
+                            </div>
+                        </div>
                     </div>
-                    
                 </section>
             </article>
             <article>
                 <section>
-                    <h2 id="description-lists" class="lvl2">Description Lists</h2>
+                    <h2 id="description-lists" class="lvl2">
+                        Description Lists
+                    </h2>
                     <ul>
                         <li>&lt;dl&gt; defines a description List</li>
                         <li>&lt;dt&gt; defines the term Name</li>
@@ -388,7 +425,8 @@ ul.ul-list-style-type-custom li::before {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><dl>
+                            <div class="cells">
+                                <dl>
                                     <dt>Agar</dt>
                                     <dd>
                                         A Jelly like dish made using seaweed
@@ -397,23 +435,27 @@ ul.ul-list-style-type-custom li::before {
                                     <dd>
                                         A soft pudding made using cornstarch
                                     </dd>
-                                </dl></div>
-                            <div class="cells"><pre><code>&lt;dl&gt;
+                                </dl>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;dl&gt;
     &lt;dt&gt;Agar&lt;/dt&gt;
     &lt;dd&gt;A Jelly like dish 
             made using seaweed&lt;/dd&gt;
     &lt;dt&gt;Custard&lt;/dt&gt;
     &lt;dd&gt;A soft pudding 
             made using cornstarch&lt;/dd&gt;
-&lt;/dl&gt;</code></pre></div>
-                        </div>   
+&lt;/dl&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code>dl {
+                            <div class="cells">
+                                <pre><code>dl {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -428,15 +470,18 @@ dt {
 
 dd {
     display: block; 
-}</code></pre></div>
-                        </div>   
+}</code></pre>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </article>
-            <br><br><br><br>
+            <br /><br /><br /><br />
             <!-- CSS Snippets -->
             <article>
-                <h2 id="lists-snippets-css" class="lvl2">CSS Snippets for Lists</h2>
+                <h2 id="lists-snippets-css" class="lvl2">
+                    CSS Snippets for Lists
+                </h2>
                 <section>
                     <h3 id="removing-bullets" class="lvl3">Removing Bullets</h3>
                     Removing &lt;li&gt; bullets:
@@ -454,18 +499,21 @@ dd {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><ol class="line-height50">
-                                <li>Bread</li>
-                                <li>Cereal</li>
-                                <li>Egg</li>
-                            </ol>
-                            <br /><br />
-                            <ol class="line-height300">
-                                <li>Bread</li>
-                                <li>Cereal</li>
-                                <li>Egg</li>
-                            </ol></div>
-                            <div class="cells"><pre><code><b><u>Line Height 50</u></b>
+                            <div class="cells">
+                                <ol class="line-height50">
+                                    <li>Bread</li>
+                                    <li>Cereal</li>
+                                    <li>Egg</li>
+                                </ol>
+                                <br /><br />
+                                <ol class="line-height300">
+                                    <li>Bread</li>
+                                    <li>Cereal</li>
+                                    <li>Egg</li>
+                                </ol>
+                            </div>
+                            <div class="cells">
+                                <pre><code><b><u>Line Height 50</u></b>
 &lt;ol class="line-height50"&gt;
     &lt;li&gt;Bread&lt;/li&gt;
     &lt;li&gt;Cereal&lt;/li&gt;
@@ -478,15 +526,17 @@ dd {
     &lt;li&gt;Bread&lt;/li&gt;
     &lt;li&gt;Cereal&lt;/li&gt;
     &lt;li&gt;Egg&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div>
-                        </div>   
+&lt;/ol&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code><b><u>Line Height 50</u></b>
+                            <div class="cells">
+                                <pre><code><b><u>Line Height 50</u></b>
 .line-height50 {
     all: revert;
     line-height: 50%;
@@ -497,12 +547,15 @@ dd {
 .line-height300 {
     all: revert;
     line-height: 300%;
-}</code></pre></div>
-                        </div>   
-                    </div>                    
-                                       </section>
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section>
-                    <h3 id="changing-bullet-color" class="lvl3">Changing Bullet Color</h3>
+                    <h3 id="changing-bullet-color" class="lvl3">
+                        Changing Bullet Color
+                    </h3>
                     <ul>
                         <li>
                             Bullet color can only be changed if bullet is
@@ -515,33 +568,38 @@ dd {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><ul class="bullet-color">
-                                <li>Harry</li>
-                                <li>Ron</li>
-                                <li>Hermione</li>
-                            </ul></div>
-                            <div class="cells"><pre><code>&lt;ul class="bullet-color"&gt;
+                            <div class="cells">
+                                <ul class="bullet-color">
+                                    <li>Harry</li>
+                                    <li>Ron</li>
+                                    <li>Hermione</li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;ul class="bullet-color"&gt;
     &lt;li&gt;Harry&lt;/li&gt; 
     &lt;li&gt;Ron&lt;/li&gt;
     &lt;li&gt;Hermione&lt;/li&gt;
-&lt;/ul&gt;</code></pre></div>
-                        </div>   
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code>ul.bullet-color {
+                            <div class="cells">
+                                <pre><code>ul.bullet-color {
     list-style: none;
 }
 ul.bullet-color li::before {
     content: "* ";
     color: blue;
-}</code></pre></div>
-                        </div>   
+}</code></pre>
+                            </div>
+                        </div>
                     </div>
-                    
                 </section>
                 <section>
                     <h3 id="split-lists" class="lvl3">
@@ -553,18 +611,21 @@ ul.bullet-color li::before {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><ul class="column2 margin-remove">
-                                <li>Harry</li>
-                                <li>Ron</li>
-                                <li>Hermione</li>
-                                <li>Neville</li>
-                                <li>Draco</li>
-                                <li>Seamus</li>
-                                <li>Dean</li>
-                                <li>Parvati</li>
-                                <li>Padma</li>
-                            </ul></div>
-                            <div class="cells"><pre><code>&lt;ul class="column3"&gt;
+                            <div class="cells">
+                                <ul class="column2 margin-remove">
+                                    <li>Harry</li>
+                                    <li>Ron</li>
+                                    <li>Hermione</li>
+                                    <li>Neville</li>
+                                    <li>Draco</li>
+                                    <li>Seamus</li>
+                                    <li>Dean</li>
+                                    <li>Parvati</li>
+                                    <li>Padma</li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;ul class="column3"&gt;
     &lt;li>Harry&lt;/li&gt;
     &lt;li>Ron&lt;/li&gt;
     &lt;li>Hermione&lt;/li&gt;
@@ -574,26 +635,26 @@ ul.bullet-color li::before {
     &lt;li>Dean&lt;/li&gt;
     &lt;li>Parvati&lt;/li&gt;
     &lt;li>Padma&lt;/li&gt;
-&lt;/ul&gt;</code></pre></div>
-                        </div>   
+&lt;/ul&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code>.column2 {
+                            <div class="cells">
+                                <pre><code>.column2 {
     column-count: 2;
 }
 
 .margin-remove {
     margin-left: -20px;
-}</code></pre></div>
-                        </div>   
+}</code></pre>
+                            </div>
+                        </div>
                     </div>
-                    
-                            
-                       
                 </section>
             </article>
             <article>
@@ -606,145 +667,166 @@ ul.bullet-color li::before {
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row">
-                            <div class="cells"><h4 class="margin-bottom-1px lvl3">Disc</h4>
-                            <ol class="list-type-disc margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px lvl3">Square</h4>
-                            <ol class="list-type-square margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px lvl3" >Circle</h4>
-                            <ol class="list-type-circle margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px lvl3">Armenian</h4>
-                            <ol class="list-type-armenian margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px lvl3">Armenian</h4>
-                            <ol class="list-type-armenian margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">CJK-Ideographic</h4>
-                            <ol
-                                class="list-type-cjk-ideographic margin-top-1px"
-                            >
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Decimal</h4>
-                            <ol class="list-type-decimal margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">
-                                Decimal Leading Zero
-                            </h4>
-                            <ol
-                                class="list-type-decimal-leading-zero margin-top-1px"
-                            >
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Georgian</h4>
-                            <ol class="list-type-georgian margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Hiragana</h4>
-                            <ol class="list-type-hiragana margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Hiragana-Iroha</h4>
-                            <ol class="list-type-hiragana-iroha margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Katakana</h4>
-                            <ol class="list-type-katakana margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Katakana-Iroha</h4>
-                            <ol class="list-type-katakana-iroha margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Lower Alpha</h4>
-                            <ol class="list-type-lower-alpha margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Lower Greek</h4>
-                            <ol class="list-type-lower-greek margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Lower Latin</h4>
-                            <ol class="list-type-lower-latin margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Lower Roman</h4>
-                            <ol class="list-type-lower-roman margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Upper Alpha</h4>
-                            <ol class="list-type-upper-alpha margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Upper Latin</h4>
-                            <ol class="list-type-upper-latin margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Upper Roman</h4>
-                            <ol class="list-type-upper-roman margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">None</h4>
-                            <ol class="list-type-none margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol>
-                            <h4 class="margin-bottom-1px">Inherit</h4>
-                            <ol class="list-type-inherit margin-top-1px">
-                                <li>Red</li>
-                                <li>Orange</li>
-                                <li>Yellow</li>
-                            </ol></div>
-                            <div class="cells"><pre><code>&lt;h4 class="margin-bottom-1px"&gt;Disc&lt;/h4&gt;
+                            <div class="cells">
+                                <h4 class="margin-bottom-1px">Disc</h4>
+                                <ol class="list-type-disc margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Square</h4>
+                                <ol class="list-type-square margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Circle</h4>
+                                <ol class="list-type-circle margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Armenian</h4>
+                                <ol class="list-type-armenian margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">
+                                    CJK-Ideographic
+                                </h4>
+                                <ol
+                                    class="list-type-cjk-ideographic margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Decimal</h4>
+                                <ol class="list-type-decimal margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">
+                                    Decimal Leading Zero
+                                </h4>
+                                <ol
+                                    class="list-type-decimal-leading-zero margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Georgian</h4>
+                                <ol class="list-type-georgian margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Hiragana</h4>
+                                <ol class="list-type-hiragana margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">
+                                    Hiragana-Iroha
+                                </h4>
+                                <ol
+                                    class="list-type-hiragana-iroha margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Katakana</h4>
+                                <ol class="list-type-katakana margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">
+                                    Katakana-Iroha
+                                </h4>
+                                <ol
+                                    class="list-type-katakana-iroha margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Lower Alpha</h4>
+                                <ol
+                                    class="list-type-lower-alpha margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Lower Greek</h4>
+                                <ol
+                                    class="list-type-lower-greek margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Lower Latin</h4>
+                                <ol
+                                    class="list-type-lower-latin margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Lower Roman</h4>
+                                <ol
+                                    class="list-type-lower-roman margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Upper Alpha</h4>
+                                <ol
+                                    class="list-type-upper-alpha margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Upper Latin</h4>
+                                <ol
+                                    class="list-type-upper-latin margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Upper Roman</h4>
+                                <ol
+                                    class="list-type-upper-roman margin-top-1px"
+                                >
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">None</h4>
+                                <ol class="list-type-none margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                                <h4 class="margin-bottom-1px">Inherit</h4>
+                                <ol class="list-type-inherit margin-top-1px">
+                                    <li>Red</li>
+                                    <li>Orange</li>
+                                    <li>Yellow</li>
+                                </ol>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;h4 class="margin-bottom-1px"&gt;Disc&lt;/h4&gt;
 &lt;ol class="list-type-disc 
     margin-top-1px"&gt;
     &lt;li&gt;Re&lt&lt;/li&gt&gt;
@@ -885,15 +967,17 @@ ul.bullet-color li::before {
     &lt;li&gt;Red&lt;/li&gt;
     &lt;li&gt;Orange&lt;/li&gt;
     &lt;li&gt;Yellow&lt;/li&gt;
-&lt;/ol&gt;</code></pre></div>
-                        </div>   
+&lt;/ol&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="outer-table">
                         <div class="head-row-full">
                             <div class="cell-header">CSS</div>
                         </div>
                         <div class="body-row-full">
-                            <div class="cells"><pre><code>.list-type-disc {
+                            <div class="cells">
+                                <pre><code>.list-type-disc {
     list-style-type: disc;
 }
 .list-type-circle {
@@ -960,10 +1044,10 @@ ul.bullet-color li::before {
 }
 .list-type-inherit {
     list-style-type: inherit;
-}</code></pre></div>
-                        </div>   
+}</code></pre>
+                            </div>
+                        </div>
                     </div>
-                    
                 </section>
             </article>
         </main>

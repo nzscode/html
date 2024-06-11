@@ -34,7 +34,7 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>HTML Scripts</p>
+                    <!-- <p>HTML Scripts</p>
                     <ul>
                         <li>
                             <a href="./index.html#basic-script">Basic Script</a>
@@ -53,7 +53,7 @@
                         <li><a href="./index.html#defer">Defer</a></li>
                         <li><a href="./index.html#src">Src</a></li>
                         <li><a href="./index.html#type">Type</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 div.space-block
             </div>
@@ -61,35 +61,199 @@
         <main>
             <article>
                 <section>
-                    <h2 id="basic-script">HTML Scripts: Basics</h2>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">HTML</div>
-                            <div class="col30">Default CSS</div>
+                    <h2 id="basic-script" class="lvl2">HTML Scripts: Basics</h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col20">
+                        <div class="body-row">
+                            <div class="cells">
                                 <script>
                                     document.getElementById("demo").innerHTML =
                                         "Hello JavaScript!";
                                 </script>
                                 <p id="demo">Hi</p>
                             </div>
-                            <div class="col50">
+                            <div class="cells">
                                 <pre><code>&lt;script&gt;
     document.getElementById("demo").innerHTML = 
         "Hello JavaScript!";
 &lt;/script&gt;
 &lt;p id="demo"&gt;Hi&lt;/p&gt;</code></pre>
                             </div>
-                            <div class="col30">
+                        </div>
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
                                 <pre><code>script {
     display: none;
 }</code></pre>
                             </div>
                         </div>
                     </div>
+                </section>
+                <br /><br /><br /><br />
+                <section>
+                    <h2 class="lvl2" id="script-attributes">
+                        Script Attributes
+                    </h2>
+                    <section>
+                        <h3 class="lvl3" id="async">Async</h3>
+                        <ul>
+                            <li>A boolean attribute</li>
+                            <li>
+                                If the async attribute is set, the script is
+                                downloaded in parallel to parsing the page, and
+                                executed as soon as it is available. The parsing
+                                of the page is interrupted once the script is
+                                downloaded completely, and then the script is
+                                executed, before the parsing of the rest of the
+                                page continues
+                            </li>
+                            <li>
+                                Only for external scripts (and should only be
+                                used if the src attribute is present)
+                            </li>
+                            <li>
+                                There are several ways an external script can be
+                                executed:
+                                <ul>
+                                    <li>
+                                        If async is present: The script is
+                                        downloaded in parallel to parsing the
+                                        page, and executed as soon as it is
+                                        available (before parsing completes)
+                                    </li>
+                                    <li>
+                                        If defer is present (and not async): The
+                                        script is downloaded in parallel to
+                                        parsing the page, and executed after the
+                                        page has finished parsing
+                                    </li>
+                                    <li>
+                                        If neither async or defer is present:
+                                        The script is downloaded and executed
+                                        immediately, blocking parsing until the
+                                        script is completed
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>&lt;script src="demo-async.js" async&gt;&lt;/script&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="defer">Defer</h3>
+                        <ul>
+                            <li>Is a boolean attribute</li>
+                            <li>
+                                If the defer attribute is set, it specifies that
+                                the script is downloaded in parallel to parsing
+                                the page, and executed after the page has
+                                finished parsing.
+                            </li>
+                            <li>
+                                The defer attribute is only for external scripts
+                                (should only be used if the src attribute is
+                                present)
+                            </li>
+                            <li>
+                                There are several ways an external script can be
+                                executed:
+                                <ul>
+                                    <li>
+                                        If async is present: The script is
+                                        downloaded in parallel to parsing the
+                                        page, and executed as soon as it is
+                                        available (before parsing completes)
+                                    </li>
+                                    <li>
+                                        If defer is present (and not async): The
+                                        script is downloaded in parallel to
+                                        parsing the page, and executed after the
+                                        page has finished parsing
+                                    </li>
+                                    <li>
+                                        If neither async or defer is present:
+                                        The script is downloaded and executed
+                                        immediately, blocking parsing until the
+                                        script is completed
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>&lt;script src="demo-defer.js" defer&gt;&lt;/script&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="src">SRC</h3>
+                        <ul>
+                            <li>
+                                Specifies the URL of an external script file
+                            </li>
+                            <li>
+                                If you want to run the same JavaScript on
+                                several pages in a web site, you should create
+                                an external JavaScript file, instead of writing
+                                the same script over and over again. Save the
+                                script file with a .js extension, and then refer
+                                to it using the src attribute in the
+                                &lt;script&gt; tag.
+                            </li>
+                            <li>
+                                The external script file cannot contain the
+                                &lt;script&gt; tag
+                            </li>
+                            <li>
+                                Point to the external script file exactly where
+                                you would have written the script
+                            </li>
+                            <li>
+                                Possible values:
+                                <ul>
+                                    <li>
+                                        An absolute URL - points to another web
+                                        site (like
+                                        src="http://www.example.com/example.js")
+                                    </li>
+                                    <li>
+                                        A relative URL - points to a file within
+                                        a web site (like
+                                        src="/scripts/example.js")
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
             <article>
@@ -106,7 +270,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <a href="#async">async</a>
+                                    <a href="#async"></a>
                                 </td>
                                 <td>async</td>
                                 <td>
@@ -179,152 +343,10 @@
                         </tbody>
                     </table>
                 </section>
-                <br /><br />
-                <section>
-                    <h3 id="async">Async</h3>
-                    <ul>
-                        <li>A boolean attribute</li>
-                        <li>
-                            If the async attribute is set, the script is
-                            downloaded in parallel to parsing the page, and
-                            executed as soon as it is available. The parsing of
-                            the page is interrupted once the script is
-                            downloaded completely, and then the script is
-                            executed, before the parsing of the rest of the page
-                            continues
-                        </li>
-                        <li>
-                            Only for external scripts (and should only be used
-                            if the src attribute is present)
-                        </li>
-                        <li>
-                            There are several ways an external script can be
-                            executed:
-                            <ul>
-                                <li>
-                                    If async is present: The script is
-                                    downloaded in parallel to parsing the page,
-                                    and executed as soon as it is available
-                                    (before parsing completes)
-                                </li>
-                                <li>
-                                    If defer is present (and not async): The
-                                    script is downloaded in parallel to parsing
-                                    the page, and executed after the page has
-                                    finished parsing
-                                </li>
-                                <li>
-                                    If neither async or defer is present: The
-                                    script is downloaded and executed
-                                    immediately, blocking parsing until the
-                                    script is completed
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">async</div>
-                            <div class="col75">
-                                <pre><code>&lt;script src="demo-async.js" async&gt;&lt;/script&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="defer">Defer</h3>
-                    <ul>
-                        <li>Is a boolean attribute</li>
-                        <li>
-                            If the defer attribute is set, it specifies that the
-                            script is downloaded in parallel to parsing the
-                            page, and executed after the page has finished
-                            parsing.
-                        </li>
-                        <li>
-                            The defer attribute is only for external scripts
-                            (should only be used if the src attribute is
-                            present)
-                        </li>
-                        <li>
-                            There are several ways an external script can be
-                            executed:
-                            <ul>
-                                <li>
-                                    If async is present: The script is
-                                    downloaded in parallel to parsing the page,
-                                    and executed as soon as it is available
-                                    (before parsing completes)
-                                </li>
-                                <li>
-                                    If defer is present (and not async): The
-                                    script is downloaded in parallel to parsing
-                                    the page, and executed after the page has
-                                    finished parsing
-                                </li>
-                                <li>
-                                    If neither async or defer is present: The
-                                    script is downloaded and executed
-                                    immediately, blocking parsing until the
-                                    script is completed
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">defer</div>
-                            <div class="col75">
-                                <pre><code>&lt;script src="demo-defer.js" defer&gt;&lt;/script&gt;</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section>
                     <h3 id="src">SRC</h3>
-                    <ul>
-                        <li>Specifies the URL of an external script file</li>
-                        <li>
-                            If you want to run the same JavaScript on several
-                            pages in a web site, you should create an external
-                            JavaScript file, instead of writing the same script
-                            over and over again. Save the script file with a .js
-                            extension, and then refer to it using the src
-                            attribute in the &lt;script&gt; tag.
-                        </li>
-                        <li>
-                            The external script file cannot contain the
-                            &lt;script&gt; tag
-                        </li>
-                        <li>
-                            Point to the external script file exactly where you
-                            would have written the script
-                        </li>
-                        <li>
-                            Possible values:
-                            <ul>
-                                <li>
-                                    An absolute URL - points to another web site
-                                    (like
-                                    src="http://www.example.com/example.js")
-                                </li>
-                                <li>
-                                    A relative URL - points to a file within a
-                                    web site (like src="/scripts/example.js")
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <ul></ul>
                     <div class="container">
                         <div class="row col-header">
                             <div class="col20">Example</div>
