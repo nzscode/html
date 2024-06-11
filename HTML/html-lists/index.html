@@ -37,7 +37,7 @@
                 >
                 <!-- Nav Menu Items -->
                 <nav id="nav">
-                    <p>Basic Lists</p>
+                    <!-- <p>Basic Lists</p>
                     <ul>
                         <li>
                             <a href="./index.html#ordered-lists"
@@ -87,7 +87,7 @@
                     <p>List Types</p>
                     <ul>
                         <li><a href="./index.html#types">List Types</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -95,7 +95,7 @@
         <main>
             <article>
                 <section>
-                    <h2 id="ordered-lists">Ordered Lists</h2>
+                    <h2 id="ordered-lists" class="lvl2">Ordered Lists</h2>
                     <ul>
                         <li>Defines an ordered list</li>
                         <li>Can be numerical or alphabetical</li>
@@ -149,92 +149,61 @@ li {
                     </div>
                 </section>
                 <section>
-                    <h2 id="attributes">Ordered List Attributes</h2>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span id="o-reversed"
-                                        ><a href="#ol-reversed"
-                                            >reversed</a
-                                        ></span
-                                    >
-                                </td>
-                                <td>reversed</td>
-                                <td>
-                                    Specifies that the list order should be
-                                    reversed (9,8,7...)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span id="o-start"
-                                        ><a href="#ol-start">start</a></span
-                                    >
-                                </td>
-                                <td>number</td>
-                                <td>
-                                    Specifies the start value of an ordered list
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span id="o-type"
-                                        ><a href="#ol-type">type</a></span
-                                    >
-                                </td>
-                                <td>1 <br />A <br />a <br />I <br />i</td>
-                                <td>
-                                    Specifies the kind of marker to use in the
-                                    list
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section>
-                    <h3 id="ol-reversed">Reversed</h3>
+                    <h2 id="attributes" class="lvl2">Ordered List Attributes</h2>
                     <ul>
-                        <li>A boolean attribute</li>
+                        <li>Reversed</li>
+                        <ul>
+                            <li>Value: </li>
+                            <ul><li>Reversed</li></ul>
+                            <li>Specifies that the list order should be reversed (9,8,7...) </li>
+                        </ul>
+                    <li>Start</li>
+                    <ul><li>Value: </li>
+                    <ul>
+                        <li>Number</li>
+                    </ul>
+                <li>Specifies the start value of an ordered list </li></ul>
+                   <li>Type</li><ul>
+                    <li>Value: </li>
+                    <ul>
+                        <li>1</li>
+                        <li>A</li>
+                        <li>a</li>
+                        <li>I</li>
+                        <li>i</li>
+                    </ul>
+                    <li>Specifies the kind of marker to use in the list </li>
+                   </ul> </ul>
+                   <section>
+                    <h3 class="lvl3" id="o-reversed">Reversed</h3>
+                    <ul><li>A boolean attribute</li>
                         <li>
                             Specifies that the list order should be descending
                             (9,8,7...), instead of ascending (1, 2, 3...)
-                        </li>
-                    </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col30">Example</div>
-                            <div class="col50">HTML</div>
+                        </li></ul>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col30">
-                                <ol reversed>
+                        <div class="body-row">
+                            <div class="cells"> <ol reversed>
                                     <li>Cat</li>
                                     <li>Dog</li>
                                     <li>Antelope</li>
                                     <li>Baboon</li>
-                                </ol>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;ol reversed&gt;
+                                </ol></div>
+                            <div class="cells"><pre><code>&lt;ol reversed&gt;
     &lt;li>Cat&lt;/li&gt;
     &lt;li>Dog&lt;/li&gt;
     &lt;li>Antelope&lt;/li&gt;
     &lt;li>Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                            </div>
-                        </div>
+&lt;/ol&gt;</code></pre></div>
+                        </div>   
                     </div>
-                </section>
-                <section>
-                    <h3 id="ol-start">Start</h3>
+                   </section>
+                   <section>
+                    <h3 class="lvl3" id="o-start">Start</h3>
                     <ul>
                         <li>
                             Specifies the start value of the first list item in
@@ -247,35 +216,30 @@ li {
                             use start="3"
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col30">Example</div>
-                            <div class="col50">HTML</div>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col30">
-                                <ol start="25">
+                        <div class="body-row">
+                            <div class="cells"><ol start="25">
                                     <li>Cat</li>
                                     <li>Dog</li>
                                     <li>Antelope</li>
                                     <li>Baboon</li>
-                                </ol>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;ol start="25"&gt;
+                                </ol></div>
+                            <div class="cells"><pre><code>&lt;ol start="25"&gt;
     &lt;li&gt;Cat&lt;/li&gt;
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
     &lt;li&gt;Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                            </div>
-                        </div>
+&lt;/ol&gt;</code></pre></div>
+                        </div>   
                     </div>
-                </section>
-                <section>
-                    <h3 id="ol-type">Type</h3>
-                    <ul>
-                        <li>
+                   </section>
+                   <section>
+                    <h3 class="lvl3" id="o-type">Type</h3>
+                    <ul><li>
                             Specifies the kind of marker to use in the list
                             (letters or numbers)
                         </li>
@@ -284,15 +248,15 @@ li {
                             <a href="#types">list-style-type</a>
                             property offers more types
                         </li>
+                        
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col30">Example</div>
-                            <div class="col50">HTML</div>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col30">
-                                <ol type="I">
+                        <div class="body-row">
+                            <div class="cells"><ol type="I">
                                     <li>Cat</li>
                                     <li>Dog</li>
                                     <li>Antelope</li>
@@ -304,10 +268,8 @@ li {
                                     <li>Dog</li>
                                     <li>Antelope</li>
                                     <li>Baboon</li>
-                                </ol>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;ol type="I"&gt;
+                                </ol></div>
+                            <div class="cells"><pre><code>&lt;ol type="I"&gt;
     &lt;li&gt;Cat&lt;/li&gt;
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
@@ -319,15 +281,15 @@ li {
     &lt;li&gt;Dog&lt;/li&gt;
     &lt;li&gt;Antelope&lt;/li&gt;
     &lt;li&gt;Baboon&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                            </div>
-                        </div>
+&lt;/ol&gt;</code></pre></div>
+                        </div>   
                     </div>
+                   </section>
                 </section>
             </article>
             <article>
                 <section>
-                    <h2 id="unordered-lists">Unordered Lists</h2>
+                    <h2 id="unordered-lists" class="lvl2">Unordered Lists</h2>
                     <ul>
                         <li>Defines an unordered (bulleted) list</li>
                         <li>&lt;li&gt; tag is used to define each list item</li>
@@ -337,15 +299,14 @@ li {
                             property to change bullet type
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">HTML</div>
-                            <div class="col40">Default CSS</div>
+
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="row">
-                            <div class="col20">
-                                <ul>
+                        <div class="body-row">
+                            <div class="cells"><ul>
                                     <li>Onion</li>
                                     <li>Garlic</li>
                                     <li>Potatoes</li>
@@ -364,18 +325,22 @@ li {
                                     <li>Garlic</li>
                                     <li>Potatoes</li>
                                     <li>Green Peppers</li>
-                                </ul>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;ul&gt;
+                                </ul></div>
+                            <div class="cells"><pre><code>&lt;ul&gt;
     &lt;li&gt;Onion&lt;/li&gt;
     &lt;li&gt;Garlic&lt;/li&gt;
     &lt;li&gt;Potatoes&lt;/li&gt;
     &lt;li&gt;Green Peppers&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                            </div>
-                            <div class="col40">
-                                <pre><code>ul {
+&lt;/ul&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code><b><u>Disc Style BUllet(default CSS)</u></b>
+ul {
     display: block;
     list-style-type: disc;
     margin-top: 1em;
@@ -387,20 +352,15 @@ li {
 
 li {
     display: list-item;
-}</code></pre>
+}
 
-                                <h3 class="revert tiny-margin-bottom">
-                                    Square bullets CSS
-                                </h3>
-                                <pre><code>.ul-list-style-type-square {
+<b><u>Square bullets CSS</u></b>
+.ul-list-style-type-square {
     list-style-type: square;
-}</code></pre>
-                                <h3 class="revert tiny-margin-bottom">
-                                    Custom Bullet CSS
-                                </h3>
-                                <pre
-                                    class=""
-                                ><code>ul.ul-list-style-type-custom {
+}
+
+<b><u>Custom Bullet CSS</u></b>
+ul.ul-list-style-type-custom {
     list-style: none;
     margin-left: -30px;
 }
@@ -408,28 +368,27 @@ li {
 ul.ul-list-style-type-custom li::before {
     content: "+*+";
     color: hotpink;
-}</code></pre>
-                            </div>
-                        </div>
+}</code></pre></div>
+                        </div>   
                     </div>
+                    
                 </section>
-
+            </article>
+            <article>
                 <section>
-                    <h2 id="description-lists">Description Lists</h2>
+                    <h2 id="description-lists" class="lvl2">Description Lists</h2>
                     <ul>
                         <li>&lt;dl&gt; defines a description List</li>
                         <li>&lt;dt&gt; defines the term Name</li>
                         <li>&lt;dd&gt; defines the description</li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col40">HTML</div>
-                            <div class="col40">Default CSS</div>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="row">
-                            <div class="col20">
-                                <dl>
+                        <div class="body-row">
+                            <div class="cells"><dl>
                                     <dt>Agar</dt>
                                     <dd>
                                         A Jelly like dish made using seaweed
@@ -438,20 +397,23 @@ ul.ul-list-style-type-custom li::before {
                                     <dd>
                                         A soft pudding made using cornstarch
                                     </dd>
-                                </dl>
-                            </div>
-                            <div class="col40">
-                                <pre><code>&lt;dl&gt;
+                                </dl></div>
+                            <div class="cells"><pre><code>&lt;dl&gt;
     &lt;dt&gt;Agar&lt;/dt&gt;
     &lt;dd&gt;A Jelly like dish 
             made using seaweed&lt;/dd&gt;
     &lt;dt&gt;Custard&lt;/dt&gt;
     &lt;dd&gt;A soft pudding 
             made using cornstarch&lt;/dd&gt;
-&lt;/dl&gt;</code></pre>
-                            </div>
-                            <div class="col40">
-                                <pre><code>dl {
+&lt;/dl&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code>dl {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -466,36 +428,33 @@ dt {
 
 dd {
     display: block; 
-}</code></pre>
-                            </div>
-                        </div>
+}</code></pre></div>
+                        </div>   
                     </div>
                 </section>
             </article>
-            <hr />
-            <hr />
+            <br><br><br><br>
             <!-- CSS Snippets -->
             <article>
-                <h2 id="lists-snippets-css">CSS Snippets for Lists</h2>
+                <h2 id="lists-snippets-css" class="lvl2">CSS Snippets for Lists</h2>
                 <section>
-                    <h3 id="removing-bullets">Removing Bullets</h3>
+                    <h3 id="removing-bullets" class="lvl3">Removing Bullets</h3>
                     Removing &lt;li&gt; bullets:
                     <pre><code>ul {
     list-style-type: none;
 }</code></pre>
                 </section>
                 <section>
-                    <h3 id="reduce-expand-line-height">
+                    <h3 id="reduce-expand-line-height" class="lvl3">
                         Reducing and Expanding line heights
                     </h3>
-                    <div class="row col-header">
-                        <div class="col20">Example</div>
-                        <div class="col30">HTML</div>
-                        <div class="col50">CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col20">
-                            <ol class="line-height50">
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><ol class="line-height50">
                                 <li>Bread</li>
                                 <li>Cereal</li>
                                 <li>Egg</li>
@@ -505,85 +464,96 @@ dd {
                                 <li>Bread</li>
                                 <li>Cereal</li>
                                 <li>Egg</li>
-                            </ol>
-                        </div>
-                        <div class="col30">
-                            <pre><code>&lt;ol class="line-height50"&gt;
+                            </ol></div>
+                            <div class="cells"><pre><code><b><u>Line Height 50</u></b>
+&lt;ol class="line-height50"&gt;
     &lt;li&gt;Bread&lt;/li&gt;
     &lt;li&gt;Cereal&lt;/li&gt;
     &lt;li&gt;Egg&lt;/li&gt;
 &lt;/ol&gt;
-&lt;br /&gt;&lt;br /&gt;
+
+
+<b><u>Line Height 300</u></b>
 &lt;ol class="line-height300"&gt;
     &lt;li&gt;Bread&lt;/li&gt;
     &lt;li&gt;Cereal&lt;/li&gt;
     &lt;li&gt;Egg&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+&lt;/ol&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="col50">
-                            <pre><code>.line-height50 {
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code><b><u>Line Height 50</u></b>
+.line-height50 {
     all: revert;
     line-height: 50%;
 }
 
+
+<b><u>Line Height 300</u></b>
 .line-height300 {
     all: revert;
     line-height: 300%;
-}</code></pre>
-                        </div>
-                    </div>
-                </section>
+}</code></pre></div>
+                        </div>   
+                    </div>                    
+                                       </section>
                 <section>
-                    <h3 id="changing-bullet-color">Changing Bullet Color</h3>
+                    <h3 id="changing-bullet-color" class="lvl3">Changing Bullet Color</h3>
                     <ul>
                         <li>
                             Bullet color can only be changed if bullet is
                             removed, then a new bullet can be added and colored.
                         </li>
                     </ul>
-                    <div class="row col-header">
-                        <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col30">CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col20">
-                            <ul class="bullet-color">
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><ul class="bullet-color">
                                 <li>Harry</li>
                                 <li>Ron</li>
                                 <li>Hermione</li>
-                            </ul>
-                        </div>
-                        <div class="col50">
-                            <pre><code>&lt;ul class="bullet-color"&gt;
+                            </ul></div>
+                            <div class="cells"><pre><code>&lt;ul class="bullet-color"&gt;
     &lt;li&gt;Harry&lt;/li&gt; 
     &lt;li&gt;Ron&lt;/li&gt;
     &lt;li&gt;Hermione&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+&lt;/ul&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="col30">
-                            <pre><code>ul.bullet-color {
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code>ul.bullet-color {
     list-style: none;
 }
 ul.bullet-color li::before {
     content: "* ";
     color: blue;
-}</code></pre>
-                        </div>
+}</code></pre></div>
+                        </div>   
                     </div>
+                    
                 </section>
                 <section>
-                    <h3 id="split-lists">
+                    <h3 id="split-lists" class="lvl3">
                         Splitting List into Multiple Columns
                     </h3>
-                    <div class="row col-header">
-                        <div class="col20">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col30">CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col20">
-                            <ul class="column2 margin-remove">
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><ul class="column2 margin-remove">
                                 <li>Harry</li>
                                 <li>Ron</li>
                                 <li>Hermione</li>
@@ -593,10 +563,8 @@ ul.bullet-color li::before {
                                 <li>Dean</li>
                                 <li>Parvati</li>
                                 <li>Padma</li>
-                            </ul>
-                        </div>
-                        <div class="col50">
-                            <pre><code>&lt;ul class="column3"&gt;
+                            </ul></div>
+                            <div class="cells"><pre><code>&lt;ul class="column3"&gt;
     &lt;li>Harry&lt;/li&gt;
     &lt;li>Ron&lt;/li&gt;
     &lt;li>Hermione&lt;/li&gt;
@@ -606,55 +574,63 @@ ul.bullet-color li::before {
     &lt;li>Dean&lt;/li&gt;
     &lt;li>Parvati&lt;/li&gt;
     &lt;li>Padma&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+&lt;/ul&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="col30">
-                            <pre><code>.column2 {
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code>.column2 {
     column-count: 2;
 }
 
 .margin-remove {
     margin-left: -20px;
-}</code></pre>
-                        </div>
+}</code></pre></div>
+                        </div>   
                     </div>
+                    
+                            
+                       
                 </section>
             </article>
             <article>
                 <section>
-                    <h2 id="types">Different List Types</h2>
-                    <div class="row col-header">
-                        <div class="col15">Example</div>
-                        <div class="col50">HTML</div>
-                        <div class="col30">CSS</div>
-                    </div>
-                    <div class="row">
-                        <div class="col15">
-                            <h4 class="margin-bottom-1px">Disc</h4>
+                    <h2 id="types" class="lvl2">Different List Types</h2>
+
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">CSS</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"><h4 class="margin-bottom-1px lvl3">Disc</h4>
                             <ol class="list-type-disc margin-top-1px">
                                 <li>Red</li>
                                 <li>Orange</li>
                                 <li>Yellow</li>
                             </ol>
-                            <h4 class="margin-bottom-1px">Square</h4>
+                            <h4 class="margin-bottom-1px lvl3">Square</h4>
                             <ol class="list-type-square margin-top-1px">
                                 <li>Red</li>
                                 <li>Orange</li>
                                 <li>Yellow</li>
                             </ol>
-                            <h4 class="margin-bottom-1px">Circle</h4>
+                            <h4 class="margin-bottom-1px lvl3" >Circle</h4>
                             <ol class="list-type-circle margin-top-1px">
                                 <li>Red</li>
                                 <li>Orange</li>
                                 <li>Yellow</li>
                             </ol>
-                            <h4 class="margin-bottom-1px">Armenian</h4>
+                            <h4 class="margin-bottom-1px lvl3">Armenian</h4>
                             <ol class="list-type-armenian margin-top-1px">
                                 <li>Red</li>
                                 <li>Orange</li>
                                 <li>Yellow</li>
                             </ol>
-                            <h4 class="margin-bottom-1px">Armenian</h4>
+                            <h4 class="margin-bottom-1px lvl3">Armenian</h4>
                             <ol class="list-type-armenian margin-top-1px">
                                 <li>Red</li>
                                 <li>Orange</li>
@@ -767,10 +743,8 @@ ul.bullet-color li::before {
                                 <li>Red</li>
                                 <li>Orange</li>
                                 <li>Yellow</li>
-                            </ol>
-                        </div>
-                        <div class="col50 smaller-font">
-                            <pre><code>&lt;h4 class="margin-bottom-1px"&gt;Disc&lt;/h4&gt;
+                            </ol></div>
+                            <div class="cells"><pre><code>&lt;h4 class="margin-bottom-1px"&gt;Disc&lt;/h4&gt;
 &lt;ol class="list-type-disc 
     margin-top-1px"&gt;
     &lt;li&gt;Re&lt&lt;/li&gt&gt;
@@ -911,10 +885,15 @@ ul.bullet-color li::before {
     &lt;li&gt;Red&lt;/li&gt;
     &lt;li&gt;Orange&lt;/li&gt;
     &lt;li&gt;Yellow&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+&lt;/ol&gt;</code></pre></div>
+                        </div>   
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">CSS</div>
                         </div>
-                        <div class="col30 smaller-font">
-                            <pre><code>.list-type-disc {
+                        <div class="body-row-full">
+                            <div class="cells"><pre><code>.list-type-disc {
     list-style-type: disc;
 }
 .list-type-circle {
@@ -981,9 +960,10 @@ ul.bullet-color li::before {
 }
 .list-type-inherit {
     list-style-type: inherit;
-}</code></pre>
-                        </div>
+}</code></pre></div>
+                        </div>   
                     </div>
+                    
                 </section>
             </article>
         </main>
