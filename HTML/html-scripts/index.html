@@ -155,6 +155,7 @@
                             </div>
                         </div>
                     </section>
+                    <br /><br />
                     <section>
                         <h3 class="lvl3" id="defer">Defer</h3>
                         <ul>
@@ -206,6 +207,114 @@
                             </div>
                         </div>
                     </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="integrity">Integrity</h3>
+                        <ul>
+                            <li>Value:</li>
+                            <ul>
+                                <li>filehash</li>
+                            </ul>
+                            <li>
+                                Allows a browser to check the fetched script to
+                                ensure that the code is never loaded if the
+                                source has been manipulated
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"></div>
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="nomodule">Nomodule</h3>
+                        <ul>
+                            <li>Values:</li>
+                            <ul>
+                                <li>True</li>
+                                <li>False</li>
+                            </ul>
+                            <li>
+                                Specifies that the script should not be executed
+                                in browsers supporting ES2015 modules
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"></div>
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="referrerpolicy">
+                            Referrer Policy
+                        </h3>
+                        <ul>
+                            <li>Values:</li>
+                            <ul>
+                                <li>no-referrer</li>
+                                <li>no-referrer-when-downgrade</li>
+                                <li>origin</li>
+                                <li>origin-when-cross-origin</li>
+                                <li>same-origin</li>
+                                <li>strict-origin</li>
+                                <li>strict-origin-when-cross-origin</li>
+                                <li>unsafe-url</li>
+                            </ul>
+                            <li>
+                                Specifies which referrer information to send
+                                when fetching a script
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"></div>
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
                     <section>
                         <h3 class="lvl3" id="src">SRC</h3>
                         <ul>
@@ -246,126 +355,23 @@
                             </li>
                         </ul>
                         <div class="outer-table">
-                            <div class="head-row-full">
+                            <div class="head-row">
+                                <div class="cell-header">Example</div>
                                 <div class="cell-header">HTML</div>
                             </div>
-                            <div class="body-row-full">
-                                <div class="cells"></div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-            </article>
-            <article>
-                <h2 id="script-attributes">Script Attributes</h2>
-                <section>
-                    <table class="pretty-table">
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="#async"></a>
-                                </td>
-                                <td>async</td>
-                                <td>
-                                    Specifies that the script is downloaded in
-                                    parallel to parsing the page, and executed
-                                    as soon as it is available (before parsing
-                                    completes) (only for external scripts)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#defer">defer</a>
-                                </td>
-                                <td>defer</td>
-                                <td>
-                                    Specifies that the script is downloaded in
-                                    parallel to parsing the page, and executed
-                                    after the page has finished parsing (only
-                                    for external scripts)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>integrity</td>
-                                <td>filehash</td>
-                                <td>
-                                    Allows a browser to check the fetched script
-                                    to ensure that the code is never loaded if
-                                    the source has been manipulated
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>nomodule</td>
-                                <td>True <br />False</td>
-                                <td>
-                                    Specifies that the script should not be
-                                    executed in browsers supporting ES2015
-                                    modules
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>referrerpolicy</td>
-                                <td>
-                                    no-referrer <br />no-referrer-when-downgrade
-                                    <br />origin <br />origin-when-cross-origin
-                                    <br />same-origin <br />strict-origin
-                                    <br />strict-origin-when-cross-origin
-                                    <br />unsafe-url
-                                </td>
-                                <td>
-                                    Specifies which referrer information to send
-                                    when fetching a script
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#src">src</a>
-                                </td>
-                                <td>URL</td>
-                                <td>
-                                    Specifies the URL of an external script file
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#type">type</a>
-                                </td>
-                                <td>scripttype</td>
-                                <td>Specifies the media type of the script</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-
-                <section>
-                    <h3 id="src">SRC</h3>
-                    <ul></ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col50">HTML</div>
-                            <div class="col30">Default CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <script type="text/javascript">
-                                    //<![CDATA[
-                                    let x = 10;
-                                    if (x < 5) {
-                                        // some code
-                                    }
-                                    //]]>
-                                </script>
-                            </div>
-                            <div class="col50">
-                                <pre><code>&lt;script type="text/javascript"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <script type="text/javascript">
+                                        //<![CDATA[
+                                        let x = 10;
+                                        if (x < 5) {
+                                            // some code
+                                        }
+                                        //]]>
+                                    </script>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;script type="text/javascript"&gt;
 //&lt;![CDATA[
 let i = 10;
 if (i &lt; 5) {
@@ -373,56 +379,74 @@ if (i &lt; 5) {
 }
 //]]&gt;
 &lt;/script&gt;</code></pre>
+                                </div>
                             </div>
-                            <div class="col30">
-                                <pre><code>script {
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>script {
     display: none;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <h3 id="type">Type</h3>
-                    <ul>
-                        <li>Specifies the type of the script.</li>
-                        <li>
-                            Identifies the content between the &lt;script&gt;
-                            and &lt;/script&gt; tags
-                        </li>
-                        <li>
-                            <i>scripttype</i>: Specifies the type of the script
-                            <ul>
-                                <li>
-                                    Some common values: <br />A JavaScript MIME
-                                    type like: text/javascript (default)module:
-                                    <br />Another MIME type. src attribute will
-                                    be ignored
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
-                        </div>
-                        <div class="row">
-                            <div class="col20">
-                                <script type="text/javascript">
-                                    document.getElementById("demo").innerHTML =
-                                        "Hello JavaScript!";
-                                </script>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="type">Type</h3>
+                        <ul>
+                            <li>Specifies the type of the script.</li>
+                            <li>
+                                Identifies the content between the
+                                &lt;script&gt; and &lt;/script&gt; tags
+                            </li>
+                            <li>
+                                <i>scripttype</i>: Specifies the type of the
+                                script
+                                <ul>
+                                    <li>
+                                        Some common values: <br />A JavaScript
+                                        MIME type like: text/javascript
+                                        (default)module: <br />Another MIME
+                                        type. src attribute will be ignored
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
                             </div>
-
-                            <div class="col75">
-                                <pre><code>&lt;script type="text/javascript"&gt;
+                            <div class="body-row">
+                                <div class="cells">
+                                    <script type="text/javascript">
+                                        document.getElementById(
+                                            "demo"
+                                        ).innerHTML = "Hello JavaScript!";
+                                    </script>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;script type="text/javascript"&gt;
     document.getElementById("demo").innerHTML 
         = "Hello JavaScript!";
 &lt;/script&gt;</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
         </main>

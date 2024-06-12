@@ -36,7 +36,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>HTML Video</p>
+                    <!-- <p>HTML Video</p>
                     <ul>
                         <li>
                             <a href="#video-basic">Basic Video</a>
@@ -54,7 +54,7 @@
                         <li>
                             <a href="#audio-attributes">Audio Attributes</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -62,7 +62,7 @@
         <main>
             <article>
                 <section>
-                    <h2 id="video-basic">Basic Video</h2>
+                    <h2 id="video-basic" class="lvl2">Basic Video</h2>
                     <ul>
                         <li>Used to embed video content in a document</li>
                         <li>
@@ -80,14 +80,13 @@
                             Supported video formats in HTML: MP4, WebM, and OGG.
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col20">Example</div>
-                            <div class="col75">HTML</div>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col20">
-                                <br />
+                        <div class="body-row">
+                            <div class="cells">
                                 <video width="150" height="100" controls>
                                     <source
                                         src="https://www.youtube.com/watch?v=Oqt8K-3TdTk&ab-channel=SweetyBijou"
@@ -95,7 +94,7 @@
                                     />
                                 </video>
                             </div>
-                            <div class="col75">
+                            <div class="cells">
                                 <pre><code>&lt;video width="150" height="100" controls&gt;
     &lt;source
         src="https://www.youtube.com/watch?v=Oqt8K-3TdTk&ab-channel=SweetyBijou"
@@ -109,84 +108,83 @@
                 </section>
 
                 <section>
-                    <h2 id="video-attributes">Video Attributes</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>autoplay</td>
-                                <td>autoplay</td>
-                                <td>
-                                    Video will start playing as soon as it is
-                                    ready
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>controls</td>
-                                <td>controls</td>
-                                <td>
-                                    Video controls should be displayed (such as
-                                    a play/pause button etc).
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>loop</td>
-                                <td>loop</td>
-                                <td>
-                                    Video will loop everytime it is finished
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>muted</td>
-                                <td>muted</td>
-                                <td>Audio Output will be muted</td>
-                            </tr>
-                            <tr>
-                                <td>poster</td>
-                                <td>URL</td>
-                                <td>
-                                    Image will be shown while video is
-                                    downloading
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>preload</td>
-                                <td>auto <br />metadata <br />none</td>
-                                <td>
-                                    Specifies if and how the author thinks the
-                                    video should be loaded when the page loads
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>src</td>
-                                <td>URL</td>
-                                <td>URL of Video</td>
-                            </tr>
-                            <tr>
-                                <td>width</td>
-                                <td>px</td>
-                                <td>Width in px</td>
-                            </tr>
-                            <tr>
-                                <td>height</td>
-                                <td>px</td>
-                                <td>height in px</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h2 id="video-attributes" class="lvl2">Video Attributes</h2>
+                    <div class="outer-table">
+                        <div class="head-row3">
+                            <div class="cell-header">Attribute</div>
+                            <div class="cell-header">Value</div>
+                            <div class="cell-header">Description</div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">autoplay</div>
+                            <div class="cells">autoplay</div>
+                            <div class="cells">
+                                Video will start playing as soon as it is ready
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">controls</div>
+                            <div class="cells">controls</div>
+                            <div class="cells">
+                                Video controls should be displayed (such as a
+                                play/pause button etc).
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">loop</div>
+                            <div class="cells">loop</div>
+                            <div class="cells">
+                                Video will loop everytime it is finished
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">muted</div>
+                            <div class="cells">muted</div>
+                            <div class="cells">Audio Output will be muted</div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">poster</div>
+                            <div class="cells">URL</div>
+                            <div class="cells">
+                                Image will be shown while video is downloading
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">preload</div>
+                            <div class="cells">
+                                <ul>
+                                    <li>auto</li>
+                                    <li>metadata</li>
+                                    <li>none</li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                Specifies if and how the author thinks the video
+                                should be loaded when the page loads
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">src</div>
+                            <div class="cells">URL</div>
+                            <div class="cells">URL of Video</div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">width</div>
+                            <div class="cells">px</div>
+                            <div class="cells">Width in px</div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">height</div>
+                            <div class="cells">px</div>
+                            <div class="cells">height in px</div>
+                        </div>
+                    </div>
                 </section>
             </article>
-            <hr />
-            <hr />
+            <br /><br /><br /><br />
             <article>
                 <section>
-                    <h2 id="audio-basic">Basic Audio</h2>
+                    <h2 id="audio-basic" class="lvl2">Basic Audio</h2>
                     <ul>
                         <li>Used to embed sound content in a document</li>
                         <li>
@@ -204,14 +202,13 @@
                             Supported video formats in HTML: MP3, WAV, and OGG.
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col30">Example</div>
-                            <div class="col50">HTML</div>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
                         </div>
-                        <div class="row">
-                            <div class="col30">
-                                <br />
+                        <div class="body-row">
+                            <div class="cells">
                                 <audio controls>
                                     <source
                                         src="../../images/1 - Easy.mp3"
@@ -220,7 +217,7 @@
                                     Your browser does not support the audio tag.
                                 </audio>
                             </div>
-                            <div class="col50">
+                            <div class="cells">
                                 <pre><code>&lt;audio controls&gt;
 &lt;source src="../../images/1 - Easy.mp3" type="audio/mp3"&gt;
 Your browser does not support the audio tag.
@@ -229,58 +226,62 @@ Your browser does not support the audio tag.
                         </div>
                     </div>
                 </section>
+                <br /><br />
                 <section>
-                    <h2 id="audio-attributes">Audio Attributes</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Value</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>autoplay</td>
-                                <td>autoplay</td>
-                                <td>
-                                    Audio will start playing as soon as it is
-                                    ready
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>controls</td>
-                                <td>controls</td>
-                                <td>
-                                    Audio controls should be displayed (such as
-                                    a play/pause button etc)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>loop</td>
-                                <td>loop</td>
-                                <td>Loops audio when finished playing</td>
-                            </tr>
-                            <tr>
-                                <td>muted</td>
-                                <td>muted</td>
-                                <td>Mutes audio</td>
-                            </tr>
-                            <tr>
-                                <td>preload</td>
-                                <td>auto <br />metadata <br />none</td>
-                                <td>
-                                    Specifies if and how the author thinks the
-                                    audio should be loaded when the page loads
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>src</td>
-                                <td>URL</td>
-                                <td>URL of the audio file</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h2 id="audio-attributes" class="lvl2">Audio Attributes</h2>
+                    <div class="outer-table">
+                        <div class="head-row3">
+                            <div class="cell-header">Attribute</div>
+                            <div class="cell-header">Value</div>
+                            <div class="cell-header">Description</div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">autoplay</div>
+                            <div class="cells">autoplay</div>
+                            <div class="cells">
+                                Audio will start playing as soon as it is ready
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">controls</div>
+                            <div class="cells">controls</div>
+                            <div class="cells">
+                                Audio controls should be displayed (such as a
+                                play/pause button etc)
+                            </div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">loop</div>
+                            <div class="cells">loop</div>
+                            <div class="cells">
+                                Loops audio when finished playing
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">muted</div>
+                            <div class="cells">muted</div>
+                            <div class="cells">Mutes audio</div>
+                        </div>
+                        <div class="body-row3 odd-bg">
+                            <div class="cells">preload</div>
+                            <div class="cells">
+                                <ul>
+                                    <li>auto</li>
+                                    <li>metadata</li>
+                                    <li>none</li>
+                                </ul>
+                            </div>
+                            <div class="cells">
+                                Specifies if and how the author thinks the audio
+                                should be loaded when the page loads
+                            </div>
+                        </div>
+                        <div class="body-row3">
+                            <div class="cells">src</div>
+                            <div class="cells">URL</div>
+                            <div class="cells">URL of the audio file</div>
+                        </div>
+                    </div>
                 </section>
             </article>
         </main>

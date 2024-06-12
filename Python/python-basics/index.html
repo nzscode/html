@@ -34,7 +34,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <ul>
+                    <!-- <ul>
                         <li><a href="./#input">Input</a></li>
                         <li>
                             <a href="./#string-formatting">String Formatting</a>
@@ -107,88 +107,129 @@
                             </ul>
                             <li><a href="./#while">While Loops</a></li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <h2>Python Basics</h2>
-                <section id="input">
-                    <h3>Input</h3>
-                    <ul>
-                        <li>
-                            Make sure a variable is set to receive and store the
-                            user input
-                        </li>
-                        <li>
-                            Use "\n" to make sure the input is only accepted in
-                            the next line.
-                        </li>
-                        <pre>
+                <section>
+                    <h2 class="lvl2" id="basics">Python Basics</h2>
+                    <section>
+                        <h3 id="input" class="lvl3">Input</h3>
+                        <ul>
+                            <li>
+                                Make sure a variable is set to receive and store
+                                the user input
+                            </li>
+                            <li>
+                                Use "\n" to make sure the input is only accepted
+                                in the next line.
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>x = input("What is your name?\n")
 print(f"Hello {x}")
+
+
 </code></pre>
-                        <pre>
+
+                                    <pre>
 <code class="output"># Output
 What is your name?          #This is the input method
 Lilly                       #This is the user-input response
 Hello Lilly                 #This is the response printed out
 </code>
 </pre>
-                    </ul>
-                </section>
-            </article>
-            <article>
-                <section id="string-formatting">
-                    <h3>String Formatting</h3>
-
-                    <section id="f-string">
-                        <ul>
-                            <li class="title">Using an F-String</li>
-                        </ul>
-                        <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="string-formatting" class="lvl3">
+                            String Formatting
+                        </h3>
+                        <section>
+                            <h3 id="f-string" class="lvl4 h3-plus">
+                                Using an F-String
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Code</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>aName = "Ruby"
 age = 19
 owing = 25
 print(f"Hello {aName}, you are {age} years old. You owe ${owing:.2f}")
 </code></pre>
-                        <pre>
-<code class="output"># Output
+                                        <pre><code class="output"># Output
 Hello Ruby, you are 19 years old. You owe $25.00</code></pre>
-                    </section>
-                    <section id="format">
-                        <ul>
-                            <li class="title">Using format()</li>
-                        </ul>
-                        <pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="format">
+                                Using format()
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Code</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>bName = "Cassy"
 age = 30
 owing = 36.45128
 greeting = "Hello {}, you are {} years old. You owe ${:.2f}"
 print(greeting.format(bName, age, owing))</code></pre>
-                        <pre>
+                                        <pre>
 <code class="output"># Output:
 Hello Cassy, you are 30 years old. You owe $36.45</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </section>
             </article>
-            <article id="printing">
-                <h3>Printing</h3>
-                <section id="basic-printing">
-                    <ul>
-                        <li>Basic Printing</li>
-                    </ul>
-                    <pre>
+            <br /><br /><br /><br />
+            <article>
+                <section>
+                    <h2 class="lvl2" id="printing">Printing</h2>
+                    <section>
+                        <h3 id="basic-printing" class="lvl3">Basic Printing</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>hello = "Hello"
 print(hello)</code></pre>
-                    <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 hello</code></pre>
-                </section>
-                <section id="f-string">
-                    <ul>
-                        <li>F String Printing</li>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="f-string">F String Printing</h3>
                         <ul>
                             <li>
                                 Allows the printing of expressions within a
@@ -196,25 +237,38 @@ hello</code></pre>
                             </li>
                             <li>Used instead of string concatenation</li>
                         </ul>
-                    </ul>
-
-                    <pre>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>name = "Jane"
 print(f"Hello {name}")
 </code></pre>
-                    <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 Hello Jane</code></pre>
-                </section>
-
-                <section id="f-string-formatting">
-                    <ul>
-                        <li>F String Formatting</li>
-                    </ul>
-                    <section id="decimal-places">
-                        <ul>
-                            <li>2 Decimal Places</li>
-                        </ul>
-                        <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="f-string-formatting">
+                            F String Formatting
+                        </h3>
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="decimal-places">
+                                2 Decimal Places
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Code</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>num1 = 1269
 num2 = 0.57286
 
@@ -224,26 +278,43 @@ return a * b
 
 
 print(f"{multiply(num1, num2):.2f}")</code></pre>
-                        <pre><code class="output"># Output
+                                        <pre><code class="output"># Output
 726.96</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </section>
             </article>
-            <article id="comments">
-                <h3>Comments</h3>
-                <section id="simple-comment">
-                    <ul>
-                        <li>Simple Comment</li>
-                    </ul>
-                    <pre>
+            <br /><br /><br /><br />
+            <article>
+                <section>
+                    <h2 id="comments" class="lvl2">Comments</h2>
+                    <section>
+                        <h3 class="lvl3" id="simple-comment">Simple Comment</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code># Comment</code></pre>
-                </section>
-                <section id="inline-comment">
-                    <ul>
-                        <li>Inline Comment</li>
-                    </ul>
-
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="inline-comment">Inline Comment</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>class Person:
 def __init__(self, fname, lname, age):
     self.fname = fname
@@ -252,49 +323,80 @@ def __init__(self, fname, lname, age):
 
 def intro(self):
     print(f"My name is {self.fname}")  # Prints name of Person</code></pre>
-                </section>
-                <section id="multiline-comment">
-                    <ul>
-                        <li>Multiline Comment</li>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="multiline-comment">
+                            Multiline Comment
+                        </h3>
                         <ul>
                             <li>Using "#" on every line</li>
                         </ul>
-                    </ul>
-
-                    <pre>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code># def multiply(a, b):
 #     return a * b
 #
 #
 # print(f"{multiply(num1, num2):.2f}")</code></pre>
-                </section>
-                <section id="triple-quotes">
-                    <ul>
-                        <li>Using """ at the beginning and end</li>
-                    </ul>
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="triple-quotes">
+                            Using """ at the beginning and end
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>"""This
 is
 a
 multiline
 comment
 """</code></pre>
-                    <pre>
+                                    <pre>
 <code class="output"># Output:
 This
 is
 a
 multiline
 comment</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
-            <article id="conditional-statements">
-                <h3>Conditional Statements</h3>
-                <section id="if-else">
-                    <ul>
-                        <li>If ... Else</li>
-                    </ul>
-                    <pre>
+            <br /><br /><br /><br />
+            <article>
+                <section>
+                    <h2 id="conditional-statements" class="lvl2">
+                        Conditional Statements
+                    </h2>
+                    <section>
+                        <h3 class="lvl3" id="if-else">If ... Else</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>a3 = ""
 b3 = 5
 if (a3 == a3 and b3 == 5):
@@ -306,15 +408,24 @@ print(f"a is defined, b is not defined")
 else:
 print(f"a and b are not defined")
         </code></pre>
-                    <pre><code># Output:
+                                    <pre><code># Output:
 a is defined, b is defined</code></pre>
-                </section>
-                <section id="switch">
-                    <ul>
-                        <li>Switch Statement - Match & Case</li>
-                    </ul>
-
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="switch">
+                            Switch Statement - Match & Case
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>q = input("What is your fave fruit?\n")
 match q:
 case "apple":
@@ -327,26 +438,36 @@ case "strawberry":
     print("Valentines day is calling you.")
 case _:
     print("AH! Fruits are just sugar bombs anyway!")</code></pre>
-                    <pre>
+                                    <pre>
 <code class="output"># Output:
 What is your fave fruit?                    #This was asked by the program
 banana                                      #This was the user typed response
 This shit is bananas. B A N A N A S!        #This was the output</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
-            <article id="loops">
-                <h3>Loops</h3>
-                <section id="for-loops">
-                    <ul>
-                        <li>For Loops</li>
-                    </ul>
-                    <pre>
+            <br /><br /><br /><br />
+            <article>
+                <section>
+                    <h2 class="lvl2" id="loops">Loops</h2>
+                    <section>
+                        <h3 class="lvl3" id="for-loops">For Loops</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>sumTotal = 0
 for i in range(5):
 sumTotal += i
 print(i)
 print(f"sum is: {sumTotal}")</code></pre>
-                    <pre><code># Output:
+                                    <pre><code># Output:
 0
 sum is: 0
 1
@@ -357,56 +478,89 @@ sum is: 3
 sum is: 6
 4
 sum is: 10</code></pre>
-                </section>
-                <section id="for-loop-decreasing">
-                    <ul>
-                        <li>For Loop - Decreasing</li>
-                    </ul>
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="for-loop-decreasing">
+                            For Loop - Decreasing
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>for i in range(5, 0, -1):
 print(i)</code></pre>
-                    <pre><code># Output:
+                                    <pre><code># Output:
 5
 4
 3
 2
 1</code></pre>
-                </section>
-                <section id="for-loop-increasing">
-                    <ul>
-                        <li>For Loop - Increasing</li>
-                    </ul>
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="for-loop-increasing">
+                            For Loop - Increasing
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>for i in range(0, 5, 1):
 print(i)            </code></pre>
-                    <pre><code># Output:
+                                    <pre><code># Output:
 0
 1
 2
 3
 4
 </code></pre>
-                </section>
-                <section id="while">
-                    <ul>
-                        <li>While Loop</li>
-                    </ul>
-                    <pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="while">While Loop</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Code</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>num = 5
 while num > 0:
     print(num)
     num -= 1</code>
             </pre>
-                    <pre>
+                                    <pre>
 <code class="output"># Output:
 5
 4
 3
 2
 1</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </article>
         </main>
+        <br /><br /><br /><br />
         <footer>
             <div class="container">
                 <div class="row">

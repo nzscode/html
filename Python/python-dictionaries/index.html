@@ -34,7 +34,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <ul>
+                    <!-- <ul>
                         <li>
                             <a href="#basic-dictionary"
                                 >Dictionaries - {Curly Brackets}</a
@@ -143,22 +143,30 @@
                                 >
                             </li>
                         </ul>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
             <article>
-                <section id="basic-dictionary">
-                    <h2>Dictionaries - {Curly Brackets}</h2>
+                <section>
+                    <h2 id="basic-dictionary" class="lvl2">
+                        Dictionaries - {Curly Brackets}
+                    </h2>
                     <ul>
                         <li>Ordered</li>
                         <li>Changeable</li>
                         <li>Duplicates are NOT allowed</li>
                         <li>Contain keys and values</li>
                     </ul>
-                    <pre>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>
 myDict = {
 1: 0.253,
@@ -174,7 +182,7 @@ myDict = {
 
 for key, value in myDict.items():
 print(f"key is {key} : value is {value}")</code></pre>
-                    <pre>
+                                <pre>
 <code class="output"># Output: 
 key is 1 : value is 0.253
 key is two : value is 693
@@ -182,40 +190,70 @@ key is 3 : value is five
 key is fruits : value is ['apples', 'bananas', 'oranges']
 key is grades : value is {'English': 97, 'Math': 85, 'French': 99}
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-                <br /><br />
-                <section id="deleting-dictionary">
-                    <h2>Deleting a dictionary</h2>
+
+                <section>
+                    <h2 id="deleting-dictionary" class="lvl2">
+                        Deleting a dictionary
+                    </h2>
                     <ul>
                         <li>
                             This will cause an error since the dictionary no
                             longer exists.
                         </li>
                     </ul>
-                    <pre><code>del myDict
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>del myDict
 print(myDict)</code></pre>
-                    <pre><code class="output"># Output:
+                                <pre><code class="output"># Output:
 NameError: name 'myDict' is not defined
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-                <br /><br />
-                <section id="clearing-dictionary">
-                    <h2>Emptying a dictionary</h2>
-                    <pre><code>myDict.clear()
+                <section>
+                    <h2 id="clearing-dictionary" class="lvl2">
+                        Emptying a dictionary
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>myDict.clear()
 print(myDict)</code></pre>
-                    <pre><code class="output"># Output:
+                                <pre><code class="output"># Output:
 {}
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br />
-                <br /><br />
-                <section id="accessing-dictionary-items">
-                    <h2>Accessing items in a dictionary</h2>
-                    <section id="key-name">
-                        <h3>Referring by key name</h3>
-                        <pre>
+                <section>
+                    <h2 id="accessing-dictionary-items" class="lvl2">
+                        Accessing items in a dictionary
+                    </h2>
+                    <section>
+                        <h3 id="key-name" class="lvl3">
+                            Referring by key name
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>a = myDict[1]
 print(f"a is {a}")
 
@@ -227,219 +265,397 @@ print(f"c is {c}")
 
 d = myDict["grades"]["English"]
 print(f"d is {d}")</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output
 a is 0.253
 b is 693
 c is oranges
 d is 97</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="using-get-keys">
-                        <h3>Using Get Keys method</h3>
-                        <pre>
+                    <section>
+                        <h3 id="using-get-keys" class="lvl3">
+                            Using Get Keys method
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>dictKeys = myDict.keys()
 print(f"Keys of the dict are: {dictKeys}")</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output: 
 Keys of the dict are: dict_keys([1, 'two', 3, 'fruits', 'grades'])</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="getting-values">
-                        <h3>Getting the Values of dictionary keys</h3>
-                        <pre>
+                    <section>
+                        <h2 id="getting-values" class="lvl2">
+                            Getting the Values of dictionary keys
+                        </h2>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>The Values of the Dictionary are dict_values([0.253, 693, 'five', ['apples', 'bananas', 'oranges'], 
                     {'English': 97, 'Math': 85, 'French': 99}])</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="getting-key-value-pairs">
-                        <h3>Getting the key: value pairs of a dictionary</h3>
-                        <pre>
+                    <section>
+                        <h2 id="getting-key-value-pairs" class="lvl2">
+                            Getting the key: value pairs of a dictionary
+                        </h2>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>dictValues = myDict.items()
 print(f"The key: values of the Dictionary are {dictValues}")</code></pre>
-                        <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 The key: values of the Dictionary are dict_items([(1, 0.253), ('two', 693), (3, 'five'), 
         ('fruits', ['apples', 'bananas', 'oranges']), 
         ('grades', {'English': 97, 'Math': 85, 'French': 99})])
 </code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                    <br /><br />
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="adding-item-to-dictionary">
-                    <h2>Adding an item to a dictionary</h2>
-                    <pre>
+                <section>
+                    <h2 id="adding-item-to-dictionary" class="lvl2">
+                        Adding an item to a dictionary
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>myDict["pets"] = {
 "dog" : "Sammy",
 "cat" : "Dean"
 }
 dictKeys = myDict.keys()
 print(f"Keys of the dict are: {dictKeys}")</code></pre>
-                    <pre><code class="output"># Output: 
+                                <pre><code class="output"># Output: 
 Keys of the dict are: dict_keys([1, 'two', 3, 'fruits', 'grades', 'pets'])
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="check-key-exists">
-                    <h2>Checking if a key exists</h2>
-                    <pre>
+                <section>
+                    <h2 id="check-key-exists" class="lvl2">
+                        Checking if a key exists
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>if "grades" in myDict:
 print("This exists in myDict")</code></pre>
-                    <pre>
+                                <pre>
 <code class="output"># Output:
 This key exists in myDict</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="check-value-exists">
-                    <h2>Checking if a value exists</h2>
-                    <pre>
+                <section>
+                    <h2 id="check-value-exists" class="lvl2">
+                        Checking if a value exists
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>if "grades" in myDict.values():
 print("This value exists in myDict")</code></pre>
-                    <pre>
+                                <pre>
 <code class="output"># Output:
 This exists in myDict</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="update">
-                    <h2>Updating a dictionary</h2>
-                    <pre>
+                <section>
+                    <h2 id="update" class="lvl2">Updating a dictionary</h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>myDict.update({3: "twelve"})
 print(f"The key value pair is: 3 : {myDict[3]}")</code></pre>
-                    <pre><code class="output"># Output:
+                                <pre><code class="output"># Output:
 The key value pair is: 3 : twelve
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="removing-items">
-                    <h2>Removing Items</h2>
-                    <section id="using-pop">
-                        <h3>Using "pop" method</h3>
-                        <pre>
+                <section>
+                    <h2 id="removing-items" class="lvl2">Removing Items</h2>
+                    <section>
+                        <h3 id="using-pop" class="lvl3">Using "pop" method</h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>myDict.pop(3)
 print(myDict)</code></pre>
-                        <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 {1: 0.253, 'two': 693, 'fruits': ['apples', 'bananas', 'oranges'], 
 'grades': {'English': 97, 'Math': 85, 'French': 99}}
 </code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="using-del">
-                        <h3>Using the "del" keyword</h3>
+                    <section>
+                        <h3 id="using-del" class="lvl3">
+                            Using the "del" keyword
+                        </h3>
                         <ul>
                             <li>Removes the item with the specified keyword</li>
                         </ul>
-                        <pre><code>del myDict["grades"]
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>del myDict["grades"]
 print(myDict)</code></pre>
-                        <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 {1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges']}</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="looping-through-dictionary">
-                    <h2>Looping through a dictionary</h2>
-                    <ul>
-                        <li>Using a for loop</li>
-                    </ul>
-                    <section id="print-all-keys">
-                        <h3>Print all keys in the dictionary</h3>
-                        <pre>
+                <section>
+                    <h2 id="looping-through-dictionary" class="lvl2">
+                        Looping through a dictionary
+                    </h2>
+                    <section>
+                        <h3 class="lvl3" id="for-loop">Using a For Loop</h3>
+                        <section>
+                            <h3 id="print-all-keys" class="lvl4 h3-plus">
+                                Print all keys in the dictionary
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>for k in myDict:
 print(k)</code></pre>
 
-                        <pre>
+                                        <pre>
 <code class="output"># Output:
 1
 two
 3
 fruits
 grades</code></pre>
-                    </section>
-                    <br /><br />
-                    <section id="using-keys">
-                        <h3>Using .keys()</h3>
-                        <pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 id="using-keys" class="lvl4 h3-plus">
+                                Using .keys()
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>for k in myDict.keys():
 print(k)</code></pre>
-                        <pre><code class="output">1
+                                        <pre><code class="output">1
 two
 3
 fruits
 grades</code></pre>
-                    </section>
-                    <br /><br />
-                    <section id="printing-all-values">
-                        <h3>Printing all values in the dictionary</h3>
-                        <pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 id="printing-all-values" class="lvl4 h3-plus">
+                                Printing all values in the dictionary
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>for v in myDict:
 print(myDict[v])</code></pre>
-                        <pre>
+                                        <pre>
 <code class="output"># Output: 
 0.253
 693
 five
 ['apples', 'bananas', 'oranges']
 {'English': 97, 'Math': 85, 'French': 99}</code>    </pre>
-                    </section>
-                    <br /><br />
-                    <section id="using-values">
-                        <h3>Using .values()</h3>
-                        <pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 id="using-values" class="lvl4 h3-plus">
+                                Using .values()
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>for v in myDict.values():
 print(v)</code></pre>
-                        <pre>
+                                        <pre>
 <code class="output"># Output: 
 0.253
 693
 five
 ['apples', 'bananas', 'oranges']
 {'English': 97, 'Math': 85, 'French': 99}</code></pre>
-                    </section>
-                    <br /><br />
-                    <section id="printing-all-keys-values">
-                        <h3>Printing all Keys and Values in a dictionary</h3>
-                        <pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h3
+                                id="printing-all-keys-values"
+                                class="lvl4 h3-plus"
+                            >
+                                Printing all Keys and Values in a dictionary
+                            </h3>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre>
 <code>for k, v in myDict.items():
 print(f"keys = {k} : values = {v}")</code></pre>
-                        <pre><code class="output"># Output:
+                                        <pre><code class="output"># Output:
 keys = 1 : values = 0.253
 keys = two : values = 693
 keys = 3 : values = five
 keys = fruits : values = ['apples', 'bananas', 'oranges']
 keys = grades : values = {'English': 97, 'Math': 85, 'French': 99}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </section>
                 <br /><br />
                 <br /><br />
-                <section id="copying-dictionary">
-                    <h2>Copying a Dictionary</h2>
-                    <section id="using-copy">
-                        <h3>Using the copy() method</h3>
-                        <pre>
+                <section>
+                    <h2 id="copying-dictionary" class="lvl2">
+                        Copying a Dictionary
+                    </h2>
+                    <section>
+                        <h3 id="using-copy" class="lvl3">
+                            Using the copy() method
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>newDict = myDict.copy()
 print(newDict)</code></pre>
-                        <pre><code class="output"># Output:
+                                    <pre><code class="output"># Output:
 {1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges'], 
     'grades': {'English': 97, 'Math': 85, 'French': 99}}</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="using-dict-function">
-                        <h3>Using the built in dict() function</h3>
-                        <pre>
+                    <section>
+                        <h3 id="using-dict-function" class="lvl3">
+                            Using the built in dict() function
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>newDict = dict(myDict)
 print(newDict)</code></pre>
-                        <pre><code class="output"># Output :
+                                    <pre><code class="output"># Output :
 {1: 0.253, 'two': 693, 3: 'five', 'fruits': ['apples', 'bananas', 'oranges'], 
     'grades': {'English': 97, 'Math': 85, 'French': 99}}</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </section>
             </article>
         </main>
+        <br /><br /><br /><br />
         <footer>
             <div class="container">
                 <div class="row">

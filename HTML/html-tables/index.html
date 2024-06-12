@@ -36,7 +36,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>Basic Table</p>
+                    <!-- <p>Basic Table</p>
                     <ul>
                         <li>
                             <a href="./index.html#basic-table">Basic Table</a>
@@ -95,39 +95,33 @@
                                 >Collapsing Borders of a Table</a
                             >
                         </li>
-                    </ul>
+                    </ul> -->
                 </nav>
             </div>
         </header>
         <main>
             <article>
-                <h2>
-                    <span id="basic-table" class="anchor-centered"></span>Basic
-                    Table
-                </h2>
-                <section>
-                    <div class="container">
-                        <div class="row col-header">
-                            <div class="col30">Example</div>
-                            <div class="col30">HTML</div>
-                            <div class="col30">Default CSS</div>
+                <h2 id="basic-table" class="lvl2">Basic Table</h2>
+                <div class="outer-table">
+                    <div class="head-row">
+                        <div class="cell-header">Examples</div>
+                        <div class="cell-header">HTML</div>
+                    </div>
+                    <div class="body-row">
+                        <div class="cells">
+                            <table id="table1">
+                                <tr>
+                                    <th>Column Title 1</th>
+                                    <th>Column Title 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Cell 1 (R2C1)</td>
+                                    <td>Cell 2 (R2C2)</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="row">
-                            <div class="col30">
-                                <br />
-                                <table id="table1">
-                                    <tr>
-                                        <th>Column Title 1</th>
-                                        <th>Column Title 2</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Cell 1 (R2C1)</td>
-                                        <td>Cell 2 (R2C2)</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col30">
-                                <pre><code>&lt;table id="table1"&gt;
+                        <div class="cells">
+                            <pre><code>&lt;table id="table1"&gt;
     &lt;tr&gt;
 &lt;th>Column Title 1&lt;/th&gt;
 &lt;th>Column Title 2&lt;/th&gt;
@@ -137,50 +131,61 @@
 &lt;td>Cell 2 (R2C2)&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
-                            </div>
-                            <div class="col30">
-                                <h4>table</h4>
-                                <pre class="css-pre"><code>table {
+                        </div>
+                    </div>
+                </div>
+                <div class="outer-table">
+                    <div class="head-row-full">
+                        <div class="cell-header">Default CSS</div>
+                    </div>
+                    <div class="body-row-full">
+                        <div class="cells">
+                            <b><u>table</u></b>
+                            <pre class="css-pre"><code>table {
     display: table;
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;
 }</code></pre>
-                                <h4>th</h4>
-                                <pre class="css-pre"><code>th {
+                            <b><u>th</u></b>
+                            <pre class="css-pre"><code>th {
     display: table-cell;
     vertical-align: inherit;
     font-weight: bold;
     text-align: center;
 }</code></pre>
 
-                                <h4>tr</h4>
-                                <pre class="css-pre"><code>tr {
+                            <b><u>tr</u></b>
+                            <pre class="css-pre"><code>tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }</code></pre>
 
-                                <h4>td</h4>
-                                <pre class="css-pre"><code>td {
+                            <b><u>td</u></b>
+                            <pre class="css-pre"><code>td {
     display: table-cell;
     vertical-align: inherit;
 }</code></pre>
-                            </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </article>
-            <hr />
-            <hr />
+            <br /><br /><br /><br />
 
             <article>
-                <h2 id="css-snippet">CSS Snippets for Tables</h2>
                 <section>
-                    <ul>
-                        <li>
-                            When adding a CSS property to a table using the
-                            table ID:
+                    <h2 id="css-snippet" class="lvl2">
+                        CSS Snippets for Tables
+                    </h2>
+                    <section>
+                        <h3 class="lvl3" id="adding-css-using-id">
+                            Adding CSS using table ID
+                        </h3>
+                        <section>
+                            <h3 class="lvl4 h3-plus" id="whole-table">
+                                For the Whole Table
+                            </h3>
                             <ul>
                                 <li>
                                     If the property is for the whole table use
@@ -188,8 +193,25 @@
                                         ><u><b>table#tableID</b></u></i
                                     >
                                 </li>
-                                <pre><code>table#table3{
+                            </ul>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>table#table3{
                 }</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus">
+                                For the &lt;tr&gt;|&lt;th&gt;|&lt;td&gt;
+                            </h3>
+                            <ul>
                                 <li>
                                     If the property is for the &lt;tr&gt; or
                                     &lt;th&gt; or &lt;td&gt; use
@@ -197,8 +219,25 @@
                                         ><u><b>table#tableID th</b></u></i
                                     >
                                 </li>
-                                <pre><code>table#table3 th{
+                            </ul>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>table#table3 th{
                 }</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus">
+                                For the odd|even columns|rows
+                            </h3>
+                            <ul>
                                 <li>
                                     If the property is for odd/even columns or
                                     rows use
@@ -210,8 +249,25 @@
                                         ></i
                                     >
                                 </li>
-                                <pre><code>table#tableID:nth child(odd){
+                            </ul>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>table#tableID:nth child(odd){
                 }</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br /><br />
+                        <section>
+                            <h3 class="lvl4 h3-plus">
+                                For a specific row|column
+                            </h3>
+                            <ul>
                                 <li>
                                     If the property is for a specific row or
                                     column use
@@ -223,259 +279,314 @@
                                             ></u
                                         ></i
                                     >
-                                    <br />
+                                </li>
+                                <li>
                                     This will change the 2nd of the &lt;td&gt;
                                 </li>
-                                <pre><code>table#table3 td:nth child(2){
-                }</code></pre>
                             </ul>
-                        </li>
-                    </ul>
-                </section>
-
-                <h3 id="border-around-table">
-                    Adding a border around the whole table
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table2">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table {
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">Default CSS</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>table#table3 td:nth child(2){
+                }</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 class="lvl3" id="border-around-table">
+                            Border around Whole Table
+                        </h3>
+                        <ul>
+                            <li>Adding a border around the whole table</li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table2">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table {
     border: 2px solid #000fff;
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="header-background-color">
-                    Giving the Header cells a Background color
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table3">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table3 th {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="header-background-color" class="lvl3">
+                            Header Background Color
+                        </h3>
+                        <ul>
+                            <li>Giving the Header cells a Background color</li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table3">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table3 th {
     background-color: aqua;
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="odd-cell-background-color">
-                    Coloring only odd rows that are not header rows
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table4">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table4 tr:nth-of-type(odd) {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="odd-cell-background-color" class="lvl3">
+                            Coloring Only some Rows
+                        </h3>
+                        <ul>
+                            <li>
+                                Coloring only odd rows that are not header rows
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table4">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table4 tr:nth-of-type(odd) {
     background-color: #bcb7f0;
 }
 
 table#table4 tr:nth-child(1) {
     background: none;
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="cell-padding">
-                    Adding padding around &lt;th&gt; and &lt;td&gt;
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table5">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table5 tr:nth-of-type(odd) {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="cell-padding" class="lvl3">
+                            Adding padding around &lt;th&gt; and &lt;td&gt;
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table5">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table5 tr:nth-of-type(odd) {
     background-color: #bcb7f0;
 }
 table#table5 th,
 table#table5 td {
     padding: 15px;
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="cell-colors-different">
-                    Making the &lt;th&gt; cells have a pale yellow color and the
-                    odd &lt;td&gt; cells have a pale green color
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table6">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table6 tr:nth-of-type(even) {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="cell-colors-different" class="lvl3">
+                            Coloring Cells
+                        </h3>
+                        <ul>
+                            <li>
+                                Making the &lt;th&gt; cells have a pale yellow
+                                color and the odd &lt;td&gt; cells have a pale
+                                green color
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table6">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table6 tr:nth-of-type(even) {
     background-color: #f8f4b2;
 }
 
 table#table6 th {
     background-color: rgb(184, 242, 184);
 }</code></pre>
-                        </div>
-                    </div>
-                </section>
-
-                <h3 id="cell-merging">Merging Cells</h3>
-                <section>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col25 col-header">Example</div>
-                            <div class="col35 col-header">HTML</div>
-                            <div class="col35 col-header">CSS</div>
-                        </div>
-                        <div class="row">
-                            <div class="col25">
-                                <table id="table7">
-                                    <tr>
-                                        <th>Fruit</th>
-                                        <th>Quantity</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Apple</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="merge-col" colspan="2">
-                                            Cherries
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Banana</td>
-                                        <td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="merge-row" rowspan="2">
-                                            Orange
-                                        </td>
-                                        <td>7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                    </tr>
-                                </table>
+                                </div>
                             </div>
-                            <div class="col35">
-                                <pre><code>&lt;table id="table7"&gt;
+                        </div>
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="cell-merging" class="lvl3">Merging Cells</h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table7">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="merge-col" colspan="2">
+                                                Cherries
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="merge-row" rowspan="2">
+                                                Orange
+                                            </td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;table id="table7"&gt;
     &lt;tr&gt;
         &lt;th&gt;Fruit&lt;/th&gt;
         &lt;th&gt;Quantity&lt;/th&gt;
@@ -502,9 +613,16 @@ table#table6 th {
         &lt;td>4&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
+                                </div>
                             </div>
-                            <div class="col35">
-                                <pre><code>table#table7,
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>table#table7,
 table#table7 td {
     border: 2px solid black;
     padding: 15px;
@@ -513,104 +631,125 @@ table#table7 td {
 .merge-row {
     text-align: center;
 }</code></pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="table-caption">Creating a table with a caption</h3>
-                <section>
-                    <ul>
-                        <li>
-                            Used to specify whether the borders of table cells
-                            should be collapsed into a single border or not.
-                        </li>
-                        <li>
-                            When border-collapse is set to collapse , adjacent
-                            cell borders will be merged into a single border,
-                            resulting in a cleaner and more compact table design
-                        </li>
-                        <li>This is the default value</li>
-                    </ul>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table8">
-                                <caption>
-                                    Fruits to buy
-                                </caption>
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table8 {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="table-caption" class="lvl3">
+                            Creating a table with a caption
+                        </h3>
+                        <ul>
+                            <li>
+                                Used to specify whether the borders of table
+                                cells should be collapsed into a single border
+                                or not.
+                            </li>
+                            <li>
+                                When border-collapse is set to collapse ,
+                                adjacent cell borders will be merged into a
+                                single border, resulting in a cleaner and more
+                                compact table design
+                            </li>
+                            <li>This is the default value</li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">CSS</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table8">
+                                        <caption>
+                                            Fruits to buy
+                                        </caption>
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table8 {
     border: 2px solid black;
 }
 
 table#table8 th{
     background-color: rgb(184, 242, 184);
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="center-align">
-                    Aligning the table to the center of the page using CSS
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table9">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table9 {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="center-align" class="lvl3">
+                            Aligning table to Center
+                        </h3>
+                        <ul>
+                            <li>
+                                Aligning the table to the center of the page
+                                using CSS
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table9">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table9 {
     margin-left: auto;
     margin-right: auto;
 }
@@ -618,95 +757,115 @@ table#table8 th{
 table#table9 th{
     background-color: rgb(184, 242, 184);
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="right-align">
-                    Aligning the table to the Right of the page using CSS
-                </h3>
-                <section>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table10">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table10 {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="right-align" class="lvl3">
+                            Aligning Table to Right
+                        </h3>
+                        <ul>
+                            <li>
+                                Aligning the table to the Right of the page
+                                using CSS
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table10">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table10 {
     float: right
 }
 
 table#table10 th{
     background-color: rgb(184, 242, 184);
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-
-                <h3 id="border-collapse">Collapsing the Table borders</h3>
-                <section>
-                    <ul>
-                        <li>
-                            This means that instead of the table borders being
-                            individual components, they all join together and
-                            act as one
-                        </li>
-                    </ul>
-                    <div class="row">
-                        <div class="col50">
-                            <table id="table11">
-                                <tr>
-                                    <th>Fruit</th>
-                                    <th>Quantity</th>
-                                </tr>
-                                <tr>
-                                    <td>Apple</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Cherries</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Banana</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <td>Orange</td>
-                                    <td>7</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiwi</td>
-                                    <td>4</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="col50">
-                            <pre><code>table#table11 {
+                    </section>
+                    <br /><br />
+                    <section>
+                        <h3 id="border-collapse" class="lvl3">
+                            Collapsing Table borders
+                        </h3>
+                        <ul>
+                            <li>
+                                This means that instead of the table borders
+                                being individual components, they all join
+                                together and act as one
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <table id="table11">
+                                        <tr>
+                                            <th>Fruit</th>
+                                            <th>Quantity</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Apple</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cherries</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Banana</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Orange</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kiwi</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>table#table11 {
     border: 2px solid black;
 }
 
@@ -717,8 +876,10 @@ table#table11 {
 table#table11 th{
     background-color: rgb(184, 242, 184);
 }</code></pre>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
             </article>
         </main>

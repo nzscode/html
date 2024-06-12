@@ -34,7 +34,7 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <ul>
+                    <!-- <ul>
                         <li><a href="#basic-function">Basic Function</a></li>
                         <li>
                             <a href="#calling-function">Calling a Function</a>
@@ -54,125 +54,192 @@
                             <li><a href="./#kwargs">*kwargs</a></li>
                         </ul>
                         <li><a href="./#pass-statement">Pass Statement</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
         </header>
         <main>
-            <article id="functions">
-                <h3>Functions</h3>
-                <section id="basic-function">
-                    <h2>Basic Function</h2>
-                    <pre>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="basic-function">Basic Function</h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>def greet():
     print("Hello World!")
 </code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br /><br /><br />
-                <section id="calling-function">
-                    <h2>Calling a Function</h2>
-                    <pre>
+                <br /><br />
+                <section>
+                    <h2 id="calling-function" class="lvl2">
+                        Calling a Function
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>greet()</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <br /><br /><br /><br />
-                <section id="function-with-arguments">
-                    <h2>Function with Arguments</h2>
-                    <pre>
+                <br /><br />
+                <section>
+                    <h2 id="function-with-arguments" class="lvl2">
+                        Function with Arguments
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>def add(a, b):
     return a + b
 
 print(add(2, 3))</code></pre>
-                    <pre>
+                                <pre>
 <code># Output
 5</code></pre>
-                    <pre>
+                                <pre>
 <code>def add(a1, b1):
     result = a1 + b1
     print(result)
 
 add(2, 3)</code></pre>
-                    <pre><code># Output:
+                                <pre><code># Output:
 5</code></pre>
-
+                            </div>
+                        </div>
+                    </div>
                     <br /><br />
-                    <section id="default-arguments">
-                        <h3>Default Arguments</h3>
+                    <section>
+                        <h3 id="default-arguments" class="lvl3">
+                            Default Arguments
+                        </h3>
                         <ul>
                             <li>
                                 If no explicit values are passed, the default
                                 values will be used.
                             </li>
                         </ul>
-                        <pre>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>def sayHello(a, b="Portia"):
     print(f"Hello {a} & {b}")
 
 sayHello("Tom", "Jerry")
 sayHello("Ellen")</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output:
 Hello Tom & Jerry
 Hello Ellen & Portia</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="args">
-                        <h3>*args</h3>
+                    <section>
+                        <h3 id="args" class="lvl3">*args</h3>
                         <ul>
                             <li>
                                 Allows a function to accept any number of
                                 arguments
                             </li>
                         </ul>
-                        <pre>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>def addNums (*num):
 return sum(num)
 
 print(addNums(1, 2, 3, 4, 5))</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output:
 15</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <br /><br />
-                    <section id="kwargs">
-                        <h3>*kwargs</h3>
+                    <section>
+                        <h3 id="kwargs" class="lvl3">*kwargs</h3>
                         <ul>
                             <li>
                                 Allows a function to accept any number of
                                 keyword arguments
                             </li>
                         </ul>
-                        <pre>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre>
 <code>def greet(*fnames):
 print (f"Hello {fnames}")
 
 greet("Jane", "July", "Tom")</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output:
 Hello ('Jane', 'July', 'Tom')</code></pre>
-                        <pre>
+                                    <pre>
 <code>def greet(*fnames):
 for i in range(len(fnames)):
 print(f"Hello {fnames[i]}")
 
 greet("Jane", "July", "Tom")</code></pre>
-                        <pre>
+                                    <pre>
 <code class="output"># Output:
 Hello Jane
 Hello July
 Hello Tom</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </section>
                 <br /><br /><br /><br />
-                <section id="pass-statement">
-                    <h2>Pass Statement</h2>
+                <section>
+                    <h2 id="pass-statement" class="lvl2">Pass Statement</h2>
                     <ul>
                         <li>Used as a placeholder for future code.</li>
                         <li>If called, will execute with no issues.</li>
                     </ul>
-                    <pre>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Default CSS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre>
 <code>def multiply(a, b):
     pass</code></pre>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
             <br /><br /><br /><br />
