@@ -95,3 +95,6 @@ let nav = document.getElementById("nav");
 let testZone = document.getElementById("test-zone");
 nav.innerHTML += allHTML;
 testZone.innerHTML += allHTML;
+
+let foot = document.querySelector("footer");
+foot.innerHTML = "pepe";
