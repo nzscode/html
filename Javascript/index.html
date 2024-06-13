@@ -35,11 +35,11 @@
                     >&times;</a
                 >
                 <nav id="nav">
-                    <p>Functions</p>
+                    <!-- <p>Functions</p>
                     <ul>
                         <li><a href="#basic-function">Basic Function</a></li>
                         <li><a href="#arrow-function">Arrow Function</a></li>
-                    </ul>
+                    </ul> -->
                 </nav>
                 <div class="space-block"></div>
             </div>
@@ -365,6 +365,54 @@ console.log(add(2, 5));
                 </section>
                 <br /><br />
             </article>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="IIFE">
+                        Immediately Invoked Function Expression
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">HTML</div>
+                            <div class="cell-header">HTML</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <pre><code>// Function - only invoked when called
+function a() {
+    console.log("hello");
+}
+a();
+//Output:
+//hello
+
+// Function saved as variable - only invoked when called
+var b = function () {
+    console.log("hello coursera");
+};
+
+b();
+//Output:
+//hello coursera
+
+// Immediately Invoked Function (IIFE)
+(function () {
+    console.log("hello udemy");
+})();
+//Output:
+//hello udemy
+
+// IIFE with variable
+(function (fname) {
+    console.log("good morning " + fname);
+})("Claire");
+//Output:
+//good morning Claire</code></pre>
+                            </div>
+                            <div class="cells"></div>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </main>
         <!-- <section>
                 <h3><span id="" class="anchor-centered"></span></h3>
@@ -501,7 +549,7 @@ console.log(add(2, 5));
                 </div>
             </div>
         </footer>
-        <script src="./js.js"></script>
+        <script src="./javascript.js"></script>
         <script src="../nav-menu.js"></script>
     </body>
 </html>
