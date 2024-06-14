@@ -412,6 +412,474 @@ b();
                         </div>
                     </div>
                 </section>
+                <section>
+                    <h2 class="lvl2" id="onclick-function">Onclick FUnction</h2>
+                    <section>
+                        <h3 class="lvl3" id="assign-onclick">
+                            Assigning On Click to an HTML Element
+                        </h3>
+                        <ul>
+                            <li>
+                                Assign the onclick property and the
+                                corresponding JS function to an HTML Element
+                            </li>
+                            <div class="outer-table">
+                                <div class="head-row">
+                                    <div class="cell-header">Examples</div>
+                                    <div class="cell-header">HTML</div>
+                                </div>
+                                <div class="body-row">
+                                    <div class="cells">
+                                        <input
+                                            type="text"
+                                            name="fname1"
+                                            id="fname1"
+                                        />
+                                        <button onclick="sayHello1();">
+                                            Say Hello!
+                                        </button>
+                                    </div>
+                                    <div class="cells">
+                                        <pre><code>&lt;input type="text" name="fname" id="fname" &gt;
+&lt;button onclick="sayHello();"&gt;Say Hello!&lt;/button&gt;</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                            <li>Write a JS Code for the Function</li>
+                            <div class="outer-table">
+                                <div class="head-row-full">
+                                    <div class="cell-header">JavaScript</div>
+                                </div>
+                                <div class="body-row-full">
+                                    <div class="cells">
+                                        <pre><code>function sayHello() {
+    var nameInput = document.getElementById("fname").value;
+    console.log("Hello " + nameInput);
+}</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="print-onclick-result-as-html">
+                            Print On Click Result as HTML
+                        </h3>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Example</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells">
+                                    <input
+                                        type="text"
+                                        name="fname2"
+                                        id="fname2"
+                                    />
+                                    <button onclick="sayHello2();">
+                                        Say Hello!
+                                    </button>
+
+                                    <p id="inpResult2"></p>
+                                </div>
+                                <div class="cells">
+                                    <pre><code>&lt;input type="text" name="fname" id="fname" &gt;
+&lt;button onclick="sayHello();"&gt;Say Hello!&lt;/button&gt;
+
+&lt;p id="inpResult"&gt;&lt;/p&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>function sayHello() {
+    var nameInput = document.getElementById("fname").value;
+    var pResult = document.getElementById("inpResult");
+    var message = `Hello ${nameInput}`;
+
+    pResult.textContent = message;
+}
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="inserting-html-into-dom">
+                        Inserting HTML Into DOM
+                    </h2>
+                    <ul>
+                        <li>
+                            Only Use if Inserting HTML Tags with inner content
+                        </li>
+                        <li>For Example: `&lt;p&gt; Hello &lt;/p&gt;`</li>
+                    </ul>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Example</div>
+                            <div class="cell-header">HTML</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <input
+                                    type="text"
+                                    name="fname3"
+                                    id="fname3"
+                                />
+                                <button onclick="sayHello3();">
+                                    Say Hello!
+                                </button>
+
+                                <p id="inpResult3"></p>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;input type="text" name="fname" id="fname" &gt;
+&lt;button onclick="sayHello();"&gt;Say Hello!&lt;/button&gt;
+
+&lt;p id="inpResult"&gt;&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">JS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>function sayHello() {
+var nameInput = document.getElementById("fname").value;
+var pResult = document.getElementById("inpResult");
+var message = `&lt;h2&gt;Hello ${nameInput}&lt;/h2&gt;`;
+
+pResult.innerHTML = message;
+}
+</code></pre>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="inserting-text-content-into-dom">
+                        Inserting Text Content Into DOM
+                    </h2>
+                    <ul>
+                        <li>Use if inserting text into an HTML Element</li>
+                        <li>For Example: `Hello Jane`</li>
+                    </ul>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Example</div>
+                            <div class="cell-header">HTML</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells">
+                                <input
+                                    type="text"
+                                    name="fname4"
+                                    id="fname4"
+                                />
+                                <button onclick="sayHello4();">
+                                    Say Hello!
+                                </button>
+
+                                <p id="inpResult4"></p>
+                            </div>
+                            <div class="cells">
+                                <pre><code>&lt;input type="text" name="fname" id="fname" &gt;
+&lt;button onclick="sayHello();"&gt;Say Hello!&lt;/button&gt;
+
+&lt;p id="inpResult"&gt;&lt;/p&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">JS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>function sayHello() {
+var nameInput = document.getElementById("fname").value;
+var pResult = document.getElementById("inpResult");
+var message = `Hello ${nameInput}`;
+
+pResult.textContent = message;
+}
+</code></pre>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="query-selector-id">Using Query Sleector to find an ID</h2>
+                    <ul><li>If the HTML element has an id of, i.e. first-title, the using querySelector on the Document, we can find the id, by using #first-title.</li></ul>
+                    <div class="outer-table">
+                        <div class="head-row">
+                            <div class="cell-header">Examples</div>
+                            <div class="cell-header">HTML</div>
+                        </div>
+                        <div class="body-row">
+                            <div class="cells"></div>
+                            <div class="cells"></div>
+                        </div>
+                    </div>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">JS</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                var firstTitle = document.querySelector("#first-title")
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="event-handlers">Event Handlers</h2>
+                    <section>
+                        <h3 class="lvl3" id="dom-events">DOM Events</h3>
+                        <ul><li>
+                            For an extensive list of <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">all available DOM events</a>.
+                        </li>
+                        
+                        <li>Examples of the most commonly used DOM events are below</li>
+                    </ul>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-change">On Change</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"></div>
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-click">On Click</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname10" id="fname10" />
+                                    <button onclick="sayHello10();">Say Hello!</button>
+                            
+                                    <p id="inpResult10"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname10" id="fname10" />
+                                    &lt;button onclick="sayHello10();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult10">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-mouse-over">On Mouse OVer</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname11" id="fname11" />
+                                    <button onmouseover="sayHello11();">Say Hello!</button>
+                            
+                                    <p id="inpResult11"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname11" id="fname11" />
+                                    &lt;button onmouseover="sayHello11();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult11">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-mouse-out">On Mouse Out</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname12" id="fname12" />
+                                    <button onmouseout="sayHello12();">Say Hello!</button>
+                            
+                                    <p id="inpResult12"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname12" id="fname12" />
+                                    &lt;button onmouseout="sayHello12();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult12">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-key-down">On Key Down</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname13" id="fname13" />
+                                    <button onkeydown="sayHello13();">Say Hello!</button>
+                            
+                                    <p id="inpResult13"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname13" id="fname13" />
+                                    &lt;button onkeydown="sayHello13();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult13">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-load">On Load</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname14" id="fname14" />
+                                    <button onload="sayHello14();">Say Hello!</button>
+                            
+                                    <p id="inpResult14"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname14" id="fname14" />
+                                    &lt;button onload="sayHello14();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult14">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl4 h3-plus" id="on-blur">On Blur</h3>
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row">
+                                <div class="cell-header">Examples</div>
+                                <div class="cell-header">HTML</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="cells"><h1 id="title">Mod 5 Practice Page</h1>
+                                    <input type="text" name="fname15" id="fname15" />
+                                    <button onblur="sayHello15();">Say Hello!</button>
+                            
+                                    <p id="inpResult15"></p></div>
+                                <div class="cells"><pre><code>
+                                    &lt;h1 id="title">Mod 5 Practice Page&lt;/h1>
+                                    &lt;input type="text" name="fname15" id="fname15" />
+                                    &lt;button onblur="sayHello15();">Say Hello!&lt;/button>
+                            
+                                    &lt;p id="inpResult15">&lt;/p>
+                                </code></pre></div>
+                            </div>
+                        </div>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells"></div>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="binding-event-handler">Binding an Event Handler</h3>
+                        
+                    </section>
+                </section>
             </article>
         </main>
         <!-- <section>
@@ -456,6 +924,7 @@ b();
                 </table>
             </section>
             <br><br> -->
+        <br /><br /><br /><br />
         <footer>
             <div class="container">
                 <div class="row">
