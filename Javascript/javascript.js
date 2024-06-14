@@ -65,3 +65,113 @@ function sayHello4() {
     var message = `Hello ${nameInput}`;
     pResult.textContent = message;
 }
+
+function sayHello5() {
+    var nameInput = document.getElementById("fname5").value;
+    var pResult = document.getElementById("inpResult5");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello6() {
+    var nameInput = document.getElementById("fname6").value;
+    var pResult = document.getElementById("inpResult6");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello7() {
+    var nameInput = document.getElementById("fname7").value;
+    var pResult = document.getElementById("inpResult7");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello8() {
+    var nameInput = document.getElementById("fname8").value;
+    var pResult = document.getElementById("inpResult8");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello9() {
+    var nameInput = document.getElementById("fname9").value;
+    var pResult = document.getElementById("inpResult9");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello10() {
+    var nameInput = document.getElementById("fname10").value;
+    var pResult = document.getElementById("inpResult10");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello11() {
+    var nameInput = document.getElementById("fname11").value;
+    var pResult = document.getElementById("inpResult11");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello112() {
+    var nameInput = document.getElementById("fname12").value;
+    var pResult = document.getElementById("inpResult12");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello13() {
+    var nameInput = document.getElementById("fname13").value;
+    var pResult = document.getElementById("inpResult13");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello14() {
+    var nameInput = document.getElementById("fname14").value;
+    var pResult = document.getElementById("inpResult14");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+function sayHello15() {
+    var nameInput = document.getElementById("fname15").value;
+    var pResult = document.getElementById("inpResult15");
+    var message = `Hello ${nameInput}`;
+    pResult.textContent = message;
+}
+
+var button16 = document
+    .getElementById("button16")
+    .addEventListener("click", sayHello16);
+
+function sayHello16() {
+    var nameInput = document.getElementById("fname16").value;
+    var pResult = document.getElementById("inpResult16");
+    var message = `Hello 16th Try: ${nameInput}`;
+    pResult.textContent = message;
+}
+
+var button17 = document.getElementById("button17");
+button17.onclick = sayHello17;
+
+function sayHello17() {
+    var nameInput = document.getElementById("fname17").value;
+    var pResult = document.getElementById("inpResult17");
+    var message = `Hello 1....7: ${nameInput}`;
+    pResult.textContent = message;
+}
+
+var button18 = document
+    .getElementById("button18")
+    .addEventListener("click", sayHello18);
+
+function sayHello18(event) {
+    this.textContent = "Thsi button was clicked";
+    var nameInput = document.getElementById("fname18").value;
+    var pResult = document.getElementById("inpResult18");
+    var message = `Hello ${nameInput}, The button text has changed`;
+    pResult.textContent = message;
+}
