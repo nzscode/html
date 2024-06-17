@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./javascript.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Ajax</title>
+    </head>
+    <body>
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">Javascript</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav"></nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="http-methods">HTTP Methods</h2>
+                    <section>
+                        <h3 class="lvl3" id="get-request">GET</h3>
+                        <ul>
+                            <li>Retrieves Resource</li>
+                            <li>
+                                Data is passed to the server as part of the
+                                URI/URL, i.e. Query String
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="post">POST</h3>
+                        <ul>
+                            <li>Sends data to server to be processed</li>
+                            <li>Data is sent in the message body</li>
+                        </ul>
+                    </section>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="ajax-basics">Ajax Basics</h2>
+                    <ul>
+                        <li>AJAX = Asynchronous Javascript and XML</li>
+                        <li>
+                            Asynchronous = instruction returns a response right
+                            away, whereas Syn chronous only moves onto the next
+                            rquest after the previous response is returned.
+                        </li>
+                        <li>
+                            ajax.js script must be place before regular script,
+                            because th eregular sript.js, uses resources from
+                            the ajax.js
+                        </li>
+                    </ul>
+                    <section>
+                        <h3 class="lvl3" id=""></h3>
+                    </section>
+                </section>
+            </article>
+        </main>
+        <footer></footer>
+        <script src="./ajax-utils.js"></script>
+        <script src="./ajax.js"></script>
+        <script src="../nav-menu.js"></script>
+    </body>
+</html>

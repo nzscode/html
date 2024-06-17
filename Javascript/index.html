@@ -1176,6 +1176,71 @@ function sayHello18(event) {
                     </section>
                 </section>
             </article>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="mouse-event">Mouse Event</h2>
+                    <ul>
+                        <li>
+                            For
+                            <a
+                                href="https://www.w3schools.com/jsref/dom_obj_event.asp"
+                                >more mouse events</a
+                            >
+                        </li>
+                    </ul>
+                    <section>
+                        <h3 class="lvl3" id="logging-mouse-position">
+                            Logging Mouse Position
+                        </h3>
+                        <ul>
+                            <li>
+                                Mouse Position will be logged using
+                                event.clientX & event.clientY
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>document.querySelector("body").addEventListener("mousemove", function (event) {
+    console.log("x: " + event.clientX);
+    console.log("y: " + event.clientY);
+});</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="lvl3" id="logging-mouse-position-shift-key">
+                            Logging Mouse Position only when Shift Key is
+                            pressed
+                        </h3>
+                        <ul>
+                            <li>
+                                Will Only log the mouse position when shift key
+                                is also held down
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">Default CSS</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>document.querySelector("body").addEventListener("mousemove", function (event) {
+    if (event.shiftKey === true) {
+        console.log("x: " + event.clientX);
+        console.log("y: " + event.clientY);
+    }
+});</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </article>
         </main>
         <!-- <section>
                 <h3><span id="" class="anchor-centered"></span></h3>

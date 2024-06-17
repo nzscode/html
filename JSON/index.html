@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>JSON</title>
+    </head>
+    <body>
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">Javascript</span>
+            </h1>
+
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <nav id="nav"></nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="syntax-rules">Syntax Rules</h2>
+                    <ul>
+                        <li>
+                            Property names, String values must be in double
+                            quotes
+                        </li>
+                    </ul>
+
+                    <section>
+                        <h3 class="lvl3" id="basic-json">Basic JSON</h3>
+                        <ul>
+                            <li>
+                                Syntax is identical to Javascript Object Literal
+                                BUT is NOT and object literal.
+                            </li>
+                            <li>
+                                Needs to be converted into a JavaScript Object
+                                to be used as an object literal
+                            </li>
+                        </ul>
+                        <div class="outer-table">
+                            <div class="head-row-full">
+                                <div class="cell-header">JSON Example</div>
+                            </div>
+                            <div class="body-row-full">
+                                <div class="cells">
+                                    <pre><code>{
+    "firstName": "Alice",
+    "lastName": "Wonderland",
+    "metCaterpillar": true,
+    "numberOfTweedles": 2
+};</code></pre>
+
+                                    OR
+
+                                    <pre><code>var jsonString = 
+    '{
+        "firstName": "Alice",
+        "lastName": "Wonderland",
+        "metCaterpillar": true,
+        "numberOfTweedles": 2
+}';</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="convert-json-to-object">
+                        Converting from JSON String to an Object
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Code</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>var obj = JSON.parse(jsonString);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="lvl2" id="convert-object-to-json-string">
+                        Converting from an Object to a JSON String
+                    </h2>
+                    <div class="outer-table">
+                        <div class="head-row-full">
+                            <div class="cell-header">Code</div>
+                        </div>
+                        <div class="body-row-full">
+                            <div class="cells">
+                                <pre><code>var str = JSON.stringify(obj);</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer></footer>
+        <script src=""></script>
+    </body>
+</html>
